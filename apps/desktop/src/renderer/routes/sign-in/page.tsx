@@ -20,6 +20,7 @@ import { track } from "renderer/lib/analytics";
 import { setAuthToken } from "renderer/lib/auth-client";
 import { electronTrpc } from "renderer/lib/electron-trpc";
 import { useSessionRecovery } from "./hooks/useSessionRecovery";
+import { isLocalApiUrl } from "./utils/isLocalApiUrl";
 
 export const Route = createFileRoute("/sign-in/")({
 	component: SignInPage,
@@ -30,6 +31,8 @@ const LAST_USED_METHOD_KEY = "superset-last-auth-method";
 const workspaceRedirect = <Redirect to="/workspace" replace />;
 
 const SESSION_PENDING_TIMEOUT_MS = 15_000;
+
+const IS_LOCAL_API = isLocalApiUrl(env.NEXT_PUBLIC_API_URL);
 
 type AuthMethod = AuthProvider | "dev";
 
@@ -85,14 +88,23 @@ function SignInPage() {
 	const signIn = (provider: AuthProvider) => {
 		track("auth_started", { provider });
 		rememberLastUsedMethod(provider);
+		// A local API has no real GitHub or Google app, so both sign in to the local account.
+		if (IS_LOCAL_API) {
+			void signInWithLocalAccount();
+			return;
+		}
 		setBrowserProvider(provider);
 		signInMutation.mutate({ provider });
 	};
 
-	const signInAsDev = async () => {
+	const signInAsDev = () => {
+		rememberLastUsedMethod("dev");
+		void signInWithLocalAccount();
+	};
+
+	const signInWithLocalAccount = async () => {
 		setIsLoadingDev(true);
 		setDevError(null);
-		rememberLastUsedMethod("dev");
 
 		const postAuth = async (path: string, body: Record<string, unknown>) => {
 			const response = await fetch(`${env.NEXT_PUBLIC_API_URL}${path}`, {
@@ -228,9 +240,13 @@ function SignInPage() {
 											variant="outline"
 											onClick={() => signIn(provider)}
 											className="w-full"
-											disabled={signInMutation.isPending}
+											disabled={signInMutation.isPending || isLoadingDev}
 										>
-											{icon}
+											{isLoadingDev && lastUsedMethod === provider ? (
+												<Spinner />
+											) : (
+												icon
+											)}
 											{label}
 										</Button>
 										{lastUsedMethod === provider && (
@@ -249,8 +265,13 @@ function SignInPage() {
 									<Trans>Couldn't open your browser. Try again.</Trans>
 								</p>
 							)}
+							{IS_LOCAL_API && devError && (
+								<p className="mt-3 cursor-text select-text text-center text-xs text-destructive">
+									{devError}
+								</p>
+							)}
 
-							{env.NODE_ENV === "development" && (
+							{env.NODE_ENV === "development" && !IS_LOCAL_API && (
 								<div className="mt-6 flex w-full flex-col gap-2 border-t pt-6">
 									<Button
 										variant="ghost"
