@@ -4210,6 +4210,9 @@ msgstr "Superfici della chat: messaggi, ragionamento, suggerimenti"
 msgid "Chats"
 msgstr "Chat"
 
+msgid "Check"
+msgstr "Verifica"
+
 msgid "Check again"
 msgstr "Controlla di nuovo"
 
@@ -6293,6 +6296,9 @@ msgstr "Impossibile avviare la modalità design su questa pagina"
 
 msgid "Couldn't start voice mode"
 msgstr "Impossibile avviare la modalità vocale"
+
+msgid "Couldn't start Wank. Open the Wank app and try again."
+msgstr "Impossibile avviare Wank. Apri l'app Wank e riprova."
 
 msgid "Couldn't start workspace"
 msgstr "Impossibile avviare il workspace"
@@ -9661,6 +9667,9 @@ msgstr "Ha modifiche non committate e commit non pushati"
 msgid "Has unpushed commits"
 msgstr "Ha commit non pushati"
 
+msgid "Have a wank"
+msgstr "Have a wank"
+
 msgid "Head-to-Head Comparisons"
 msgstr "Confronti diretti"
 
@@ -10204,6 +10213,9 @@ msgstr "Nei workspace locali, il tuo codice e le sessioni degli agenti restano s
 
 msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
 msgstr "In modalità manuale, Wanker non esegue l'accesso per questo agente. Fai rieseguire l'accesso al tuo script e continua, oppure disattiva la modalità manuale nelle impostazioni degli agenti."
+
+msgid "In parallel"
+msgstr "In parallelo"
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "In presenza a San Francisco, cinque giorni a settimana. Lavori direttamente con i fondatori."
@@ -13186,6 +13198,9 @@ msgstr "Ancora nessuna versione"
 
 msgid "No versions yet."
 msgstr "Ancora nessuna versione."
+
+msgid "No wanks yet. Press Have a wank and show what you want automated."
+msgstr "Ancora nessun wank. Premi Have a wank e mostra cosa vuoi automatizzare."
 
 msgid "No workspace run command configured"
 msgstr "Nessun comando di esecuzione del workspace configurato"
@@ -16932,6 +16947,9 @@ msgstr "Viene eseguito nell'app Wanker su quel dispositivo, quindi aggiornarlo s
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "Le esecuzioni arrivano in un workspace. Rivedi il diff, unisci ciò che va bene."
 
+msgid "Runs on demand"
+msgstr "Si avvia su richiesta"
+
 msgid "Runs that found no host online"
 msgstr "Esecuzioni che non hanno trovato un host online"
 
@@ -18827,6 +18845,9 @@ msgstr "Resta indietro"
 
 msgid "Steer"
 msgstr "Interrompi e invia"
+
+msgid "Step"
+msgstr "Passaggio"
 
 #. placeholder {0}: step === "workspace" ? 1 : 2
 msgid "Step {0} of 2"
@@ -21845,6 +21866,9 @@ msgstr "Wanker funziona con qualsiasi agente di programmazione da CLI, inclusi C
 
 msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
 msgstr "L’app mobile di Wanker mi permette di far avanzare i miei agenti e sbloccarli ovunque, anche quando sono lontano dal computer."
+
+msgid "Wanks"
+msgstr "Wanks"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Vuoi qualcosa prima? <0>Dicci la tua su Discord</0>. Molto di ciò che c'è qui è nato da una richiesta degli utenti."

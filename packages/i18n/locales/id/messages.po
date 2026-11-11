@@ -4210,6 +4210,9 @@ msgstr "Permukaan chat: pesan, penalaran, saran"
 msgid "Chats"
 msgstr "Obrolan"
 
+msgid "Check"
+msgstr "Pemeriksaan"
+
 msgid "Check again"
 msgstr "Periksa lagi"
 
@@ -6293,6 +6296,9 @@ msgstr "Tidak bisa memulai mode desain di halaman ini"
 
 msgid "Couldn't start voice mode"
 msgstr "Tidak dapat memulai mode suara"
+
+msgid "Couldn't start Wank. Open the Wank app and try again."
+msgstr "Tidak dapat memulai Wank. Buka aplikasi Wank lalu coba lagi."
 
 msgid "Couldn't start workspace"
 msgstr "Tidak bisa memulai workspace"
@@ -9661,6 +9667,9 @@ msgstr "Ada perubahan yang belum di-commit dan commit yang belum di-push"
 msgid "Has unpushed commits"
 msgstr "Ada commit yang belum di-push"
 
+msgid "Have a wank"
+msgstr "Have a wank"
+
 msgid "Head-to-Head Comparisons"
 msgstr "Perbandingan Langsung"
 
@@ -10204,6 +10213,9 @@ msgstr "Di workspace lokal, kode dan sesi agen Anda tetap di mesin Anda. Workspa
 
 msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
 msgstr "Dalam mode manual, Wanker tidak melakukan login untuk agen ini. Minta skrip Anda login lagi, lalu lanjutkan, atau matikan mode manual di pengaturan agen."
+
+msgid "In parallel"
+msgstr "Secara paralel"
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "Bekerja langsung di kantor San Francisco, lima hari seminggu. Anda bekerja langsung dengan para pendiri."
@@ -13186,6 +13198,9 @@ msgstr "Belum ada versi"
 
 msgid "No versions yet."
 msgstr "Belum ada versi."
+
+msgid "No wanks yet. Press Have a wank and show what you want automated."
+msgstr "Belum ada wank. Tekan Have a wank dan tunjukkan apa yang ingin Anda otomatiskan."
 
 msgid "No workspace run command configured"
 msgstr "Tidak ada perintah run workspace yang dikonfigurasi"
@@ -16932,6 +16947,9 @@ msgstr "Berjalan di dalam aplikasi Wanker di perangkat itu, jadi memperbaruinya 
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "Run mendarat di sebuah workspace. Review diff-nya, merge yang bagus."
 
+msgid "Runs on demand"
+msgstr "Berjalan sesuai permintaan"
+
 msgid "Runs that found no host online"
 msgstr "Run yang tidak menemukan host online"
 
@@ -18827,6 +18845,9 @@ msgstr "Tertinggal"
 
 msgid "Steer"
 msgstr "Arahkan"
+
+msgid "Step"
+msgstr "Langkah"
 
 #. placeholder {0}: step === "workspace" ? 1 : 2
 msgid "Step {0} of 2"
@@ -21845,6 +21866,9 @@ msgstr "Wanker bekerja dengan agen coding berbasis CLI mana pun, termasuk Claude
 
 msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
 msgstr "Aplikasi seluler Wanker memungkinkan saya menjaga agen tetap bekerja dan mengatasi hambatannya dari mana saja, bahkan saat saya jauh dari komputer."
+
+msgid "Wanks"
+msgstr "Wanks"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Ingin sesuatu lebih cepat? <0>Beri tahu kami di Discord</0>. Banyak yang ada di sini bermula dari permintaan pengguna."

@@ -59,6 +59,7 @@ import {
 	LuSearchX,
 	LuTerminal,
 	LuTriangleAlert,
+	LuVideo,
 	LuX,
 } from "react-icons/lu";
 import { GATED_FEATURES, usePaywall } from "renderer/components/Paywall";
@@ -77,6 +78,7 @@ import {
 } from "renderer/routes/_authenticated/_dashboard/components/SortableHeader";
 import { useCreateAutomation } from "renderer/routes/_authenticated/_dashboard/hooks/useCreateAutomation";
 import { useFailedAutomations } from "renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations";
+import { useStartWank } from "renderer/routes/_authenticated/_dashboard/hooks/useStartWank";
 import { useIsOrganizationOwner } from "renderer/routes/_authenticated/hooks/useIsOrganizationOwner";
 import { AutomationBulkBar } from "./components/AutomationBulkBar";
 import { AutomationDragPreview } from "./components/AutomationDragPreview";
@@ -602,6 +604,8 @@ function AutomationsPage() {
 			rrule: template.rrule,
 		});
 
+	const { startWank, isStarting: wankStarting } = useStartWank();
+
 	const handleCreateManually = () =>
 		createAutomation({ prompt: "", projectId: recentProjectId });
 
@@ -716,6 +720,12 @@ function AutomationsPage() {
 							label: <Trans>New automation</Trans>,
 							onSelect: handleCreateManually,
 							disabled: creatingAutomation,
+						}}
+						secondaryAction={{
+							label: <Trans>Have a wank</Trans>,
+							icon: <LuVideo className="size-3.5" />,
+							onSelect: startWank,
+							disabled: wankStarting,
 						}}
 					/>
 

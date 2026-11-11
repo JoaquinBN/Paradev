@@ -10,7 +10,8 @@ are rendered in each locale's natural term, not kept as English islands.
 
 These are literal identifiers, not vocabulary:
 
-- **Wanker** (brand), **Paradev** and **Superset** (former names), product names of
+- **Wanker** (brand), **Wank**, **Wanks** and **Have a wank** (feature names),
+  **Paradev** and **Superset** (former names), product names of
   third-party agents and tools (Claude, Claude Code, Codex, Gemini, Cursor, GitHub, Linear, Slack, ...)
 - CLI commands and flags (`superset ws create`, `--json`), file paths,
   environment variables, code identifiers

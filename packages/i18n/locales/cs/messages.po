@@ -4210,6 +4210,9 @@ msgstr "Plochy chatu: zprávy, uvažování, návrhy"
 msgid "Chats"
 msgstr "Chaty"
 
+msgid "Check"
+msgstr "Kontrola"
+
 msgid "Check again"
 msgstr "Zkontrolovat znovu"
 
@@ -6293,6 +6296,9 @@ msgstr "Na této stránce se nepodařilo spustit režim designu"
 
 msgid "Couldn't start voice mode"
 msgstr "Hlasový režim se nepodařilo spustit"
+
+msgid "Couldn't start Wank. Open the Wank app and try again."
+msgstr "Wank se nepodařilo spustit. Otevřete aplikaci Wank a zkuste to znovu."
 
 msgid "Couldn't start workspace"
 msgstr "Pracovní prostor se nepodařilo spustit"
@@ -9661,6 +9667,9 @@ msgstr "Obsahuje necommitnuté změny a neodeslané commity"
 msgid "Has unpushed commits"
 msgstr "Obsahuje neodeslané commity"
 
+msgid "Have a wank"
+msgstr "Have a wank"
+
 msgid "Head-to-Head Comparisons"
 msgstr "Přímá srovnání"
 
@@ -10204,6 +10213,9 @@ msgstr "V lokálních pracovních prostorech zůstávají váš kód a relace ag
 
 msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
 msgstr "V ručním režimu Wanker tohoto agenta nepřihlašuje. Nechte svůj skript, ať ho znovu přihlásí, a pokračujte, nebo vypněte ruční režim v nastavení agentů."
+
+msgid "In parallel"
+msgstr "Souběžně"
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "Osobně v San Franciscu, pět dní v týdnu. Pracujete přímo se zakladateli."
@@ -13186,6 +13198,9 @@ msgstr "Zatím žádné verze"
 
 msgid "No versions yet."
 msgstr "Zatím žádné verze."
+
+msgid "No wanks yet. Press Have a wank and show what you want automated."
+msgstr "Zatím žádné wanky. Stiskněte Have a wank a ukažte, co chcete automatizovat."
 
 msgid "No workspace run command configured"
 msgstr "Není nastavený žádný spouštěcí příkaz pracovního prostoru"
@@ -16932,6 +16947,9 @@ msgstr "Běží uvnitř aplikace Wanker na tom zařízení, takže aktualizace z
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "Běhy skončí v pracovním prostoru. Projděte rozdíly a slučte, co je dobré."
 
+msgid "Runs on demand"
+msgstr "Spouští se na vyžádání"
+
 msgid "Runs that found no host online"
 msgstr "Běhy, které nenašly hostitele online"
 
@@ -18827,6 +18845,9 @@ msgstr "Zůstává"
 
 msgid "Steer"
 msgstr "Usměrnit"
+
+msgid "Step"
+msgstr "Krok"
 
 #. placeholder {0}: step === "workspace" ? 1 : 2
 msgid "Step {0} of 2"
@@ -21845,6 +21866,9 @@ msgstr "Wanker funguje s libovolným kódovacím agentem v CLI, včetně Claude 
 
 msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
 msgstr "Mobilní aplikace Wanker mi umožňuje udržovat agenty v chodu a odblokovat je odkudkoli, i když jsem daleko od počítače."
+
+msgid "Wanks"
+msgstr "Wanks"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Chcete něco dřív? <0>Napište nám na Discordu</0>. Spousta z toho, co je tady, začala jako přání uživatele."

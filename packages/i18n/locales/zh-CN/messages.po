@@ -4210,6 +4210,9 @@ msgstr "聊天界面：消息、推理、建议"
 msgid "Chats"
 msgstr "聊天"
 
+msgid "Check"
+msgstr "检查"
+
 msgid "Check again"
 msgstr "重新检查"
 
@@ -6293,6 +6296,9 @@ msgstr "无法在此页面启动设计模式"
 
 msgid "Couldn't start voice mode"
 msgstr "无法启动语音模式"
+
+msgid "Couldn't start Wank. Open the Wank app and try again."
+msgstr "无法启动 Wank。请打开 Wank 应用后重试。"
 
 msgid "Couldn't start workspace"
 msgstr "无法启动工作区"
@@ -9661,6 +9667,9 @@ msgstr "有未提交的改动和未推送的提交"
 msgid "Has unpushed commits"
 msgstr "有未推送的提交"
 
+msgid "Have a wank"
+msgstr "Have a wank"
+
 msgid "Head-to-Head Comparisons"
 msgstr "一对一对比"
 
@@ -10204,6 +10213,9 @@ msgstr "在本地工作区中，你的代码和智能体会话都留在你的电
 
 msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
 msgstr "在手动模式下，Wanker 不会为此智能体登录。请让你的脚本重新登录后继续，或在智能体设置中关闭手动模式。"
+
+msgid "In parallel"
+msgstr "并行"
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "在旧金山办公室线下办公，每周五天。你将直接与创始人共事。"
@@ -13186,6 +13198,9 @@ msgstr "还没有版本"
 
 msgid "No versions yet."
 msgstr "还没有任何版本。"
+
+msgid "No wanks yet. Press Have a wank and show what you want automated."
+msgstr "还没有 wank。点击 Have a wank，展示你想自动化的内容。"
 
 msgid "No workspace run command configured"
 msgstr "未配置工作区运行命令"
@@ -16932,6 +16947,9 @@ msgstr "运行在该设备的 Wanker 应用内，因此更新它意味着更新�
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "运行结果会落在一个工作区里。审查差异，把合适的合并进去。"
 
+msgid "Runs on demand"
+msgstr "按需运行"
+
 msgid "Runs that found no host online"
 msgstr "未找到在线主机的运行"
 
@@ -18827,6 +18845,9 @@ msgstr "无法带走"
 
 msgid "Steer"
 msgstr "引导"
+
+msgid "Step"
+msgstr "步骤"
 
 #. placeholder {0}: step === "workspace" ? 1 : 2
 msgid "Step {0} of 2"
@@ -21845,6 +21866,9 @@ msgstr "Wanker支持任何基于CLI的编码智能体，包括Claude Code、Open
 
 msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
 msgstr "Wanker 手机应用让我可以随时随地推动智能体工作、解决它们的阻碍，即使我离电脑很远也没问题。"
+
+msgid "Wanks"
+msgstr "Wanks"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "想让某件事早点做？<0>在Discord上告诉我们</0>。这里的很多条目最初都来自用户的请求。"

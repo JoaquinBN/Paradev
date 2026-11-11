@@ -4210,6 +4210,9 @@ msgstr "채팅 화면: 메시지, 추론, 제안"
 msgid "Chats"
 msgstr "채팅"
 
+msgid "Check"
+msgstr "확인"
+
 msgid "Check again"
 msgstr "다시 확인"
 
@@ -6293,6 +6296,9 @@ msgstr "이 페이지에서 디자인 모드를 시작할 수 없습니다"
 
 msgid "Couldn't start voice mode"
 msgstr "음성 모드를 시작할 수 없습니다"
+
+msgid "Couldn't start Wank. Open the Wank app and try again."
+msgstr "Wank를 시작할 수 없습니다. Wank 앱을 열고 다시 시도하세요."
 
 msgid "Couldn't start workspace"
 msgstr "워크스페이스를 시작하지 못했습니다"
@@ -9661,6 +9667,9 @@ msgstr "커밋되지 않은 변경 사항과 푸시되지 않은 커밋 있음"
 msgid "Has unpushed commits"
 msgstr "푸시되지 않은 커밋 있음"
 
+msgid "Have a wank"
+msgstr "Have a wank"
+
 msgid "Head-to-Head Comparisons"
 msgstr "1:1 비교"
 
@@ -10204,6 +10213,9 @@ msgstr "로컬 워크스페이스에서는 코드와 에이전트 세션이 당�
 
 msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
 msgstr "수동 모드에서는 Wanker가 이 에이전트를 로그인시키지 않습니다. 스크립트로 다시 로그인시킨 뒤 계속하거나, 에이전트 설정에서 수동 모드를 끄세요."
+
+msgid "In parallel"
+msgstr "병렬"
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "샌프란시스코 사무실에서 주 5일 근무합니다. 창업자와 직접 함께 일합니다."
@@ -13186,6 +13198,9 @@ msgstr "아직 버전이 없습니다"
 
 msgid "No versions yet."
 msgstr "아직 버전이 없습니다."
+
+msgid "No wanks yet. Press Have a wank and show what you want automated."
+msgstr "아직 wank가 없습니다. Have a wank를 누르고 자동화할 작업을 보여 주세요."
 
 msgid "No workspace run command configured"
 msgstr "설정된 워크스페이스 실행 명령이 없습니다"
@@ -16932,6 +16947,9 @@ msgstr "해당 기기의 Wanker 앱 안에서 실행되므로, 업데이트하�
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "실행 결과는 워크스페이스에 도착합니다. 차이를 검토하고 괜찮은 것만 머지하세요."
 
+msgid "Runs on demand"
+msgstr "요청 시 실행"
+
 msgid "Runs that found no host online"
 msgstr "온라인 호스트를 찾지 못한 실행"
 
@@ -18827,6 +18845,9 @@ msgstr "가져올 수 없는 것"
 
 msgid "Steer"
 msgstr "방향 전환"
+
+msgid "Step"
+msgstr "단계"
 
 #. placeholder {0}: step === "workspace" ? 1 : 2
 msgid "Step {0} of 2"
@@ -21845,6 +21866,9 @@ msgstr "Wanker는 Claude Code, OpenCode, OpenAI Codex 등 CLI 기반 코딩 에�
 
 msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
 msgstr "Wanker 모바일 앱 덕분에 컴퓨터에서 멀리 떨어져 있어도 어디서든 에이전트가 계속 작업하도록 돕고 막힌 부분을 해결할 수 있습니다."
+
+msgid "Wanks"
+msgstr "Wanks"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "더 빨리 필요한 기능이 있나요? <0>Discord에서 알려 주세요</0>. 여기 있는 항목 상당수가 사용자 요청에서 시작했습니다."
