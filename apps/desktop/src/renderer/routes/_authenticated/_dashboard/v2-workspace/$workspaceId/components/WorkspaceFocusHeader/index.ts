@@ -1,0 +1,1 @@
+export { WorkspaceFocusHeader } from "./WorkspaceFocusHeader";

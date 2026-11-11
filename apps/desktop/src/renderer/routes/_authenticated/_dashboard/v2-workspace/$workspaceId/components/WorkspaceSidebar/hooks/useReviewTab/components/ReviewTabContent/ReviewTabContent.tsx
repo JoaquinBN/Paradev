@@ -1,4 +1,5 @@
 import { Trans } from "@lingui/react/macro";
+import { GitPullRequest } from "lucide-react";
 import { memo } from "react";
 import type { OpenPullRequestPane } from "renderer/lib/github/openPullRequestLink";
 import type { PullRequestTarget } from "renderer/routes/_authenticated/_dashboard/pull-requests/utils/pullRequestClient";
@@ -61,16 +62,22 @@ export const ReviewTabContent = memo(function ReviewTabContent({
 
 	if (!pr) {
 		return (
-			<div className="flex h-full items-center justify-center px-4 text-center text-sm text-muted-foreground">
-				<Trans>
-					Open a pull request to view review status, checks, and comments.
-				</Trans>
+			<div className="flex h-full flex-col items-center justify-center gap-3 px-6 py-8 text-center">
+				<GitPullRequest className="size-6 text-muted-foreground/60" />
+				<h3 className="text-sm font-medium">
+					<Trans>Review</Trans>
+				</h3>
+				<p className="max-w-64 text-xs leading-relaxed text-muted-foreground">
+					<Trans>
+						Open a pull request to view review status, checks, and comments.
+					</Trans>
+				</p>
 			</div>
 		);
 	}
 
 	return (
-		<div className="flex h-full min-h-0 min-w-0 flex-col overflow-x-hidden overflow-y-auto">
+		<div className="flex h-full min-h-0 min-w-0 flex-col overflow-x-hidden overflow-y-auto px-1 py-2">
 			<PRHeader pr={pr} onOpenPullRequest={onOpenPullRequest} />
 
 			<div className="my-1 border-b border-border/70" />

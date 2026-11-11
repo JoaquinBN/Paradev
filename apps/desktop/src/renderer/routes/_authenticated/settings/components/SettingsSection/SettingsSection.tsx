@@ -20,8 +20,11 @@ export function SettingsSection({
 	const searchQuery = useSettingsSearchQuery();
 
 	return (
-		<section className="space-y-3">
-			<div className="flex items-start justify-between gap-4">
+		<section data-design-surface="settings-section" className="space-y-3">
+			<div
+				data-design-surface="settings-section-header"
+				className="flex items-start justify-between gap-4"
+			>
 				<div className="min-w-0">
 					<h3 className="flex items-center gap-2 text-base font-semibold">
 						{icon}

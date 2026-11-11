@@ -46,10 +46,16 @@ export function RecordLayout({
 						</div>
 					</PageHeader>
 				</WindowChromeScope>
-				<main className="min-w-0 pt-5 pr-10 pb-10 pl-8 [grid-area:main] @min-[900px]:overflow-auto">
+				<main
+					data-design-surface="record-main"
+					className="min-w-0 pt-5 pr-10 pb-10 pl-8 [grid-area:main] @min-[900px]:overflow-auto"
+				>
 					{children}
 				</main>
-				<div className="min-w-0 border-t border-border [grid-area:side] @min-[900px]:overflow-auto @min-[900px]:border-t-0 @min-[900px]:border-l">
+				<div
+					data-design-surface="record-side"
+					className="min-w-0 border-t border-border [grid-area:side] @min-[900px]:overflow-auto @min-[900px]:border-t-0 @min-[900px]:border-l"
+				>
 					{side}
 				</div>
 			</div>

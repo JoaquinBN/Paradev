@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/react/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Textarea } from "@superset/ui/textarea";
 import { VscLoading } from "react-icons/vsc";
 import type { ShipActions } from "../../hooks/useShipActions";
@@ -8,6 +8,7 @@ interface CommitFormProps {
 }
 
 export function CommitForm({ actions }: CommitFormProps) {
+	const { t } = useLingui();
 	return (
 		<div className="flex flex-col gap-2">
 			<Textarea
@@ -15,6 +16,7 @@ export function CommitForm({ actions }: CommitFormProps) {
 				value={actions.commitMessage}
 				onChange={(e) => actions.setCommitMessage(e.target.value)}
 				placeholder={actions.defaultCommitMessage}
+				aria-label={t({ message: "Commit message" })}
 				className="min-h-20 text-xs"
 				onKeyDown={(e) => {
 					if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {

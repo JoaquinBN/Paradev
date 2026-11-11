@@ -176,6 +176,7 @@ export type ComposerBodyProps = Required<
 		| "mentionProviders"
 		| "commands"
 		| "dictation"
+		| "editorAccessory"
 		| "toolbar"
 		| "toolbarEnd"
 		| "draft"
@@ -188,6 +189,7 @@ export type ComposerBodyProps = Required<
 		| "localFiles"
 		| "ref"
 		| "allowEmptySubmit"
+		| "submitLabel"
 		| "disabled"
 		| "pending"
 		| "autoFocus"
@@ -234,6 +236,7 @@ export function ComposerBody({
 	commands,
 	dictation,
 	status,
+	editorAccessory,
 	toolbar,
 	toolbarEnd,
 	draft,
@@ -246,6 +249,7 @@ export function ComposerBody({
 	localFiles,
 	ref,
 	allowEmptySubmit,
+	submitLabel,
 	disabled,
 	pending,
 	autoFocus,
@@ -1320,7 +1324,7 @@ export function ComposerBody({
 					type="button"
 					aria-label={
 						status === "ready"
-							? t({ message: "Send message" })
+							? (submitLabel ?? t({ message: "Send message" }))
 							: t({ message: "Queue message" })
 					}
 					title={
@@ -1330,7 +1334,7 @@ export function ComposerBody({
 					}
 					disabled={!canSend || disabled || pending}
 					onClick={() => submit()}
-					className={
+					className={cn(
 						!canSend || disabled || pending
 							? buttons.inactiveSend
 							: inline && isEmpty && attachments.length === 0
@@ -1338,13 +1342,15 @@ export function ComposerBody({
 								: cn(
 										buttons.base,
 										"cursor-pointer bg-primary text-primary-foreground hover:bg-primary/90",
-									)
-					}
+									),
+						submitLabel && "w-auto gap-2 px-3",
+					)}
 				>
-					{pending ? (
-						<LoaderCircleIcon className="size-4 animate-spin" />
+					{pending && <LoaderCircleIcon className="size-4 animate-spin" />}
+					{submitLabel ? (
+						<span className="text-xs font-medium">{submitLabel}</span>
 					) : (
-						<ArrowUpIcon className="size-4" />
+						!pending && <ArrowUpIcon className="size-4" />
 					)}
 				</button>
 			)}
@@ -1368,7 +1374,12 @@ export function ComposerBody({
 		</div>
 	) : (
 		<>
-			{editorBlock}
+			<div className="flex items-start">
+				<div className="min-w-0 flex-1">{editorBlock}</div>
+				{editorAccessory && (
+					<div className="shrink-0 pt-2.5 pr-3">{editorAccessory}</div>
+				)}
+			</div>
 			<div
 				className="flex min-h-12 items-center gap-2 px-3 pb-2.5"
 				data-composer-footer
@@ -1391,6 +1402,7 @@ export function ComposerBody({
 			{/* biome-ignore lint/a11y/noStaticElementInteractions: drag-and-drop target; keyboard users attach via the file picker button */}
 			<div
 				ref={rootRef}
+				data-design-surface="composer"
 				className={cn(
 					"relative flex flex-col bg-card ring-1 ring-border transition-shadow focus-within:ring-ring/40",
 					inline ? "rounded-[22px]" : "rounded-2xl",

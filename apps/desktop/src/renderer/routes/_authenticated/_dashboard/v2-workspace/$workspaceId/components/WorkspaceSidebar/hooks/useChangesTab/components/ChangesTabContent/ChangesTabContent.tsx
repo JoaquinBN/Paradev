@@ -48,6 +48,7 @@ interface ChangesTabContentProps {
 	onRenameBranch: (newName: string) => void;
 	canRenameBranch: boolean;
 	compact?: boolean;
+	flat?: boolean;
 }
 
 export const ChangesTabContent = memo(function ChangesTabContent({
@@ -72,6 +73,7 @@ export const ChangesTabContent = memo(function ChangesTabContent({
 	onRenameBranch,
 	canRenameBranch,
 	compact = false,
+	flat = false,
 }: ChangesTabContentProps) {
 	const [foldSignal, setFoldSignal] = useState<FoldSignal>({
 		epoch: 0,
@@ -109,6 +111,20 @@ export const ChangesTabContent = memo(function ChangesTabContent({
 	const visibleFiles = useMemo(
 		() => filterChangesetFiles(files, deferredQuery),
 		[files, deferredQuery],
+	);
+	const summary = useMemo(
+		() => ({
+			count: new Set(visibleFiles.map((file) => file.path)).size,
+			additions: visibleFiles.reduce(
+				(sum, file) => sum + (file.additions ?? 0),
+				0,
+			),
+			deletions: visibleFiles.reduce(
+				(sum, file) => sum + (file.deletions ?? 0),
+				0,
+			),
+		}),
+		[visibleFiles],
 	);
 	// From the query, not a length comparison: with zero changed files both
 	// lists are empty, and an active search must still read as a search miss.
@@ -156,8 +172,10 @@ export const ChangesTabContent = memo(function ChangesTabContent({
 				</div>
 			) : (
 				<>
-					<div className="pt-1">
+					<div className={flat ? undefined : "pt-1"}>
 						<ChangesToolbar
+							flat={flat}
+							summary={flat ? summary : undefined}
 							filter={filter}
 							onFilterChange={onFilterChange}
 							commits={commits.data?.commits ?? []}
@@ -196,6 +214,7 @@ export const ChangesTabContent = memo(function ChangesTabContent({
 				</>
 			)}
 			<ChangesFileList
+				flat={flat}
 				files={visibleFiles}
 				isFiltered={isFiltered}
 				workspaceId={workspaceId}

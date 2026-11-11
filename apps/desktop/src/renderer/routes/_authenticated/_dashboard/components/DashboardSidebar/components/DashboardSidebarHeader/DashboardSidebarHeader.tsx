@@ -14,7 +14,7 @@ import {
 	LuClock,
 	LuFileText,
 	LuGauge,
-	LuLayers,
+	LuHouse,
 	LuPlus,
 	LuPuzzle,
 	LuSearch,
@@ -156,11 +156,11 @@ export function DashboardSidebarHeader({
 										: "text-muted-foreground hover:bg-fill-hover",
 								)}
 							>
-								<LuLayers className="size-3.5" strokeWidth={1.5} />
+								<LuHouse className="size-3.5" strokeWidth={1.5} />
 							</button>
 						</TooltipTrigger>
 						<TooltipContent side="right">
-							<Trans>Workspaces</Trans>
+							<Trans>Home</Trans>
 						</TooltipContent>
 					</Tooltip>
 
@@ -357,7 +357,8 @@ export function DashboardSidebarHeader({
 
 	return (
 		<div
-			className="flex flex-col gap-px px-2 pt-2 pb-2"
+			data-design-surface="sidebar-navigation"
+			className="flex flex-col gap-1 border-b border-border px-3 pt-2 pb-3"
 			// Pin the top inset so the traffic-light row stays a constant physical
 			// distance from the window top under page zoom (see the row below).
 			style={{
@@ -407,9 +408,6 @@ export function DashboardSidebarHeader({
 				<div className="drag h-full min-w-0 flex-1" />
 			</div>
 
-			<SidebarNewWorkspaceButton />
-			<SidebarSearchButton />
-
 			<button
 				type="button"
 				onClick={navigation.openWorkspaces}
@@ -420,154 +418,184 @@ export function DashboardSidebarHeader({
 						: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
 				)}
 			>
-				<LuLayers
+				<LuHouse
 					className="size-4 shrink-0 text-muted-foreground"
 					strokeWidth={1.5}
 				/>
 				<span className="flex-1 text-left">
-					<Trans>Workspaces</Trans>
+					<Trans>Home</Trans>
 				</span>
 			</button>
 
-			<div className="relative">
-				<button
-					type="button"
-					onClick={navigation.openAutomations}
-					className={cn(
-						"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
-						navigation.isAutomationsOpen
-							? "bg-fill-selected text-foreground"
-							: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
-					)}
-				>
-					<LuClock
-						className="size-4 shrink-0 text-muted-foreground"
-						strokeWidth={1.5}
-					/>
-					<span className="flex-1 text-left">
-						<Trans>Automations</Trans>
+			<SidebarNewWorkspaceButton />
+			<SidebarSearchButton />
+
+			<details
+				data-design-surface="sidebar-tools"
+				open={
+					navigation.isAutomationsOpen ||
+					navigation.isTasksOpen ||
+					navigation.isPullRequestsOpen ||
+					navigation.isPagesOpen ||
+					navigation.isPluginsOpen ||
+					undefined
+				}
+				className="group/tools"
+			>
+				<summary className="flex h-8 cursor-pointer list-none items-center gap-2 rounded-md px-2 text-[13px] text-muted-foreground hover:bg-fill-hover [&::-webkit-details-marker]:hidden">
+					<LuPuzzle className="size-4" />
+					<span className="flex-1">
+						<Trans>Tools</Trans>
 					</span>
-				</button>
-				{myFailedCount > 0 && (
+					<span
+						aria-hidden="true"
+						className="transition-transform group-open/tools:rotate-90"
+					>
+						›
+					</span>
+				</summary>
+				<div className="mt-1 space-y-0.5 border-l border-border ml-4 pl-2">
+					<div className="relative">
+						<button
+							type="button"
+							onClick={navigation.openAutomations}
+							className={cn(
+								"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
+								navigation.isAutomationsOpen
+									? "bg-fill-selected text-foreground"
+									: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
+							)}
+						>
+							<LuClock
+								className="size-4 shrink-0 text-muted-foreground"
+								strokeWidth={1.5}
+							/>
+							<span className="flex-1 text-left">
+								<Trans>Automations</Trans>
+							</span>
+						</button>
+						{myFailedCount > 0 && (
+							<button
+								type="button"
+								onClick={navigation.openFailedAutomations}
+								title={t({
+									message: `${myFailedCount} of your automations failed their last run`,
+								})}
+								className="absolute right-2 top-1/2 flex h-4 min-w-4 -translate-y-1/2 items-center justify-center rounded-full bg-red-500/15 px-1 text-[10px] font-medium tabular-nums text-red-600 transition-colors hover:bg-red-500/25 dark:text-red-400"
+							>
+								{myFailedCount > 9 ? "9+" : myFailedCount}
+							</button>
+						)}
+					</div>
+
 					<button
 						type="button"
-						onClick={navigation.openFailedAutomations}
-						title={t({
-							message: `${myFailedCount} of your automations failed their last run`,
+						onClick={navigation.openTasks}
+						aria-label={t({
+							message: "Tasks",
 						})}
-						className="absolute right-2 top-1/2 flex h-4 min-w-4 -translate-y-1/2 items-center justify-center rounded-full bg-red-500/15 px-1 text-[10px] font-medium tabular-nums text-red-600 transition-colors hover:bg-red-500/25 dark:text-red-400"
+						aria-current={navigation.isTasksOpen ? "page" : undefined}
+						className={cn(
+							"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
+							navigation.isTasksOpen
+								? "bg-fill-selected text-foreground"
+								: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
+						)}
 					>
-						{myFailedCount > 9 ? "9+" : myFailedCount}
+						<HiOutlineClipboardDocumentList className="size-4 shrink-0 text-muted-foreground" />
+						<span className="flex-1 text-left">
+							<Trans>Tasks</Trans>
+						</span>
 					</button>
-				)}
-			</div>
 
-			<button
-				type="button"
-				onClick={navigation.openTasks}
-				aria-label={t({
-					message: "Tasks",
-				})}
-				aria-current={navigation.isTasksOpen ? "page" : undefined}
-				className={cn(
-					"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
-					navigation.isTasksOpen
-						? "bg-fill-selected text-foreground"
-						: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
-				)}
-			>
-				<HiOutlineClipboardDocumentList className="size-4 shrink-0 text-muted-foreground" />
-				<span className="flex-1 text-left">
-					<Trans>Tasks</Trans>
-				</span>
-			</button>
+					<button
+						type="button"
+						onClick={navigation.openPullRequests}
+						aria-label={t({
+							message: "Pull requests",
+						})}
+						aria-current={navigation.isPullRequestsOpen ? "page" : undefined}
+						className={cn(
+							"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
+							navigation.isPullRequestsOpen
+								? "bg-fill-selected text-foreground"
+								: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
+						)}
+					>
+						<GoGitPullRequest className="size-4 shrink-0 text-muted-foreground" />
+						<span className="flex-1 text-left">
+							<Trans>Pull requests</Trans>
+						</span>
+					</button>
 
-			<button
-				type="button"
-				onClick={navigation.openPullRequests}
-				aria-label={t({
-					message: "Pull requests",
-				})}
-				aria-current={navigation.isPullRequestsOpen ? "page" : undefined}
-				className={cn(
-					"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
-					navigation.isPullRequestsOpen
-						? "bg-fill-selected text-foreground"
-						: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
-				)}
-			>
-				<GoGitPullRequest className="size-4 shrink-0 text-muted-foreground" />
-				<span className="flex-1 text-left">
-					<Trans>Pull requests</Trans>
-				</span>
-			</button>
-
-			{isUsageInSidebarEnabled && (
-				<button
-					type="button"
-					onClick={navigation.openUsage}
-					aria-label={t({
-						message: "Usage",
-					})}
-					className="flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium text-muted-foreground transition-colors hover:bg-fill-hover hover:text-foreground"
-				>
-					<LuGauge
-						className="size-4 shrink-0 text-muted-foreground"
-						strokeWidth={1.5}
-					/>
-					<span className="flex-1 text-left">
-						<Trans>Usage</Trans>
-					</span>
-				</button>
-			)}
-
-			<button
-				type="button"
-				onClick={navigation.openPages}
-				aria-label={t({
-					message: "Pages",
-				})}
-				aria-current={navigation.isPagesOpen ? "page" : undefined}
-				className={cn(
-					"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
-					navigation.isPagesOpen
-						? "bg-fill-selected text-foreground"
-						: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
-				)}
-			>
-				<LuFileText
-					className="size-4 shrink-0 text-muted-foreground"
-					strokeWidth={1.5}
-				/>
-				<span className="flex-1 text-left">
-					<Trans>Pages</Trans>
-				</span>
-			</button>
-
-			{isPluginsEnabled && (
-				<button
-					type="button"
-					onClick={navigation.openPlugins}
-					aria-label={t({
-						message: "Plugins",
-					})}
-					aria-current={navigation.isPluginsOpen ? "page" : undefined}
-					className={cn(
-						"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
-						navigation.isPluginsOpen
-							? "bg-fill-selected text-foreground"
-							: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
+					{isUsageInSidebarEnabled && (
+						<button
+							type="button"
+							onClick={navigation.openUsage}
+							aria-label={t({
+								message: "Usage",
+							})}
+							className="flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium text-muted-foreground transition-colors hover:bg-fill-hover hover:text-foreground"
+						>
+							<LuGauge
+								className="size-4 shrink-0 text-muted-foreground"
+								strokeWidth={1.5}
+							/>
+							<span className="flex-1 text-left">
+								<Trans>Usage</Trans>
+							</span>
+						</button>
 					)}
-				>
-					<LuPuzzle
-						className="size-4 shrink-0 text-muted-foreground"
-						strokeWidth={1.5}
-					/>
-					<span className="flex-1 text-left">
-						<Trans>Plugins</Trans>
-					</span>
-				</button>
-			)}
+
+					<button
+						type="button"
+						onClick={navigation.openPages}
+						aria-label={t({
+							message: "Pages",
+						})}
+						aria-current={navigation.isPagesOpen ? "page" : undefined}
+						className={cn(
+							"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
+							navigation.isPagesOpen
+								? "bg-fill-selected text-foreground"
+								: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
+						)}
+					>
+						<LuFileText
+							className="size-4 shrink-0 text-muted-foreground"
+							strokeWidth={1.5}
+						/>
+						<span className="flex-1 text-left">
+							<Trans>Pages</Trans>
+						</span>
+					</button>
+
+					{isPluginsEnabled && (
+						<button
+							type="button"
+							onClick={navigation.openPlugins}
+							aria-label={t({
+								message: "Plugins",
+							})}
+							aria-current={navigation.isPluginsOpen ? "page" : undefined}
+							className={cn(
+								"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
+								navigation.isPluginsOpen
+									? "bg-fill-selected text-foreground"
+									: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
+							)}
+						>
+							<LuPuzzle
+								className="size-4 shrink-0 text-muted-foreground"
+								strokeWidth={1.5}
+							/>
+							<span className="flex-1 text-left">
+								<Trans>Plugins</Trans>
+							</span>
+						</button>
+					)}
+				</div>
+			</details>
 		</div>
 	);
 }

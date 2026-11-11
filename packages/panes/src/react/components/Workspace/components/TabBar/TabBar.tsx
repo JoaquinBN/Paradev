@@ -1,3 +1,4 @@
+import { useLingui } from "@lingui/react/macro";
 import { Button } from "@superset/ui/button";
 import {
 	DropdownMenu,
@@ -57,6 +58,7 @@ interface TabBarProps<TData> {
 	renderTabIcon?: (tab: Tab<TData>) => ReactNode;
 	renderAddTabMenu?: (actions: AddTabMenuActions) => ReactNode;
 	onAddTab?: () => void;
+	addTabLabel?: string;
 	renderTabBarLeading?: () => ReactNode;
 	renderTabBarTrailing?: () => ReactNode;
 	renderTabAccessory?: (tab: Tab<TData>) => ReactNode;
@@ -68,10 +70,14 @@ type PaneDragItem = { paneId: string; store?: unknown };
 function AddTabButton<_TData>({
 	renderAddTabMenu,
 	onAddTab,
+	addTabLabel,
 }: {
 	renderAddTabMenu?: (actions: AddTabMenuActions) => ReactNode;
 	onAddTab?: () => void;
+	addTabLabel?: string;
 }) {
+	const { t } = useLingui();
+	const label = addTabLabel ?? t({ message: "New Tab" });
 	const pendingActionRef = useRef<(() => void) | null>(null);
 	const isCards = usePaneAppearance() === "cards";
 	const button = isCards ? (
@@ -79,6 +85,8 @@ function AddTabButton<_TData>({
 			className={HEADER_ICON_BUTTON_CLASS}
 			type="button"
 			onClick={onAddTab}
+			aria-label={label}
+			title={label}
 		>
 			<PlusIcon className="size-4" strokeWidth={HEADER_ICON_STROKE_WIDTH} />
 		</button>
@@ -89,6 +97,8 @@ function AddTabButton<_TData>({
 			type="button"
 			variant="ghost"
 			onClick={onAddTab}
+			aria-label={label}
+			title={label}
 		>
 			<PlusIcon className="size-3.5" />
 		</Button>
@@ -140,6 +150,7 @@ export function TabBar<TData>({
 	renderTabIcon,
 	renderAddTabMenu,
 	onAddTab,
+	addTabLabel,
 	renderTabBarLeading,
 	renderTabBarTrailing,
 	renderTabAccessory,
@@ -270,6 +281,7 @@ export function TabBar<TData>({
 	return (
 		<div
 			ref={setRootRef}
+			data-design-surface="workspace-tabs"
 			// Only the empty filler right of the tabs is an
 			// Electron window-drag region — marking the whole bar `drag` and carving
 			// children out with `no-drag` loses the carve-outs once they sit inside
@@ -353,6 +365,7 @@ export function TabBar<TData>({
 							<AddTabButton
 								renderAddTabMenu={renderAddTabMenu}
 								onAddTab={onAddTab}
+								addTabLabel={addTabLabel}
 							/>
 						</div>
 					)}
@@ -376,6 +389,7 @@ export function TabBar<TData>({
 					<AddTabButton
 						renderAddTabMenu={renderAddTabMenu}
 						onAddTab={onAddTab}
+						addTabLabel={addTabLabel}
 					/>
 				</div>
 			)}

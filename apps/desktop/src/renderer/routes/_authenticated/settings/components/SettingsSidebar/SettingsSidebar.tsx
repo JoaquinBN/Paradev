@@ -51,7 +51,10 @@ export function SettingsSidebar() {
 		: null;
 
 	return (
-		<div className="w-56 flex flex-col pb-3 overflow-hidden border-r border-border bg-sidebar dark:bg-muted/35">
+		<div
+			data-design-surface="settings-sidebar"
+			className="w-56 flex flex-col pb-3 overflow-hidden border-r border-border bg-sidebar dark:bg-muted/35"
+		>
 			<div className="mb-1 flex h-12 shrink-0 items-center">
 				{isMac ? (
 					<div className="drag h-full shrink-0" style={{ width: 96 }} />

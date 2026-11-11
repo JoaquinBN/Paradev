@@ -1,4 +1,3 @@
-import { plural } from "@lingui/core/macro";
 import { Plural, Trans, useLingui } from "@lingui/react/macro";
 import {
 	DropdownMenu,
@@ -64,7 +63,6 @@ export function DashboardSidebarBulkActions({
 		createGroupFromSelection,
 		groupedWorkspaceIds,
 		moveSelectionToSection,
-		sectionMenuState,
 		sections,
 		selectedWorkspaces,
 		ungroupSelection,
@@ -129,10 +127,7 @@ export function DashboardSidebarBulkActions({
 										type="button"
 										className="flex size-6 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-fill-hover hover:text-foreground"
 										aria-label={t({
-											message: plural(selectedWorkspaces.length, {
-												one: "Move # selected workspace to a group",
-												other: "Move # selected workspaces to a group",
-											}),
+											message: "Move to section",
 										})}
 									>
 										<LuFolderInput className="size-3.5" />
@@ -140,7 +135,7 @@ export function DashboardSidebarBulkActions({
 								</DropdownMenuTrigger>
 							</TooltipTrigger>
 							<TooltipContent side="bottom">
-								<Trans>Move to group</Trans>
+								<Trans>Move to section</Trans>
 							</TooltipContent>
 						</Tooltip>
 						<DropdownMenuContent align="end" side="bottom" className="w-48">
@@ -160,19 +155,10 @@ export function DashboardSidebarBulkActions({
 									<span className="truncate">{section.name}</span>
 								</DropdownMenuItem>
 							))}
-							{sectionMenuState !== "populated" && (
-								<DropdownMenuItem disabled>
-									{sectionMenuState === "empty" ? (
-										<Trans>No groups yet</Trans>
-									) : (
-										<Trans>Loading groups…</Trans>
-									)}
-								</DropdownMenuItem>
-							)}
 							<DropdownMenuSeparator />
 							<DropdownMenuItem onSelect={createGroupFromSelection}>
 								<LuFolderPlus className="size-4" />
-								<Trans>Create new group</Trans>
+								<Trans>New section</Trans>
 							</DropdownMenuItem>
 						</DropdownMenuContent>
 					</DropdownMenu>
@@ -185,14 +171,14 @@ export function DashboardSidebarBulkActions({
 								onClick={ungroupSelection}
 								className="flex size-6 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-fill-hover hover:text-foreground disabled:pointer-events-none disabled:opacity-35"
 								aria-label={t({
-									message: "Ungroup selected workspaces",
+									message: "Move to My workspaces",
 								})}
 							>
 								<LuUngroup className="size-3.5" />
 							</button>
 						</TooltipTrigger>
 						<TooltipContent side="bottom">
-							<Trans>Ungroup</Trans>
+							<Trans>Move to My workspaces</Trans>
 						</TooltipContent>
 					</Tooltip>
 

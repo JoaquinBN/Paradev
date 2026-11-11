@@ -283,6 +283,10 @@ msgstr "{0, plural, one {#件のタスク} other {#件のタスク}}"
 msgid "{0, plural, one {# terminal running} other {# terminals running}}"
 msgstr "{0, plural, other {ターミナル # 個が実行中}}"
 
+#. placeholder {0}: items.length
+msgid "{0, plural, one {# tool call} other {# tool calls}}"
+msgstr "{0, plural, other {ツール呼び出し # 件}}"
+
 #. placeholder {0}: group.workspaceCount
 #. placeholder {0}: selectedWorkspaces.length
 msgid "{0, plural, one {# workspace} other {# workspaces}}"
@@ -357,10 +361,6 @@ msgstr "{0, plural, one {#件のオートメーションは「グループなし
 #. placeholder {0}: issues.length
 msgid "{0, plural, one {Linear issue} other {Linear issues}}"
 msgstr "{0, plural, one {Linear issue} other {Linear issue}}"
-
-#. placeholder {0}: selectedWorkspaces.length
-msgid "{0, plural, one {Move # selected workspace to a group} other {Move # selected workspaces to a group}}"
-msgstr "{0, plural, one {選択した#件のワークスペースをグループに移動} other {選択した#件のワークスペースをグループに移動}}"
 
 #. placeholder {0}: move.chats.total - move.chats.ready - move.chats.failed
 msgid "{0, plural, one {Moving # chat here…} other {Moving # chats here…}}"
@@ -1955,6 +1955,9 @@ msgstr "アクション"
 msgid "Actions for {0}"
 msgstr "{0}の操作"
 
+msgid "Actions for {name}"
+msgstr "{name} の操作"
+
 msgid "Active"
 msgstr "有効"
 
@@ -3516,6 +3519,9 @@ msgstr "全般"
 msgid "Behind main by ? commits, needs rebase"
 msgstr "mainより?コミット遅れています。リベースが必要です"
 
+msgid "Behind remote"
+msgstr "リモートより遅れています"
+
 msgid "Being built right now."
 msgstr "いま作っています。"
 
@@ -4325,6 +4331,9 @@ msgstr "フォルダを選択"
 msgid "Choose a parent directory"
 msgstr "親ディレクトリを選択"
 
+msgid "Choose a project and describe your task. Chats and changes stay together in the workspace."
+msgstr "プロジェクトを選び、タスクを説明してください。チャットと変更はワークスペース内にまとめられます。"
+
 msgid "Choose a project from GitHub issues before opening an issue."
 msgstr "issueを開く前に、GitHub issueでプロジェクトを選択してください。"
 
@@ -4979,6 +4988,9 @@ msgstr "コミットメッセージ"
 msgid "Commit message (optional)"
 msgstr "コミットメッセージ（任意）"
 
+msgid "Commit your changes, then add the pull request details."
+msgstr "変更をコミットしてから、プルリクエストの詳細を追加してください。"
+
 msgid "Commits"
 msgstr "コミット"
 
@@ -5020,6 +5032,9 @@ msgstr "会社のメールアドレス"
 
 msgid "Compare"
 msgstr "比較"
+
+msgid "Compare changes"
+msgstr "変更を比較"
 
 msgid "Compare plans"
 msgstr "プランを比較"
@@ -6411,9 +6426,6 @@ msgstr "手動で作成"
 msgid "Create Merge Commit"
 msgstr "マージコミットを作成"
 
-msgid "Create new group"
-msgstr "新しいグループを作成"
-
 msgid "Create new project"
 msgstr "新規プロジェクトを作成"
 
@@ -7097,6 +7109,9 @@ msgstr "深さ · セッションあたりのトークン数"
 msgid "descending"
 msgstr "降順"
 
+msgid "Describe a task, review a change, or investigate a bug."
+msgstr "タスクを説明したり、変更をレビューしたり、不具合を調査したりできます。"
+
 msgid "Describe the change."
 msgstr "変更内容を伝えます。"
 
@@ -7584,6 +7599,9 @@ msgstr "サポート返信を3件下書き"
 
 msgid "Drag <0>Wanker</0> into your <1>Applications</1> folder"
 msgstr "<0>Wanker</0> を<1>アプリケーション</1>フォルダにドラッグ"
+
+msgid "Drag a workspace here or use Move to section."
+msgstr "ここにワークスペースをドラッグするか、「セクションに移動」を使ってください。"
 
 msgid "Drag to reorder"
 msgstr "ドラッグして並べ替え"
@@ -8841,6 +8859,9 @@ msgstr "@{normalizedSearch}で絞り込む"
 msgid "Filter by author: {label}"
 msgstr "作成者で絞り込み: {label}"
 
+msgid "Filter by project"
+msgstr "プロジェクトで絞り込む"
+
 msgid "Filter by reviews"
 msgstr "レビューで絞り込む"
 
@@ -9721,6 +9742,9 @@ msgstr "パネルを隠す"
 
 msgid "Hide Preview"
 msgstr "プレビューを隠す"
+
+msgid "Hide project"
+msgstr "プロジェクトを非表示"
 
 msgid "Hide pull request list"
 msgstr "プルリクエスト一覧を隠す"
@@ -11344,9 +11368,6 @@ msgstr "フォントを読み込み中..."
 msgid "Loading GitHub details"
 msgstr "GitHubの詳細を読み込み中"
 
-msgid "Loading groups…"
-msgstr "グループを読み込み中…"
-
 msgid "Loading issue…"
 msgstr "Issueを読み込み中…"
 
@@ -12095,9 +12116,6 @@ msgstr "ソフトウェアの歴史のほとんど"
 msgid "Move"
 msgstr "移動"
 
-msgid "Move {count} to Group"
-msgstr "{count}件をグループへ移動"
-
 msgid "Move {name} to background"
 msgstr "{name} をバックグラウンドに移動"
 
@@ -12131,11 +12149,14 @@ msgstr "グループへ移動"
 msgid "Move to group…"
 msgstr "グループへ移動…"
 
+msgid "Move to My workspaces"
+msgstr "自分のワークスペースに移動"
+
 msgid "Move to Right Side"
 msgstr "右側に移動"
 
-msgid "Move to Tab"
-msgstr "タブに移動"
+msgid "Move to section"
+msgstr "セクションに移動"
 
 msgid "Move your agents before {shutdownDate}."
 msgstr "{shutdownDate}までにエージェントを移行しましょう。"
@@ -12189,6 +12210,9 @@ msgstr "マイキーワード"
 
 msgid "My Tasks"
 msgstr "マイタスク"
+
+msgid "My workspaces"
+msgstr "自分のワークスペース"
 
 msgid "Mystery Machinist"
 msgstr "謎の機械工"
@@ -12352,12 +12376,6 @@ msgstr "新規フォルダ"
 msgid "New Folder..."
 msgstr "新規フォルダ..."
 
-msgid "New group"
-msgstr "新規グループ"
-
-msgid "New group from workspace"
-msgstr "ワークスペースから新規グループ"
-
 msgid "New group name…"
 msgstr "新しいグループ名…"
 
@@ -12381,6 +12399,12 @@ msgstr "新規プロジェクト"
 
 msgid "New push to branch"
 msgstr "ブランチへの新規プッシュ"
+
+msgid "New section"
+msgstr "新しいセクション"
+
+msgid "New section from workspace"
+msgstr "ワークスペースから新しいセクションを作成"
 
 msgid "New session"
 msgstr "新規セッション"
@@ -12730,6 +12754,9 @@ msgstr "検索に一致するファイルがありません"
 msgid "No fonts found."
 msgstr "フォントが見つかりません。"
 
+msgid "No Git remote"
+msgstr "Git リモートがありません"
+
 msgid "No git remote detected"
 msgstr "gitリモートが検出されませんでした"
 
@@ -12738,9 +12765,6 @@ msgstr "グループなし"
 
 msgid "No grouping"
 msgstr "グループ化なし"
-
-msgid "No groups yet"
-msgstr "グループはまだありません"
 
 msgid "No Headings"
 msgstr "見出しがありません"
@@ -14276,6 +14300,9 @@ msgstr "組織のURLを更新しました!"
 #. placeholder {0}: selectedOrg.name
 msgid "Organization: <0>{0}</0>"
 msgstr "組織: <0>{0}</0>"
+
+msgid "Organize workspaces across projects. Their files and chats stay in place."
+msgstr "プロジェクトをまたいでワークスペースを整理します。ファイルやチャットの場所は変わりません。"
 
 msgid "Organize your work into teams. Tasks and integrations can sync per-team."
 msgstr "作業をチームに整理します。タスクと連携はチームごとに同期できます。"
@@ -15984,6 +16011,9 @@ msgstr "リポジトリを削除"
 msgid "Remove script"
 msgstr "スクリプトを削除"
 
+msgid "Remove section"
+msgstr "セクションを削除"
+
 msgid "Remove team member?"
 msgstr "チームメンバーを削除しますか?"
 
@@ -16056,6 +16086,9 @@ msgstr "ホストの名前を変更"
 
 msgid "Rename page"
 msgstr "ページの名前を変更"
+
+msgid "Rename section"
+msgstr "セクション名を変更"
 
 msgid "Rename session"
 msgstr "セッションの名前を変更"
@@ -17294,6 +17327,15 @@ msgstr "Secondary"
 msgid "Secret Shift Lead"
 msgstr "秘密のシフトリーダー"
 
+msgid "Section"
+msgstr "セクション"
+
+msgid "Section actions"
+msgstr "セクションの操作"
+
+msgid "Section name"
+msgstr "セクション名"
+
 msgid "Sections"
 msgstr "セクション"
 
@@ -18504,9 +18546,6 @@ msgstr "分割ボタン: 既定のアプリでワークツリーを開く + ア�
 msgid "Split Down"
 msgstr "下に分割"
 
-msgid "Split Horizontally"
-msgstr "水平に分割"
-
 msgid "split pane"
 msgstr "分割ペイン"
 
@@ -18537,14 +18576,8 @@ msgstr "現在のペインを下方向に分割する"
 msgid "Split the current pane to the right"
 msgstr "現在のペインを右方向に分割する"
 
-msgid "Split Vertically"
-msgstr "垂直に分割"
-
 msgid "Split view"
 msgstr "分割表示"
-
-msgid "Split with Desktop"
-msgstr "デスクトップで分割"
 
 msgid "Split with Mobile Simulator"
 msgstr "モバイルシミュレーターで分割"
@@ -20954,12 +20987,6 @@ msgstr "直前のワークスペースのアーカイブまたはチャットの
 msgid "Unfollow thread"
 msgstr "スレッドのフォローを解除"
 
-msgid "Ungroup"
-msgstr "グループ解除"
-
-msgid "Ungroup selected workspaces"
-msgstr "選択したワークスペースをグループ解除"
-
 msgid "Unified view"
 msgstr "統合表示"
 
@@ -22327,6 +22354,9 @@ msgstr "ワークスペース設定"
 
 msgid "Workspace views"
 msgstr "ワークスペースのビュー"
+
+msgid "Workspace without a project"
+msgstr "プロジェクトなしのワークスペース"
 
 msgid "Workspace worktree not available"
 msgstr "ワークスペースのworktreeを利用できません"

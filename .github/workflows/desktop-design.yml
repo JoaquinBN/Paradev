@@ -1,0 +1,121 @@
+name: Desktop design
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "23 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: desktop-design-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6
+        with:
+          bun-version-file: .bun-version
+      - run: bun test scripts/desktop-design
+      - run: bun scripts/desktop-design/check.ts
+
+  upstream:
+    if: github.repository == 'JoaquinBN/Wanker' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6
+        with:
+          bun-version-file: .bun-version
+      - name: Prepare upstream update
+        id: merge
+        shell: bash
+        run: |
+          set -euo pipefail
+          git remote add upstream https://github.com/WankerAI/Wanker.git
+          git fetch upstream main
+          if git merge-base --is-ancestor upstream/main HEAD; then
+            echo "Upstream is already included." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          branch="fork/conductor-sync-$(git rev-parse --short=12 upstream/main)"
+          if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
+            git fetch origin "$branch"
+            if ! git merge-base --is-ancestor HEAD FETCH_HEAD; then
+              echo "Update branch needs a manual refresh against main: $branch" >> "$GITHUB_STEP_SUMMARY"
+              exit 1
+            fi
+            git switch -c "$branch" FETCH_HEAD
+            echo "branch=$branch" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c "$branch"
+          if ! git merge --no-edit upstream/main; then
+            echo 'Upstream needs a manual merge. No branch was published.' >> "$GITHUB_STEP_SUMMARY"
+            git diff --name-only --diff-filter=U >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+      - name: Check merged design contracts
+        if: steps.merge.outputs.branch != ''
+        run: |
+          bun test scripts/desktop-design
+          bun scripts/desktop-design/check.ts
+      - name: Install dependencies
+        if: steps.merge.outputs.branch != ''
+        run: bun install --frozen-lockfile --ignore-scripts
+      - name: Check merged desktop and chat types
+        if: steps.merge.outputs.branch != ''
+        run: |
+          bun run --filter=@superset/i18n build
+          bun run --filter=@superset/host-service build:types
+          bun run --filter=@superset/desktop typecheck
+          bun run --filter=@superset/chat-ui typecheck
+          bun run --filter=@superset/panes typecheck
+      - name: Check workspace navigation behavior
+        if: steps.merge.outputs.branch != ''
+        working-directory: apps/desktop
+        run: >-
+          bun test
+          'src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/openTerminalDock'
+          'src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/openDiffPaneInStore'
+          'src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/openChangesSidebarInStore'
+          'src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useWorkspaceFileNavigation'
+      - name: Open reviewable update
+        if: steps.merge.outputs.branch != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SYNC_BRANCH: ${{ steps.merge.outputs.branch }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git push origin "$SYNC_BRANCH"
+          if gh pr view "$SYNC_BRANCH" --json state --jq .state | grep -q '^OPEN$'; then
+            echo "The update PR is already open." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          cat > "$RUNNER_TEMP/design-sync.md" <<'BODY'
+          Incorporates the latest Wanker upstream changes while retaining the desktop design layer.
+
+          Design contracts, their regression tests, and desktop/chat typechecks passed on the merged tree. A human still needs to review the changed screens and exercise workspace, terminal, editor, and agent flows before merging. These checks do not prove visual or runtime compatibility.
+
+          GitHub may not trigger other PR workflows for a PR created by GITHUB_TOKEN. Run the full repository checks before merging. This automation never merges its own PR.
+          BODY
+          gh pr create --base main --head "$SYNC_BRANCH" --title 'Sync Wanker upstream with desktop design' --body-file "$RUNNER_TEMP/design-sync.md"

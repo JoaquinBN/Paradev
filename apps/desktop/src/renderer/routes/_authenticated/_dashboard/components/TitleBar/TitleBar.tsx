@@ -76,6 +76,7 @@ export function TitleBar() {
 
 	return (
 		<div
+			data-design-surface="titlebar"
 			className="flex h-11 shrink-0 items-stretch"
 			style={isMac ? { height: `${ROW_HEIGHT / zoomFactor}px` } : undefined}
 		>

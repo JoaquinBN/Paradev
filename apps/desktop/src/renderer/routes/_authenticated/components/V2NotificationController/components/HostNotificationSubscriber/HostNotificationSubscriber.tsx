@@ -18,6 +18,7 @@ export interface HostNotificationWorkspaceState {
 	projectName?: string;
 	paneLayout: WorkspaceState<PaneViewerData> | null;
 	rightPaneLayout: WorkspaceState<PaneViewerData> | null;
+	terminalPaneLayout?: WorkspaceState<PaneViewerData> | null;
 }
 
 export function HostNotificationSubscriber({
@@ -50,6 +51,7 @@ export function HostNotificationSubscriber({
 				payload,
 				paneLayout: workspace.paneLayout,
 				rightPaneLayout: workspace.rightPaneLayout,
+				terminalPaneLayout: workspace.terminalPaneLayout,
 				volume,
 				muted,
 			});

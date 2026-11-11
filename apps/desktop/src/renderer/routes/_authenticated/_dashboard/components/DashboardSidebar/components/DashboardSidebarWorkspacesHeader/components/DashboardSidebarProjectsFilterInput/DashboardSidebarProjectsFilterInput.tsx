@@ -7,6 +7,7 @@ interface DashboardSidebarProjectsFilterInputProps {
 	query: string;
 	onQueryChange: (query: string) => void;
 	isExpanded: boolean;
+	showTrigger?: boolean;
 	onExpandedChange: (expanded: boolean) => void;
 }
 
@@ -19,6 +20,7 @@ export function DashboardSidebarProjectsFilterInput({
 	query,
 	onQueryChange,
 	isExpanded,
+	showTrigger = true,
 	onExpandedChange,
 }: DashboardSidebarProjectsFilterInputProps) {
 	const { t } = useLingui();
@@ -38,6 +40,7 @@ export function DashboardSidebarProjectsFilterInput({
 	});
 
 	if (!isExpanded) {
+		if (!showTrigger) return null;
 		return (
 			<Tooltip delayDuration={700}>
 				<TooltipTrigger asChild>

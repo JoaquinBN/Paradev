@@ -30,6 +30,7 @@ export type BaseBranchSource = "local" | "remote-tracking";
 export type WorkspaceCheckout = "worktree" | "local";
 
 export interface NewWorkspaceDraft {
+	sectionTag: string | null;
 	selectedProjectId: string | null;
 	/** `owner/name`, so the pick can follow its repository to another host. */
 	selectedProjectRepository: string | null;
@@ -64,6 +65,7 @@ interface NewWorkspaceDraftState extends NewWorkspaceDraft {
 function buildInitialDraft(): NewWorkspaceDraft {
 	return {
 		selectedProjectId: null,
+		sectionTag: null,
 		selectedProjectRepository: null,
 		isSession: false,
 		checkout: useV2WorkspaceCreateDefaultsStore.getState().checkout,

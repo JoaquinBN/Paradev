@@ -36,6 +36,10 @@ import {
 	PaneLayoutOpError,
 } from "./utils/applyPaneLayoutOp";
 import { describePaneLayout } from "./utils/describePaneLayout";
+import {
+	joinSidebarLayouts,
+	splitSidebarLayout,
+} from "./utils/terminalDockLayout";
 
 type LayoutState = WorkspaceState<PaneViewerData>;
 
@@ -45,7 +49,7 @@ const EMPTY_LAYOUT: LayoutState = {
 	activeTabId: null,
 };
 
-const SLOTS: Record<PaneArea, PaneLayoutSlot> = {
+const SLOTS: Record<PaneArea, "paneLayout" | "rightPaneLayout"> = {
 	main: "paneLayout",
 	sidebar: "rightPaneLayout",
 };
@@ -91,7 +95,7 @@ function forgetClosedChat(
 }
 
 function readArea(
-	row: { paneLayout?: unknown; rightPaneLayout?: unknown } | undefined,
+	row: Partial<Record<PaneLayoutSlot, unknown>> | undefined,
 	workspaceId: string,
 	area: PaneArea,
 ): LayoutState {
@@ -140,9 +144,19 @@ function runPaneLayoutOp(
 			"This workspace has no pane layout in the desktop app yet. Open it there once, then retry.",
 		);
 	}
+	const dockStore = getV2PaneLayoutStore(workspaceId, "terminalPaneLayout");
+	const dock: LayoutState =
+		dockStore?.getState() ??
+		(row?.terminalPaneLayout as LayoutState | undefined) ??
+		EMPTY_LAYOUT;
+	const sidebar = readArea(row, workspaceId, "sidebar");
 	const previous: PaneAreas = {
 		main: readArea(row, workspaceId, "main"),
-		sidebar: readArea(row, workspaceId, "sidebar"),
+		sidebar: joinSidebarLayouts(
+			sidebar,
+			dock,
+			document.activeElement?.closest('[data-pane-area="terminal"]') != null,
+		),
 	};
 	const outcome = applyPaneLayoutOp(previous, op);
 	backgroundClosedTerminal(previous, workspaceId, op);
@@ -150,8 +164,24 @@ function runPaneLayoutOp(
 
 	if (op.type !== "list") {
 		for (const area of ["sidebar", "main"] as const) {
-			const next = outcome.areas[area];
+			let next = outcome.areas[area];
 			if (next === previous[area]) continue;
+			if (area === "sidebar") {
+				const separated = splitSidebarLayout(next, { sidebar, dock });
+				if (dockStore) dockStore.getState().replaceState(separated.dock);
+				else if (row)
+					collections.v2WorkspaceLocalState.update(workspaceId, (draft) => {
+						draft.terminalPaneLayout = separated.dock;
+					});
+				next = separated.sidebar;
+				const focusedPaneId = outcome.paneId;
+				if (
+					op.type === "focus" &&
+					focusedPaneId &&
+					separated.dock.tabs.some((tab) => tab.panes[focusedPaneId])
+				)
+					dockStore?.getState().focusPane(focusedPaneId);
+			}
 			const mounted = getV2PaneLayoutStore(workspaceId, SLOTS[area]);
 			if (mounted) {
 				mounted.getState().replaceState(next);

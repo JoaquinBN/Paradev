@@ -21,18 +21,27 @@ type PaneLayout = WorkspaceState<PaneViewerData> | null | undefined;
 interface LocalPaneLayouts {
 	paneLayout: PaneLayout;
 	rightPaneLayout: PaneLayout;
+	terminalPaneLayout?: PaneLayout;
+	terminalDockVisible?: boolean;
 }
 
 function getLocalPaneLayouts({
 	workspaceId,
 	paneLayout,
 	rightPaneLayout,
+	terminalPaneLayout,
 }: {
 	workspaceId: string;
 	paneLayout: PaneLayout;
 	rightPaneLayout?: PaneLayout;
+	terminalPaneLayout?: PaneLayout;
 }): LocalPaneLayouts {
+	const dock =
+		typeof document === "undefined"
+			? null
+			: document.querySelector('[data-design-surface="terminal-dock"]');
 	return {
+		terminalDockVisible: !!dock && !dock.closest("[inert]"),
 		paneLayout: paneLayout
 			? applyRememberedV2PaneSelection(workspaceId, paneLayout)
 			: paneLayout,
@@ -42,6 +51,12 @@ function getLocalPaneLayouts({
 					rightPaneLayout,
 				)
 			: rightPaneLayout,
+		terminalPaneLayout: terminalPaneLayout
+			? applyRememberedV2PaneSelection(
+					`${workspaceId}:terminalPaneLayout`,
+					terminalPaneLayout,
+				)
+			: terminalPaneLayout,
 	};
 }
 
@@ -59,6 +74,7 @@ export function handleV2AgentLifecycleEvent({
 	payload,
 	paneLayout,
 	rightPaneLayout,
+	terminalPaneLayout,
 	volume,
 	muted,
 }: {
@@ -68,6 +84,7 @@ export function handleV2AgentLifecycleEvent({
 	payload: AgentLifecyclePayload;
 	paneLayout: PaneLayout;
 	rightPaneLayout?: PaneLayout;
+	terminalPaneLayout?: PaneLayout;
 	volume: number;
 	muted: boolean;
 }): void {
@@ -75,6 +92,7 @@ export function handleV2AgentLifecycleEvent({
 		workspaceId,
 		paneLayout,
 		rightPaneLayout,
+		terminalPaneLayout,
 	});
 	const target = resolveV2NotificationTarget({
 		workspaceId,
@@ -117,16 +135,19 @@ export function markV2AgentLifecycleTargetSeen({
 	payload,
 	paneLayout,
 	rightPaneLayout,
+	terminalPaneLayout,
 }: {
 	workspaceId: string;
 	payload: AgentLifecyclePayload;
 	paneLayout: PaneLayout;
 	rightPaneLayout?: PaneLayout;
+	terminalPaneLayout?: PaneLayout;
 }): void {
 	const layouts = getLocalPaneLayouts({
 		workspaceId,
 		paneLayout,
 		rightPaneLayout,
+		terminalPaneLayout,
 	});
 	const target = resolveV2NotificationTarget({
 		workspaceId,

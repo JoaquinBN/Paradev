@@ -42,6 +42,7 @@ export function DashboardSidebarSectionHeader({
 			// The visible label is the accessible name; keep it when the label is
 			// hidden so the toggle is never an unnamed button.
 			aria-label={label}
+			aria-expanded={!isCollapsed}
 			onClick={() => toggle(section)}
 			onKeyDown={(event) => {
 				if (event.key === "Enter" || event.key === " ") {
@@ -49,7 +50,7 @@ export function DashboardSidebarSectionHeader({
 					toggle(section);
 				}
 			}}
-			className="group flex h-7 w-full shrink-0 items-center gap-1.5 pl-4 pr-2 text-[10px] font-semibold uppercase tracking-[0.075em] text-muted-foreground transition-colors"
+			className="group flex h-7 w-full shrink-0 items-center gap-1.5 pl-4 pr-2 text-xs font-medium text-muted-foreground transition-colors"
 		>
 			{!labelHidden && (
 				<>

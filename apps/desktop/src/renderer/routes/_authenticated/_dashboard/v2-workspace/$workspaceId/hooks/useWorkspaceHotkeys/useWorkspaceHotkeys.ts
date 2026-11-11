@@ -1,7 +1,5 @@
-import type { CreatePaneInput } from "@superset/panes";
 import {
 	type FocusDirection,
-	getPaneParentDirection,
 	getSpatialNeighborPaneId,
 	type PaneRegistry,
 	type WorkspaceProps,
@@ -17,12 +15,9 @@ import {
 } from "../../components/RightPaneNewTab";
 import {
 	type BrowserPaneData,
-	type DesktopPaneData,
-	type MobilePaneData,
 	NEW_TAB_PANE_KIND,
 	type PaneTarget,
 	type PaneViewerData,
-	type TerminalPaneData,
 } from "../../types";
 import { cycleActiveTab } from "../../utils/cycleActiveTab";
 import { replaceNewTabPane } from "../../utils/replaceNewTabPane";
@@ -30,7 +25,6 @@ import { useDefaultBrowserUrl } from "../useDefaultBrowserUrl";
 import type { TerminalLauncher } from "../useV2TerminalLauncher";
 
 export function useWorkspaceHotkeys({
-	store,
 	viewer,
 	matchedPresets,
 	executePreset,
@@ -39,10 +33,7 @@ export function useWorkspaceHotkeys({
 	paneRegistry,
 	launcher,
 	getCloseTarget,
-	isSandbox,
-	isMobilePaneEnabled,
 }: {
-	store: StoreApi<WorkspaceStore<PaneViewerData>>;
 	viewer: PaneTarget;
 	matchedPresets: V2TerminalPresetRow[];
 	executePreset: (preset: V2TerminalPresetRow) => void | Promise<void>;
@@ -50,8 +41,6 @@ export function useWorkspaceHotkeys({
 	openChangesPane: () => void;
 	paneRegistry: PaneRegistry<PaneViewerData>;
 	launcher: TerminalLauncher;
-	isSandbox: boolean;
-	isMobilePaneEnabled: boolean;
 	getCloseTarget: () => {
 		store: StoreApi<WorkspaceStore<PaneViewerData>>;
 		onBeforeCloseTab?: WorkspaceProps<PaneViewerData>["onBeforeCloseTab"];
@@ -145,18 +134,18 @@ export function useWorkspaceHotkeys({
 		}
 	});
 
-	useHotkey("PREV_TAB", () => cycleActiveTab(store, -1));
-	useHotkey("NEXT_TAB", () => cycleActiveTab(store, 1));
-	useHotkey("PREV_TAB_ALT", () => cycleActiveTab(store, -1));
-	useHotkey("NEXT_TAB_ALT", () => cycleActiveTab(store, 1));
+	useHotkey("PREV_TAB", () => cycleActiveTab(getCloseTarget().store, -1));
+	useHotkey("NEXT_TAB", () => cycleActiveTab(getCloseTarget().store, 1));
+	useHotkey("PREV_TAB_ALT", () => cycleActiveTab(getCloseTarget().store, -1));
+	useHotkey("NEXT_TAB_ALT", () => cycleActiveTab(getCloseTarget().store, 1));
 
 	const switchToTab = useCallback(
 		(index: number) => {
-			const state = store.getState();
+			const state = getCloseTarget().store.getState();
 			const tab = state.tabs[index];
 			if (tab) state.setActiveTab(tab.id);
 		},
-		[store],
+		[getCloseTarget],
 	);
 
 	useHotkey("JUMP_TO_TAB_1", () => switchToTab(0));
@@ -173,7 +162,7 @@ export function useWorkspaceHotkeys({
 
 	const moveFocusDirectional = useCallback(
 		(dir: FocusDirection) => {
-			const state = store.getState();
+			const state = getCloseTarget().store.getState();
 			const tab = state.getActiveTab();
 			if (!tab || !tab.activePaneId) return;
 			const neighbor = getSpatialNeighborPaneId(
@@ -183,126 +172,13 @@ export function useWorkspaceHotkeys({
 			);
 			if (neighbor) state.setActivePane({ tabId: tab.id, paneId: neighbor });
 		},
-		[store],
+		[getCloseTarget],
 	);
 
 	useHotkey("FOCUS_PANE_LEFT", () => moveFocusDirectional("left"));
 	useHotkey("FOCUS_PANE_RIGHT", () => moveFocusDirectional("right"));
 	useHotkey("FOCUS_PANE_UP", () => moveFocusDirectional("up"));
 	useHotkey("FOCUS_PANE_DOWN", () => moveFocusDirectional("down"));
-
-	useHotkey("SPLIT_AUTO", () => {
-		const state = store.getState();
-		const active = state.getActivePane();
-		if (!active) return;
-		const tab = state.getActiveTab();
-		const parentDirection = tab
-			? getPaneParentDirection(tab.layout, active.pane.id)
-			: null;
-		const position = parentDirection === "horizontal" ? "bottom" : "right";
-		state.splitPane({
-			tabId: active.tabId,
-			paneId: active.pane.id,
-			position,
-			newPane: {
-				kind: "terminal",
-				data: {
-					terminalId: launcher.mint(),
-					createOnAttach: true,
-				} as TerminalPaneData,
-			},
-		});
-	});
-
-	useHotkey("SPLIT_RIGHT", () => {
-		const state = store.getState();
-		const active = state.getActivePane();
-		if (!active) return;
-		state.splitPane({
-			tabId: active.tabId,
-			paneId: active.pane.id,
-			position: "right",
-			newPane: {
-				kind: "terminal",
-				data: {
-					terminalId: launcher.mint(),
-					createOnAttach: true,
-				} as TerminalPaneData,
-			},
-		});
-	});
-
-	useHotkey("SPLIT_DOWN", () => {
-		const state = store.getState();
-		const active = state.getActivePane();
-		if (!active) return;
-		state.splitPane({
-			tabId: active.tabId,
-			paneId: active.pane.id,
-			position: "bottom",
-			newPane: {
-				kind: "terminal",
-				data: {
-					terminalId: launcher.mint(),
-					createOnAttach: true,
-				} as TerminalPaneData,
-			},
-		});
-	});
-
-	const splitWithViewerPane = useCallback(
-		(newPane: CreatePaneInput<PaneViewerData>) => {
-			if (viewer.store !== store) {
-				viewer.reveal();
-				viewer.store.getState().openPane({ pane: newPane });
-				return;
-			}
-			const state = store.getState();
-			const active = state.getActivePane();
-			if (!active) return;
-			state.splitPane({
-				tabId: active.tabId,
-				paneId: active.pane.id,
-				position: "right",
-				newPane,
-			});
-		},
-		[store, viewer],
-	);
-
-	useHotkey(
-		"SPLIT_WITH_DESKTOP",
-		() =>
-			splitWithViewerPane({
-				kind: "desktop",
-				data: { kind: "desktop" } as DesktopPaneData,
-			}),
-		{ enabled: isSandbox },
-	);
-
-	useHotkey(
-		"SPLIT_WITH_MOBILE",
-		() =>
-			splitWithViewerPane({
-				kind: "mobile",
-				data: { kind: "mobile" } as MobilePaneData,
-			}),
-		{ enabled: isMobilePaneEnabled },
-	);
-
-	useHotkey("SPLIT_WITH_BROWSER", () =>
-		splitWithViewerPane({
-			kind: "browser",
-			data: { url: defaultBrowserUrl } as BrowserPaneData,
-		}),
-	);
-
-	useHotkey("EQUALIZE_PANE_SPLITS", () => {
-		const state = store.getState();
-		const tab = state.getActiveTab();
-		if (!tab) return;
-		state.equalizeTab({ tabId: tab.id });
-	});
 
 	// --- Preset hotkeys ---
 

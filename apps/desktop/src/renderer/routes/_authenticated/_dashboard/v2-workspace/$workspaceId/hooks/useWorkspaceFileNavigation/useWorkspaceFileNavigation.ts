@@ -26,10 +26,14 @@ interface PendingReveal {
 
 export function useWorkspaceFileNavigation({
 	viewer,
+	placement = "pane",
 	setRightSidebarOpen,
+	onReveal,
 }: {
 	viewer: PaneTarget;
+	placement?: "pane" | "tab";
 	setRightSidebarOpen: V2UserPreferencesApi["setRightSidebarOpen"];
+	onReveal?: () => void;
 }): {
 	openFilePane: OpenFile;
 	openFilePaneFromTreeClick: OpenFile;
@@ -110,9 +114,10 @@ export function useWorkspaceFileNavigation({
 				absoluteFilePath,
 				openInNewTab,
 				position,
+				placement,
 			);
 		},
-		[viewer, worktreePath, recordView],
+		[viewer, worktreePath, recordView, placement],
 	);
 
 	// User-facing file opens from the workspace sidebar layer the VS-Code-style
@@ -170,14 +175,17 @@ export function useWorkspaceFileNavigation({
 				revealInFinder(path, { isDirectory });
 				return;
 			}
-			setRightSidebarOpen(true);
-			// Switch the sidebar's tab too, or the reveal lands behind Changes/Review.
-			setWorkspaceSidebarTab(collections, workspace.id, "files");
+			if (onReveal) onReveal();
+			else {
+				setRightSidebarOpen(true);
+				setWorkspaceSidebarTab(collections, workspace.id, "files");
+			}
 			setSelectedFilePath(path);
 			setPendingReveal({ path, isDirectory });
 		},
 		[
 			setRightSidebarOpen,
+			onReveal,
 			worktreePath,
 			revealInFinder,
 			collections,

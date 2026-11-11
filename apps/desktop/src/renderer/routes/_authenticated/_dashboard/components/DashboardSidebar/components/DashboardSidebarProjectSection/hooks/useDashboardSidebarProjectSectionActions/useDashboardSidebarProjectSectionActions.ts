@@ -15,6 +15,7 @@ import { getHostServiceClientByUrl } from "renderer/lib/host-service-client";
 import { electronTrpcClient } from "renderer/lib/trpc-client";
 import { useDashboardSidebarSectionRename } from "renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSectionRenameContext";
 import { useDashboardSidebarState } from "renderer/routes/_authenticated/hooks/useDashboardSidebarState";
+import { useNavigationSections } from "renderer/routes/_authenticated/hooks/useNavigationSections";
 import { useProjectDeletionHosts } from "renderer/routes/_authenticated/hooks/useProjectDeletionHosts";
 import { useHostWorkspaces } from "renderer/routes/_authenticated/providers/HostWorkspacesProvider";
 import { useLocalHostService } from "renderer/routes/_authenticated/providers/LocalHostServiceProvider";
@@ -30,6 +31,7 @@ export function useDashboardSidebarProjectSectionActions({
 	project,
 }: UseDashboardSidebarProjectSectionActionsOptions) {
 	const { t } = useLingui();
+	const navigationSections = useNavigationSections();
 	const openNewWorkspace = useOpenNewWorkspace();
 	const openNewWorkspaceForHost = useOpenNewWorkspaceForHost();
 	const navigate = useNavigate();
@@ -297,6 +299,10 @@ export function useDashboardSidebarProjectSectionActions({
 	};
 
 	const handleNewSection = () => {
+		if (navigationSections) {
+			navigationSections.create();
+			return;
+		}
 		const sectionId = createSection(project.id);
 		requestSectionRename(sectionId);
 		if (project.isCollapsed) {

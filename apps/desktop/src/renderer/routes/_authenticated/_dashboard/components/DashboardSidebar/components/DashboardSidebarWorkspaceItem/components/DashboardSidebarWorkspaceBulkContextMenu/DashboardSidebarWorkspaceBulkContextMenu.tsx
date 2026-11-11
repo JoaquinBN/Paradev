@@ -37,7 +37,6 @@ export function DashboardSidebarWorkspaceBulkContextMenu({
 		createGroupFromSelection,
 		groupedWorkspaceIds,
 		moveSelectionToSection,
-		sectionMenuState,
 		sections,
 		selectedWorkspaces,
 		ungroupSelection,
@@ -60,7 +59,7 @@ export function DashboardSidebarWorkspaceBulkContextMenu({
 				<ContextMenuSub>
 					<ContextMenuSubTrigger>
 						<LuArrowRightLeft className="size-4 mr-2" />
-						<Trans>Move {count} to Group</Trans>
+						<Trans>Move to section</Trans>
 					</ContextMenuSubTrigger>
 					<ContextMenuSubContent>
 						{sections?.map((section) => (
@@ -77,26 +76,17 @@ export function DashboardSidebarWorkspaceBulkContextMenu({
 								{section.name}
 							</ContextMenuItem>
 						))}
-						{sectionMenuState !== "populated" && (
-							<ContextMenuItem disabled>
-								{sectionMenuState === "empty" ? (
-									<Trans>No groups yet</Trans>
-								) : (
-									<Trans>Loading groups…</Trans>
-								)}
-							</ContextMenuItem>
-						)}
 						<ContextMenuSeparator />
 						<ContextMenuItem onSelect={createGroupFromSelection}>
 							<LuFolderPlus className="size-4 mr-2" />
-							<Trans>Create new group</Trans>
+							<Trans>New section</Trans>
 						</ContextMenuItem>
 					</ContextMenuSubContent>
 				</ContextMenuSub>
 				{groupedWorkspaceIds.length > 0 && (
 					<ContextMenuItem onSelect={ungroupSelection}>
 						<LuArrowUp className="size-4 mr-2" />
-						<Trans>Ungroup</Trans>
+						<Trans>Move to My workspaces</Trans>
 					</ContextMenuItem>
 				)}
 				<ContextMenuSeparator />

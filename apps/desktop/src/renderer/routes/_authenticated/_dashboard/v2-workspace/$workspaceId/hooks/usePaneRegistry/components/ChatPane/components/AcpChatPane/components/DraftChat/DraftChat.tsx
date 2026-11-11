@@ -6,6 +6,7 @@ import {
 	type ComposerHandle,
 } from "../../../../../ChatSession/components/Composer";
 import { PendingPromptsView } from "../../../../../ChatSession/components/PendingPromptsView";
+import { SessionWelcome } from "../../../../../ChatSession/components/SessionWelcome";
 import {
 	WorkDrawer,
 	type WorkDrawerHandle,
@@ -58,7 +59,7 @@ export function DraftChat({
 				(prompts.length > 0 ? (
 					<PendingPromptsView prompts={prompts} />
 				) : (
-					<div className="min-h-0 flex-1" />
+					<SessionWelcome />
 				))}
 			<WorkDrawer
 				onExit={(exit) => composerRef.current?.returnFocus(exit === "history")}

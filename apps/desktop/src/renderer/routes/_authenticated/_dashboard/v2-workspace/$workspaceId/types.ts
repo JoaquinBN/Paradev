@@ -47,8 +47,8 @@ export interface DevtoolsPaneData {
 
 export type DiffFocusSide = "deletions" | "additions";
 
-/** Narrows the pane to the files one chat turn changed. */
 export interface DiffPaneFilter {
+	scope?: "file";
 	/** Repo-relative paths; every other file is hidden. Absent, every file in `range` shows. */
 	paths?: string[];
 	/** Commits to diff instead of the workspace's scope. */
@@ -56,6 +56,7 @@ export interface DiffPaneFilter {
 }
 
 export interface DiffPaneData {
+	sidebarTab?: "files" | "changes" | "review";
 	path: string;
 	changeKey?: string;
 	collapsedFiles: string[];

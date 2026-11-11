@@ -12,7 +12,7 @@ import { Button } from "@superset/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@superset/ui/tooltip";
 import { cn } from "@superset/ui/utils";
 import { Pencil } from "lucide-react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useChatPaneActions } from "../../../../providers/ChatPaneActionsProvider";
 import {
 	attachmentDisplayName,
@@ -29,7 +29,6 @@ import { AttachmentPartImage } from "./components/AttachmentPartImage";
 import { PastedTextBlock } from "./components/PastedTextBlock";
 import { UserMessageEditor } from "./components/UserMessageEditor";
 import { UserMessageText } from "./components/UserMessageText";
-import { useFitsOneLine } from "./hooks/useFitsOneLine";
 import { textElementsFromText } from "./utils/textElementsFromText";
 
 function BookkeepingRow({ label }: { label: string }) {
@@ -69,8 +68,6 @@ export function UserMessageRow({
 		text,
 		elements?.length ? elements : textElementsFromText(text, commands),
 	);
-	const textRef = useRef<HTMLDivElement>(null);
-	const oneLine = useFitsOneLine(textRef);
 	const { editMessage, editableMessageIds } = useChatPaneActions();
 	const [editing, setEditing] = useState(false);
 	if (note && !pending) return <BookkeepingRow label={note.label} />;
@@ -128,6 +125,7 @@ export function UserMessageRow({
 		<Message
 			className={cn("group/message pt-1.5 pl-10", copyable ? "pb-0" : "pb-5")}
 			from="user"
+			data-design-surface="session-user-message"
 		>
 			{sender && (
 				<span className="self-end font-sans text-foreground/45 text-xs">
@@ -188,18 +186,12 @@ export function UserMessageRow({
 			{text && (
 				<MessageContent
 					className={cn(
-						"max-w-[min(100%,36rem)] font-sans transition-opacity group-[.is-user]:bg-foreground/10 group-[.is-user]:px-3 group-[.is-user]:py-2",
-						oneLine
-							? "group-[.is-user]:rounded-full"
-							: "group-[.is-user]:rounded-xl",
+						"max-w-[min(100%,42rem)] font-sans transition-opacity group-[.is-user]:bg-foreground/[0.06] group-[.is-user]:px-4 group-[.is-user]:py-3",
+						"group-[.is-user]:rounded-lg",
 						pending && !pending.failed && "opacity-60",
 					)}
 				>
-					<div
-						className="break-words text-sm"
-						data-find-item={item.id}
-						ref={textRef}
-					>
+					<div className="break-words text-sm" data-find-item={item.id}>
 						<UserMessageText commands={commands} segments={segments} />
 					</div>
 				</MessageContent>

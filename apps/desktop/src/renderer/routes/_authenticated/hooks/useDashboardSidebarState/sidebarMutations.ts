@@ -83,6 +83,7 @@ export function tombstoneSidebarWorkspaceRecord(
 		draft.sidebarState.pinnedAt = null;
 		draft.paneLayout = createEmptyPaneLayout();
 		delete draft.rightPaneLayout;
+		delete draft.terminalPaneLayout;
 	});
 }
 

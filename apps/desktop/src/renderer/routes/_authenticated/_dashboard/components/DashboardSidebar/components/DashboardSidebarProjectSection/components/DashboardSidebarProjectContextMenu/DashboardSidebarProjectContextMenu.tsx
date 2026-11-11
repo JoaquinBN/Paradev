@@ -73,7 +73,7 @@ export function DashboardSidebarProjectContextMenu({
 						</ContextMenuItem>
 						<ContextMenuItem onSelect={onCreateSection}>
 							<LuFolderPlus className="size-4 mr-2" />
-							<Trans>New group</Trans>
+							<Trans>New section</Trans>
 						</ContextMenuItem>
 						{hiddenTags.length > 0 ? (
 							<ContextMenuSub>

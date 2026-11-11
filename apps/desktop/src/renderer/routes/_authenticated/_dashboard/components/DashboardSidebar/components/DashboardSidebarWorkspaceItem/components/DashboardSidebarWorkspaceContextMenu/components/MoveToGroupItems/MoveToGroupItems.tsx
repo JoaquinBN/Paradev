@@ -2,6 +2,7 @@ import {
 	ContextMenuItem,
 	ContextMenuSeparator,
 } from "@superset/ui/context-menu";
+import { useNavigationSections } from "renderer/routes/_authenticated/hooks/useNavigationSections";
 import { useProjectTagFolderSections } from "../../../../../../hooks/useProjectTagFolderSections";
 
 interface MoveToGroupItemsProps {
@@ -15,7 +16,9 @@ export function MoveToGroupItems({
 }: MoveToGroupItemsProps) {
 	// The derived union — a tag-only folder with no stored row is a valid
 	// move target.
-	const { sections } = useProjectTagFolderSections(projectId);
+	const { sections: projectSections } = useProjectTagFolderSections(projectId);
+	const navigation = useNavigationSections();
+	const sections = navigation?.sections ?? projectSections;
 
 	return (
 		<>

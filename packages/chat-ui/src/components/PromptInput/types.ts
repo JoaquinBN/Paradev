@@ -179,6 +179,7 @@ export type PromptInputProps = {
 	status?: "ready" | "streaming" | "background";
 	// Enables the mic button; the app owns speech-to-text.
 	dictation?: PromptInputDictation;
+	editorAccessory?: ReactNode;
 	toolbar?: ReactNode;
 	toolbarEnd?: ReactNode;
 	draft?: ComposerDraft;
@@ -190,6 +191,7 @@ export type PromptInputProps = {
 	onStop?: () => void;
 	stopOnEscape?: boolean;
 	allowEmptySubmit?: boolean;
+	submitLabel?: string;
 	disabled?: boolean;
 	pending?: boolean;
 	autoFocus?: boolean;

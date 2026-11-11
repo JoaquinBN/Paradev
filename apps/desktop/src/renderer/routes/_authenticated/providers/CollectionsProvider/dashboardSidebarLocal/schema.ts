@@ -209,6 +209,7 @@ export const workspaceLocalStateSchema = z.object({
 	}),
 	paneLayout: paneWorkspaceStateSchema,
 	rightPaneLayout: paneWorkspaceStateSchema.optional(),
+	terminalPaneLayout: paneWorkspaceStateSchema.optional(),
 	rightSidebarOpen: z.boolean().optional(),
 	// TODO(2027-01-31): delete with useRestoreExpandedPaneArea / restoreExpandedPaneArea once builds that wrote it are gone.
 	rightPaneAreaExpansion: z
@@ -593,6 +594,10 @@ export function healWorkspaceLocalState(raw: unknown): WorkspaceLocalStateRow {
 			r.rightPaneLayout === undefined
 				? undefined
 				: sanitizePaneLayout(r.rightPaneLayout),
+		terminalPaneLayout:
+			r.terminalPaneLayout === undefined
+				? undefined
+				: sanitizePaneLayout(r.terminalPaneLayout),
 		viewedFiles:
 			r.viewedFiles ?? WORKSPACE_LOCAL_STATE_OPTIONAL_DEFAULTS.viewedFiles,
 		recentlyViewedFiles:
