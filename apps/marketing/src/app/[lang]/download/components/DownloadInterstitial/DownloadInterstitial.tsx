@@ -84,11 +84,11 @@ export function DownloadInterstitial() {
 					{showEmailLink ? (
 						<div className="max-w-2xl">
 							<h1 className={HEADING_CLASS}>
-								<Trans>Get Paradev on your Mac</Trans>
+								<Trans>Get Wanker on your Mac</Trans>
 							</h1>
 							<p className="mt-3 text-muted-foreground sm:text-lg">
 								<Trans>
-									Paradev is a desktop app. Enter your email and we&apos;ll send
+									Wanker is a desktop app. Enter your email and we&apos;ll send
 									you a download link to open on your Mac.
 								</Trans>
 							</p>
@@ -99,7 +99,7 @@ export function DownloadInterstitial() {
 					) : showWaitlist ? (
 						<div className="max-w-2xl">
 							<h1 className={HEADING_CLASS}>
-								<Trans>Paradev isn't on Windows yet</Trans>
+								<Trans>Wanker isn't on Windows yet</Trans>
 							</h1>
 							<p className="mt-3 text-muted-foreground sm:text-lg">
 								<Trans>
@@ -114,7 +114,7 @@ export function DownloadInterstitial() {
 					) : (
 						<div className="max-w-2xl">
 							<h1 className={HEADING_CLASS}>
-								<Trans>You're about to get Paradev</Trans>
+								<Trans>You're about to get Wanker</Trans>
 							</h1>
 							{canAutoDownload ? (
 								<p className="mt-3 text-muted-foreground sm:text-lg">

@@ -20,13 +20,7 @@ export default function PluginDeepLinkPage() {
 	return (
 		<div className="flex min-h-screen flex-col items-center justify-center bg-background p-4">
 			<div className="flex flex-col items-center gap-6">
-				<Image
-					src="/title.svg"
-					alt="Paradev"
-					width={280}
-					height={86}
-					priority
-				/>
+				<Image src="/title.svg" alt="Wanker" width={280} height={86} priority />
 				<p className="text-xl text-muted-foreground">
 					<Trans>Redirecting to desktop app...</Trans>
 				</p>

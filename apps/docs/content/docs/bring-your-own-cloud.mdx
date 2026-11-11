@@ -1,22 +1,22 @@
 ---
 title: Bring Your Own Cloud
-description: Run Paradev on a server in your own cloud and open it from the desktop or phone app
+description: Run Wanker on a server in your own cloud and open it from the desktop or phone app
 pro: true
 ---
 
 ## Overview
 
-Paradev can run agents on a Linux server in your own cloud account. Your repos and agent sign-ins are stored on that server. You open its workspaces from the desktop or phone app, the same as workspaces on your laptop.
+Wanker can run agents on a Linux server in your own cloud account. Your repos and agent sign-ins are stored on that server. You open its workspaces from the desktop or phone app, the same as workspaces on your laptop.
 
-What still leaves the server, besides normal calls to GitHub and the Paradev API:
+What still leaves the server, besides normal calls to GitHub and the Wanker API:
 
-- The host keeps a connection to the Paradev relay, so your devices can find it.
+- The host keeps a connection to the Wanker relay, so your devices can find it.
 - Agents send what they read to their model provider, using your keys.
 - When you open a workspace from another device, its terminal and port traffic passes through the relay.
 
-This is different from [cloud workspaces](/cloud-workspaces), where Paradev runs the machine for you. Pick it when your repos must be stored in your own account, or when you want to control the machine.
+This is different from [cloud workspaces](/cloud-workspaces), where Wanker runs the machine for you. Pick it when your repos must be stored in your own account, or when you want to control the machine.
 
-The host binds to `127.0.0.1` and reaches your devices through the Paradev relay, so the server needs no open inbound ports.
+The host binds to `127.0.0.1` and reaches your devices through the Wanker relay, so the server needs no open inbound ports.
 
 ## Requirements
 
@@ -32,7 +32,7 @@ On the server:
 curl -fsSL https://paradev.com/cli/install.sh | sh
 ```
 
-This installs Paradev under `~/superset` and adds `~/superset/bin` to `PATH` for new shells. For the current session, run:
+This installs Wanker under `~/superset` and adds `~/superset/bin` to `PATH` for new shells. For the current session, run:
 
 ```bash
 export PATH="$HOME/superset/bin:$PATH"
@@ -99,6 +99,6 @@ If the project already exists on another machine, attach this server to it with 
 
 ## Security
 
-- Use a server for Paradev only. Anyone you grant access to can reach everything the host can, including its agent sign-ins.
+- Use a server for Wanker only. Anyone you grant access to can reach everything the host can, including its agent sign-ins.
 - Keep only the repos and credentials you mean to share on it.
-- Agents still use your own subscriptions and keys. Paradev does not proxy model calls.
+- Agents still use your own subscriptions and keys. Wanker does not proxy model calls.

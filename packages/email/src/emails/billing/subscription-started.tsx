@@ -47,7 +47,7 @@ export function SubscriptionStartedEmail({
 	const features = planFeatureLines({ previousPlanName, cloudHoursPerSeat });
 
 	return (
-		<EmailLayout preview={`Welcome to Paradev ${planName}!`}>
+		<EmailLayout preview={`Welcome to Wanker ${planName}!`}>
 			<Text className="text-[15px] leading-6 text-foreground m-0 mb-4">
 				Hi {ownerName ?? "there"},
 			</Text>

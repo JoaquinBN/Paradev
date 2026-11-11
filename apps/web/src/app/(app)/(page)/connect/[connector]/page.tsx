@@ -81,7 +81,7 @@ export default async function ConnectorPage({
 						{i18n._(
 							msg({
 								message:
-									"Authorize Paradev so your plugins, automations and triggers can act on your behalf.",
+									"Authorize Wanker so your plugins, automations and triggers can act on your behalf.",
 							}),
 						)}
 					</CardDescription>

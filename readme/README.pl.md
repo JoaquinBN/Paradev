@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="full" alt="Claude i OpenCode pracujące równolegle w obszarach roboczych Paradev z podglądem różnic na żywo" src="../apps/marketing/public/images/readme-hero.gif" />
+<img width="full" alt="Claude i OpenCode pracujące równolegle w obszarach roboczych Wanker z podglądem różnic na żywo" src="../apps/marketing/public/images/readme-hero.gif" />
 
 ### Uruchamiaj ponad 100 agentów kodujących równolegle
 
@@ -36,7 +36,7 @@ Poświęcaj czas na dostarczanie, nie na czekanie.
 
 ## Pisz kod 10 razy szybciej bez kosztów przełączania
 
-Paradev uruchamia agentów kodujących opartych na CLI równolegle w izolowanych worktree git, z wbudowanym terminalem, przeglądem zmian i otwieraniem w edytorze.
+Wanker uruchamia agentów kodujących opartych na CLI równolegle w izolowanych worktree git, z wbudowanym terminalem, przeglądem zmian i otwieraniem w edytorze.
 
 - **Uruchamiaj wielu agentów jednocześnie** bez narzutu przełączania kontekstu
 - **Izoluj każde zadanie** we własnym worktree git, aby agenci nie wchodzili sobie w drogę
@@ -151,15 +151,15 @@ Podłącz inną maszynę i korzystaj z jej obszarów roboczych zewsząd: z aplik
 <tr>
 <td width="50%" valign="middle">
 
-### Paradev CLI
+### Wanker CLI
 
-Skryptuj z dowolnej powłoki: twórz obszary robocze, uruchamiaj agentów, czytaj ich terminale i zarządzaj automatyzacjami jednym plikiem binarnym. Jeśli agent potrafi uruchomić polecenie, potrafi też sterować Paradevem.
+Skryptuj z dowolnej powłoki: twórz obszary robocze, uruchamiaj agentów, czytaj ich terminale i zarządzaj automatyzacjami jednym plikiem binarnym. Jeśli agent potrafi uruchomić polecenie, potrafi też sterować Wankerem.
 
 [Dokumentacja →](https://docs.paradev.com/cli/getting-started)
 
 </td>
 <td width="50%">
-  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Tworzenie obszaru roboczego i uruchamianie agenta z Paradev CLI" width="100%" /></a>
+  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Tworzenie obszaru roboczego i uruchamianie agenta z Wanker CLI" width="100%" /></a>
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ Przeskakuj do dowolnego obszaru roboczego, akcji lub ustawienia z jednego pola w
 
 ## Obsługiwani agenci
 
-Paradev działa z każdym agentem kodującym opartym na CLI, w tym:
+Wanker działa z każdym agentem kodującym opartym na CLI, w tym:
 
 | Agent | Status |
 |:------|:-------|
@@ -220,7 +220,7 @@ Paradev działa z każdym agentem kodującym opartym na CLI, w tym:
 | <picture><source media="(prefers-color-scheme: dark)" srcset="../packages/ui/src/assets/icons/preset-icons/polygraph-white.svg" /><img height="16" align="top" alt="Polygraph" src="../packages/ui/src/assets/icons/preset-icons/polygraph.svg" /></picture> &nbsp;[Polygraph](https://trypolygraph.com/) | Pełne wsparcie |
 | Dowolny inny agent CLI | Działa bez konfiguracji |
 
-Jeśli działa w terminalu, działa w Paradev
+Jeśli działa w terminalu, działa w Wanker
 
 Agenci dostają więcej niż terminal:
 
@@ -238,7 +238,7 @@ Każda powierzchnia korzysta z tych samych obszarów roboczych, więc zadanie ro
 |:--------|:-------------|
 | [**Aplikacja desktopowa**](https://github.com/paradevai/paradev/releases/latest) | Pełne IDE: terminale, podgląd różnic, przeglądarka w aplikacji, automatyzacje |
 | [**CLI**](https://docs.paradev.com/cli/getting-started) | Pojedynczy plik binarny `superset` do zarządzania obszarami roboczymi, agentami, terminalami i hostami z dowolnej powłoki |
-| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Steruj Paradevem programistycznie przez [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) z Node, Bun lub Deno |
+| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Steruj Wankerem programistycznie przez [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) z Node, Bun lub Deno |
 | [**Serwer MCP**](https://docs.paradev.com/mcp) | Pozwól Claude Code, Codex, Cursor i innym agentom samodzielnie tworzyć obszary robocze i nimi zarządzać |
 
 CLI jest dołączone do aplikacji desktopowej; można je też zainstalować osobno:
@@ -260,12 +260,12 @@ Pobierz aplikację desktopową:
 - **Windows**: jeszcze niedostępne
 - [Wszystkie kompilacje](https://github.com/paradevai/paradev/releases/latest)
 
-Jedyne, co trzeba mieć zainstalowane, to [Git](https://git-scm.com/). [gh](https://cli.github.com/) jest opcjonalny i odblokowuje przepływy pracy z PR; Paradev zaproponuje jego instalację.
+Jedyne, co trzeba mieć zainstalowane, to [Git](https://git-scm.com/). [gh](https://cli.github.com/) jest opcjonalny i odblokowuje przepływy pracy z PR; Wanker zaproponuje jego instalację.
 
 ## Rozwój
 
-Chcesz rozwijać Paradev lub wnieść PR? Sklonuj repozytorium, dodaj je do
-zainstalowanej aplikacji Paradev i utwórz obszar roboczy dla swojej zmiany:
+Chcesz rozwijać Wanker lub wnieść PR? Sklonuj repozytorium, dodaj je do
+zainstalowanej aplikacji Wanker i utwórz obszar roboczy dla swojej zmiany:
 
 ```bash
 git clone https://github.com/paradevai/paradev.git
@@ -280,7 +280,7 @@ bun run dev
 
 Uruchom `setup.local.sh` raz w każdym nowym worktree. Skrypt konfiguruje
 specyficzną dla obszaru roboczego tożsamość aplikacji i porty, dzięki czemu
-deweloperska aplikacja desktopowa może działać obok zainstalowanego Paradev
+deweloperska aplikacja desktopowa może działać obok zainstalowanego Wanker
 i innych deweloperskich worktree.
 
 Konto Neon ani poświadczenia zewnętrzne nie są potrzebne. `setup.local.sh` uruchamia
@@ -334,7 +334,7 @@ Zapraszamy do współtworzenia! Zobacz [CONTRIBUTING.md](../CONTRIBUTING.md), ab
 
 ## Społeczność
 
-Dołącz do społeczności Paradev, aby uzyskać pomoc, dzielić się opiniami i nawiązywać kontakty z innymi użytkownikami:
+Dołącz do społeczności Wanker, aby uzyskać pomoc, dzielić się opiniami i nawiązywać kontakty z innymi użytkownikami:
 
 - **[Discord](https://discord.gg/cZeD9WYcV7)**: rozmawiaj z zespołem i społecznością
 - **[Twitter](https://x.com/paradevai)**: obserwuj, aby śledzić aktualizacje i ogłoszenia

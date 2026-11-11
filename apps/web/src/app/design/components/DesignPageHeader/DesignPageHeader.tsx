@@ -13,7 +13,7 @@ const PAGES = [
 		key: "superset",
 		href: "/design/superset",
 		label: msg({
-			message: "Paradev components",
+			message: "Wanker components",
 		}),
 	},
 ] as const;

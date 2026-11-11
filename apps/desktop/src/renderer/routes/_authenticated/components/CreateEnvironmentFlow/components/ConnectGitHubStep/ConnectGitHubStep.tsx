@@ -74,7 +74,7 @@ export function ConnectGitHubStep({
 									</Trans>
 								)
 							}
-							title={<Trans>Paradev GitHub App</Trans>}
+							title={<Trans>Wanker GitHub App</Trans>}
 						/>
 						{accountAvailable && (
 							<ConnectionRow

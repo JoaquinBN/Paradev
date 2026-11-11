@@ -1,6 +1,6 @@
 # Security Policy
 
-We take the security of Paradev seriously. Thank you for helping keep our users safe by reporting vulnerabilities responsibly.
+We take the security of Wanker seriously. Thank you for helping keep our users safe by reporting vulnerabilities responsibly.
 
 ## Reporting a vulnerability
 
@@ -30,13 +30,13 @@ We ask that you give us a reasonable window to remediate before disclosing publi
 
 In scope:
 
-- The Paradev desktop app, CLI, and host service (this repository)
-- The Paradev API and web app (superset.sh, app.superset.sh, relay.superset.sh)
+- The Wanker desktop app, CLI, and host service (this repository)
+- The Wanker API and web app (superset.sh, app.superset.sh, relay.superset.sh)
 
 Out of scope:
 
 - Denial of service and volumetric attacks
-- Social engineering of Paradev employees or users
+- Social engineering of Wanker employees or users
 - Findings that require a compromised device or physical access
 - Third-party services we integrate with (report those to the vendor)
 

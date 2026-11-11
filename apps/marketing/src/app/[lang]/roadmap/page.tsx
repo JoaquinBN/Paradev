@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	const description = i18n._(
 		msg({
 			message:
-				"See what we're building now, what's coming next, and where Paradev is headed.",
+				"See what we're building now, what's coming next, and where Wanker is headed.",
 		}),
 	);
 	return {

@@ -291,11 +291,11 @@ export function getPluginComponentKinds(
 export const SUPERSET_MANAGED_SKILLS = [
 	{
 		name: "10x",
-		description: "Personalized audit of Paradev features you're not using yet",
+		description: "Personalized audit of Wanker features you're not using yet",
 	},
 	{
 		name: "automate",
-		description: "Turn a recurring chore into a Paradev automation",
+		description: "Turn a recurring chore into a Wanker automation",
 	},
 	{
 		name: "browser",
@@ -307,9 +307,9 @@ export const SUPERSET_MANAGED_SKILLS = [
 	},
 	{
 		name: "contribute",
-		description: "Set up an open-source contribution to Paradev",
+		description: "Set up an open-source contribution to Wanker",
 	},
-	{ name: "doctor", description: "Diagnose and fix Paradev problems" },
+	{ name: "doctor", description: "Diagnose and fix Wanker problems" },
 	{ name: "feedback", description: "Report bugs and request features" },
 	{
 		name: "orchestrate",
@@ -320,16 +320,16 @@ export const SUPERSET_MANAGED_SKILLS = [
 		description:
 			"Install plugins, connect their accounts, and call their MCP tools",
 	},
-	{ name: "setup", description: "Make a repository Paradev-ready" },
-	{ name: "standup", description: "Digest of what your Paradev agents did" },
+	{ name: "setup", description: "Make a repository Wanker-ready" },
+	{ name: "standup", description: "Digest of what your Wanker agents did" },
 ] as const;
 
 export const PLUGIN_CATALOG: readonly PluginCatalogEntry[] = [
 	{
 		name: "superset",
 		version: "1.0.0",
-		description: "Manage Paradev workspaces, tasks, and automations",
-		interface: { displayName: "Paradev", category: "Productivity" },
+		description: "Manage Wanker workspaces, tasks, and automations",
+		interface: { displayName: "Wanker", category: "Productivity" },
 		mcpServers: {
 			superset: { type: "http", url: "https://api.superset.sh/mcp" },
 		},

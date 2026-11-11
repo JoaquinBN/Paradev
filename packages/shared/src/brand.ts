@@ -1,5 +1,5 @@
-const NAME: string = "Paradev";
-const FORMER_NAME: string = "Superset";
+const NAME: string = "Wanker";
+const FORMER_NAME: string = "Paradev";
 
 function introName(name: string, formerName: string): string {
 	return name === formerName ? name : `${name} (formerly ${formerName})`;

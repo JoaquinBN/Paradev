@@ -135,7 +135,7 @@ describe("agent and finish-type matrix", () => {
 			it(`${agentId} ${eventType} preserves context, status, and preview`, () => {
 				expect(
 					getV2NativeNotificationContent({
-						projectName: "Paradev",
+						projectName: "Wanker",
 						workspaceName: "test",
 						payload: payload({
 							agent: { agentId },
@@ -144,7 +144,7 @@ describe("agent and finish-type matrix", () => {
 						}),
 					}),
 				).toEqual({
-					title: "Paradev › test",
+					title: "Wanker › test",
 					subtitle: `${label} · ${status}`,
 					body: "Actual agent text.",
 				});

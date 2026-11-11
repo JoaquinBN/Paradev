@@ -9,7 +9,7 @@
 
 ## Symptom
 
-Attempting to open a file in an external editor from the Paradev desktop app on Linux produces the following error:
+Attempting to open a file in an external editor from the Wanker desktop app on Linux produces the following error:
 
 ```
 Failed to open: xdg-open: unexpected option '-a'

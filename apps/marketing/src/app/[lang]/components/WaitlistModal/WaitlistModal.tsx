@@ -68,7 +68,7 @@ export function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
 							message: "Join the waitlist",
 						})}
 						description={t({
-							message: "Get notified when Paradev is available on Windows.",
+							message: "Get notified when Wanker is available on Windows.",
 						})}
 					/>
 				</div>

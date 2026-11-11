@@ -393,8 +393,8 @@ msgid "{0, plural, one {Show # more line} other {Show # more lines}}"
 msgstr "{0, plural, one {Показать ещё # строку} few {Показать ещё # строки} many {Показать ещё # строк} other {Показать ещё # строки}}"
 
 #. placeholder {0}: importableWorktrees.length
-msgid "{0, plural, one {This will import # existing worktree into Paradev as workspaces. Each worktree on disk will be tracked and appear in your sidebar. No files will be modified.} other {This will import # existing worktrees into Paradev as workspaces. Each worktree on disk will be tracked and appear in your sidebar. No files will be modified.}}"
-msgstr "{0, plural, one {# существующий worktree будет импортирован в Paradev как рабочая область. Каждый worktree на диске будет отслеживаться и появится в боковой панели. Файлы не изменяются.} few {# существующих worktree будут импортированы в Paradev как рабочие области. Каждый worktree на диске будет отслеживаться и появится в боковой панели. Файлы не изменяются.} many {# существующих worktree будут импортированы в Paradev как рабочие области. Каждый worktree на диске будет отслеживаться и появится в боковой панели. Файлы не изменяются.} other {# существующих worktree будут импортированы в Paradev как рабочие области. Каждый worktree на диске будет отслеживаться и появится в боковой панели. Файлы не изменяются.}}"
+msgid "{0, plural, one {This will import # existing worktree into Wanker as workspaces. Each worktree on disk will be tracked and appear in your sidebar. No files will be modified.} other {This will import # existing worktrees into Wanker as workspaces. Each worktree on disk will be tracked and appear in your sidebar. No files will be modified.}}"
+msgstr "{0, plural, one {# существующий worktree будет импортирован в Wanker как рабочая область. Каждый worktree на диске будет отслеживаться и появится в боковой панели. Файлы не изменяются.} few {# существующих worktree будут импортированы в Wanker как рабочие области. Каждый worktree на диске будет отслеживаться и появится в боковой панели. Файлы не изменяются.} many {# существующих worktree будут импортированы в Wanker как рабочие области. Каждый worktree на диске будет отслеживаться и появится в боковой панели. Файлы не изменяются.} other {# существующих worktree будут импортированы в Wanker как рабочие области. Каждый worktree на диске будет отслеживаться и появится в боковой панели. Файлы не изменяются.}}"
 
 #. placeholder {0}: resolved.length
 msgid "{0, plural, one {View # resolved comment} other {View # resolved comments}}"
@@ -414,8 +414,8 @@ msgid "{0} — device offline"
 msgstr "{0} — устройство офлайн"
 
 #. placeholder {0}: error.message
-msgid "{0} — try the Paradev tray menu > Host Service > Restart."
-msgstr "{0} — попробуйте меню Paradev в трее > Host Service > Restart."
+msgid "{0} — try the Wanker tray menu > Host Service > Restart."
+msgstr "{0} — попробуйте меню Wanker в трее > Host Service > Restart."
 
 #. placeholder {0}: window.label
 #. placeholder {1}: formatPercent(window.usedPercent / 100)
@@ -939,8 +939,8 @@ msgstr "{count, plural, one {# автоматизация убрана из гр
 msgid "{count, plural, one {Resume # chat?} other {Resume # chats?}}"
 msgstr "{count, plural, one {Возобновить # чат?} few {Возобновить # чата?} many {Возобновить # чатов?} other {Возобновить # чата?}}"
 
-msgid "{count, plural, one {This chat hadn't finished when Paradev closed} other {These chats hadn't finished when Paradev closed}}"
-msgstr "{count, plural, one {Этот чат не был завершён, когда Paradev закрылся} few {Эти чаты не были завершены, когда Paradev закрылся} many {Эти чаты не были завершены, когда Paradev закрылся} other {Эти чаты не были завершены, когда Paradev закрылся}}"
+msgid "{count, plural, one {This chat hadn't finished when Wanker closed} other {These chats hadn't finished when Wanker closed}}"
+msgstr "{count, plural, one {Этот чат не был завершён, когда Wanker закрылся} few {Эти чаты не были завершены, когда Wanker закрылся} many {Эти чаты не были завершены, когда Wanker закрылся} other {Эти чаты не были завершены, когда Wanker закрылся}}"
 
 msgid "{count, plural, one {Used # source} other {Used # sources}}"
 msgstr "{count, plural, one {Использован # источник} few {Использовано # источника} many {Использовано # источников} other {Использовано # источника}}"
@@ -1539,11 +1539,11 @@ msgid "<0>{0}</0> is not a git repository. Would you like to initialize one?"
 msgstr "<0>{0}</0> не является git-репозиторием. Инициализировать его?"
 
 #. placeholder {0}: remoteHost.name
-msgid "<0>{0}</0> isn't connected to the Paradev relay, so its runs will be skipped. Check its <1>host settings</1>, and make sure relay access is on in Settings > Remote Access on that device."
-msgstr "<0>{0}</0> не подключён к реле Paradev, поэтому его запуски будут пропускаться. Проверьте <1>настройки хоста</1> и убедитесь, что на том устройстве включён доступ через реле в Настройки > Удалённый доступ."
+msgid "<0>{0}</0> isn't connected to the Wanker relay, so its runs will be skipped. Check its <1>host settings</1>, and make sure relay access is on in Settings > Remote Access on that device."
+msgstr "<0>{0}</0> не подключён к реле Wanker, поэтому его запуски будут пропускаться. Проверьте <1>настройки хоста</1> и убедитесь, что на том устройстве включён доступ через реле в Настройки > Удалённый доступ."
 
-msgid "<0>{displayName}</0> is requesting access to your Paradev account"
-msgstr "<0>{displayName}</0> запрашивает доступ к вашему аккаунту Paradev"
+msgid "<0>{displayName}</0> is requesting access to your Wanker account"
+msgstr "<0>{displayName}</0> запрашивает доступ к вашему аккаунту Wanker"
 
 msgid "<0>{primaryFont}</0> is not installed on this system. Falling back to the next available font."
 msgstr "<0>{primaryFont}</0> не установлен в системе. Используется следующий доступный шрифт."
@@ -1716,8 +1716,8 @@ msgstr "В этой сессии использовано 87.4K из 200K ток
 msgid "A better in-app browser: preview your changes and click any element to send it to the agent as context."
 msgstr "Лучший встроенный браузер: смотрите свои изменения и кликайте по любому элементу, чтобы отправить его агенту как контекст."
 
-msgid "A better Paradev is ready"
-msgstr "Улучшенная версия Paradev готова"
+msgid "A better Wanker is ready"
+msgstr "Улучшенная версия Wanker готова"
 
 msgid "A CDP endpoint per pane"
 msgstr "Свой CDP-эндпоинт для каждой панели"
@@ -1789,14 +1789,14 @@ msgstr "Взгляд на то, что в работе, что дальше и �
 msgid "A majority of production changes merge without any human reading the diff."
 msgstr "Большинство продакшен-изменений сливается без того, чтобы человек читал diff."
 
-msgid "A manifest and a few skill files. Paradev puts it where every agent looks."
-msgstr "Манифест и несколько файлов навыков. Paradev кладёт его туда, где его ищет каждый агент."
+msgid "A manifest and a few skill files. Wanker puts it where every agent looks."
+msgstr "Манифест и несколько файлов навыков. Wanker кладёт его туда, где его ищет каждый агент."
 
 msgid "a message from {authorName}"
 msgstr "сообщение от {authorName}"
 
-msgid "A new version of Paradev is required to continue. Please update to the latest version."
-msgstr "Чтобы продолжить, нужна новая версия Paradev. Обновитесь до последней версии."
+msgid "A new version of Wanker is required to continue. Please update to the latest version."
+msgstr "Чтобы продолжить, нужна новая версия Wanker. Обновитесь до последней версии."
 
 msgid "A new workspace off this branch, with the conversation handed to a fresh agent"
 msgstr "Новое рабочее пространство от этой ветки, разговор передаётся новому агенту"
@@ -1869,14 +1869,14 @@ msgstr "О нас"
 msgid "About {displayName}"
 msgstr "О программе {displayName}"
 
-msgid "About Paradev"
-msgstr "О Paradev"
-
 msgid "About three weeks from first call to offer, ending with a paid work trial. Every step is with a founder, and you hear back within 48 hours."
 msgstr "Около трёх недель от первого звонка до оффера, в конце оплачиваемый пробный период. На каждом этапе вы общаетесь с основателем, и ответ приходит в течение 48 часов."
 
-msgid "Absolutely. Paradev doesn't proxy any API calls. You use your own API keys directly with whatever AI providers you choose. This means you have full control over costs and usage."
-msgstr "Конечно. Paradev не проксирует вызовы API. Вы используете свои собственные ключи API напрямую с любыми AI-провайдерами. Это значит полный контроль над расходами и потреблением."
+msgid "About Wanker"
+msgstr "О Wanker"
+
+msgid "Absolutely. Wanker doesn't proxy any API calls. You use your own API keys directly with whatever AI providers you choose. This means you have full control over costs and usage."
+msgstr "Конечно. Wanker не проксирует вызовы API. Вы используете свои собственные ключи API напрямую с любыми AI-провайдерами. Это значит полный контроль над расходами и потреблением."
 
 msgid "Accent"
 msgstr "Акцент"
@@ -2397,8 +2397,8 @@ msgstr "Агенты запоминают, что узнали о вашей к�
 msgid "Agents running at once"
 msgstr "Агентов запущено одновременно"
 
-msgid "Agents see a placeholder. Paradev adds your sign-in to outgoing requests."
-msgstr "Агенты видят только заглушку. Paradev добавляет ваш вход к исходящим запросам."
+msgid "Agents see a placeholder. Wanker adds your sign-in to outgoing requests."
+msgstr "Агенты видят только заглушку. Wanker добавляет ваш вход к исходящим запросам."
 
 msgid "Agents that run while you're away"
 msgstr "Агенты, которые работают, пока вас нет"
@@ -2409,8 +2409,8 @@ msgstr "Агенты сами разбирают issues, пишут чернов
 msgid "Agents use this account when they call Linear tools."
 msgstr "Агенты используют этот аккаунт, когда вызывают инструменты Linear."
 
-msgid "Aggregate agent usage across every developer on the Paradev leaderboard — tokens, cost, cache behaviour and which models people actually reach for."
-msgstr "Совокупное использование агентов всеми разработчиками в лидерборде Paradev — токены, стоимость, поведение кеша и модели, к которым люди действительно обращаются."
+msgid "Aggregate agent usage across every developer on the Wanker leaderboard — tokens, cost, cache behaviour and which models people actually reach for."
+msgstr "Совокупное использование агентов всеми разработчиками в лидерборде Wanker — токены, стоимость, поведение кеша и модели, к которым люди действительно обращаются."
 
 msgid "AI · Agent activity"
 msgstr "AI · активность агента"
@@ -2802,8 +2802,8 @@ msgstr "Anthropic отклонил этот токен."
 msgid "any account"
 msgstr "любой аккаунт"
 
-msgid "Any agent you've set up in Paradev, such as Claude Code or Codex."
-msgstr "Любой агент, которого вы настроили в Paradev, например Claude Code или Codex."
+msgid "Any agent you've set up in Wanker, such as Claude Code or Codex."
+msgstr "Любой агент, которого вы настроили в Wanker, например Claude Code или Codex."
 
 msgid "Any channel"
 msgstr "Любой канал"
@@ -3270,11 +3270,11 @@ msgstr "Авторизовать"
 msgid "Authorize {displayName}"
 msgstr "Авторизовать {displayName}"
 
-msgid "Authorize Paradev so your plugins, automations and triggers can act on your behalf."
-msgstr "Разрешите Paradev действовать от вашего имени через плагины, автоматизации и триггеры."
+msgid "Authorize Wanker so your plugins, automations and triggers can act on your behalf."
+msgstr "Разрешите Wanker действовать от вашего имени через плагины, автоматизации и триггеры."
 
-msgid "Authorize Paradev to act on your behalf."
-msgstr "Разрешите Paradev действовать от вашего имени."
+msgid "Authorize Wanker to act on your behalf."
+msgstr "Разрешите Wanker действовать от вашего имени."
 
 msgid "Authorizing..."
 msgstr "Авторизация..."
@@ -3715,17 +3715,17 @@ msgstr "Просматривайте и устанавливайте навык�
 msgid "Browse for directory"
 msgstr "Выбрать папку"
 
-msgid "Browse Paradev plugins, shared themes, and future agent configs."
-msgstr "Просматривайте плагины Paradev, общие темы и будущие конфигурации агентов."
-
-msgid "Browse Paradev theme files shared by the community, including GitHub Dark Colorblind, Catppuccin, Ember, and One Dark Pro."
-msgstr "Смотрите файлы тем Paradev, опубликованные сообществом, включая GitHub Dark Colorblind, Catppuccin, Ember и One Dark Pro."
-
-msgid "Browse the plugins every Paradev agent can use, and submit your own."
-msgstr "Просматривайте плагины, которые может использовать любой агент Paradev, и отправляйте свои."
+msgid "Browse the plugins every Wanker agent can use, and submit your own."
+msgstr "Просматривайте плагины, которые может использовать любой агент Wanker, и отправляйте свои."
 
 msgid "Browse the repo ↗"
 msgstr "Открыть репозиторий ↗"
+
+msgid "Browse Wanker plugins, shared themes, and future agent configs."
+msgstr "Просматривайте плагины Wanker, общие темы и будущие конфигурации агентов."
+
+msgid "Browse Wanker theme files shared by the community, including GitHub Dark Colorblind, Catppuccin, Ember, and One Dark Pro."
+msgstr "Смотрите файлы тем Wanker, опубликованные сообществом, включая GitHub Dark Colorblind, Catppuccin, Ember и One Dark Pro."
 
 msgid "Browse workspaces"
 msgstr "Смотреть рабочие области"
@@ -3772,8 +3772,8 @@ msgstr "Строим последнюю программу."
 msgid "Built a plugin? Submit it here."
 msgstr "Создали плагин? Отправьте его здесь."
 
-msgid "Built in Paradev"
-msgstr "Создано в Paradev"
+msgid "Built in Wanker"
+msgstr "Создано в Wanker"
 
 msgid "builtin"
 msgstr "встроенная"
@@ -3788,11 +3788,11 @@ msgstr "Маркированный список"
 msgid "bundled {0}"
 msgstr "в комплекте {0}"
 
-msgid "Bundled with the Paradev app on this device."
-msgstr "Поставляется вместе с приложением Paradev на этом устройстве."
+msgid "Bundled with the Wanker app on this device."
+msgstr "Поставляется вместе с приложением Wanker на этом устройстве."
 
-msgid "Bundled with the Paradev app on this device. Updates with the app."
-msgstr "Поставляется вместе с приложением Paradev на этом устройстве. Обновляется вместе с приложением."
+msgid "Bundled with the Wanker app on this device. Updates with the app."
+msgstr "Поставляется вместе с приложением Wanker на этом устройстве. Обновляется вместе с приложением."
 
 msgid "Business plan"
 msgstr "Тариф Business"
@@ -4373,8 +4373,8 @@ msgstr "Выберите основной репозиторий"
 msgid "Choose what to clear from the in-app browser."
 msgstr "Выберите, что очистить во встроенном браузере."
 
-msgid "Choose when Paradev pings you."
-msgstr "Выберите, когда Paradev вас уведомляет."
+msgid "Choose when Wanker pings you."
+msgstr "Выберите, когда Wanker вас уведомляет."
 
 msgid "Choose where agents started from comments, design mode, and Pages open."
 msgstr "Выберите, где открывать агентов, запущенных из комментариев, режима дизайна и Pages."
@@ -4394,8 +4394,8 @@ msgstr "Уточнить это"
 msgid "Claude Code sessions, with claude --resume"
 msgstr "Сессии Claude Code, через claude --resume"
 
-msgid "Claude Code, Codex, and OpenCode are the agents; Paradev is where you run many of them at once. Each task gets its own Git worktree and branch, so ten agents can work on ten branches simultaneously while you monitor, review, and merge from one place."
-msgstr "Claude Code, Codex и OpenCode — это агенты; Paradev — место, где вы запускаете многих из них одновременно. Каждая задача получает собственный Git worktree и ветку, поэтому десять агентов могут одновременно работать в десяти ветках, пока вы следите, проверяете и сливаете изменения из одного места."
+msgid "Claude Code, Codex, and OpenCode are the agents; Wanker is where you run many of them at once. Each task gets its own Git worktree and branch, so ten agents can work on ten branches simultaneously while you monitor, review, and merge from one place."
+msgstr "Claude Code, Codex и OpenCode — это агенты; Wanker — место, где вы запускаете многих из них одновременно. Каждая задача получает собственный Git worktree и ветку, поэтому десять агентов могут одновременно работать в десяти ветках, пока вы следите, проверяете и сливаете изменения из одного места."
 
 msgid "Claude Code, Codex, Cursor Agent, OpenCode, Gemini, Amp, any CLI"
 msgstr "Claude Code, Codex, Cursor Agent, OpenCode, Gemini, Amp, любой CLI"
@@ -4811,8 +4811,8 @@ msgstr "Облачные рабочие пространства игнорир�
 msgid "Cloud workspaces need the Team or Ultra plan. Upgrade in Settings, Billing to start one."
 msgstr "Облачным рабочим пространствам нужен план Team или Ultra. Повысьте план в разделе Настройки, Оплата, чтобы запустить его."
 
-msgid "Cloud workspaces open on it, and its Paradev config runs setup. The others are checked out beside it."
-msgstr "Облачные рабочие области открываются в нём, а его конфигурация Paradev запускает настройку. Остальные извлекаются рядом."
+msgid "Cloud workspaces open on it, and its Wanker config runs setup. The others are checked out beside it."
+msgstr "Облачные рабочие области открываются в нём, а его конфигурация Wanker запускает настройку. Остальные извлекаются рядом."
 
 msgid "Cloud workspaces will stop running {agentLabel} with it."
 msgstr "Облачные рабочие пространства перестанут запускать {agentLabel} с этими данными."
@@ -5021,14 +5021,14 @@ msgstr "Рабочий email"
 msgid "Compare"
 msgstr "Сравнение"
 
-msgid "Compare Paradev | AI Coding Comparisons and Guides"
-msgstr "Сравнение Paradev | Сравнения и руководства по AI-кодингу"
-
-msgid "Compare Paradev with Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot, and more. Browse side-by-side comparisons, roundups, and workflow guides."
-msgstr "Сравните Paradev с Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot и другими. Прямые сравнения, обзоры и руководства по рабочим процессам."
-
 msgid "Compare plans"
 msgstr "Сравнить тарифы"
+
+msgid "Compare Wanker | AI Coding Comparisons and Guides"
+msgstr "Сравнение Wanker | Сравнения и руководства по AI-кодингу"
+
+msgid "Compare Wanker with Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot, and more. Browse side-by-side comparisons, roundups, and workflow guides."
+msgstr "Сравните Wanker с Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot и другими. Прямые сравнения, обзоры и руководства по рабочим процессам."
 
 msgid "Compared against the default style"
 msgstr "Сравнили со стилем по умолчанию"
@@ -5109,8 +5109,8 @@ msgstr "Настройка поведения веток git и worktree"
 msgid "Configure GitHub App…"
 msgstr "Настроить GitHub App…"
 
-msgid "Configure how tasks sync between Paradev and Linear."
-msgstr "Настройте, как задачи синхронизируются между Paradev и Linear."
+msgid "Configure how tasks sync between Wanker and Linear."
+msgstr "Настройте, как задачи синхронизируются между Wanker и Linear."
 
 msgid "Configure terminal behavior and reusable terminal scripts"
 msgstr "Настройка поведения терминала и переиспользуемых скриптов терминала"
@@ -5246,8 +5246,8 @@ msgstr "Подключите репозитории GitHub и синхрониз
 msgid "Connect your Linear account before tracking tasks in Linear."
 msgstr "Подключите свой аккаунт Linear, прежде чем вести задачи в Linear."
 
-msgid "Connect your Linear account to browse, update and start work on Linear issues from Paradev."
-msgstr "Подключите свой аккаунт Linear, чтобы просматривать, обновлять задачи Linear и начинать работу над ними в Paradev."
+msgid "Connect your Linear account to browse, update and start work on Linear issues from Wanker."
+msgstr "Подключите свой аккаунт Linear, чтобы просматривать, обновлять задачи Linear и начинать работу над ними в Wanker."
 
 msgid "Connect your Linear account to use Linear here."
 msgstr "Подключите свой аккаунт Linear, чтобы пользоваться Linear здесь."
@@ -5524,8 +5524,8 @@ msgstr "Скопировать имя ветки"
 msgid "Copy Branch Name"
 msgstr "Скопировать имя ветки"
 
-msgid "Copy browsing history and logins from Chrome, Brave, Arc, or another Chromium browser into Paradev."
-msgstr "Скопируйте историю просмотров и логины из Chrome, Brave, Arc или другого браузера на Chromium в Paradev."
+msgid "Copy browsing history and logins from Chrome, Brave, Arc, or another Chromium browser into Wanker."
+msgstr "Скопируйте историю просмотров и логины из Chrome, Brave, Arc или другого браузера на Chromium в Wanker."
 
 msgid "Copy code"
 msgstr "Копировать код"
@@ -5663,8 +5663,8 @@ msgstr "Скопировать имя пользователя"
 msgid "Copy Workspace ID"
 msgstr "Скопировать ID рабочей области"
 
-msgid "Copy your browsing history and logins from another browser into Paradev. Your original browser isn't changed."
-msgstr "Скопируйте историю просмотров и логины из другого браузера в Paradev. Исходный браузер не меняется."
+msgid "Copy your browsing history and logins from another browser into Wanker. Your original browser isn't changed."
+msgstr "Скопируйте историю просмотров и логины из другого браузера в Wanker. Исходный браузер не меняется."
 
 msgid "Copy your key now — you won't be able to see it again."
 msgstr "Скопируйте ключ сейчас — увидеть его снова не получится."
@@ -6694,8 +6694,8 @@ msgstr "Настроить {devName}"
 msgid "Customize commands"
 msgstr "Настроить команды"
 
-msgid "Customize how Paradev looks on your device"
-msgstr "Настройте внешний вид Paradev на своём устройстве"
+msgid "Customize how Wanker looks on your device"
+msgstr "Настройте внешний вид Wanker на своём устройстве"
 
 #. placeholder {0}: showHotkeysKeys.map((key) => ( <Kbd key={key}>{key}</Kbd> ))
 msgid "Customize keyboard shortcuts for your workflow. Press <0>{0}</0> to open this page anytime."
@@ -7109,8 +7109,8 @@ msgstr "Опишите задачу для агента…"
 msgid "Describe the work to your agent"
 msgstr "Опишите задачу своему агенту"
 
-msgid "Describe what you need. Paradev creates a workspace with its own worktree and branch for the task."
-msgstr "Опишите, что нужно. Paradev создаст для задачи рабочее пространство с собственным worktree и веткой."
+msgid "Describe what you need. Wanker creates a workspace with its own worktree and branch for the task."
+msgstr "Опишите, что нужно. Wanker создаст для задачи рабочее пространство с собственным worktree и веткой."
 
 msgid "Describe what you'd like to see built…"
 msgstr "Опишите, что вы хотели бы увидеть…"
@@ -7413,8 +7413,8 @@ msgstr "Показывает мобильную боковую панель."
 msgid "Do anything"
 msgstr "Сделайте что угодно"
 
-msgid "Do anything in Paradev"
-msgstr "Сделайте что угодно в Paradev"
+msgid "Do anything in Wanker"
+msgstr "Сделайте что угодно в Wanker"
 
 msgid "Do I need my own coding agent subscriptions?"
 msgstr "Нужны ли мне собственные подписки на кодовых агентов?"
@@ -7532,11 +7532,8 @@ msgstr "Скачать логи"
 msgid "Download Manually"
 msgstr "Скачать вручную"
 
-msgid "Download our logos, product images, and founder photos for use in coverage of Paradev."
-msgstr "Скачайте наши логотипы, изображения продукта и фотографии основателей для публикаций о Paradev."
-
-msgid "Download Paradev"
-msgstr "Скачать Paradev"
+msgid "Download our logos, product images, and founder photos for use in coverage of Wanker."
+msgstr "Скачайте наши логотипы, изображения продукта и фотографии основателей для публикаций о Wanker."
 
 msgid "Download starter"
 msgstr "Скачать заготовку"
@@ -7546,6 +7543,9 @@ msgstr "Скачайте файл темы выше."
 
 msgid "Download theme file"
 msgstr "Скачать файл темы"
+
+msgid "Download Wanker"
+msgstr "Скачать Wanker"
 
 msgid "downloaded"
 msgstr "загружено"
@@ -7582,8 +7582,8 @@ msgstr "Черновой PR #2841"
 msgid "drafted 3 support replies"
 msgstr "подготовил 3 ответа поддержки"
 
-msgid "Drag <0>Paradev</0> into your <1>Applications</1> folder"
-msgstr "Перетащите <0>Paradev</0> в папку <1>Программы</1>"
+msgid "Drag <0>Wanker</0> into your <1>Applications</1> folder"
+msgstr "Перетащите <0>Wanker</0> в папку <1>Программы</1>"
 
 msgid "Drag to reorder"
 msgstr "Перетащите, чтобы изменить порядок"
@@ -7872,8 +7872,8 @@ msgstr "Включить доступ через реле…"
 msgid "Enable remote access"
 msgstr "Включите удалённый доступ"
 
-msgid "Enable Remote Access and keep this computer awake with Paradev running."
-msgstr "Включите удалённый доступ и не переводите этот компьютер в спящий режим, пока работает Paradev."
+msgid "Enable Remote Access and keep this computer awake with Wanker running."
+msgstr "Включите удалённый доступ и не переводите этот компьютер в спящий режим, пока работает Wanker."
 
 msgid "Enable skill"
 msgstr "Включить навык"
@@ -8013,8 +8013,8 @@ msgstr "Каждую минуту"
 msgid "Every objective is carrying its weight for the next rung. Measured over the trailing 30 days."
 msgstr "Все цели работают на следующую ступень. Измерено за последние 30 дней."
 
-msgid "Every paid plan includes Paradev Mobile, automations, and priority support. Plans with cloud workspaces give your team one shared pool of GB-hours."
-msgstr "Каждый платный тариф включает Paradev Mobile, автоматизации и приоритетную поддержку. Тарифы с облачными рабочими пространствами дают команде общий пул ГБ-часов."
+msgid "Every paid plan includes Wanker Mobile, automations, and priority support. Plans with cloud workspaces give your team one shared pool of GB-hours."
+msgstr "Каждый платный тариф включает Wanker Mobile, автоматизации и приоритетную поддержку. Тарифы с облачными рабочими пространствами дают команде общий пул ГБ-часов."
 
 msgid "Every publish is a version"
 msgstr "Каждая публикация становится версией"
@@ -8067,8 +8067,8 @@ msgstr "Всё из Ultra"
 msgid "Everything in Ultra plus custom cloud GB-hours, SSO & SAML, SCIM provisioning, IP restrictions, audit logs, a custom SLA, dedicated support, and custom contracts. Pricing is tailored to your organization. Get in touch and we'll scope something that fits."
 msgstr "Всё из Ultra, а также индивидуальные облачные ГБ-часы, SSO и SAML, SCIM-провижининг, ограничения по IP, журналы аудита, индивидуальный SLA, выделенная поддержка и индивидуальные договоры. Цена подбирается под вашу организацию. Свяжитесь с нами, и мы подберём подходящий вариант."
 
-msgid "Everything we built on top of the primitives — Paradev originals, the"
-msgstr "Всё, что мы построили поверх примитивов, — оригиналы Paradev, набор"
+msgid "Everything we built on top of the primitives — Wanker originals, the"
+msgstr "Всё, что мы построили поверх примитивов, — оригиналы Wanker, набор"
 
 msgid "Everything you need to write about {productName} (formerly {formerName}): our company description, latest news, logos, product images, and who to contact."
 msgstr "Всё, что нужно, чтобы написать о {productName} (ранее {formerName}): описание компании, последние новости, логотипы, изображения продукта и контакты."
@@ -8223,8 +8223,8 @@ msgstr "Шлюз F4 пройден"
 msgid "Factory 2026"
 msgstr "Factory 2026"
 
-msgid "Factory 2026 | Paradev"
-msgstr "Factory 2026 | Paradev"
+msgid "Factory 2026 | Wanker"
+msgstr "Factory 2026 | Wanker"
 
 msgid "Factory tier {tier}"
 msgstr "Уровень фабрики {tier}"
@@ -9367,17 +9367,11 @@ msgstr "Свяжитесь с командой {companyName}."
 msgid "Get key"
 msgstr "Получить ключ"
 
-msgid "Get more out of Paradev"
-msgstr "Выжать больше из Paradev"
+msgid "Get more out of Wanker"
+msgstr "Выжать больше из Wanker"
 
-msgid "Get notified when Paradev is available on Windows."
-msgstr "Получите уведомление, когда Paradev станет доступен для Windows."
-
-msgid "Get Paradev on your Mac"
-msgstr "Установите Paradev на Mac"
-
-msgid "Get Paradev Pro"
-msgstr "Получить Paradev Pro"
+msgid "Get notified when Wanker is available on Windows."
+msgstr "Получите уведомление, когда Wanker станет доступен для Windows."
 
 msgid "Get started"
 msgstr "Начать"
@@ -9390,6 +9384,12 @@ msgstr "Используйте Pro по максимуму"
 
 msgid "Get the iPhone and iPad app"
 msgstr "Скачать приложение для iPhone и iPad"
+
+msgid "Get Wanker on your Mac"
+msgstr "Установите Wanker на Mac"
+
+msgid "Get Wanker Pro"
+msgstr "Получить Wanker Pro"
 
 msgid "Gets an invite to join {organizationName}"
 msgstr "Получит приглашение в {organizationName}"
@@ -9526,9 +9526,6 @@ msgstr "На главную"
 msgid "Go to next page"
 msgstr "На следующую страницу"
 
-msgid "Go to Paradev"
-msgstr "Перейти в Paradev"
-
 msgid "Go to previous page"
 msgstr "На предыдущую страницу"
 
@@ -9538,11 +9535,14 @@ msgstr "Откройте Настройки, затем Удалённый до�
 msgid "Go to Slack integration settings"
 msgstr "Перейти к настройкам интеграции Slack"
 
+msgid "Go to Wanker"
+msgstr "Перейти в Wanker"
+
 msgid "Go to workspace"
 msgstr "Перейти в рабочую область"
 
-msgid "Google did not grant lasting access. Remove Paradev from your Google account's third-party access and try again."
-msgstr "Google не выдал длительный доступ. Удалите Paradev из стороннего доступа в аккаунте Google и повторите."
+msgid "Google did not grant lasting access. Remove Wanker from your Google account's third-party access and try again."
+msgstr "Google не выдал длительный доступ. Удалите Wanker из стороннего доступа в аккаунте Google и повторите."
 
 msgid "Google or another search engine"
 msgstr "Google или другой поисковик"
@@ -9550,8 +9550,8 @@ msgstr "Google или другой поисковик"
 msgid "Got it"
 msgstr "Понятно"
 
-msgid "Grant the OS permissions Paradev needs."
-msgstr "Выдайте разрешения ОС, нужные Paradev."
+msgid "Grant the OS permissions Wanker needs."
+msgstr "Выдайте разрешения ОС, нужные Wanker."
 
 msgid "Granted"
 msgstr "Выдано"
@@ -9872,8 +9872,8 @@ msgstr "Как создаются ветки и имена рабочих обл
 msgid "How can we help?"
 msgstr "Чем можем помочь?"
 
-msgid "How did you hear about Paradev?"
-msgstr "Как вы узнали о Paradev?"
+msgid "How did you hear about Wanker?"
+msgstr "Как вы узнали о Wanker?"
 
 msgid "How do cloud hours work?"
 msgstr "Как работают облачные часы?"
@@ -9896,8 +9896,8 @@ msgstr "Как работает система параллельных аген
 msgid "How grouped commands open."
 msgstr "Как открываются сгруппированные команды."
 
-msgid "How is Paradev different from just running Claude Code in a terminal?"
-msgstr "Чем Paradev отличается от простого запуска Claude Code в терминале?"
+msgid "How is Wanker different from just running Claude Code in a terminal?"
+msgstr "Чем Wanker отличается от простого запуска Claude Code в терминале?"
 
 msgid "How it should work and what to avoid"
 msgstr "Как работать и чего избегать"
@@ -9929,11 +9929,11 @@ msgstr "Как промпт передаётся процессу."
 msgid "How tiers work →"
 msgstr "Как устроены уровни →"
 
-msgid "How to install {name} in Paradev"
-msgstr "Как установить {name} в Paradev"
+msgid "How to install {name} in Wanker"
+msgstr "Как установить {name} в Wanker"
 
-msgid "How to install Paradev"
-msgstr "Как установить Paradev"
+msgid "How to install Wanker"
+msgstr "Как установить Wanker"
 
 msgid "How we build it, in long form."
 msgstr "Как мы это строим, подробно."
@@ -10016,8 +10016,8 @@ msgstr "Простаивает"
 msgid "Idle · branch pushed"
 msgstr "Простаивает · ветка отправлена"
 
-msgid "If you're enjoying Paradev so far, a GitHub star helps other developers discover it."
-msgstr "Если Paradev вам нравится, звезда на GitHub поможет другим разработчикам его найти."
+msgid "If you're enjoying Wanker so far, a GitHub star helps other developers discover it."
+msgstr "Если Wanker вам нравится, звезда на GitHub поможет другим разработчикам его найти."
 
 msgid "Ignore @channel and @here"
 msgstr "Игнорировать @channel и @here"
@@ -10172,14 +10172,14 @@ msgstr "в терминале на этом хосте."
 msgid "In Apple's window, click Install. It takes a few minutes, and this page updates when it's done."
 msgstr "В окне Apple нажмите «Установить». Это займёт несколько минут, а страница обновится, когда всё будет готово."
 
-msgid "In just a few months, <0>tens of thousands of engineers</0> run Paradev as their primary IDE, at companies like Wix, DoorDash, and Netflix."
-msgstr "Всего за несколько месяцев <0>десятки тысяч инженеров</0> используют Paradev как основную IDE — в таких компаниях, как Wix, DoorDash и Netflix."
+msgid "In just a few months, <0>tens of thousands of engineers</0> run Wanker as their primary IDE, at companies like Wix, DoorDash, and Netflix."
+msgstr "Всего за несколько месяцев <0>десятки тысяч инженеров</0> используют Wanker как основную IDE — в таких компаниях, как Wix, DoorDash и Netflix."
 
 msgid "In local workspaces, your code and agent sessions stay on your machine. Cloud workspaces run in a sandbox."
 msgstr "В локальных рабочих областях код и сессии агентов остаются на вашем компьютере. Облачные рабочие области работают в песочнице."
 
-msgid "In manual mode, Paradev doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
-msgstr "В ручном режиме Paradev не выполняет вход для этого агента. Пусть ваш скрипт снова выполнит вход, затем продолжите, или отключите ручной режим в настройках агентов."
+msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
+msgstr "В ручном режиме Wanker не выполняет вход для этого агента. Пусть ваш скрипт снова выполнит вход, затем продолжите, или отключите ручной режим в настройках агентов."
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "Работаем в офисе в Сан-Франциско пять дней в неделю. Вы работаете напрямую с основателями."
@@ -10200,8 +10200,8 @@ msgstr "На ревью"
 msgid "In the {appName} desktop app, open Settings → Remote Access and turn on “Allow remote access to this device via relay”."
 msgstr "В десктопном приложении {appName} откройте Настройки → Удалённый доступ и включите «Разрешить удалённый доступ к этому устройству через реле»."
 
-msgid "In the Paradev desktop app, open <0>Settings → Appearance → Theme</0>."
-msgstr "В приложении Paradev откройте <0>Настройки → Внешний вид → Тема</0>."
+msgid "In the Wanker desktop app, open <0>Settings → Appearance → Theme</0>."
+msgstr "В приложении Wanker откройте <0>Настройки → Внешний вид → Тема</0>."
 
 msgid "In under a year, more than 145,000 developers across 180 countries have run {productName} and created over 1.85 million agent workspaces."
 msgstr "Меньше чем за год более 145 000 разработчиков из 180 стран запускали {productName} и создали более 1,85 млн рабочих областей агентов."
@@ -10233,8 +10233,8 @@ msgstr "Входит в Enterprise"
 msgid "Included with Team and Ultra."
 msgstr "Входит в Team и Ultra."
 
-msgid "Includes the Paradev-specific box variant"
-msgstr "Включает специфичный для Paradev вариант box"
+msgid "Includes the Wanker-specific box variant"
+msgstr "Включает специфичный для Wanker вариант box"
 
 msgid "Incognito Operator"
 msgstr "Оператор инкогнито"
@@ -10293,8 +10293,8 @@ msgstr "токены ввода, кеша и вывода"
 msgid "Inputs"
 msgstr "Поля ввода"
 
-msgid "Insights from the Paradev team about parallel coding agents and developer productivity."
-msgstr "Мысли команды Paradev о параллельных кодовых агентах и продуктивности разработчиков."
+msgid "Insights from the Wanker team about parallel coding agents and developer productivity."
+msgstr "Мысли команды Wanker о параллельных кодовых агентах и продуктивности разработчиков."
 
 msgid "Inspect branches and run SQL"
 msgstr "Просмотр веток и запуск SQL"
@@ -10318,8 +10318,8 @@ msgstr "Установить и перезапустить"
 msgid "Install & Restart"
 msgstr "Установить и перезапустить"
 
-msgid "Install a plugin in the Paradev app and every agent can use it."
-msgstr "Установите плагин в приложении Paradev, и его сможет использовать любой агент."
+msgid "Install a plugin in the Wanker app and every agent can use it."
+msgstr "Установите плагин в приложении Wanker, и его сможет использовать любой агент."
 
 msgid "Install Command Line Tools"
 msgstr "Установить Command Line Tools"
@@ -10348,17 +10348,17 @@ msgstr "Установите один раз. Его получает кажды
 msgid "Install once. Mention it in any prompt."
 msgstr "Установите один раз. Упоминайте в любом промпте."
 
-msgid "Install Paradev MCP in your client"
-msgstr "Установите Paradev MCP в своём клиенте"
-
 msgid "Install plugin"
 msgstr "Установить плагин"
 
 msgid "Install the desktop app"
 msgstr "Установите десктопное приложение"
 
-msgid "Install the Paradev GitHub App on each GitHub organization or account whose repositories you want to connect."
-msgstr "Установите GitHub App Paradev в каждую организацию или аккаунт GitHub, репозитории которых хотите подключить."
+msgid "Install the Wanker GitHub App on each GitHub organization or account whose repositories you want to connect."
+msgstr "Установите GitHub App Wanker в каждую организацию или аккаунт GitHub, репозитории которых хотите подключить."
+
+msgid "Install Wanker MCP in your client"
+msgstr "Установите Wanker MCP в своём клиенте"
 
 msgid "Install, authorize, and scope MCP servers across all your workspaces from one place, with centralized OAuth."
 msgstr "Устанавливайте, авторизуйте и ограничивайте серверы MCP во всех рабочих областях из одного места, с централизованным OAuth."
@@ -10386,8 +10386,8 @@ msgstr "Установлено через"
 msgid "Installing..."
 msgstr "Установка..."
 
-msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
-msgstr "Устанавливает Paradev на машину, доступную по ssh, выполняет вход Paradev в вашу учётную запись и держит Paradev запущенным как службу."
+msgid "Installs Wanker on a machine you can reach with ssh, signs Wanker in to your account, and keeps it running as a service."
+msgstr "Устанавливает Wanker на машину, доступную по ssh, выполняет вход Wanker в вашу учётную запись и держит Wanker запущенным как службу."
 
 msgid "Instructions"
 msgstr "Инструкции"
@@ -10404,8 +10404,8 @@ msgstr "Интерактивный терминал агента."
 msgid "Interactive clients authorize over OAuth 2.1 in your browser, scoped to your active organization. For headless environments and CI, generate an API key from Settings → API Keys in the desktop app and pass it as a Bearer token instead. Full setup, including header config for Claude Code, is in the <0>authentication docs</0>."
 msgstr "Интерактивные клиенты авторизуются через OAuth 2.1 в браузере, в рамках вашей активной организации. Для headless-окружений и CI создайте ключ API в Настройки → Ключи API в приложении и передайте его как Bearer-токен. Полная настройка, включая конфигурацию заголовков для Claude Code, — в <0>документации по аутентификации</0>."
 
-msgid "Interested in bringing Paradev to your organization? Reach out and we'll work with you to find the right setup for your team."
-msgstr "Хотите привести Paradev в свою организацию? Напишите нам, и мы вместе подберём подходящую конфигурацию для команды."
+msgid "Interested in bringing Wanker to your organization? Reach out and we'll work with you to find the right setup for your team."
+msgstr "Хотите привести Wanker в свою организацию? Напишите нам, и мы вместе подберём подходящую конфигурацию для команды."
 
 msgid "Interface"
 msgstr "Интерфейс"
@@ -10536,23 +10536,23 @@ msgstr "Мои данные в безопасности?"
 msgid "is now signed in here."
 msgstr "теперь вошёл здесь."
 
-msgid "Is Paradev free to use?"
-msgstr "Paradev бесплатный?"
-
-msgid "Is Paradev just a wrapper around Claude Code?"
-msgstr "Paradev — просто обёртка над Claude Code?"
-
-msgid "Is Paradev open source?"
-msgstr "Paradev — open source?"
-
-msgid "Is Paradev SOC 2 compliant?"
-msgstr "Paradev соответствует SOC 2?"
-
 msgid "is signed in."
 msgstr "вошёл в систему."
 
 msgid "Is there a free plan?"
 msgstr "Есть ли бесплатный тариф?"
+
+msgid "Is Wanker free to use?"
+msgstr "Wanker бесплатный?"
+
+msgid "Is Wanker just a wrapper around Claude Code?"
+msgstr "Wanker — просто обёртка над Claude Code?"
+
+msgid "Is Wanker open source?"
+msgstr "Wanker — open source?"
+
+msgid "Is Wanker SOC 2 compliant?"
+msgstr "Wanker соответствует SOC 2?"
 
 msgid "Issue"
 msgstr "Задача"
@@ -10647,8 +10647,8 @@ msgstr "Ответы тоже будут удалены."
 msgid "Its work, including uncommitted changes, is pushed to a new branch. A workspace on the computer you pick starts from that branch, and each Claude chat continues there. Agents that are working stop first. Terminals and other chats stay where they are."
 msgstr "Его работа, включая незакоммиченные изменения, отправляется в новую ветку. Рабочая область на выбранном компьютере начинается с этой ветки, и каждый чат Claude продолжается там. Работающие агенты сначала останавливаются. Терминалы и другие чаты остаются на месте."
 
-msgid "Its workspaces and terminals are unavailable until it restarts — use the Paradev tray menu > Host Service > Restart."
-msgstr "Её рабочие области и терминалы недоступны до перезапуска — откройте меню Paradev в трее > Host Service > Restart."
+msgid "Its workspaces and terminals are unavailable until it restarts — use the Wanker tray menu > Host Service > Restart."
+msgstr "Её рабочие области и терминалы недоступны до перезапуска — откройте меню Wanker в трее > Host Service > Restart."
 
 msgid "Its workspaces and their worktrees are removed from disk now instead of after 30 days. The repository folder and worktrees with uncommitted changes are kept."
 msgstr "Его рабочие области и их worktree удаляются с диска сейчас, а не через 30 дней. Папка репозитория и worktree с незакоммиченными изменениями сохраняются."
@@ -10657,7 +10657,7 @@ msgid "Jane Doe"
 msgstr "Иван Иванов"
 
 msgid "Japan is its second-largest market after the US, with over 13,000 developers, and Asia as a whole now accounts for more users than the US."
-msgstr "Япония — второй по величине рынок после США: там Paradev пользуются более 13 000 разработчиков. А в Азии в целом пользователей теперь больше, чем в США."
+msgstr "Япония — второй по величине рынок после США: там Wanker пользуются более 13 000 разработчиков. А в Азии в целом пользователей теперь больше, чем в США."
 
 msgid "JetBrains"
 msgstr "JetBrains"
@@ -10677,8 +10677,8 @@ msgstr "Заходите в наш Discord"
 msgid "JOIN OUR DISCORD"
 msgstr "ЗАЙТИ В НАШ DISCORD"
 
-msgid "Join the <0>Paradev</0> community to get help, share ideas, and stay up to date with the latest news and updates."
-msgstr "Присоединяйтесь к сообществу <0>Paradev</0>, чтобы получать помощь, делиться идеями и быть в курсе новостей и обновлений."
+msgid "Join the <0>Wanker</0> community to get help, share ideas, and stay up to date with the latest news and updates."
+msgstr "Присоединяйтесь к сообществу <0>Wanker</0>, чтобы получать помощь, делиться идеями и быть в курсе новостей и обновлений."
 
 msgid "Join the channel first"
 msgstr "Сначала присоединитесь к каналу"
@@ -10686,17 +10686,17 @@ msgstr "Сначала присоединитесь к каналу"
 msgid "Join the leaderboard"
 msgstr "Присоединиться к рейтингу"
 
-msgid "Join the Paradev community to get help, share ideas, and stay up to date with the latest news and updates."
-msgstr "Присоединяйтесь к сообществу Paradev, чтобы получать помощь, делиться идеями и следить за новостями и обновлениями."
-
 msgid "Join the waitlist"
 msgstr "Записаться в список ожидания"
+
+msgid "Join the Wanker community to get help, share ideas, and stay up to date with the latest news and updates."
+msgstr "Присоединяйтесь к сообществу Wanker, чтобы получать помощь, делиться идеями и следить за новостями и обновлениями."
 
 msgid "Join us"
 msgstr "Присоединяйтесь"
 
-msgid "Join us at Paradev"
-msgstr "Присоединяйтесь к Paradev"
+msgid "Join us at Wanker"
+msgstr "Присоединяйтесь к Wanker"
 
 msgid "Join waitlist"
 msgstr "В список ожидания"
@@ -11124,8 +11124,8 @@ msgstr "Светлая"
 msgid "Light theme"
 msgstr "Светлая тема"
 
-msgid "Like building with Paradev?"
-msgstr "Нравится создавать с Paradev?"
+msgid "Like building with Wanker?"
+msgstr "Нравится создавать с Wanker?"
 
 msgid "Lime"
 msgstr "Лаймовый"
@@ -11551,8 +11551,8 @@ msgstr "Сделать основным — запускать новые тер
 msgid "Make public"
 msgstr "Сделать общедоступной"
 
-msgid "Make sure the device is awake, online, and running Paradev."
-msgstr "Убедитесь, что устройство не в спящем режиме, подключено к интернету и на нём запущен Paradev."
+msgid "Make sure the device is awake, online, and running Wanker."
+msgstr "Убедитесь, что устройство не в спящем режиме, подключено к интернету и на нём запущен Wanker."
 
 msgid "Make the chip style the TooltipContent default"
 msgstr "Сделать стиль чипа значением по умолчанию для TooltipContent"
@@ -11773,8 +11773,8 @@ msgstr "Средняя серьёзность"
 msgid "Meet the team"
 msgstr "Познакомьтесь с командой"
 
-msgid "Meet the team behind Paradev, building parallel coding agents for developers."
-msgstr "Познакомьтесь с командой Paradev, которая создаёт параллельных кодинг-агентов для разработчиков."
+msgid "Meet the team behind Wanker, building parallel coding agents for developers."
+msgstr "Познакомьтесь с командой Wanker, которая создаёт параллельных кодинг-агентов для разработчиков."
 
 msgid "Member"
 msgstr "Участник"
@@ -11829,8 +11829,8 @@ msgstr "Не удалось объединить: {0}"
 msgid "Merge pull request"
 msgstr "Объединить пул-реквест"
 
-msgid "Merge pull requests without leaving Paradev, plus a round of chat fixes and polish."
-msgstr "Объединяйте пул-реквесты не выходя из Paradev, плюс порция исправлений и полировки чата."
+msgid "Merge pull requests without leaving Wanker, plus a round of chat fixes and polish."
+msgstr "Объединяйте пул-реквесты не выходя из Wanker, плюс порция исправлений и полировки чата."
 
 msgid "Merge status"
 msgstr "Статус слияния"
@@ -12445,8 +12445,8 @@ msgstr "Новости и обновления"
 msgid "News and deep dives"
 msgstr "Новости и подробные разборы"
 
-msgid "News, updates, and insights from the Paradev team about parallel coding agents and developer productivity."
-msgstr "Новости, обновления и заметки команды Paradev о параллельных кодинг-агентах и продуктивности разработчиков."
+msgid "News, updates, and insights from the Wanker team about parallel coding agents and developer productivity."
+msgstr "Новости, обновления и заметки команды Wanker о параллельных кодинг-агентах и продуктивности разработчиков."
 
 msgid "Next"
 msgstr "Далее"
@@ -13190,8 +13190,8 @@ msgstr "Рабочих областей пока нет"
 msgid "No-Prompt Launch"
 msgstr "Запуск без промпта"
 
-msgid "No. Your agents stay independent; Paradev is the orchestration layer around them. Each task gets its own Git worktree and branch, persistent sessions, diff review, and automations that run on events or a schedule, without tying the workflow to one provider."
-msgstr "Нет. Ваши агенты остаются независимыми; Paradev — это слой оркестрации вокруг них. Каждая задача получает собственный Git worktree и ветку, постоянные сессии, просмотр diff и автоматизации, которые запускаются по событиям или по расписанию, без привязки рабочего процесса к одному провайдеру."
+msgid "No. Your agents stay independent; Wanker is the orchestration layer around them. Each task gets its own Git worktree and branch, persistent sessions, diff review, and automations that run on events or a schedule, without tying the workflow to one provider."
+msgstr "Нет. Ваши агенты остаются независимыми; Wanker — это слой оркестрации вокруг них. Каждая задача получает собственный Git worktree и ветку, постоянные сессии, просмотр diff и автоматизации, которые запускаются по событиям или по расписанию, без привязки рабочего процесса к одному провайдеру."
 
 msgid "Nobody has joined the board yet."
 msgstr "В рейтинг пока никто не вступил."
@@ -13495,8 +13495,8 @@ msgstr "На этой странице"
 msgid "On window change"
 msgstr "При смене окна"
 
-msgid "On your machine. Repos, worktrees, terminal output, and agent sessions stay local by default; cloud sync covers account and organization metadata only. Paradev doesn't proxy any API calls."
-msgstr "На вашей машине. Репозитории, worktree, вывод терминала и сессии агентов по умолчанию остаются локальными; облачная синхронизация покрывает только метаданные аккаунта и организации. Paradev не проксирует вызовы API."
+msgid "On your machine. Repos, worktrees, terminal output, and agent sessions stay local by default; cloud sync covers account and organization metadata only. Wanker doesn't proxy any API calls."
+msgstr "На вашей машине. Репозитории, worktree, вывод терминала и сессии агентов по умолчанию остаются локальными; облачная синхронизация покрывает только метаданные аккаунта и организации. Wanker не проксирует вызовы API."
 
 msgid "On-screen Keyboard"
 msgstr "Экранная клавиатура"
@@ -13730,8 +13730,8 @@ msgstr "Открыть {parentLabel}"
 msgid "Open {path} in file pane"
 msgstr "Открыть {path} в панели файла"
 
-msgid "Open <0>Paradev</0> from your <1>Applications</1> folder"
-msgstr "Откройте <0>Paradev</0> из папки <1>Программы</1>"
+msgid "Open <0>Wanker</0> from your <1>Applications</1> folder"
+msgstr "Откройте <0>Wanker</0> из папки <1>Программы</1>"
 
 msgid "Open a folder"
 msgstr "Открыть папку"
@@ -13745,8 +13745,8 @@ msgstr "Открыть многострочный редактор промпт�
 msgid "Open a new {label} chat?"
 msgstr "Открыть новый чат {label}?"
 
-msgid "Open a pull request that adds it to the Paradev repository. We review it and add it to the marketplace."
-msgstr "Откройте пул-реквест, который добавляет плагин в репозиторий Paradev. Мы проверим его и добавим в маркетплейс."
+msgid "Open a pull request that adds it to the Wanker repository. We review it and add it to the marketplace."
+msgstr "Откройте пул-реквест, который добавляет плагин в репозиторий Wanker. Мы проверим его и добавим в маркетплейс."
 
 msgid "Open a pull request to view review status, checks, and comments."
 msgstr "Откройте пул-реквест, чтобы видеть статус ревью, проверки и комментарии."
@@ -13941,9 +13941,6 @@ msgstr "Открыть в новой вкладке"
 msgid "Open in New Tab"
 msgstr "Открыть в новой вкладке"
 
-msgid "Open in Paradev"
-msgstr "Открыть в Paradev"
-
 msgid "Open in Pull Requests"
 msgstr "Открыть в разделе «Пул-реквесты»"
 
@@ -13967,6 +13964,9 @@ msgstr "Открыть в задачах"
 
 msgid "Open in Terminal Chat"
 msgstr "Открыть в чате терминала"
+
+msgid "Open in Wanker"
+msgstr "Открыть в Wanker"
 
 msgid "Open in…"
 msgstr "Открыть в…"
@@ -14021,8 +14021,8 @@ msgstr "Откройте страницу входа устройств OpenAI."
 msgid "Open Page in Default Browser"
 msgstr "Открыть страницу в браузере по умолчанию"
 
-msgid "Open pages and reply to comments from the Paradev app on iPhone and iPad."
-msgstr "Открывайте страницы и отвечайте на комментарии в приложении Paradev на iPhone и iPad."
+msgid "Open pages and reply to comments from the Wanker app on iPhone and iPad."
+msgstr "Открывайте страницы и отвечайте на комментарии в приложении Wanker на iPhone и iPad."
 
 #. placeholder {0}: pr.number
 msgid "Open PR #{0}"
@@ -14189,8 +14189,8 @@ msgstr "Открытие страниц"
 msgid "Operator"
 msgstr "Оператор"
 
-msgid "Opt in from Paradev under Settings → Account."
-msgstr "Подключитесь в Paradev: Настройки → Аккаунт."
+msgid "Opt in from Wanker under Settings → Account."
+msgstr "Подключитесь в Wanker: Настройки → Аккаунт."
 
 msgid "Opt-out"
 msgstr "Отказаться"
@@ -14458,192 +14458,8 @@ msgstr "Корень раскладки панелей: рендерит дер�
 msgid "PaneHeaderActions.tsx"
 msgstr "PaneHeaderActions.tsx"
 
-msgid "Paradev"
-msgstr "Paradev"
-
-msgid "Paradev {version}"
-msgstr "Paradev {version}"
-
-msgid "Paradev Agent"
-msgstr "Paradev Agent"
-
-msgid "Paradev app"
-msgstr "Приложение Paradev"
-
-msgid "Paradev App"
-msgstr "Приложение Paradev"
-
-msgid "Paradev Automations"
-msgstr "Paradev Автоматизации"
-
-msgid "Paradev CLI"
-msgstr "Paradev CLI"
-
-msgid "Paradev cloud workspaces"
-msgstr "Облачные рабочие области Paradev"
-
-msgid "Paradev components"
-msgstr "Компоненты Paradev"
-
-msgid "Paradev Components"
-msgstr "Компоненты Paradev"
-
-msgid "Paradev could not bring over some of your v1 projects or workspaces. Open the importer to see why and retry each one."
-msgstr "Paradev не удалось перенести некоторые ваши проекты или рабочие пространства из v1. Откройте импортёр, чтобы узнать причину и повторить каждый из них."
-
-msgid "Paradev could not complete sign-in. Please try again."
-msgstr "Paradev не смог завершить вход. Попробуйте ещё раз."
-
-msgid "Paradev CPU"
-msgstr "CPU Paradev"
-
-msgid "Paradev CPU · last 5 min"
-msgstr "CPU Paradev · последние 5 мин"
-
-msgid "Paradev Design System"
-msgstr "Дизайн-система Paradev"
-
-msgid "Paradev desktop app"
-msgstr "Десктопное приложение Paradev"
-
-msgid "Paradev doesn't have permission to read \"{name}\"."
-msgstr "У Paradev нет разрешения на чтение «{name}»."
-
-msgid "Paradev Enterprise is Paradev for teams. Reach out to learn more about what's included and how it can work for your organization."
-msgstr "Paradev Enterprise — это Paradev для команд. Напишите нам, чтобы узнать, что входит и как это подойдёт вашей организации."
-
-msgid "Paradev for iPhone and iPad"
-msgstr "Paradev для iPhone и iPad"
-
-msgid "Paradev for your team"
-msgstr "Paradev для вашей команды"
-
-msgid "Paradev forwards the ports a remote workspace opens while you have it selected."
-msgstr "Paradev пробрасывает порты, которые открывает удалённая рабочая область, пока она выбрана."
-
-msgid "Paradev GitHub App"
-msgstr "Paradev GitHub App"
-
-msgid "Paradev has a free tier. The source code is on GitHub under the MIT License, so you can inspect, modify, and self-host it."
-msgstr "У Paradev есть бесплатный тариф. Исходный код опубликован на GitHub под лицензией MIT, поэтому его можно изучать, изменять и хостить самостоятельно."
-
-msgid "Paradev hit an unexpected error. Reload to try again."
-msgstr "В Paradev произошла непредвиденная ошибка. Перезагрузите, чтобы повторить."
-
-msgid "Paradev holds no credential for {label} and adds none to your cloud workspaces when they start, restart or wake. A script you run inside the workspace keeps {loginFile} up to date. If it stops, {label} stays signed out until your script signs it in again."
-msgstr "Paradev не хранит учётные данные {label} и не добавляет их в ваши облачные рабочие области при запуске, перезапуске или пробуждении. Скрипт, который вы запускаете в рабочей области, поддерживает {loginFile} в актуальном состоянии. Если он остановится, {label} останется без входа, пока ваш скрипт снова не выполнит вход."
-
-msgid "Paradev holds the token and makes the calls. Agents never see it."
-msgstr "Paradev хранит токен и делает вызовы. Агенты его никогда не видят."
-
-msgid "Paradev hooks"
-msgstr "Хуки Paradev"
-
-msgid "Paradev in-app browser"
-msgstr "Встроенный браузер Paradev"
-
-msgid "Paradev is a desktop app. Enter your email and we'll send you a download link to open on your Mac."
-msgstr "Paradev — десктопное приложение. Введите email, и мы пришлём ссылку на скачивание, чтобы открыть её на Mac."
-
-msgid "Paradev is building self-improving software. It starts with giving engineers the best tools that adapt to their needs over time."
-msgstr "Paradev строит самоулучшающийся софт. Всё начинается с того, чтобы дать инженерам лучшие инструменты, которые со временем подстраиваются под их нужды."
-
-msgid "Paradev is built by a team based in San Francisco, California. For product support or account questions, email <0>{supportEmail}</0> and we'll get back to you within one business day. For partnerships, press, enterprise, or anything else, write to <1>{teamEmail}</1>."
-msgstr "Paradev делает команда из Сан-Франциско, Калифорния. По вопросам продукта и аккаунта пишите на <0>{supportEmail}</0> — ответим в течение одного рабочего дня. По партнёрствам, прессе, enterprise и любым другим вопросам — на <1>{teamEmail}</1>."
-
-msgid "Paradev is built in Paradev, so we're our own #1 users. You get paid to make your own life easier."
-msgstr "Paradev разрабатывается в Paradev, поэтому мы сами его главные пользователи. Вам платят за то, что вы упрощаете себе жизнь."
-
-msgid "Paradev is designed to work with your existing tool, we natively support deep-linking to IDEs like Cursor so you can open your workspaces and files in your IDE."
-msgstr "Paradev рассчитан на работу с вашим текущим инструментом: мы нативно поддерживаем переход по ссылкам в IDE вроде Cursor, чтобы открывать рабочие области и файлы прямо там."
-
-msgid "Paradev is MIT licensed, so you're never locked in. Read or change the code on GitHub."
-msgstr "Paradev распространяется под лицензией MIT, так что вы ни к чему не привязаны. Читайте или меняйте код на GitHub."
-
-msgid "Paradev is open source. Every pull request, review and bug is public on GitHub."
-msgstr "У Paradev открытый исходный код. Каждый пул-реквест, ревью и баг открыты на GitHub."
-
-msgid "Paradev is the workbench for the F3 to F4 transition: parallel agents on separate branches, fleets you can actually supervise, and a review surface for code you did not write."
-msgstr "Paradev — это верстак для перехода от F3 к F4: параллельные агенты в отдельных ветках, флоты, за которыми действительно можно следить, и интерфейс проверки для кода, который вы не писали."
-
-msgid "Paradev isn't on Windows yet"
-msgstr "Пока Paradev работает только на Mac"
-
-msgid "Paradev may sign you back in after restart. Please try signing out again."
-msgstr "Paradev может снова выполнить вход после перезапуска. Попробуйте выйти ещё раз."
-
-msgid "Paradev memory"
-msgstr "Память Paradev"
-
-msgid "Paradev memory · last 5 min"
-msgstr "Память Paradev · последние 5 мин"
-
-msgid "Paradev Mobile code diff on iPhone"
-msgstr "Diff кода в Paradev Mobile на iPhone"
-
-msgid "Paradev mobile gives me the power of my desktop anywhere I go."
-msgstr "Paradev mobile даёт мне мощь моего компьютера, где бы я ни был."
-
-msgid "Paradev Mobile terminal on iPhone"
-msgstr "Терминал Paradev Mobile на iPhone"
-
-msgid "Paradev needs Full Disk Access to read another browser's data. Grant it in System Settings, then check again."
-msgstr "Paradev нужен полный доступ к диску, чтобы читать данные другого браузера. Выдайте его в Системных настройках и проверьте снова."
-
-msgid "Paradev needs Git to add a project."
-msgstr "Paradev нужен Git, чтобы добавить проект."
-
-msgid "Paradev next to others"
-msgstr "Paradev и другие"
-
-msgid "Paradev on iPad, showing a pull request and a workspace list"
-msgstr "Paradev на iPad: пул-реквест и список воркспейсов"
-
-msgid "Paradev only receives the permissions this connector asks for. Disconnect at any time to revoke them."
-msgstr "Paradev получает только те разрешения, которые запрашивает этот коннектор. Отключите его в любой момент, чтобы отозвать их."
-
-msgid "Paradev originals"
-msgstr "Оригиналы Paradev"
-
-msgid "Paradev Pages"
-msgstr "Paradev Страницы"
-
-msgid "Paradev Pages demo"
-msgstr "Демо Paradev Страницы"
-
-msgid "Paradev Plugins"
-msgstr "Paradev Плагины"
-
-msgid "Paradev runs locally on your developers' machines. We don't store your code or AI conversations, and Paradev has completed a SOC 2 Type II audit with an independent auditor. Request the report and review our security documentation at {trustHost}."
-msgstr "Paradev работает локально на машинах ваших разработчиков. Мы не храним ваш код и диалоги с AI, а Paradev прошёл аудит SOC 2 Type II у независимого аудитора. Запросите отчёт и посмотрите документацию по безопасности на {trustHost}."
-
-msgid "Paradev started as a hackathon project in November 2025. It was a simple desktop app for managing worktrees."
-msgstr "Paradev начался как проект на хакатоне в ноябре 2025 года. Это было простое десктопное приложение для управления worktree."
-
-msgid "Paradev Teams"
-msgstr "Paradev Команды"
-
-msgid "Paradev UI"
-msgstr "Paradev UI"
-
-#. placeholder {0}: formatPercent(trackedMemorySharePercent)
-msgid "Paradev uses {0} of system RAM"
-msgstr "Paradev использует {0} системной RAM"
-
-msgid "Paradev uses the GitHub CLI to clone repos and open pull requests. You can also do this later."
-msgstr "Paradev использует GitHub CLI, чтобы клонировать репозитории и открывать пул-реквесты. Это можно сделать и позже."
-
-msgid "Paradev vs the Alternatives"
-msgstr "Paradev против альтернатив"
-
-msgid "Paradev works with any CLI-based coding agent, including Claude Code, OpenCode, OpenAI Codex, and more. Choose a different agent for every task without changing your workspace or review flow."
-msgstr "Paradev работает с любым кодовым агентом с CLI, включая Claude Code, OpenCode, OpenAI Codex и другие. Выбирайте разного агента под каждую задачу, не меняя рабочую область и процесс ревью."
-
 msgid "paradev.com"
 msgstr "paradev.com"
-
-msgid "Paradev's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
-msgstr "Мобильное приложение Paradev позволяет мне поддерживать работу агентов и помогать им двигаться дальше откуда угодно, даже вдали от компьютера."
 
 msgid "Paragraph"
 msgstr "Абзац"
@@ -14699,8 +14515,8 @@ msgstr "Вставить"
 msgid "Paste a link"
 msgstr "Вставьте ссылку"
 
-msgid "Paste this into Paradev CLI:"
-msgstr "Вставьте это в Paradev CLI:"
+msgid "Paste this into Wanker CLI:"
+msgstr "Вставьте это в Wanker CLI:"
 
 msgid "Path"
 msgstr "Путь"
@@ -14743,8 +14559,8 @@ msgstr "Приостановлен"
 msgid "Paused until {0}"
 msgstr "Приостановлено до {0}"
 
-msgid "Paused when Paradev closed"
-msgstr "Приостановлено при закрытии Paradev"
+msgid "Paused when Wanker closed"
+msgstr "Приостановлено при закрытии Wanker"
 
 msgid "Pay {total}"
 msgstr "Оплатить {total}"
@@ -14794,8 +14610,8 @@ msgstr "за пользователя в месяц"
 msgid "Per-repo agent memory"
 msgstr "Память агентов для каждого репозитория"
 
-msgid "Percent of total system RAM used by monitored Paradev resources only (not all apps). A high share means Paradev is a major contributor to system memory pressure; a low share means pressure is likely elsewhere."
-msgstr "Процент от всей системной RAM, занятый только отслеживаемыми ресурсами Paradev (не всеми приложениями). Высокая доля означает, что Paradev заметно нагружает память системы; низкая — что нагрузка идёт откуда-то ещё."
+msgid "Percent of total system RAM used by monitored Wanker resources only (not all apps). A high share means Wanker is a major contributor to system memory pressure; a low share means pressure is likely elsewhere."
+msgstr "Процент от всей системной RAM, занятый только отслеживаемыми ресурсами Wanker (не всеми приложениями). Высокая доля означает, что Wanker заметно нагружает память системы; низкая — что нагрузка идёт откуда-то ещё."
 
 msgid "Permanently delete \"{projectName}\"?"
 msgstr "Удалить «{projectName}» навсегда?"
@@ -14891,8 +14707,8 @@ msgstr "Выберите рабочую область, где агент ждё
 msgid "Pick an icon and a color, or upload a custom image. Defaults to the linked GitHub owner's avatar."
 msgstr "Выберите иконку и цвет или загрузите своё изображение. По умолчанию используется аватар связанного владельца на GitHub."
 
-msgid "Pick one in the Paradev app. It's saved to your account."
-msgstr "Выберите плагин в приложении Paradev. Он сохраняется в вашем аккаунте."
+msgid "Pick one in the Wanker app. It's saved to your account."
+msgstr "Выберите плагин в приложении Wanker. Он сохраняется в вашем аккаунте."
 
 msgid "Pick the best agent."
 msgstr "Выберите лучшего агента."
@@ -14987,8 +14803,8 @@ msgstr "Проигрывать звук по завершении задач"
 msgid "Play the animation"
 msgstr "Воспроизвести анимацию"
 
-msgid "Play the Paradev Pages demo"
-msgstr "Воспроизвести демо Paradev Страницы"
+msgid "Play the Wanker Pages demo"
+msgstr "Воспроизвести демо Wanker Страницы"
 
 msgid "Please check your internet connection and try again."
 msgstr "Проверьте подключение к интернету и попробуйте ещё раз."
@@ -15005,8 +14821,8 @@ msgstr "Выберите расположение проекта"
 msgid "Please select an organization"
 msgstr "Выберите организацию"
 
-msgid "Please try again, or restart Paradev on that device."
-msgstr "Попробуйте ещё раз или перезапустите Paradev на этом устройстве."
+msgid "Please try again, or restart Wanker on that device."
+msgstr "Попробуйте ещё раз или перезапустите Wanker на этом устройстве."
 
 msgid "Plugin"
 msgstr "Плагин"
@@ -15144,8 +14960,8 @@ msgstr "Пресса"
 msgid "Press <0>Esc</0> to close"
 msgstr "Нажмите <0>Esc</0>, чтобы закрыть"
 
-msgid "Press ⌘⇧B or open a port Paradev detected. Your dev server loads in a pane beside your terminals."
-msgstr "Нажмите ⌘⇧B или откройте порт, обнаруженный Paradev. Ваш dev-сервер загрузится в панели рядом с терминалами."
+msgid "Press ⌘⇧B or open a port Wanker detected. Your dev server loads in a pane beside your terminals."
+msgstr "Нажмите ⌘⇧B или откройте порт, обнаруженный Wanker. Ваш dev-сервер загрузится в панели рядом с терминалами."
 
 msgid "Press a key…"
 msgstr "Нажмите клавишу…"
@@ -15410,8 +15226,8 @@ msgstr "Проекты"
 msgid "Prompt"
 msgstr "Промпт"
 
-msgid "Prompt a coding agent to build what you want to see in Paradev. If we like your prompt, we'll run it and merge the result."
-msgstr "Попросите кодового агента сделать то, что вы хотите увидеть в Paradev. Если промпт нам понравится, мы его запустим и объединим результат."
+msgid "Prompt a coding agent to build what you want to see in Wanker. If we like your prompt, we'll run it and merge the result."
+msgstr "Попросите кодового агента сделать то, что вы хотите увидеть в Wanker. Если промпт нам понравится, мы его запустим и объединим результат."
 
 msgid "Prompt command is only available for terminal agents."
 msgstr "Команда с промптом доступна только для терминальных агентов."
@@ -15480,8 +15296,8 @@ msgstr "Публичный рейтинг"
 msgid "Publish again and the link stays the same. Earlier versions are kept in the history."
 msgstr "Опубликуйте снова, и ссылка останется прежней. Прошлые версии сохраняются в истории."
 
-msgid "Publish from the Paradev CLI or over MCP."
-msgstr "Публикуйте через Paradev CLI или по MCP."
+msgid "Publish from the Wanker CLI or over MCP."
+msgstr "Публикуйте через Wanker CLI или по MCP."
 
 msgid "Publish from your own repo"
 msgstr "Публикуйте из своего репозитория"
@@ -15599,8 +15415,8 @@ msgstr "Очередь приостановлена, потому что вы п
 msgid "Queue paused by the usage limit"
 msgstr "Очередь приостановлена лимитом использования"
 
-msgid "Queue paused when Paradev closed"
-msgstr "Очередь приостановлена, когда Paradev закрылся"
+msgid "Queue paused when Wanker closed"
+msgstr "Очередь приостановлена, когда Wanker закрылся"
 
 msgid "Queue work for agents"
 msgstr "Ставьте работу агентам в очередь"
@@ -15697,8 +15513,8 @@ msgstr "Превышен лимит запросов."
 msgid "Rate limits"
 msgstr "Лимиты использования"
 
-msgid "Reach this Mac from anywhere via the Paradev relay, or spin up cloud workspaces. Connect from any client."
-msgstr "Достучитесь до этого Mac откуда угодно через реле Paradev или поднимите облачные рабочие области. Подключайтесь с любого клиента."
+msgid "Reach this Mac from anywhere via the Wanker relay, or spin up cloud workspaces. Connect from any client."
+msgstr "Достучитесь до этого Mac откуда угодно через реле Wanker или поднимите облачные рабочие области. Подключайтесь с любого клиента."
 
 msgid "Reached"
 msgstr "Достигнуто"
@@ -15847,8 +15663,8 @@ msgstr "Готов на каждом компьютере, где вы вход�
 msgid "Ready to Merge"
 msgstr "Готов к слиянию"
 
-msgid "Ready to try Paradev?"
-msgstr "Готовы попробовать Paradev?"
+msgid "Ready to try Wanker?"
+msgstr "Готовы попробовать Wanker?"
 
 msgid "Reapply all commits"
 msgstr "Применить все коммиты заново"
@@ -15988,8 +15804,8 @@ msgstr "Создать заново"
 msgid "Region"
 msgstr "Регион"
 
-msgid "Registers lifecycle hooks in this agent's global config so Paradev can show status and send notifications. Turning this off removes Paradev's entries everywhere — status and notifications stop for this agent, including inside Paradev."
-msgstr "Регистрирует хуки жизненного цикла в глобальной конфигурации этого агента, чтобы Paradev мог показывать статус и отправлять уведомления. Отключение убирает записи Paradev везде — статус и уведомления для этого агента перестанут работать, в том числе внутри Paradev."
+msgid "Registers lifecycle hooks in this agent's global config so Wanker can show status and send notifications. Turning this off removes Wanker's entries everywhere — status and notifications stop for this agent, including inside Wanker."
+msgstr "Регистрирует хуки жизненного цикла в глобальной конфигурации этого агента, чтобы Wanker мог показывать статус и отправлять уведомления. Отключение убирает записи Wanker везде — статус и уведомления для этого агента перестанут работать, в том числе внутри Wanker."
 
 msgid "Reinstall {name}"
 msgstr "Переустановить {name}"
@@ -16033,8 +15849,8 @@ msgstr "Перезагрузить приложение"
 msgid "Reload from disk"
 msgstr "Загрузить с диска"
 
-msgid "Reload Paradev to refresh the workspace list."
-msgstr "Перезагрузите Paradev, чтобы обновить список рабочих областей."
+msgid "Reload Wanker to refresh the workspace list."
+msgstr "Перезагрузите Wanker, чтобы обновить список рабочих областей."
 
 msgid "Reload window"
 msgstr "Перезагрузить окно"
@@ -16426,8 +16242,8 @@ msgstr "Обязательное"
 msgid "Required version: {minimumVersion}+"
 msgstr "Требуемая версия: {minimumVersion}+"
 
-msgid "Requires iOS 26 or iPadOS 26 or later. Included with Paradev Pro."
-msgstr "Нужна iOS 26 или iPadOS 26 или новее. Входит в Paradev Pro."
+msgid "Requires iOS 26 or iPadOS 26 or later. Included with Wanker Pro."
+msgstr "Нужна iOS 26 или iPadOS 26 или новее. Входит в Wanker Pro."
 
 msgid "Resend invite"
 msgstr "Отправить приглашение повторно"
@@ -16492,8 +16308,8 @@ msgstr "Сброс через {countdown} · {absolute}"
 msgid "Resets now"
 msgstr "Сброс сейчас"
 
-msgid "Resident memory used by Paradev and monitored terminal process trees. If this keeps climbing without dropping, a workspace process may be retaining memory. High values increase swap risk and can cause stutter."
-msgstr "Резидентная память, занятая Paradev и отслеживаемыми деревьями процессов терминала. Если она постоянно растёт и не снижается, какой-то процесс рабочей области может удерживать память. Высокие значения повышают риск свопа и могут вызывать рывки."
+msgid "Resident memory used by Wanker and monitored terminal process trees. If this keeps climbing without dropping, a workspace process may be retaining memory. High values increase swap risk and can cause stutter."
+msgstr "Резидентная память, занятая Wanker и отслеживаемыми деревьями процессов терминала. Если она постоянно растёт и не снижается, какой-то процесс рабочей области может удерживать память. Высокие значения повышают риск свопа и могут вызывать рывки."
 
 msgid "Resizable"
 msgstr "Изменяемый размер"
@@ -16731,8 +16547,8 @@ msgstr "Повторите после восстановления соедин�
 msgid "Retry dictation"
 msgstr "Повторить диктовку"
 
-msgid "Retry in a few seconds; if it persists, restart Paradev."
-msgstr "Повторите через несколько секунд; если не поможет, перезапустите Paradev."
+msgid "Retry in a few seconds; if it persists, restart Wanker."
+msgstr "Повторите через несколько секунд; если не поможет, перезапустите Wanker."
 
 msgid "Retry in a few seconds."
 msgstr "Повторите через несколько секунд."
@@ -16807,8 +16623,8 @@ msgstr "Ревью ожидается"
 msgid "Review pending changes."
 msgstr "Проверьте ожидающие изменения."
 
-msgid "Review pull requests inside Paradev: diff pane, agent-assisted review, act on comments directly."
-msgstr "Проверяйте пул-реквесты внутри Paradev: панель diff, ревью с помощью агента, действия по комментариям прямо на месте."
+msgid "Review pull requests inside Wanker: diff pane, agent-assisted review, act on comments directly."
+msgstr "Проверяйте пул-реквесты внутри Wanker: панель diff, ревью с помощью агента, действия по комментариям прямо на месте."
 
 msgid "Review requested"
 msgstr "Запрошено ревью"
@@ -17002,8 +16818,8 @@ msgstr "Запуск по расписанию или по событиям, з�
 msgid "Run parallel coding agents on features, fixes, and refactors. Each one works on its own branch, locally or in the cloud."
 msgstr "Запускайте параллельных агентов для фич, исправлений и рефакторинга. Каждый работает в своей ветке, локально или в облаке."
 
-msgid "Run parallel coding agents with Paradev"
-msgstr "Запускайте параллельных агентов для кода в Paradev"
+msgid "Run parallel coding agents with Wanker"
+msgstr "Запускайте параллельных агентов для кода в Wanker"
 
 msgid "Run script"
 msgstr "Запустить скрипт"
@@ -17077,8 +16893,8 @@ msgstr "Запуски появятся здесь, как только сраб
 msgid "Runs in"
 msgstr "Где работает"
 
-msgid "Runs inside the Paradev app on that device, so updating it means updating the app there."
-msgstr "Работает внутри приложения Paradev на том устройстве, поэтому для обновления нужно обновить приложение там."
+msgid "Runs inside the Wanker app on that device, so updating it means updating the app there."
+msgstr "Работает внутри приложения Wanker на том устройстве, поэтому для обновления нужно обновить приложение там."
 
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "Запуски приземляются в рабочую область. Посмотрите diff и объедините то, что подходит."
@@ -17189,11 +17005,11 @@ msgstr "Сохранение…"
 msgid "Scale to 100+ agents"
 msgstr "Масштабируйте до 100+ агентов"
 
-msgid "Scan the QR code, then sign in with the same Paradev account and select this organization."
-msgstr "Отсканируйте QR-код, войдите в тот же аккаунт Paradev и выберите эту организацию."
+msgid "Scan the QR code, then sign in with the same Wanker account and select this organization."
+msgstr "Отсканируйте QR-код, войдите в тот же аккаунт Wanker и выберите эту организацию."
 
-msgid "Scan to download Paradev for iPhone"
-msgstr "Сканируйте, чтобы скачать Paradev для iPhone"
+msgid "Scan to download Wanker for iPhone"
+msgstr "Сканируйте, чтобы скачать Wanker для iPhone"
 
 msgid "Scanning transcript logs…"
 msgstr "Сканирование логов расшифровок…"
@@ -17496,11 +17312,11 @@ msgstr "Смотрите изменения"
 msgid "See how {companyName}'s GitHub stars have grown over time."
 msgstr "Посмотрите, как со временем росло число звёзд {companyName} на GitHub."
 
-msgid "See how Paradev compares to other AI coding tools, from AI editors to coding agents to cloud-based AI engineers."
-msgstr "Посмотрите, как Paradev соотносится с другими AI-инструментами для кода: от AI-редакторов до кодовых агентов и облачных AI-инженеров."
+msgid "See how Wanker compares to other AI coding tools, from AI editors to coding agents to cloud-based AI engineers."
+msgstr "Посмотрите, как Wanker соотносится с другими AI-инструментами для кода: от AI-редакторов до кодовых агентов и облачных AI-инженеров."
 
-msgid "See how Paradev compares to other tools"
-msgstr "Посмотреть, как Paradev сравнивается с другими инструментами"
+msgid "See how Wanker compares to other tools"
+msgstr "Посмотреть, как Wanker сравнивается с другими инструментами"
 
 msgid "See how we work"
 msgstr "Посмотрите, как мы работаем"
@@ -17529,8 +17345,8 @@ msgstr "Все имена инструментов и параметры — в 
 msgid "See the <0>custom themes guide</0> to edit a theme or build your own."
 msgstr "Смотрите <0>руководство по пользовательским темам</0>, чтобы изменить тему или сделать свою."
 
-msgid "See the open roles, or try Paradev first."
-msgstr "Посмотрите вакансии или сначала попробуйте Paradev."
+msgid "See the open roles, or try Wanker first."
+msgstr "Посмотрите вакансии или сначала попробуйте Wanker."
 
 msgid "See this gate on the scorecard"
 msgstr "Посмотреть этот шлюз в таблице"
@@ -17538,8 +17354,8 @@ msgstr "Посмотреть этот шлюз в таблице"
 msgid "See what changed, give feedback, and merge the work when it's ready."
 msgstr "Посмотрите, что изменилось, дайте обратную связь и объедините работу, когда она готова."
 
-msgid "See what we're building now, what's coming next, and where Paradev is headed."
-msgstr "Посмотрите, что мы делаем сейчас, что будет дальше и куда движется Paradev."
+msgid "See what we're building now, what's coming next, and where Wanker is headed."
+msgstr "Посмотрите, что мы делаем сейчас, что будет дальше и куда движется Wanker."
 
 msgid "See what your teammates' agents are working on, shipping, and blocked on."
 msgstr "Смотрите, над чем работают агенты ваших коллег, что они выпускают и где застряли."
@@ -17743,8 +17559,8 @@ msgstr "Отправить жалобу"
 msgid "Send review"
 msgstr "Отправить ревью"
 
-msgid "Send the link. Your team opens it in a browser or in Paradev."
-msgstr "Отправьте ссылку. Команда откроет её в браузере или в Paradev."
+msgid "Send the link. Your team opens it in a browser or in Wanker."
+msgstr "Отправьте ссылку. Команда откроет её в браузере или в Wanker."
 
 msgid "Send to"
 msgstr "Кому отправить"
@@ -17905,8 +17721,8 @@ msgstr "Настроить проект на {hostName}"
 msgid "Set up project…"
 msgstr "Настроить проект…"
 
-msgid "Set up this project for Paradev"
-msgstr "Настроить этот проект под Paradev"
+msgid "Set up this project for Wanker"
+msgstr "Настроить этот проект под Wanker"
 
 msgid "Set up your organization to get started"
 msgstr "Настройте организацию, чтобы начать"
@@ -18007,11 +17823,11 @@ msgstr "Общие компоненты приложения"
 msgid "Shared component library."
 msgstr "Общая библиотека компонентов."
 
-msgid "Shared settings and simpler membership for teams that work in Paradev together."
-msgstr "Общие настройки и более простое управление участниками для команд, которые работают в Paradev вместе."
+msgid "Shared settings and simpler membership for teams that work in Wanker together."
+msgstr "Общие настройки и более простое управление участниками для команд, которые работают в Wanker вместе."
 
-msgid "Shared theme JSON files you can import into Paradev."
-msgstr "Общие JSON-файлы тем, которые можно импортировать в Paradev."
+msgid "Shared theme JSON files you can import into Wanker."
+msgstr "Общие JSON-файлы тем, которые можно импортировать в Wanker."
 
 msgid "Shared version"
 msgstr "Общедоступная версия"
@@ -18058,8 +17874,8 @@ msgstr "Показать"
 msgid "Show a confirmation dialog when quitting the app"
 msgstr "Показывать подтверждение при выходе из приложения"
 
-msgid "Show a microphone in the chat composer. Speech is transcribed by ChatGPT when Codex is signed in to it, otherwise on your Mac when possible, and otherwise by Paradev's servers."
-msgstr "Показывать микрофон в поле ввода чата. Речь расшифровывает ChatGPT, если в Codex выполнен вход в ChatGPT, иначе по возможности ваш Mac, а в остальных случаях серверы Paradev."
+msgid "Show a microphone in the chat composer. Speech is transcribed by ChatGPT when Codex is signed in to it, otherwise on your Mac when possible, and otherwise by Wanker's servers."
+msgstr "Показывать микрофон в поле ввода чата. Речь расшифровывает ChatGPT, если в Codex выполнен вход в ChatGPT, иначе по возможности ваш Mac, а в остальных случаях серверы Wanker."
 
 msgid "Show a Usage button in the home sidebar, under Pull requests"
 msgstr "Показывать кнопку «Использование» в боковой панели главного экрана под пул-реквестами"
@@ -18275,8 +18091,8 @@ msgstr "Войдите снова, чтобы пользоваться дикт�
 msgid "Sign in as Local Admin (dev)"
 msgstr "Войти как локальный админ (dev)"
 
-msgid "Sign in once. Paradev keeps the connection."
-msgstr "Войдите один раз. Paradev держит подключение."
+msgid "Sign in once. Wanker keeps the connection."
+msgstr "Войдите один раз. Wanker держит подключение."
 
 #. placeholder {0}: activeOrganization?.name ?? t({ message: "this organization", })
 msgid "Sign in to {0}"
@@ -18288,8 +18104,8 @@ msgstr "Войдите, чтобы изменить плагины органи�
 msgid "Sign in to continue"
 msgstr "Войдите, чтобы продолжить"
 
-msgid "Sign in to continue to Paradev"
-msgstr "Войдите, чтобы продолжить в Paradev"
+msgid "Sign in to continue to Wanker"
+msgstr "Войдите, чтобы продолжить в Wanker"
 
 msgid "Sign in to get started"
 msgstr "Войдите, чтобы начать"
@@ -18338,8 +18154,8 @@ msgstr "Войдите системным входом {0} по умолчани
 msgid "Sign up in one step"
 msgstr "Регистрация в один шаг"
 
-msgid "Sign up to get started with Paradev"
-msgstr "Зарегистрируйтесь, чтобы начать работу с Paradev"
+msgid "Sign up to get started with Wanker"
+msgstr "Зарегистрируйтесь, чтобы начать работу с Wanker"
 
 msgid "Sign up with GitHub"
 msgstr "Зарегистрироваться через GitHub"
@@ -18455,8 +18271,8 @@ msgstr "Навыки"
 msgid "Skills and MCP tools for your agents. Submit your own."
 msgstr "Навыки и инструменты MCP для ваших агентов. Отправьте свой плагин."
 
-msgid "Skills ship with the Paradev plugin and are kept up to date automatically in every agent you use. Click one to preview it."
-msgstr "Навыки поставляются с плагином Paradev и автоматически поддерживаются в актуальном состоянии во всех ваших агентах. Нажмите на навык, чтобы посмотреть его."
+msgid "Skills ship with the Wanker plugin and are kept up to date automatically in every agent you use. Click one to preview it."
+msgstr "Навыки поставляются с плагином Wanker и автоматически поддерживаются в актуальном состоянии во всех ваших агентах. Нажмите на навык, чтобы посмотреть его."
 
 msgid "Skin Tone"
 msgstr "Оттенок кожи"
@@ -18592,8 +18408,8 @@ msgstr "Кто-то"
 msgid "serverError.page.entryPathHeldByColleague"
 msgstr "Кто-то другой уже опубликовал {entryPath} из этого рабочего пространства. Опубликуйте с явным идентификатором страницы, чтобы добавить версию к его странице, или переместите файл."
 
-msgid "Someone on the Paradev team will review this page. We only follow up if we need more from you."
-msgstr "Команда Paradev проверит эту страницу. Мы свяжемся с вами, только если понадобится что-то ещё."
+msgid "Someone on the Wanker team will review this page. We only follow up if we need more from you."
+msgstr "Команда Wanker проверит эту страницу. Мы свяжемся с вами, только если понадобится что-то ещё."
 
 msgid "Something else"
 msgstr "Другое"
@@ -18799,8 +18615,8 @@ msgstr "Напоминание о звезде сброшено: снова до
 msgid "Star on GitHub"
 msgstr "Поставить звезду на GitHub"
 
-msgid "Star Paradev on GitHub"
-msgstr "Поставить звезду Paradev на GitHub"
+msgid "Star Wanker on GitHub"
+msgstr "Поставить звезду Wanker на GitHub"
 
 msgid "Starred"
 msgstr "Звезда поставлена"
@@ -19024,9 +18840,6 @@ msgstr "Остановить диктовку"
 msgid "Stop local {0}"
 msgstr "Остановить локальный {0}"
 
-msgid "Stop Paradev here to delete from another device."
-msgstr "Остановите Paradev здесь, чтобы удалить с другого устройства."
-
 msgid "Stop response"
 msgstr "Остановить ответ"
 
@@ -19035,6 +18848,9 @@ msgstr "Остановить агента и отправить сейчас"
 
 msgid "Stop the agent before you edit a message"
 msgstr "Остановите агента, прежде чем изменять сообщение"
+
+msgid "Stop Wanker here to delete from another device."
+msgstr "Остановите Wanker здесь, чтобы удалить с другого устройства."
 
 msgid "Stop watching"
 msgstr "Прекратить отслеживание"
@@ -19138,8 +18954,8 @@ msgstr "Подсказки"
 msgid "suite for agent UIs, and shared app components. Click any import path to copy it."
 msgstr "для интерфейсов агентов и общие компоненты приложения. Нажмите на любой путь импорта, чтобы скопировать его."
 
-msgid "Sum of CPU used by Paradev and monitored terminal process trees. Over 100% means multiple CPU cores are busy. Sustained high values usually cause UI sluggishness and higher battery drain."
-msgstr "Суммарная загрузка CPU от Paradev и отслеживаемых деревьев процессов терминала. Больше 100% означает, что заняты несколько ядер. Долго держащиеся высокие значения обычно вызывают подтормаживание интерфейса и ускоренный разряд батареи."
+msgid "Sum of CPU used by Wanker and monitored terminal process trees. Over 100% means multiple CPU cores are busy. Sustained high values usually cause UI sluggishness and higher battery drain."
+msgstr "Суммарная загрузка CPU от Wanker и отслеживаемых деревьев процессов терминала. Больше 100% означает, что заняты несколько ядер. Долго держащиеся высокие значения обычно вызывают подтормаживание интерфейса и ускоренный разряд батареи."
 
 msgid "Summarize the changes in this workspace"
 msgstr "Кратко опиши изменения в этой рабочей области"
@@ -19314,8 +19130,8 @@ msgstr "Не удалось синхронизировать"
 msgid "Sync issues bidirectionally with Linear."
 msgstr "Двусторонняя синхронизация задач с Linear."
 
-msgid "Sync issues bidirectionally with Linear. Create tasks in Paradev and have them appear in Linear, or import existing Linear issues."
-msgstr "Двусторонняя синхронизация задач с Linear. Создавайте задачи в Paradev — они появятся в Linear, или импортируйте существующие задачи Linear."
+msgid "Sync issues bidirectionally with Linear. Create tasks in Wanker and have them appear in Linear, or import existing Linear issues."
+msgstr "Двусторонняя синхронизация задач с Linear. Создавайте задачи в Wanker — они появятся в Linear, или импортируйте существующие задачи Linear."
 
 msgid "Sync now"
 msgstr "Синхронизировать сейчас"
@@ -19353,8 +19169,8 @@ msgstr "Доля системной RAM"
 #. placeholder {0}: formatMemory(snapshot.totalMemory)
 #. placeholder {1}: formatMemory(otherUsedMemory)
 #. placeholder {2}: formatMemory(freeMemory)
-msgid "System RAM: Paradev {0}, other apps {1}, free {2}"
-msgstr "Системная RAM: Paradev {0}, другие приложения {1}, свободно {2}"
+msgid "System RAM: Wanker {0}, other apps {1}, free {2}"
+msgstr "Системная RAM: Wanker {0}, другие приложения {1}, свободно {2}"
 
 msgid "Tab"
 msgstr "Вкладка"
@@ -19407,8 +19223,8 @@ msgstr "Дольше обычного. Процесс продолжится, д
 msgid "Talk to it"
 msgstr "Связаться"
 
-msgid "Talk to Paradev"
-msgstr "Напишите в Paradev"
+msgid "Talk to Wanker"
+msgstr "Напишите в Wanker"
 
 msgid "Tap anything on the page to comment on it"
 msgstr "Коснитесь любого элемента страницы, чтобы прокомментировать его"
@@ -19471,8 +19287,8 @@ msgstr "Система управления задачами обновлена"
 msgid "Tasks"
 msgstr "Задачи"
 
-msgid "Tasks created in Paradev will be synced to this Linear team."
-msgstr "Задачи, созданные в Paradev, будут синхронизироваться с этой командой Linear."
+msgid "Tasks created in Wanker will be synced to this Linear team."
+msgstr "Задачи, созданные в Wanker, будут синхронизироваться с этой командой Linear."
 
 msgid "Tasks, the CLI and agents follow this. Each member uses their own Linear account."
 msgstr "Задачи, CLI и агенты работают с выбранной системой. Каждый участник использует свой аккаунт Linear."
@@ -19736,8 +19552,8 @@ msgstr "Агент использует свои навыки и инструм�
 msgid "The agent watching the page reads each comment. It updates the page and replies in the thread."
 msgstr "Агент, который следит за страницей, читает каждый комментарий. Он обновляет страницу и отвечает в обсуждении."
 
-msgid "The app is on {appVersion} but attached to a host service started by something else, likely an older CLI or another Paradev build. Restarting replaces it with this app's copy."
-msgstr "Приложение версии {appVersion}, но подключено к службе хоста, запущенной чем-то другим, вероятно старой CLI или другой сборкой Paradev. Перезапуск заменит её копией из этого приложения."
+msgid "The app is on {appVersion} but attached to a host service started by something else, likely an older CLI or another Wanker build. Restarting replaces it with this app's copy."
+msgstr "Приложение версии {appVersion}, но подключено к службе хоста, запущенной чем-то другим, вероятно старой CLI или другой сборкой Wanker. Перезапуск заменит её копией из этого приложения."
 
 msgid "The automation and its run history are removed. This can't be undone."
 msgstr "Автоматизация и её история запусков будут удалены. Это действие нельзя отменить."
@@ -19766,8 +19582,8 @@ msgstr "Облачная рабочая область должна была з�
 msgid "The code expired. Start again."
 msgstr "Срок действия кода истёк. Начните заново."
 
-msgid "The commands Paradev runs to set up, run and archive this project's workspaces, from the repository's config.toml."
-msgstr "Команды, которые Paradev выполняет при подготовке, запуске и архивации рабочих областей этого проекта, из config.toml репозитория."
+msgid "The commands Wanker runs to set up, run and archive this project's workspaces, from the repository's config.toml."
+msgstr "Команды, которые Wanker выполняет при подготовке, запуске и архивации рабочих областей этого проекта, из config.toml репозитория."
 
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "Компания привлекла 11,5 млн долларов в посевном раунде под руководством Union Square Ventures при участии Y Combinator и Пола Грэма. TechCrunch назвал её одним из самых заметных стартапов YC Demo Day."
@@ -19788,10 +19604,10 @@ msgid "The daemon couldn't hand off your live sessions to the new binary. Reason
 msgstr "Демону не удалось передать живые сессии новому бинарнику. Причина:"
 
 msgid "The desktop app runs on macOS and Linux today. Drop your email and we'll let you know the moment the Windows build ships."
-msgstr "Мы готовим Paradev для Windows и Linux. Оставьте email, и мы сообщим, как только будет готово."
+msgstr "Мы готовим Wanker для Windows и Linux. Оставьте email, и мы сообщим, как только будет готово."
 
-msgid "The desktop app runs on macOS, with an experimental Linux AppImage; Windows is not yet available. Beyond the desktop app there's a CLI, a TypeScript SDK, and an MCP server, so you can drive Paradev from scripts, terminals, and other agents. An app for iPhone and iPad on the App Store lets you check on agents and review their diffs away from your desk."
-msgstr "Десктопное приложение работает на macOS, есть экспериментальный AppImage для Linux; Windows пока нет. Кроме приложения есть CLI, TypeScript SDK и сервер MCP, так что Paradev можно водить из скриптов, терминалов и других агентов. Приложение для iPhone и iPad в App Store позволяет следить за агентами и просматривать их диффы, даже когда вы не за рабочим столом."
+msgid "The desktop app runs on macOS, with an experimental Linux AppImage; Windows is not yet available. Beyond the desktop app there's a CLI, a TypeScript SDK, and an MCP server, so you can drive Wanker from scripts, terminals, and other agents. An app for iPhone and iPad on the App Store lets you check on agents and review their diffs away from your desk."
+msgstr "Десктопное приложение работает на macOS, есть экспериментальный AppImage для Linux; Windows пока нет. Кроме приложения есть CLI, TypeScript SDK и сервер MCP, так что Wanker можно водить из скриптов, терминалов и других агентов. Приложение для iPhone и iPad в App Store позволяет следить за агентами и просматривать их диффы, даже когда вы не за рабочим столом."
 
 msgid "The Dev can't post there."
 msgstr "Dev не может публиковать там."
@@ -19865,8 +19681,8 @@ msgstr "Полноценная рабочая область. Запускайт
 msgid "The funds and angels who back our team."
 msgstr "Фонды и бизнес-ангелы, которые поддерживают нашу команду."
 
-msgid "The future home for reusable Paradev agent configs, prompts, and setup guides."
-msgstr "Будущий дом для переиспользуемых конфигураций агентов, промптов и руководств по настройке Paradev."
+msgid "The future home for reusable Wanker agent configs, prompts, and setup guides."
+msgstr "Будущий дом для переиспользуемых конфигураций агентов, промптов и руководств по настройке Wanker."
 
 #. placeholder {0}: info.version
 msgid "The host came back on {0}, not {targetVersion}."
@@ -19899,11 +19715,11 @@ msgstr "Срок загрузки изображения истёк — прик
 msgid "The job description shifts. Engineers stop being typists with taste and become dispatchers with taste: decomposing work, routing it to fleets, arbitrating conflicts between agents that both touched the same module."
 msgstr "Описание работы меняется. Инженеры перестают быть машинистками со вкусом и становятся диспетчерами со вкусом: декомпозируют работу, раздают её флотам, разрешают конфликты между агентами, которые оба тронули один модуль."
 
-msgid "The latest updates, improvements, and new features in Paradev."
-msgstr "Последние обновления, улучшения и новые возможности Paradev."
+msgid "The latest updates, improvements, and new features in Wanker."
+msgstr "Последние обновления, улучшения и новые возможности Wanker."
 
-msgid "The latest updates, improvements, and new features in Paradev. Updated weekly. For detailed release notes, see <0>GitHub Releases<1/></0>"
-msgstr "Свежие обновления, улучшения и новые возможности Paradev. Обновляется еженедельно. Подробные release notes — в <0>GitHub Releases<1/></0>"
+msgid "The latest updates, improvements, and new features in Wanker. Updated weekly. For detailed release notes, see <0>GitHub Releases<1/></0>"
+msgstr "Свежие обновления, улучшения и новые возможности Wanker. Обновляется еженедельно. Подробные release notes — в <0>GitHub Releases<1/></0>"
 
 msgid "The Launch watch automation with a Sentry trigger and a daily schedule, its two runs, and the draft pull request the agent opened."
 msgstr "Автоматизация Launch watch с триггером Sentry и ежедневным расписанием, два её запуска и черновой pull request, открытый агентом."
@@ -19923,8 +19739,8 @@ msgstr "Локальное изменение отменено."
 msgid "The local host service is unavailable for {organization} on {device}. Status: {status}. {recovery}"
 msgstr "Локальная служба хоста недоступна для {organization} на {device}. Статус: {status}. {recovery}"
 
-msgid "The local host service isn't responding. Restarting it usually clears this; if it keeps happening, restart Paradev."
-msgstr "Локальная служба хоста не отвечает. Обычно помогает её перезапуск; если повторяется, перезапустите Paradev."
+msgid "The local host service isn't responding. Restarting it usually clears this; if it keeps happening, restart Wanker."
+msgstr "Локальная служба хоста не отвечает. Обычно помогает её перезапуск; если повторяется, перезапустите Wanker."
 
 msgid "The local host service isn't running, so nothing on this device can serve the workspace. Restarting it reattaches your terminals and files — nothing on disk is lost."
 msgstr "Локальная служба хоста не запущена, поэтому ничто на этом устройстве не может обслуживать рабочую область. Её перезапуск вернёт терминалы и файлы — на диске ничего не теряется."
@@ -19989,15 +19805,6 @@ msgstr "Такой страницы не существует."
 msgid "The pane uses your real logins. Agents ask you before they take a consequential action."
 msgstr "Панель использует ваши настоящие входы. Агенты спрашивают вас, прежде чем выполнить важное действие."
 
-msgid "The Paradev desktop app is available for macOS and Linux."
-msgstr "Десктопное приложение Paradev доступно для macOS и Linux."
-
-msgid "The Paradev host service for {organization} stopped unexpectedly ({cause}) and could not be restarted automatically."
-msgstr "Служба хоста Paradev для {organization} неожиданно остановилась ({cause}), и её не удалось перезапустить автоматически."
-
-msgid "The Paradev host service stopped unexpectedly ({cause}) and could not be restarted automatically."
-msgstr "Служба хоста Paradev неожиданно остановилась ({cause}), и её не удалось перезапустить автоматически."
-
 #. js-lingui-explicit-id
 msgid "serverError.plugins.pluginSourcePathOutside"
 msgstr "Путь должен оставаться внутри репозитория"
@@ -20037,11 +19844,11 @@ msgid "The rubric"
 msgstr "Рубрика"
 
 #. placeholder {0}: remoteHost?.name ?? t({ message: "the target host", })
-msgid "The run was skipped because <0>{0}</0> isn't connected to the Paradev relay. Make sure relay access is on in Settings > Remote Access on that device, then run it again."
-msgstr "Запуск пропущен: <0>{0}</0> не подключён к реле Paradev. Убедитесь, что на том устройстве включён доступ через реле в Настройки > Удалённый доступ, затем запустите снова."
+msgid "The run was skipped because <0>{0}</0> isn't connected to the Wanker relay. Make sure relay access is on in Settings > Remote Access on that device, then run it again."
+msgstr "Запуск пропущен: <0>{0}</0> не подключён к реле Wanker. Убедитесь, что на том устройстве включён доступ через реле в Настройки > Удалённый доступ, затем запустите снова."
 
-msgid "The run was skipped because this device isn't connected to the Paradev relay. Automations go through the relay even when they run on this device. Enable relay access, then run it again."
-msgstr "Запуск пропущен: это устройство не подключено к реле Paradev. Автоматизации идут через реле, даже когда выполняются на этом устройстве. Включите доступ через реле и запустите снова."
+msgid "The run was skipped because this device isn't connected to the Wanker relay. Automations go through the relay even when they run on this device. Enable relay access, then run it again."
+msgstr "Запуск пропущен: это устройство не подключено к реле Wanker. Автоматизации идут через реле, даже когда выполняются на этом устройстве. Включите доступ через реле и запустите снова."
 
 msgid "The same app runs natively on iPad, in portrait and landscape."
 msgstr "То же приложение работает на iPad нативно, в портретной и альбомной ориентации."
@@ -20097,6 +19904,15 @@ msgstr "После обновления расширение также смож
 msgid "The very beginning"
 msgstr "Самое начало"
 
+msgid "The Wanker desktop app is available for macOS and Linux."
+msgstr "Десктопное приложение Wanker доступно для macOS и Linux."
+
+msgid "The Wanker host service for {organization} stopped unexpectedly ({cause}) and could not be restarted automatically."
+msgstr "Служба хоста Wanker для {organization} неожиданно остановилась ({cause}), и её не удалось перезапустить автоматически."
+
+msgid "The Wanker host service stopped unexpectedly ({cause}) and could not be restarted automatically."
+msgstr "Служба хоста Wanker неожиданно остановилась ({cause}), и её не удалось перезапустить автоматически."
+
 msgid "The workspace is not ready yet. Try again."
 msgstr "Рабочая область ещё не готова. Повторите."
 
@@ -20133,8 +19949,8 @@ msgstr "Темы"
 msgid "These commands run automatically when a workspace is created. <0>Read our docs<1/></0>"
 msgstr "Эти команды выполняются автоматически при создании рабочей области. <0>Читать документацию<1/></0>"
 
-msgid "These folders still have your files, but they did not come over to the new Paradev on their own."
-msgstr "В этих папках всё ещё есть ваши файлы, но они не перенеслись в новый Paradev автоматически."
+msgid "These folders still have your files, but they did not come over to the new Wanker on their own."
+msgstr "В этих папках всё ещё есть ваши файлы, но они не перенеслись в новый Wanker автоматически."
 
 msgid "These ports are still in use"
 msgstr "Эти порты ещё используются"
@@ -20157,11 +19973,11 @@ msgstr "Думает..."
 msgid "Thirty"
 msgstr "Тридцать"
 
-msgid "This {plugin} account is already connected by another Paradev organization."
-msgstr "Этот аккаунт {plugin} уже подключён другой организацией Paradev."
+msgid "This {plugin} account is already connected by another Wanker organization."
+msgstr "Этот аккаунт {plugin} уже подключён другой организацией Wanker."
 
-msgid "This {plugin} account is already connected to another Paradev organization by {owner}. Ask them to disconnect it there first."
-msgstr "Аккаунт {plugin} уже подключил(а) {owner} к другой организации Paradev. Попросите сначала отключить его там."
+msgid "This {plugin} account is already connected to another Wanker organization by {owner}. Ask them to disconnect it there first."
+msgstr "Аккаунт {plugin} уже подключил(а) {owner} к другой организации Wanker. Попросите сначала отключить его там."
 
 msgid "This action is irreversible."
 msgstr "Это действие необратимо."
@@ -20178,8 +19994,8 @@ msgstr "Этот агент не может работать в облачной
 msgid "This agent no longer exists on the selected device (its agents may have been reset). Runs will fail until you pick a new one."
 msgstr "Этого агента больше нет на выбранном устройстве (возможно, его агенты были сброшены). Запуски будут падать, пока не выберете нового."
 
-msgid "This agent only shows chats saved in Paradev."
-msgstr "Этот агент показывает только чаты, сохранённые в Paradev."
+msgid "This agent only shows chats saved in Wanker."
+msgstr "Этот агент показывает только чаты, сохранённые в Wanker."
 
 msgid "This also:"
 msgstr "Также:"
@@ -20278,8 +20094,8 @@ msgstr "Это устройство"
 msgid "this device ({id})"
 msgstr "это устройство ({id})"
 
-msgid "This device isn't connected to the Paradev relay, so automation runs will be skipped."
-msgstr "Это устройство не подключено к реле Paradev, поэтому запуски автоматизаций будут пропускаться."
+msgid "This device isn't connected to the Wanker relay, so automation runs will be skipped."
+msgstr "Это устройство не подключено к реле Wanker, поэтому запуски автоматизаций будут пропускаться."
 
 msgid "This directory does not exist. The terminal script will fall back to the workspace root."
 msgstr "Такой папки не существует. Скрипт терминала запустится в корне рабочей области."
@@ -20302,8 +20118,8 @@ msgstr "этот файл"
 msgid "This file is empty or was deleted."
 msgstr "Файл пуст или удалён."
 
-msgid "This GitHub installation is already connected to another Paradev organization. Disconnect it there, or uninstall the Paradev GitHub App, then try again."
-msgstr "Эта установка GitHub уже подключена к другой организации Paradev. Отключите её там или удалите GitHub App Paradev, затем повторите."
+msgid "This GitHub installation is already connected to another Wanker organization. Disconnect it there, or uninstall the Wanker GitHub App, then try again."
+msgstr "Эта установка GitHub уже подключена к другой организации Wanker. Отключите её там или удалите GitHub App Wanker, затем повторите."
 
 msgid "This host"
 msgstr "Этот хост"
@@ -20344,8 +20160,8 @@ msgstr "Эта ссылка на задачу недействительна."
 msgid "This Linear workspace is already connected by {owner}. Ask them to disconnect first."
 msgstr "Это рабочее пространство Linear уже подключено пользователем {owner}. Попросите отключить его."
 
-msgid "This Linear workspace is already connected by another Paradev organization."
-msgstr "Это рабочее пространство Linear уже подключено другой организацией Paradev."
+msgid "This Linear workspace is already connected by another Wanker organization."
+msgstr "Это рабочее пространство Linear уже подключено другой организацией Wanker."
 
 msgid "This looks like a binary file. Opening it as text may show garbled output or freeze the editor for large files."
 msgstr "Похоже, это бинарный файл. Открытие его как текста может показать мусор или подвесить редактор на больших файлах."
@@ -20368,8 +20184,8 @@ msgstr "Это сообщение удалено"
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "Этот тенант Microsoft уже подключён пользователем {detail}. Попросите отключить его."
 
-msgid "This Microsoft tenant is already connected by another Paradev organization."
-msgstr "Этот тенант Microsoft уже подключён другой организацией Paradev."
+msgid "This Microsoft tenant is already connected by another Wanker organization."
+msgstr "Этот тенант Microsoft уже подключён другой организацией Wanker."
 
 msgid "This model isn't available"
 msgstr "Эта модель недоступна"
@@ -20407,8 +20223,8 @@ msgstr "Этой страницы здесь нет"
 msgid "This page no longer exists"
 msgstr "Этой страницы больше нет"
 
-msgid "This page was published by a Paradev user. Its contents are unverified."
-msgstr "Эту страницу опубликовал пользователь Paradev. Её содержимое не проверено."
+msgid "This page was published by a Wanker user. Its contents are unverified."
+msgstr "Эту страницу опубликовал пользователь Wanker. Её содержимое не проверено."
 
 msgid "This page was taken down and can no longer be changed"
 msgstr "Эта страница снята с публикации и больше не может быть изменена"
@@ -20491,8 +20307,8 @@ msgstr "Такого экрана нет"
 msgid "This Slack workspace is already connected by {owner}. Ask them to disconnect first."
 msgstr "Это рабочее пространство Slack уже подключено пользователем {owner}. Попросите отключить его."
 
-msgid "This Slack workspace is already connected by another Paradev organization."
-msgstr "Это рабочее пространство Slack уже подключено другой организацией Paradev."
+msgid "This Slack workspace is already connected by another Wanker organization."
+msgstr "Это рабочее пространство Slack уже подключено другой организацией Wanker."
 
 msgid "This slug is already taken"
 msgstr "Этот slug уже занят"
@@ -20759,8 +20575,8 @@ msgstr "Использование токенов"
 msgid "Tokens"
 msgstr "Токены"
 
-msgid "Tokens are held by Paradev and attached to requests there. They are never written into your local agent config."
-msgstr "Токены хранятся в Paradev и добавляются к запросам на его стороне. Они никогда не записываются в локальную конфигурацию агента."
+msgid "Tokens are held by Wanker and attached to requests there. They are never written into your local agent config."
+msgstr "Токены хранятся в Wanker и добавляются к запросам на его стороне. Они никогда не записываются в локальную конфигурацию агента."
 
 msgid "Tokens per session"
 msgstr "Токенов за сессию"
@@ -20807,8 +20623,8 @@ msgstr "Слишком много обращений в поддержку. По
 msgid "Too many untitled items here already."
 msgstr "Здесь уже слишком много безымянных элементов."
 
-msgid "Too old for this app to talk to. Update the Paradev app on that device to reconnect."
-msgstr "Слишком старая версия для этого приложения. Обновите приложение Paradev на том устройстве, чтобы переподключиться."
+msgid "Too old for this app to talk to. Update the Wanker app on that device to reconnect."
+msgstr "Слишком старая версия для этого приложения. Обновите приложение Wanker на том устройстве, чтобы переподключиться."
 
 msgid "Too old for this app to talk to. Workspaces on this host will not open until it is updated."
 msgstr "Слишком старая версия для этого приложения. Рабочие пространства на этом хосте не откроются, пока он не обновится."
@@ -20861,8 +20677,8 @@ msgstr "Всего опубликованных токенов"
 msgid "Trace charges and subscriptions"
 msgstr "Отслеживайте платежи и подписки"
 
-msgid "Track and manage tasks synced from Linear. Stay on top of your work without leaving Paradev."
-msgstr "Отслеживайте задачи, синхронизированные из Linear, и управляйте ими. Держите работу под контролем, не покидая Paradev."
+msgid "Track and manage tasks synced from Linear. Stay on top of your work without leaving Wanker."
+msgstr "Отслеживайте задачи, синхронизированные из Linear, и управляйте ими. Держите работу под контролем, не покидая Wanker."
 
 msgid "Track budgets and spending"
 msgstr "Следите за бюджетами и расходами"
@@ -20948,11 +20764,11 @@ msgstr "Попробуйте другой запрос или другое ме�
 msgid "Try again"
 msgstr "Повторить"
 
-msgid "Try again, or restart the host service from the Paradev tray menu."
-msgstr "Попробуйте ещё раз или перезапустите службу хоста через меню Paradev в системном трее."
+msgid "Try again, or restart the host service from the Wanker tray menu."
+msgstr "Попробуйте ещё раз или перезапустите службу хоста через меню Wanker в системном трее."
 
-msgid "Try again. If the problem continues, reload Paradev."
-msgstr "Повторите. Если проблема сохраняется, перезагрузите Paradev."
+msgid "Try again. If the problem continues, reload Wanker."
+msgstr "Повторите. Если проблема сохраняется, перезагрузите Wanker."
 
 msgid "Try early access features and previews."
 msgstr "Попробуйте ранние функции и предварительные версии."
@@ -21357,12 +21173,6 @@ msgstr "Обновить правила именования"
 msgid "Update naming instructions for {0}"
 msgstr "Обновить правила именования для {0}"
 
-msgid "Update Paradev on that device. In-app updates require a supported standalone install and a released app version."
-msgstr "Обновите Paradev на этом устройстве. Для обновления из приложения нужны поддерживаемая автономная установка и выпущенная версия приложения."
-
-msgid "Update Paradev on this host to edit its workspace config."
-msgstr "Обновите Paradev на этом хосте, чтобы изменить конфигурацию рабочей области."
-
 msgid "Update payment method"
 msgstr "Обновить способ оплаты"
 
@@ -21383,6 +21193,12 @@ msgstr "Обновите этот хост, чтобы писать субаге
 
 msgid "Update this host to move subagents to the background"
 msgstr "Обновите этот хост, чтобы переводить субагентов в фон"
+
+msgid "Update Wanker on that device. In-app updates require a supported standalone install and a released app version."
+msgstr "Обновите Wanker на этом устройстве. Для обновления из приложения нужны поддерживаемая автономная установка и выпущенная версия приложения."
+
+msgid "Update Wanker on this host to edit its workspace config."
+msgstr "Обновите Wanker на этом хосте, чтобы изменить конфигурацию рабочей области."
 
 msgid "Updated"
 msgstr "Обновлено"
@@ -21527,20 +21343,14 @@ msgstr "Использовать ручной вход"
 msgid "Use more browser features: {features}"
 msgstr "Использовать дополнительные функции браузера: {features}"
 
-msgid "Use Paradev on mobile"
-msgstr "Используйте Paradev на телефоне"
-
-msgid "Use Paradev on your phone with Pro."
-msgstr "Используйте Paradev на телефоне с Pro."
-
 msgid "Use the agent plans and API keys you already have. Model calls go straight to your provider."
 msgstr "Используйте тарифы агентов и API-ключи, которые у вас уже есть. Запросы к моделям идут напрямую к вашему провайдеру."
 
 msgid "Use the desktop app to start running parallel coding agents."
 msgstr "Используйте десктопное приложение, чтобы запускать параллельных кодовых агентов."
 
-msgid "Use the Paradev tray menu > Host Service > Restart, then retry."
-msgstr "Откройте меню Paradev в трее > Host Service > Restart, затем повторите."
+msgid "Use the Wanker tray menu > Host Service > Restart, then retry."
+msgstr "Откройте меню Wanker в трее > Host Service > Restart, затем повторите."
 
 msgid "Use this account"
 msgstr "Использовать этот аккаунт"
@@ -21554,11 +21364,17 @@ msgstr "Использовать этот репозиторий"
 msgid "Use this to fix terminals that are stuck or unresponsive."
 msgstr "Используйте это, чтобы починить зависшие или не отвечающие терминалы."
 
-msgid "Use this when calling the Paradev API."
-msgstr "Используйте его при вызовах API Paradev."
+msgid "Use this when calling the Wanker API."
+msgstr "Используйте его при вызовах API Wanker."
 
 msgid "Use voice transcription and push-to-talk features."
 msgstr "Использовать голосовую расшифровку и режим push-to-talk."
+
+msgid "Use Wanker on mobile"
+msgstr "Используйте Wanker на телефоне"
+
+msgid "Use Wanker on your phone with Pro."
+msgstr "Используйте Wanker на телефоне с Pro."
 
 msgid "Used"
 msgstr "Использовано"
@@ -21736,9 +21552,6 @@ msgstr "Смотреть вакансии"
 msgid "View open roles on Y Combinator"
 msgstr "Смотреть вакансии на Y Combinator"
 
-msgid "View Paradev repository on GitHub"
-msgstr "Открыть репозиторий Paradev на GitHub"
-
 msgid "View profile"
 msgstr "Открыть профиль"
 
@@ -21753,6 +21566,9 @@ msgstr "Смотреть релизы на GitHub"
 
 msgid "View usage"
 msgstr "Посмотреть использование"
+
+msgid "View Wanker repository on GitHub"
+msgstr "Открыть репозиторий Wanker на GitHub"
 
 msgid "Violence or harassment"
 msgstr "Насилие или травля"
@@ -21819,6 +21635,190 @@ msgstr "Пробуждение рабочей области…"
 msgid "Waking up workspace"
 msgstr "Пробуждение рабочей области"
 
+msgid "Wanker"
+msgstr "Wanker"
+
+msgid "Wanker {version}"
+msgstr "Wanker {version}"
+
+msgid "Wanker Agent"
+msgstr "Wanker Agent"
+
+msgid "Wanker app"
+msgstr "Приложение Wanker"
+
+msgid "Wanker App"
+msgstr "Приложение Wanker"
+
+msgid "Wanker Automations"
+msgstr "Wanker Автоматизации"
+
+msgid "Wanker CLI"
+msgstr "Wanker CLI"
+
+msgid "Wanker cloud workspaces"
+msgstr "Облачные рабочие области Wanker"
+
+msgid "Wanker components"
+msgstr "Компоненты Wanker"
+
+msgid "Wanker Components"
+msgstr "Компоненты Wanker"
+
+msgid "Wanker could not bring over some of your v1 projects or workspaces. Open the importer to see why and retry each one."
+msgstr "Wanker не удалось перенести некоторые ваши проекты или рабочие пространства из v1. Откройте импортёр, чтобы узнать причину и повторить каждый из них."
+
+msgid "Wanker could not complete sign-in. Please try again."
+msgstr "Wanker не смог завершить вход. Попробуйте ещё раз."
+
+msgid "Wanker CPU"
+msgstr "CPU Wanker"
+
+msgid "Wanker CPU · last 5 min"
+msgstr "CPU Wanker · последние 5 мин"
+
+msgid "Wanker Design System"
+msgstr "Дизайн-система Wanker"
+
+msgid "Wanker desktop app"
+msgstr "Десктопное приложение Wanker"
+
+msgid "Wanker doesn't have permission to read \"{name}\"."
+msgstr "У Wanker нет разрешения на чтение «{name}»."
+
+msgid "Wanker Enterprise is Wanker for teams. Reach out to learn more about what's included and how it can work for your organization."
+msgstr "Wanker Enterprise — это Wanker для команд. Напишите нам, чтобы узнать, что входит и как это подойдёт вашей организации."
+
+msgid "Wanker for iPhone and iPad"
+msgstr "Wanker для iPhone и iPad"
+
+msgid "Wanker for your team"
+msgstr "Wanker для вашей команды"
+
+msgid "Wanker forwards the ports a remote workspace opens while you have it selected."
+msgstr "Wanker пробрасывает порты, которые открывает удалённая рабочая область, пока она выбрана."
+
+msgid "Wanker GitHub App"
+msgstr "Wanker GitHub App"
+
+msgid "Wanker has a free tier. The source code is on GitHub under the MIT License, so you can inspect, modify, and self-host it."
+msgstr "У Wanker есть бесплатный тариф. Исходный код опубликован на GitHub под лицензией MIT, поэтому его можно изучать, изменять и хостить самостоятельно."
+
+msgid "Wanker hit an unexpected error. Reload to try again."
+msgstr "В Wanker произошла непредвиденная ошибка. Перезагрузите, чтобы повторить."
+
+msgid "Wanker holds no credential for {label} and adds none to your cloud workspaces when they start, restart or wake. A script you run inside the workspace keeps {loginFile} up to date. If it stops, {label} stays signed out until your script signs it in again."
+msgstr "Wanker не хранит учётные данные {label} и не добавляет их в ваши облачные рабочие области при запуске, перезапуске или пробуждении. Скрипт, который вы запускаете в рабочей области, поддерживает {loginFile} в актуальном состоянии. Если он остановится, {label} останется без входа, пока ваш скрипт снова не выполнит вход."
+
+msgid "Wanker holds the token and makes the calls. Agents never see it."
+msgstr "Wanker хранит токен и делает вызовы. Агенты его никогда не видят."
+
+msgid "Wanker hooks"
+msgstr "Хуки Wanker"
+
+msgid "Wanker in-app browser"
+msgstr "Встроенный браузер Wanker"
+
+msgid "Wanker is a desktop app. Enter your email and we'll send you a download link to open on your Mac."
+msgstr "Wanker — десктопное приложение. Введите email, и мы пришлём ссылку на скачивание, чтобы открыть её на Mac."
+
+msgid "Wanker is building self-improving software. It starts with giving engineers the best tools that adapt to their needs over time."
+msgstr "Wanker строит самоулучшающийся софт. Всё начинается с того, чтобы дать инженерам лучшие инструменты, которые со временем подстраиваются под их нужды."
+
+msgid "Wanker is built by a team based in San Francisco, California. For product support or account questions, email <0>{supportEmail}</0> and we'll get back to you within one business day. For partnerships, press, enterprise, or anything else, write to <1>{teamEmail}</1>."
+msgstr "Wanker делает команда из Сан-Франциско, Калифорния. По вопросам продукта и аккаунта пишите на <0>{supportEmail}</0> — ответим в течение одного рабочего дня. По партнёрствам, прессе, enterprise и любым другим вопросам — на <1>{teamEmail}</1>."
+
+msgid "Wanker is built in Wanker, so we're our own #1 users. You get paid to make your own life easier."
+msgstr "Wanker разрабатывается в Wanker, поэтому мы сами его главные пользователи. Вам платят за то, что вы упрощаете себе жизнь."
+
+msgid "Wanker is designed to work with your existing tool, we natively support deep-linking to IDEs like Cursor so you can open your workspaces and files in your IDE."
+msgstr "Wanker рассчитан на работу с вашим текущим инструментом: мы нативно поддерживаем переход по ссылкам в IDE вроде Cursor, чтобы открывать рабочие области и файлы прямо там."
+
+msgid "Wanker is MIT licensed, so you're never locked in. Read or change the code on GitHub."
+msgstr "Wanker распространяется под лицензией MIT, так что вы ни к чему не привязаны. Читайте или меняйте код на GitHub."
+
+msgid "Wanker is open source. Every pull request, review and bug is public on GitHub."
+msgstr "У Wanker открытый исходный код. Каждый пул-реквест, ревью и баг открыты на GitHub."
+
+msgid "Wanker is the workbench for the F3 to F4 transition: parallel agents on separate branches, fleets you can actually supervise, and a review surface for code you did not write."
+msgstr "Wanker — это верстак для перехода от F3 к F4: параллельные агенты в отдельных ветках, флоты, за которыми действительно можно следить, и интерфейс проверки для кода, который вы не писали."
+
+msgid "Wanker isn't on Windows yet"
+msgstr "Пока Wanker работает только на Mac"
+
+msgid "Wanker may sign you back in after restart. Please try signing out again."
+msgstr "Wanker может снова выполнить вход после перезапуска. Попробуйте выйти ещё раз."
+
+msgid "Wanker memory"
+msgstr "Память Wanker"
+
+msgid "Wanker memory · last 5 min"
+msgstr "Память Wanker · последние 5 мин"
+
+msgid "Wanker Mobile code diff on iPhone"
+msgstr "Diff кода в Wanker Mobile на iPhone"
+
+msgid "Wanker mobile gives me the power of my desktop anywhere I go."
+msgstr "Wanker mobile даёт мне мощь моего компьютера, где бы я ни был."
+
+msgid "Wanker Mobile terminal on iPhone"
+msgstr "Терминал Wanker Mobile на iPhone"
+
+msgid "Wanker needs Full Disk Access to read another browser's data. Grant it in System Settings, then check again."
+msgstr "Wanker нужен полный доступ к диску, чтобы читать данные другого браузера. Выдайте его в Системных настройках и проверьте снова."
+
+msgid "Wanker needs Git to add a project."
+msgstr "Wanker нужен Git, чтобы добавить проект."
+
+msgid "Wanker next to others"
+msgstr "Wanker и другие"
+
+msgid "Wanker on iPad, showing a pull request and a workspace list"
+msgstr "Wanker на iPad: пул-реквест и список воркспейсов"
+
+msgid "Wanker only receives the permissions this connector asks for. Disconnect at any time to revoke them."
+msgstr "Wanker получает только те разрешения, которые запрашивает этот коннектор. Отключите его в любой момент, чтобы отозвать их."
+
+msgid "Wanker originals"
+msgstr "Оригиналы Wanker"
+
+msgid "Wanker Pages"
+msgstr "Wanker Страницы"
+
+msgid "Wanker Pages demo"
+msgstr "Демо Wanker Страницы"
+
+msgid "Wanker Plugins"
+msgstr "Wanker Плагины"
+
+msgid "Wanker runs locally on your developers' machines. We don't store your code or AI conversations, and Wanker has completed a SOC 2 Type II audit with an independent auditor. Request the report and review our security documentation at {trustHost}."
+msgstr "Wanker работает локально на машинах ваших разработчиков. Мы не храним ваш код и диалоги с AI, а Wanker прошёл аудит SOC 2 Type II у независимого аудитора. Запросите отчёт и посмотрите документацию по безопасности на {trustHost}."
+
+msgid "Wanker started as a hackathon project in November 2025. It was a simple desktop app for managing worktrees."
+msgstr "Wanker начался как проект на хакатоне в ноябре 2025 года. Это было простое десктопное приложение для управления worktree."
+
+msgid "Wanker Teams"
+msgstr "Wanker Команды"
+
+msgid "Wanker UI"
+msgstr "Wanker UI"
+
+#. placeholder {0}: formatPercent(trackedMemorySharePercent)
+msgid "Wanker uses {0} of system RAM"
+msgstr "Wanker использует {0} системной RAM"
+
+msgid "Wanker uses the GitHub CLI to clone repos and open pull requests. You can also do this later."
+msgstr "Wanker использует GitHub CLI, чтобы клонировать репозитории и открывать пул-реквесты. Это можно сделать и позже."
+
+msgid "Wanker vs the Alternatives"
+msgstr "Wanker против альтернатив"
+
+msgid "Wanker works with any CLI-based coding agent, including Claude Code, OpenCode, OpenAI Codex, and more. Choose a different agent for every task without changing your workspace or review flow."
+msgstr "Wanker работает с любым кодовым агентом с CLI, включая Claude Code, OpenCode, OpenAI Codex и другие. Выбирайте разного агента под каждую задачу, не меняя рабочую область и процесс ревью."
+
+msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
+msgstr "Мобильное приложение Wanker позволяет мне поддерживать работу агентов и помогать им двигаться дальше откуда угодно, даже вдали от компьютера."
+
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Хотите что-то быстрее? <0>Скажите нам в Discord</0>. Многое из этого началось с пожелания пользователя."
 
@@ -21846,8 +21846,8 @@ msgstr "удалён(а) из этой беседы пользователем {
 msgid "Watch a design review go from comment to new version."
 msgstr "Посмотрите, как дизайн-ревью проходит путь от комментария до новой версии."
 
-msgid "Watch the Paradev Automations video on YouTube"
-msgstr "Посмотрите видео про Paradev Автоматизации на YouTube"
+msgid "Watch the Wanker Automations video on YouTube"
+msgstr "Посмотрите видео про Wanker Автоматизации на YouTube"
 
 msgid "Wayfinding and disclosure"
 msgstr "Навигация и раскрытие"
@@ -21897,8 +21897,8 @@ msgstr "Скоро свяжемся."
 msgid "We'll bring you back as soon as we reconnect."
 msgstr "Вы вернётесь к работе, как только связь восстановится."
 
-msgid "We'll email you when Paradev for Android is ready."
-msgstr "Мы напишем вам, когда Paradev для Android будет готов."
+msgid "We'll email you when Wanker for Android is ready."
+msgstr "Мы напишем вам, когда Wanker для Android будет готов."
 
 msgid "We'll get back to you shortly."
 msgstr "Скоро ответим."
@@ -21990,11 +21990,11 @@ msgstr "С возвращением"
 msgid "Welcome to {appName}"
 msgstr "Добро пожаловать в {appName}"
 
-msgid "Welcome to Paradev"
-msgstr "Добро пожаловать в Paradev"
+msgid "Welcome to the new Wanker"
+msgstr "Добро пожаловать в новый Wanker"
 
-msgid "Welcome to the new Paradev"
-msgstr "Добро пожаловать в новый Paradev"
+msgid "Welcome to Wanker"
+msgstr "Добро пожаловать в Wanker"
 
 #. placeholder {0}: BRAND.INTRO_NAME
 msgid "What {0} is, who builds it, and who it's for. A San Francisco team, led by three ex-YC CTOs, building the workspace for parallel coding agents."
@@ -22003,8 +22003,8 @@ msgstr "Что такое {0}, кто его создаёт и для кого �
 msgid "What are the benefits?"
 msgstr "Какие у вас льготы?"
 
-msgid "What builders say about Paradev"
-msgstr "Что разработчики говорят о Paradev"
+msgid "What builders say about Wanker"
+msgstr "Что разработчики говорят о Wanker"
 
 msgid "What comes with you"
 msgstr "Что переносится"
@@ -22033,8 +22033,8 @@ msgstr "Что если мой Mac офлайн, когда срабатывае
 msgid "What is a workspace?"
 msgstr "Что такое рабочая область?"
 
-msgid "What is Paradev Enterprise?"
-msgstr "Что такое Paradev Enterprise?"
+msgid "What is Wanker Enterprise?"
+msgstr "Что такое Wanker Enterprise?"
 
 msgid "What is wrong?"
 msgstr "Что не так?"
@@ -22042,8 +22042,8 @@ msgstr "Что не так?"
 msgid "What it does"
 msgstr "Чем занимается"
 
-msgid "What platforms does Paradev run on?"
-msgstr "На каких платформах работает Paradev?"
+msgid "What platforms does Wanker run on?"
+msgstr "На каких платформах работает Wanker?"
 
 msgid "What problem are you trying to solve?"
 msgstr "Какую задачу вы решаете?"
@@ -22114,8 +22114,8 @@ msgstr "Если выключено, ничто извне не может по�
 msgid "Where detected-port badges in the sidebar open when clicked."
 msgstr "Куда ведут значки обнаруженных портов в боковой панели при клике."
 
-msgid "Where did you hear about Paradev?"
-msgstr "Где вы узнали о Paradev?"
+msgid "Where did you hear about Wanker?"
+msgstr "Где вы узнали о Wanker?"
 
 msgid "Where do you rank?"
 msgstr "Какое у вас место?"
@@ -22190,8 +22190,8 @@ msgstr "С подписью"
 msgid "with or without attachments"
 msgstr "с вложениями или без"
 
-msgid "With the Paradev mobile app, I can address production issues from anywhere."
-msgstr "С мобильным приложением Paradev я могу решать проблемы в продакшене откуда угодно."
+msgid "With the Wanker mobile app, I can address production issues from anywhere."
+msgstr "С мобильным приложением Wanker я могу решать проблемы в продакшене откуда угодно."
 
 msgid "Wordmark, black"
 msgstr "Логотип-надпись, чёрный"
@@ -22466,17 +22466,17 @@ msgstr "Да. Бесплатный тариф покрывает одного п
 msgid "Yes. On plans with cloud workspaces, owners can buy any amount of extra GB-hours at {packPrice} per GB-hour in Settings, Billing. Bought GB-hours are used after the monthly pool and never expire, and auto top-up can buy more when they run low."
 msgstr "Да. В планах с облачными рабочими пространствами владельцы могут купить любое количество дополнительных ГБ-часов по цене {packPrice} за ГБ-час в разделе Настройки, Оплата. Купленные ГБ-часы расходуются после месячного пула и не сгорают, а автопополнение может докупить их, когда они заканчиваются."
 
-msgid "Yes. Paradev has completed a SOC 2 Type II audit with an independent auditor, covering our security controls in operation over time. Request the report and review our security documentation at {trustHost}."
-msgstr "Да. Paradev прошёл аудит SOC 2 Type II у независимого аудитора, охватывающий работу наших мер безопасности во времени. Запросите отчёт и посмотрите документацию по безопасности на {trustHost}."
-
-msgid "Yes. Paradev is open source under the MIT License. The code is public on GitHub, and anyone can file issues, open pull requests, or fork it. Paradev is unrelated to Apache Superset, the business-intelligence tool."
-msgstr "Да. Код Paradev открыт под лицензией MIT. Он опубликован на GitHub, и любой может сообщать о проблемах, открывать pull request или делать форк. Paradev не связан с Apache Superset, инструментом бизнес-аналитики."
-
-msgid "Yes. Paradev is the workspace your agents run in, not a model provider. Bring Claude Code, Codex, OpenCode, or any CLI agent, and use your existing accounts or API keys on every plan."
-msgstr "Да. Paradev — это место, где работают ваши агенты, а не провайдер моделей. Приводите Claude Code, Codex, OpenCode или любого CLI-агента и используйте свои аккаунты или ключи API на любом тарифе."
-
 msgid "Yes. Use superset automations in the CLI to create, run, and pause them."
 msgstr "Да. Используйте superset automations в CLI, чтобы создавать, запускать и приостанавливать их."
+
+msgid "Yes. Wanker has completed a SOC 2 Type II audit with an independent auditor, covering our security controls in operation over time. Request the report and review our security documentation at {trustHost}."
+msgstr "Да. Wanker прошёл аудит SOC 2 Type II у независимого аудитора, охватывающий работу наших мер безопасности во времени. Запросите отчёт и посмотрите документацию по безопасности на {trustHost}."
+
+msgid "Yes. Wanker is open source under the MIT License. The code is public on GitHub, and anyone can file issues, open pull requests, or fork it. Wanker is unrelated to Apache Superset, the business-intelligence tool."
+msgstr "Да. Код Wanker открыт под лицензией MIT. Он опубликован на GitHub, и любой может сообщать о проблемах, открывать pull request или делать форк. Wanker не связан с Apache Superset, инструментом бизнес-аналитики."
+
+msgid "Yes. Wanker is the workspace your agents run in, not a model provider. Bring Claude Code, Codex, OpenCode, or any CLI agent, and use your existing accounts or API keys on every plan."
+msgstr "Да. Wanker — это место, где работают ваши агенты, а не провайдер моделей. Приводите Claude Code, Codex, OpenCode или любого CLI-агента и используйте свои аккаунты или ключи API на любом тарифе."
 
 msgid "Yes. You can upgrade, downgrade, or cancel at any time from the billing settings inside the app. Upgrades start right away, and you pay only the difference for the rest of the period. Downgrades and cancellations take effect at the end of your current billing period."
 msgstr "Да. Вы можете повысить или понизить план либо отменить подписку в любой момент в настройках оплаты в приложении. Повышение действует сразу, и вы платите только разницу за остаток периода. Понижение и отмена вступают в силу в конце текущего расчётного периода."
@@ -22623,8 +22623,8 @@ msgstr "Вы были бы <0>#{0}</0> из {1}."
 msgid "You'd be one of the first on the board."
 msgstr "Вы были бы одним из первых в рейтинге."
 
-msgid "You'll need to sign in again to use Paradev on this device."
-msgstr "Чтобы снова пользоваться Paradev на этом устройстве, нужно будет войти заново."
+msgid "You'll need to sign in again to use Wanker on this device."
+msgstr "Чтобы снова пользоваться Wanker на этом устройстве, нужно будет войти заново."
 
 msgid "You'll stop being a member of this team. You can be re-added by another team member."
 msgstr "Вы перестанете быть участником этой команды. Другой участник сможет добавить вас обратно."
@@ -22632,8 +22632,8 @@ msgstr "Вы перестанете быть участником этой ко�
 msgid "You're about to change your role from {currentRoleName} to {newRoleName}. Another owner will need to restore your permissions. Are you sure?"
 msgstr "Вы собираетесь сменить свою роль с {currentRoleName} на {newRoleName}. Восстановить права сможет только другой владелец. Точно?"
 
-msgid "You're about to get Paradev"
-msgstr "Сейчас вы получите Paradev"
+msgid "You're about to get Wanker"
+msgstr "Сейчас вы получите Wanker"
 
 msgid "You're all set!"
 msgstr "Всё готово!"
@@ -22749,11 +22749,8 @@ msgstr "Ваша организация устанавливает этот пл
 msgid "Your organization reached its cloud usage limit. This workspace stops in a few minutes unless the limit is raised."
 msgstr "Ваша организация достигла лимита использования облака. Эта рабочая область остановится через несколько минут, если лимит не увеличить."
 
-msgid "Your own accounts. Your organization's integrations let Paradev reach its tools; connecting yours makes the work Paradev does for you show up as you."
-msgstr "Ваши собственные учётные записи. Интеграции вашей организации дают Paradev доступ к её инструментам; подключив свои, вы увидите работу, которую Paradev делает для вас, под своим именем."
-
-msgid "Your Paradev download is starting."
-msgstr "Загрузка Paradev начинается."
+msgid "Your own accounts. Your organization's integrations let Wanker reach its tools; connecting yours makes the work Wanker does for you show up as you."
+msgstr "Ваши собственные учётные записи. Интеграции вашей организации дают Wanker доступ к её инструментам; подключив свои, вы увидите работу, которую Wanker делает для вас, под своим именем."
 
 msgid "Your plan does not include cloud environments."
 msgstr "Ваш тариф не включает облачные окружения."
@@ -22780,8 +22777,8 @@ msgstr "Ваше работающее приложение в браузере, 
 msgid "Your signed-in session"
 msgstr "Ваша авторизованная сессия"
 
-msgid "Your Slack account has been linked to Paradev. You can close this tab and return to Slack."
-msgstr "Ваш аккаунт Slack связан с Paradev. Можно закрыть эту вкладку и вернуться в Slack."
+msgid "Your Slack account has been linked to Wanker. You can close this tab and return to Slack."
+msgstr "Ваш аккаунт Slack связан с Wanker. Можно закрыть эту вкладку и вернуться в Slack."
 
 msgid "Your stats, settled in mortal combat"
 msgstr "Твоя статистика решит исход смертельной схватки"
@@ -22808,11 +22805,14 @@ msgstr "Ваш уровень — взвешенная оценка по ося�
 msgid "Your tokens"
 msgstr "Ваши токены"
 
-msgid "Your v1 projects and workspaces are moving to the new Paradev. They appear in the sidebar as each one is ready."
-msgstr "Ваши проекты и рабочие пространства из v1 переносятся в новый Paradev. Они появляются на боковой панели по мере готовности."
+msgid "Your v1 projects and workspaces are moving to the new Wanker. They appear in the sidebar as each one is ready."
+msgstr "Ваши проекты и рабочие пространства из v1 переносятся в новый Wanker. Они появляются на боковой панели по мере готовности."
 
 msgid "Your version: {currentVersion}"
 msgstr "Ваша версия: {currentVersion}"
+
+msgid "Your Wanker download is starting."
+msgstr "Загрузка Wanker начинается."
 
 msgid "Your work, including uncommitted changes, is pushed to a new branch on the remote. A cloud workspace starts from that branch in the environment you pick, and each Claude chat continues there. Agents that are working stop first. Terminals and other chats stay here."
 msgstr "Ваша работа, включая незакоммиченные изменения, отправляется в новую ветку на удалённом репозитории. Облачная рабочая область запускается из этой ветки в выбранном вами окружении, и каждый чат с Claude продолжается там. Работающие агенты сначала останавливаются. Терминалы и другие чаты остаются здесь."

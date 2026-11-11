@@ -548,7 +548,7 @@ export function OrganizationSettings({
 											</SelectTrigger>
 											<SelectContent>
 												<SelectItem value="superset">
-													<Trans>Paradev</Trans>
+													<Trans>Wanker</Trans>
 												</SelectItem>
 												<SelectItem value="linear">
 													<Trans>Linear</Trans>
@@ -564,7 +564,7 @@ export function OrganizationSettings({
 											message: "ID",
 										})}
 										hint={t({
-											message: "Use this when calling the Paradev API.",
+											message: "Use this when calling the Wanker API.",
 										})}
 										htmlFor="org-id"
 									>

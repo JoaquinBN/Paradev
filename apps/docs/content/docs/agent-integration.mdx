@@ -36,7 +36,7 @@ Run AI coding agents in separate workspaces. Each workspace has its own Git work
 
 ## Chat
 
-Paradev has a built-in chat panel.
+Wanker has a built-in chat panel.
 
 - Use the model picker to choose supported models and connect providers.
 - Session titles are generated from the conversation.
@@ -44,7 +44,7 @@ Paradev has a built-in chat panel.
 
 ## Models and Reasoning Effort
 
-The model pickers include **GPT-6 Astra**, **GPT-6 Sol**, **GPT-6 Luna**, **Opus 5.5**, and **Sonnet 5.5**, wherever the agent supports them: Claude Code (Claude models), Codex (GPT models), Copilot, OpenCode, Oh My Pi, and Paradev Chat. The Codex picker also has **GPT-6.1 Sol** and **GPT-6.1 Terra**; GPT-5.5, GPT-5.4, and GPT-5.3 Codex are retired. Available reasoning levels depend on the agent and model; see the [launch options](/cli/cli-reference#agent-effort-levels).
+The model pickers include **GPT-6 Astra**, **GPT-6 Sol**, **GPT-6 Luna**, **Opus 5.5**, and **Sonnet 5.5**, wherever the agent supports them: Claude Code (Claude models), Codex (GPT models), Copilot, OpenCode, Oh My Pi, and Wanker Chat. The Codex picker also has **GPT-6.1 Sol** and **GPT-6.1 Terra**; GPT-5.5, GPT-5.4, and GPT-5.3 Codex are retired. Available reasoning levels depend on the agent and model; see the [launch options](/cli/cli-reference#agent-effort-levels).
 
 ## Agent Settings
 
@@ -52,11 +52,11 @@ Go to **Settings → Agents** to change how each agent launches, reorder agents,
 
 - **Label** and **Icon** - How the agent appears in launchers and the list
 - **Command** - The command used to launch the agent
-- **Prompt-only args** - Arguments added only when Paradev launches the agent with a prompt
+- **Prompt-only args** - Arguments added only when Wanker launches the agent with a prompt
 - **Prompt transport** - How the prompt is delivered to the process (as an argument or on stdin)
 - **Resume args** - Arguments used to restore a session by its id (e.g. `--resume`)
 - **Fork args** - Arguments used to clone a session by its id. Put `{sessionId}` where the id belongs (e.g. `--resume {sessionId} --fork-session`); leave empty if the agent cannot fork
-- **Paradev hooks** - Whether Paradev installs its status hooks for the agent
+- **Wanker hooks** - Whether Wanker installs its status hooks for the agent
 - **Restore defaults** - Restore the shipped configuration for a built-in agent
 
 To add an agent that isn't built in, choose **Add agent → Custom agent…**. A custom agent runs in its own worktree like any other. To see which features each built-in agent supports, see [Supported Agents](/supported-agents).
@@ -73,8 +73,8 @@ claude "Add error handling to fetchUser"
 
 When launching an agent from a task, the **Auto-run command** toggle controls whether it executes immediately.
 
-- **On** - Terminal agents run their command right away, and Paradev Chat sends the task prompt immediately
-- **Off** - Terminal agents stage the command without pressing Enter, and Paradev Chat opens as a draft instead
+- **On** - Terminal agents run their command right away, and Wanker Chat sends the task prompt immediately
+- **Off** - Terminal agents stage the command without pressing Enter, and Wanker Chat opens as a draft instead
 
 The setting is remembered between sessions.
 
@@ -102,7 +102,7 @@ You are notified when agents finish. Configure sounds in Settings. See [Agent St
 
 ## Agent Skills
 
-Teach an agent to drive Paradev with the official [skills](https://github.com/paradevai/skills), one for the `superset` CLI and one for the [MCP server](/mcp-server):
+Teach an agent to drive Wanker with the official [skills](https://github.com/paradevai/skills), one for the `superset` CLI and one for the [MCP server](/mcp-server):
 
 ```bash
 npx skills add paradevai/skills

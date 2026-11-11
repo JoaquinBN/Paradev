@@ -35,7 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
 		openGraph: {
 			title: i18n._(
 				msg({
-					message: "Join us at Paradev",
+					message: "Join us at Wanker",
 				}),
 			),
 			description,
@@ -46,7 +46,7 @@ export async function generateMetadata(): Promise<Metadata> {
 			card: "summary_large_image",
 			title: i18n._(
 				msg({
-					message: "Join us at Paradev",
+					message: "Join us at Wanker",
 				}),
 			),
 			description,
@@ -72,7 +72,7 @@ export default async function CareersPage() {
 					</h1>
 					<p className="m-0 max-w-[43.75rem] text-[19px] leading-normal tracking-[-0.015em] text-foreground/90 sm:text-xl">
 						<Trans>
-							Paradev is building self-improving software. It starts with giving
+							Wanker is building self-improving software. It starts with giving
 							engineers the best tools that adapt to their needs over time.
 						</Trans>{" "}
 						<Trans>

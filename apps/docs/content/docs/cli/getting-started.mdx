@@ -1,24 +1,24 @@
 ---
 title: Getting Started
-description: Install the Paradev CLI, sign in, and run your first commands.
+description: Install the Wanker CLI, sign in, and run your first commands.
 ---
 
-The Paradev CLI (`superset`) is a single static binary that uses the same
+The Wanker CLI (`superset`) is a single static binary that uses the same
 backend as the desktop app. Use it to manage workspaces, tasks, automations,
 and the local host server from a terminal or CI. Scripts and other agents can
 also [dispatch agent tasks](#dispatch-agent-tasks-from-a-script-or-another-agent)
 with it. `paradev` is an alias for `superset`: every install below puts both on
 `PATH`.
 
-<YouTubeVideo id="8g-l5kYEGBc" title="Paradev CLI + Skills Demo" thumbnail="/images/cli-skills-demo.jpg" />
+<YouTubeVideo id="8g-l5kYEGBc" title="Wanker CLI + Skills Demo" thumbnail="/images/cli-skills-demo.jpg" />
 
 ## Install
 
 ### Desktop app
 
-The desktop app includes the Paradev CLI. When the app launches, it writes
+The desktop app includes the Wanker CLI. When the app launches, it writes
 app-managed shims at `~/.paradev/bin/superset` and `~/.paradev/bin/paradev`,
-and Paradev terminals prepend `~/.paradev/bin` to `PATH` automatically.
+and Wanker terminals prepend `~/.paradev/bin` to `PATH` automatically.
 
 To use the bundled CLI from a normal shell, add the directory to your shell
 profile:
@@ -34,7 +34,7 @@ curl -fsSL https://paradev.com/cli/install.sh | sh
 ```
 
 The script auto-detects your platform (macOS on Apple Silicon or Intel, Linux on
-x64 or arm64), installs Paradev under `~/superset` by default, and adds
+x64 or arm64), installs Wanker under `~/superset` by default, and adds
 `~/superset/bin` to your shell `PATH`.
 
 ### Homebrew
@@ -198,7 +198,7 @@ superset terminals read --workspace WORKSPACE_ID --terminal TERMINAL_ID --local
 Each dispatched task opens in the desktop and iPhone apps like any other
 workspace, with its diff ready to review.
 
-Another agent can do the same through the [Paradev MCP server](/mcp-server).
+Another agent can do the same through the [Wanker MCP server](/mcp-server).
 An automation with a webhook trigger starts a run when any service sends a
 POST to its URL.
 

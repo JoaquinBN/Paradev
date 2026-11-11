@@ -13,7 +13,7 @@ withLocalHostService("org-1", {
 			name: "ludicrous-candytuft",
 			branch: "setup",
 			projectId: "proj-1",
-			projectName: "Paradev",
+			projectName: "Wanker",
 			tags: [],
 		},
 	],

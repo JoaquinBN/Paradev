@@ -56,10 +56,10 @@ export function ConnectorCallbackToast({
 			toast.error(
 				owner
 					? t({
-							message: `This ${plugin} account is already connected to another Paradev organization by ${owner}. Ask them to disconnect it there first.`,
+							message: `This ${plugin} account is already connected to another Wanker organization by ${owner}. Ask them to disconnect it there first.`,
 						})
 					: t({
-							message: `This ${plugin} account is already connected by another Paradev organization.`,
+							message: `This ${plugin} account is already connected by another Wanker organization.`,
 						}),
 			);
 		} else {

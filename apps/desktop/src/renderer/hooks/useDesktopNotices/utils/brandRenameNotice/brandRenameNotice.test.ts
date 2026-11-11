@@ -20,7 +20,7 @@ describe("shouldShowBrandRenameNotice", () => {
 
 	test("shows to an existing install after the rename until dismissed", () => {
 		const context = {
-			name: "Paradev",
+			name: "Wanker",
 			formerName: "Superset",
 			previousVersion: "1.30.0",
 		};
@@ -38,7 +38,7 @@ describe("shouldShowBrandRenameNotice", () => {
 	test("does not show on a fresh install", () => {
 		expect(
 			shouldShowBrandRenameNotice({
-				name: "Paradev",
+				name: "Wanker",
 				formerName: "Superset",
 				previousVersion: null,
 				isDismissed: notDismissed,

@@ -1,9 +1,9 @@
 ---
-description: Create a task and assign it to me via Paradev MCP
+description: Create a task and assign it to me via Wanker MCP
 allowed-tools: mcp__superset__tasks_create, mcp__superset__organization_members_list, Bash(git config user.email)
 ---
 
-Create a new task in Paradev and assign it to me.
+Create a new task in Wanker and assign it to me.
 
 ## Input
 

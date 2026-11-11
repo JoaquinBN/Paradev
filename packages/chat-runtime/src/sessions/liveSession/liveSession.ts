@@ -305,7 +305,7 @@ export class LiveSession {
 	 */
 	/**
 	 * What the agent's replay of history cannot know, taken from the session
-	 * this one replaces. Its replay reports commands Paradev stopped as failed,
+	 * this one replaces. Its replay reports commands Wanker stopped as failed,
 	 * and replays the stop notes a shutdown made the agent write.
 	 */
 	carryFrom(replaced: CarriedSession): void {

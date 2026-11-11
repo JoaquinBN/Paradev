@@ -287,7 +287,7 @@ export default async function ConductorPage() {
 											{t(row.label)}
 										</th>
 										<td className="py-4 pr-4 align-top text-foreground">
-											{priced(row.paradev, row.unpricedParadev)}
+											{priced(row.paradev, row.unpricedWanker)}
 										</td>
 										<td className="py-4 align-top text-muted-foreground">
 											{t(row.conductor)}

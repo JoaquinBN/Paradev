@@ -41,7 +41,7 @@ function isInsideTrans(node: import("@ast-grep/napi").SgNode): boolean {
 }
 
 const LITERAL_IDENTIFIERS = new Set([
-	"Paradev",
+	"Wanker",
 	"Superset",
 	"Claude",
 	"Cursor",

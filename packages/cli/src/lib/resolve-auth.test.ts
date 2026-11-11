@@ -163,7 +163,7 @@ describe("resolveAuth", () => {
 	});
 });
 
-describe("resolveAuth in a Paradev terminal", () => {
+describe("resolveAuth in a Wanker terminal", () => {
 	let hostResponse: () => Response;
 	const host = Bun.serve({ port: 0, fetch: () => hostResponse() });
 

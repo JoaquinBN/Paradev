@@ -94,7 +94,7 @@ export const PRODUCT_FEATURED: NavFeatured = {
 	href: "/pages",
 	image: "/pages/hero-poster.webp",
 	eyebrow: <Trans>New</Trans>,
-	title: <Trans>Paradev Pages</Trans>,
+	title: <Trans>Wanker Pages</Trans>,
 	description: (
 		<Trans>
 			Your agent publishes designs and reports. Your team comments, and it gets
@@ -168,7 +168,7 @@ export const RESOURCE_SECTIONS: NavSection[] = [
 			{
 				href: "/compare",
 				label: <Trans>Compare</Trans>,
-				description: <Trans>Paradev next to others</Trans>,
+				description: <Trans>Wanker next to others</Trans>,
 			},
 			{
 				href: "/community",

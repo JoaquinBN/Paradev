@@ -217,7 +217,7 @@ describe("gitAuthorFor", () => {
 		).toBe("octocat");
 	});
 
-	test("without a connected account, the Paradev account's name and email", () => {
+	test("without a connected account, the Wanker account's name and email", () => {
 		expect(
 			gitAuthorFor({
 				github: null,

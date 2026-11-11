@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
-	"name": "Paradev Browser Tools",
+	"name": "Wanker Browser Tools",
 	"version": "0.1.0",
-	"description": "Browser tools for Paradev desktop",
+	"description": "Browser tools for Wanker desktop",
 	"permissions": ["activeTab", "scripting"],
 	"background": {
 		"service_worker": "background.js"

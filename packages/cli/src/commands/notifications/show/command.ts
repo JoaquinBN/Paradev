@@ -52,7 +52,7 @@ export default command({
 				) {
 					throw new CLIError(
 						"This host is too old for `superset notifications show`",
-						"Update the Paradev desktop app on that host",
+						"Update the Wanker desktop app on that host",
 					);
 				}
 				throw error;
@@ -60,7 +60,7 @@ export default command({
 		if (!result.shown) {
 			throw new CLIError(
 				"The desktop app could not show a notification",
-				"Notifications are not supported or are turned off for Paradev in system settings",
+				"Notifications are not supported or are turned off for Wanker in system settings",
 			);
 		}
 		return {

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="full" alt="Claude et OpenCode travaillant en parallèle dans des espaces de travail Paradev avec des diffs en direct" src="../apps/marketing/public/images/readme-hero.gif" />
+<img width="full" alt="Claude et OpenCode travaillant en parallèle dans des espaces de travail Wanker avec des diffs en direct" src="../apps/marketing/public/images/readme-hero.gif" />
 
 ### Exécutez plus de 100 agents de codage en parallèle
 
@@ -36,7 +36,7 @@ Passez votre temps à livrer, pas à attendre.
 
 ## Codez 10x plus vite, sans coût de changement de contexte
 
-Paradev exécute des agents de codage en ligne de commande en parallèle dans des worktrees git isolés, avec terminal, revue de code et ouverture dans l'éditeur intégrés.
+Wanker exécute des agents de codage en ligne de commande en parallèle dans des worktrees git isolés, avec terminal, revue de code et ouverture dans l'éditeur intégrés.
 
 - **Exécutez plusieurs agents simultanément** sans la surcharge du changement de contexte
 - **Isolez chaque tâche** dans son propre worktree git pour que les agents n'interfèrent pas entre eux
@@ -151,15 +151,15 @@ Connectez une autre machine et accédez à ses espaces de travail depuis n'impor
 <tr>
 <td width="50%" valign="middle">
 
-### CLI Paradev
+### CLI Wanker
 
-Scriptez tout depuis n'importe quel shell : créez des espaces de travail, lancez des agents, lisez leurs terminaux et gérez les automatisations avec un seul binaire. Si un agent peut exécuter une commande, il peut piloter Paradev.
+Scriptez tout depuis n'importe quel shell : créez des espaces de travail, lancez des agents, lisez leurs terminaux et gérez les automatisations avec un seul binaire. Si un agent peut exécuter une commande, il peut piloter Wanker.
 
 [Docs →](https://docs.paradev.com/cli/getting-started)
 
 </td>
 <td width="50%">
-  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Création d'un espace de travail et lancement d'un agent depuis la CLI Paradev" width="100%" /></a>
+  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Création d'un espace de travail et lancement d'un agent depuis la CLI Wanker" width="100%" /></a>
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ Accédez à n'importe quel espace de travail, action ou paramètre depuis une se
 
 ## Agents pris en charge
 
-Paradev fonctionne avec n'importe quel agent de codage en ligne de commande, notamment :
+Wanker fonctionne avec n'importe quel agent de codage en ligne de commande, notamment :
 
 | Agent | Statut |
 |:------|:-------|
@@ -220,7 +220,7 @@ Paradev fonctionne avec n'importe quel agent de codage en ligne de commande, not
 | <picture><source media="(prefers-color-scheme: dark)" srcset="../packages/ui/src/assets/icons/preset-icons/polygraph-white.svg" /><img height="16" align="top" alt="Polygraph" src="../packages/ui/src/assets/icons/preset-icons/polygraph.svg" /></picture> &nbsp;[Polygraph](https://trypolygraph.com/) | Entièrement pris en charge |
 | Tout autre agent CLI | Fonctionne sans configuration |
 
-S'il tourne dans un terminal, il tourne sur Paradev
+S'il tourne dans un terminal, il tourne sur Wanker
 
 Les agents obtiennent plus qu'un terminal :
 
@@ -238,7 +238,7 @@ Chaque surface parle aux mêmes espaces de travail : vous pouvez démarrer une t
 |:--------|:-------------|
 | [**App de bureau**](https://github.com/paradevai/paradev/releases/latest) | L'IDE complet : terminaux, visionneuse de diff, navigateur intégré, automatisations |
 | [**CLI**](https://docs.paradev.com/cli/getting-started) | Un seul binaire `superset` pour gérer espaces de travail, agents, terminaux et hôtes depuis n'importe quel shell |
-| [**SDK TypeScript**](https://docs.paradev.com/sdk/getting-started) | Pilotez Paradev par programmation avec [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) depuis Node, Bun ou Deno |
+| [**SDK TypeScript**](https://docs.paradev.com/sdk/getting-started) | Pilotez Wanker par programmation avec [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) depuis Node, Bun ou Deno |
 | [**Serveur MCP**](https://docs.paradev.com/mcp) | Laissez Claude Code, Codex, Cursor et d'autres agents créer et gérer eux-mêmes des espaces de travail |
 
 La CLI est fournie avec l'app de bureau, ou installez-la seule :
@@ -260,12 +260,12 @@ Téléchargez l'app de bureau :
 - **Windows** : pas encore disponible
 - [Tous les builds](https://github.com/paradevai/paradev/releases/latest)
 
-Tout ce dont vous avez besoin est [Git](https://git-scm.com/). [gh](https://cli.github.com/) est facultatif et débloque les workflows de PR ; Paradev propose de l'installer pour vous.
+Tout ce dont vous avez besoin est [Git](https://git-scm.com/). [gh](https://cli.github.com/) est facultatif et débloque les workflows de PR ; Wanker propose de l'installer pour vous.
 
 ## Développement
 
-Envie de bidouiller Paradev ou de contribuer une PR ? Clonez le dépôt, ajoutez-le à
-l'app Paradev installée et créez un espace de travail pour votre changement :
+Envie de bidouiller Wanker ou de contribuer une PR ? Clonez le dépôt, ajoutez-le à
+l'app Wanker installée et créez un espace de travail pour votre changement :
 
 ```bash
 git clone https://github.com/paradevai/paradev.git
@@ -280,7 +280,7 @@ bun run dev
 
 Exécutez `setup.local.sh` une fois dans chaque nouveau worktree. Il configure l'identité
 d'app et les ports propres à l'espace de travail pour que l'app de bureau de développement
-puisse tourner à côté de l'app Paradev installée et des autres worktrees de développement.
+puisse tourner à côté de l'app Wanker installée et des autres worktrees de développement.
 
 Aucun compte Neon ni identifiant tiers n'est nécessaire. `setup.local.sh` démarre
 une pile locale Postgres + Electric via Docker et amorce un compte de dev. Connectez-vous
@@ -333,7 +333,7 @@ Les contributions sont les bienvenues ! Voir [CONTRIBUTING.md](../CONTRIBUTING.m
 
 ## Communauté
 
-Rejoignez la communauté Paradev pour obtenir de l'aide, partager vos retours et échanger avec d'autres utilisateurs :
+Rejoignez la communauté Wanker pour obtenir de l'aide, partager vos retours et échanger avec d'autres utilisateurs :
 
 - **[Discord](https://discord.gg/cZeD9WYcV7)** : discutez avec l'équipe et la communauté
 - **[Twitter](https://x.com/paradevai)** : suivez-nous pour les mises à jour et les annonces

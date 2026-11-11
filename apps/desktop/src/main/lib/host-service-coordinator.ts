@@ -1533,21 +1533,21 @@ export class HostServiceCoordinator extends EventEmitter {
 				? i18n._({
 						...msg({
 							message:
-								"The Paradev host service for {organization} stopped unexpectedly ({cause}) and could not be restarted automatically.",
+								"The Wanker host service for {organization} stopped unexpectedly ({cause}) and could not be restarted automatically.",
 						}),
 						values: { organization: orgName, cause },
 					})
 				: i18n._({
 						...msg({
 							message:
-								"The Paradev host service stopped unexpectedly ({cause}) and could not be restarted automatically.",
+								"The Wanker host service stopped unexpectedly ({cause}) and could not be restarted automatically.",
 						}),
 						values: { cause },
 					}),
 			detail: i18n._(
 				msg({
 					message:
-						"Its workspaces and terminals are unavailable until it restarts — use the Paradev tray menu > Host Service > Restart.",
+						"Its workspaces and terminals are unavailable until it restarts — use the Wanker tray menu > Host Service > Restart.",
 				}),
 			),
 		});

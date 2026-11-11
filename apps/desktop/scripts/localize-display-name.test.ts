@@ -11,14 +11,12 @@ describe("writeLocalizedDisplayName", () => {
 		mkdirSync(join(dir, "ja.lproj"));
 		writeFileSync(join(dir, "icon.icns"), "");
 
-		writeLocalizedDisplayName(dir, "Paradev");
+		writeLocalizedDisplayName(dir, "Wanker");
 
 		for (const locale of ["en", "ja"]) {
 			expect(
 				readFileSync(join(dir, `${locale}.lproj`, "InfoPlist.strings"), "utf8"),
-			).toBe(
-				'"CFBundleName" = "Paradev";\n"CFBundleDisplayName" = "Paradev";\n',
-			);
+			).toBe('"CFBundleName" = "Wanker";\n"CFBundleDisplayName" = "Wanker";\n');
 		}
 	});
 });

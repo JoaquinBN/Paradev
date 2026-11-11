@@ -16,7 +16,7 @@ import {
 	useState,
 } from "react";
 import { LuMaximize2, LuMinimize2 } from "react-icons/lu";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { reportRendererError } from "renderer/lib/report-renderer-error";
 import { RightPaneHeaderButton } from "renderer/routes/_authenticated/_dashboard/components/RightPaneHeaderButton";
 import { WindowChrome } from "renderer/routes/_authenticated/_dashboard/components/WindowChrome";
@@ -94,7 +94,7 @@ export function RightPaneArea({
 		setPaneBox(node?.closest<HTMLElement>("[data-sidebar-slide]") ?? null);
 	}, []);
 	const titleBarSideSlot = useTitleBarSideSlot(paneBox);
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 
 	return (
 		<div className="contents" data-pane-area="right" ref={measurePaneBox}>
@@ -103,7 +103,7 @@ export function RightPaneArea({
 			))}
 			<Workspace<PaneViewerData>
 				{...titleBarTabBarProps(titleBarSideSlot, { paneArea: "right" })}
-				appearance={isParadevShell ? "cards" : "default"}
+				appearance={isWankerShell ? "cards" : "default"}
 				isFocused={isFocused}
 				keepAliveTabs={RIGHT_PANE_KEPT_TABS}
 				registry={registry}

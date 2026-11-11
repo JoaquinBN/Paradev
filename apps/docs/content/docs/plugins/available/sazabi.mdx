@@ -22,13 +22,13 @@ Skills are named `sazabi-<skill>`. In Claude Code they appear as `superset:sazab
 
 ## MCP Server
 
-Tools come from Sazabi's own MCP server at `https://mcp.sazabi.com/mcp`. Paradev proxies each call and adds your credentials. The server lists two tools, `search` and `execute`: the agent searches for an operation (log questions, issues, threads, project memory) and then runs it. See [Sazabi's docs](https://docs.sazabi.com/get-started/coding-agents) for what it can do.
+Tools come from Sazabi's own MCP server at `https://mcp.sazabi.com/mcp`. Wanker proxies each call and adds your credentials. The server lists two tools, `search` and `execute`: the agent searches for an operation (log questions, issues, threads, project memory) and then runs it. See [Sazabi's docs](https://docs.sazabi.com/get-started/coding-agents) for what it can do.
 
 ## Authentication
 
 | Method | Details |
 |:-------|:--------|
-| OAuth 2.0 | You sign in to Sazabi in your browser. Paradev registers itself with Sazabi when you connect, so there is no app to set up first. |
-| Secret key | Paste a key from Sazabi's **Settings → Secret keys** page. Use it when you cannot sign in through a browser. A key scoped to one project limits the agent to that project. Connecting another key for the same Sazabi organization replaces your existing connection; a key connected by another Paradev user is a separate connection. To reach several projects, use OAuth or an organization-wide key. |
+| OAuth 2.0 | You sign in to Sazabi in your browser. Wanker registers itself with Sazabi when you connect, so there is no app to set up first. |
+| Secret key | Paste a key from Sazabi's **Settings → Secret keys** page. Use it when you cannot sign in through a browser. A key scoped to one project limits the agent to that project. Connecting another key for the same Sazabi organization replaces your existing connection; a key connected by another Wanker user is a separate connection. To reach several projects, use OAuth or an organization-wide key. |
 
-Connect from the plugin's page in **Plugins**. Paradev stores the credentials on its side and adds them to each call, so they never go into your agent's configuration.
+Connect from the plugin's page in **Plugins**. Wanker stores the credentials on its side and adds them to each call, so they never go into your agent's configuration.

@@ -27,7 +27,7 @@ export function InstallSteps() {
 			art: <DmgWindowArt />,
 			caption: (
 				<Trans>
-					Drag <strong>Paradev</strong> into your <strong>Applications</strong>{" "}
+					Drag <strong>Wanker</strong> into your <strong>Applications</strong>{" "}
 					folder
 				</Trans>
 			),
@@ -37,7 +37,7 @@ export function InstallSteps() {
 			art: <ApplicationsArt />,
 			caption: (
 				<Trans>
-					Open <strong>Paradev</strong> from your <strong>Applications</strong>{" "}
+					Open <strong>Wanker</strong> from your <strong>Applications</strong>{" "}
 					folder
 				</Trans>
 			),
@@ -47,7 +47,7 @@ export function InstallSteps() {
 	return (
 		<section className="mx-auto max-w-4xl text-center">
 			<h2 className="font-light text-2xl text-foreground tracking-tight sm:text-3xl">
-				<Trans>How to install Paradev</Trans>
+				<Trans>How to install Wanker</Trans>
 			</h2>
 			<ol className="mt-10 grid gap-8 sm:grid-cols-3 sm:gap-5">
 				{steps.map((step, index) => (

@@ -322,7 +322,7 @@ describe("getNotifyScriptContent", () => {
 		expect(result.stderr.toString()).toContain("[notify-hook] event=Stop");
 	});
 
-	it("exits silently outside Paradev terminals even with a payload session id", () => {
+	it("exits silently outside Wanker terminals even with a payload session id", () => {
 		const result = runNotifyHook(
 			{ hook_event_name: "Stop", session_id: "foreign-session" },
 			{ SUPERSET_TERMINAL_ID: "", SUPERSET_TAB_ID: "" },
@@ -454,7 +454,7 @@ describe("per-agent hook scripts dispatch to v2", () => {
 	const buildExpectedV2Payload = (agentIdVar: string) =>
 		`PAYLOAD="{\\"json\\":{\\"terminalId\\":\\"$(json_escape "$SUPERSET_TERMINAL_ID")\\",\\"eventType\\":\\"$(json_escape "$EVENT_TYPE")\\",\\"agent\\":{\\"agentId\\":\\"$(json_escape "$${agentIdVar}")\\",\\"sessionId\\":\\"$(json_escape "$HOOK_SESSION_ID")\\"}}}"`;
 
-	it("cursor auto-approves permission requests before the outside-Paradev bail-out", () => {
+	it("cursor auto-approves permission requests before the outside-Wanker bail-out", () => {
 		const script = readFileSync(
 			getTemplatePath("cursor-hook.template.sh"),
 			"utf-8",

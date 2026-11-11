@@ -97,7 +97,7 @@ describe("desiredPluginMcpServers", () => {
 		).toEqual({});
 	});
 
-	test("another marketplace's same-named plugin is not served Paradev's", () => {
+	test("another marketplace's same-named plugin is not served Wanker's", () => {
 		const desired = desiredPluginMcpServers([
 			{ name: "linear", marketplace: "acme" },
 		]);

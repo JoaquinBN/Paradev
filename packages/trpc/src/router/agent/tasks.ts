@@ -29,7 +29,7 @@ export interface StartTaskInput {
 	organizationId: string;
 	parentSessionId: string;
 	requestedByUserId: string;
-	/** Work on this Paradev task; without it a new task is made from title and instructions. */
+	/** Work on this Wanker task; without it a new task is made from title and instructions. */
 	taskId?: string;
 	title?: string;
 	instructions: string;
@@ -43,7 +43,7 @@ export type StartTaskResult =
 	| { taskId: string; sessionId: string; status: "duplicate" };
 
 /**
- * Work the main session delegates: a Paradev task, and a task session that
+ * Work the main session delegates: a Wanker task, and a task session that
  * works on it on its own box. The session waits in a queue when the Dev
  * already runs its limit. A task has at most one active writer.
  */

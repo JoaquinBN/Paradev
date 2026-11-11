@@ -16,9 +16,9 @@ export const BUILTIN_CLI_PRESET_ID =
 // namespaces can't collide.
 export const BUILTIN_CLI_PRESET: V2TerminalPresetRow = {
 	id: BUILTIN_CLI_PRESET_ID,
-	name: "Paradev CLI",
+	name: "Wanker CLI",
 	description:
-		"Script workspaces, agents, and automations from any terminal — agents in Paradev terminals can use it too.",
+		"Script workspaces, agents, and automations from any terminal — agents in Wanker terminals can use it too.",
 	cwd: "",
 	commands: ["superset --help"],
 	projectIds: null,

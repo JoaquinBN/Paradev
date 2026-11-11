@@ -46,7 +46,7 @@ export function ReleaseNotesDialog({
 			>
 				<div className="flex min-h-0 flex-col overflow-y-auto px-8 pt-9 pb-7">
 					<DialogDescription className="font-mono text-[11px] uppercase tracking-[0.12em]">
-						{t({ message: `Paradev ${version}` })}
+						{t({ message: `Wanker ${version}` })}
 					</DialogDescription>
 					<DialogTitle className="mt-3.5 text-[26px] font-medium leading-[1.12] tracking-tight">
 						{release.title}

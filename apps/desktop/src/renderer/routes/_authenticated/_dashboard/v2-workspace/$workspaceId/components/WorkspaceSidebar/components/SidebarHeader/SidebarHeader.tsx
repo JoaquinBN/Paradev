@@ -1,7 +1,7 @@
 import { headerTabClassName } from "@superset/ui/lib/header-controls";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@superset/ui/tooltip";
 import { cn } from "@superset/ui/utils";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { getSidebarHeaderTabButtonClassName } from "renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles";
 import type { SidebarTabDefinition } from "../../types";
 
@@ -19,19 +19,19 @@ export function SidebarHeader({
 	compact,
 }: SidebarHeaderProps) {
 	const actions = tabs.find((t) => t.id === activeTab)?.actions;
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 
 	return (
 		<div
 			className={
-				isParadevShell
+				isWankerShell
 					? "-mt-px flex h-10 shrink-0 items-center shadow-[inset_0_-1px_0_var(--border)]"
 					: "-mt-px flex h-10 shrink-0 items-stretch bg-muted/45 shadow-[inset_0_-1px_0_var(--border)] dark:bg-muted/35"
 			}
 		>
 			<div
 				className={
-					isParadevShell
+					isWankerShell
 						? "flex h-full min-w-0 flex-1 items-center gap-1 overflow-hidden px-1.5"
 						: "flex min-w-0 flex-1 items-center h-full overflow-hidden pt-1"
 				}
@@ -50,7 +50,7 @@ export function SidebarHeader({
 							onClick={() => onTabChange(tab.id)}
 							aria-label={label}
 							className={cn(
-								isParadevShell
+								isWankerShell
 									? cn(
 											headerTabClassName(isActive),
 											compact ? "w-10" : "gap-1.5 px-2.5",

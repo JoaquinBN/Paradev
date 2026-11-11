@@ -1,14 +1,14 @@
 {
 	"name": "superset",
 	"owner": {
-		"name": "Paradev",
+		"name": "Wanker",
 		"url": "https://paradev.com"
 	},
 	"plugins": [
 		{
 			"name": "superset",
 			"source": "./plugins/superset",
-			"description": "Use Paradev (formerly Superset) to spawn agents, create workspaces, manage tasks, and schedule automations from Claude Code."
+			"description": "Use Wanker (formerly Paradev) to spawn agents, create workspaces, manage tasks, and schedule automations from Claude Code."
 		}
 	]
 }

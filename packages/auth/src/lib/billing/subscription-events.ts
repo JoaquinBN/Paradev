@@ -119,7 +119,7 @@ export async function notifyPlanUpgraded({
 			owners.map((owner) => ({
 				from: NOREPLY_FROM,
 				to: owner.email,
-				subject: `You're on Paradev ${plan.name}`,
+				subject: `You're on Wanker ${plan.name}`,
 				react: PlanUpgradedEmail({
 					ownerName: owner.name,
 					organizationName: org.name,
@@ -183,7 +183,7 @@ export async function notifySubscriptionStarted({
 		owners.map((owner) => ({
 			from: NOREPLY_FROM,
 			to: owner.email,
-			subject: `Welcome to Paradev ${displayName}!`,
+			subject: `Welcome to Wanker ${displayName}!`,
 			react: SubscriptionStartedEmail({
 				ownerName: owner.name,
 				organizationName: org.name,

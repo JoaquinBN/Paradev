@@ -10,7 +10,7 @@ const MESSAGES = [
 	},
 	{
 		id: "2",
-		author: "Paradev",
+		author: "Wanker",
 		text: "Created LIN-248 and linked the thread.",
 	},
 ];
@@ -35,7 +35,7 @@ export function SlackIntegrationDemo() {
 					{MESSAGES.map((message) => (
 						<div key={message.id} className="flex gap-3">
 							<div className="flex size-7 shrink-0 items-center justify-center rounded bg-foreground/10 font-semibold text-[10px] text-foreground/90">
-								{message.author === "Paradev" ? "P" : "M"}
+								{message.author === "Wanker" ? "P" : "M"}
 							</div>
 							<div className="min-w-0 flex-1">
 								<div className="font-medium text-foreground text-xs">

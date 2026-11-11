@@ -69,11 +69,11 @@ export default async function EnterprisePage() {
 								<Trans>Enterprise</Trans>
 							</span>
 							<h1 className="text-3xl md:text-4xl font-medium tracking-tight text-foreground mt-4">
-								<Trans>Paradev for your team</Trans>
+								<Trans>Wanker for your team</Trans>
 							</h1>
 							<p className="text-muted-foreground mt-3 max-w-lg">
 								<Trans>
-									Interested in bringing Paradev to your organization? Reach out
+									Interested in bringing Wanker to your organization? Reach out
 									and we&apos;ll work with you to find the right setup for your
 									team.
 								</Trans>

@@ -10,25 +10,35 @@ import path from "node:path";
  */
 
 /** `productName` in apps/desktop/package.json — what Electron names the app. */
-const APP_NAME = "Superset";
+const APP_NAME = "Wanker";
+/** The productName before the Wanker rename; its profiles are still on disk. */
+const LEGACY_APP_NAME = "Superset";
 
 /** Prefix shared by every per-workspace dev profile. */
 const DEV_PROFILE_PREFIX = `${APP_NAME} (`;
+const DEV_PROFILE_PREFIXES = [DEV_PROFILE_PREFIX, `${LEGACY_APP_NAME} (`];
 
 /**
  * Profiles of installed builds. These are real user data — never reaped. They
  * cannot collide with the prefix above, but the check is explicit so a future
  * change to the naming can't silently make it possible.
  */
-const INSTALLED_APP_PROFILE_DIR_NAMES = new Set([
-	APP_NAME,
-	`${APP_NAME} Dev`,
-	`${APP_NAME} Canary`,
-]);
+const INSTALLED_APP_PROFILE_DIR_NAMES = new Set(
+	[APP_NAME, LEGACY_APP_NAME].flatMap((name) => [
+		name,
+		`${name} Dev`,
+		`${name} Canary`,
+	]),
+);
 
 /** The app name a dev build takes for `workspaceName`, and so its profile dir. */
 export function devAppProfileDirName(workspaceName: string): string {
 	return `${DEV_PROFILE_PREFIX}${workspaceName})`;
+}
+
+/** The name-based profile a dev build minted before the Wanker rename. */
+export function legacyDevAppProfileDirName(workspaceName: string): string {
+	return `${LEGACY_APP_NAME} (${workspaceName})`;
 }
 
 /**
@@ -59,7 +69,7 @@ export function workspaceDevAppProfileDirName({
 export function isDevAppProfileDirName(name: string): boolean {
 	if (INSTALLED_APP_PROFILE_DIR_NAMES.has(name)) return false;
 	if (
-		!name.startsWith(DEV_PROFILE_PREFIX) &&
+		!DEV_PROFILE_PREFIXES.some((prefix) => name.startsWith(prefix)) &&
 		!/^Superset Dev Workspace \([a-f0-9]{64}\)$/.test(name)
 	)
 		return false;

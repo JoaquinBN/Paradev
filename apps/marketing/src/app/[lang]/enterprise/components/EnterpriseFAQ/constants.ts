@@ -14,11 +14,11 @@ export const ENTERPRISE_FAQ_ITEMS: EnterpriseFAQItem[] = [
 	{
 		id: "whatIsEnterprise",
 		question: msg({
-			message: "What is Paradev Enterprise?",
+			message: "What is Wanker Enterprise?",
 		}),
 		answer: msg({
 			message:
-				"Paradev Enterprise is Paradev for teams. Reach out to learn more about what's included and how it can work for your organization.",
+				"Wanker Enterprise is Wanker for teams. Reach out to learn more about what's included and how it can work for your organization.",
 		}),
 	},
 	{
@@ -47,7 +47,7 @@ export const ENTERPRISE_FAQ_ITEMS: EnterpriseFAQItem[] = [
 			message: "Is my data secure?",
 		}),
 		answer: msg({
-			message: `Paradev runs locally on your developers' machines. We don't store your code or AI conversations, and Paradev has completed a SOC 2 Type II audit with an independent auditor. Request the report and review our security documentation at ${trustHost}.`,
+			message: `Wanker runs locally on your developers' machines. We don't store your code or AI conversations, and Wanker has completed a SOC 2 Type II audit with an independent auditor. Request the report and review our security documentation at ${trustHost}.`,
 		}),
 	},
 ];

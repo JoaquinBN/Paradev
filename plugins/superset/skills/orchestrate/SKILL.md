@@ -1,15 +1,15 @@
 ---
 name: orchestrate
-description: Coordinate several coding agents in parallel through Paradev (formerly Superset), each in its own workspace, with follow-ups, progress reads, dependency tracking, and structured results. Use when the user asks to delegate, parallelize, fan out, or split up coding work across agents, workspaces, or hosts, hand work between agents, or monitor workers, including "spin up agents for each of these", "run these in parallel", "what are my workers doing". Not for ordinary single-agent workspace, task, or automation management.
+description: Coordinate several coding agents in parallel through Wanker (formerly Paradev), each in its own workspace, with follow-ups, progress reads, dependency tracking, and structured results. Use when the user asks to delegate, parallelize, fan out, or split up coding work across agents, workspaces, or hosts, hand work between agents, or monitor workers, including "spin up agents for each of these", "run these in parallel", "what are my workers doing". Not for ordinary single-agent workspace, task, or automation management.
 argument-hint: the work to split up and coordinate
 allowed-tools: Bash(superset:*) Bash(paradev:*)
 ---
 
-# Paradev Orchestration
+# Wanker Orchestration
 
 `paradev` is an alias for the `superset` CLI: every `superset` command here also runs as `paradev`.
 
-Coordinate terminal agents with Paradev's workspace, agent, and terminal commands. Treat this as a coordinator-driven protocol: Paradev provides session transport, while the coordinator owns task dependencies and completion state.
+Coordinate terminal agents with Wanker's workspace, agent, and terminal commands. Treat this as a coordinator-driven protocol: Wanker provides session transport, while the coordinator owns task dependencies and completion state.
 
 ## Establish the control surface
 
@@ -34,13 +34,13 @@ Create a compact coordinator table with these fields:
 | --- | --- |
 | Task | Stable short identifier |
 | Dependencies | Tasks that must complete first |
-| Workspace | Paradev workspace ID |
+| Workspace | Wanker workspace ID |
 | Host | Host ID, or local |
 | Terminal | `sessionId` returned by `agents create` |
 | Status | `pending`, `ready`, `running`, `completed`, `blocked`, or `failed` |
 | Result | Summary, files, checks, and follow-up work |
 
-Keep this state in the coordinator's working context. Paradev organization tasks are issue-tracker records, not orchestration DAG nodes; do not create or mutate them unless the user asks.
+Keep this state in the coordinator's working context. Wanker organization tasks are issue-tracker records, not orchestration DAG nodes; do not create or mutate them unless the user asks.
 
 Prefer independent tasks and shallow dependency chains. For parallel editing, give workers separate workspaces/branches. Sharing one workspace is appropriate for read-only analysis or deliberately complementary work with non-overlapping files.
 
@@ -73,7 +73,7 @@ reason: <specific blocker>
 needs: <decision, access, or dependency required>
 ```
 
-These markers are a prompt convention visible in terminal snapshots, not durable Paradev events. Treat malformed or missing envelopes as unstructured output and inspect the full snapshot.
+These markers are a prompt convention visible in terminal snapshots, not durable Wanker events. Treat malformed or missing envelopes as unstructured output and inspect the full snapshot.
 
 ## Dispatch workers
 
@@ -166,7 +166,7 @@ If the user wants to take over a worker from their own shell, give them the comm
 5. Redispatch a failed task only after changing the prompt, inputs, or worker choice. Stop after repeated failures and report the blocker.
 6. Independently verify risky or overlapping changes before presenting the combined result.
 
-For isolated branches, ask each implementation worker to commit or otherwise provide an exact handoff only when that action is within the user's requested workflow. Paradev does not merge worker branches automatically.
+For isolated branches, ask each implementation worker to commit or otherwise provide an exact handoff only when that action is within the user's requested workflow. Wanker does not merge worker branches automatically.
 
 ## Finish and clean up
 
@@ -174,7 +174,7 @@ Summarize each task's outcome, workspace/branch, files changed, checks, blockers
 
 For cloud workers, `superset workspaces pull-requests --all --json` lists every pull request they opened in one call. `superset workspaces sleep <id>` stops a finished worker's sandbox instead of archiving it; opening it wakes it.
 
-A long run usually finishes while the user is looking elsewhere. Tell them with a desktop notification; run from a Paradev terminal, clicking it brings them back to the coordinator:
+A long run usually finishes while the user is looking elsewhere. Tell them with a desktop notification; run from a Wanker terminal, clicking it brings them back to the coordinator:
 
 ```bash
 superset notifications show "Parallel run finished" --body "4 done, 1 blocked" --sound

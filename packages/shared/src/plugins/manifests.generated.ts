@@ -12,7 +12,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.4",
 		"description": "Work with issues, pull requests, and CI across your repositories.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -61,7 +61,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.5.6",
 		"description": "Plan and build products: create, search, and update Linear issues.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -110,7 +110,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.6",
 		"description": "Search, read, and write your Notion workspace: pages, databases, and comments.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -156,7 +156,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.2.5",
 		"description": "Search, read, and post across your Slack workspace: channels, DMs, and threads.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -189,7 +189,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.3",
 		"description": "Debug with production error context: search issues, read stack traces, and manage alerts in Sentry.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -235,7 +235,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.1.7",
 		"description": "Read, search, send, and organize mail in your Gmail account.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -268,7 +268,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.3",
 		"description": "Recall what was said in your meetings: search, read, and query Granola notes and transcripts.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -314,7 +314,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.3",
 		"description": "Meeting notes, action items, and transcripts from Circleback: search what was said and work what was captured.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -364,7 +364,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.2",
 		"description": "Track money in YNAB: accounts, categories, budgets, and transactions.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -397,7 +397,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.2",
 		"description": "Work with billing in Autumn: customers, plans, balances, and subscriptions.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -434,7 +434,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.3",
 		"description": "Work with payments in Stripe: trace charges and subscriptions, read billing data, and search Stripe's docs.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -484,7 +484,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.3",
 		"description": "Work your inbox from Superhuman: find and read threads, triage what needs you, draft replies in your voice, and schedule from your calendar.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -538,7 +538,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.2",
 		"description": "Work with your Neon Postgres: inspect projects and branches, read schemas, and run SQL.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -580,7 +580,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.3",
 		"description": "Search the web, companies, and people with Exa.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -613,7 +613,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.2",
 		"description": "Ask PostHog about your product: query events and insights, look up people, and check feature flags.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -655,7 +655,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.2",
 		"description": "Read and manage your Google Calendar: find events, check free time, and schedule meetings.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -688,7 +688,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.2",
 		"description": "Work with Vercel: inspect projects and deployments, read build and runtime logs, and search Vercel's docs.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -725,7 +725,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.0",
 		"description": "Send and debug email with Resend: emails, domains, contacts, broadcasts, and inboxes.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -776,7 +776,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.1",
 		"description": "Track your brand in AI search with Peec AI: visibility, cited sources, recommended actions, and AI crawler traffic.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -828,7 +828,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.0",
 		"description": "Investigate production with Sazabi: ask questions about your logs and traces, triage issues, check deploys, build dashboards, and send app and coding-agent telemetry to Sazabi.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -899,7 +899,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.0",
 		"description": "Debug and operate Inngest: inspect runs and traces, send events, invoke and rerun functions, and query Insights.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -941,7 +941,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.0",
 		"description": "Work with your Supabase projects: inspect tables, run SQL, apply migrations, read logs and advisors, and deploy Edge Functions.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -984,7 +984,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.0",
 		"description": "Turn the web into agent-ready data with Firecrawl: search, scrape, map, and crawl sites, and parse documents.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",
@@ -1026,7 +1026,7 @@ export const FIRST_PARTY_MANIFESTS = {
 		"version": "1.0.0",
 		"description": "Recall your meetings with Wispr Flow: search notes, transcripts, scratchpad notes, and calendar events.",
 		"author": {
-			"name": "Paradev",
+			"name": "Wanker",
 			"url": "https://paradev.com"
 		},
 		"homepage": "https://docs.paradev.com",

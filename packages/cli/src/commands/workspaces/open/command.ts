@@ -6,7 +6,7 @@ import { resolveWorkspaceTarget } from "../../../lib/host-workspaces";
 import { openUrl, workspaceLinks } from "../../../lib/open-url";
 
 export default command({
-	description: "Open a workspace in the Paradev desktop app",
+	description: "Open a workspace in the Wanker desktop app",
 	args: [positional("id").required().desc("Workspace ID")],
 	options: {
 		host: string().desc(
@@ -62,7 +62,7 @@ export default command({
 			data: { id: workspace.id, name: workspace.name, url, webUrl },
 			message: options.print
 				? url
-				: `Opening "${workspace.name}" in Paradev desktop`,
+				: `Opening "${workspace.name}" in Wanker desktop`,
 		};
 	},
 });

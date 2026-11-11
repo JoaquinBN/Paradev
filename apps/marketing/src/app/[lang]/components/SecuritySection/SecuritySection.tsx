@@ -29,7 +29,7 @@ const SECURITY_FEATURES: {
 		}),
 		description: msg({
 			message:
-				"Paradev is MIT licensed, so you're never locked in. Read or change the code on GitHub.",
+				"Wanker is MIT licensed, so you're never locked in. Read or change the code on GitHub.",
 		}),
 		link: {
 			href: COMPANY.GITHUB_URL,

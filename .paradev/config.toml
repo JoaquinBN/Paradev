@@ -1,4 +1,4 @@
-# How Paradev sets up, runs and archives this repository's workspaces.
+# How Wanker sets up, runs and archives this repository's workspaces.
 # Reference: apps/docs/content/docs/setup-teardown-scripts.mdx
 # config.json stays until every sandbox runs a host-service that reads this file.
 

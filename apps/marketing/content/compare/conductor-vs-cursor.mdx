@@ -1,6 +1,6 @@
 ---
 title: "Conductor vs Cursor (2026): Which Should You Use?"
-description: "Compare Conductor and Cursor for AI coding. See how a Mac app for parallel agents differs from an AI-first editor, and where Paradev fits as an alternative."
+description: "Compare Conductor and Cursor for AI coding. See how a Mac app for parallel agents differs from an AI-first editor, and where Wanker fits as an alternative."
 date: 2026-07-13
 lastUpdated: 2026-11-05
 type: "1v1"
@@ -20,13 +20,13 @@ Conductor is joining Meta and is winding down. Since November 4, 2026, it takes 
 
 Conductor and Cursor solve overlapping problems from opposite ends. Conductor is a macOS app that runs coding agents in parallel, each in an isolated Git worktree. Cursor is an AI-first editor that you type in, with an agent mode that can also run several agents at once. Conductor can run Cursor's agent as one of its options, so the question was often "do I want an orchestrator around my agents, or an editor that is itself the agent?"
 
-If you want an agent-agnostic workspace that does parallel worktrees but is not tied to macOS or one editor, [Paradev](/compare/superset-vs-cursor) is worth a look too. This page compares all three.
+If you want an agent-agnostic workspace that does parallel worktrees but is not tied to macOS or one editor, [Wanker](/compare/superset-vs-cursor) is worth a look too. This page compares all three.
 
 ---
 
 ## At a Glance
 
-| | **Conductor** | **Cursor** | **Paradev** |
+| | **Conductor** | **Cursor** | **Wanker** |
 |---|---|---|---|
 | **Category** | Mac app for parallel agents | AI-first code editor | Agent orchestration workspace |
 | **Agents** | Claude Code, Codex, Cursor | Cursor's own agent and models | Any CLI agent (Claude Code, Codex, OpenCode, Cursor, Gemini, and more) |
@@ -61,17 +61,17 @@ Both run parallel agents in local Git worktrees, which is a recent and important
 
 Conductor is macOS only. Cursor runs on macOS, Windows, and Linux but centers on its own models and editor. Neither is agent-agnostic in the way a dedicated orchestrator is: Conductor supports three agents, and Cursor is primarily its own.
 
-## Where Paradev Fits
+## Where Wanker Fits
 
-If you used Conductor's parallel-worktree model but want it agent-agnostic and not tied to macOS, or you like Cursor's parallel agents but do not want to adopt its editor, Paradev is the third option. It runs Claude Code, Codex, OpenCode, Cursor, Copilot, Gemini, Mistral Vibe, and custom agents, each in its own worktree, with built-in review, an in-app browser, and MCP. Agents run on your machine, on hosts you add through Remote Access, on your own Linux server with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), or in [cloud workspaces](/cloud). Paradev is open source under the MIT License. It keeps the orchestration layer independent of any one editor or vendor, and hands off to VS Code, Cursor, JetBrains, or Xcode when you want a full editor. See [Paradev vs Conductor](/compare/superset-vs-conductor) and [Paradev vs Cursor](/compare/superset-vs-cursor).
+If you used Conductor's parallel-worktree model but want it agent-agnostic and not tied to macOS, or you like Cursor's parallel agents but do not want to adopt its editor, Wanker is the third option. It runs Claude Code, Codex, OpenCode, Cursor, Copilot, Gemini, Mistral Vibe, and custom agents, each in its own worktree, with built-in review, an in-app browser, and MCP. Agents run on your machine, on hosts you add through Remote Access, on your own Linux server with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), or in [cloud workspaces](/cloud). Wanker is open source under the MIT License. It keeps the orchestration layer independent of any one editor or vendor, and hands off to VS Code, Cursor, JetBrains, or Xcode when you want a full editor. See [Wanker vs Conductor](/compare/superset-vs-conductor) and [Wanker vs Cursor](/compare/superset-vs-cursor).
 
 ## Which Should You Choose?
 
-- **Conductor** is closed to new users and is winding down. If you use it today, follow the [migration guide](https://docs.paradev.com/migrate-from-conductor) to move your work to Paradev.
+- **Conductor** is closed to new users and is winding down. If you use it today, follow the [migration guide](https://docs.paradev.com/migrate-from-conductor) to move your work to Wanker.
 - **Choose Cursor** if you want an AI-first editor to write code in, with parallel agents built into the editor across all platforms.
-- **Choose Paradev** if you want agent-agnostic, worktree-based orchestration across many agents, remote and cloud hosts, and freedom from editor lock-in.
+- **Choose Wanker** if you want agent-agnostic, worktree-based orchestration across many agents, remote and cloud hosts, and freedom from editor lock-in.
 
-**Verdict:** Conductor and Cursor overlapped more and more because both run parallel agents in worktrees, and Conductor can even run Cursor. Conductor is now closed to new users, so the choice for new users is between Cursor for an AI-first editor and Paradev for the broadest, most agent-agnostic orchestration layer.
+**Verdict:** Conductor and Cursor overlapped more and more because both run parallel agents in worktrees, and Conductor can even run Cursor. Conductor is now closed to new users, so the choice for new users is between Cursor for an AI-first editor and Wanker for the broadest, most agent-agnostic orchestration layer.
 
 ---
 
@@ -83,12 +83,12 @@ Yes. Conductor runs Claude Code, Codex, and Cursor agents in parallel, each in i
 
 ### Do Conductor and Cursor both use Git worktrees?
 
-Yes. Conductor uses a worktree per task, and Cursor 2.0 runs its parallel agents in local Git worktrees too. Paradev uses Git worktrees for new local branch-based workspaces.
+Yes. Conductor uses a worktree per task, and Cursor 2.0 runs its parallel agents in local Git worktrees too. Wanker uses Git worktrees for new local branch-based workspaces.
 
 ### Which is better for parallel agents?
 
-Conductor was purpose-built for it on macOS, but it is now closed to new users. Cursor builds it into the editor across platforms. For agent-agnostic parallel orchestration with remote hosts, Paradev is a strong alternative.
+Conductor was purpose-built for it on macOS, but it is now closed to new users. Cursor builds it into the editor across platforms. For agent-agnostic parallel orchestration with remote hosts, Wanker is a strong alternative.
 
 ### Is Conductor or Cursor free?
 
-Conductor no longer sells plans or takes new sign-ups. Existing free users cannot upgrade, and existing Pro users keep Pro features for free. Cursor has a free tier with paid plans from $20/month. Paradev has a free tier plus Pro at {{price:pro}}/seat/month, with Team ({{price:team}}) and Ultra ({{price:ultra}}) plans for cloud workspaces.
+Conductor no longer sells plans or takes new sign-ups. Existing free users cannot upgrade, and existing Pro users keep Pro features for free. Cursor has a free tier with paid plans from $20/month. Wanker has a free tier plus Pro at {{price:pro}}/seat/month, with Team ({{price:team}}) and Ultra ({{price:ultra}}) plans for cloud workspaces.

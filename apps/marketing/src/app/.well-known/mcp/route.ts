@@ -8,7 +8,7 @@ export function GET() {
 				{
 					name: "superset",
 					description:
-						"Paradev MCP server: orchestrate parallel coding agents, workspaces, automations, and tasks.",
+						"Wanker MCP server: orchestrate parallel coding agents, workspaces, automations, and tasks.",
 					url: MCP_SERVER_URL,
 					transport: "streamable-http",
 					serverCard: `${COMPANY.MARKETING_URL}/.well-known/mcp/server-card.json`,
@@ -21,7 +21,7 @@ export function GET() {
 				{
 					name: "superset-docs",
 					description:
-						"Paradev documentation over MCP: search and read docs pages.",
+						"Wanker documentation over MCP: search and read docs pages.",
 					url: `${COMPANY.DOCS_URL}/mcp`,
 					transport: "streamable-http",
 					authentication: { type: "none" },

@@ -1,9 +1,9 @@
 ---
 title: Build a Plugin
-description: Write a plugin, test it, share it with your team, and submit it to the Paradev marketplace
+description: Write a plugin, test it, share it with your team, and submit it to the Wanker marketplace
 ---
 
-A plugin is a folder with a `plugin.json` manifest and, optionally, a `skills/` folder. Its tools come from an MCP server that already exists, and Paradev proxies each call to it. The plugin does not include that server, but a skill can include `scripts/` files, which are installed on the user's machine. See [Overview](/plugins/overview) for what a plugin does once it is installed.
+A plugin is a folder with a `plugin.json` manifest and, optionally, a `skills/` folder. Its tools come from an MCP server that already exists, and Wanker proxies each call to it. The plugin does not include that server, but a skill can include `scripts/` files, which are installed on the user's machine. See [Overview](/plugins/overview) for what a plugin does once it is installed.
 
 ## Set Up a Marketplace
 
@@ -13,7 +13,7 @@ Plugins live in a marketplace: a git repository with an `.agent-marketplace.json
 {
 	"$schema": "https://paradev.com/schemas/marketplace/1.0.0.json",
 	"name": "acme",
-	"description": "Acme plugins for Paradev agents.",
+	"description": "Acme plugins for Wanker agents.",
 	"owner": { "name": "Acme", "url": "https://acme.com" },
 	"plugins": []
 }
@@ -47,7 +47,7 @@ The name must be lowercase letters, digits, dots, and hyphens. The category is o
 
 ## Write the Manifest
 
-`plugin.json` follows the Codex plugin format. Paradev settings go under `extensions.superset`:
+`plugin.json` follows the Codex plugin format. Wanker settings go under `extensions.superset`:
 
 ```json title="plugins/acme/plugin.json"
 {
@@ -75,7 +75,7 @@ The name must be lowercase letters, digits, dots, and hyphens. The category is o
 
 | Field | What it does |
 |:------|:-------------|
-| `interface` | The name, category, and icon shown in the Plugins page. `icon` is a path to an image in the plugin folder, or the key of an icon built into Paradev |
+| `interface` | The name, category, and icon shown in the Plugins page. `icon` is a path to an image in the plugin folder, or the key of an icon built into Wanker |
 | `mcp` | The MCP server the tools come from. Streamable HTTP only. Omit it for a skills-only plugin |
 | `connector` | The account connection the tools need, as `{ "slug": "..." }`. Omit it when the tools need no account |
 | `bind` | How the connection's credential is added to each call, such as `"headers": { "Authorization": "Bearer ${config.access_token}" }` |
@@ -85,7 +85,7 @@ Put the image in the plugin folder, here at `plugins/acme/assets/icon.svg`. It m
 The full schema is at [paradev.com/schemas/plugin/1.0.0.json](https://paradev.com/schemas/plugin/1.0.0.json). Your editor uses it to complete and check the file.
 
 <Callout type="info">
-The manifest has no OAuth settings. Paradev holds credentials and adds them to each call on its servers, so they never reach the agent or the machine. If your MCP server supports OAuth with dynamic client registration, users can connect without anyone registering an OAuth app first.
+The manifest has no OAuth settings. Wanker holds credentials and adds them to each call on its servers, so they never reach the agent or the machine. If your MCP server supports OAuth with dynamic client registration, users can connect without anyone registering an OAuth app first.
 </Callout>
 
 ## Write Skills
@@ -132,8 +132,8 @@ There are three ways to share a plugin:
 | Option | Who gets it | Tools |
 |:-------|:------------|:------|
 | [Your own marketplace](#your-own-marketplace) | Anyone who adds your repository | Skills only |
-| [Organization plugins](/plugins/organization-plugins) | Members of your Paradev organization | Skills and MCP tools |
-| [The Paradev marketplace](#submit-to-the-paradev-marketplace) | Every Paradev user | Skills and MCP tools |
+| [Organization plugins](/plugins/organization-plugins) | Members of your Wanker organization | Skills and MCP tools |
+| [The Wanker marketplace](#submit-to-the-paradev-marketplace) | Every Wanker user | Skills and MCP tools |
 
 ### Your Own Marketplace
 
@@ -144,15 +144,15 @@ superset plugins marketplace add acme/paradev-plugins
 superset plugins install acme --marketplace acme
 ```
 
-Plugins from a marketplace you add this way install their skills only. For MCP tools, use organization plugins or submit the plugin to the Paradev marketplace.
+Plugins from a marketplace you add this way install their skills only. For MCP tools, use organization plugins or submit the plugin to the Wanker marketplace.
 
 ### Organization Plugins
 
-An owner or admin can sync your repository into a Paradev organization. Members then install its plugins from **Plugins**, with MCP tools as well as skills. See [Organization Plugins](/plugins/organization-plugins).
+An owner or admin can sync your repository into a Wanker organization. Members then install its plugins from **Plugins**, with MCP tools as well as skills. See [Organization Plugins](/plugins/organization-plugins).
 
-### Submit to the Paradev Marketplace
+### Submit to the Wanker Marketplace
 
-To make a plugin available to every Paradev user, open a pull request that adds it to the [Paradev repository](https://github.com/paradevai/paradev). The repository is itself a marketplace, so you build the plugin there with the same commands. Plugins in the Paradev marketplace are listed at [paradev.com/marketplace/plugins](https://paradev.com/marketplace/plugins) and in **Plugins** in the desktop app.
+To make a plugin available to every Wanker user, open a pull request that adds it to the [Wanker repository](https://github.com/paradevai/paradev). The repository is itself a marketplace, so you build the plugin there with the same commands. Plugins in the Wanker marketplace are listed at [paradev.com/marketplace/plugins](https://paradev.com/marketplace/plugins) and in **Plugins** in the desktop app.
 
 1. Fork and clone the repository, then run `bun install`. See [CONTRIBUTING.md](https://github.com/paradevai/paradev/blob/main/CONTRIBUTING.md).
 2. From the repository root, run `superset plugins create <name> --kind url --url <server-url>`, or `superset plugins create <name> --kind none --skills` for a skills-only plugin. Then write the manifest and skills as described above.
@@ -188,4 +188,4 @@ superset plugins marketplace add acme/paradev-plugins
 superset plugins install acme --marketplace acme --update
 ```
 
-For a plugin in the Paradev repository, run `superset plugins publish <name> --bump patch` in your pull request, and commit `packages/shared/src/plugins/manifests.generated.ts` with the plugin. CI fails if that file is out of date. The new version ships when the pull request merges.
+For a plugin in the Wanker repository, run `superset plugins publish <name> --bump patch` in your pull request, and commit `packages/shared/src/plugins/manifests.generated.ts` with the plugin. CI fails if that file is out of date. The new version ships when the pull request merges.

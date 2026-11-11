@@ -13,13 +13,13 @@ export function WelcomeEmail({
 }: WelcomeEmailProps = {}) {
 	return (
 		<EmailLayout
-			preview="How to get the most out of Paradev."
+			preview="How to get the most out of Wanker."
 			recipientEmail={userEmail}
 			unsubscribeUrl={unsubscribeUrl}
 		>
 			<Text className="text-[15px] leading-6 text-foreground m-0 mb-6">
-				Paradev runs Claude Code, Codex, or any CLI agent in parallel, each in
-				an isolated copy of your repo. To get the most out of it:
+				Wanker runs Claude Code, Codex, or any CLI agent in parallel, each in an
+				isolated copy of your repo. To get the most out of it:
 			</Text>
 
 			<Text className="text-[15px] leading-6 text-foreground m-0 mb-4">

@@ -52,7 +52,7 @@ and agent launch by `packages/host-service/src/trpc/router/usage/default-account
 publishes the selection to `$SUPERSET_HOME_DIR/state/default-*` pointer files. The agent wrappers
 re-read those at every launch (`buildDefaultAccountResolver` in agent-setup), so a switch reaches
 existing terminals the next time the agent starts; a value the user exported by hand always wins.
-Paradev never touches the credential stores; the provider CLIs own every login end to end.
+Wanker never touches the credential stores; the provider CLIs own every login end to end.
 
 Because those CLIs read *everything* from their active config dir, a second dir would otherwise
 mean a second, empty setup. `packages/agent-setup/src/provider-profiles.ts` provisions each
@@ -72,13 +72,13 @@ non-default profile from the default account (`~/.claude`, `~/.codex`):
   (`packages/host-service/src/trpc/router/usage/session-share.ts`; existing trees are merged in,
   live sessions included).
 - Per-account and never shared: credentials, `oauthAccount`/`userID` identity and per-project
-  state in `.claude.json`, auth-related settings keys, and Paradev's own lifecycle hooks
+  state in `.claude.json`, auth-related settings keys, and Wanker's own lifecycle hooks
   (written per profile).
 
 Provisioning is idempotent and runs when an account is added, when one is selected, and at host
 boot for the selected accounts (`usage/account-provisioning.ts`).
 
-## Discovering Paradev CLI commands
+## Discovering Wanker CLI commands
 
 Agent-facing text (`AGENTS.md`, skills, prompts) should point agents at `superset schema` to learn
 what commands and options exist, not at `--help` text. It prints every command, option and argument
@@ -155,7 +155,7 @@ inside Claude, Codex, or another ACP agent. `sessions resume --session` accepts 
 returns the live chat session ID, which is a new one when the chat had stopped. `sessions import
 --native-session` accepts the latter, with `--agent`, and adopts that conversation into a new chat.
 `sessions create` always starts a new chat. `sessions send` resumes a stopped chat first and returns
-the session ID the prompt went to. `sessions list` lists Paradev-saved sessions for the workspace;
+the session ID the prompt went to. `sessions list` lists Wanker-saved sessions for the workspace;
 native provider discovery remains available in the chat header's history menu.
 
 `sessions create`, `import` and `resume` also open the chat in a background tab of the host's

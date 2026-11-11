@@ -12,7 +12,7 @@ export interface ActiveChat {
 	running: boolean;
 	queued: UserMessage[];
 	queuePaused: boolean;
-	/** Paradev closed while it waited, not the user's interrupt. */
+	/** Wanker closed while it waited, not the user's interrupt. */
 	queuePausedByShutdown: boolean;
 	queueControls: boolean;
 	selectMode: (modeId: string) => void;

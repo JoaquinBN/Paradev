@@ -203,7 +203,7 @@ export function TurnFailureCard({
 				{manualSignIn && (
 					<p className="text-muted-foreground">
 						<Trans>
-							In manual mode, Paradev doesn't sign this agent in. Have your
+							In manual mode, Wanker doesn't sign this agent in. Have your
 							script sign it in again and continue, or turn off manual mode in
 							agent settings.
 						</Trans>

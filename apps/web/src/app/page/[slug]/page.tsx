@@ -85,7 +85,7 @@ export async function generateMetadata({
 			itunes: { appId: COMPANY.APP_STORE_ID, appArgument: shared.url },
 			openGraph: {
 				type: "website",
-				siteName: "Paradev",
+				siteName: "Wanker",
 				url: shared.url,
 				title: shared.title,
 				description,
@@ -113,7 +113,7 @@ export async function generateMetadata({
 	}
 
 	return {
-		title: "Paradev",
+		title: "Wanker",
 		description: i18n._(msg({ message: "Sign in to view this page" })),
 		robots: ROBOTS,
 		itunes: { appId: COMPANY.APP_STORE_ID },

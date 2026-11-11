@@ -3,9 +3,9 @@ title: Host Server
 description: Set up the daemon the CLI and desktop app talk to when targeting the local machine.
 ---
 
-`superset start` runs a headless HTTP server that the Paradev desktop app and CLI talk to. It manages workspaces, ports, and agent runs on its machine. The desktop app starts it automatically. On a CLI-only or headless machine, start it yourself.
+`superset start` runs a headless HTTP server that the Wanker desktop app and CLI talk to. It manages workspaces, ports, and agent runs on its machine. The desktop app starts it automatically. On a CLI-only or headless machine, start it yourself.
 
-The desktop app includes the CLI. It installs a `~/.paradev/bin/superset` shim on launch, and Paradev terminals add that directory to `PATH`. In other shells, add `~/.paradev/bin` to `PATH`. On a headless machine, use the standalone
+The desktop app includes the CLI. It installs a `~/.paradev/bin/superset` shim on launch, and Wanker terminals add that directory to `PATH`. In other shells, add `~/.paradev/bin` to `PATH`. On a headless machine, use the standalone
 installer from [Getting Started](/cli/getting-started).
 
 ## Prerequisites
@@ -33,9 +33,9 @@ To run AI agents in workspaces, install the agent CLIs you want. The host server
 
 None are required to start the host server or create workspaces.
 
-## Authenticate the Paradev CLI
+## Authenticate the Wanker CLI
 
-The host server starts under your Paradev session:
+The host server starts under your Wanker session:
 
 ```bash
 superset auth login
@@ -92,7 +92,7 @@ process:
 ```ini
 # /etc/systemd/system/superset-host.service
 [Unit]
-Description=Paradev host server
+Description=Wanker host server
 After=network-online.target
 Wants=network-online.target
 
@@ -133,7 +133,7 @@ superset stop --terminals
 
 ### Create or adopt a project
 
-A workspace branches off a project: a repo registered with Paradev. Each
+A workspace branches off a project: a repo registered with Wanker. Each
 repo should have one cloud project record, shared across the organization.
 The first machine to register the repo runs `projects create`. Every later
 machine runs `projects setup` to attach to the existing project.

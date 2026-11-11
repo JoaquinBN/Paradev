@@ -5,7 +5,7 @@ description: Share agent-created designs and reports with your team, and turn co
 
 Pages let agents present designs, reports, and analysis to your team. Teammates comment on the page, and an agent picks up the feedback and publishes an updated version.
 
-![A Paradev Page presenting a cloud signup design review, with a comment pinned to the headline](/images/pages-design-review.png)
+![A Wanker Page presenting a cloud signup design review, with a comment pinned to the headline](/images/pages-design-review.png)
 
 ## The Design Loop
 
@@ -16,12 +16,12 @@ Pages let agents present designs, reports, and analysis to your team. Teammates 
 
 ## Create Your First Page
 
-Open the **Pages** tab and click **Create with AI**. Paradev starts an agent session that asks what you want to create, helps build the page, and publishes a link for your team. The help icon beside the **Pages** title opens this guide.
+Open the **Pages** tab and click **Create with AI**. Wanker starts an agent session that asks what you want to create, helps build the page, and publishes a link for your team. The help icon beside the **Pages** title opens this guide.
 
-You can also ask an agent in an existing Paradev workspace:
+You can also ask an agent in an existing Wanker workspace:
 
 ```text
-Create a design doc for our onboarding flow and publish it as a Paradev Page
+Create a design doc for our onboarding flow and publish it as a Wanker Page
 so the team can review it and leave comments.
 ```
 
@@ -31,7 +31,7 @@ Or start with work the agent has already done:
 Turn your findings into a report and publish it as a Page for the team.
 ```
 
-The Paradev plugin includes a [Pages skill](/skills) that guides agents through building, publishing, and updating pages. A page can be a self-contained HTML file or a directory with an `index.html` and supporting assets. When an agent finishes work that someone else will read, such as a PR walkthrough, a comparison, or a report, the agent offers to publish it as a page and waits for your answer.
+The Wanker plugin includes a [Pages skill](/skills) that guides agents through building, publishing, and updating pages. A page can be a self-contained HTML file or a directory with an `index.html` and supporting assets. When an agent finishes work that someone else will read, such as a PR walkthrough, a comparison, or a report, the agent offers to publish it as a page and waits for your answer.
 
 To publish from the CLI, run:
 
@@ -63,7 +63,7 @@ When a page is public, the **Share** button shows a globe icon.
 
 For a new page, the CLI accepts `--visibility just_me`, `--visibility org`, or `--visibility everyone`. Republishing preserves visibility unless you explicitly change it. Shared links include the page thumbnail in link previews, including [Slack unfurls](/use-with-slack).
 
-Anyone viewing a public page can use **Report** to flag it to the Paradev team with a reason, optional details, and an optional email. The Paradev team reviews reports and can take a page down, which stops its link working.
+Anyone viewing a public page can use **Report** to flag it to the Wanker team with a reason, optional details, and an optional email. The Wanker team reviews reports and can take a page down, which stops its link working.
 
 ## Send Feedback Directly to an Agent
 
@@ -71,7 +71,7 @@ Open the page, enter comment mode, and click an element to pin feedback to it. T
 
 On iPhone, the comments sheet keeps replies inline. Tap **Reply** to target a thread, or clear the reply target to leave a page-level comment. Resolved threads appear under the resolved-comments disclosure.
 
-Publishing from an agent's Paradev terminal attempts to register that session for new comments. Check the command's watch status; a failed registration does not fail the publish. In the workspace page pane, open the **Listening agents** menu in the page header:
+Publishing from an agent's Wanker terminal attempts to register that session for new comments. Check the command's watch status; a failed registration does not fail the publish. In the workspace page pane, open the **Listening agents** menu in the page header:
 
 - It lists every agent watching the page, including agents on other devices. Click a row to open that agent's terminal.
 - The page's creator can click the **X** on a row to stop that agent watching.
@@ -143,7 +143,7 @@ On `org` and `everyone` pages, only signed-in members of the page's organization
 
 ## Show Live Data from Your Tools
 
-A page can call a plugin tool, such as a database query or a web search, and show the result. The call runs as the viewer, through their own connected account. Paradev makes the call, not the page.
+A page can call a plugin tool, such as a database query or a web search, and show the result. The call runs as the viewer, through their own connected account. Wanker makes the call, not the page.
 
 ```js
 const tools = window.superset?.tools;

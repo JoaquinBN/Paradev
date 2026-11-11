@@ -33,10 +33,10 @@ import { useAgentLaunchPreferences } from "renderer/hooks/useAgentLaunchPreferen
 import { useAgentModelPreference } from "renderer/hooks/useAgentModelPreference";
 import { useAgentModePreference } from "renderer/hooks/useAgentModePreference";
 import { useCloudAgentChoices } from "renderer/hooks/useCloudAgentChoices";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
 import { useRelayUrl } from "renderer/hooks/useRelayUrl";
 import { useSelectedHostProjectIds } from "renderer/hooks/useSelectedHostProjectIds";
 import { useV2AgentChoices } from "renderer/hooks/useV2AgentChoices";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { track } from "renderer/lib/analytics";
 import { cloudTrpc } from "renderer/lib/cloud-trpc";
 import { showHostServiceUnavailableToast } from "renderer/lib/host-service-unavailable";
@@ -141,7 +141,7 @@ export function NewWorkspaceScreen({
 	preSelectedHostId = null,
 }: NewWorkspaceScreenProps) {
 	const { t } = useLingui();
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 	const navigate = useNavigate();
 	const [promptSeed, setPromptSeed] = useState(0);
 	const {
@@ -1078,7 +1078,7 @@ export function NewWorkspaceScreen({
 		/>
 	);
 
-	if (isParadevShell) {
+	if (isWankerShell) {
 		return (
 			<ComposerDropZone className="absolute inset-0 z-40 flex flex-col overflow-y-auto bg-background">
 				<div className="absolute top-2 right-2 z-10 flex items-center gap-0.5">
@@ -1150,7 +1150,7 @@ export function NewWorkspaceScreen({
 							}}
 							mentionProviders={mentionProviders}
 							pending={isCreating}
-							placeholder={t({ message: "Do anything in Paradev" })}
+							placeholder={t({ message: "Do anything in Wanker" })}
 						/>
 						<div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 px-1">
 							<div className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5">

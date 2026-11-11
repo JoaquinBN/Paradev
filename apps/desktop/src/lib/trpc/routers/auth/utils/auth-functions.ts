@@ -359,7 +359,7 @@ export async function handleAuthCallback(params: {
 		return {
 			success: false,
 			reason: "save-failed",
-			error: `Paradev could not save your sign-in to ${getTokenFile()}. Your existing data was left untouched. Check the path and try again.`,
+			error: `Wanker could not save your sign-in to ${getTokenFile()}. Your existing data was left untouched. Check the path and try again.`,
 		};
 	}
 

@@ -5,12 +5,12 @@ description: Configure setup, teardown, and Run-button commands for a project
 
 ## Overview
 
-Project lifecycle scripts run commands when a workspace is created or deleted, and define the dev server command for the Run button. They live in the repository or a per-machine override. [Terminal scripts](/terminal-scripts) are different: reusable launches saved in your Paradev settings and shown in the Scripts bar.
+Project lifecycle scripts run commands when a workspace is created or deleted, and define the dev server command for the Run button. They live in the repository or a per-machine override. [Terminal scripts](/terminal-scripts) are different: reusable launches saved in your Wanker settings and shown in the Scripts bar.
 
 Create `.paradev/config.json` in your project:
 
 <Callout type="info">
-Repositories set up before Paradev's rename keep this config in `.superset/`. Paradev still reads it there and keeps editing it there; see the [FAQ](/faq) to move it.
+Repositories set up before Wanker's rename keep this config in `.superset/`. Wanker still reads it there and keeps editing it there; see the [FAQ](/faq) to move it.
 </Callout>
 
 ```json
@@ -84,7 +84,7 @@ Levels merge per key: a key one level doesn't define falls through to the next. 
 
 ### Script Fallback
 
-If no commands are configured for a key, Paradev looks for a script instead: `.paradev/<key>.sh` (`setup.sh`, `teardown.sh`, `run.sh`) in the worktree first, then the main repo. A gitignored script isn't checked out into new worktrees, so it typically exists only in the main repo.
+If no commands are configured for a key, Wanker looks for a script instead: `.paradev/<key>.sh` (`setup.sh`, `teardown.sh`, `run.sh`) in the worktree first, then the main repo. A gitignored script isn't checked out into new worktrees, so it typically exists only in the main repo.
 
 ### Working Directory
 

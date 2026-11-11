@@ -22,10 +22,10 @@ export function SupersetLogo({
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 			className={cn("text-foreground", className)}
-			aria-label="Paradev"
+			aria-label="Wanker"
 		>
 			<title>
-				<Trans>Paradev</Trans>
+				<Trans>Wanker</Trans>
 			</title>
 			{gradient && (
 				<defs>

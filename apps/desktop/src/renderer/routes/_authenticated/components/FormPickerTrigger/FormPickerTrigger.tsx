@@ -1,6 +1,6 @@
 import { cn } from "@superset/ui/utils";
 import type { ComponentProps } from "react";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { PILL_TRIGGER_CLASS } from "renderer/routes/_authenticated/components/AgentComposer/constants";
 
 // Shared trigger for the top-of-modal pickers (Device / Project / Branch).
@@ -11,12 +11,12 @@ export function FormPickerTrigger({
 	type = "button",
 	...props
 }: ComponentProps<"button">) {
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 	return (
 		<button
 			type={type}
 			className={cn(
-				isParadevShell
+				isWankerShell
 					? cn(
 							PILL_TRIGGER_CLASS,
 							"group text-muted-foreground disabled:opacity-50",

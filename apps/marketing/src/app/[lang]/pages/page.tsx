@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	const lang = await initServerI18n();
 	const i18n = getI18nInstance(lang);
 	return {
-		title: i18n._(msg({ message: "Paradev Pages" })),
+		title: i18n._(msg({ message: "Wanker Pages" })),
 		description: i18n._(
 			msg({
 				message:
@@ -35,7 +35,7 @@ export default async function PagesPage() {
 				<section>
 					<div className="max-w-3xl">
 						<p className="font-mono text-brand text-xs uppercase tracking-wider">
-							<Trans>Paradev Pages</Trans>
+							<Trans>Wanker Pages</Trans>
 						</p>
 						<h1 className="mt-4 font-medium text-balance text-4xl text-foreground tracking-tight sm:text-5xl">
 							<Trans>Your teammates can talk directly to your agent.</Trans>

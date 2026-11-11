@@ -19,7 +19,7 @@ import {
 	useState,
 } from "react";
 import { LuPlus } from "react-icons/lu";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { useElementWidth } from "../../../../hooks/useElementWidth";
 import { PanelTab } from "./components/PanelTab";
 import { TabPreviewCard } from "./components/TabPreviewCard";
@@ -76,7 +76,7 @@ export function PanelTabStrip({
 	const available = areaWidth === null ? null : areaWidth - RESERVED_WIDTH;
 	const layout = tabStripLayout(available, tabs.length);
 	const closing = useCloseFreeze();
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 	const tabWidth = closing.frozen ?? layout.tabWidth;
 
 	// Width changes animate when tabs open or close, never while resizing.
@@ -138,7 +138,7 @@ export function PanelTabStrip({
 		// biome-ignore lint/a11y/noStaticElementInteractions: leaving the strip ends the close-width freeze
 		<div
 			className={
-				isParadevShell
+				isWankerShell
 					? "flex h-12 shrink-0 items-stretch shadow-[inset_0_-1px_0_var(--border)]"
 					: "flex h-12 shrink-0 items-stretch bg-muted/45 shadow-[inset_0_-1px_0_var(--border)] dark:bg-muted/35"
 			}
@@ -237,7 +237,7 @@ export function PanelTabStrip({
 							aria-label={t({ message: "New tab" })}
 							onClick={onNewTab}
 							className={
-								isParadevShell
+								isWankerShell
 									? cn(
 											HEADER_ICON_BUTTON_CLASS,
 											"outline-none focus-visible:ring-1 focus-visible:ring-ring",
@@ -248,7 +248,7 @@ export function PanelTabStrip({
 							<LuPlus
 								className="size-4"
 								strokeWidth={
-									isParadevShell ? HEADER_ICON_STROKE_WIDTH : undefined
+									isWankerShell ? HEADER_ICON_STROKE_WIDTH : undefined
 								}
 							/>
 						</button>

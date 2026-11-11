@@ -45,7 +45,7 @@ function devToolsServer(caller: Caller): McpServer {
 		"list_work",
 		{
 			description:
-				"The Paradev tasks you work on, newest first: taskId, slug (e.g. SUPER-12), title, status, pull request, a short summary of the latest report, and your sessions on each (writer or reviewer; queued, running, done, failed or stopped).",
+				"The Wanker tasks you work on, newest first: taskId, slug (e.g. SUPER-12), title, status, pull request, a short summary of the latest report, and your sessions on each (writer or reviewer; queued, running, done, failed or stopped).",
 			inputSchema: {},
 		},
 		() => result(() => tools.listWork()),
@@ -63,7 +63,7 @@ function devToolsServer(caller: Caller): McpServer {
 		"start_task",
 		{
 			description:
-				"Delegate work that needs code or a machine. It becomes a Paradev task that people can see, worked on by a session on its own box. Pass a title for new work, or the taskId of an existing task (one from list_work, or one someone assigned you) to work on that instead. role `writer` changes code and opens a pull request; `reviewer` reviews the pull request of an existing task (pass its taskId). A task has one writer at a time. Give complete instructions: the session knows only the task and what you write. It reports back to you when it finishes.",
+				"Delegate work that needs code or a machine. It becomes a Wanker task that people can see, worked on by a session on its own box. Pass a title for new work, or the taskId of an existing task (one from list_work, or one someone assigned you) to work on that instead. role `writer` changes code and opens a pull request; `reviewer` reviews the pull request of an existing task (pass its taskId). A task has one writer at a time. Give complete instructions: the session knows only the task and what you write. It reports back to you when it finishes.",
 			inputSchema: {
 				taskId: z.string().optional(),
 				title: z.string().optional(),
@@ -139,7 +139,7 @@ function devToolsServer(caller: Caller): McpServer {
 		"channel_tasks",
 		{
 			description:
-				"What a channel's Tasks tab shows: the tasks of its Paradev project (slug, title, status, assignee, pull request), or the issues of its Linear project (identifier, title, status, assignee, url). `channel` is a name or a reply_to target.",
+				"What a channel's Tasks tab shows: the tasks of its Wanker project (slug, title, status, assignee, pull request), or the issues of its Linear project (identifier, title, status, assignee, url). `channel` is a name or a reply_to target.",
 			inputSchema: { channel: z.string() },
 		},
 		(args) => result(() => tools.channelTasks(args)),
@@ -148,7 +148,7 @@ function devToolsServer(caller: Caller): McpServer {
 		"pages_publish",
 		{
 			description:
-				"Publish a self-contained HTML document as a Paradev page and return its URL. The page is recorded as the person you are working for. Pass pageId to add a version to one of your owner's pages; for anyone else you can only make new pages. Inline all CSS and JS: no network, no eval, no external scripts.",
+				"Publish a self-contained HTML document as a Wanker page and return its URL. The page is recorded as the person you are working for. Pass pageId to add a version to one of your owner's pages; for anyone else you can only make new pages. Inline all CSS and JS: no network, no eval, no external scripts.",
 			inputSchema: {
 				html: z.string().min(1),
 				title: z.string().optional(),

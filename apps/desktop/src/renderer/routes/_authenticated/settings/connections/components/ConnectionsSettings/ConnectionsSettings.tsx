@@ -16,9 +16,9 @@ export function ConnectionsSettings() {
 				</h2>
 				<p className="mt-1 max-w-prose text-sm text-muted-foreground">
 					<Trans>
-						Your own accounts. Your organization's integrations let Paradev
-						reach its tools; connecting yours makes the work Paradev does for
-						you show up as you.
+						Your own accounts. Your organization's integrations let Wanker reach
+						its tools; connecting yours makes the work Wanker does for you show
+						up as you.
 					</Trans>
 				</p>
 			</div>

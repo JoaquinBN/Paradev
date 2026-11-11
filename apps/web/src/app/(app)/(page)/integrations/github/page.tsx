@@ -48,7 +48,7 @@ export default async function GitHubIntegrationPage() {
 		already_connected: i18n._(
 			msg({
 				message:
-					"This GitHub installation is already connected to another Paradev organization. Disconnect it there, or uninstall the Paradev GitHub App, then try again.",
+					"This GitHub installation is already connected to another Wanker organization. Disconnect it there, or uninstall the Wanker GitHub App, then try again.",
 			}),
 		),
 		admin_required: i18n._(
@@ -189,7 +189,7 @@ export default async function GitHubIntegrationPage() {
 						{i18n._(
 							msg({
 								message:
-									"Install the Paradev GitHub App on each GitHub organization or account whose repositories you want to connect.",
+									"Install the Wanker GitHub App on each GitHub organization or account whose repositories you want to connect.",
 							}),
 						)}
 					</CardDescription>

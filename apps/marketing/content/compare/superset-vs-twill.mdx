@@ -1,6 +1,6 @@
 ---
-title: "Paradev vs Twill (2026): Any-Agent Workspace vs Local-to-Cloud Agent Handoff"
-description: "Compare Paradev and Twill for running Claude Code, Codex, and other coding agents on your Mac and in the cloud: agent choice, handoff, team intake, review, hosting, and pricing."
+title: "Wanker vs Twill (2026): Any-Agent Workspace vs Local-to-Cloud Agent Handoff"
+description: "Compare Wanker and Twill for running Claude Code, Codex, and other coding agents on your Mac and in the cloud: agent choice, handoff, team intake, review, hosting, and pricing."
 date: 2026-11-05
 lastUpdated: 2026-11-05
 type: "1v1"
@@ -17,13 +17,13 @@ keywords:
   - local to cloud agent handoff
 ---
 
-Paradev and Twill both run the coding agents you already use, such as Claude Code and Codex, on your own computer and in the cloud. Both have a desktop app, Git worktrees, a phone path, and triggers from GitHub, Slack, and Linear. The difference is focus. Twill is built around a chat task that can move between your Mac and a Twill cloud workspace, with three supported agents and per-workspace cloud plans. Paradev is a desktop workspace that runs any CLI agent in its own terminal and worktree, on your machine, on hosts you add, on your own Linux server, or in Paradev cloud workspaces. Choose Twill if handing one task from your laptop to the cloud and back is the core of your day. Choose Paradev if you want any agent, a full review path in one app, and the option to keep agents on servers you own.
+Wanker and Twill both run the coding agents you already use, such as Claude Code and Codex, on your own computer and in the cloud. Both have a desktop app, Git worktrees, a phone path, and triggers from GitHub, Slack, and Linear. The difference is focus. Twill is built around a chat task that can move between your Mac and a Twill cloud workspace, with three supported agents and per-workspace cloud plans. Wanker is a desktop workspace that runs any CLI agent in its own terminal and worktree, on your machine, on hosts you add, on your own Linux server, or in Wanker cloud workspaces. Choose Twill if handing one task from your laptop to the cloud and back is the core of your day. Choose Wanker if you want any agent, a full review path in one app, and the option to keep agents on servers you own.
 
-This comparison is published by Paradev. Twill details were checked against [twill.ai](https://twill.ai), its [documentation](https://docs.twill.ai), [pricing docs](https://docs.twill.ai/pricing), and [release notes](https://docs.twill.ai/release-notes) on November 5, 2026.
+This comparison is published by Wanker. Twill details were checked against [twill.ai](https://twill.ai), its [documentation](https://docs.twill.ai), [pricing docs](https://docs.twill.ai/pricing), and [release notes](https://docs.twill.ai/release-notes) on November 5, 2026.
 
 ## At a Glance
 
-| Requirement | Paradev | Twill |
+| Requirement | Wanker | Twill |
 |---|---|---|
 | Interface | Desktop app with terminals, diff, PRs, and browser | Desktop app, web app, and mobile web; each task is a chat |
 | Where agents run | Your Mac, hosts you add with Remote Access (paid plan), your own Linux server ([Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud)), or [cloud workspaces](/cloud) | Your computer, a headless Mac or Linux computer, or a Twill cloud workspace; private VPC deployment on Enterprise |
@@ -51,37 +51,37 @@ A **cloud workspace** holds a team's GitHub repositories, environment, integrati
 
 Twill supports three agents: Claude Code, Codex, and OpenCode. You work with them through a chat. Follow-ups keep the same agent. You can change the model, but a different agent needs a new chat. In the cloud, Twill configures the agent with workspace credentials and tools, so commands and models can differ from your local setup.
 
-Paradev runs any CLI agent in a real terminal. Presets cover Claude Code, Codex, Cursor Agent, OpenCode, Gemini CLI, GitHub Copilot CLI, Grok, Kimi Code, Mistral Vibe, Amp, and Pi, and you can add a custom command. Terminal sessions persist. You can continue a session with a different agent, with a structured handoff for Claude Code and Codex. If you prefer a transcript, a [chat interface](https://docs.paradev.com/chat) shows Claude Code, Codex, OpenCode, or Pi sessions as messages, tool calls, and file edits. It runs the CLI you installed over the Agent Client Protocol, so it uses the same login, settings, and MCP servers. A CLI / Chat toggle switches the same session between the two views.
+Wanker runs any CLI agent in a real terminal. Presets cover Claude Code, Codex, Cursor Agent, OpenCode, Gemini CLI, GitHub Copilot CLI, Grok, Kimi Code, Mistral Vibe, Amp, and Pi, and you can add a custom command. Terminal sessions persist. You can continue a session with a different agent, with a structured handoff for Claude Code and Codex. If you prefer a transcript, a [chat interface](https://docs.paradev.com/chat) shows Claude Code, Codex, OpenCode, or Pi sessions as messages, tool calls, and file edits. It runs the CLI you installed over the Agent Client Protocol, so it uses the same login, settings, and MCP servers. A CLI / Chat toggle switches the same session between the two views.
 
 ### Moving work between your laptop and the cloud
 
 Twill's handoff is a strong feature. Choose **Handoff** in a local task. The local agent commits, pushes, and writes a brief for a linked cloud task. **Continue locally** brings pushed branches and PR state back into a local chat. Twill states the limits: running processes, local databases, and native logins do not move, and unpushed cloud changes do not come back.
 
-Paradev does not move one live chat from your laptop into the cloud. Instead, the same workspace model runs everywhere. Remote Access (paid plan) adds any macOS or Linux machine as a host through the Paradev Relay. [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud) (paid plan) runs the Paradev host on an x64 or arm64 Linux server in your own cloud account. Repos and agent sign-ins stay on that server, and it needs no inbound ports. [Cloud workspaces](/cloud), included with Team and Ultra, start from an environment with 1 to 20 GitHub repos, variables, secrets, and a region. You pick a machine size and can save a set-up workspace as an environment snapshot.
+Wanker does not move one live chat from your laptop into the cloud. Instead, the same workspace model runs everywhere. Remote Access (paid plan) adds any macOS or Linux machine as a host through the Wanker Relay. [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud) (paid plan) runs the Wanker host on an x64 or arm64 Linux server in your own cloud account. Repos and agent sign-ins stay on that server, and it needs no inbound ports. [Cloud workspaces](/cloud), included with Team and Ultra, start from an environment with 1 to 20 GitHub repos, variables, secrets, and a region. You pick a machine size and can save a set-up workspace as an environment snapshot.
 
 ### Team intake and automation
 
 Both tools turn team requests into agent work. Twill starts cloud tasks from a `@twill` mention in GitHub, Slack, or Notion, a label or assignment in Linear, or a comment in Asana. Questions and results return to the same thread, and code changes arrive as pull requests. Sentry, Datadog, Google Cloud, and AWS give read-only context. Automations on Twill's paid cloud plans run on a cron schedule, with a template gallery.
 
-Paradev automations run on schedules or on event triggers from GitHub, Slack, Linear, and more, with a run history. Tasks sync with Linear and GitHub Issues, and a Slack bot starts work from a mention. The `superset` CLI, a TypeScript SDK (MIT), and an MCP server let you script workspaces and agents. Plugins give agents a skill set on every machine.
+Wanker automations run on schedules or on event triggers from GitHub, Slack, Linear, and more, with a run history. Tasks sync with Linear and GitHub Issues, and a Slack bot starts work from a mention. The `superset` CLI, a TypeScript SDK (MIT), and an MCP server let you script workspaces and agents. Plugins give agents a skill set on every machine.
 
 ### Reviewing the work
 
 Twill Desktop has a Changes view for the diff of a local task, and **Open preview** opens your app's port in your system browser. Cloud work comes back as pull requests on GitHub, and Twill can respond to review feedback and fix CI there.
 
-Paradev keeps review in the app. The Changes pane shows the diff and lets you edit files, commit, push, and open a PR. The Pull Requests view shows CI checks and line comments, and you can send a comment to an agent. The right pane can show Changes, Files, Pages, a browser, or a terminal beside the agent. The in-app browser detects ports and has Design Mode.
+Wanker keeps review in the app. The Changes pane shows the diff and lets you edit files, commit, push, and open a PR. The Pull Requests view shows CI checks and line comments, and you can send a comment to an agent. The right pane can show Changes, Files, Pages, a browser, or a terminal beside the agent. The in-app browser detects ports and has Design Mode.
 
 ## Pricing
 
 Both let you run agents on your own computer with your own agent subscription. They price the cloud in different ways.
 
-| Plan | Paradev | Twill |
+| Plan | Wanker | Twill |
 |---|---|---|
 | Free | Free tier for local work | $0: unlimited local use, one cloud workspace with 5 credits a month, small sandboxes |
 | Paid | Pro {{price:pro}} per user/month, or {{price:pro:yearly}} yearly. Team {{price:team}}. Ultra {{price:ultra}} | Per cloud workspace: Pro $50/month with 50 credits, Max $200/month with 200 credits and your own keys. Unlimited users on every plan |
 | Large teams | Enterprise: custom, with SAML SSO, SCIM, audit logs, and SOC 2 Type II | Enterprise: private VPC deployment, your own keys, codebase audit |
 
-In Twill, one credit is $1 of AI compute at provider cost. Sandbox compute is included, and Pro and Max can opt into overage. Twill also offers free Pro-level use for open-source maintainers. Paradev Pro adds remote hosts, automations, and the iPhone and iPad app, and Team and Ultra add cloud workspaces. Check [Paradev pricing](/pricing) and [Twill pricing](https://docs.twill.ai/pricing) for current terms.
+In Twill, one credit is $1 of AI compute at provider cost. Sandbox compute is included, and Pro and Max can opt into overage. Twill also offers free Pro-level use for open-source maintainers. Wanker Pro adds remote hosts, automations, and the iPhone and iPad app, and Team and Ultra add cloud workspaces. Check [Wanker pricing](/pricing) and [Twill pricing](https://docs.twill.ai/pricing) for current terms.
 
 ## Which Should You Choose?
 
@@ -93,7 +93,7 @@ In Twill, one credit is $1 of AI compute at provider cost. Sandbox compute is in
 - Start work from Notion or Asana as well as GitHub, Slack, and Linear.
 - Need a desktop app on Windows today (Twill's Windows build is experimental).
 
-**Choose Paradev if you:**
+**Choose Wanker if you:**
 
 - Want to run any CLI agent, not only three, and switch agents in the same workspace.
 - Want terminals first, with a chat interface when you want a transcript.
@@ -103,22 +103,22 @@ In Twill, one credit is $1 of AI compute at provider cost. Sandbox compute is in
 
 ## Verdict
 
-Twill is a good fit for a developer who works in one chat per task and wants that task to continue in the cloud when the laptop closes. Its handoff is well designed, and its per-workspace pricing suits large teams. Paradev is a better fit when you want any agent in a real terminal, review and pull requests in the same window, and a choice of where agents run: your Mac, your hosts, your own cloud server, or Paradev cloud workspaces. Try the same task in both to see which loop fits your team.
+Twill is a good fit for a developer who works in one chat per task and wants that task to continue in the cloud when the laptop closes. Its handoff is well designed, and its per-workspace pricing suits large teams. Wanker is a better fit when you want any agent in a real terminal, review and pull requests in the same window, and a choice of where agents run: your Mac, your hosts, your own cloud server, or Wanker cloud workspaces. Try the same task in both to see which loop fits your team.
 
 ## Frequently Asked Questions
 
 ### What is the best Twill alternative?
 
-If you want a desktop workspace that runs any CLI agent with worktrees, diff review, and pull requests, Paradev is a close alternative. It also runs agents on hosts you add, on your own Linux server, or in cloud workspaces.
+If you want a desktop workspace that runs any CLI agent with worktrees, diff review, and pull requests, Wanker is a close alternative. It also runs agents on hosts you add, on your own Linux server, or in cloud workspaces.
 
 ### Which agents does Twill support?
 
-Twill supports Claude Code, Codex, and OpenCode, locally and in the cloud. Cloud models include provider models through OpenCode and OpenRouter. Paradev has presets for Claude Code, Codex, Cursor Agent, OpenCode, Gemini CLI, GitHub Copilot CLI, Grok, Kimi Code, Mistral Vibe, Amp, and Pi, and runs any other CLI agent as a custom command.
+Twill supports Claude Code, Codex, and OpenCode, locally and in the cloud. Cloud models include provider models through OpenCode and OpenRouter. Wanker has presets for Claude Code, Codex, Cursor Agent, OpenCode, Gemini CLI, GitHub Copilot CLI, Grok, Kimi Code, Mistral Vibe, Amp, and Pi, and runs any other CLI agent as a custom command.
 
-### Can I run Twill or Paradev in my own cloud?
+### Can I run Twill or Wanker in my own cloud?
 
-Twill lists private cloud deployment in your VPC as an Enterprise option. Its headless CLI also connects a Mac or Linux computer you control. Paradev's Bring Your Own Cloud runs the Paradev host on an x64 or arm64 Linux server in your own cloud account, on a paid plan, with no inbound ports.
+Twill lists private cloud deployment in your VPC as an Enterprise option. Its headless CLI also connects a Mac or Linux computer you control. Wanker's Bring Your Own Cloud runs the Wanker host on an x64 or arm64 Linux server in your own cloud account, on a paid plan, with no inbound ports.
 
 ### Is Twill open source?
 
-We found no open-source license for the Twill app on its site or in its docs. Paradev is open source under the MIT License.
+We found no open-source license for the Twill app on its site or in its docs. Wanker is open source under the MIT License.

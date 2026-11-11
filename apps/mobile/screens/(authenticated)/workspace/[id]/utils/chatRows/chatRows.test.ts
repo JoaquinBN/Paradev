@@ -131,7 +131,7 @@ describe("a turn that ended without the user", () => {
 		},
 	});
 
-	test("a turn Paradev's shutdown paused reads as paused, once, without the red notice", () => {
+	test("a turn Wanker's shutdown paused reads as paused, once, without the red notice", () => {
 		const groups: TurnGroup[] = [
 			{
 				turn: {

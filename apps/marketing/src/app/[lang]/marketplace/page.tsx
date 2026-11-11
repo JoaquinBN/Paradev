@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
 		description: i18n._(
 			msg({
 				message:
-					"Browse Paradev plugins, shared themes, and future agent configs.",
+					"Browse Wanker plugins, shared themes, and future agent configs.",
 			}),
 		),
 		alternates: localizedAlternates(lang, "/marketplace"),
@@ -37,7 +37,7 @@ const marketplaceLinks = [
 		href: "/marketplace/themes",
 		label: msg({ message: "Themes" }),
 		description: msg({
-			message: "Shared theme JSON files you can import into Paradev.",
+			message: "Shared theme JSON files you can import into Wanker.",
 		}),
 	},
 	{

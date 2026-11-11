@@ -27,7 +27,7 @@ export default command({
 		if (sources.length === 0) {
 			throw new CLIError(
 				"No Chromium browsers found to import from",
-				"Paradev can import from Chromium-based browsers such as Chrome, Edge, Brave, Arc, Dia, Comet, Aside, Helium, Vivaldi, and Opera.",
+				"Wanker can import from Chromium-based browsers such as Chrome, Edge, Brave, Arc, Dia, Comet, Aside, Helium, Vivaldi, and Opera.",
 			);
 		}
 

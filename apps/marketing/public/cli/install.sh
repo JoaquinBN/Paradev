@@ -1,10 +1,10 @@
 #!/bin/sh
-# Paradev CLI installer
+# Wanker CLI installer
 #
 # Usage:
 #   curl -fsSL https://paradev.com/cli/install.sh | sh
 #
-# Installs the Paradev CLI and host-service to ~/superset/.
+# Installs the Wanker CLI and host-service to ~/superset/.
 # Adds ~/superset/bin to PATH via your shell profile.
 
 set -eu
@@ -121,13 +121,13 @@ update_path() {
     info "Adding $bin_dir to PATH in $profile"
     mkdir -p "$(dirname "$profile")"
     {
-        printf "\n# Paradev CLI\n"
+        printf "\n# Wanker CLI\n"
         printf "%s\n" "$export_line"
     } >> "$profile"
 }
 
 main() {
-    printf "${BOLD}Installing Paradev CLI${RESET}\n\n"
+    printf "${BOLD}Installing Wanker CLI${RESET}\n\n"
 
     target="$(detect_target)"
     info "Platform: $target"

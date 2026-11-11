@@ -140,7 +140,7 @@ function waitForCallback({
 			}
 			response
 				.writeHead(200, { "Content-Type": "text/html" })
-				.end("<h1>Signed in to Paradev CLI</h1><p>You can close this tab.</p>");
+				.end("<h1>Signed in to Wanker CLI</h1><p>You can close this tab.</p>");
 			finish(null, code);
 		});
 	});

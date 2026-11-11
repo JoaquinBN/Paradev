@@ -1,11 +1,11 @@
 ---
 name: computer
-description: Operate the user's real desktop apps and windows on macOS, Windows, or Linux. Use when the user asks to open or drive a native app, click or type in a desktop UI, inspect or arrange a window, use their signed-in system browser, or verify an end-to-end GUI flow, including "open Settings and turn on dark mode", "click Save in that window", "what's on screen". Uses an accessibility-first driver (Cua Driver by default, Peekaboo on macOS). Not for the Paradev (formerly Superset) in-app browser pane, headless scraping, or anything an API or CLI can do directly.
+description: Operate the user's real desktop apps and windows on macOS, Windows, or Linux. Use when the user asks to open or drive a native app, click or type in a desktop UI, inspect or arrange a window, use their signed-in system browser, or verify an end-to-end GUI flow, including "open Settings and turn on dark mode", "click Save in that window", "what's on screen". Uses an accessibility-first driver (Cua Driver by default, Peekaboo on macOS). Not for the Wanker (formerly Paradev) in-app browser pane, headless scraping, or anything an API or CLI can do directly.
 argument-hint: the app and what to do in it
 allowed-tools: Bash(cua-driver:*) Bash(peekaboo:*) Bash(superset pages publish:*) Bash(paradev pages publish:*)
 ---
 
-# Paradev Computer Control
+# Wanker Computer Control
 
 `paradev` is an alias for the `superset` CLI: every `superset` command here also runs as `paradev`.
 
@@ -19,8 +19,8 @@ for Cua Driver, the default.
 
 ## Choose the right surface
 
-- Use this skill for native apps, OS UI, and browser windows outside Paradev.
-- Use `superset:browser` for Paradev's in-app browser pane.
+- Use this skill for native apps, OS UI, and browser windows outside Wanker.
+- Use `superset:browser` for Wanker's in-app browser pane.
 - Prefer an application API, purpose-built CLI, or direct filesystem operation
   when the requested result does not require GUI interaction.
 

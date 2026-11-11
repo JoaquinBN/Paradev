@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="full" alt="Claude và OpenCode làm việc song song trong các workspace Paradev với diff trực tiếp" src="../apps/marketing/public/images/readme-hero.gif" />
+<img width="full" alt="Claude và OpenCode làm việc song song trong các workspace Wanker với diff trực tiếp" src="../apps/marketing/public/images/readme-hero.gif" />
 
 ### Chạy song song 100+ coding agent
 
@@ -36,7 +36,7 @@ Dành thời gian để ship, không phải để chờ.
 
 ## Code nhanh gấp 10 lần mà không tốn chi phí chuyển ngữ cảnh
 
-Paradev chạy song song các coding agent dạng CLI trong những git worktree cách ly, với terminal, review và luồng mở-trong-editor tích hợp sẵn.
+Wanker chạy song song các coding agent dạng CLI trong những git worktree cách ly, với terminal, review và luồng mở-trong-editor tích hợp sẵn.
 
 - **Chạy nhiều agent cùng lúc** mà không mất công chuyển ngữ cảnh
 - **Cách ly từng tác vụ** trong git worktree riêng để các agent không giẫm chân nhau
@@ -151,15 +151,15 @@ Kết nối một máy khác và truy cập workspace của nó từ bất cứ 
 <tr>
 <td width="50%" valign="middle">
 
-### Paradev CLI
+### Wanker CLI
 
-Viết script từ bất kỳ shell nào: tạo workspace, khởi chạy agent, đọc terminal của chúng và quản lý tự động hóa với một binary duy nhất. Nếu một agent chạy được lệnh, nó điều khiển được Paradev.
+Viết script từ bất kỳ shell nào: tạo workspace, khởi chạy agent, đọc terminal của chúng và quản lý tự động hóa với một binary duy nhất. Nếu một agent chạy được lệnh, nó điều khiển được Wanker.
 
 [Tài liệu →](https://docs.paradev.com/cli/getting-started)
 
 </td>
 <td width="50%">
-  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Tạo một workspace và khởi chạy một agent từ Paradev CLI" width="100%" /></a>
+  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Tạo một workspace và khởi chạy một agent từ Wanker CLI" width="100%" /></a>
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ Nhảy đến bất kỳ workspace, hành động hay cài đặt nào từ mộ
 
 ## Các agent được hỗ trợ
 
-Paradev hoạt động với bất kỳ coding agent dạng CLI nào, bao gồm:
+Wanker hoạt động với bất kỳ coding agent dạng CLI nào, bao gồm:
 
 | Agent | Trạng thái |
 |:------|:-------|
@@ -220,7 +220,7 @@ Paradev hoạt động với bất kỳ coding agent dạng CLI nào, bao gồm:
 | <picture><source media="(prefers-color-scheme: dark)" srcset="../packages/ui/src/assets/icons/preset-icons/polygraph-white.svg" /><img height="16" align="top" alt="Polygraph" src="../packages/ui/src/assets/icons/preset-icons/polygraph.svg" /></picture> &nbsp;[Polygraph](https://trypolygraph.com/) | Hỗ trợ đầy đủ |
 | Bất kỳ CLI agent nào khác | Hoạt động không cần cấu hình |
 
-Nếu nó chạy được trong terminal, nó chạy được trên Paradev
+Nếu nó chạy được trong terminal, nó chạy được trên Wanker
 
 Agent nhận được nhiều hơn một chiếc terminal:
 
@@ -238,7 +238,7 @@ Mọi bề mặt đều nói chuyện với cùng những workspace, nên bạn 
 |:--------|:-------------|
 | [**Ứng dụng desktop**](https://github.com/paradevai/paradev/releases/latest) | IDE đầy đủ: terminal, trình xem diff, trình duyệt trong ứng dụng, tự động hóa |
 | [**CLI**](https://docs.paradev.com/cli/getting-started) | Một binary `superset` duy nhất để quản lý workspace, agent, terminal và host từ bất kỳ shell nào |
-| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Điều khiển Paradev bằng lập trình với [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) từ Node, Bun hoặc Deno |
+| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Điều khiển Wanker bằng lập trình với [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) từ Node, Bun hoặc Deno |
 | [**MCP Server**](https://docs.paradev.com/mcp) | Để Claude Code, Codex, Cursor và các agent khác tự tạo và quản lý workspace |
 
 CLI được đóng gói kèm ứng dụng desktop, hoặc cài riêng:
@@ -260,12 +260,12 @@ Tải ứng dụng desktop:
 - **Windows**: chưa có
 - [Tất cả các bản build](https://github.com/paradevai/paradev/releases/latest)
 
-Tất cả những gì bạn cần cài là [Git](https://git-scm.com/). [gh](https://cli.github.com/) là tùy chọn và mở khóa các luồng làm việc PR; Paradev sẽ đề nghị cài nó cho bạn.
+Tất cả những gì bạn cần cài là [Git](https://git-scm.com/). [gh](https://cli.github.com/) là tùy chọn và mở khóa các luồng làm việc PR; Wanker sẽ đề nghị cài nó cho bạn.
 
 ## Phát triển
 
-Muốn vọc Paradev hay đóng góp một PR? Clone repository, thêm nó vào
-ứng dụng Paradev đã cài, rồi tạo một workspace cho thay đổi của bạn:
+Muốn vọc Wanker hay đóng góp một PR? Clone repository, thêm nó vào
+ứng dụng Wanker đã cài, rồi tạo một workspace cho thay đổi của bạn:
 
 ```bash
 git clone https://github.com/paradevai/paradev.git
@@ -280,7 +280,7 @@ bun run dev
 
 Chạy `setup.local.sh` một lần trong mỗi worktree mới. Nó cấu hình danh tính ứng dụng
 và cổng riêng cho từng workspace để ứng dụng desktop bản phát triển có thể chạy
-song song với ứng dụng Paradev đã cài và các worktree phát triển khác.
+song song với ứng dụng Wanker đã cài và các worktree phát triển khác.
 
 Không cần tài khoản Neon hay thông tin xác thực bên thứ ba. `setup.local.sh` dựng
 một stack Postgres + Electric cục bộ qua Docker và seed sẵn một tài khoản dev. Đăng nhập
@@ -333,7 +333,7 @@ Chúng tôi hoan nghênh mọi đóng góp! Xem [CONTRIBUTING.md](../CONTRIBUTIN
 
 ## Cộng đồng
 
-Tham gia cộng đồng Paradev để được trợ giúp, chia sẻ phản hồi và kết nối với những người dùng khác:
+Tham gia cộng đồng Wanker để được trợ giúp, chia sẻ phản hồi và kết nối với những người dùng khác:
 
 - **[Discord](https://discord.gg/cZeD9WYcV7)**: trò chuyện với đội ngũ và cộng đồng
 - **[Twitter](https://x.com/paradevai)**: theo dõi để nhận cập nhật và thông báo

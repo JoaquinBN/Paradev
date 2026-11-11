@@ -90,7 +90,7 @@ export function NewCloudWorkspaceDialog({
 				<Picker highlighted icon={<TbCloud className="size-3.5" />}>
 					<Trans>Cloud</Trans>
 				</Picker>
-				<Picker icon={<LuFolder className="size-3.5" />}>Paradev</Picker>
+				<Picker icon={<LuFolder className="size-3.5" />}>Wanker</Picker>
 				<Picker icon={<LuGitFork className="size-3.5" />}>
 					<Trans>Worktree</Trans>
 				</Picker>

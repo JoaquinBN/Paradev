@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="full" alt="Claude и OpenCode работают параллельно в рабочих областях Paradev с живыми diff" src="../apps/marketing/public/images/readme-hero.gif" />
+<img width="full" alt="Claude и OpenCode работают параллельно в рабочих областях Wanker с живыми diff" src="../apps/marketing/public/images/readme-hero.gif" />
 
 ### Запускайте 100+ агентов для кодинга параллельно
 
@@ -36,7 +36,7 @@ Claude Code, Codex или любой CLI-агент — каждый в своё
 
 ## Пишите код в 10 раз быстрее без затрат на переключение
 
-Paradev запускает CLI-агентов для кодинга параллельно в изолированных git worktree, со встроенным терминалом, ревью изменений и открытием в редакторе.
+Wanker запускает CLI-агентов для кодинга параллельно в изолированных git worktree, со встроенным терминалом, ревью изменений и открытием в редакторе.
 
 - **Запускайте несколько агентов одновременно** без накладных расходов на переключение контекста
 - **Изолируйте каждую задачу** в отдельном git worktree, чтобы агенты не мешали друг другу
@@ -151,15 +151,15 @@ Paradev запускает CLI-агентов для кодинга паралл
 <tr>
 <td width="50%" valign="middle">
 
-### Paradev CLI
+### Wanker CLI
 
-Скриптуйте из любой оболочки: создавайте рабочие области, запускайте агентов, читайте их терминалы и управляйте автоматизациями одним бинарником. Если агент умеет выполнять команды, он умеет управлять Paradev.
+Скриптуйте из любой оболочки: создавайте рабочие области, запускайте агентов, читайте их терминалы и управляйте автоматизациями одним бинарником. Если агент умеет выполнять команды, он умеет управлять Wanker.
 
 [Документация →](https://docs.paradev.com/cli/getting-started)
 
 </td>
 <td width="50%">
-  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Создание рабочей области и запуск агента из Paradev CLI" width="100%" /></a>
+  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Создание рабочей области и запуск агента из Wanker CLI" width="100%" /></a>
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ Paradev запускает CLI-агентов для кодинга паралл
 
 ## Поддерживаемые агенты
 
-Paradev работает с любым CLI-агентом для кодинга, в том числе:
+Wanker работает с любым CLI-агентом для кодинга, в том числе:
 
 | Агент | Статус |
 |:------|:-------|
@@ -220,7 +220,7 @@ Paradev работает с любым CLI-агентом для кодинга,
 | <picture><source media="(prefers-color-scheme: dark)" srcset="../packages/ui/src/assets/icons/preset-icons/polygraph-white.svg" /><img height="16" align="top" alt="Polygraph" src="../packages/ui/src/assets/icons/preset-icons/polygraph.svg" /></picture> &nbsp;[Polygraph](https://trypolygraph.com/) | Полная поддержка |
 | Любой другой CLI-агент | Работает без настройки |
 
-Если он запускается в терминале, он работает в Paradev
+Если он запускается в терминале, он работает в Wanker
 
 Агенты получают больше, чем просто терминал:
 
@@ -238,7 +238,7 @@ Paradev работает с любым CLI-агентом для кодинга,
 |:--------|:-------------|
 | [**Десктопное приложение**](https://github.com/paradevai/paradev/releases/latest) | Полноценная IDE: терминалы, просмотрщик diff, встроенный браузер, автоматизации |
 | [**CLI**](https://docs.paradev.com/cli/getting-started) | Единый бинарник `superset` для управления рабочими областями, агентами, терминалами и хостами из любой оболочки |
-| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Управляйте Paradev программно через [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) из Node, Bun или Deno |
+| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Управляйте Wanker программно через [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) из Node, Bun или Deno |
 | [**Сервер MCP**](https://docs.paradev.com/mcp) | Позвольте Claude Code, Codex, Cursor и другим агентам самим создавать рабочие области и управлять ими |
 
 CLI идёт в комплекте с десктопным приложением, либо установите его отдельно:
@@ -260,12 +260,12 @@ brew install paradevai/tap/superset
 - **Windows**: пока недоступно
 - [Все сборки](https://github.com/paradevai/paradev/releases/latest)
 
-Из установленного нужен только [Git](https://git-scm.com/). [gh](https://cli.github.com/) необязателен и открывает рабочие процессы с PR; Paradev предложит установить его за вас.
+Из установленного нужен только [Git](https://git-scm.com/). [gh](https://cli.github.com/) необязателен и открывает рабочие процессы с PR; Wanker предложит установить его за вас.
 
 ## Разработка
 
-Хотите поработать над Paradev или прислать PR? Клонируйте репозиторий, добавьте его
-в установленное приложение Paradev и создайте рабочую область для своих изменений:
+Хотите поработать над Wanker или прислать PR? Клонируйте репозиторий, добавьте его
+в установленное приложение Wanker и создайте рабочую область для своих изменений:
 
 ```bash
 git clone https://github.com/paradevai/paradev.git
@@ -280,7 +280,7 @@ bun run dev
 
 Запускайте `setup.local.sh` один раз в каждом новом worktree. Скрипт настраивает
 идентичность приложения и порты для конкретной рабочей области, чтобы десктопное
-приложение для разработки могло работать рядом с установленным Paradev и другими
+приложение для разработки могло работать рядом с установленным Wanker и другими
 worktree для разработки.
 
 Аккаунт Neon и сторонние учётные данные не нужны. `setup.local.sh` поднимает
@@ -334,7 +334,7 @@ worktree для разработки.
 
 ## Сообщество
 
-Присоединяйтесь к сообществу Paradev, чтобы получать помощь, делиться отзывами и общаться с другими пользователями:
+Присоединяйтесь к сообществу Wanker, чтобы получать помощь, делиться отзывами и общаться с другими пользователями:
 
 - **[Discord](https://discord.gg/cZeD9WYcV7)**: общайтесь с командой и сообществом
 - **[Twitter](https://x.com/paradevai)**: подписывайтесь на обновления и анонсы

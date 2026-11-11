@@ -59,7 +59,7 @@ export function ManualSignIn({
 		<div className="space-y-3">
 			<p className="text-muted-foreground">
 				<Trans>
-					Paradev holds no credential for {label} and adds none to your cloud
+					Wanker holds no credential for {label} and adds none to your cloud
 					workspaces when they start, restart or wake. A script you run inside
 					the workspace keeps {loginFile} up to date. If it stops, {label} stays
 					signed out until your script signs it in again.

@@ -73,7 +73,7 @@ function sameTasks(
 export type ChatAgentBridge = LiveSessionObserver & {
 	spawned(sessionId: string, pid: number): void;
 	accountCaptured(sessionId: string, account: SessionAccount): void;
-	/** A chat Paradev closed mid-turn, shown as unseen until someone looks. */
+	/** A chat Wanker closed mid-turn, shown as unseen until someone looks. */
 	closedMidTurn(chat: ClosedChat): void;
 };
 

@@ -80,7 +80,7 @@ const COMMAND_LINE_TOOLS_INSTALLER_BUNDLE_ID =
 	"com.apple.dt.CommandLineTools.installondemand";
 
 /**
- * Apple's installer opens behind the focused app (Paradev), where a new user
+ * Apple's installer opens behind the focused app (Wanker), where a new user
  * never sees it. Wait for its process, then activate it. Running
  * `xcode-select --install` again does not raise an open installer; this does.
  */

@@ -24,7 +24,7 @@ export default async function CliAuthCodePage({
 				<a href={env.NEXT_PUBLIC_MARKETING_URL}>
 					<Image
 						src="/title.svg"
-						alt="Paradev"
+						alt="Wanker"
 						width={140}
 						height={24}
 						priority

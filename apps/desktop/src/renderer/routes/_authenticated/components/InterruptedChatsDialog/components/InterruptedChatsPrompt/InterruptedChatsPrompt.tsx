@@ -57,8 +57,8 @@ export function InterruptedChatsPrompt() {
 						<AlertDialogDescription>
 							<Plural
 								value={count}
-								one="This chat hadn't finished when Paradev closed"
-								other="These chats hadn't finished when Paradev closed"
+								one="This chat hadn't finished when Wanker closed"
+								other="These chats hadn't finished when Wanker closed"
 							/>
 						</AlertDialogDescription>
 						{failed && (

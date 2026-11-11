@@ -48,7 +48,7 @@ export function LayoutSection() {
 			>
 				<div className="w-full max-w-64">
 					<p className="text-sm font-medium">
-						<Trans>Paradev UI</Trans>
+						<Trans>Wanker UI</Trans>
 					</p>
 					<p className="text-sm text-muted-foreground">
 						<Trans>Shared component library.</Trans>

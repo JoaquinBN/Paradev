@@ -20,7 +20,7 @@ export function QueuePausedBar({
 				{reason === "limit" ? (
 					<Trans>Queue paused by the usage limit</Trans>
 				) : reason === "shutdown" ? (
-					<Trans>Queue paused when Paradev closed</Trans>
+					<Trans>Queue paused when Wanker closed</Trans>
 				) : (
 					<Trans>Queue paused because you interrupted</Trans>
 				)}

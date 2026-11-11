@@ -97,23 +97,29 @@ function describeRejection(
 	return null;
 }
 
-/** electron-log's default main.log location for the desktop app. */
+/** electron-log's default main.log location for the desktop app, before or after its rename. */
 function appLogPath(): string {
+	const current = appLogPathFor("Wanker");
+	const legacy = appLogPathFor("Superset");
+	return existsSync(current) || !existsSync(legacy) ? current : legacy;
+}
+
+function appLogPathFor(appName: string): string {
 	const home = os.homedir();
 	switch (process.platform) {
 		case "darwin":
-			return join(home, "Library", "Logs", "Superset", "main.log");
+			return join(home, "Library", "Logs", appName, "main.log");
 		case "win32":
 			return join(
 				process.env.APPDATA ?? join(home, "AppData", "Roaming"),
-				"Superset",
+				appName,
 				"logs",
 				"main.log",
 			);
 		default:
 			return join(
 				process.env.XDG_CONFIG_HOME ?? join(home, ".config"),
-				"Superset",
+				appName,
 				"logs",
 				"main.log",
 			);
@@ -221,7 +227,7 @@ export function planAttachmentUploads(
 
 export default command({
 	description:
-		"Submit feedback privately to the Paradev team (sent from your account so we can reply)",
+		"Submit feedback privately to the Wanker team (sent from your account so we can reply)",
 	options: {
 		type: string()
 			.enum("bug", "feature", "general")
@@ -308,7 +314,7 @@ export default command({
 		return {
 			data: { submitted: true, attachments: attachments.length },
 			message:
-				"Feedback sent to the Paradev team. A copy was CC'd to your account email; reply there with any follow-up so it stays on the same thread.",
+				"Feedback sent to the Wanker team. A copy was CC'd to your account email; reply there with any follow-up so it stays on the same thread.",
 		};
 	},
 });

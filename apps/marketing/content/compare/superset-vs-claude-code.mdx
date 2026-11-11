@@ -1,6 +1,6 @@
 ---
-title: "Paradev vs Claude Code (2026): Agent Orchestrator vs AI Coding Agent"
-description: "Compare Paradev and Claude Code for AI-powered development. Paradev orchestrates many Claude Code instances in parallel across separate worktrees."
+title: "Wanker vs Claude Code (2026): Agent Orchestrator vs AI Coding Agent"
+description: "Compare Wanker and Claude Code for AI-powered development. Wanker orchestrates many Claude Code instances in parallel across separate worktrees."
 date: 2026-02-18
 lastUpdated: 2026-11-05
 type: "1v1"
@@ -15,13 +15,13 @@ keywords:
   - ai coding agent comparison
 ---
 
-Claude Code is Anthropic's AI coding agent, with both terminal and desktop app surfaces. Paradev is a local-first desktop workspace that can run multiple Claude Code sessions and other agents in parallel across separate Git worktrees. They're complementary: Claude Code is the agent, while Paradev is the orchestration and review layer around many agents.
+Claude Code is Anthropic's AI coding agent, with both terminal and desktop app surfaces. Wanker is a local-first desktop workspace that can run multiple Claude Code sessions and other agents in parallel across separate Git worktrees. They're complementary: Claude Code is the agent, while Wanker is the orchestration and review layer around many agents.
 
 ---
 
 ## At a Glance
 
-| | **Paradev** | **Claude Code** |
+| | **Wanker** | **Claude Code** |
 |---|---|---|
 | **Category** | Agent orchestration workspace | AI coding agent (CLI + desktop app) |
 | **What it does** | Runs multiple coding agents in parallel with Git worktrees, a chat interface, diff/file review, and browser tooling | AI assistant that reads, writes, and debugs code in your terminal or desktop app |
@@ -33,9 +33,9 @@ Claude Code is Anthropic's AI coding agent, with both terminal and desktop app s
 
 ---
 
-## What Is Paradev?
+## What Is Wanker?
 
-Paradev is a local-first desktop workspace for AI coding agents. It launches Claude Code, Codex, OpenCode, Aider, Copilot, Cursor Agent, Gemini CLI, and other agent workflows in separate Git worktrees and branches with persistent terminal sessions. Around that core, it adds a built-in diff/file editor, a [chat interface](https://docs.paradev.com/chat) that shows a Claude Code session as a chat (a CLI/Chat toggle keeps the same session), an in-app browser for docs and dev servers, port management, and MCP tooling. You can review inside Paradev or jump into VS Code, Cursor, Windsurf, JetBrains, or Xcode. Agents run on your Mac, on remote hosts, on your own Linux server with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), or in [cloud workspaces](/cloud). Open source under the MIT License.
+Wanker is a local-first desktop workspace for AI coding agents. It launches Claude Code, Codex, OpenCode, Aider, Copilot, Cursor Agent, Gemini CLI, and other agent workflows in separate Git worktrees and branches with persistent terminal sessions. Around that core, it adds a built-in diff/file editor, a [chat interface](https://docs.paradev.com/chat) that shows a Claude Code session as a chat (a CLI/Chat toggle keeps the same session), an in-app browser for docs and dev servers, port management, and MCP tooling. You can review inside Wanker or jump into VS Code, Cursor, Windsurf, JetBrains, or Xcode. Agents run on your Mac, on remote hosts, on your own Linux server with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), or in [cloud workspaces](/cloud). Open source under the MIT License.
 
 ---
 
@@ -49,29 +49,29 @@ Claude Code is Anthropic's official coding agent. The CLI is still the core expe
 
 ### Orchestrator vs Agent
 
-Claude Code is the agent: it talks to Claude models, reads your code, and makes changes. Paradev is the orchestration workspace: it runs many Claude Code instances in parallel, each in its own Git worktree and branch, then gives you a chat interface, browser preview, diff/file review, and MCP-connected workflow around them. Claude Code does the work; Paradev scales and organizes it.
+Claude Code is the agent: it talks to Claude models, reads your code, and makes changes. Wanker is the orchestration workspace: it runs many Claude Code instances in parallel, each in its own Git worktree and branch, then gives you a chat interface, browser preview, diff/file review, and MCP-connected workflow around them. Claude Code does the work; Wanker scales and organizes it.
 
 ### Single Product Surface vs Many Parallel Sessions
 
-With Claude Code alone, whether from the CLI or the Desktop app, you are still mostly working one task at a time. You can open multiple tabs or windows, but you have to manually set up worktrees and keep track of the resulting repos, branches, diffs, and previews yourself. Paradev automates that entire loop: create a task, and it spins up a worktree, creates a branch, launches Claude Code, and keeps the review surface in one place.
+With Claude Code alone, whether from the CLI or the Desktop app, you are still mostly working one task at a time. You can open multiple tabs or windows, but you have to manually set up worktrees and keep track of the resulting repos, branches, diffs, and previews yourself. Wanker automates that entire loop: create a task, and it spins up a worktree, creates a branch, launches Claude Code, and keeps the review surface in one place.
 
 ### Automatic Worktrees
 
-When two agents write to the same working directory, they can overwrite each other’s changes. Paradev creates a Git worktree for each new local branch-based workspace, separating working files for review. Worktrees do not sandbox processes or prevent merge conflicts. Choose concurrency to fit the tasks, host resources, and provider limits; saved sessions are not a measure of simultaneous execution capacity.
+When two agents write to the same working directory, they can overwrite each other’s changes. Wanker creates a Git worktree for each new local branch-based workspace, separating working files for review. Worktrees do not sandbox processes or prevent merge conflicts. Choose concurrency to fit the tasks, host resources, and provider limits; saved sessions are not a measure of simultaneous execution capacity.
 
 ### Agent Flexibility
 
-Claude Code only works with Anthropic's models. Paradev doesn't care which agent you use: run Claude Code for complex refactors, Codex for well-defined tasks, Aider for iterative changes, or mix and match per task. If a better agent ships tomorrow, you can use it in Paradev immediately without changing your workflow.
+Claude Code only works with Anthropic's models. Wanker doesn't care which agent you use: run Claude Code for complex refactors, Codex for well-defined tasks, Aider for iterative changes, or mix and match per task. If a better agent ships tomorrow, you can use it in Wanker immediately without changing your workflow.
 
 ### Session Persistence
 
-Claude Code gives you the agent surfaces themselves. Paradev adds the operational layer around them: task lists, long-lived sessions, in-app diff/file review, browser previews for local apps, and chat interface and MCP workflow tied to the same workspace. That matters once you are coordinating many tasks across one repo instead of staying inside a single Claude session.
+Claude Code gives you the agent surfaces themselves. Wanker adds the operational layer around them: task lists, long-lived sessions, in-app diff/file review, browser previews for local apps, and chat interface and MCP workflow tied to the same workspace. That matters once you are coordinating many tasks across one repo instead of staying inside a single Claude session.
 
 ---
 
 ## Pricing
 
-Paradev offers a free tier, Pro at {{price:pro}}/seat/month, and Team ({{price:team}}) and Ultra ({{price:ultra}}) plans with cloud workspaces. Claude Code currently requires a Pro, Max, Teams, Enterprise, or Console account, and Anthropic also documents support for provider-based access through services like Bedrock, Vertex AI, and Foundry. The comparison that matters is structure rather than price: Claude Code gives you the agent, while Paradev adds orchestration on top.
+Wanker offers a free tier, Pro at {{price:pro}}/seat/month, and Team ({{price:team}}) and Ultra ({{price:ultra}}) plans with cloud workspaces. Claude Code currently requires a Pro, Max, Teams, Enterprise, or Console account, and Anthropic also documents support for provider-based access through services like Bedrock, Vertex AI, and Foundry. The comparison that matters is structure rather than price: Claude Code gives you the agent, while Wanker adds orchestration on top.
 
 ---
 
@@ -83,35 +83,35 @@ Paradev offers a free tier, Pro at {{price:pro}}/seat/month, and Team ({{price:t
 - Don't need to run multiple agents in parallel
 - Want the simplest possible setup (just install and run)
 
-**Choose Paradev + Claude Code if you:**
+**Choose Wanker + Claude Code if you:**
 - Want to run Claude Code instances in parallel across separate tasks
 - Need automatic Git worktrees to separate working files for review
 - Want sessions that survive crashes and app restarts
 - Plan to use other agents alongside Claude Code (Codex, Aider, OpenCode)
 - Work on large codebases where parallel execution saves hours
 
-Most Paradev users run Claude Code as their primary agent. Paradev doesn't compete with Claude Code: it makes Claude Code more powerful by adding parallelism, separate worktrees, and persistence.
+Most Wanker users run Claude Code as their primary agent. Wanker doesn't compete with Claude Code: it makes Claude Code more powerful by adding parallelism, separate worktrees, and persistence.
 
 ---
 
 ## Frequently Asked Questions
 
-### Is Paradev a Claude Code replacement?
+### Is Wanker a Claude Code replacement?
 
-Not really. Paradev now has a chat interface, MCP tooling, browser previews, and file review, but its core job is still coordinating agents and worktrees. Claude Code is the coding agent. Paradev is the layer that lets you run many Claude Code sessions in separate worktrees or mix Claude Code with other agents on the same repo.
+Not really. Wanker now has a chat interface, MCP tooling, browser previews, and file review, but its core job is still coordinating agents and worktrees. Claude Code is the coding agent. Wanker is the layer that lets you run many Claude Code sessions in separate worktrees or mix Claude Code with other agents on the same repo.
 
-### Can I use Claude Code without Paradev?
+### Can I use Claude Code without Wanker?
 
-Yes. Claude Code works on its own from the CLI or Anthropic's Desktop app. Paradev adds value when you want to run multiple Claude Code sessions in parallel, each in its own worktree, which becomes important as you scale from one agent to many.
+Yes. Claude Code works on its own from the CLI or Anthropic's Desktop app. Wanker adds value when you want to run multiple Claude Code sessions in parallel, each in its own worktree, which becomes important as you scale from one agent to many.
 
-### How many Claude Code instances can I run in Paradev?
+### How many Claude Code instances can I run in Wanker?
 
-As many as your machine and API rate limits allow. Most developers run 5-10 concurrent agents. Paradev's daemon handles concurrency, and its priority-based scheduling ensures the focused task gets full resources.
+As many as your machine and API rate limits allow. Most developers run 5-10 concurrent agents. Wanker's daemon handles concurrency, and its priority-based scheduling ensures the focused task gets full resources.
 
-### Does Paradev modify how Claude Code works?
+### Does Wanker modify how Claude Code works?
 
-No. Claude Code runs exactly as it would in any terminal. Paradev just provides the worktree, branch, and terminal session. All Claude Code features (tool use, MCP servers, hooks, slash commands) work normally.
+No. Claude Code runs exactly as it would in any terminal. Wanker just provides the worktree, branch, and terminal session. All Claude Code features (tool use, MCP servers, hooks, slash commands) work normally.
 
-### Is Paradev open source?
+### Is Wanker open source?
 
-Yes. Paradev is open source on GitHub under the MIT License. Claude Code is source-available rather than open source.
+Yes. Wanker is open source on GitHub under the MIT License. Claude Code is source-available rather than open source.

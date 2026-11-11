@@ -1,6 +1,6 @@
 ---
 title: "How to Run GPT-6.1 Terra in Parallel with Codex"
-description: "GPT-6.1 Terra shipped in Codex on October 26, 2026. How to pick it in the Codex CLI, run several Terra sessions at once in separate Git worktrees, and do the same in Paradev."
+description: "GPT-6.1 Terra shipped in Codex on October 26, 2026. How to pick it in the Codex CLI, run several Terra sessions at once in separate Git worktrees, and do the same in Wanker."
 date: 2026-11-03
 lastUpdated: 2026-11-05
 type: "tutorial"
@@ -16,7 +16,7 @@ keywords:
   - codex worktrees
 ---
 
-To run GPT-6.1 Terra in parallel, start one Codex session per task, each in its own Git worktree and branch, and launch each with `codex --model gpt-6.1-terra`. In Paradev, create one workspace per task, choose Codex as the agent and GPT-6.1 Terra in the model picker, or pass `--agent codex --model gpt-6.1-terra` to `superset ws create`. Review each diff before you merge. Worktrees separate working files; they do not sandbox processes or prevent merge conflicts.
+To run GPT-6.1 Terra in parallel, start one Codex session per task, each in its own Git worktree and branch, and launch each with `codex --model gpt-6.1-terra`. In Wanker, create one workspace per task, choose Codex as the agent and GPT-6.1 Terra in the model picker, or pass `--agent codex --model gpt-6.1-terra` to `superset ws create`. Review each diff before you merge. Worktrees separate working files; they do not sandbox processes or prevent merge conflicts.
 
 ## What shipped
 
@@ -82,9 +82,9 @@ Check each session with `git branch --show-current` before it starts editing.
 
 Worktrees share repository history and run as your user. They do not give each task its own ports, database, credentials, or API quota. Two sessions can still change the same external service, and their branches can still conflict when you merge. Rerun your checks on the combined branch.
 
-## Run GPT-6.1 Terra in Paradev
+## Run GPT-6.1 Terra in Wanker
 
-Paradev is a desktop app that runs Codex and other CLI agents side by side. Each task runs in its own Git worktree and branch, with a terminal, a Changes pane, and a pull request pane next to it. Paradev does not proxy model calls: Codex runs on your own ChatGPT plan or API key. Paradev is open source under the MIT License.
+Wanker is a desktop app that runs Codex and other CLI agents side by side. Each task runs in its own Git worktree and branch, with a terminal, a Changes pane, and a pull request pane next to it. Wanker does not proxy model calls: Codex runs on your own ChatGPT plan or API key. Wanker is open source under the MIT License.
 
 From the app:
 
@@ -115,7 +115,7 @@ To run the same task on Terra and Sol and compare the diffs, create two workspac
 
 ### Is GPT-6.1 Terra the default model in Codex?
 
-No. OpenAI's Codex changelog lists no default change with Terra. Select it with `codex --model gpt-6.1-terra` or `/model`, or pick it in Paradev's model picker.
+No. OpenAI's Codex changelog lists no default change with Terra. Select it with `codex --model gpt-6.1-terra` or `/model`, or pick it in Wanker's model picker.
 
 ### Which Codex version do I need for GPT-6.1 Terra?
 
@@ -131,8 +131,8 @@ Not if each runs in its own Git worktree. They still share ports, databases, cre
 
 ### Can I mix Terra with Claude Code or other agents?
 
-Yes. In Paradev, each workspace runs the agent and model you choose, so a Codex session on Terra can run next to Claude Code, OpenCode, or Gemini CLI on the same repository.
+Yes. In Wanker, each workspace runs the agent and model you choose, so a Codex session on Terra can run next to Claude Code, OpenCode, or Gemini CLI on the same repository.
 
 ### Where can I read more about running Codex in parallel?
 
-See the [best IDE for Codex](/compare/best-ide-for-codex), [Paradev vs Codex](/compare/superset-vs-codex), and [Git worktrees for AI agents](/compare/git-worktrees-for-ai-agents).
+See the [best IDE for Codex](/compare/best-ide-for-codex), [Wanker vs Codex](/compare/superset-vs-codex), and [Git worktrees for AI agents](/compare/git-worktrees-for-ai-agents).

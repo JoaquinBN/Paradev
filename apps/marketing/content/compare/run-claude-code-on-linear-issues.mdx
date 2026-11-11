@@ -1,6 +1,6 @@
 ---
 title: "How to Run Claude Code in Parallel on Linear Issues for a Small Team (2026)"
-description: "Turn a batch of Linear issues into parallel Claude Code or Codex runs, one branch and workspace per issue, and keep each issue's status and review owner clear. Paradev, Linear's own agents, and Cyrus compared."
+description: "Turn a batch of Linear issues into parallel Claude Code or Codex runs, one branch and workspace per issue, and keep each issue's status and review owner clear. Wanker, Linear's own agents, and Cyrus compared."
 date: 2026-10-30
 lastUpdated: 2026-11-05
 type: "tutorial"
@@ -21,11 +21,11 @@ keywords:
   - track coding agent work in linear
 ---
 
-To run Claude Code in parallel on Linear issues, give each issue its own Git branch and its own agent session, start them together, and let the issue keep the status and the owner. In [Paradev](https://paradev.com), open **Tasks**, switch the source to **Linear**, and click **Add to workspace** on an issue. Paradev opens a new workspace on Linear's branch name with the issue linked to the prompt, starts Claude Code (or Codex, or another CLI agent) on it, and moves the issue to In Progress. To start a whole batch at once, loop over the issues with the `superset` CLI. Each teammate runs this on their own machine, a shared host, or a Linux server in your own cloud account ([Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud)), with their own Claude or OpenAI subscription.
+To run Claude Code in parallel on Linear issues, give each issue its own Git branch and its own agent session, start them together, and let the issue keep the status and the owner. In [Wanker](https://paradev.com), open **Tasks**, switch the source to **Linear**, and click **Add to workspace** on an issue. Wanker opens a new workspace on Linear's branch name with the issue linked to the prompt, starts Claude Code (or Codex, or another CLI agent) on it, and moves the issue to In Progress. To start a whole batch at once, loop over the issues with the `superset` CLI. Each teammate runs this on their own machine, a shared host, or a Linux server in your own cloud account ([Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud)), with their own Claude or OpenAI subscription.
 
 The main alternatives are Linear's own agent integrations (assign an issue to Codex or Cursor, which run in the vendor's cloud) and open-source bridges such as Cyrus, which runs Claude Code or another agent on issues assigned to it. The choice comes down to where the agent should run and who reviews the result.
 
-This guide is written for a team of two to ten engineers who already track work in Linear. It is published by Paradev. Details about other tools come from their own docs as of October 2026.
+This guide is written for a team of two to ten engineers who already track work in Linear. It is published by Wanker. Details about other tools come from their own docs as of October 2026.
 
 ---
 
@@ -40,7 +40,7 @@ Four things, whatever tool you pick:
 
 Git worktrees cover the first two on one machine: each issue gets its own directory and branch. They do not stop two issues from touching the same files. If issue 142 and issue 143 both edit `export.ts`, the second pull request to merge has a conflict to resolve, the same as with two people. Split issues by area before you hand them out.
 
-## How do I start Claude Code on a Linear issue in Paradev?
+## How do I start Claude Code on a Linear issue in Wanker?
 
 Connect Linear once under **Integrations** (Pro plan). Then, from the desktop app:
 
@@ -88,10 +88,10 @@ Two limits to plan for: the target device has to be online when the event arrive
 
 ## How does the team keep track of who reviews what?
 
-Keep ownership in Linear and review in GitHub, and let Paradev connect them:
+Keep ownership in Linear and review in GitHub, and let Wanker connect them:
 
 - **Linear** keeps the assignee and status. With the integration connected, starting a workspace from an issue moves it to In Progress, and the branch name links the pull request back to the issue. To move issues when a pull request opens or merges, connect GitHub in Linear and set the team's pull request automations in Linear's settings.
-- **Paradev's Pull requests view** filters by *Awaiting review from you*, *Changes requested*, and *Approved review*, with each PR's checks next to its diff. Merging, closing, and commenting act on the real PR with your GitHub permissions.
+- **Wanker's Pull requests view** filters by *Awaiting review from you*, *Changes requested*, and *Approved review*, with each PR's checks next to its diff. Merging, closing, and commenting act on the real PR with your GitHub permissions.
 - **Workspaces** filter by who created them, so you can see a teammate's agent runs without mixing them with yours.
 
 To give the agent itself tools to read and update Linear, such as posting a summary comment on the issue, install the [Linear plugin](https://docs.paradev.com/plugins/available/linear).
@@ -100,29 +100,29 @@ To give the agent itself tools to read and update Linear, such as posting a summ
 
 | Option | Where the agent runs | Agents | Good fit |
 | --- | --- | --- | --- |
-| Paradev Tasks and automations | Your machines, a shared host, or your own cloud server | Claude Code, Codex, and other CLI agents | Teams that want agents on their own machines and subscriptions, with diffs reviewed before the PR |
+| Wanker Tasks and automations | Your machines, a shared host, or your own cloud server | Claude Code, Codex, and other CLI agents | Teams that want agents on their own machines and subscriptions, with diffs reviewed before the PR |
 | [Codex in Linear](https://learn.chatgpt.com/docs/third-party/linear) | Codex cloud | Codex | Assign or mention @Codex on an issue, and it posts progress back |
 | [Cursor in Linear](https://cursor.com/docs/integrations/linear) | Cursor Cloud Agents | Cursor's agent | Teams already on Cursor; assign an issue to Cursor or mention @Cursor |
 | [Linear coding sessions](https://linear.app/docs/coding-sessions) | A secure cloud environment, per Linear's docs | Linear Agent, writing code with Claude Code or Codex | Teams that want everything to stay inside Linear; needs AI credits and a workspace admin to turn it on |
 | [Cyrus](https://github.com/ceedaragents/cyrus) | A machine you run, or Cyrus's cloud | Claude Code, Codex, Cursor, Gemini, OpenCode | Open-source (Apache 2.0) bridge that works issues assigned to it, one worktree per issue |
 
-Linear's native agents need the least setup and keep the conversation on the issue. The tradeoff is that the work runs in the vendor's environment, which may not have your local services, seeded database, or VPN. Paradev runs the agent CLIs you already use on machines you control, so the agent sees what your developers see, and a person reviews the diff in the app before the pull request goes up. You can use both: assign the quick, self-contained issues to a cloud agent and run the ones that need local context in Paradev.
+Linear's native agents need the least setup and keep the conversation on the issue. The tradeoff is that the work runs in the vendor's environment, which may not have your local services, seeded database, or VPN. Wanker runs the agent CLIs you already use on machines you control, so the agent sees what your developers see, and a person reviews the diff in the app before the pull request goes up. You can use both: assign the quick, self-contained issues to a cloud agent and run the ones that need local context in Wanker.
 
 ## Frequently Asked Questions
 
 ### Does Claude Code integrate with Linear?
 
-Not on its own. Claude Code reads Linear through an MCP server or a plugin. To start Claude Code from Linear issues, use a tool that bridges the two: Paradev's Tasks view, CLI, and Linear triggers, Linear's coding sessions, or Cyrus.
+Not on its own. Claude Code reads Linear through an MCP server or a plugin. To start Claude Code from Linear issues, use a tool that bridges the two: Wanker's Tasks view, CLI, and Linear triggers, Linear's coding sessions, or Cyrus.
 
 ### Can several Claude Code agents work on different Linear issues at the same time?
 
-Yes. Give each issue its own worktree and branch so the agents do not edit each other's files. In Paradev, click **Add to workspace** on each issue, or run the CLI loop above for a batch. Issues that touch the same code can still conflict at merge time.
+Yes. Give each issue its own worktree and branch so the agents do not edit each other's files. In Wanker, click **Add to workspace** on each issue, or run the CLI loop above for a batch. Issues that touch the same code can still conflict at merge time.
 
-### Do I need a Paradev seat for each teammate?
+### Do I need a Wanker seat for each teammate?
 
-Each person who uses Paradev needs their own account. The Linear integration, automations, and remote hosts are on the Pro plan. See [pricing](/pricing).
+Each person who uses Wanker needs their own account. The Linear integration, automations, and remote hosts are on the Pro plan. See [pricing](/pricing).
 
-### Does Paradev move Linear issues to In Progress?
+### Does Wanker move Linear issues to In Progress?
 
 Yes, when the Linear integration is connected and you start a workspace from an issue in the app. Later moves, such as to In Review or Done, come from Linear's own GitHub integration: connect GitHub in Linear and choose which status each pull request event sets for your team.
 

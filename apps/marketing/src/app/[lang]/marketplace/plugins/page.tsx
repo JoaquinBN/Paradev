@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
 		description: i18n._(
 			msg({
 				message:
-					"Browse the plugins every Paradev agent can use, and submit your own.",
+					"Browse the plugins every Wanker agent can use, and submit your own.",
 			}),
 		),
 		alternates: localizedAlternates(lang, "/marketplace/plugins"),
@@ -57,7 +57,7 @@ export default async function MarketplacePluginsPage() {
 					</h1>
 					<p className="mt-1 text-sm text-muted-foreground">
 						<Trans>
-							Install a plugin in the Paradev app and every agent can use it.
+							Install a plugin in the Wanker app and every agent can use it.
 						</Trans>
 					</p>
 				</div>
@@ -68,7 +68,7 @@ export default async function MarketplacePluginsPage() {
 					</p>
 					<p className="mt-1 mb-4 text-muted-foreground text-sm">
 						<Trans>
-							Open a pull request that adds it to the Paradev repository. We
+							Open a pull request that adds it to the Wanker repository. We
 							review it and add it to the marketplace.
 						</Trans>
 					</p>

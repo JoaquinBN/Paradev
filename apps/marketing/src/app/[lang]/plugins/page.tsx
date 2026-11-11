@@ -17,7 +17,7 @@ import { FEATURES } from "./constants";
 export async function generateMetadata(): Promise<Metadata> {
 	const lang = await initServerI18n();
 	const i18n = getI18nInstance(lang);
-	const title = i18n._(msg({ message: "Paradev Plugins" }));
+	const title = i18n._(msg({ message: "Wanker Plugins" }));
 	const description = i18n._(
 		msg({
 			message:
@@ -62,7 +62,7 @@ export default async function PluginsPage() {
 				<section>
 					<div className="max-w-3xl">
 						<p className="font-mono text-brand text-xs uppercase tracking-wider">
-							<Trans>Paradev Plugins</Trans>
+							<Trans>Wanker Plugins</Trans>
 						</p>
 						<h1 className="mt-4 font-medium text-balance text-4xl text-foreground tracking-tight sm:text-5xl">
 							<Trans>One plugin. Every coding agent.</Trans>

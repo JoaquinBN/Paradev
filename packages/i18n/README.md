@@ -75,7 +75,7 @@ two can disagree: the build then asks for an id that no catalog has, and the
 page shows the raw id (for example `RaI2t2`). The compiler:
 
 - moves the first JSX element out of a `<Trans>` that has two or more of them,
-  so `<0>Paradev</0>` becomes `{t3}`;
+  so `<0>Wanker</0>` becomes `{t3}`;
 - moves a call such as `{formatDate(date)}` out of a `<Trans>`;
 - moves a `t({ message: \`…${x}…\` })` template, so the message becomes empty
   (`_-Z5u4`);

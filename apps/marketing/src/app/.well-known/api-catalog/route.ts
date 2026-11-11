@@ -12,14 +12,14 @@ export function GET() {
 					{
 						href: `${API_URL}/openapi.json`,
 						type: "application/vnd.oai.openapi+json",
-						title: "Paradev API OpenAPI 3.1 specification",
+						title: "Wanker API OpenAPI 3.1 specification",
 					},
 				],
 				"service-doc": [
 					{
 						href: `${COMPANY.DOCS_URL}/mcp-server`,
 						type: "text/html",
-						title: "Paradev MCP server documentation",
+						title: "Wanker MCP server documentation",
 					},
 					{
 						href: `${baseUrl}/auth.md`,
@@ -52,7 +52,7 @@ export function GET() {
 				item: [
 					{
 						href: MCP_SERVER_URL,
-						title: "Paradev MCP server (Streamable HTTP)",
+						title: "Wanker MCP server (Streamable HTTP)",
 					},
 				],
 			},

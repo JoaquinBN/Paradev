@@ -2,9 +2,9 @@
 	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
 	"name": "superset",
 	"version": "0.3.4",
-	"description": "Use Paradev (formerly Superset) and its `paradev`/`superset` CLI to spawn agents, create workspaces, manage tasks, and schedule automations from Claude Code.",
+	"description": "Use Wanker (formerly Paradev) and its `paradev`/`superset` CLI to spawn agents, create workspaces, manage tasks, and schedule automations from Claude Code.",
 	"author": {
-		"name": "Paradev",
+		"name": "Wanker",
 		"url": "https://paradev.com"
 	},
 	"homepage": "https://docs.paradev.com",

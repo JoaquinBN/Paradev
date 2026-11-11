@@ -306,11 +306,11 @@ export function useBulkWorkspaceDelete({
 						description:
 							deletedIds.length > 0
 								? t({
-										message: "Reload Paradev to refresh the workspace list.",
+										message: "Reload Wanker to refresh the workspace list.",
 									})
 								: t({
 										message:
-											"Try again. If the problem continues, reload Paradev.",
+											"Try again. If the problem continues, reload Wanker.",
 									}),
 					},
 				);

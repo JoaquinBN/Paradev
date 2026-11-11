@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	const lang = await initServerI18n();
 	const i18n = getI18nInstance(lang);
 	return {
-		title: i18n._(msg({ message: "Paradev in-app browser" })),
+		title: i18n._(msg({ message: "Wanker in-app browser" })),
 		description: i18n._(
 			msg({
 				message:

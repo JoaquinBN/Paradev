@@ -24,7 +24,7 @@ const inter = Inter({
 export async function generateMetadata(): Promise<Metadata> {
 	const i18n = await initServerI18n();
 	return {
-		title: "Paradev",
+		title: "Wanker",
 		description: i18n._(
 			msg({ message: "Run 10+ parallel coding agents on your machine" }),
 		),

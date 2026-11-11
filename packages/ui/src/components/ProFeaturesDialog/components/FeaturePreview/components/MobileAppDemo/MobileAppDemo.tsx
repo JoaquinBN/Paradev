@@ -78,7 +78,7 @@ export function MobileAppDemo() {
 							</div>
 							<div>
 								<div className="text-sm font-semibold text-foreground">
-									<Trans>Paradev Agent</Trans>
+									<Trans>Wanker Agent</Trans>
 								</div>
 								<div className="text-[10px] text-emerald-400">
 									<Trans>● Online</Trans>

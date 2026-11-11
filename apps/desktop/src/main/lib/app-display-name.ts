@@ -3,7 +3,7 @@ import { env } from "main/env.main";
 
 // productName names the bundle, userData, logs and the keychain entry, so
 // app.name keeps it; only labels shown to the user carry the display name.
-const PRODUCT_NAME = "Superset";
+const PRODUCT_NAME = "Wanker";
 
 /** Swaps the product name for the display name and keeps any suffix ("Canary", a dev workspace). */
 export function toAppDisplayName(appName: string, displayName: string): string {

@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { GoGitBranch, GoGlobe } from "react-icons/go";
 import { HiCheck } from "react-icons/hi2";
 import { LuFolderOpen } from "react-icons/lu";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { PLATFORM } from "renderer/hotkeys";
 import { formatRelativeTime } from "renderer/lib/formatRelativeTime";
 import {
@@ -79,7 +79,7 @@ export function CompareBaseBranchPicker({
 	onOpenWorkspace,
 }: CompareBaseBranchPickerProps) {
 	const { t } = useLingui();
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 	const [open, setOpen] = useState(false);
 	// Mirror cmdk's selected row so Mod+Enter can resolve it without DOM lookup.
 	const [selectedValue, setSelectedValue] = useState("");
@@ -140,7 +140,7 @@ export function CompareBaseBranchPicker({
 					className="max-w-full"
 				>
 					<GoGitBranch
-						className={isParadevShell ? "size-3.5 shrink-0" : "size-3 shrink-0"}
+						className={isWankerShell ? "size-3.5 shrink-0" : "size-3 shrink-0"}
 					/>
 					{isBranchesLoading && branches.length === 0 ? (
 						<span className="h-2.5 w-14 rounded-sm bg-muted-foreground/15 animate-pulse" />

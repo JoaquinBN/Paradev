@@ -1,26 +1,26 @@
 <div align="center">
 
-<img src="apps/desktop/src/resources/build/icons/icon.png" alt="Paradev app icon" width="96" height="96" />
+<img src="apps/desktop/src/resources/build/icons/icon.png" alt="Wanker app icon" width="96" height="96" />
 
-### Paradev (formerly Superset)
+### Wanker (formerly Paradev)
 
 Run Claude Code, Codex, or another CLI agent with terminals, code review, and browser previews in one workspace.
 
 [**Download for macOS**](https://github.com/paradevai/paradev/releases/latest) &nbsp;&bull;&nbsp; [Documentation](https://docs.paradev.com) &nbsp;&bull;&nbsp; [Changelog](https://github.com/paradevai/paradev/releases) &nbsp;&bull;&nbsp; [Discord](https://discord.gg/cZeD9WYcV7)
 
 <p align="center">
-  <img width="800" alt="Claude and OpenCode working in parallel Paradev workspaces with live diffs" src="apps/marketing/public/images/readme-hero.gif" />
+  <img width="800" alt="Claude and OpenCode working in parallel Wanker workspaces with live diffs" src="apps/marketing/public/images/readme-hero.gif" />
 </p>
 
 </div>
 
-## What is Paradev?
+## What is Wanker?
 
-Paradev is a desktop app for running CLI coding agents in parallel. Each task gets its own Git worktree, branch, and terminals, so Claude Code, Codex, OpenCode, Gemini CLI, Cursor Agent, or any other CLI agent can work on several tasks in one repository at the same time.
+Wanker is a desktop app for running CLI coding agents in parallel. Each task gets its own Git worktree, branch, and terminals, so Claude Code, Codex, OpenCode, Gemini CLI, Cursor Agent, or any other CLI agent can work on several tasks in one repository at the same time.
 
-Paradev is for developers who already use a coding agent in the terminal and want to run more than one task at once, without juggling terminal tabs and branches by hand.
+Wanker is for developers who already use a coding agent in the terminal and want to run more than one task at once, without juggling terminal tabs and branches by hand.
 
-A single agent CLI runs one session in one terminal, and an editor is built around one checkout. Paradev adds the workspace around the agents:
+A single agent CLI runs one session in one terminal, and an editor is built around one checkout. Wanker adds the workspace around the agents:
 
 - **One worktree per task**: agents work in separate copies of the repository, on separate branches
 - **Review in the app**: a Changes pane to review, commit, push, and open pull requests, and a pull request pane with checks, review threads, and merge
@@ -28,13 +28,13 @@ A single agent CLI runs one session in one terminal, and an editor is built arou
 - **Agent status**: the sidebar shows which agent is working, done, or waiting on you
 - **Beyond one machine**: remote hosts, an iPhone and iPad app, and automations that start agents on a schedule or from an event (Pro plan)
 
-Paradev is not a coding agent itself. You bring your own agent subscriptions and API keys, and Paradev does not proxy model calls.
+Wanker is not a coding agent itself. You bring your own agent subscriptions and API keys, and Wanker does not proxy model calls.
 
 **Platforms**: macOS (Apple Silicon and Intel). Linux as an experimental x64 AppImage. Windows is not yet available.
 
-**Formerly Superset**: Paradev was previously named Superset, and the CLI command is still `superset`. It is unrelated to Apache Superset, the business intelligence tool.
+**Formerly Superset**: Wanker was previously named Superset, and the CLI command is still `superset`. It is unrelated to Apache Superset, the business intelligence tool.
 
-**Paradev vs. alternatives**: [Cursor](https://paradev.com/compare/cursor-alternative) · [Codex app](https://paradev.com/compare/codex-app-alternative) · [Conductor](https://paradev.com/compare/conductor-alternative)
+**Wanker vs. alternatives**: [Cursor](https://paradev.com/compare/cursor-alternative) · [Codex app](https://paradev.com/compare/codex-app-alternative) · [Conductor](https://paradev.com/compare/conductor-alternative)
 
 ### Documentation for agents
 
@@ -49,11 +49,11 @@ Download the desktop app:
 - **Windows**: not yet available
 - [All builds](https://github.com/paradevai/paradev/releases/latest)
 
-All you need installed is [Git](https://git-scm.com/). [gh](https://cli.github.com/) is optional and enables the PR workflows; Paradev offers to install it for you.
+All you need installed is [Git](https://git-scm.com/). [gh](https://cli.github.com/) is optional and enables the PR workflows; Wanker offers to install it for you.
 
 ## Start with one task
 
-1. [Install Paradev](#install) and add a repository from your computer or clone one.
+1. [Install Wanker](#install) and add a repository from your computer or clone one.
 2. Create a workspace, choose your CLI agent, and describe a small change you want to make.
 3. Inspect its patch in **Changes**, run the relevant tests, and preview your app in the browser pane before committing.
 
@@ -133,20 +133,20 @@ Jump to any workspace, action, or setting from one search box.
 
 Connect another machine to reach its workspaces remotely, or schedule an agent to work on a recurring task. The CLI, SDK, and MCP server also let agents and scripts manage workspaces.
 
-Mobile supports **iPhone and iPad** and requires **Paradev Pro** and **iOS 26 or iPadOS 26 or later**. Use cloud workspaces without keeping your own computer connected. To reach workspaces on your own computer, enable **Remote Access** and keep that host awake and online.
+Mobile supports **iPhone and iPad** and requires **Wanker Pro** and **iOS 26 or iPadOS 26 or later**. Use cloud workspaces without keeping your own computer connected. To reach workspaces on your own computer, enable **Remote Access** and keep that host awake and online.
 
 [Remote access](https://docs.paradev.com/remote-access) · [Automations](https://docs.paradev.com/automations) · [iPhone and iPad](https://paradev.com/mobile) · [CLI](https://docs.paradev.com/cli/getting-started)
 
 <details>
 <summary>See mobile, automations, remote access, and the CLI</summary>
 
-### Paradev for iPhone and iPad
+### Wanker for iPhone and iPad
 
 Control Claude Code, Codex, and other terminal agents in cloud workspaces or on your connected computer. Pick up the same workspaces and terminal sessions, send follow-up prompts, review diffs, and merge PRs from your iPhone or iPad.
 
 [**Download on the App Store**](https://apps.apple.com/us/app/id6788926383) &nbsp;&bull;&nbsp; [Learn more →](https://paradev.com/mobile)
 
-<a href="https://paradev.com/mobile"><img src="apps/marketing/public/images/readme/mobile-desktop.png" alt="Paradev desktop with an iPhone terminal session overlaid on the right" width="100%" /></a>
+<a href="https://paradev.com/mobile"><img src="apps/marketing/public/images/readme/mobile-desktop.png" alt="Wanker desktop with an iPhone terminal session overlaid on the right" width="100%" /></a>
 
 ### Automations
 
@@ -164,13 +164,13 @@ Connect another machine and reach its workspaces from anywhere: the desktop app,
 
 <a href="https://docs.paradev.com/remote-access"><img src="apps/docs/public/images/remote-workspaces-hosts-members.png" alt="Hosts and members in organization settings" width="100%" /></a>
 
-### Paradev CLI
+### Wanker CLI
 
-Script it from any shell: create workspaces, launch agents, read their terminals, and manage automations with a single binary. If an agent can run a command, it can drive Paradev.
+Script it from any shell: create workspaces, launch agents, read their terminals, and manage automations with a single binary. If an agent can run a command, it can drive Wanker.
 
 [Docs →](https://docs.paradev.com/cli/getting-started)
 
-<a href="https://docs.paradev.com/cli/getting-started"><img src="apps/marketing/public/images/readme/cli-demo.gif" alt="Creating a workspace and launching an agent from the Paradev CLI" width="100%" /></a>
+<a href="https://docs.paradev.com/cli/getting-started"><img src="apps/marketing/public/images/readme/cli-demo.gif" alt="Creating a workspace and launching an agent from the Wanker CLI" width="100%" /></a>
 
 </details>
 
@@ -238,7 +238,7 @@ Every surface talks to the same workspaces, so you can start a task in the app a
 |:--------|:-------------|
 | [**Desktop App**](https://github.com/paradevai/paradev/releases/latest) | The full IDE: terminals, diff viewer, in-app browser, automations |
 | [**CLI**](https://docs.paradev.com/cli/getting-started) | A single `superset` binary to manage workspaces, agents, terminals, and hosts from any shell |
-| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Drive Paradev programmatically with [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) from Node, Bun, or Deno |
+| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Drive Wanker programmatically with [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) from Node, Bun, or Deno |
 | [**MCP Server**](https://docs.paradev.com/mcp) | Let Claude Code, Codex, Cursor, and other agents create and manage workspaces themselves |
 
 The CLI comes bundled with the desktop app, or install it standalone:
@@ -251,8 +251,8 @@ brew install paradevai/tap/superset
 
 ## Development
 
-Want to hack on Paradev or contribute a PR? Clone the repository, add it to the
-installed Paradev app, and create a workspace for your change:
+Want to hack on Wanker or contribute a PR? Clone the repository, add it to the
+installed Wanker app, and create a workspace for your change:
 
 ```bash
 git clone https://github.com/paradevai/paradev.git
@@ -267,13 +267,13 @@ bun run dev
 
 Run `setup.local.sh` once in every new worktree. It configures workspace-specific
 app identity and ports so the development desktop app can run alongside the
-installed Paradev app and other development worktrees.
+installed Wanker app and other development worktrees.
 
 No Neon account or third-party credentials are needed. `setup.local.sh` brings
 up a local Postgres + neon-proxy + Redis stack via Docker and seeds a dev account.
 Sign in with the **"Sign in as dev"** button (or `admin@local.test` / `supersetdev`).
 
-Prereqs for building from source (to use Paradev, [install the app](#install) instead): [Bun](https://bun.sh/) v1.4.3+ (pinned in `.bun-version`), `docker`, `jq`, and [`gh`](https://cli.github.com/) (`brew install jq gh`).
+Prereqs for building from source (to use Wanker, [install the app](#install) instead): [Bun](https://bun.sh/) v1.4.3+ (pinned in `.bun-version`), `docker`, `jq`, and [`gh`](https://cli.github.com/) (`brew install jq gh`).
 
 See [**DEVELOPMENT.md**](./DEVELOPMENT.md) for the full guide: what the setup script does, manual setup against real services, common commands, troubleshooting, and how to build the desktop app. Contribution process lives in [**CONTRIBUTING.md**](./CONTRIBUTING.md).
 
@@ -337,7 +337,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get 
 
 ## Community
 
-Join the Paradev community to get help, share feedback, and connect with other users:
+Join the Wanker community to get help, share feedback, and connect with other users:
 
 - **[Discord](https://discord.gg/cZeD9WYcV7)**: chat with the team and community
 - **[Twitter](https://x.com/paradevai)**: follow for updates and announcements

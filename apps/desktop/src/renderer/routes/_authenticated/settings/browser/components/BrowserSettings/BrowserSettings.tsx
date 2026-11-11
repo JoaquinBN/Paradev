@@ -173,7 +173,7 @@ export function BrowserSettings({ visibleItems }: BrowserSettingsProps) {
 							<p className="text-xs text-muted-foreground">
 								<Trans>
 									Copy browsing history and logins from Chrome, Brave, Arc, or
-									another Chromium browser into Paradev.
+									another Chromium browser into Wanker.
 								</Trans>
 							</p>
 						</div>

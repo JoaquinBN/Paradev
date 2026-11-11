@@ -214,7 +214,7 @@ export function main() {
 		process.exit(0);
 	}
 
-	const DISPLAY_NAME = `Superset (${bundleDisplayWorkspaceName})`;
+	const DISPLAY_NAME = `Wanker (${bundleDisplayWorkspaceName})`;
 
 	try {
 		const currentBundleId = execSync(
@@ -294,7 +294,7 @@ export function main() {
 	const commands = [
 		`Add :CFBundleURLTypes array`,
 		`Add :CFBundleURLTypes:0 dict`,
-		`Add :CFBundleURLTypes:0:CFBundleURLName string 'Superset Dev'`,
+		`Add :CFBundleURLTypes:0:CFBundleURLName string 'Wanker Dev'`,
 		`Add :CFBundleURLTypes:0:CFBundleURLSchemes array`,
 		`Add :CFBundleURLTypes:0:CFBundleURLSchemes:0 string '${PROTOCOL_SCHEME}'`,
 		`Add :CFBundleURLTypes:0:CFBundleTypeRole string 'Editor'`,

@@ -11,8 +11,8 @@ import { Redirect } from "renderer/components/Redirect";
 import { useWorkspaceNamingFailedToast } from "renderer/hooks/host-service/useWorkspaceNamingFailedToast";
 import { useIsV2CloudEnabled } from "renderer/hooks/useIsV2CloudEnabled";
 import { useOpenNewWorkspace } from "renderer/hooks/useOpenNewWorkspace";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
 import { useQuickCreateWorkspace } from "renderer/hooks/useQuickCreateWorkspace";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { useHotkey } from "renderer/hotkeys";
 import { electronTrpc } from "renderer/lib/electron-trpc";
 import { DashboardSidebar } from "renderer/routes/_authenticated/_dashboard/components/DashboardSidebar";
@@ -68,7 +68,7 @@ function DashboardLayout() {
 
 	const openNewWorkspace = useOpenNewWorkspace();
 	const isV2CloudEnabled = useIsV2CloudEnabled();
-	const isParadevShell = useParadevShell() && isV2CloudEnabled;
+	const isWankerShell = useWankerShell() && isV2CloudEnabled;
 	const portsDisplayMode = usePortsDisplayMode();
 	const { workspaces: hostWorkspaces } = useHostWorkspaces();
 	const quickCreateWorkspace = useQuickCreateWorkspace();
@@ -281,7 +281,7 @@ function DashboardLayout() {
 		>
 			<PortForwardsProvider>
 				<RemotePortForwarder />
-				{isParadevShell ? (
+				{isWankerShell ? (
 					<>
 						<CommandPaletteHost />
 						<TitleBarSlotsProvider>

@@ -68,7 +68,7 @@ describe("agy hooks.json", () => {
 		expect(hooks[AGY_HOOKS_NAME]?.Stop).toHaveLength(1);
 	});
 
-	it("teardown removes only the Paradev hook set", () => {
+	it("teardown removes only the Wanker hook set", () => {
 		mkdirSync(path.dirname(getAgyHooksJsonPath()), { recursive: true });
 		writeFileSync(getAgyHooksJsonPath(), JSON.stringify(otherToolHooks));
 		createAgyHooksJson();

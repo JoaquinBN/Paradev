@@ -1,13 +1,13 @@
 ---
 title: Getting Started
-description: Drive Paradev programmatically from any TypeScript or JavaScript codebase.
+description: Drive Wanker programmatically from any TypeScript or JavaScript codebase.
 ---
 
 <Callout type="warn">
 The SDK is in early alpha. It is not meant for production use and may be removed in the future. Stay on the latest version (`@superset_sh/sdk@latest`) while we iterate.
 </Callout>
 
-The Paradev TypeScript SDK manages workspaces, tasks, projects, and automations from code. Common uses:
+The Wanker TypeScript SDK manages workspaces, tasks, projects, and automations from code. Common uses:
 
 - **Bulk task management**: script the creation, triage, or cleanup of tasks across one or many projects.
 - **Integrations**: sync tasks to/from your CRM, issue tracker, or internal tools.
@@ -45,7 +45,7 @@ Stay on the **latest version** rather than pinning. New methods get added; exist
 
 ## Get an API key
 
-1. Open the [Paradev desktop app](https://paradev.com/download) → **Settings → API Keys** → **Create**. The key starts with `sk_live_…`. Copy it now. It is shown only once.
+1. Open the [Wanker desktop app](https://paradev.com/download) → **Settings → API Keys** → **Create**. The key starts with `sk_live_…`. Copy it now. It is shown only once.
 2. Note your **organization ID**. Find it in the org switcher inside the desktop app.
 
 ```bash
@@ -138,7 +138,7 @@ try {
     // 404
   } else if (err instanceof APIError) {
     // anything else: err.status, err.headers, err.error (the parsed body)
-    console.error(`Paradev returned ${err.status}:`, err.error);
+    console.error(`Wanker returned ${err.status}:`, err.error);
   }
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "How to Run Multiple Claude Code Agents in Parallel"
-description: "Learn how to run multiple Claude Code sessions at once in separate worktrees. Compare terminal tabs, tmux, manual Git worktrees, and Paradev's orchestration workflow."
+description: "Learn how to run multiple Claude Code sessions at once in separate worktrees. Compare terminal tabs, tmux, manual Git worktrees, and Wanker's orchestration workflow."
 date: 2026-03-20
 lastUpdated: 2026-11-05
 type: "tutorial"
@@ -58,15 +58,15 @@ Then you `cd` into each directory and launch Claude Code there. Claude Code can 
 
 This separates working files, but does not sandbox the agent or prevent merge conflicts. It is also repetitive. You still have to create branches, name directories, track which session maps to which task, and review each diff manually in your editor or Git UI.
 
-### 3. Paradev + Claude Code
+### 3. Wanker + Claude Code
 
 This is the same worktree-based approach, but automated.
 
-Paradev creates a separate worktree and branch per task, launches Claude Code inside it, keeps the sessions organized, and gives you one place to review the resulting diffs. Claude Code still does the coding. Paradev handles the orchestration.
+Wanker creates a separate worktree and branch per task, launches Claude Code inside it, keeps the sessions organized, and gives you one place to review the resulting diffs. Claude Code still does the coding. Wanker handles the orchestration.
 
-That is the key distinction: Claude Code is the agent; Paradev is the workflow layer that lets you run and review many Claude Code sessions in parallel.
+That is the key distinction: Claude Code is the agent; Wanker is the workflow layer that lets you run and review many Claude Code sessions in parallel.
 
-Claude Code's own features keep working inside it. Paradev launches the real `claude` CLI in a real terminal with your own login, so `/remote-control`, `/schedule`, `/loop`, subagents, and `--resume` behave as they do in any terminal.
+Claude Code's own features keep working inside it. Wanker launches the real `claude` CLI in a real terminal with your own login, so `/remote-control`, `/schedule`, `/loop`, subagents, and `--resume` behave as they do in any terminal.
 
 ## Quick Comparison
 
@@ -76,7 +76,7 @@ Claude Code's own features keep working inside it. Paradev launches the real `cl
 | tmux | Yes | No | Manual | Good for power users, still one checkout |
 | Manual Git worktrees + Claude Code | Yes | Yes | Git-native, but manual | Works, but repetitive |
 | `claude --worktree` | Yes | Yes | Git-native, but manual | Low for Claude Code alone |
-| Paradev + Claude Code | Yes | Yes | Built-in diff review per task | Lowest overhead once installed |
+| Wanker + Claude Code | Yes | Yes | Built-in diff review per task | Lowest overhead once installed |
 
 ## Recommended Workflow
 
@@ -101,7 +101,7 @@ Parallelism works best when each agent can finish a reviewable unit of work on i
 
 This is the non-negotiable part.
 
-If you are doing it manually, use `git worktree add` for every task before launching Claude Code. If you are using Paradev, create one task per job and let Paradev provision the worktree and branch automatically.
+If you are doing it manually, use `git worktree add` for every task before launching Claude Code. If you are using Wanker, create one task per job and let Wanker provision the worktree and branch automatically.
 
 ### 3. Keep prompts narrow
 
@@ -142,11 +142,11 @@ Record the starting commit, agent version, model, prompt, test command, and resu
 
 Our [reproducible worktree check](/parallel-coding-agents#a-reproducible-isolation-check) demonstrates both independent edits and a deliberate merge conflict. Use the [three-task walkthrough](/blog/parallel-coding-agents-guide) to apply that review process to a real project.
 
-## Why Paradev Fits This Workflow
+## Why Wanker Fits This Workflow
 
-![Claude streaming a billing migration in one Paradev workspace while other Claude Code agents run in parallel workspaces](/images/readme/agents-working.gif)
+![Claude streaming a billing migration in one Wanker workspace while other Claude Code agents run in parallel workspaces](/images/readme/agents-working.gif)
 
-Paradev is useful here because it removes the boring parts of manual parallelism:
+Wanker is useful here because it removes the boring parts of manual parallelism:
 
 - separate worktree per task
 - separate branch per task
@@ -159,9 +159,9 @@ Paradev is useful here because it removes the boring parts of manual parallelism
 - an iPhone and iPad app for checking on sessions and reviewing diffs away from your desk
 - cleanup that previews dirty or unpushed work before a bulk delete
 
-If you already like Claude Code, Paradev is not a replacement. It is open source under the MIT License, and it is the layer that makes multiple Claude Code sessions manageable.
+If you already like Claude Code, Wanker is not a replacement. It is open source under the MIT License, and it is the layer that makes multiple Claude Code sessions manageable.
 
-For a product comparison, see [Paradev vs Claude Code](/compare/superset-vs-claude-code).
+For a product comparison, see [Wanker vs Claude Code](/compare/superset-vs-claude-code).
 
 ## When Manual Worktrees Are Enough
 
@@ -171,17 +171,17 @@ You do not need another tool if:
 - you are comfortable living in Git and tmux all day
 - you prefer assembling your own workflow from terminal tools
 
-Manual worktrees are still the correct primitive. Paradev just packages that primitive into a faster operating model.
+Manual worktrees are still the correct primitive. Wanker just packages that primitive into a faster operating model.
 
 ## Verdict
 
-If you want to run multiple Claude Code agents in parallel, the decision is not really "Claude Code or Paradev."
+If you want to run multiple Claude Code agents in parallel, the decision is not really "Claude Code or Wanker."
 
 The real choice is:
 
 - Claude Code alone, with `claude --worktree` per session and your own way of tracking them
 - Claude Code plus manual worktrees, with more setup overhead
-- Claude Code plus Paradev, with the same worktree model, all of Claude Code's own commands, and one place to track and review every session
+- Claude Code plus Wanker, with the same worktree model, all of Claude Code's own commands, and one place to track and review every session
 
 For most teams and solo developers, worktree-based orchestration is the difference between "parallel in theory" and "parallel every day."
 
@@ -189,7 +189,7 @@ For most teams and solo developers, worktree-based orchestration is the differen
 
 ### Can Claude Code itself run multiple agents?
 
-Yes. `claude --worktree` starts each session in its own worktree, and subagents can run in parallel inside one session. What Claude Code does not give you is one view across many sessions, other agents, and other machines, with each session's diff and PR in one place. Paradev adds that, and Claude Code's own features still work in each Paradev session.
+Yes. `claude --worktree` starts each session in its own worktree, and subagents can run in parallel inside one session. What Claude Code does not give you is one view across many sessions, other agents, and other machines, with each session's diff and PR in one place. Wanker adds that, and Claude Code's own features still work in each Wanker session.
 
 ### Do I need Git worktrees to parallelize Claude Code?
 
@@ -199,6 +199,6 @@ If the sessions edit files, yes. Separate worktrees keep each session on its own
 
 tmux is enough to manage panes and sessions. It is not enough to isolate file changes by itself. You still need a Git workflow, usually worktrees, underneath it.
 
-### Is Paradev only for Claude Code?
+### Is Wanker only for Claude Code?
 
-No. Paradev can orchestrate Claude Code, Codex, OpenCode, Gemini CLI, Cursor Agent, and other CLI agents, including custom ones you add. Claude Code is just one of the strongest fits for the workflow.
+No. Wanker can orchestrate Claude Code, Codex, OpenCode, Gemini CLI, Cursor Agent, and other CLI agents, including custom ones you add. Claude Code is just one of the strongest fits for the workflow.

@@ -6,7 +6,7 @@ import {
 } from "../../../lib/workspace-forwards";
 
 const EMPTY_MESSAGE =
-	"No ports of this workspace are forwarded. People forward them from Share → Ports in Paradev.";
+	"No ports of this workspace are forwarded. People forward them from Share → Ports in Wanker.";
 
 export default command({
 	description:

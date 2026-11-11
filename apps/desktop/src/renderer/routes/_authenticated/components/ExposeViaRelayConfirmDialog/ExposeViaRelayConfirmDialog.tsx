@@ -52,11 +52,11 @@ export function ExposeViaRelayConfirmDialog({
 							{targetEnabled ? (
 								<p>
 									Devices and workspaces you grant access to will be able to
-									reach this device through Paradev Relay.
+									reach this device through Wanker Relay.
 								</p>
 							) : (
 								<p>
-									Nothing else will be able to reach this device through Paradev
+									Nothing else will be able to reach this device through Wanker
 									Relay.
 								</p>
 							)}

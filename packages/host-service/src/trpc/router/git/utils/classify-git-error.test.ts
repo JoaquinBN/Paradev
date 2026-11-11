@@ -653,7 +653,7 @@ describe("rethrowEnvironmentalGitError", () => {
 
 describe("rethrowGitToolsMissing", () => {
 	const stub =
-		"Cloning into '/Users/me/Paradev/Hello-World'...\n" +
+		"Cloning into '/Users/me/Wanker/Hello-World'...\n" +
 		"xcode-select: note: No developer tools were found, requesting install.\n" +
 		"If developer tools are located at a non-default location on disk, use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, and cancel the installation dialog.\n";
 

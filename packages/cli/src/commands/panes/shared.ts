@@ -28,7 +28,7 @@ export async function callPanes<T>(call: () => Promise<T>): Promise<T> {
 		) {
 			throw new CLIError(
 				"This host is too old for `superset panes`",
-				"Update the Paradev desktop app on that host",
+				"Update the Wanker desktop app on that host",
 			);
 		}
 		throw error;
@@ -105,6 +105,6 @@ export function requireSidebar(layout: PaneLayoutSnapshot, done: string): void {
 	if (layout.sidebar) return;
 	throw new CLIError(
 		`The desktop app on this host has no sidebar support; ${done}`,
-		"Update the Paradev desktop app on that host",
+		"Update the Wanker desktop app on that host",
 	);
 }

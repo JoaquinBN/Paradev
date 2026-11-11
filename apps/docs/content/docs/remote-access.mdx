@@ -8,7 +8,7 @@ pro: true
 
 A workspace lives on the machine that hosts its files, terminal, and ports. **Remote access** lets you reach a workspace hosted on another machine, such as a Mac mini, a shared sandbox, or a spare laptop.
 
-**Paradev Relay** routes traffic between your devices. You can grant a device remote access through the relay in two ways:
+**Wanker Relay** routes traffic between your devices. You can grant a device remote access through the relay in two ways:
 
 ## Option 1: Desktop
 
@@ -69,13 +69,13 @@ In the desktop app, open **Settings → Hosts** and choose **Set up a host over 
 
 ## Connect from an iPhone or iPad
 
-Install [Paradev for iPhone and iPad](/install#iphone-and-ipad) and check its requirements before connecting. You can use [cloud workspaces](/cloud-workspaces) without connecting your own computer.
+Install [Wanker for iPhone and iPad](/install#iphone-and-ipad) and check its requirements before connecting. You can use [cloud workspaces](/cloud-workspaces) without connecting your own computer.
 
 To connect to workspaces hosted on your own computer:
 
 1. On your computer, enable **Allow remote access to this device via relay** in **Settings → Remote Access**. You can also use the inline toggle in **Settings → Mobile** when that tab is available. Both toggles control the same setting.
-2. On your iPhone or iPad, sign in with the same Paradev account and select the same organization. The QR code in desktop Mobile settings opens the App Store; it does not sign you in.
-3. Select your computer and open a workspace to continue its terminal sessions, send prompts, review diffs, or merge PRs. Keep the computer awake, online, and running Paradev.
+2. On your iPhone or iPad, sign in with the same Wanker account and select the same organization. The QR code in desktop Mobile settings opens the App Store; it does not sign you in.
+3. Select your computer and open a workspace to continue its terminal sessions, send prompts, review diffs, or merge PRs. Keep the computer awake, online, and running Wanker.
 
 If your computer does not appear online, see [Remote Host Won’t Connect](/troubleshooting#remote-host-wont-connect).
 
@@ -104,13 +104,13 @@ The ports sidebar shows ports listening **on the remote host**. When you select 
 
 Only ports that the workspace started are forwarded. Other services on the host stay unreachable.
 
-If a local process already uses the port, the row shows **local port busy** and offers two actions: stop the local process (only when a Paradev workspace started it) or **Use another port**, which maps the remote port to a free local port and shows the mapping, for example `3000 → localhost:54321`.
+If a local process already uses the port, the row shows **local port busy** and offers two actions: stop the local process (only when a Wanker workspace started it) or **Use another port**, which maps the remote port to a free local port and shows the mapping, for example `3000 → localhost:54321`.
 
 The remote server sees each forwarded connection as coming from its own loopback address; there is no real client IP. Only TCP is carried; anything UDP (WebRTC media, mDNS) does not ride the forward.
 
 Forwarding needs a host on the current relay running host-service 1.26 or newer. For a host you reach some other way, [forward a port yourself](/ports#forward-a-port-yourself) with SSH or Tailscale.
 
-Forwarded traffic passes through the Paradev relay, like terminal traffic does. A browser sends its usual cookies, auth headers, and query strings to a forwarded dev server, so treat a forwarded port as the remote service, not as localhost.
+Forwarded traffic passes through the Wanker relay, like terminal traffic does. A browser sends its usual cookies, auth headers, and query strings to a forwarded dev server, so treat a forwarded port as the remote service, not as localhost.
 
 ## Turning access off
 

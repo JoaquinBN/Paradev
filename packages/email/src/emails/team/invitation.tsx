@@ -40,12 +40,12 @@ export function OrganizationInvitationEmail({
 
 			<Text className="text-[15px] leading-6 text-foreground m-0 mb-4">
 				{inviterName} ({inviterEmail}) has invited you to join{" "}
-				<strong>{organizationName}</strong> on Paradev as a{" "}
+				<strong>{organizationName}</strong> on Wanker as a{" "}
 				<strong>{roleDisplay}</strong>.
 			</Text>
 
 			<Text className="text-[15px] leading-6 text-foreground m-0 mb-6">
-				Paradev runs coding agents in parallel, each in an isolated copy of your
+				Wanker runs coding agents in parallel, each in an isolated copy of your
 				repo. Accept the invite to work alongside your team.
 			</Text>
 

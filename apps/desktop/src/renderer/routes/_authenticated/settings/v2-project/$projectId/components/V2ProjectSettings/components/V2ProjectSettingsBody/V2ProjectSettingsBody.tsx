@@ -267,7 +267,7 @@ export function V2ProjectSettingsBody({
 							usesConfigToml
 								? t({
 										message:
-											"The commands Paradev runs to set up, run and archive this project's workspaces, from the repository's config.toml.",
+											"The commands Wanker runs to set up, run and archive this project's workspaces, from the repository's config.toml.",
 									})
 								: t({
 										message:

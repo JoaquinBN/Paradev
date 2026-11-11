@@ -1,13 +1,13 @@
 ---
 name: environment
-description: Set up a Paradev (formerly Superset) cloud environment end to end from this machine - work out what the repositories need, set the environment's variables, boot a cloud box on it, get the project running there, and save checkpoints until new cloud workspaces start ready. Use when the user asks to set up, onboard, or finish a cloud environment, or when a setup session hands you an environment ID.
+description: Set up a Wanker (formerly Paradev) cloud environment end to end from this machine - work out what the repositories need, set the environment's variables, boot a cloud box on it, get the project running there, and save checkpoints until new cloud workspaces start ready. Use when the user asks to set up, onboard, or finish a cloud environment, or when a setup session hands you an environment ID.
 argument-hint: environment ID, or the repositories to set up
 allowed-tools: Bash(superset:*)
 ---
 
 # Cloud environment setup
 
-Goal: a cloud environment that new cloud workspaces boot straight into, with dependencies installed, variables set, and services starting on boot. You run on the user's machine with their Paradev login. You build the environment by driving a cloud box from here.
+Goal: a cloud environment that new cloud workspaces boot straight into, with dependencies installed, variables set, and services starting on boot. You run on the user's machine with their Wanker login. You build the environment by driving a cloud box from here.
 
 Terms you will use with the user:
 
@@ -28,7 +28,7 @@ There is no macOS: no Xcode, iOS simulator or Safari. If the project needs one, 
 
 ## 0. Connect GitHub
 
-Boxes check out repositories through the organization's Paradev GitHub App. Run `superset integrations github status`. If the App is not installed, run `superset integrations github connect` and ask the user to finish the install in the browser. It needs the Pro plan and a GitHub account that can install apps on the repositories' owner.
+Boxes check out repositories through the organization's Wanker GitHub App. Run `superset integrations github status`. If the App is not installed, run `superset integrations github connect` and ask the user to finish the install in the browser. It needs the Pro plan and a GitHub account that can install apps on the repositories' owner.
 
 `superset environments repos` lists the repositories the App can see; only these are valid for `--repo`. If a repository the project needs is missing, ask the user to add it to the App's repository access in GitHub, or to ask whoever manages that installation.
 

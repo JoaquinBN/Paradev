@@ -12,7 +12,7 @@ export function PausedOnCloseRow({ latest }: { latest: boolean }) {
 			data-turn-paused-on-close
 		>
 			<Pause className="size-3.5 shrink-0" />
-			<Trans>Paused when Paradev closed</Trans>
+			<Trans>Paused when Wanker closed</Trans>
 			{resumable && (
 				<QueueItemAction
 					className="ml-1 gap-1 px-1.5 py-0.5 font-normal text-xs opacity-100"

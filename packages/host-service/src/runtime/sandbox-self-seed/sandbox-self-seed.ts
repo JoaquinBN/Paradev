@@ -71,7 +71,7 @@ export interface SandboxIdentity {
 	workspaceRoot: string;
 	/**
 	 * The primary repository's checkout: the one the workspace opens on and
-	 * whose Paradev config the box acts on.
+	 * whose Wanker config the box acts on.
 	 */
 	worktreePath: string;
 	/** Every checkout on the box, the primary first. */

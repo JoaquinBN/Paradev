@@ -62,7 +62,7 @@ export function useUploadAttachments(workspaceId: string) {
 							});
 						case "unreadable":
 							return t({
-								message: `Paradev doesn't have permission to read "${name}".`,
+								message: `Wanker doesn't have permission to read "${name}".`,
 							});
 					}
 				}
