@@ -70,8 +70,8 @@ export function UpdateRequiredPage({
 						<p className="max-w-md text-muted-foreground">
 							{message || (
 								<Trans>
-									A new version of Paradev is required to continue. Please
-									update to the latest version.
+									A new version of Wanker is required to continue. Please update
+									to the latest version.
 								</Trans>
 							)}
 						</p>

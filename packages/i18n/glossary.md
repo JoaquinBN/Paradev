@@ -2,7 +2,7 @@
 
 Input for translators, reviewers, and the translation CI prompt. Policy
 (Kiet, 2026-08-27): **product vocabulary translates — except the words
-"Paradev" and the former name "Superset", which are never translated or
+"Wanker" and the former names "Paradev" and "Superset", which are never translated or
 transliterated in any locale.** "Workspace", "agent", "pane", "task", "automation", and the rest
 are rendered in each locale's natural term, not kept as English islands.
 
@@ -10,7 +10,7 @@ are rendered in each locale's natural term, not kept as English islands.
 
 These are literal identifiers, not vocabulary:
 
-- **Paradev** (brand), **Superset** (former name), product names of
+- **Wanker** (brand), **Paradev** and **Superset** (former names), product names of
   third-party agents and tools (Claude, Claude Code, Codex, Gemini, Cursor, GitHub, Linear, Slack, ...)
 - CLI commands and flags (`superset ws create`, `--json`), file paths,
   environment variables, code identifiers

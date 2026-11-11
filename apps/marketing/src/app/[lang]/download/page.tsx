@@ -13,12 +13,12 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: i18n._(
 			msg({
-				message: "Download Paradev",
+				message: "Download Wanker",
 			}),
 		),
 		description: i18n._(
 			msg({
-				message: "Your Paradev download is starting.",
+				message: "Your Wanker download is starting.",
 			}),
 		),
 		// The page fires the download on arrival, so it must not be a search

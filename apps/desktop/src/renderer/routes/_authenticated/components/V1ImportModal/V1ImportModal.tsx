@@ -55,7 +55,7 @@ export function V1ImportModal() {
 			>
 				<DialogTitle className="sr-only">
 					{page === "welcome"
-						? "Welcome to Paradev v2"
+						? "Welcome to Wanker v2"
 						: page === "intro"
 							? "Let's get you started"
 							: "Import from v1"}

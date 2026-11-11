@@ -25,8 +25,8 @@ export function ActivationNudge2({
 			<Body style={{ margin: 0, backgroundColor: "#FFFFFF" }}>
 				<Text style={paragraph}>Hey {userName},</Text>
 				<Text style={paragraph}>
-					I&apos;m Kiet, one of the founders of Paradev. Looks like you signed
-					up last week but haven&apos;t started a workspace yet.
+					I&apos;m Kiet, one of the founders of Wanker. Looks like you signed up
+					last week but haven&apos;t started a workspace yet.
 				</Text>
 				<Text style={paragraph}>
 					Did something break? Even one word helps: download, setup, trust, or

@@ -25,7 +25,7 @@ Luna. Added GPT-6.1 Terra and removed the retired GPT-5.5. Every model takes
 | OMP | Added Opus 5.5 and Sonnet 5; GPT-6 already present | Published `@oh-my-pi/pi-catalog` 18.3.4 `src/models.json` |
 | Vibe | Existing Medium 3.5 and Devstral Small choices remain current | [Mistral Vibe configuration](https://docs.mistral.ai/vibe/code/cli/configuration) |
 | Polygraph | Harness choices remain Claude, Codex, and OpenCode | This picker chooses a harness, not an underlying model |
-| Paradev chat | Added Sonnet 5; Opus 5.5 and GPT-6 already present | Anthropic model IDs above |
+| Wanker chat | Added Sonnet 5; Opus 5.5 and GPT-6 already present | Anthropic model IDs above |
 
 Agents without a curated model picker continue to use their own configured
 model selection. This audit does not add launch flags to those agents.
@@ -63,5 +63,5 @@ Each subprocess had a 75-second timeout. No project files were supplied.
 Five configurations passed inference; 26 failed before a successful response;
 two could not run. Account policy, subscriptions, credentials, and installed
 agents were not changed. Sonnet 5 passed through Claude's CLI; this does not
-constitute an end-to-end Paradev chat UI test. No model is marked working
+constitute an end-to-end Wanker chat UI test. No model is marked working
 solely because it appears in a provider catalog or passes a unit test.

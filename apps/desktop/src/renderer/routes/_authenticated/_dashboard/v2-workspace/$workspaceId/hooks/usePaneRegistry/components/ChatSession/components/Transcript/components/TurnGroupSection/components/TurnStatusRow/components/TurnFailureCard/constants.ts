@@ -21,7 +21,7 @@ export const FAILURE_TITLES: Record<TurnFailureKind, MessageDescriptor> = {
 	refused: msg({ message: "The model declined to continue" }),
 	usage_limit: msg({ message: "Stopped by the usage limit" }),
 	session_lost: msg({ message: "The agent lost this conversation" }),
-	host_stopped: msg({ message: "Paused when Paradev closed" }),
+	host_stopped: msg({ message: "Paused when Wanker closed" }),
 	unknown: msg({ message: "Task interrupted" }),
 };
 

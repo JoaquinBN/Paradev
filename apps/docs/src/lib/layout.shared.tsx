@@ -7,8 +7,8 @@ export function baseOptions(): BaseLayoutProps {
 		nav: {
 			title: (
 				<div className="flex items-center gap-2">
-					<Image src="/logo.png" alt="Paradev" width={24} height={24} />
-					<span className="font-semibold">Paradev</span>
+					<Image src="/logo.png" alt="Wanker" width={24} height={24} />
+					<span className="font-semibold">Wanker</span>
 				</div>
 			),
 			url: COMPANY.MARKETING_URL,

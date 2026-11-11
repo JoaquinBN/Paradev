@@ -127,7 +127,7 @@ describe("artifact guard hook", () => {
 		expect(stdout).toBe("");
 	});
 
-	it("stays silent outside a Paradev terminal", () => {
+	it("stays silent outside a Wanker terminal", () => {
 		freshStateDir();
 		const { stdout } = runGuard(publishInput("session-a"), {
 			SUPERSET_TERMINAL_ID: "",

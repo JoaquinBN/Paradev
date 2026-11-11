@@ -145,7 +145,7 @@ interface ComparisonRow {
 	id: string;
 	label: MessageDescriptor;
 	paradev: MessageDescriptor;
-	unpricedParadev?: MessageDescriptor;
+	unpricedWanker?: MessageDescriptor;
 	conductor: MessageDescriptor;
 }
 
@@ -209,7 +209,7 @@ export const COMPARISON_ROWS: ComparisonRow[] = [
 		paradev: msg({
 			message: "Free for one user. Pro from {proPrice}/user/mo",
 		}),
-		unpricedParadev: msg({ message: "Free for one user. Paid plans per user" }),
+		unpricedWanker: msg({ message: "Free for one user. Paid plans per user" }),
 		conductor: msg({ message: "No longer on sale" }),
 	},
 ];

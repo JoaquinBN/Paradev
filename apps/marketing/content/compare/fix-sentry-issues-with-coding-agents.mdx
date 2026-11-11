@@ -1,6 +1,6 @@
 ---
 title: "How to Have Coding Agents Pick Up New Sentry Issues Automatically (2026)"
-description: "Start Claude Code or Codex on every new Sentry error so it reproduces the bug in a test and opens a draft pull request. Paradev automations, Sentry Seer, and GitHub Copilot compared."
+description: "Start Claude Code or Codex on every new Sentry error so it reproduces the bug in a test and opens a draft pull request. Wanker automations, Sentry Seer, and GitHub Copilot compared."
 date: 2026-10-30
 lastUpdated: 2026-11-05
 type: "tutorial"
@@ -21,11 +21,11 @@ keywords:
   - codex fix sentry errors
 ---
 
-To have a coding agent pick up new Sentry issues automatically, connect Sentry to a tool that starts an agent session when Sentry reports a new issue, and tell the agent to reproduce the error in a failing test before it changes any code. In [Paradev](https://paradev.com), that tool is an [Automation](https://docs.paradev.com/automations) (Pro) with a **Sentry → Issue created** trigger. Each new issue starts Claude Code, Codex, or another CLI agent in a fresh workspace on a machine you choose. The agent gets the issue's title, link, and event payload, and leaves a draft pull request or a written note for a person to review.
+To have a coding agent pick up new Sentry issues automatically, connect Sentry to a tool that starts an agent session when Sentry reports a new issue, and tell the agent to reproduce the error in a failing test before it changes any code. In [Wanker](https://paradev.com), that tool is an [Automation](https://docs.paradev.com/automations) (Pro) with a **Sentry → Issue created** trigger. Each new issue starts Claude Code, Codex, or another CLI agent in a fresh workspace on a machine you choose. The agent gets the issue's title, link, and event payload, and leaves a draft pull request or a written note for a person to review.
 
-Sentry also has its own agent, Seer. Its Autofix finds a root cause and can hand the fix to an external coding agent; [Sentry's docs](https://docs.sentry.io/organization/integrations/coding-agents/) list Claude, Cursor Cloud Agents, and GitHub Copilot agents. Pick Seer when you want the analysis to happen inside Sentry. Pick a Paradev automation when you want your own agent and prompt to run against your own environment.
+Sentry also has its own agent, Seer. Its Autofix finds a root cause and can hand the fix to an external coding agent; [Sentry's docs](https://docs.sentry.io/organization/integrations/coding-agents/) list Claude, Cursor Cloud Agents, and GitHub Copilot agents. Pick Seer when you want the analysis to happen inside Sentry. Pick a Wanker automation when you want your own agent and prompt to run against your own environment.
 
-This guide is published by Paradev. Details about Sentry come from Sentry's docs as of October 2026.
+This guide is published by Wanker. Details about Sentry come from Sentry's docs as of October 2026.
 
 ---
 
@@ -38,7 +38,7 @@ Most new errors with a clear stack trace are small bugs: a missing null check, a
 3. **Stop if it cannot reproduce.** Write what it checked to a file, and do not guess at a fix.
 4. **Open a draft pull request**, linked to the Sentry issue, so a person checks it before anyone requests review or merges it. CI can still run on draft pull requests.
 
-## How do I set it up in Paradev?
+## How do I set it up in Wanker?
 
 1. Connect Sentry under **Integrations**, and install and connect the [Sentry plugin](https://docs.paradev.com/plugins/available/sentry) so the agent can read the issue's events and stack trace. Plugin tools reach Claude Code and Codex; other agents need their own Sentry MCP setup.
 2. Go to **Automations → New automation**. Pick the project for the repository that the Sentry project reports from, a device that stays online, and an agent.
@@ -71,7 +71,7 @@ superset automations create --name "Sentry triage" --project <project-id> \
 
 Without `--host`, the automation runs on the machine where you type the command. Pass the ID of a host that stays online, from `superset hosts list`.
 
-The trigger's event payload describes the issue, but the stack trace, breadcrumbs, and other events for the same issue come from Sentry itself. The Sentry plugin connects the agent to Sentry's MCP server for those, and Paradev keeps the Sentry credentials, so the agent and the machine never see them.
+The trigger's event payload describes the issue, but the stack trace, breadcrumbs, and other events for the same issue come from Sentry itself. The Sentry plugin connects the agent to Sentry's MCP server for those, and Wanker keeps the Sentry credentials, so the agent and the machine never see them.
 
 ## Which Sentry events should start a run?
 
@@ -95,18 +95,18 @@ Start narrow. A noisy Sentry project can create dozens of issues an hour, and ea
 
 | Option | Who does the analysis | Who writes the fix | Where it runs |
 | --- | --- | --- | --- |
-| Paradev automation on Sentry issues | Your agent (Claude Code, Codex, or another CLI agent), with your prompt | The same agent | Your machine, a shared host, your own Linux server (Bring Your Own Cloud), or a cloud workspace |
+| Wanker automation on Sentry issues | Your agent (Claude Code, Codex, or another CLI agent), with your prompt | The same agent | Your machine, a shared host, your own Linux server (Bring Your Own Cloud), or a cloud workspace |
 | [Sentry Seer Autofix](https://docs.sentry.io/product/ai-in-sentry/seer/) | Seer, with Sentry's traces, logs, and profiles | Seer, or a handoff to Claude, Cursor Cloud Agents, or GitHub Copilot agents | Sentry and the chosen agent's environment |
 | Sentry MCP server in your own agent | Your agent, when you ask it | Your agent | Wherever you run it, started by hand |
 | [GitHub Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) | Copilot, in a session started from a GitHub issue | Copilot | GitHub |
 
-Seer's strength is context: it reads the traces, logs, and profiles Sentry already has, and adds its root cause analysis to the issue page. Pull request creation can be turned off in Seer's settings if you want a person to write the fix. A Paradev automation's strength is control over the run: you choose the agent and the prompt, the run happens in a full checkout of your repository with your tools and test setup, once the host or cloud environment has them, and the result lands in a workspace you can open, continue, or hand to a teammate. The two also combine: let Seer find the root cause in Sentry, and use a Paradev **Issue assigned** trigger to start your agent on the issues a person hands over.
+Seer's strength is context: it reads the traces, logs, and profiles Sentry already has, and adds its root cause analysis to the issue page. Pull request creation can be turned off in Seer's settings if you want a person to write the fix. A Wanker automation's strength is control over the run: you choose the agent and the prompt, the run happens in a full checkout of your repository with your tools and test setup, once the host or cloud environment has them, and the result lands in a workspace you can open, continue, or hand to a teammate. The two also combine: let Seer find the root cause in Sentry, and use a Wanker **Issue assigned** trigger to start your agent on the issues a person hands over.
 
 ## Frequently Asked Questions
 
 ### Can Claude Code fix Sentry errors automatically?
 
-Yes, with something to start it. A Paradev automation with a Sentry **Issue created** trigger runs Claude Code on each new issue. Sentry Seer can also hand an issue to a Claude agent from its Autofix flow.
+Yes, with something to start it. A Wanker automation with a Sentry **Issue created** trigger runs Claude Code on each new issue. Sentry Seer can also hand an issue to a Claude agent from its Autofix flow.
 
 ### Will the agent push a fix to production?
 

@@ -57,7 +57,7 @@ export const PRODUCT_IMAGE_ASSETS: BrandAsset[] = [
 		fileName: "paradev-desktop.png",
 		format: "PNG",
 		dimensions: "2400 × 1260",
-		label: msg({ message: "Paradev desktop app" }),
+		label: msg({ message: "Wanker desktop app" }),
 		previewClassName: "",
 	},
 	{
@@ -65,7 +65,7 @@ export const PRODUCT_IMAGE_ASSETS: BrandAsset[] = [
 		fileName: "paradev-mobile-terminal.png",
 		format: "PNG",
 		dimensions: "1600 × 1000",
-		label: msg({ message: "Paradev Mobile terminal on iPhone" }),
+		label: msg({ message: "Wanker Mobile terminal on iPhone" }),
 		previewClassName: "",
 	},
 	{
@@ -73,7 +73,7 @@ export const PRODUCT_IMAGE_ASSETS: BrandAsset[] = [
 		fileName: "paradev-mobile-diff.png",
 		format: "PNG",
 		dimensions: "1600 × 1000",
-		label: msg({ message: "Paradev Mobile code diff on iPhone" }),
+		label: msg({ message: "Wanker Mobile code diff on iPhone" }),
 		previewClassName: "",
 	},
 ];

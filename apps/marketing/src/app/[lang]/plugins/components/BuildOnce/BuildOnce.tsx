@@ -14,7 +14,7 @@ export function BuildOnce() {
 			</h2>
 			<p className="mt-5 max-w-xl text-lg text-muted-foreground leading-relaxed">
 				<Trans>
-					A manifest and a few skill files. Paradev puts it where every agent
+					A manifest and a few skill files. Wanker puts it where every agent
 					looks.
 				</Trans>
 			</p>

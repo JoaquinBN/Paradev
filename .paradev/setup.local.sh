@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Local-development setup. Provisions a fully self-contained, PER-WORKSPACE
-# Paradev stack backed by a local Postgres container + fake credentials — no
+# Wanker stack backed by a local Postgres container + fake credentials — no
 # Neon account, no real third-party keys. Mirrors setup.sh, but replaces the
 # Neon branch with a docker-compose bundle (Postgres + neon-proxy + Redis/SRH)
 # on per-workspace allocated ports so multiple worktrees never collide.
@@ -314,7 +314,7 @@ local_setup_main() {
   FAILED_STEPS=()
   SKIPPED_STEPS=()
 
-  echo "🚀 Setting up Paradev for LOCAL development..."
+  echo "🚀 Setting up Wanker for LOCAL development..."
   echo ""
 
   local_ensure_env || step_failed "Prepare .env"

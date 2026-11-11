@@ -10,7 +10,7 @@ export function GET(request: Request): Response {
 				{
 					name: "superset",
 					description:
-						"Paradev MCP server — orchestrate parallel coding agents, workspaces, automations, and tasks.",
+						"Wanker MCP server — orchestrate parallel coding agents, workspaces, automations, and tasks.",
 					url: `${origin}/mcp`,
 					transport: "streamable-http",
 					serverCard: `${origin}/.well-known/mcp/server-card.json`,
@@ -23,7 +23,7 @@ export function GET(request: Request): Response {
 				{
 					name: "superset-docs",
 					description:
-						"Paradev documentation over MCP — search and read docs pages.",
+						"Wanker documentation over MCP — search and read docs pages.",
 					url: `${CANONICAL_URLS.DOCS}/mcp`,
 					transport: "streamable-http",
 					authentication: { type: "none" },

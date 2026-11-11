@@ -132,7 +132,7 @@ export function CompareLayout({
 
 				<aside className="my-12 border-y border-border py-10 text-center">
 					<h2 className="text-xl font-medium text-foreground">
-						<Trans>Run parallel coding agents with Paradev</Trans>
+						<Trans>Run parallel coding agents with Wanker</Trans>
 					</h2>
 					<p className="mt-2 mb-6 text-muted-foreground">
 						<Trans>

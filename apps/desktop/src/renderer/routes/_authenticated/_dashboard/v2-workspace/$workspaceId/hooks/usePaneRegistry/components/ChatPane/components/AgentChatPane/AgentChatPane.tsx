@@ -9,7 +9,7 @@ import type {
 	OpenPage,
 } from "../../../ChatSession/providers/ChatPaneActionsProvider";
 
-/** A Paradev agent's session on this workspace, in the same chat view as any other chat. */
+/** A Wanker agent's session on this workspace, in the same chat view as any other chat. */
 export function AgentChatPane({
 	agentSessionId,
 	agentName,

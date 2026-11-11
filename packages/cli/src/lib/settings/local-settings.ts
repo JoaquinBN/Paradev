@@ -19,8 +19,8 @@ function openLocalDb() {
 	const path = getLocalDbPath();
 	if (!existsSync(path)) {
 		throw new CLIError(
-			`Paradev local database not found at ${path}`,
-			"Launch the Paradev desktop app once on this machine first.",
+			`Wanker local database not found at ${path}`,
+			"Launch the Wanker desktop app once on this machine first.",
 		);
 	}
 	let sqlite: Database;
@@ -107,8 +107,8 @@ export function updateSettingsAtomically<Result>(
 	} catch (error) {
 		if (isMissingTableError(error)) {
 			throw new CLIError(
-				"The Paradev local database has no settings table",
-				"Launch the Paradev desktop app once to run its migrations, then retry.",
+				"The Wanker local database has no settings table",
+				"Launch the Wanker desktop app once to run its migrations, then retry.",
 			);
 		}
 		throw error;

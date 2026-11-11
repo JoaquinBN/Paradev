@@ -34,7 +34,7 @@ export function GithubStarRow({ searchQuery }: GithubStarRowProps) {
 				<Label className="text-sm font-medium">
 					<HighlightText
 						text={t({
-							message: "Star Paradev on GitHub",
+							message: "Star Wanker on GitHub",
 						})}
 						query={searchQuery}
 					/>

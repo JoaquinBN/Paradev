@@ -177,7 +177,7 @@ export function ChatHistoryPicker({
 					) : null}
 					{native.data?.pages[0]?.supported === false ? (
 						<p className="p-2 text-xs text-muted-foreground">
-							<Trans>This agent only shows chats saved in Paradev.</Trans>
+							<Trans>This agent only shows chats saved in Wanker.</Trans>
 						</p>
 					) : null}
 					{visibleAgentSessions.length > 0 ? (

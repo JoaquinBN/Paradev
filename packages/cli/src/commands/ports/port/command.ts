@@ -25,7 +25,7 @@ export default command({
 		if (rows.length === 0) {
 			throw new CLIError(
 				`Port ${port} is not forwarded by anyone`,
-				"Forward it from Share → Ports in Paradev",
+				"Forward it from Share → Ports in Wanker",
 			);
 		}
 		return {

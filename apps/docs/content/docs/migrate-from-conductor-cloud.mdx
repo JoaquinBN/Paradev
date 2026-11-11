@@ -1,9 +1,9 @@
 ---
 title: Migrate from Conductor Cloud
-description: Move your Conductor Cloud workspaces to Paradev before Conductor Cloud shuts down
+description: Move your Conductor Cloud workspaces to Wanker before Conductor Cloud shuts down
 ---
 
-Conductor is [joining Meta](https://www.conductor.build/announcement), and Conductor Cloud is shutting down. This guide gets your cloud work out of Conductor and into Paradev, either on your Mac or in a Paradev cloud workspace.
+Conductor is [joining Meta](https://www.conductor.build/announcement), and Conductor Cloud is shutting down. This guide gets your cloud work out of Conductor and into Wanker, either on your Mac or in a Wanker cloud workspace.
 
 <Callout type="warn" title="Conductor Cloud's timeline">
 - **November 13, 2026:** Conductor Cloud goes read-only. You can still read chats and export data, but you cannot send messages to agents.
@@ -16,14 +16,14 @@ For the local Conductor app, see [Migrate from Conductor](/migrate-from-conducto
 
 ## What Maps to What
 
-| Conductor Cloud | Paradev |
+| Conductor Cloud | Wanker |
 |---|---|
 | Cloud workspace | [Cloud workspace](/cloud-workspaces) |
 | Cloud setup: repositories, variables, secrets | [Environment](/cloud-workspaces#1-create-an-environment) with [variables](/cloud-workspaces#2-add-variables) |
 | Setup script and actions | `.paradev/config.json` ([lifecycle scripts](/setup-teardown-scripts)) |
 | Routines | [Automations](/automations) with **Cloud** as the device |
 | iOS app | [iPhone and iPad app](/mobile) |
-| Cloud organization | Paradev organization. Environments are visible to the whole organization by default |
+| Cloud organization | Wanker organization. Environments are visible to the whole organization by default |
 
 ## 1. Save Your Work in Conductor
 
@@ -31,14 +31,14 @@ Do this first, before November 13 if you can.
 
 1. **Push every branch.** In each Conductor Cloud workspace, commit all changes, including new files (`git add -A`), and push the branch. A pushed branch is safe on GitHub whatever you choose next.
    A push does not include Git-ignored files, such as `.env` files or local data. Copy out any you need before November 20.
-2. **Export your data.** In Conductor, go to **Settings → Account → Export data**. This keeps a copy of your chats. Paradev cannot import Conductor chats, so this export is your record of them.
+2. **Export your data.** In Conductor, go to **Settings → Account → Export data**. This keeps a copy of your chats. Wanker cannot import Conductor chats, so this export is your record of them.
 
-Then pick where to continue: on your Mac, or in a Paradev cloud workspace.
+Then pick where to continue: on your Mac, or in a Wanker cloud workspace.
 
 ## 2a. Continue on Your Mac
 
 1. In Conductor, right-click the cloud workspace and choose **Transfer to local**. Conductor moves the workspace and its chats to your Mac.
-2. Follow [Migrate from Conductor](/migrate-from-conductor) to import the workspace into Paradev and convert your scripts.
+2. Follow [Migrate from Conductor](/migrate-from-conductor) to import the workspace into Wanker and convert your scripts.
 
 Conductor can attach a cloud workspace on your Mac to its own copy of the repository under `~/conductor/`, not to your clone. Then the workspace does not appear in your project's import list. To check, run this in the workspace folder:
 
@@ -48,11 +48,11 @@ git rev-parse --path-format=absolute --git-common-dir
 
 If the path is under `~/conductor/`, commit and push the branch from that folder. Then create a workspace from the **Existing branch** in your own clone.
 
-If you only pushed the branch, add the repository in Paradev and create a workspace from the **Existing branch** instead. See [Workspaces](/workspaces).
+If you only pushed the branch, add the repository in Wanker and create a workspace from the **Existing branch** instead. See [Workspaces](/workspaces).
 
-## 2b. Continue in a Paradev Cloud Workspace
+## 2b. Continue in a Wanker Cloud Workspace
 
-Paradev cloud workspaces keep agents working when your laptop is closed, and you can open them from desktop, iPhone, or iPad. They come with the Team and Ultra plans, and the GitHub repository must be shared with the Paradev GitHub App. See [Requirements](/cloud-workspaces#requirements).
+Wanker cloud workspaces keep agents working when your laptop is closed, and you can open them from desktop, iPhone, or iPad. They come with the Team and Ultra plans, and the GitHub repository must be shared with the Wanker GitHub App. See [Requirements](/cloud-workspaces#requirements).
 
 ### Add your setup scripts
 
@@ -74,7 +74,7 @@ Not sure what the project needs? Click **Set up with an agent** in **Settings �
 
 1. Press **⌘N** and pick **Cloud** in the device picker.
 2. Pick the project and the environment.
-3. Choose the branch you pushed from Conductor as the base branch. Paradev creates a new working branch from it, so an open pull request for the Conductor branch does not get the new commits. Open a new pull request from the new branch, or merge it into the old one.
+3. Choose the branch you pushed from Conductor as the base branch. Wanker creates a new working branch from it, so an open pull request for the Conductor branch does not get the new commits. Open a new pull request from the new branch, or merge it into the old one.
 4. Tell the agent where to pick up, for example "Continue the work on this branch. Read the last commits and the open PR first."
 
 From the CLI:
@@ -90,11 +90,11 @@ When one workspace is fully set up, right-click it and choose **Save as environm
 
 ### Move your routines
 
-Recreate each Conductor routine as a Paradev [automation](/automations). Pick **Cloud** as the device to run each session in a new cloud workspace, and pick the [machine size](/cloud-workspaces#machine-sizes). Automations can run on a schedule or when something happens in GitHub, Slack, Linear, Sentry, and other tools.
+Recreate each Conductor routine as a Wanker [automation](/automations). Pick **Cloud** as the device to run each session in a new cloud workspace, and pick the [machine size](/cloud-workspaces#machine-sizes). Automations can run on a schedule or when something happens in GitHub, Slack, Linear, Sentry, and other tools.
 
 ## 3. Check Your Usage
 
-Paradev meters cloud usage in GB-hours: machine memory multiplied by run time. A stopped or sleeping workspace uses none, and a workspace stops by itself after about an hour of no activity. **Settings → Billing** shows what you have used. See [Usage and Billing](/cloud-workspaces#usage-and-billing).
+Wanker meters cloud usage in GB-hours: machine memory multiplied by run time. A stopped or sleeping workspace uses none, and a workspace stops by itself after about an hour of no activity. **Settings → Billing** shows what you have used. See [Usage and Billing](/cloud-workspaces#usage-and-billing).
 
 ## Get Help
 

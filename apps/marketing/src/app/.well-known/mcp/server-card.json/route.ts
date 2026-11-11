@@ -3,10 +3,10 @@ import { API_URL, MCP_SERVER_URL } from "@/lib/llms";
 
 const FALLBACK_CARD = {
 	name: "superset",
-	title: "Paradev",
+	title: "Wanker",
 	icon: `${COMPANY.MARKETING_URL}/apple-touch-icon.png`,
 	description:
-		"Paradev MCP server: create Git-worktree workspaces, launch coding-agent sessions, set up automations, open terminals, and manage tasks on behalf of a Paradev user.",
+		"Wanker MCP server: create Git-worktree workspaces, launch coding-agent sessions, set up automations, open terminals, and manage tasks on behalf of a Wanker user.",
 	version: "0.1.0",
 	serverUrl: MCP_SERVER_URL,
 	transport: "streamable-http",

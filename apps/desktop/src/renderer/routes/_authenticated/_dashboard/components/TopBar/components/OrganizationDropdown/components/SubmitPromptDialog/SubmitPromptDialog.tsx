@@ -83,7 +83,7 @@ export function SubmitPromptDialog({
 					</DialogTitle>
 					<DialogDescription>
 						<Trans>
-							Prompt a coding agent to build what you want to see in Paradev. If
+							Prompt a coding agent to build what you want to see in Wanker. If
 							we like your prompt, we'll run it and merge the result.
 						</Trans>
 					</DialogDescription>

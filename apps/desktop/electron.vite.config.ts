@@ -237,7 +237,7 @@ export default defineConfig({
 			),
 			"process.env.DESKTOP_DISPLAY_NAME": defineEnv(
 				process.env.DESKTOP_DISPLAY_NAME,
-				"Superset",
+				"Wanker",
 			),
 		},
 

@@ -54,7 +54,7 @@ export function AcquisitionSourceRow({
 	disabled,
 }: AcquisitionSourceRowProps) {
 	const { t, i18n } = useLingui();
-	const question = t`How did you hear about Paradev?`;
+	const question = t`How did you hear about Wanker?`;
 
 	const labelText = (label: MessageDescriptor | string) =>
 		typeof label === "string" ? label : i18n._(label);
@@ -126,7 +126,7 @@ export function AcquisitionSourceRow({
 					disabled={disabled}
 					onChange={(e) => onChange({ ...value, otherText: e.target.value })}
 					placeholder={t`Where? (optional)`}
-					aria-label={t`Where did you hear about Paradev?`}
+					aria-label={t`Where did you hear about Wanker?`}
 				/>
 			)}
 		</div>

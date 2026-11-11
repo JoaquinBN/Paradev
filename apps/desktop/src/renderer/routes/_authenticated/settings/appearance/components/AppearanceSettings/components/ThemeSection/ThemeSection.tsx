@@ -335,7 +335,7 @@ export function ThemeSection() {
 			name: "My Custom Theme",
 			type: baseTheme.type,
 			author: "You",
-			description: "Custom Paradev theme",
+			description: "Custom Wanker theme",
 			ui: baseTheme.ui,
 			terminal: getTerminalColors(baseTheme),
 		};

@@ -109,7 +109,7 @@ describe("movePaneSitesOnce", () => {
 		expect(run.cleared).toEqual([]);
 	});
 
-	it("moves and clears only other sites, never Paradev's own", async () => {
+	it("moves and clears only other sites, never Wanker's own", async () => {
 		const from = store([
 			cookie({ domain: ".github.com", hostOnly: false }),
 			cookie({ name: "app", domain: "api.superset.sh" }),

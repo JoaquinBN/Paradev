@@ -127,7 +127,7 @@ const UNGROUPED_KEY = "\u0000ungrouped";
 // superset:automate; mentioning it by name loads it (it isn't in the chat
 // slash-command allowlist).
 const AUTOMATION_AGENT_PROMPT =
-	"Help me create a Paradev automation. Use the superset:automate skill if it's available, otherwise the `superset` CLI (start with `superset automations --help`). Ask me what the automation should do and what should fire it — a schedule, or an event like a Slack message, GitHub pull request, or Linear issue. Confirm that, the target project, and the agent, then create the automation and trigger a first run so we can review the result together.";
+	"Help me create a Wanker automation. Use the superset:automate skill if it's available, otherwise the `superset` CLI (start with `superset automations --help`). Ask me what the automation should do and what should fire it — a schedule, or an event like a Slack message, GitHub pull request, or Linear issue. Confirm that, the target project, and the agent, then create the automation and trigger a first run so we can review the result together.";
 
 function AutomationsPage() {
 	const { t } = useLingui();

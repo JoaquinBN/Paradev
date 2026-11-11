@@ -1,6 +1,6 @@
 # @superset/email
 
-Email templates for Paradev, built with [React Email](https://react.email).
+Email templates for Wanker, built with [React Email](https://react.email).
 
 ## Images in Email
 
@@ -126,7 +126,7 @@ const html = render(<WelcomeEmail userName="Satya" />);
 await resend.emails.send({
   from: "noreply@superset.sh",
   to: user.email,
-  subject: "Welcome to Paradev!",
+  subject: "Welcome to Wanker!",
   html,
 });
 ```

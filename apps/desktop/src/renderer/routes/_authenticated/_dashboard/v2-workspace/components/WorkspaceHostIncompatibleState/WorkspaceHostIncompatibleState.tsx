@@ -82,8 +82,8 @@ export function WorkspaceHostIncompatibleState({
 							</Trans>
 						) : (
 							<Trans>
-								Update Paradev on that device. In-app updates require a
-								supported standalone install and a released app version.
+								Update Wanker on that device. In-app updates require a supported
+								standalone install and a released app version.
 							</Trans>
 						)}
 					</p>
@@ -105,9 +105,9 @@ export function WorkspaceHostIncompatibleState({
 						</div>
 						<span className="shrink-0 font-mono text-[11px] text-muted-foreground/70">
 							{installSource === "cli" ? (
-								<Trans>Paradev CLI</Trans>
+								<Trans>Wanker CLI</Trans>
 							) : installSource === "desktop" ? (
-								<Trans>Paradev app</Trans>
+								<Trans>Wanker app</Trans>
 							) : null}
 						</span>
 					</div>

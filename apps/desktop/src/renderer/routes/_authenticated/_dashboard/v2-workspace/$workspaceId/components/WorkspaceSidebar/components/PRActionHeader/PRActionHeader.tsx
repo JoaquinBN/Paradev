@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { WindowControlsInset } from "renderer/routes/_authenticated/_dashboard/components/WindowControlsInset";
 
 interface PRActionHeaderProps {
@@ -8,11 +8,11 @@ interface PRActionHeaderProps {
 }
 
 export function PRActionHeader({ runButton }: PRActionHeaderProps) {
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 	return (
 		<div
 			className={
-				isParadevShell
+				isWankerShell
 					? "@container/strip flex h-12 shrink-0 items-center gap-2 px-2"
 					: "@container/strip flex h-12 shrink-0 items-center gap-2 bg-muted/45 px-2 dark:bg-muted/35"
 			}

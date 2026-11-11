@@ -30,10 +30,10 @@ export async function GET(request: Request): Promise<Response> {
 
 	const card = {
 		name: "superset",
-		title: "Paradev",
+		title: "Wanker",
 		icon: `${CANONICAL_URLS.MARKETING}/apple-touch-icon.png`,
 		description:
-			"Paradev MCP server: create Git-worktree workspaces, launch coding-agent sessions, schedule automations, open terminals, and manage tasks on behalf of a Paradev user.",
+			"Wanker MCP server: create Git-worktree workspaces, launch coding-agent sessions, schedule automations, open terminals, and manage tasks on behalf of a Wanker user.",
 		version: "0.1.0",
 		serverUrl: `${origin}/mcp`,
 		transport: "streamable-http",
@@ -41,7 +41,7 @@ export async function GET(request: Request): Promise<Response> {
 		authentication: {
 			type: "oauth2",
 			resourceMetadataUrl: `${origin}/.well-known/oauth-protected-resource`,
-			description: `OAuth 2.1 authorization code + PKCE with RFC 7591 dynamic client registration, or a user-issued Paradev API key as a Bearer token. Walkthrough: ${CANONICAL_URLS.MARKETING}/auth.md`,
+			description: `OAuth 2.1 authorization code + PKCE with RFC 7591 dynamic client registration, or a user-issued Wanker API key as a Bearer token. Walkthrough: ${CANONICAL_URLS.MARKETING}/auth.md`,
 		},
 		tools: await listTools(),
 	};

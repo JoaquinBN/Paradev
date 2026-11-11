@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="full" alt="Claude ve OpenCode, canlı farklarla paralel Paradev çalışma alanlarında çalışıyor" src="../apps/marketing/public/images/readme-hero.gif" />
+<img width="full" alt="Claude ve OpenCode, canlı farklarla paralel Wanker çalışma alanlarında çalışıyor" src="../apps/marketing/public/images/readme-hero.gif" />
 
 ### 100'den Fazla Kodlama Ajanını Paralel Çalıştırın
 
@@ -36,7 +36,7 @@ Zamanınızı beklemeye değil, ürün çıkarmaya ayırın.
 
 ## Bağlam Değiştirme Maliyeti Olmadan 10 Kat Hızlı Kod Yazın
 
-Paradev, CLI tabanlı kodlama ajanlarını izole git worktree'lerinde paralel çalıştırır; yerleşik terminal, inceleme ve editörde açma iş akışlarıyla birlikte gelir.
+Wanker, CLI tabanlı kodlama ajanlarını izole git worktree'lerinde paralel çalıştırır; yerleşik terminal, inceleme ve editörde açma iş akışlarıyla birlikte gelir.
 
 - **Birden fazla ajanı aynı anda çalıştırın** — bağlam değiştirme yükü olmadan
 - **Her görevi kendi git worktree'sinde izole edin** — ajanlar birbirine karışmaz
@@ -151,15 +151,15 @@ Başka bir makineyi bağlayın ve çalışma alanlarına her yerden erişin: mas
 <tr>
 <td width="50%" valign="middle">
 
-### Paradev CLI
+### Wanker CLI
 
-Herhangi bir kabuktan betikleyin: tek bir ikili dosyayla çalışma alanları oluşturun, ajanlar başlatın, terminallerini okuyun ve otomasyonları yönetin. Bir ajan komut çalıştırabiliyorsa Paradev'i de yönetebilir.
+Herhangi bir kabuktan betikleyin: tek bir ikili dosyayla çalışma alanları oluşturun, ajanlar başlatın, terminallerini okuyun ve otomasyonları yönetin. Bir ajan komut çalıştırabiliyorsa Wanker'i de yönetebilir.
 
 [Belgeler →](https://docs.paradev.com/cli/getting-started)
 
 </td>
 <td width="50%">
-  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Paradev CLI ile bir çalışma alanı oluşturuluyor ve bir ajan başlatılıyor" width="100%" /></a>
+  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Wanker CLI ile bir çalışma alanı oluşturuluyor ve bir ajan başlatılıyor" width="100%" /></a>
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ Tek bir arama kutusundan herhangi bir çalışma alanına, eyleme veya ayara atl
 
 ## Desteklenen Ajanlar
 
-Paradev, aşağıdakiler dahil CLI tabanlı her kodlama ajanıyla çalışır:
+Wanker, aşağıdakiler dahil CLI tabanlı her kodlama ajanıyla çalışır:
 
 | Ajan | Durum |
 |:------|:-------|
@@ -220,7 +220,7 @@ Paradev, aşağıdakiler dahil CLI tabanlı her kodlama ajanıyla çalışır:
 | <picture><source media="(prefers-color-scheme: dark)" srcset="../packages/ui/src/assets/icons/preset-icons/polygraph-white.svg" /><img height="16" align="top" alt="Polygraph" src="../packages/ui/src/assets/icons/preset-icons/polygraph.svg" /></picture> &nbsp;[Polygraph](https://trypolygraph.com/) | Tam destek |
 | Başka herhangi bir CLI ajanı | Yapılandırma gerektirmeden çalışır |
 
-Bir terminalde çalışıyorsa Paradev üzerinde de çalışır
+Bir terminalde çalışıyorsa Wanker üzerinde de çalışır
 
 Ajanlar bir terminalden fazlasını elde eder:
 
@@ -238,7 +238,7 @@ Her yüzey aynı çalışma alanlarıyla konuşur; bir görevi uygulamada başla
 |:--------|:-------------|
 | [**Masaüstü Uygulaması**](https://github.com/paradevai/paradev/releases/latest) | Eksiksiz IDE: terminaller, fark görüntüleyici, uygulama içi tarayıcı, otomasyonlar |
 | [**CLI**](https://docs.paradev.com/cli/getting-started) | Herhangi bir kabuktan çalışma alanlarını, ajanları, terminalleri ve ana bilgisayarları yönetmek için tek bir `superset` ikili dosyası |
-| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Node, Bun veya Deno üzerinden [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) ile Paradev'i programatik olarak yönetin |
+| [**TypeScript SDK**](https://docs.paradev.com/sdk/getting-started) | Node, Bun veya Deno üzerinden [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) ile Wanker'i programatik olarak yönetin |
 | [**MCP Sunucusu**](https://docs.paradev.com/mcp) | Claude Code, Codex, Cursor ve diğer ajanların çalışma alanlarını kendilerinin oluşturup yönetmesine izin verin |
 
 CLI, masaüstü uygulamasıyla birlikte gelir; tek başına da kurabilirsiniz:
@@ -260,12 +260,12 @@ Masaüstü uygulamasını indirin:
 - **Windows**: henüz mevcut değil
 - [Tüm derlemeler](https://github.com/paradevai/paradev/releases/latest)
 
-Kurulu olması gereken tek şey [Git](https://git-scm.com/). [gh](https://cli.github.com/) isteğe bağlıdır ve PR iş akışlarının kilidini açar; Paradev sizin için kurmayı önerir.
+Kurulu olması gereken tek şey [Git](https://git-scm.com/). [gh](https://cli.github.com/) isteğe bağlıdır ve PR iş akışlarının kilidini açar; Wanker sizin için kurmayı önerir.
 
 ## Geliştirme
 
-Paradev üzerinde çalışmak veya bir PR ile katkıda bulunmak mı istiyorsunuz? Depoyu klonlayın,
-kurulu Paradev uygulamasına ekleyin ve değişikliğiniz için bir çalışma alanı oluşturun:
+Wanker üzerinde çalışmak veya bir PR ile katkıda bulunmak mı istiyorsunuz? Depoyu klonlayın,
+kurulu Wanker uygulamasına ekleyin ve değişikliğiniz için bir çalışma alanı oluşturun:
 
 ```bash
 git clone https://github.com/paradevai/paradev.git
@@ -280,7 +280,7 @@ bun run dev
 
 `setup.local.sh` betiğini her yeni worktree'de bir kez çalıştırın. Betik, çalışma alanına özgü
 uygulama kimliğini ve portları yapılandırır; böylece geliştirme masaüstü uygulaması, kurulu
-Paradev uygulaması ve diğer geliştirme worktree'leriyle yan yana çalışabilir.
+Wanker uygulaması ve diğer geliştirme worktree'leriyle yan yana çalışabilir.
 
 Neon hesabı veya üçüncü taraf kimlik bilgileri gerekmez. `setup.local.sh`, Docker üzerinden
 yerel bir Postgres + Electric yığını başlatır ve bir geliştirme hesabı oluşturur.
@@ -333,7 +333,7 @@ Katkılarınızı bekliyoruz! Kurulum ve PR açma adımları için [CONTRIBUTING
 
 ## Topluluk
 
-Yardım almak, geri bildirim paylaşmak ve diğer kullanıcılarla bağlantı kurmak için Paradev topluluğuna katılın:
+Yardım almak, geri bildirim paylaşmak ve diğer kullanıcılarla bağlantı kurmak için Wanker topluluğuna katılın:
 
 - **[Discord](https://discord.gg/cZeD9WYcV7)**: ekiple ve toplulukla sohbet edin
 - **[Twitter](https://x.com/paradevai)**: güncellemeler ve duyurular için takip edin

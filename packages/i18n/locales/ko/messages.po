@@ -393,8 +393,8 @@ msgid "{0, plural, one {Show # more line} other {Show # more lines}}"
 msgstr "{0, plural, one {#줄 더 보기} other {#줄 더 보기}}"
 
 #. placeholder {0}: importableWorktrees.length
-msgid "{0, plural, one {This will import # existing worktree into Paradev as workspaces. Each worktree on disk will be tracked and appear in your sidebar. No files will be modified.} other {This will import # existing worktrees into Paradev as workspaces. Each worktree on disk will be tracked and appear in your sidebar. No files will be modified.}}"
-msgstr "{0, plural, one {기존 worktree #개를 워크스페이스로 Paradev에 가져옵니다. 디스크의 각 worktree가 추적되어 사이드바에 표시됩니다. 파일은 변경되지 않습니다.} other {기존 worktree #개를 워크스페이스로 Paradev에 가져옵니다. 디스크의 각 worktree가 추적되어 사이드바에 표시됩니다. 파일은 변경되지 않습니다.}}"
+msgid "{0, plural, one {This will import # existing worktree into Wanker as workspaces. Each worktree on disk will be tracked and appear in your sidebar. No files will be modified.} other {This will import # existing worktrees into Wanker as workspaces. Each worktree on disk will be tracked and appear in your sidebar. No files will be modified.}}"
+msgstr "{0, plural, one {기존 worktree #개를 워크스페이스로 Wanker에 가져옵니다. 디스크의 각 worktree가 추적되어 사이드바에 표시됩니다. 파일은 변경되지 않습니다.} other {기존 worktree #개를 워크스페이스로 Wanker에 가져옵니다. 디스크의 각 worktree가 추적되어 사이드바에 표시됩니다. 파일은 변경되지 않습니다.}}"
 
 #. placeholder {0}: resolved.length
 msgid "{0, plural, one {View # resolved comment} other {View # resolved comments}}"
@@ -414,8 +414,8 @@ msgid "{0} — device offline"
 msgstr "{0} — 기기 오프라인"
 
 #. placeholder {0}: error.message
-msgid "{0} — try the Paradev tray menu > Host Service > Restart."
-msgstr "{0} — Paradev 트레이 메뉴 > Host Service > Restart를 사용해 보세요."
+msgid "{0} — try the Wanker tray menu > Host Service > Restart."
+msgstr "{0} — Wanker 트레이 메뉴 > Host Service > Restart를 사용해 보세요."
 
 #. placeholder {0}: window.label
 #. placeholder {1}: formatPercent(window.usedPercent / 100)
@@ -939,8 +939,8 @@ msgstr "{count, plural, one {자동화 #개를 그룹에서 제거했습니다} 
 msgid "{count, plural, one {Resume # chat?} other {Resume # chats?}}"
 msgstr "{count, plural, other {채팅 #개를 재개할까요?}}"
 
-msgid "{count, plural, one {This chat hadn't finished when Paradev closed} other {These chats hadn't finished when Paradev closed}}"
-msgstr "{count, plural, other {Paradev가 종료될 때 끝나지 않은 채팅입니다}}"
+msgid "{count, plural, one {This chat hadn't finished when Wanker closed} other {These chats hadn't finished when Wanker closed}}"
+msgstr "{count, plural, other {Wanker가 종료될 때 끝나지 않은 채팅입니다}}"
 
 msgid "{count, plural, one {Used # source} other {Used # sources}}"
 msgstr "{count, plural, one {출처 #개 사용} other {출처 #개 사용}}"
@@ -1539,11 +1539,11 @@ msgid "<0>{0}</0> is not a git repository. Would you like to initialize one?"
 msgstr "<0>{0}</0>은(는) git 저장소가 아닙니다. 저장소를 초기화할까요?"
 
 #. placeholder {0}: remoteHost.name
-msgid "<0>{0}</0> isn't connected to the Paradev relay, so its runs will be skipped. Check its <1>host settings</1>, and make sure relay access is on in Settings > Remote Access on that device."
-msgstr "<0>{0}</0>이(가) Paradev 릴레이에 연결되어 있지 않아 실행이 건너뛰어집니다. <1>호스트 설정</1>을 확인하고, 해당 기기의 설정 > 원격 액세스에서 릴레이 접근이 켜져 있는지 확인하세요."
+msgid "<0>{0}</0> isn't connected to the Wanker relay, so its runs will be skipped. Check its <1>host settings</1>, and make sure relay access is on in Settings > Remote Access on that device."
+msgstr "<0>{0}</0>이(가) Wanker 릴레이에 연결되어 있지 않아 실행이 건너뛰어집니다. <1>호스트 설정</1>을 확인하고, 해당 기기의 설정 > 원격 액세스에서 릴레이 접근이 켜져 있는지 확인하세요."
 
-msgid "<0>{displayName}</0> is requesting access to your Paradev account"
-msgstr "<0>{displayName}</0>이(가) Paradev 계정에 대한 접근을 요청합니다"
+msgid "<0>{displayName}</0> is requesting access to your Wanker account"
+msgstr "<0>{displayName}</0>이(가) Wanker 계정에 대한 접근을 요청합니다"
 
 msgid "<0>{primaryFont}</0> is not installed on this system. Falling back to the next available font."
 msgstr "이 시스템에 <0>{primaryFont}</0>이(가) 설치되어 있지 않습니다. 사용할 수 있는 다음 글꼴로 대체합니다."
@@ -1716,8 +1716,8 @@ msgstr "이 세션에서 200K 중 87.4K 토큰을 사용했습니다."
 msgid "A better in-app browser: preview your changes and click any element to send it to the agent as context."
 msgstr "더 나은 인앱 브라우저입니다. 변경 사항을 미리 보고, 아무 요소나 클릭해 에이전트에 컨텍스트로 보내세요."
 
-msgid "A better Paradev is ready"
-msgstr "더 나은 Paradev가 준비되었습니다"
+msgid "A better Wanker is ready"
+msgstr "더 나은 Wanker가 준비되었습니다"
 
 msgid "A CDP endpoint per pane"
 msgstr "패널마다 전용 CDP 엔드포인트"
@@ -1789,14 +1789,14 @@ msgstr "진행 중인 작업, 다음 순서, 그리고 {company}이(가) 향하�
 msgid "A majority of production changes merge without any human reading the diff."
 msgstr "프로덕션 변경의 과반이 사람이 차이를 읽지 않은 채 머지됩니다."
 
-msgid "A manifest and a few skill files. Paradev puts it where every agent looks."
-msgstr "매니페스트와 스킬 파일 몇 개면 됩니다. Paradev가 각 에이전트가 찾는 위치에 배치합니다."
+msgid "A manifest and a few skill files. Wanker puts it where every agent looks."
+msgstr "매니페스트와 스킬 파일 몇 개면 됩니다. Wanker가 각 에이전트가 찾는 위치에 배치합니다."
 
 msgid "a message from {authorName}"
 msgstr "{authorName}님의 메시지"
 
-msgid "A new version of Paradev is required to continue. Please update to the latest version."
-msgstr "계속하려면 새 버전의 Paradev가 필요합니다. 최신 버전으로 업데이트해 주세요."
+msgid "A new version of Wanker is required to continue. Please update to the latest version."
+msgstr "계속하려면 새 버전의 Wanker가 필요합니다. 최신 버전으로 업데이트해 주세요."
 
 msgid "A new workspace off this branch, with the conversation handed to a fresh agent"
 msgstr "이 브랜치에서 새 워크스페이스를 만들고 대화를 새 에이전트에 넘깁니다"
@@ -1869,14 +1869,14 @@ msgstr "회사 소개"
 msgid "About {displayName}"
 msgstr "{displayName}에 관하여"
 
-msgid "About Paradev"
-msgstr "Paradev 소개"
-
 msgid "About three weeks from first call to offer, ending with a paid work trial. Every step is with a founder, and you hear back within 48 hours."
 msgstr "첫 통화부터 오퍼까지 약 3주가 걸리며, 마지막 단계는 유급 업무 체험입니다. 모든 단계를 창업자가 함께하며, 48시간 이내에 답변을 드립니다."
 
-msgid "Absolutely. Paradev doesn't proxy any API calls. You use your own API keys directly with whatever AI providers you choose. This means you have full control over costs and usage."
-msgstr "물론입니다. Paradev는 어떤 API 호출도 중계하지 않습니다. 선택한 AI 제공사에 직접 본인의 API 키를 사용합니다. 따라서 비용과 사용량을 온전히 통제할 수 있습니다."
+msgid "About Wanker"
+msgstr "Wanker 소개"
+
+msgid "Absolutely. Wanker doesn't proxy any API calls. You use your own API keys directly with whatever AI providers you choose. This means you have full control over costs and usage."
+msgstr "물론입니다. Wanker는 어떤 API 호출도 중계하지 않습니다. 선택한 AI 제공사에 직접 본인의 API 키를 사용합니다. 따라서 비용과 사용량을 온전히 통제할 수 있습니다."
 
 msgid "Accent"
 msgstr "강조"
@@ -2397,8 +2397,8 @@ msgstr "에이전트가 코드베이스에 대해 배운 내용을 기억하므�
 msgid "Agents running at once"
 msgstr "동시에 실행 중인 에이전트"
 
-msgid "Agents see a placeholder. Paradev adds your sign-in to outgoing requests."
-msgstr "에이전트에는 자리 표시자만 보입니다. Paradev가 나가는 요청에 로그인 정보를 추가합니다."
+msgid "Agents see a placeholder. Wanker adds your sign-in to outgoing requests."
+msgstr "에이전트에는 자리 표시자만 보입니다. Wanker가 나가는 요청에 로그인 정보를 추가합니다."
 
 msgid "Agents that run while you're away"
 msgstr "자리를 비운 동안에도 실행되는 에이전트"
@@ -2409,8 +2409,8 @@ msgstr "에이전트가 이슈 분류, changelog 초안 작성, 의존성 업데
 msgid "Agents use this account when they call Linear tools."
 msgstr "에이전트는 Linear 도구를 호출할 때 이 계정을 사용합니다."
 
-msgid "Aggregate agent usage across every developer on the Paradev leaderboard — tokens, cost, cache behaviour and which models people actually reach for."
-msgstr "Paradev 리더보드에 참여한 모든 개발자의 에이전트 사용량 집계 — 토큰, 비용, 캐시 동작, 그리고 실제로 많이 쓰이는 모델입니다."
+msgid "Aggregate agent usage across every developer on the Wanker leaderboard — tokens, cost, cache behaviour and which models people actually reach for."
+msgstr "Wanker 리더보드에 참여한 모든 개발자의 에이전트 사용량 집계 — 토큰, 비용, 캐시 동작, 그리고 실제로 많이 쓰이는 모델입니다."
 
 msgid "AI · Agent activity"
 msgstr "AI · 에이전트 활동"
@@ -2802,8 +2802,8 @@ msgstr "Anthropic이 이 토큰을 거부했습니다."
 msgid "any account"
 msgstr "모든 계정"
 
-msgid "Any agent you've set up in Paradev, such as Claude Code or Codex."
-msgstr "Paradev에서 설정한 모든 에이전트, 예를 들어 Claude Code나 Codex."
+msgid "Any agent you've set up in Wanker, such as Claude Code or Codex."
+msgstr "Wanker에서 설정한 모든 에이전트, 예를 들어 Claude Code나 Codex."
 
 msgid "Any channel"
 msgstr "모든 채널"
@@ -3270,11 +3270,11 @@ msgstr "승인"
 msgid "Authorize {displayName}"
 msgstr "{displayName} 승인"
 
-msgid "Authorize Paradev so your plugins, automations and triggers can act on your behalf."
-msgstr "플러그인, 자동화, 트리거가 사용자를 대신해 작동할 수 있도록 Paradev를 승인합니다."
+msgid "Authorize Wanker so your plugins, automations and triggers can act on your behalf."
+msgstr "플러그인, 자동화, 트리거가 사용자를 대신해 작동할 수 있도록 Wanker를 승인합니다."
 
-msgid "Authorize Paradev to act on your behalf."
-msgstr "Paradev가 사용자를 대신해 작업하도록 승인하세요."
+msgid "Authorize Wanker to act on your behalf."
+msgstr "Wanker가 사용자를 대신해 작업하도록 승인하세요."
 
 msgid "Authorizing..."
 msgstr "승인하는 중..."
@@ -3715,17 +3715,17 @@ msgstr "커뮤니티가 공유한 스킬, MCP 서버, 에이전트 설정을 둘
 msgid "Browse for directory"
 msgstr "디렉터리 찾아보기"
 
-msgid "Browse Paradev plugins, shared themes, and future agent configs."
-msgstr "Paradev 플러그인, 공유 테마, 향후 제공될 에이전트 설정을 둘러보세요."
-
-msgid "Browse Paradev theme files shared by the community, including GitHub Dark Colorblind, Catppuccin, Ember, and One Dark Pro."
-msgstr "GitHub Dark Colorblind, Catppuccin, Ember, One Dark Pro 등 커뮤니티가 공유한 Paradev 테마 파일을 둘러보세요."
-
-msgid "Browse the plugins every Paradev agent can use, and submit your own."
-msgstr "모든 Paradev 에이전트가 사용할 수 있는 플러그인을 둘러보고 직접 만든 플러그인을 제출하세요."
+msgid "Browse the plugins every Wanker agent can use, and submit your own."
+msgstr "모든 Wanker 에이전트가 사용할 수 있는 플러그인을 둘러보고 직접 만든 플러그인을 제출하세요."
 
 msgid "Browse the repo ↗"
 msgstr "리포지토리 둘러보기 ↗"
+
+msgid "Browse Wanker plugins, shared themes, and future agent configs."
+msgstr "Wanker 플러그인, 공유 테마, 향후 제공될 에이전트 설정을 둘러보세요."
+
+msgid "Browse Wanker theme files shared by the community, including GitHub Dark Colorblind, Catppuccin, Ember, and One Dark Pro."
+msgstr "GitHub Dark Colorblind, Catppuccin, Ember, One Dark Pro 등 커뮤니티가 공유한 Wanker 테마 파일을 둘러보세요."
 
 msgid "Browse workspaces"
 msgstr "워크스페이스 둘러보기"
@@ -3772,8 +3772,8 @@ msgstr "마지막 소프트웨어를 만듭니다."
 msgid "Built a plugin? Submit it here."
 msgstr "플러그인을 만드셨나요? 여기에서 제출하세요."
 
-msgid "Built in Paradev"
-msgstr "Paradev로 개발합니다"
+msgid "Built in Wanker"
+msgstr "Wanker로 개발합니다"
 
 msgid "builtin"
 msgstr "기본 제공"
@@ -3788,11 +3788,11 @@ msgstr "글머리 기호 목록"
 msgid "bundled {0}"
 msgstr "번들 {0}"
 
-msgid "Bundled with the Paradev app on this device."
-msgstr "이 기기의 Paradev 앱에 포함되어 있습니다."
+msgid "Bundled with the Wanker app on this device."
+msgstr "이 기기의 Wanker 앱에 포함되어 있습니다."
 
-msgid "Bundled with the Paradev app on this device. Updates with the app."
-msgstr "이 기기의 Paradev 앱에 포함되어 있으며 앱과 함께 업데이트됩니다."
+msgid "Bundled with the Wanker app on this device. Updates with the app."
+msgstr "이 기기의 Wanker 앱에 포함되어 있으며 앱과 함께 업데이트됩니다."
 
 msgid "Business plan"
 msgstr "Business 플랜"
@@ -4373,8 +4373,8 @@ msgstr "기본 리포지토리 선택"
 msgid "Choose what to clear from the in-app browser."
 msgstr "인앱 브라우저에서 삭제할 항목을 선택하세요."
 
-msgid "Choose when Paradev pings you."
-msgstr "Paradev가 언제 알릴지 선택하세요."
+msgid "Choose when Wanker pings you."
+msgstr "Wanker가 언제 알릴지 선택하세요."
 
 msgid "Choose where agents started from comments, design mode, and Pages open."
 msgstr "댓글, 디자인 모드 및 Pages에서 시작한 에이전트를 열 위치를 선택하세요."
@@ -4394,8 +4394,8 @@ msgstr "이것을 명확히 해 주세요"
 msgid "Claude Code sessions, with claude --resume"
 msgstr "Claude Code 세션 (claude --resume 사용)"
 
-msgid "Claude Code, Codex, and OpenCode are the agents; Paradev is where you run many of them at once. Each task gets its own Git worktree and branch, so ten agents can work on ten branches simultaneously while you monitor, review, and merge from one place."
-msgstr "Claude Code, Codex, OpenCode는 에이전트이고, Paradev는 그 에이전트들을 한 번에 여러 개 실행하는 곳입니다. 작업마다 자체 Git 워크트리와 브랜치가 생기므로, 에이전트 열 개가 브랜치 열 개에서 동시에 작업하는 동안 한곳에서 모니터링, 리뷰, 병합할 수 있습니다."
+msgid "Claude Code, Codex, and OpenCode are the agents; Wanker is where you run many of them at once. Each task gets its own Git worktree and branch, so ten agents can work on ten branches simultaneously while you monitor, review, and merge from one place."
+msgstr "Claude Code, Codex, OpenCode는 에이전트이고, Wanker는 그 에이전트들을 한 번에 여러 개 실행하는 곳입니다. 작업마다 자체 Git 워크트리와 브랜치가 생기므로, 에이전트 열 개가 브랜치 열 개에서 동시에 작업하는 동안 한곳에서 모니터링, 리뷰, 병합할 수 있습니다."
 
 msgid "Claude Code, Codex, Cursor Agent, OpenCode, Gemini, Amp, any CLI"
 msgstr "Claude Code, Codex, Cursor Agent, OpenCode, Gemini, Amp, 모든 CLI"
@@ -4811,8 +4811,8 @@ msgstr "클라우드 워크스페이스는 이 변수를 무시합니다. 에이
 msgid "Cloud workspaces need the Team or Ultra plan. Upgrade in Settings, Billing to start one."
 msgstr "클라우드 워크스페이스에는 Team 또는 Ultra 플랜이 필요합니다. 시작하려면 설정의 결제에서 업그레이드하세요."
 
-msgid "Cloud workspaces open on it, and its Paradev config runs setup. The others are checked out beside it."
-msgstr "클라우드 워크스페이스는 이 리포지토리에서 열리며, 해당 Paradev 구성이 셋업을 실행합니다. 나머지는 옆에 체크아웃됩니다."
+msgid "Cloud workspaces open on it, and its Wanker config runs setup. The others are checked out beside it."
+msgstr "클라우드 워크스페이스는 이 리포지토리에서 열리며, 해당 Wanker 구성이 셋업을 실행합니다. 나머지는 옆에 체크아웃됩니다."
 
 msgid "Cloud workspaces will stop running {agentLabel} with it."
 msgstr "클라우드 워크스페이스에서 더 이상 이것으로 {agentLabel}을(를) 실행하지 않습니다."
@@ -5021,14 +5021,14 @@ msgstr "회사 이메일"
 msgid "Compare"
 msgstr "비교"
 
-msgid "Compare Paradev | AI Coding Comparisons and Guides"
-msgstr "Paradev 비교 | AI 코딩 비교와 가이드"
-
-msgid "Compare Paradev with Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot, and more. Browse side-by-side comparisons, roundups, and workflow guides."
-msgstr "Paradev를 Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot 등과 비교해 보세요. 나란히 놓고 보는 비교, 총정리, 워크플로 가이드를 살펴보세요."
-
 msgid "Compare plans"
 msgstr "플랜 비교"
+
+msgid "Compare Wanker | AI Coding Comparisons and Guides"
+msgstr "Wanker 비교 | AI 코딩 비교와 가이드"
+
+msgid "Compare Wanker with Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot, and more. Browse side-by-side comparisons, roundups, and workflow guides."
+msgstr "Wanker를 Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot 등과 비교해 보세요. 나란히 놓고 보는 비교, 총정리, 워크플로 가이드를 살펴보세요."
 
 msgid "Compared against the default style"
 msgstr "기본 스타일과 비교함"
@@ -5109,8 +5109,8 @@ msgstr "git 브랜치와 worktree 동작을 설정합니다"
 msgid "Configure GitHub App…"
 msgstr "GitHub App 구성…"
 
-msgid "Configure how tasks sync between Paradev and Linear."
-msgstr "Paradev와 Linear 사이에서 작업을 동기화하는 방식을 설정합니다."
+msgid "Configure how tasks sync between Wanker and Linear."
+msgstr "Wanker와 Linear 사이에서 작업을 동기화하는 방식을 설정합니다."
 
 msgid "Configure terminal behavior and reusable terminal scripts"
 msgstr "터미널 동작과 재사용 가능한 터미널 스크립트를 설정합니다"
@@ -5246,8 +5246,8 @@ msgstr "GitHub 리포지토리를 연결하고 풀 리퀘스트를 동기화하�
 msgid "Connect your Linear account before tracking tasks in Linear."
 msgstr "Linear에서 작업을 관리하려면 먼저 Linear 계정을 연결하세요."
 
-msgid "Connect your Linear account to browse, update and start work on Linear issues from Paradev."
-msgstr "Linear 계정을 연결하면 Paradev에서 Linear 이슈를 탐색하고, 업데이트하고, 작업을 시작할 수 있습니다."
+msgid "Connect your Linear account to browse, update and start work on Linear issues from Wanker."
+msgstr "Linear 계정을 연결하면 Wanker에서 Linear 이슈를 탐색하고, 업데이트하고, 작업을 시작할 수 있습니다."
 
 msgid "Connect your Linear account to use Linear here."
 msgstr "여기서 Linear를 사용하려면 Linear 계정을 연결하세요."
@@ -5524,8 +5524,8 @@ msgstr "브랜치 이름 복사"
 msgid "Copy Branch Name"
 msgstr "브랜치 이름 복사"
 
-msgid "Copy browsing history and logins from Chrome, Brave, Arc, or another Chromium browser into Paradev."
-msgstr "Chrome, Brave, Arc 등 Chromium 브라우저의 방문 기록과 로그인 정보를 Paradev로 복사합니다."
+msgid "Copy browsing history and logins from Chrome, Brave, Arc, or another Chromium browser into Wanker."
+msgstr "Chrome, Brave, Arc 등 Chromium 브라우저의 방문 기록과 로그인 정보를 Wanker로 복사합니다."
 
 msgid "Copy code"
 msgstr "코드 복사"
@@ -5663,8 +5663,8 @@ msgstr "사용자 이름 복사"
 msgid "Copy Workspace ID"
 msgstr "워크스페이스 ID 복사"
 
-msgid "Copy your browsing history and logins from another browser into Paradev. Your original browser isn't changed."
-msgstr "다른 브라우저의 방문 기록과 로그인 정보를 Paradev로 복사합니다. 원래 브라우저는 변경되지 않습니다."
+msgid "Copy your browsing history and logins from another browser into Wanker. Your original browser isn't changed."
+msgstr "다른 브라우저의 방문 기록과 로그인 정보를 Wanker로 복사합니다. 원래 브라우저는 변경되지 않습니다."
 
 msgid "Copy your key now — you won't be able to see it again."
 msgstr "지금 키를 복사하세요 — 다시 볼 수 없습니다."
@@ -6694,8 +6694,8 @@ msgstr "{devName} 사용자 지정"
 msgid "Customize commands"
 msgstr "명령 사용자 지정"
 
-msgid "Customize how Paradev looks on your device"
-msgstr "기기에서 Paradev가 보이는 방식을 설정합니다"
+msgid "Customize how Wanker looks on your device"
+msgstr "기기에서 Wanker가 보이는 방식을 설정합니다"
 
 #. placeholder {0}: showHotkeysKeys.map((key) => ( <Kbd key={key}>{key}</Kbd> ))
 msgid "Customize keyboard shortcuts for your workflow. Press <0>{0}</0> to open this page anytime."
@@ -7109,8 +7109,8 @@ msgstr "에이전트에게 맡길 작업을 설명하세요…"
 msgid "Describe the work to your agent"
 msgstr "에이전트에게 작업을 설명하세요"
 
-msgid "Describe what you need. Paradev creates a workspace with its own worktree and branch for the task."
-msgstr "필요한 것을 설명하세요. Paradev가 그 작업을 위해 자체 워크트리와 브랜치를 가진 워크스페이스를 만듭니다."
+msgid "Describe what you need. Wanker creates a workspace with its own worktree and branch for the task."
+msgstr "필요한 것을 설명하세요. Wanker가 그 작업을 위해 자체 워크트리와 브랜치를 가진 워크스페이스를 만듭니다."
 
 msgid "Describe what you'd like to see built…"
 msgstr "만들어졌으면 하는 것을 설명해 주세요…"
@@ -7413,8 +7413,8 @@ msgstr "모바일 사이드바를 표시합니다."
 msgid "Do anything"
 msgstr "무엇이든 해보세요"
 
-msgid "Do anything in Paradev"
-msgstr "Paradev에서 무엇이든 해보세요"
+msgid "Do anything in Wanker"
+msgstr "Wanker에서 무엇이든 해보세요"
 
 msgid "Do I need my own coding agent subscriptions?"
 msgstr "코딩 에이전트 구독이 따로 필요한가요?"
@@ -7532,11 +7532,8 @@ msgstr "로그 다운로드"
 msgid "Download Manually"
 msgstr "수동으로 다운로드"
 
-msgid "Download our logos, product images, and founder photos for use in coverage of Paradev."
-msgstr "Paradev 관련 보도에 사용할 수 있는 로고, 제품 이미지, 창업자 사진을 내려받으세요."
-
-msgid "Download Paradev"
-msgstr "Paradev 다운로드"
+msgid "Download our logos, product images, and founder photos for use in coverage of Wanker."
+msgstr "Wanker 관련 보도에 사용할 수 있는 로고, 제품 이미지, 창업자 사진을 내려받으세요."
 
 msgid "Download starter"
 msgstr "스타터 다운로드"
@@ -7546,6 +7543,9 @@ msgstr "위의 테마 파일을 다운로드하세요."
 
 msgid "Download theme file"
 msgstr "테마 파일 다운로드"
+
+msgid "Download Wanker"
+msgstr "Wanker 다운로드"
 
 msgid "downloaded"
 msgstr "다운로드됨"
@@ -7582,8 +7582,8 @@ msgstr "초안 PR #2841"
 msgid "drafted 3 support replies"
 msgstr "지원 답변 3건 초안 작성"
 
-msgid "Drag <0>Paradev</0> into your <1>Applications</1> folder"
-msgstr "<0>Paradev</0>를 <1>응용 프로그램</1> 폴더로 드래그하세요"
+msgid "Drag <0>Wanker</0> into your <1>Applications</1> folder"
+msgstr "<0>Wanker</0>를 <1>응용 프로그램</1> 폴더로 드래그하세요"
 
 msgid "Drag to reorder"
 msgstr "끌어서 순서 변경"
@@ -7872,8 +7872,8 @@ msgstr "릴레이 접근 활성화…"
 msgid "Enable remote access"
 msgstr "원격 액세스 활성화하기"
 
-msgid "Enable Remote Access and keep this computer awake with Paradev running."
-msgstr "원격 액세스를 활성화하고 Paradev가 실행된 상태로 이 컴퓨터가 깨어 있도록 유지하세요."
+msgid "Enable Remote Access and keep this computer awake with Wanker running."
+msgstr "원격 액세스를 활성화하고 Wanker가 실행된 상태로 이 컴퓨터가 깨어 있도록 유지하세요."
 
 msgid "Enable skill"
 msgstr "스킬 활성화"
@@ -8013,8 +8013,8 @@ msgstr "1분마다"
 msgid "Every objective is carrying its weight for the next rung. Measured over the trailing 30 days."
 msgstr "모든 목표가 다음 단계를 향해 제 몫을 하고 있습니다. 최근 30일 기준입니다."
 
-msgid "Every paid plan includes Paradev Mobile, automations, and priority support. Plans with cloud workspaces give your team one shared pool of GB-hours."
-msgstr "모든 유료 플랜에는 Paradev Mobile, 자동화, 우선 지원이 포함됩니다. 클라우드 워크스페이스가 있는 플랜은 팀이 함께 쓰는 GB 시간 풀을 제공합니다."
+msgid "Every paid plan includes Wanker Mobile, automations, and priority support. Plans with cloud workspaces give your team one shared pool of GB-hours."
+msgstr "모든 유료 플랜에는 Wanker Mobile, 자동화, 우선 지원이 포함됩니다. 클라우드 워크스페이스가 있는 플랜은 팀이 함께 쓰는 GB 시간 풀을 제공합니다."
 
 msgid "Every publish is a version"
 msgstr "게시할 때마다 버전이 됩니다"
@@ -8067,8 +8067,8 @@ msgstr "Ultra의 모든 기능"
 msgid "Everything in Ultra plus custom cloud GB-hours, SSO & SAML, SCIM provisioning, IP restrictions, audit logs, a custom SLA, dedicated support, and custom contracts. Pricing is tailored to your organization. Get in touch and we'll scope something that fits."
 msgstr "Ultra의 모든 기능에 더해 맞춤 클라우드 GB 시간, SSO 및 SAML, SCIM 프로비저닝, IP 제한, 감사 로그, 맞춤 SLA, 전담 지원, 맞춤 계약을 제공합니다. 가격은 조직에 맞게 정해집니다. 문의해 주시면 알맞은 구성을 제안해 드립니다."
 
-msgid "Everything we built on top of the primitives — Paradev originals, the"
-msgstr "프리미티브 위에 우리가 만든 모든 것 — Paradev 오리지널, 에이전트 UI용"
+msgid "Everything we built on top of the primitives — Wanker originals, the"
+msgstr "프리미티브 위에 우리가 만든 모든 것 — Wanker 오리지널, 에이전트 UI용"
 
 msgid "Everything you need to write about {productName} (formerly {formerName}): our company description, latest news, logos, product images, and who to contact."
 msgstr "{productName}(구 {formerName})에 대해 기사를 쓰는 데 필요한 모든 것: 회사 소개, 최신 소식, 로고, 제품 이미지, 연락처."
@@ -8223,8 +8223,8 @@ msgstr "통과한 F4 관문"
 msgid "Factory 2026"
 msgstr "Factory 2026"
 
-msgid "Factory 2026 | Paradev"
-msgstr "Factory 2026 | Paradev"
+msgid "Factory 2026 | Wanker"
+msgstr "Factory 2026 | Wanker"
 
 msgid "Factory tier {tier}"
 msgstr "공장 등급 {tier}"
@@ -9367,17 +9367,11 @@ msgstr "{companyName} 팀에 문의하세요."
 msgid "Get key"
 msgstr "키 받기"
 
-msgid "Get more out of Paradev"
-msgstr "Paradev 더 잘 활용하기"
+msgid "Get more out of Wanker"
+msgstr "Wanker 더 잘 활용하기"
 
-msgid "Get notified when Paradev is available on Windows."
-msgstr "Paradev를 Windows에서 쓸 수 있게 되면 알려 드립니다."
-
-msgid "Get Paradev on your Mac"
-msgstr "Mac에서 Paradev 사용하기"
-
-msgid "Get Paradev Pro"
-msgstr "Paradev Pro 시작하기"
+msgid "Get notified when Wanker is available on Windows."
+msgstr "Wanker를 Windows에서 쓸 수 있게 되면 알려 드립니다."
 
 msgid "Get started"
 msgstr "시작하기"
@@ -9390,6 +9384,12 @@ msgstr "Pro를 최대한 활용하기"
 
 msgid "Get the iPhone and iPad app"
 msgstr "iPhone 및 iPad 앱 받기"
+
+msgid "Get Wanker on your Mac"
+msgstr "Mac에서 Wanker 사용하기"
+
+msgid "Get Wanker Pro"
+msgstr "Wanker Pro 시작하기"
 
 msgid "Gets an invite to join {organizationName}"
 msgstr "{organizationName} 가입 초대를 받습니다"
@@ -9526,9 +9526,6 @@ msgstr "홈으로 이동"
 msgid "Go to next page"
 msgstr "다음 페이지로 이동"
 
-msgid "Go to Paradev"
-msgstr "Paradev로 가기"
-
 msgid "Go to previous page"
 msgstr "이전 페이지로 이동"
 
@@ -9538,11 +9535,14 @@ msgstr "설정에서 원격 액세스로 이동"
 msgid "Go to Slack integration settings"
 msgstr "Slack 연동 설정으로 이동"
 
+msgid "Go to Wanker"
+msgstr "Wanker로 가기"
+
 msgid "Go to workspace"
 msgstr "워크스페이스로 이동"
 
-msgid "Google did not grant lasting access. Remove Paradev from your Google account's third-party access and try again."
-msgstr "Google이 지속적인 접근 권한을 부여하지 않았습니다. Google 계정의 서드파티 접근에서 Paradev를 제거한 뒤 다시 시도해 주세요."
+msgid "Google did not grant lasting access. Remove Wanker from your Google account's third-party access and try again."
+msgstr "Google이 지속적인 접근 권한을 부여하지 않았습니다. Google 계정의 서드파티 접근에서 Wanker를 제거한 뒤 다시 시도해 주세요."
 
 msgid "Google or another search engine"
 msgstr "Google 또는 다른 검색 엔진"
@@ -9550,8 +9550,8 @@ msgstr "Google 또는 다른 검색 엔진"
 msgid "Got it"
 msgstr "확인"
 
-msgid "Grant the OS permissions Paradev needs."
-msgstr "Paradev에 필요한 OS 권한을 허용합니다."
+msgid "Grant the OS permissions Wanker needs."
+msgstr "Wanker에 필요한 OS 권한을 허용합니다."
 
 msgid "Granted"
 msgstr "허용됨"
@@ -9872,8 +9872,8 @@ msgstr "이 프로젝트에서 브랜치와 워크스페이스 이름이 만들�
 msgid "How can we help?"
 msgstr "무엇을 도와드릴까요?"
 
-msgid "How did you hear about Paradev?"
-msgstr "Paradev를 어떻게 알게 되셨나요?"
+msgid "How did you hear about Wanker?"
+msgstr "Wanker를 어떻게 알게 되셨나요?"
 
 msgid "How do cloud hours work?"
 msgstr "클라우드 시간은 어떻게 작동하나요?"
@@ -9896,8 +9896,8 @@ msgstr "병렬 에이전트 시스템은 어떻게 동작하나요?"
 msgid "How grouped commands open."
 msgstr "묶인 명령이 열리는 방식입니다."
 
-msgid "How is Paradev different from just running Claude Code in a terminal?"
-msgstr "터미널에서 그냥 Claude Code를 실행하는 것과 Paradev는 어떻게 다른가요?"
+msgid "How is Wanker different from just running Claude Code in a terminal?"
+msgstr "터미널에서 그냥 Claude Code를 실행하는 것과 Wanker는 어떻게 다른가요?"
 
 msgid "How it should work and what to avoid"
 msgstr "작업 방식과 피해야 할 것"
@@ -9929,11 +9929,11 @@ msgstr "프로세스에 프롬프트를 전달하는 방식입니다."
 msgid "How tiers work →"
 msgstr "등급 산정 방식 →"
 
-msgid "How to install {name} in Paradev"
-msgstr "Paradev에 {name} 설치하는 방법"
+msgid "How to install {name} in Wanker"
+msgstr "Wanker에 {name} 설치하는 방법"
 
-msgid "How to install Paradev"
-msgstr "Paradev 설치 방법"
+msgid "How to install Wanker"
+msgstr "Wanker 설치 방법"
 
 msgid "How we build it, in long form."
 msgstr "어떻게 만드는지 자세히."
@@ -10016,8 +10016,8 @@ msgstr "대기 중"
 msgid "Idle · branch pushed"
 msgstr "유휴 · 브랜치 푸시됨"
 
-msgid "If you're enjoying Paradev so far, a GitHub star helps other developers discover it."
-msgstr "지금까지 Paradev가 마음에 드셨다면 GitHub 스타가 다른 개발자들이 Paradev를 발견하는 데 도움이 됩니다."
+msgid "If you're enjoying Wanker so far, a GitHub star helps other developers discover it."
+msgstr "지금까지 Wanker가 마음에 드셨다면 GitHub 스타가 다른 개발자들이 Wanker를 발견하는 데 도움이 됩니다."
 
 msgid "Ignore @channel and @here"
 msgstr "@channel 및 @here 무시"
@@ -10172,14 +10172,14 @@ msgstr "(이 호스트의 터미널에서)"
 msgid "In Apple's window, click Install. It takes a few minutes, and this page updates when it's done."
 msgstr "Apple 창에서 설치를 클릭하세요. 몇 분 정도 걸리며, 완료되면 이 페이지가 업데이트됩니다."
 
-msgid "In just a few months, <0>tens of thousands of engineers</0> run Paradev as their primary IDE, at companies like Wix, DoorDash, and Netflix."
-msgstr "몇 달 만에 <0>수만 명의 엔지니어</0>가 Wix, DoorDash, Netflix 같은 회사에서 Paradev를 주력 IDE로 사용하고 있습니다."
+msgid "In just a few months, <0>tens of thousands of engineers</0> run Wanker as their primary IDE, at companies like Wix, DoorDash, and Netflix."
+msgstr "몇 달 만에 <0>수만 명의 엔지니어</0>가 Wix, DoorDash, Netflix 같은 회사에서 Wanker를 주력 IDE로 사용하고 있습니다."
 
 msgid "In local workspaces, your code and agent sessions stay on your machine. Cloud workspaces run in a sandbox."
 msgstr "로컬 워크스페이스에서는 코드와 에이전트 세션이 당신의 기기에 남습니다. 클라우드 워크스페이스는 샌드박스에서 실행됩니다."
 
-msgid "In manual mode, Paradev doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
-msgstr "수동 모드에서는 Paradev가 이 에이전트를 로그인시키지 않습니다. 스크립트로 다시 로그인시킨 뒤 계속하거나, 에이전트 설정에서 수동 모드를 끄세요."
+msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
+msgstr "수동 모드에서는 Wanker가 이 에이전트를 로그인시키지 않습니다. 스크립트로 다시 로그인시킨 뒤 계속하거나, 에이전트 설정에서 수동 모드를 끄세요."
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "샌프란시스코 사무실에서 주 5일 근무합니다. 창업자와 직접 함께 일합니다."
@@ -10200,8 +10200,8 @@ msgstr "리뷰 중"
 msgid "In the {appName} desktop app, open Settings → Remote Access and turn on “Allow remote access to this device via relay”."
 msgstr "{appName} 데스크톱 앱에서 설정 → 원격 액세스을 열고 “릴레이를 통해 이 기기에 원격 액세스 허용”을 켜세요."
 
-msgid "In the Paradev desktop app, open <0>Settings → Appearance → Theme</0>."
-msgstr "Paradev 데스크톱 앱에서 <0>설정 → 모양 → 테마</0>를 여세요."
+msgid "In the Wanker desktop app, open <0>Settings → Appearance → Theme</0>."
+msgstr "Wanker 데스크톱 앱에서 <0>설정 → 모양 → 테마</0>를 여세요."
 
 msgid "In under a year, more than 145,000 developers across 180 countries have run {productName} and created over 1.85 million agent workspaces."
 msgstr "1년이 채 되지 않아 180개국의 145,000명 이상의 개발자가 {productName}에서 185만 개 이상의 에이전트 워크스페이스를 만들었습니다."
@@ -10233,8 +10233,8 @@ msgstr "엔터프라이즈에 포함"
 msgid "Included with Team and Ultra."
 msgstr "Team 및 Ultra에 포함되어 있습니다."
 
-msgid "Includes the Paradev-specific box variant"
-msgstr "Paradev 전용 box 변형 포함"
+msgid "Includes the Wanker-specific box variant"
+msgstr "Wanker 전용 box 변형 포함"
 
 msgid "Incognito Operator"
 msgstr "정체불명의 오퍼레이터"
@@ -10293,8 +10293,8 @@ msgstr "입력, 캐시, 출력 토큰"
 msgid "Inputs"
 msgstr "입력"
 
-msgid "Insights from the Paradev team about parallel coding agents and developer productivity."
-msgstr "병렬 코딩 에이전트와 개발자 생산성에 대한 Paradev 팀의 인사이트."
+msgid "Insights from the Wanker team about parallel coding agents and developer productivity."
+msgstr "병렬 코딩 에이전트와 개발자 생산성에 대한 Wanker 팀의 인사이트."
 
 msgid "Inspect branches and run SQL"
 msgstr "브랜치 확인 및 SQL 실행"
@@ -10318,8 +10318,8 @@ msgstr "설치 후 재시작"
 msgid "Install & Restart"
 msgstr "설치 후 재시작"
 
-msgid "Install a plugin in the Paradev app and every agent can use it."
-msgstr "Paradev 앱에서 플러그인을 설치하면 모든 에이전트가 사용할 수 있습니다."
+msgid "Install a plugin in the Wanker app and every agent can use it."
+msgstr "Wanker 앱에서 플러그인을 설치하면 모든 에이전트가 사용할 수 있습니다."
 
 msgid "Install Command Line Tools"
 msgstr "Command Line Tools 설치"
@@ -10348,17 +10348,17 @@ msgstr "한 번 설치하면 내 머신과 클라우드에서 모든 에이전�
 msgid "Install once. Mention it in any prompt."
 msgstr "한 번 설치하고, 어떤 프롬프트에서든 언급하세요."
 
-msgid "Install Paradev MCP in your client"
-msgstr "클라이언트에 Paradev MCP 설치하기"
-
 msgid "Install plugin"
 msgstr "플러그인 설치"
 
 msgid "Install the desktop app"
 msgstr "데스크톱 앱 설치"
 
-msgid "Install the Paradev GitHub App on each GitHub organization or account whose repositories you want to connect."
-msgstr "연결할 저장소가 있는 GitHub 조직이나 계정마다 Paradev GitHub App을 설치하세요."
+msgid "Install the Wanker GitHub App on each GitHub organization or account whose repositories you want to connect."
+msgstr "연결할 저장소가 있는 GitHub 조직이나 계정마다 Wanker GitHub App을 설치하세요."
+
+msgid "Install Wanker MCP in your client"
+msgstr "클라이언트에 Wanker MCP 설치하기"
 
 msgid "Install, authorize, and scope MCP servers across all your workspaces from one place, with centralized OAuth."
 msgstr "모든 워크스페이스의 MCP 서버를 한곳에서 설치하고, 인증하고, 범위를 지정하세요. OAuth도 중앙에서 관리합니다."
@@ -10386,8 +10386,8 @@ msgstr "설치 경로"
 msgid "Installing..."
 msgstr "설치 중..."
 
-msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
-msgstr "ssh로 접속할 수 있는 머신에 Paradev를 설치하고, Paradev를 내 계정으로 로그인시킨 뒤 서비스로 계속 실행합니다."
+msgid "Installs Wanker on a machine you can reach with ssh, signs Wanker in to your account, and keeps it running as a service."
+msgstr "ssh로 접속할 수 있는 머신에 Wanker를 설치하고, Wanker를 내 계정으로 로그인시킨 뒤 서비스로 계속 실행합니다."
 
 msgid "Instructions"
 msgstr "지침"
@@ -10404,8 +10404,8 @@ msgstr "대화형 에이전트 터미널입니다."
 msgid "Interactive clients authorize over OAuth 2.1 in your browser, scoped to your active organization. For headless environments and CI, generate an API key from Settings → API Keys in the desktop app and pass it as a Bearer token instead. Full setup, including header config for Claude Code, is in the <0>authentication docs</0>."
 msgstr "대화형 클라이언트는 브라우저에서 OAuth 2.1로 인증하며, 권한은 현재 활성 조직으로 한정됩니다. 헤드리스 환경과 CI에서는 데스크톱 앱의 설정 → API 키에서 API 키를 만들어 Bearer 토큰으로 전달하세요. Claude Code용 헤더 설정을 포함한 전체 설정 방법은 <0>인증 문서</0>에 있습니다."
 
-msgid "Interested in bringing Paradev to your organization? Reach out and we'll work with you to find the right setup for your team."
-msgstr "조직에 Paradev를 도입하고 싶으신가요? 문의해 주시면 팀에 맞는 구성을 함께 찾아 드립니다."
+msgid "Interested in bringing Wanker to your organization? Reach out and we'll work with you to find the right setup for your team."
+msgstr "조직에 Wanker를 도입하고 싶으신가요? 문의해 주시면 팀에 맞는 구성을 함께 찾아 드립니다."
 
 msgid "Interface"
 msgstr "인터페이스"
@@ -10536,23 +10536,23 @@ msgstr "데이터는 안전한가요?"
 msgid "is now signed in here."
 msgstr "이(가) 여기에 로그인되었습니다."
 
-msgid "Is Paradev free to use?"
-msgstr "Paradev는 무료로 쓸 수 있나요?"
-
-msgid "Is Paradev just a wrapper around Claude Code?"
-msgstr "Paradev는 그냥 Claude Code 래퍼인가요?"
-
-msgid "Is Paradev open source?"
-msgstr "Paradev는 오픈 소스인가요?"
-
-msgid "Is Paradev SOC 2 compliant?"
-msgstr "Paradev는 SOC 2를 준수하나요?"
-
 msgid "is signed in."
 msgstr "이(가) 로그인되었습니다."
 
 msgid "Is there a free plan?"
 msgstr "무료 플랜이 있나요?"
+
+msgid "Is Wanker free to use?"
+msgstr "Wanker는 무료로 쓸 수 있나요?"
+
+msgid "Is Wanker just a wrapper around Claude Code?"
+msgstr "Wanker는 그냥 Claude Code 래퍼인가요?"
+
+msgid "Is Wanker open source?"
+msgstr "Wanker는 오픈 소스인가요?"
+
+msgid "Is Wanker SOC 2 compliant?"
+msgstr "Wanker는 SOC 2를 준수하나요?"
 
 msgid "Issue"
 msgstr "이슈"
@@ -10647,8 +10647,8 @@ msgstr "답글도 함께 삭제됩니다."
 msgid "Its work, including uncommitted changes, is pushed to a new branch. A workspace on the computer you pick starts from that branch, and each Claude chat continues there. Agents that are working stop first. Terminals and other chats stay where they are."
 msgstr "커밋하지 않은 변경 사항을 포함한 작업이 새 브랜치로 푸시됩니다. 선택한 컴퓨터의 워크스페이스가 그 브랜치에서 시작되고, 각 Claude 채팅은 그곳에서 이어집니다. 작업 중인 에이전트는 먼저 멈춥니다. 터미널과 다른 채팅은 그대로 남습니다."
 
-msgid "Its workspaces and terminals are unavailable until it restarts — use the Paradev tray menu > Host Service > Restart."
-msgstr "다시 시작할 때까지 해당 워크스페이스와 터미널을 사용할 수 없습니다. Paradev 트레이 메뉴 > 호스트 서비스 > 다시 시작을 사용하세요."
+msgid "Its workspaces and terminals are unavailable until it restarts — use the Wanker tray menu > Host Service > Restart."
+msgstr "다시 시작할 때까지 해당 워크스페이스와 터미널을 사용할 수 없습니다. Wanker 트레이 메뉴 > 호스트 서비스 > 다시 시작을 사용하세요."
 
 msgid "Its workspaces and their worktrees are removed from disk now instead of after 30 days. The repository folder and worktrees with uncommitted changes are kept."
 msgstr "작업 공간과 워크트리가 30일 후가 아니라 지금 디스크에서 제거됩니다. 저장소 폴더와 커밋되지 않은 변경 사항이 있는 워크트리는 유지됩니다."
@@ -10677,8 +10677,8 @@ msgstr "Discord 참여하기"
 msgid "JOIN OUR DISCORD"
 msgstr "DISCORD 참여하기"
 
-msgid "Join the <0>Paradev</0> community to get help, share ideas, and stay up to date with the latest news and updates."
-msgstr "<0>Paradev</0> 커뮤니티에 참여해 도움을 받고, 아이디어를 나누고, 최신 소식과 업데이트를 확인하세요."
+msgid "Join the <0>Wanker</0> community to get help, share ideas, and stay up to date with the latest news and updates."
+msgstr "<0>Wanker</0> 커뮤니티에 참여해 도움을 받고, 아이디어를 나누고, 최신 소식과 업데이트를 확인하세요."
 
 msgid "Join the channel first"
 msgstr "먼저 채널에 참여하세요"
@@ -10686,17 +10686,17 @@ msgstr "먼저 채널에 참여하세요"
 msgid "Join the leaderboard"
 msgstr "리더보드 참가"
 
-msgid "Join the Paradev community to get help, share ideas, and stay up to date with the latest news and updates."
-msgstr "Paradev 커뮤니티에 참여해 도움을 받고, 아이디어를 공유하고, 최신 소식과 업데이트를 확인하세요."
-
 msgid "Join the waitlist"
 msgstr "대기자 명단 등록"
+
+msgid "Join the Wanker community to get help, share ideas, and stay up to date with the latest news and updates."
+msgstr "Wanker 커뮤니티에 참여해 도움을 받고, 아이디어를 공유하고, 최신 소식과 업데이트를 확인하세요."
 
 msgid "Join us"
 msgstr "함께하기"
 
-msgid "Join us at Paradev"
-msgstr "Paradev에 합류하세요"
+msgid "Join us at Wanker"
+msgstr "Wanker에 합류하세요"
 
 msgid "Join waitlist"
 msgstr "대기자 명단 등록"
@@ -11124,8 +11124,8 @@ msgstr "라이트"
 msgid "Light theme"
 msgstr "라이트 테마"
 
-msgid "Like building with Paradev?"
-msgstr "Paradev로 만드는 게 즐거우신가요?"
+msgid "Like building with Wanker?"
+msgstr "Wanker로 만드는 게 즐거우신가요?"
 
 msgid "Lime"
 msgstr "라임"
@@ -11551,8 +11551,8 @@ msgstr "기본값으로 설정 — 새 터미널과 에이전트를 이 계정�
 msgid "Make public"
 msgstr "공개"
 
-msgid "Make sure the device is awake, online, and running Paradev."
-msgstr "기기가 절전 모드가 아니고 온라인 상태이며 Paradev가 실행 중인지 확인해 주세요."
+msgid "Make sure the device is awake, online, and running Wanker."
+msgstr "기기가 절전 모드가 아니고 온라인 상태이며 Wanker가 실행 중인지 확인해 주세요."
 
 msgid "Make the chip style the TooltipContent default"
 msgstr "칩 스타일을 TooltipContent 기본값으로 만들기"
@@ -11773,8 +11773,8 @@ msgstr "심각도 보통"
 msgid "Meet the team"
 msgstr "팀 소개"
 
-msgid "Meet the team behind Paradev, building parallel coding agents for developers."
-msgstr "개발자를 위한 병렬 코딩 에이전트를 만드는 Paradev 팀을 만나보세요."
+msgid "Meet the team behind Wanker, building parallel coding agents for developers."
+msgstr "개발자를 위한 병렬 코딩 에이전트를 만드는 Wanker 팀을 만나보세요."
 
 msgid "Member"
 msgstr "멤버"
@@ -11829,8 +11829,8 @@ msgstr "머지 실패: {0}"
 msgid "Merge pull request"
 msgstr "풀 리퀘스트 머지"
 
-msgid "Merge pull requests without leaving Paradev, plus a round of chat fixes and polish."
-msgstr "Paradev를 벗어나지 않고 풀 리퀘스트를 머지하세요. 채팅 수정과 다듬기도 함께 들어갑니다."
+msgid "Merge pull requests without leaving Wanker, plus a round of chat fixes and polish."
+msgstr "Wanker를 벗어나지 않고 풀 리퀘스트를 머지하세요. 채팅 수정과 다듬기도 함께 들어갑니다."
 
 msgid "Merge status"
 msgstr "머지 상태"
@@ -12445,8 +12445,8 @@ msgstr "뉴스 및 업데이트"
 msgid "News and deep dives"
 msgstr "뉴스와 심층 분석"
 
-msgid "News, updates, and insights from the Paradev team about parallel coding agents and developer productivity."
-msgstr "병렬 코딩 에이전트와 개발자 생산성에 대한 Paradev 팀의 소식, 업데이트, 인사이트입니다."
+msgid "News, updates, and insights from the Wanker team about parallel coding agents and developer productivity."
+msgstr "병렬 코딩 에이전트와 개발자 생산성에 대한 Wanker 팀의 소식, 업데이트, 인사이트입니다."
 
 msgid "Next"
 msgstr "다음"
@@ -13190,8 +13190,8 @@ msgstr "아직 워크스페이스가 없습니다"
 msgid "No-Prompt Launch"
 msgstr "프롬프트 없는 실행"
 
-msgid "No. Your agents stay independent; Paradev is the orchestration layer around them. Each task gets its own Git worktree and branch, persistent sessions, diff review, and automations that run on events or a schedule, without tying the workflow to one provider."
-msgstr "아니요. 에이전트는 독립적으로 유지되고, Paradev는 그 주변의 오케스트레이션 계층입니다. 작업마다 자체 Git 워크트리와 브랜치, 지속되는 세션, diff 리뷰, 이벤트나 일정에 따라 실행되는 자동화가 제공되며, 워크플로가 특정 제공업체에 묶이지 않습니다."
+msgid "No. Your agents stay independent; Wanker is the orchestration layer around them. Each task gets its own Git worktree and branch, persistent sessions, diff review, and automations that run on events or a schedule, without tying the workflow to one provider."
+msgstr "아니요. 에이전트는 독립적으로 유지되고, Wanker는 그 주변의 오케스트레이션 계층입니다. 작업마다 자체 Git 워크트리와 브랜치, 지속되는 세션, diff 리뷰, 이벤트나 일정에 따라 실행되는 자동화가 제공되며, 워크플로가 특정 제공업체에 묶이지 않습니다."
 
 msgid "Nobody has joined the board yet."
 msgstr "아직 순위표에 참여한 사람이 없습니다."
@@ -13495,8 +13495,8 @@ msgstr "이 페이지에서"
 msgid "On window change"
 msgstr "창 변경 시"
 
-msgid "On your machine. Repos, worktrees, terminal output, and agent sessions stay local by default; cloud sync covers account and organization metadata only. Paradev doesn't proxy any API calls."
-msgstr "본인의 머신에서 실행됩니다. 리포지토리, worktree, 터미널 출력, 에이전트 세션은 기본적으로 로컬에 머물고, 클라우드 동기화는 계정과 조직 메타데이터만 다룹니다. Paradev는 어떤 API 호출도 중계하지 않습니다."
+msgid "On your machine. Repos, worktrees, terminal output, and agent sessions stay local by default; cloud sync covers account and organization metadata only. Wanker doesn't proxy any API calls."
+msgstr "본인의 머신에서 실행됩니다. 리포지토리, worktree, 터미널 출력, 에이전트 세션은 기본적으로 로컬에 머물고, 클라우드 동기화는 계정과 조직 메타데이터만 다룹니다. Wanker는 어떤 API 호출도 중계하지 않습니다."
 
 msgid "On-screen Keyboard"
 msgstr "화면 키보드"
@@ -13730,8 +13730,8 @@ msgstr "{parentLabel} 열기"
 msgid "Open {path} in file pane"
 msgstr "파일 패널에서 {path} 열기"
 
-msgid "Open <0>Paradev</0> from your <1>Applications</1> folder"
-msgstr "<1>응용 프로그램</1> 폴더에서 <0>Paradev</0>를 여세요"
+msgid "Open <0>Wanker</0> from your <1>Applications</1> folder"
+msgstr "<1>응용 프로그램</1> 폴더에서 <0>Wanker</0>를 여세요"
 
 msgid "Open a folder"
 msgstr "폴더 열기"
@@ -13745,8 +13745,8 @@ msgstr "활성 터미널의 여러 줄 프롬프트 작성기를 엽니다"
 msgid "Open a new {label} chat?"
 msgstr "새 {label} 채팅을 열까요?"
 
-msgid "Open a pull request that adds it to the Paradev repository. We review it and add it to the marketplace."
-msgstr "Paradev 리포지토리에 플러그인을 추가하는 풀 리퀘스트를 열어 주세요. 검토 후 마켓플레이스에 추가합니다."
+msgid "Open a pull request that adds it to the Wanker repository. We review it and add it to the marketplace."
+msgstr "Wanker 리포지토리에 플러그인을 추가하는 풀 리퀘스트를 열어 주세요. 검토 후 마켓플레이스에 추가합니다."
 
 msgid "Open a pull request to view review status, checks, and comments."
 msgstr "리뷰 상태, 검사, 코멘트를 보려면 풀 리퀘스트를 여세요."
@@ -13941,9 +13941,6 @@ msgstr "새 탭에서 열기"
 msgid "Open in New Tab"
 msgstr "새 탭에서 열기"
 
-msgid "Open in Paradev"
-msgstr "Paradev에서 열기"
-
 msgid "Open in Pull Requests"
 msgstr "풀 리퀘스트에서 열기"
 
@@ -13967,6 +13964,9 @@ msgstr "작업에서 열기"
 
 msgid "Open in Terminal Chat"
 msgstr "터미널 채팅에서 열기"
+
+msgid "Open in Wanker"
+msgstr "Wanker에서 열기"
 
 msgid "Open in…"
 msgstr "다음으로 열기…"
@@ -14021,8 +14021,8 @@ msgstr "OpenAI의 기기 로그인 페이지를 여세요."
 msgid "Open Page in Default Browser"
 msgstr "기본 브라우저에서 페이지 열기"
 
-msgid "Open pages and reply to comments from the Paradev app on iPhone and iPad."
-msgstr "iPhone 및 iPad용 Paradev 앱에서 페이지를 열고 댓글에 답글을 남기세요."
+msgid "Open pages and reply to comments from the Wanker app on iPhone and iPad."
+msgstr "iPhone 및 iPad용 Wanker 앱에서 페이지를 열고 댓글에 답글을 남기세요."
 
 #. placeholder {0}: pr.number
 msgid "Open PR #{0}"
@@ -14189,8 +14189,8 @@ msgstr "페이지 열기"
 msgid "Operator"
 msgstr "작업자"
 
-msgid "Opt in from Paradev under Settings → Account."
-msgstr "Paradev의 설정 → 계정에서 참여하세요."
+msgid "Opt in from Wanker under Settings → Account."
+msgstr "Wanker의 설정 → 계정에서 참여하세요."
 
 msgid "Opt-out"
 msgstr "수집 거부"
@@ -14458,192 +14458,8 @@ msgstr "패널 레이아웃 루트: 워크스페이스의 패널 트리를 렌�
 msgid "PaneHeaderActions.tsx"
 msgstr "PaneHeaderActions.tsx"
 
-msgid "Paradev"
-msgstr "Paradev"
-
-msgid "Paradev {version}"
-msgstr "Paradev {version}"
-
-msgid "Paradev Agent"
-msgstr "Paradev 에이전트"
-
-msgid "Paradev app"
-msgstr "Paradev 앱"
-
-msgid "Paradev App"
-msgstr "Paradev 앱"
-
-msgid "Paradev Automations"
-msgstr "Paradev 자동화"
-
-msgid "Paradev CLI"
-msgstr "Paradev CLI"
-
-msgid "Paradev cloud workspaces"
-msgstr "Paradev 클라우드 워크스페이스"
-
-msgid "Paradev components"
-msgstr "Paradev 컴포넌트"
-
-msgid "Paradev Components"
-msgstr "Paradev 컴포넌트"
-
-msgid "Paradev could not bring over some of your v1 projects or workspaces. Open the importer to see why and retry each one."
-msgstr "Paradev가 일부 v1 프로젝트 또는 워크스페이스를 옮기지 못했습니다. 가져오기 도구를 열어 이유를 확인하고 항목별로 다시 시도하세요."
-
-msgid "Paradev could not complete sign-in. Please try again."
-msgstr "Paradev가 로그인을 완료하지 못했습니다. 다시 시도해 주세요."
-
-msgid "Paradev CPU"
-msgstr "Paradev CPU"
-
-msgid "Paradev CPU · last 5 min"
-msgstr "Paradev CPU · 최근 5분"
-
-msgid "Paradev Design System"
-msgstr "Paradev 디자인 시스템"
-
-msgid "Paradev desktop app"
-msgstr "Paradev 데스크톱 앱"
-
-msgid "Paradev doesn't have permission to read \"{name}\"."
-msgstr "Paradev에 \"{name}\"을(를) 읽을 권한이 없습니다."
-
-msgid "Paradev Enterprise is Paradev for teams. Reach out to learn more about what's included and how it can work for your organization."
-msgstr "Paradev Enterprise는 팀을 위한 Paradev입니다. 어떤 기능이 포함되고 조직에 어떻게 적용할 수 있는지 문의해 주세요."
-
-msgid "Paradev for iPhone and iPad"
-msgstr "iPhone 및 iPad용 Paradev"
-
-msgid "Paradev for your team"
-msgstr "팀을 위한 Paradev"
-
-msgid "Paradev forwards the ports a remote workspace opens while you have it selected."
-msgstr "원격 워크스페이스를 선택해 두면 Paradev가 그 워크스페이스가 여는 포트를 전달합니다."
-
-msgid "Paradev GitHub App"
-msgstr "Paradev GitHub App"
-
-msgid "Paradev has a free tier. The source code is on GitHub under the MIT License, so you can inspect, modify, and self-host it."
-msgstr "Paradev에는 무료 플랜이 있습니다. 소스 코드가 MIT 라이선스로 GitHub에 공개되어 있어 확인하고, 수정하고, 셀프 호스팅할 수 있습니다."
-
-msgid "Paradev hit an unexpected error. Reload to try again."
-msgstr "Paradev에서 예기치 않은 오류가 발생했습니다. 다시 로드해 보세요."
-
-msgid "Paradev holds no credential for {label} and adds none to your cloud workspaces when they start, restart or wake. A script you run inside the workspace keeps {loginFile} up to date. If it stops, {label} stays signed out until your script signs it in again."
-msgstr "Paradev는 {label}의 자격 증명을 보관하지 않으며, 클라우드 워크스페이스가 시작, 재시작 또는 재개될 때도 자격 증명을 추가하지 않습니다. 워크스페이스 안에서 실행하는 스크립트가 {loginFile}을(를) 최신 상태로 유지합니다. 스크립트가 멈추면 스크립트가 다시 로그인시킬 때까지 {label}은(는) 로그아웃 상태로 남습니다."
-
-msgid "Paradev holds the token and makes the calls. Agents never see it."
-msgstr "토큰은 Paradev가 보관하고 호출도 대신합니다. 에이전트는 토큰을 보지 못합니다."
-
-msgid "Paradev hooks"
-msgstr "Paradev 훅"
-
-msgid "Paradev in-app browser"
-msgstr "Paradev 앱 내 브라우저"
-
-msgid "Paradev is a desktop app. Enter your email and we'll send you a download link to open on your Mac."
-msgstr "Paradev는 데스크톱 앱입니다. 이메일을 입력하시면 Mac에서 열 수 있는 다운로드 링크를 보내 드립니다."
-
-msgid "Paradev is building self-improving software. It starts with giving engineers the best tools that adapt to their needs over time."
-msgstr "Paradev는 스스로 나아지는 소프트웨어를 만듭니다. 그 시작은 엔지니어에게 시간이 지날수록 필요에 맞춰지는 최고의 도구를 주는 일입니다."
-
-msgid "Paradev is built by a team based in San Francisco, California. For product support or account questions, email <0>{supportEmail}</0> and we'll get back to you within one business day. For partnerships, press, enterprise, or anything else, write to <1>{teamEmail}</1>."
-msgstr "Paradev는 캘리포니아 샌프란시스코에 있는 팀이 만듭니다. 제품 지원이나 계정 문의는 <0>{supportEmail}</0>으로 메일을 보내 주시면 영업일 기준 하루 안에 회신드립니다. 파트너십, 언론, 엔터프라이즈 문의나 그 밖의 내용은 <1>{teamEmail}</1>으로 보내 주세요."
-
-msgid "Paradev is built in Paradev, so we're our own #1 users. You get paid to make your own life easier."
-msgstr "Paradev는 Paradev로 개발됩니다. 우리가 가장 열심히 쓰는 사용자이므로, 자신의 삶을 더 편하게 만드는 대가로 보수를 받게 됩니다."
-
-msgid "Paradev is designed to work with your existing tool, we natively support deep-linking to IDEs like Cursor so you can open your workspaces and files in your IDE."
-msgstr "Paradev는 기존 도구와 함께 쓰도록 만들었습니다. Cursor 같은 IDE로의 딥링크를 기본 지원하므로 워크스페이스와 파일을 쓰던 IDE에서 열 수 있습니다."
-
-msgid "Paradev is MIT licensed, so you're never locked in. Read or change the code on GitHub."
-msgstr "Paradev는 MIT 라이선스라 락인이 없습니다. GitHub에서 코드를 읽거나 바꿀 수 있습니다."
-
-msgid "Paradev is open source. Every pull request, review and bug is public on GitHub."
-msgstr "Paradev는 오픈 소스입니다. 모든 풀 리퀘스트, 리뷰, 버그가 GitHub에 공개되어 있습니다."
-
-msgid "Paradev is the workbench for the F3 to F4 transition: parallel agents on separate branches, fleets you can actually supervise, and a review surface for code you did not write."
-msgstr "Paradev는 F3에서 F4로 넘어가기 위한 작업대입니다. 서로 다른 브랜치에서 돌아가는 병렬 에이전트, 실제로 감독할 수 있는 에이전트 무리, 그리고 직접 쓰지 않은 코드를 위한 리뷰 화면을 제공합니다."
-
-msgid "Paradev isn't on Windows yet"
-msgstr "현재 Paradev는 Mac에서만 사용할 수 있습니다"
-
-msgid "Paradev may sign you back in after restart. Please try signing out again."
-msgstr "재시작 후 Paradev가 다시 로그인할 수 있습니다. 로그아웃을 다시 시도해 주세요."
-
-msgid "Paradev memory"
-msgstr "Paradev 메모리"
-
-msgid "Paradev memory · last 5 min"
-msgstr "Paradev 메모리 · 최근 5분"
-
-msgid "Paradev Mobile code diff on iPhone"
-msgstr "iPhone의 Paradev Mobile 코드 diff"
-
-msgid "Paradev mobile gives me the power of my desktop anywhere I go."
-msgstr "Paradev 모바일은 어디를 가든 데스크톱의 성능을 사용할 수 있게 해줍니다."
-
-msgid "Paradev Mobile terminal on iPhone"
-msgstr "iPhone의 Paradev Mobile 터미널"
-
-msgid "Paradev needs Full Disk Access to read another browser's data. Grant it in System Settings, then check again."
-msgstr "다른 브라우저의 데이터를 읽으려면 Paradev에 전체 디스크 접근 권한이 필요합니다. 시스템 설정에서 권한을 허용한 다음 다시 확인하세요."
-
-msgid "Paradev needs Git to add a project."
-msgstr "프로젝트를 추가하려면 Paradev에 Git이 필요합니다."
-
-msgid "Paradev next to others"
-msgstr "다른 도구와 비교한 Paradev"
-
-msgid "Paradev on iPad, showing a pull request and a workspace list"
-msgstr "iPad의 Paradev. 풀 리퀘스트와 워크스페이스 목록이 보입니다"
-
-msgid "Paradev only receives the permissions this connector asks for. Disconnect at any time to revoke them."
-msgstr "Paradev는 이 커넥터가 요청한 권한만 받습니다. 언제든지 연결을 해제해 취소할 수 있습니다."
-
-msgid "Paradev originals"
-msgstr "Paradev 오리지널"
-
-msgid "Paradev Pages"
-msgstr "Paradev 페이지"
-
-msgid "Paradev Pages demo"
-msgstr "Paradev 페이지 데모"
-
-msgid "Paradev Plugins"
-msgstr "Paradev 플러그인"
-
-msgid "Paradev runs locally on your developers' machines. We don't store your code or AI conversations, and Paradev has completed a SOC 2 Type II audit with an independent auditor. Request the report and review our security documentation at {trustHost}."
-msgstr "Paradev는 개발자의 로컬 머신에서 실행됩니다. 코드나 AI 대화를 저장하지 않으며, 독립 감사인과 함께 SOC 2 Type II 감사를 완료했습니다. {trustHost}에서 보고서를 요청하고 보안 문서를 확인하세요."
-
-msgid "Paradev started as a hackathon project in November 2025. It was a simple desktop app for managing worktrees."
-msgstr "Paradev는 2025년 11월 해커톤 프로젝트로 시작했습니다. worktree를 관리하는 간단한 데스크톱 앱이었습니다."
-
-msgid "Paradev Teams"
-msgstr "Paradev 팀"
-
-msgid "Paradev UI"
-msgstr "Paradev UI"
-
-#. placeholder {0}: formatPercent(trackedMemorySharePercent)
-msgid "Paradev uses {0} of system RAM"
-msgstr "Paradev가 시스템 RAM의 {0}을(를) 사용합니다"
-
-msgid "Paradev uses the GitHub CLI to clone repos and open pull requests. You can also do this later."
-msgstr "Paradev는 GitHub CLI로 저장소를 클론하고 풀 리퀘스트를 엽니다. 나중에 설정해도 됩니다."
-
-msgid "Paradev vs the Alternatives"
-msgstr "Paradev와 대안 비교"
-
-msgid "Paradev works with any CLI-based coding agent, including Claude Code, OpenCode, OpenAI Codex, and more. Choose a different agent for every task without changing your workspace or review flow."
-msgstr "Paradev는 Claude Code, OpenCode, OpenAI Codex 등 CLI 기반 코딩 에이전트라면 무엇이든 함께 씁니다. 워크스페이스나 리뷰 흐름을 바꾸지 않고 작업마다 다른 에이전트를 고르세요."
-
 msgid "paradev.com"
 msgstr "paradev.com"
-
-msgid "Paradev's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
-msgstr "Paradev 모바일 앱 덕분에 컴퓨터에서 멀리 떨어져 있어도 어디서든 에이전트가 계속 작업하도록 돕고 막힌 부분을 해결할 수 있습니다."
 
 msgid "Paragraph"
 msgstr "본문"
@@ -14699,8 +14515,8 @@ msgstr "붙여넣기"
 msgid "Paste a link"
 msgstr "링크 붙여넣기"
 
-msgid "Paste this into Paradev CLI:"
-msgstr "Paradev CLI에 붙여 넣으세요:"
+msgid "Paste this into Wanker CLI:"
+msgstr "Wanker CLI에 붙여 넣으세요:"
 
 msgid "Path"
 msgstr "경로"
@@ -14743,8 +14559,8 @@ msgstr "일시 중지됨"
 msgid "Paused until {0}"
 msgstr "{0}까지 일시 중지됨"
 
-msgid "Paused when Paradev closed"
-msgstr "Paradev가 종료되어 일시 중지됨"
+msgid "Paused when Wanker closed"
+msgstr "Wanker가 종료되어 일시 중지됨"
 
 msgid "Pay {total}"
 msgstr "{total} 결제"
@@ -14794,8 +14610,8 @@ msgstr "사용자당 월"
 msgid "Per-repo agent memory"
 msgstr "리포지토리별 에이전트 메모리"
 
-msgid "Percent of total system RAM used by monitored Paradev resources only (not all apps). A high share means Paradev is a major contributor to system memory pressure; a low share means pressure is likely elsewhere."
-msgstr "모니터링 중인 Paradev 리소스만 사용하는 전체 시스템 RAM의 비율입니다(모든 앱이 아님). 점유율이 높으면 Paradev가 시스템 메모리 압박의 주요 원인이고, 낮으면 원인이 다른 곳에 있을 가능성이 큽니다."
+msgid "Percent of total system RAM used by monitored Wanker resources only (not all apps). A high share means Wanker is a major contributor to system memory pressure; a low share means pressure is likely elsewhere."
+msgstr "모니터링 중인 Wanker 리소스만 사용하는 전체 시스템 RAM의 비율입니다(모든 앱이 아님). 점유율이 높으면 Wanker가 시스템 메모리 압박의 주요 원인이고, 낮으면 원인이 다른 곳에 있을 가능성이 큽니다."
 
 msgid "Permanently delete \"{projectName}\"?"
 msgstr "\"{projectName}\"을(를) 영구 삭제할까요?"
@@ -14891,8 +14707,8 @@ msgstr "에이전트가 입력을 기다리고 있거나, 마지막으로 확인
 msgid "Pick an icon and a color, or upload a custom image. Defaults to the linked GitHub owner's avatar."
 msgstr "아이콘과 색상을 고르거나 직접 만든 이미지를 업로드하세요. 기본값은 연결된 GitHub 소유자의 아바타입니다."
 
-msgid "Pick one in the Paradev app. It's saved to your account."
-msgstr "Paradev 앱에서 하나를 고르세요. 계정에 저장됩니다."
+msgid "Pick one in the Wanker app. It's saved to your account."
+msgstr "Wanker 앱에서 하나를 고르세요. 계정에 저장됩니다."
 
 msgid "Pick the best agent."
 msgstr "최고의 에이전트를 고르세요."
@@ -14987,8 +14803,8 @@ msgstr "작업이 완료되면 소리를 재생합니다"
 msgid "Play the animation"
 msgstr "애니메이션 재생"
 
-msgid "Play the Paradev Pages demo"
-msgstr "Paradev 페이지 데모 재생"
+msgid "Play the Wanker Pages demo"
+msgstr "Wanker 페이지 데모 재생"
 
 msgid "Please check your internet connection and try again."
 msgstr "인터넷 연결을 확인하고 다시 시도해 주세요."
@@ -15005,8 +14821,8 @@ msgstr "프로젝트 위치를 선택하세요"
 msgid "Please select an organization"
 msgstr "조직을 선택해 주세요"
 
-msgid "Please try again, or restart Paradev on that device."
-msgstr "다시 시도하거나 해당 기기에서 Paradev를 다시 시작해 주세요."
+msgid "Please try again, or restart Wanker on that device."
+msgstr "다시 시도하거나 해당 기기에서 Wanker를 다시 시작해 주세요."
 
 msgid "Plugin"
 msgstr "플러그인"
@@ -15144,8 +14960,8 @@ msgstr "보도"
 msgid "Press <0>Esc</0> to close"
 msgstr "닫으려면 <0>Esc</0>를 누르세요"
 
-msgid "Press ⌘⇧B or open a port Paradev detected. Your dev server loads in a pane beside your terminals."
-msgstr "⌘⇧B를 누르거나 Paradev가 감지한 포트를 여세요. 개발 서버가 터미널 옆 패널에 로드됩니다."
+msgid "Press ⌘⇧B or open a port Wanker detected. Your dev server loads in a pane beside your terminals."
+msgstr "⌘⇧B를 누르거나 Wanker가 감지한 포트를 여세요. 개발 서버가 터미널 옆 패널에 로드됩니다."
 
 msgid "Press a key…"
 msgstr "키를 누르세요…"
@@ -15410,8 +15226,8 @@ msgstr "프로젝트"
 msgid "Prompt"
 msgstr "프롬프트"
 
-msgid "Prompt a coding agent to build what you want to see in Paradev. If we like your prompt, we'll run it and merge the result."
-msgstr "코딩 에이전트에게 Paradev에서 보고 싶은 기능을 만들어 달라고 요청하세요. 마음에 드는 프롬프트는 저희가 실행해서 결과를 머지합니다."
+msgid "Prompt a coding agent to build what you want to see in Wanker. If we like your prompt, we'll run it and merge the result."
+msgstr "코딩 에이전트에게 Wanker에서 보고 싶은 기능을 만들어 달라고 요청하세요. 마음에 드는 프롬프트는 저희가 실행해서 결과를 머지합니다."
 
 msgid "Prompt command is only available for terminal agents."
 msgstr "프롬프트 명령은 터미널 에이전트에서만 사용할 수 있습니다."
@@ -15480,8 +15296,8 @@ msgstr "공개 리더보드"
 msgid "Publish again and the link stays the same. Earlier versions are kept in the history."
 msgstr "다시 게시해도 링크는 그대로입니다. 이전 버전은 기록에 남습니다."
 
-msgid "Publish from the Paradev CLI or over MCP."
-msgstr "Paradev CLI나 MCP로 게시하세요."
+msgid "Publish from the Wanker CLI or over MCP."
+msgstr "Wanker CLI나 MCP로 게시하세요."
 
 msgid "Publish from your own repo"
 msgstr "내 저장소에서 게시"
@@ -15599,8 +15415,8 @@ msgstr "중단했기 때문에 대기열이 일시 중지되었습니다"
 msgid "Queue paused by the usage limit"
 msgstr "사용량 한도로 대기열이 일시 중지되었습니다"
 
-msgid "Queue paused when Paradev closed"
-msgstr "Paradev가 종료되어 대기열이 일시 중지되었습니다"
+msgid "Queue paused when Wanker closed"
+msgstr "Wanker가 종료되어 대기열이 일시 중지되었습니다"
 
 msgid "Queue work for agents"
 msgstr "에이전트 작업 대기열에 추가"
@@ -15697,8 +15513,8 @@ msgstr "요청 한도를 초과했습니다."
 msgid "Rate limits"
 msgstr "사용량 한도"
 
-msgid "Reach this Mac from anywhere via the Paradev relay, or spin up cloud workspaces. Connect from any client."
-msgstr "Paradev 릴레이를 통해 어디서든 이 Mac에 접속하거나 클라우드 워크스페이스를 띄우세요. 어떤 클라이언트에서도 연결할 수 있습니다."
+msgid "Reach this Mac from anywhere via the Wanker relay, or spin up cloud workspaces. Connect from any client."
+msgstr "Wanker 릴레이를 통해 어디서든 이 Mac에 접속하거나 클라우드 워크스페이스를 띄우세요. 어떤 클라이언트에서도 연결할 수 있습니다."
 
 msgid "Reached"
 msgstr "도달"
@@ -15847,8 +15663,8 @@ msgstr "로그인하는 모든 머신과 모든 클라우드 워크스페이스�
 msgid "Ready to Merge"
 msgstr "머지 준비됨"
 
-msgid "Ready to try Paradev?"
-msgstr "Paradev를 사용해 볼 준비가 되셨나요?"
+msgid "Ready to try Wanker?"
+msgstr "Wanker를 사용해 볼 준비가 되셨나요?"
 
 msgid "Reapply all commits"
 msgstr "모든 커밋 다시 적용"
@@ -15988,8 +15804,8 @@ msgstr "다시 생성"
 msgid "Region"
 msgstr "리전"
 
-msgid "Registers lifecycle hooks in this agent's global config so Paradev can show status and send notifications. Turning this off removes Paradev's entries everywhere — status and notifications stop for this agent, including inside Paradev."
-msgstr "이 에이전트의 전역 구성에 라이프사이클 훅을 등록해 Paradev가 상태를 표시하고 알림을 보낼 수 있게 합니다. 이 기능을 끄면 모든 곳에서 Paradev의 항목이 제거되며, Paradev 안에서도 이 에이전트의 상태와 알림이 중단됩니다."
+msgid "Registers lifecycle hooks in this agent's global config so Wanker can show status and send notifications. Turning this off removes Wanker's entries everywhere — status and notifications stop for this agent, including inside Wanker."
+msgstr "이 에이전트의 전역 구성에 라이프사이클 훅을 등록해 Wanker가 상태를 표시하고 알림을 보낼 수 있게 합니다. 이 기능을 끄면 모든 곳에서 Wanker의 항목이 제거되며, Wanker 안에서도 이 에이전트의 상태와 알림이 중단됩니다."
 
 msgid "Reinstall {name}"
 msgstr "{name} 다시 설치"
@@ -16033,8 +15849,8 @@ msgstr "앱 다시 로드"
 msgid "Reload from disk"
 msgstr "디스크에서 다시 불러오기"
 
-msgid "Reload Paradev to refresh the workspace list."
-msgstr "워크스페이스 목록을 새로 고치려면 Paradev를 다시 불러오세요."
+msgid "Reload Wanker to refresh the workspace list."
+msgstr "워크스페이스 목록을 새로 고치려면 Wanker를 다시 불러오세요."
 
 msgid "Reload window"
 msgstr "창 다시 로드"
@@ -16426,8 +16242,8 @@ msgstr "필수"
 msgid "Required version: {minimumVersion}+"
 msgstr "필요한 버전: {minimumVersion} 이상"
 
-msgid "Requires iOS 26 or iPadOS 26 or later. Included with Paradev Pro."
-msgstr "iOS 26 또는 iPadOS 26 이상이 필요합니다. Paradev Pro에 포함되어 있습니다."
+msgid "Requires iOS 26 or iPadOS 26 or later. Included with Wanker Pro."
+msgstr "iOS 26 또는 iPadOS 26 이상이 필요합니다. Wanker Pro에 포함되어 있습니다."
 
 msgid "Resend invite"
 msgstr "초대 다시 보내기"
@@ -16492,8 +16308,8 @@ msgstr "{countdown} 후 재설정 · {absolute}"
 msgid "Resets now"
 msgstr "지금 재설정"
 
-msgid "Resident memory used by Paradev and monitored terminal process trees. If this keeps climbing without dropping, a workspace process may be retaining memory. High values increase swap risk and can cause stutter."
-msgstr "Paradev와 모니터링 중인 터미널 프로세스 트리가 사용하는 상주 메모리입니다. 줄지 않고 계속 늘기만 한다면 워크스페이스 프로세스가 메모리를 붙잡고 있을 수 있습니다. 값이 높으면 스왑 위험이 커지고 화면이 끊길 수 있습니다."
+msgid "Resident memory used by Wanker and monitored terminal process trees. If this keeps climbing without dropping, a workspace process may be retaining memory. High values increase swap risk and can cause stutter."
+msgstr "Wanker와 모니터링 중인 터미널 프로세스 트리가 사용하는 상주 메모리입니다. 줄지 않고 계속 늘기만 한다면 워크스페이스 프로세스가 메모리를 붙잡고 있을 수 있습니다. 값이 높으면 스왑 위험이 커지고 화면이 끊길 수 있습니다."
 
 msgid "Resizable"
 msgstr "크기 조절 가능"
@@ -16731,8 +16547,8 @@ msgstr "연결이 새로 고쳐진 뒤 다시 시도하세요."
 msgid "Retry dictation"
 msgstr "받아쓰기 다시 시도"
 
-msgid "Retry in a few seconds; if it persists, restart Paradev."
-msgstr "몇 초 후 다시 시도하고, 계속되면 Paradev를 재시작하세요."
+msgid "Retry in a few seconds; if it persists, restart Wanker."
+msgstr "몇 초 후 다시 시도하고, 계속되면 Wanker를 재시작하세요."
 
 msgid "Retry in a few seconds."
 msgstr "몇 초 후 다시 시도하세요."
@@ -16807,8 +16623,8 @@ msgstr "리뷰 대기 중"
 msgid "Review pending changes."
 msgstr "대기 중인 변경 사항을 검토합니다."
 
-msgid "Review pull requests inside Paradev: diff pane, agent-assisted review, act on comments directly."
-msgstr "Paradev 안에서 풀 리퀘스트를 리뷰하세요. 차이 창, 에이전트 보조 리뷰, 댓글에 대한 직접 처리까지."
+msgid "Review pull requests inside Wanker: diff pane, agent-assisted review, act on comments directly."
+msgstr "Wanker 안에서 풀 리퀘스트를 리뷰하세요. 차이 창, 에이전트 보조 리뷰, 댓글에 대한 직접 처리까지."
 
 msgid "Review requested"
 msgstr "리뷰 요청됨"
@@ -17002,8 +16818,8 @@ msgstr "일정이나 이벤트로 실행, 필요할 때 실행, 일시 중지, �
 msgid "Run parallel coding agents on features, fixes, and refactors. Each one works on its own branch, locally or in the cloud."
 msgstr "기능, 수정, 리팩터링에 코딩 에이전트를 병렬로 실행하세요. 각 에이전트는 로컬이나 클라우드에서 자체 브랜치로 작업합니다."
 
-msgid "Run parallel coding agents with Paradev"
-msgstr "Paradev로 병렬 코딩 에이전트 실행"
+msgid "Run parallel coding agents with Wanker"
+msgstr "Wanker로 병렬 코딩 에이전트 실행"
 
 msgid "Run script"
 msgstr "스크립트 실행"
@@ -17077,8 +16893,8 @@ msgstr "자동화가 실행되면 여기에 표시됩니다."
 msgid "Runs in"
 msgstr "실행 위치"
 
-msgid "Runs inside the Paradev app on that device, so updating it means updating the app there."
-msgstr "해당 기기의 Paradev 앱 안에서 실행되므로, 업데이트하려면 그 기기의 앱을 업데이트해야 합니다."
+msgid "Runs inside the Wanker app on that device, so updating it means updating the app there."
+msgstr "해당 기기의 Wanker 앱 안에서 실행되므로, 업데이트하려면 그 기기의 앱을 업데이트해야 합니다."
 
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "실행 결과는 워크스페이스에 도착합니다. 차이를 검토하고 괜찮은 것만 머지하세요."
@@ -17189,11 +17005,11 @@ msgstr "저장하는 중…"
 msgid "Scale to 100+ agents"
 msgstr "100개 이상의 에이전트로 확장"
 
-msgid "Scan the QR code, then sign in with the same Paradev account and select this organization."
-msgstr "QR 코드를 스캔한 후 동일한 Paradev 계정으로 로그인하고 이 조직을 선택하세요."
+msgid "Scan the QR code, then sign in with the same Wanker account and select this organization."
+msgstr "QR 코드를 스캔한 후 동일한 Wanker 계정으로 로그인하고 이 조직을 선택하세요."
 
-msgid "Scan to download Paradev for iPhone"
-msgstr "스캔하여 iPhone용 Paradev 다운로드"
+msgid "Scan to download Wanker for iPhone"
+msgstr "스캔하여 iPhone용 Wanker 다운로드"
 
 msgid "Scanning transcript logs…"
 msgstr "트랜스크립트 로그를 스캔하는 중…"
@@ -17496,11 +17312,11 @@ msgstr "변경 확인"
 msgid "See how {companyName}'s GitHub stars have grown over time."
 msgstr "{companyName}의 GitHub 스타가 시간에 따라 어떻게 늘어났는지 확인하세요."
 
-msgid "See how Paradev compares to other AI coding tools, from AI editors to coding agents to cloud-based AI engineers."
-msgstr "AI 에디터부터 코딩 에이전트, 클라우드 기반 AI 엔지니어까지 다른 AI 코딩 도구와 Paradev가 어떻게 다른지 확인해 보세요."
+msgid "See how Wanker compares to other AI coding tools, from AI editors to coding agents to cloud-based AI engineers."
+msgstr "AI 에디터부터 코딩 에이전트, 클라우드 기반 AI 엔지니어까지 다른 AI 코딩 도구와 Wanker가 어떻게 다른지 확인해 보세요."
 
-msgid "See how Paradev compares to other tools"
-msgstr "다른 도구와 Paradev 비교 보기"
+msgid "See how Wanker compares to other tools"
+msgstr "다른 도구와 Wanker 비교 보기"
 
 msgid "See how we work"
 msgstr "우리가 일하는 방식 보기"
@@ -17529,8 +17345,8 @@ msgstr "모든 도구 이름과 매개변수는 <0>사용 가능한 도구 레�
 msgid "See the <0>custom themes guide</0> to edit a theme or build your own."
 msgstr "테마를 수정하거나 직접 만들려면 <0>커스텀 테마 가이드</0>를 참고하세요."
 
-msgid "See the open roles, or try Paradev first."
-msgstr "채용 공고를 확인하거나 먼저 Paradev를 사용해 보세요."
+msgid "See the open roles, or try Wanker first."
+msgstr "채용 공고를 확인하거나 먼저 Wanker를 사용해 보세요."
 
 msgid "See this gate on the scorecard"
 msgstr "성적표에서 이 관문 보기"
@@ -17538,8 +17354,8 @@ msgstr "성적표에서 이 관문 보기"
 msgid "See what changed, give feedback, and merge the work when it's ready."
 msgstr "무엇이 바뀌었는지 보고, 피드백을 주고, 준비되면 머지하세요."
 
-msgid "See what we're building now, what's coming next, and where Paradev is headed."
-msgstr "지금 만들고 있는 것, 다음에 나올 것, 그리고 Paradev가 향하는 방향을 확인하세요."
+msgid "See what we're building now, what's coming next, and where Wanker is headed."
+msgstr "지금 만들고 있는 것, 다음에 나올 것, 그리고 Wanker가 향하는 방향을 확인하세요."
 
 msgid "See what your teammates' agents are working on, shipping, and blocked on."
 msgstr "팀원의 에이전트가 무엇을 작업하고, 출시하고, 어디에서 막혀 있는지 확인하세요."
@@ -17743,8 +17559,8 @@ msgstr "신고 보내기"
 msgid "Send review"
 msgstr "리뷰 보내기"
 
-msgid "Send the link. Your team opens it in a browser or in Paradev."
-msgstr "링크를 보내세요. 팀은 브라우저나 Paradev에서 엽니다."
+msgid "Send the link. Your team opens it in a browser or in Wanker."
+msgstr "링크를 보내세요. 팀은 브라우저나 Wanker에서 엽니다."
 
 msgid "Send to"
 msgstr "보낼 대상"
@@ -17905,8 +17721,8 @@ msgstr "{hostName}에 프로젝트 설정"
 msgid "Set up project…"
 msgstr "프로젝트 설정…"
 
-msgid "Set up this project for Paradev"
-msgstr "이 프로젝트를 Paradev에 맞게 설정하기"
+msgid "Set up this project for Wanker"
+msgstr "이 프로젝트를 Wanker에 맞게 설정하기"
 
 msgid "Set up your organization to get started"
 msgstr "조직을 설정하고 시작하세요"
@@ -18007,11 +17823,11 @@ msgstr "공용 앱 컴포넌트"
 msgid "Shared component library."
 msgstr "공유 컴포넌트 라이브러리입니다."
 
-msgid "Shared settings and simpler membership for teams that work in Paradev together."
-msgstr "Paradev에서 함께 일하는 팀을 위한 공유 설정과 더 간단한 멤버 관리."
+msgid "Shared settings and simpler membership for teams that work in Wanker together."
+msgstr "Wanker에서 함께 일하는 팀을 위한 공유 설정과 더 간단한 멤버 관리."
 
-msgid "Shared theme JSON files you can import into Paradev."
-msgstr "Paradev로 가져올 수 있는 공유 테마 JSON 파일입니다."
+msgid "Shared theme JSON files you can import into Wanker."
+msgstr "Wanker로 가져올 수 있는 공유 테마 JSON 파일입니다."
 
 msgid "Shared version"
 msgstr "공유 버전"
@@ -18058,8 +17874,8 @@ msgstr "표시"
 msgid "Show a confirmation dialog when quitting the app"
 msgstr "앱을 종료할 때 확인 대화 상자를 표시합니다"
 
-msgid "Show a microphone in the chat composer. Speech is transcribed by ChatGPT when Codex is signed in to it, otherwise on your Mac when possible, and otherwise by Paradev's servers."
-msgstr "채팅 입력창에 마이크를 표시합니다. Codex가 ChatGPT에 로그인되어 있으면 ChatGPT가 받아쓰고, 그렇지 않으면 가능한 경우 Mac에서, 그 외에는 Paradev 서버에서 받아씁니다."
+msgid "Show a microphone in the chat composer. Speech is transcribed by ChatGPT when Codex is signed in to it, otherwise on your Mac when possible, and otherwise by Wanker's servers."
+msgstr "채팅 입력창에 마이크를 표시합니다. Codex가 ChatGPT에 로그인되어 있으면 ChatGPT가 받아쓰고, 그렇지 않으면 가능한 경우 Mac에서, 그 외에는 Wanker 서버에서 받아씁니다."
 
 msgid "Show a Usage button in the home sidebar, under Pull requests"
 msgstr "홈 사이드바의 풀 리퀘스트 아래에 사용량 버튼을 표시합니다"
@@ -18275,8 +18091,8 @@ msgstr "받아쓰기를 사용하려면 다시 로그인하세요"
 msgid "Sign in as Local Admin (dev)"
 msgstr "로컬 관리자로 로그인 (dev)"
 
-msgid "Sign in once. Paradev keeps the connection."
-msgstr "한 번만 로그인하세요. 연결은 Paradev가 유지합니다."
+msgid "Sign in once. Wanker keeps the connection."
+msgstr "한 번만 로그인하세요. 연결은 Wanker가 유지합니다."
 
 #. placeholder {0}: activeOrganization?.name ?? t({ message: "this organization", })
 msgid "Sign in to {0}"
@@ -18288,8 +18104,8 @@ msgstr "조직 플러그인을 변경하려면 로그인하세요."
 msgid "Sign in to continue"
 msgstr "계속하려면 로그인하세요"
 
-msgid "Sign in to continue to Paradev"
-msgstr "Paradev를 계속 사용하려면 로그인하세요"
+msgid "Sign in to continue to Wanker"
+msgstr "Wanker를 계속 사용하려면 로그인하세요"
 
 msgid "Sign in to get started"
 msgstr "로그인하고 시작하세요"
@@ -18338,8 +18154,8 @@ msgstr "시스템 기본 {0} 로그인을 다른 계정으로 바꿉니다. 이 
 msgid "Sign up in one step"
 msgstr "한 단계로 가입"
 
-msgid "Sign up to get started with Paradev"
-msgstr "가입하고 Paradev를 시작하세요"
+msgid "Sign up to get started with Wanker"
+msgstr "가입하고 Wanker를 시작하세요"
 
 msgid "Sign up with GitHub"
 msgstr "GitHub로 가입"
@@ -18455,8 +18271,8 @@ msgstr "스킬"
 msgid "Skills and MCP tools for your agents. Submit your own."
 msgstr "에이전트를 위한 스킬과 MCP 도구. 직접 만든 플러그인도 제출하세요."
 
-msgid "Skills ship with the Paradev plugin and are kept up to date automatically in every agent you use. Click one to preview it."
-msgstr "스킬은 Paradev 플러그인에 포함되어 있으며 사용하는 모든 에이전트에서 자동으로 최신 상태로 유지됩니다. 미리 보려면 클릭하세요."
+msgid "Skills ship with the Wanker plugin and are kept up to date automatically in every agent you use. Click one to preview it."
+msgstr "스킬은 Wanker 플러그인에 포함되어 있으며 사용하는 모든 에이전트에서 자동으로 최신 상태로 유지됩니다. 미리 보려면 클릭하세요."
 
 msgid "Skin Tone"
 msgstr "피부색"
@@ -18592,8 +18408,8 @@ msgstr "누군가"
 msgid "serverError.page.entryPathHeldByColleague"
 msgstr "다른 사람이 이 워크스페이스의 {entryPath}를 이미 게시했습니다. 페이지 ID를 명시해 그 페이지에 버전을 추가하거나 파일을 옮기세요."
 
-msgid "Someone on the Paradev team will review this page. We only follow up if we need more from you."
-msgstr "Paradev 팀이 이 페이지를 검토합니다. 추가 정보가 필요할 때만 연락드립니다."
+msgid "Someone on the Wanker team will review this page. We only follow up if we need more from you."
+msgstr "Wanker 팀이 이 페이지를 검토합니다. 추가 정보가 필요할 때만 연락드립니다."
 
 msgid "Something else"
 msgstr "기타"
@@ -18799,8 +18615,8 @@ msgstr "스타 알림이 초기화되었습니다. 빈 상태 및 온보딩 알�
 msgid "Star on GitHub"
 msgstr "GitHub에서 스타"
 
-msgid "Star Paradev on GitHub"
-msgstr "GitHub에서 Paradev에 스타 주기"
+msgid "Star Wanker on GitHub"
+msgstr "GitHub에서 Wanker에 스타 주기"
 
 msgid "Starred"
 msgstr "스타 완료"
@@ -19024,9 +18840,6 @@ msgstr "받아쓰기 중지"
 msgid "Stop local {0}"
 msgstr "로컬 {0} 중지"
 
-msgid "Stop Paradev here to delete from another device."
-msgstr "다른 기기에서 삭제하려면 여기에서 Paradev를 종료하세요."
-
 msgid "Stop response"
 msgstr "응답 중지"
 
@@ -19035,6 +18848,9 @@ msgstr "에이전트를 중지하고 지금 보내기"
 
 msgid "Stop the agent before you edit a message"
 msgstr "메시지를 편집하기 전에 에이전트를 중지하세요"
+
+msgid "Stop Wanker here to delete from another device."
+msgstr "다른 기기에서 삭제하려면 여기에서 Wanker를 종료하세요."
 
 msgid "Stop watching"
 msgstr "감시 중지"
@@ -19138,8 +18954,8 @@ msgstr "제안"
 msgid "suite for agent UIs, and shared app components. Click any import path to copy it."
 msgstr "스위트, 그리고 공용 앱 컴포넌트입니다. import 경로를 클릭하면 복사됩니다."
 
-msgid "Sum of CPU used by Paradev and monitored terminal process trees. Over 100% means multiple CPU cores are busy. Sustained high values usually cause UI sluggishness and higher battery drain."
-msgstr "Paradev와 모니터링 중인 터미널 프로세스 트리가 사용하는 CPU의 합계입니다. 100%를 넘으면 여러 CPU 코어가 사용 중이라는 뜻입니다. 높은 값이 계속되면 보통 UI가 느려지고 배터리 소모가 커집니다."
+msgid "Sum of CPU used by Wanker and monitored terminal process trees. Over 100% means multiple CPU cores are busy. Sustained high values usually cause UI sluggishness and higher battery drain."
+msgstr "Wanker와 모니터링 중인 터미널 프로세스 트리가 사용하는 CPU의 합계입니다. 100%를 넘으면 여러 CPU 코어가 사용 중이라는 뜻입니다. 높은 값이 계속되면 보통 UI가 느려지고 배터리 소모가 커집니다."
 
 msgid "Summarize the changes in this workspace"
 msgstr "이 워크스페이스의 변경 사항을 요약해 줘"
@@ -19314,8 +19130,8 @@ msgstr "동기화 실패"
 msgid "Sync issues bidirectionally with Linear."
 msgstr "Linear와 이슈를 양방향으로 동기화합니다."
 
-msgid "Sync issues bidirectionally with Linear. Create tasks in Paradev and have them appear in Linear, or import existing Linear issues."
-msgstr "Linear와 이슈를 양방향으로 동기화하세요. Paradev에서 만든 작업을 Linear에 나타나게 하거나 기존 Linear 이슈를 가져올 수 있습니다."
+msgid "Sync issues bidirectionally with Linear. Create tasks in Wanker and have them appear in Linear, or import existing Linear issues."
+msgstr "Linear와 이슈를 양방향으로 동기화하세요. Wanker에서 만든 작업을 Linear에 나타나게 하거나 기존 Linear 이슈를 가져올 수 있습니다."
 
 msgid "Sync now"
 msgstr "지금 동기화"
@@ -19353,8 +19169,8 @@ msgstr "시스템 RAM 점유율"
 #. placeholder {0}: formatMemory(snapshot.totalMemory)
 #. placeholder {1}: formatMemory(otherUsedMemory)
 #. placeholder {2}: formatMemory(freeMemory)
-msgid "System RAM: Paradev {0}, other apps {1}, free {2}"
-msgstr "시스템 RAM: Paradev {0}, 다른 앱 {1}, 여유 {2}"
+msgid "System RAM: Wanker {0}, other apps {1}, free {2}"
+msgstr "시스템 RAM: Wanker {0}, 다른 앱 {1}, 여유 {2}"
 
 msgid "Tab"
 msgstr "탭"
@@ -19407,8 +19223,8 @@ msgstr "평소보다 오래 걸리고 있습니다. 화면을 나가도 계속 �
 msgid "Talk to it"
 msgstr "대화하기"
 
-msgid "Talk to Paradev"
-msgstr "Paradev에 문의하기"
+msgid "Talk to Wanker"
+msgstr "Wanker에 문의하기"
 
 msgid "Tap anything on the page to comment on it"
 msgstr "페이지의 아무 곳이나 탭하여 댓글을 남기세요"
@@ -19471,8 +19287,8 @@ msgstr "작업 관리 위치가 업데이트되었습니다"
 msgid "Tasks"
 msgstr "작업"
 
-msgid "Tasks created in Paradev will be synced to this Linear team."
-msgstr "Paradev에서 만든 작업이 이 Linear 팀으로 동기화됩니다."
+msgid "Tasks created in Wanker will be synced to this Linear team."
+msgstr "Wanker에서 만든 작업이 이 Linear 팀으로 동기화됩니다."
 
 msgid "Tasks, the CLI and agents follow this. Each member uses their own Linear account."
 msgstr "작업, CLI, 에이전트가 이 설정을 따릅니다. 각 멤버는 자신의 Linear 계정을 사용합니다."
@@ -19736,8 +19552,8 @@ msgstr "에이전트가 스킬과 도구를 사용하고, 이슈가 Linear에 �
 msgid "The agent watching the page reads each comment. It updates the page and replies in the thread."
 msgstr "페이지를 지켜보는 에이전트가 각 댓글을 읽고 페이지를 업데이트한 뒤 스레드에 답합니다."
 
-msgid "The app is on {appVersion} but attached to a host service started by something else, likely an older CLI or another Paradev build. Restarting replaces it with this app's copy."
-msgstr "앱은 {appVersion}이지만 다른 것(오래된 CLI나 다른 Paradev 빌드일 가능성)이 시작한 호스트 서비스에 연결되어 있습니다. 다시 시작하면 이 앱의 복사본으로 교체됩니다."
+msgid "The app is on {appVersion} but attached to a host service started by something else, likely an older CLI or another Wanker build. Restarting replaces it with this app's copy."
+msgstr "앱은 {appVersion}이지만 다른 것(오래된 CLI나 다른 Wanker 빌드일 가능성)이 시작한 호스트 서비스에 연결되어 있습니다. 다시 시작하면 이 앱의 복사본으로 교체됩니다."
 
 msgid "The automation and its run history are removed. This can't be undone."
 msgstr "자동화와 실행 기록이 삭제됩니다. 이 작업은 되돌릴 수 없습니다."
@@ -19766,8 +19582,8 @@ msgstr "클라우드 워크스페이스가 시작되었어야 하지만 제시�
 msgid "The code expired. Start again."
 msgstr "코드가 만료되었습니다. 다시 시작하세요."
 
-msgid "The commands Paradev runs to set up, run and archive this project's workspaces, from the repository's config.toml."
-msgstr "Paradev이 이 프로젝트의 워크스페이스를 설정, 실행, 보관할 때 실행하는 명령어(리포지토리의 config.toml)."
+msgid "The commands Wanker runs to set up, run and archive this project's workspaces, from the repository's config.toml."
+msgstr "Wanker이 이 프로젝트의 워크스페이스를 설정, 실행, 보관할 때 실행하는 명령어(리포지토리의 config.toml)."
 
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "회사는 Union Square Ventures가 리드하고 Y Combinator와 Paul Graham이 참여한 1,150만 달러 규모의 시드 라운드를 유치했습니다. TechCrunch는 이 회사를 YC Demo Day의 주목할 만한 스타트업 중 하나로 선정했습니다."
@@ -19788,10 +19604,10 @@ msgid "The daemon couldn't hand off your live sessions to the new binary. Reason
 msgstr "데몬이 실행 중인 세션을 새 바이너리로 넘기지 못했습니다. 이유:"
 
 msgid "The desktop app runs on macOS and Linux today. Drop your email and we'll let you know the moment the Windows build ships."
-msgstr "Paradev를 Windows와 Linux로 확장하고 있습니다. 이메일을 남겨 주시면 준비되는 대로 알려 드립니다."
+msgstr "Wanker를 Windows와 Linux로 확장하고 있습니다. 이메일을 남겨 주시면 준비되는 대로 알려 드립니다."
 
-msgid "The desktop app runs on macOS, with an experimental Linux AppImage; Windows is not yet available. Beyond the desktop app there's a CLI, a TypeScript SDK, and an MCP server, so you can drive Paradev from scripts, terminals, and other agents. An app for iPhone and iPad on the App Store lets you check on agents and review their diffs away from your desk."
-msgstr "데스크톱 앱은 macOS에서 실행되며 실험적인 Linux AppImage가 있습니다. Windows는 아직 지원하지 않습니다. 데스크톱 앱 외에 CLI, TypeScript SDK, MCP 서버가 있어 스크립트, 터미널, 다른 에이전트에서 Paradev를 조작할 수 있습니다. App Store의 iPhone 및 iPad 앱으로 자리를 비운 동안에도 에이전트를 확인하고 diff를 검토할 수 있습니다."
+msgid "The desktop app runs on macOS, with an experimental Linux AppImage; Windows is not yet available. Beyond the desktop app there's a CLI, a TypeScript SDK, and an MCP server, so you can drive Wanker from scripts, terminals, and other agents. An app for iPhone and iPad on the App Store lets you check on agents and review their diffs away from your desk."
+msgstr "데스크톱 앱은 macOS에서 실행되며 실험적인 Linux AppImage가 있습니다. Windows는 아직 지원하지 않습니다. 데스크톱 앱 외에 CLI, TypeScript SDK, MCP 서버가 있어 스크립트, 터미널, 다른 에이전트에서 Wanker를 조작할 수 있습니다. App Store의 iPhone 및 iPad 앱으로 자리를 비운 동안에도 에이전트를 확인하고 diff를 검토할 수 있습니다."
 
 msgid "The Dev can't post there."
 msgstr "Dev는 그곳에 게시할 수 없습니다."
@@ -19865,8 +19681,8 @@ msgstr "완전한 워크스페이스. 에이전트를 병렬로 실행하고, �
 msgid "The funds and angels who back our team."
 msgstr "저희 팀을 후원하는 펀드와 엔젤 투자자입니다."
 
-msgid "The future home for reusable Paradev agent configs, prompts, and setup guides."
-msgstr "재사용 가능한 Paradev 에이전트 설정, 프롬프트, 셋업 가이드가 모일 공간입니다."
+msgid "The future home for reusable Wanker agent configs, prompts, and setup guides."
+msgstr "재사용 가능한 Wanker 에이전트 설정, 프롬프트, 셋업 가이드가 모일 공간입니다."
 
 #. placeholder {0}: info.version
 msgid "The host came back on {0}, not {targetVersion}."
@@ -19899,11 +19715,11 @@ msgstr "이미지 업로드가 만료되었습니다 — 다시 첨부하세요"
 msgid "The job description shifts. Engineers stop being typists with taste and become dispatchers with taste: decomposing work, routing it to fleets, arbitrating conflicts between agents that both touched the same module."
 msgstr "직무의 성격이 바뀝니다. 엔지니어는 안목 있는 타자수가 아니라 안목 있는 배차원이 됩니다. 일을 쪼개고, 플릿에 배분하고, 같은 모듈을 건드린 에이전트들 사이의 충돌을 중재합니다."
 
-msgid "The latest updates, improvements, and new features in Paradev."
-msgstr "Paradev의 최신 업데이트, 개선 사항, 신규 기능입니다."
+msgid "The latest updates, improvements, and new features in Wanker."
+msgstr "Wanker의 최신 업데이트, 개선 사항, 신규 기능입니다."
 
-msgid "The latest updates, improvements, and new features in Paradev. Updated weekly. For detailed release notes, see <0>GitHub Releases<1/></0>"
-msgstr "Paradev의 최신 업데이트, 개선 사항, 새로운 기능. 매주 업데이트됩니다. 자세한 릴리스 노트는 <0>GitHub Releases<1/></0>를 참고하세요"
+msgid "The latest updates, improvements, and new features in Wanker. Updated weekly. For detailed release notes, see <0>GitHub Releases<1/></0>"
+msgstr "Wanker의 최신 업데이트, 개선 사항, 새로운 기능. 매주 업데이트됩니다. 자세한 릴리스 노트는 <0>GitHub Releases<1/></0>를 참고하세요"
 
 msgid "The Launch watch automation with a Sentry trigger and a daily schedule, its two runs, and the draft pull request the agent opened."
 msgstr "Sentry 트리거와 매일 일정이 있는 Launch watch 자동화, 그 두 번의 실행, 에이전트가 연 초안 풀 리퀘스트."
@@ -19923,8 +19739,8 @@ msgstr "로컬 변경 사항이 되돌려졌습니다."
 msgid "The local host service is unavailable for {organization} on {device}. Status: {status}. {recovery}"
 msgstr "{device}의 {organization}에 대해 로컬 호스트 서비스를 사용할 수 없습니다. 상태: {status}. {recovery}"
 
-msgid "The local host service isn't responding. Restarting it usually clears this; if it keeps happening, restart Paradev."
-msgstr "로컬 호스트 서비스가 응답하지 않습니다. 다시 시작하면 대개 해결되며, 계속 발생하면 Paradev를 다시 시작하세요."
+msgid "The local host service isn't responding. Restarting it usually clears this; if it keeps happening, restart Wanker."
+msgstr "로컬 호스트 서비스가 응답하지 않습니다. 다시 시작하면 대개 해결되며, 계속 발생하면 Wanker를 다시 시작하세요."
 
 msgid "The local host service isn't running, so nothing on this device can serve the workspace. Restarting it reattaches your terminals and files — nothing on disk is lost."
 msgstr "로컬 호스트 서비스가 실행 중이 아니어서 이 기기에서는 워크스페이스를 제공할 수 없습니다. 다시 시작하면 터미널과 파일이 다시 연결되며, 디스크의 내용은 사라지지 않습니다."
@@ -19989,15 +19805,6 @@ msgstr "찾으시는 페이지가 존재하지 않습니다."
 msgid "The pane uses your real logins. Agents ask you before they take a consequential action."
 msgstr "패널은 실제 로그인 상태를 사용합니다. 에이전트는 중요한 작업을 하기 전에 먼저 확인을 요청합니다."
 
-msgid "The Paradev desktop app is available for macOS and Linux."
-msgstr "Paradev 데스크톱 앱은 macOS와 Linux에서 사용할 수 있습니다."
-
-msgid "The Paradev host service for {organization} stopped unexpectedly ({cause}) and could not be restarted automatically."
-msgstr "{organization}의 Paradev 호스트 서비스가 예기치 않게 중지되었으며({cause}) 자동으로 다시 시작하지 못했습니다."
-
-msgid "The Paradev host service stopped unexpectedly ({cause}) and could not be restarted automatically."
-msgstr "Paradev 호스트 서비스가 예기치 않게 중지되었으며({cause}) 자동으로 다시 시작하지 못했습니다."
-
 #. js-lingui-explicit-id
 msgid "serverError.plugins.pluginSourcePathOutside"
 msgstr "경로는 리포지토리 안에 있어야 합니다"
@@ -20037,11 +19844,11 @@ msgid "The rubric"
 msgstr "평가 기준표"
 
 #. placeholder {0}: remoteHost?.name ?? t({ message: "the target host", })
-msgid "The run was skipped because <0>{0}</0> isn't connected to the Paradev relay. Make sure relay access is on in Settings > Remote Access on that device, then run it again."
-msgstr "<0>{0}</0>이(가) Paradev 릴레이에 연결되어 있지 않아 실행을 건너뛰었습니다. 해당 기기의 설정 > 원격 액세스에서 릴레이 접근이 켜져 있는지 확인한 뒤 다시 실행하세요."
+msgid "The run was skipped because <0>{0}</0> isn't connected to the Wanker relay. Make sure relay access is on in Settings > Remote Access on that device, then run it again."
+msgstr "<0>{0}</0>이(가) Wanker 릴레이에 연결되어 있지 않아 실행을 건너뛰었습니다. 해당 기기의 설정 > 원격 액세스에서 릴레이 접근이 켜져 있는지 확인한 뒤 다시 실행하세요."
 
-msgid "The run was skipped because this device isn't connected to the Paradev relay. Automations go through the relay even when they run on this device. Enable relay access, then run it again."
-msgstr "이 기기가 Paradev 릴레이에 연결되어 있지 않아 실행을 건너뛰었습니다. 자동화는 이 기기에서 실행되더라도 릴레이를 거칩니다. 릴레이 접근을 활성화한 뒤 다시 실행하세요."
+msgid "The run was skipped because this device isn't connected to the Wanker relay. Automations go through the relay even when they run on this device. Enable relay access, then run it again."
+msgstr "이 기기가 Wanker 릴레이에 연결되어 있지 않아 실행을 건너뛰었습니다. 자동화는 이 기기에서 실행되더라도 릴레이를 거칩니다. 릴레이 접근을 활성화한 뒤 다시 실행하세요."
 
 msgid "The same app runs natively on iPad, in portrait and landscape."
 msgstr "같은 앱이 iPad에서 네이티브로 실행되며 세로와 가로 방향을 모두 지원합니다."
@@ -20097,6 +19904,15 @@ msgstr "업데이트 후 추가로 가능한 작업:"
 msgid "The very beginning"
 msgstr "맨 처음"
 
+msgid "The Wanker desktop app is available for macOS and Linux."
+msgstr "Wanker 데스크톱 앱은 macOS와 Linux에서 사용할 수 있습니다."
+
+msgid "The Wanker host service for {organization} stopped unexpectedly ({cause}) and could not be restarted automatically."
+msgstr "{organization}의 Wanker 호스트 서비스가 예기치 않게 중지되었으며({cause}) 자동으로 다시 시작하지 못했습니다."
+
+msgid "The Wanker host service stopped unexpectedly ({cause}) and could not be restarted automatically."
+msgstr "Wanker 호스트 서비스가 예기치 않게 중지되었으며({cause}) 자동으로 다시 시작하지 못했습니다."
+
 msgid "The workspace is not ready yet. Try again."
 msgstr "워크스페이스가 아직 준비되지 않았습니다. 다시 시도하세요."
 
@@ -20133,8 +19949,8 @@ msgstr "테마"
 msgid "These commands run automatically when a workspace is created. <0>Read our docs<1/></0>"
 msgstr "워크스페이스를 만들 때 이 명령이 자동으로 실행됩니다. <0>문서 보기<1/></0>"
 
-msgid "These folders still have your files, but they did not come over to the new Paradev on their own."
-msgstr "이 폴더들에는 아직 파일이 있지만 새 Paradev로 자동으로 옮겨지지 않았습니다."
+msgid "These folders still have your files, but they did not come over to the new Wanker on their own."
+msgstr "이 폴더들에는 아직 파일이 있지만 새 Wanker로 자동으로 옮겨지지 않았습니다."
 
 msgid "These ports are still in use"
 msgstr "이 포트들은 아직 사용 중입니다"
@@ -20157,11 +19973,11 @@ msgstr "생각하는 중..."
 msgid "Thirty"
 msgstr "서른 날"
 
-msgid "This {plugin} account is already connected by another Paradev organization."
-msgstr "이 {plugin} 계정은 이미 다른 Paradev 조직에 연결되어 있습니다."
+msgid "This {plugin} account is already connected by another Wanker organization."
+msgstr "이 {plugin} 계정은 이미 다른 Wanker 조직에 연결되어 있습니다."
 
-msgid "This {plugin} account is already connected to another Paradev organization by {owner}. Ask them to disconnect it there first."
-msgstr "이 {plugin} 계정은 이미 {owner}님이 다른 Paradev 조직에 연결했습니다. 먼저 그곳에서 연결을 해제해 달라고 요청하세요."
+msgid "This {plugin} account is already connected to another Wanker organization by {owner}. Ask them to disconnect it there first."
+msgstr "이 {plugin} 계정은 이미 {owner}님이 다른 Wanker 조직에 연결했습니다. 먼저 그곳에서 연결을 해제해 달라고 요청하세요."
 
 msgid "This action is irreversible."
 msgstr "이 동작은 되돌릴 수 없습니다."
@@ -20178,8 +19994,8 @@ msgstr "이 에이전트는 클라우드 워크스페이스에서 실행할 수 
 msgid "This agent no longer exists on the selected device (its agents may have been reset). Runs will fail until you pick a new one."
 msgstr "이 에이전트는 선택한 기기에 더 이상 존재하지 않습니다 (에이전트가 초기화되었을 수 있습니다). 새 에이전트를 선택할 때까지 실행이 실패합니다."
 
-msgid "This agent only shows chats saved in Paradev."
-msgstr "이 에이전트는 Paradev에 저장된 채팅만 표시합니다."
+msgid "This agent only shows chats saved in Wanker."
+msgstr "이 에이전트는 Wanker에 저장된 채팅만 표시합니다."
 
 msgid "This also:"
 msgstr "다음 작업도 함께 수행됩니다:"
@@ -20278,8 +20094,8 @@ msgstr "이 기기"
 msgid "this device ({id})"
 msgstr "이 기기 ({id})"
 
-msgid "This device isn't connected to the Paradev relay, so automation runs will be skipped."
-msgstr "이 기기가 Paradev 릴레이에 연결되어 있지 않아 자동화 실행이 건너뛰어집니다."
+msgid "This device isn't connected to the Wanker relay, so automation runs will be skipped."
+msgstr "이 기기가 Wanker 릴레이에 연결되어 있지 않아 자동화 실행이 건너뛰어집니다."
 
 msgid "This directory does not exist. The terminal script will fall back to the workspace root."
 msgstr "이 디렉터리가 없습니다. 터미널 스크립트는 워크스페이스 루트에서 실행됩니다."
@@ -20302,8 +20118,8 @@ msgstr "이 파일"
 msgid "This file is empty or was deleted."
 msgstr "이 파일은 비어 있거나 삭제되었습니다."
 
-msgid "This GitHub installation is already connected to another Paradev organization. Disconnect it there, or uninstall the Paradev GitHub App, then try again."
-msgstr "이 GitHub 설치는 이미 다른 Paradev 조직에 연결되어 있습니다. 해당 조직에서 연결을 해제하거나 Paradev GitHub App을 제거한 뒤 다시 시도해 주세요."
+msgid "This GitHub installation is already connected to another Wanker organization. Disconnect it there, or uninstall the Wanker GitHub App, then try again."
+msgstr "이 GitHub 설치는 이미 다른 Wanker 조직에 연결되어 있습니다. 해당 조직에서 연결을 해제하거나 Wanker GitHub App을 제거한 뒤 다시 시도해 주세요."
 
 msgid "This host"
 msgstr "이 호스트"
@@ -20344,8 +20160,8 @@ msgstr "이 이슈 링크가 올바르지 않습니다."
 msgid "This Linear workspace is already connected by {owner}. Ask them to disconnect first."
 msgstr "이 Linear 워크스페이스는 이미 {owner}이(가) 연결했습니다. 먼저 연결을 해제해 달라고 요청하세요."
 
-msgid "This Linear workspace is already connected by another Paradev organization."
-msgstr "이 Linear 워크스페이스는 이미 다른 Paradev 조직이 연결했습니다."
+msgid "This Linear workspace is already connected by another Wanker organization."
+msgstr "이 Linear 워크스페이스는 이미 다른 Wanker 조직이 연결했습니다."
 
 msgid "This looks like a binary file. Opening it as text may show garbled output or freeze the editor for large files."
 msgstr "바이너리 파일로 보입니다. 텍스트로 열면 깨진 내용이 표시되거나, 파일이 크면 에디터가 멈출 수 있습니다."
@@ -20368,8 +20184,8 @@ msgstr "삭제된 메시지입니다"
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "이 Microsoft 테넌트는 이미 {detail}이(가) 연결했습니다. 먼저 연결을 해제해 달라고 요청하세요."
 
-msgid "This Microsoft tenant is already connected by another Paradev organization."
-msgstr "이 Microsoft 테넌트는 이미 다른 Paradev 조직이 연결했습니다."
+msgid "This Microsoft tenant is already connected by another Wanker organization."
+msgstr "이 Microsoft 테넌트는 이미 다른 Wanker 조직이 연결했습니다."
 
 msgid "This model isn't available"
 msgstr "이 모델은 사용할 수 없습니다"
@@ -20407,8 +20223,8 @@ msgstr "이 페이지는 여기에 없습니다"
 msgid "This page no longer exists"
 msgstr "이 페이지는 더 이상 존재하지 않습니다"
 
-msgid "This page was published by a Paradev user. Its contents are unverified."
-msgstr "이 페이지는 Paradev 사용자가 게시했습니다. 내용은 검증되지 않았습니다."
+msgid "This page was published by a Wanker user. Its contents are unverified."
+msgstr "이 페이지는 Wanker 사용자가 게시했습니다. 내용은 검증되지 않았습니다."
 
 msgid "This page was taken down and can no longer be changed"
 msgstr "이 페이지는 게시가 중단되어 더 이상 변경할 수 없습니다"
@@ -20491,8 +20307,8 @@ msgstr "이 화면은 존재하지 않습니다"
 msgid "This Slack workspace is already connected by {owner}. Ask them to disconnect first."
 msgstr "이 Slack 워크스페이스는 이미 {owner}이(가) 연결했습니다. 먼저 연결을 해제해 달라고 요청하세요."
 
-msgid "This Slack workspace is already connected by another Paradev organization."
-msgstr "이 Slack 워크스페이스는 이미 다른 Paradev 조직이 연결했습니다."
+msgid "This Slack workspace is already connected by another Wanker organization."
+msgstr "이 Slack 워크스페이스는 이미 다른 Wanker 조직이 연결했습니다."
 
 msgid "This slug is already taken"
 msgstr "이미 사용 중인 슬러그입니다"
@@ -20759,8 +20575,8 @@ msgstr "토큰 사용량"
 msgid "Tokens"
 msgstr "토큰"
 
-msgid "Tokens are held by Paradev and attached to requests there. They are never written into your local agent config."
-msgstr "토큰은 Paradev가 보관하며 서버에서 요청에 첨부됩니다. 로컬 에이전트 설정에는 기록되지 않습니다."
+msgid "Tokens are held by Wanker and attached to requests there. They are never written into your local agent config."
+msgstr "토큰은 Wanker가 보관하며 서버에서 요청에 첨부됩니다. 로컬 에이전트 설정에는 기록되지 않습니다."
 
 msgid "Tokens per session"
 msgstr "세션당 토큰"
@@ -20807,8 +20623,8 @@ msgstr "지원 요청이 너무 많습니다. 나중에 다시 시도하세요."
 msgid "Too many untitled items here already."
 msgstr "여기에 이름 없는 항목이 이미 너무 많습니다."
 
-msgid "Too old for this app to talk to. Update the Paradev app on that device to reconnect."
-msgstr "너무 오래되어 이 앱과 통신할 수 없습니다. 해당 기기의 Paradev 앱을 업데이트하여 다시 연결하세요."
+msgid "Too old for this app to talk to. Update the Wanker app on that device to reconnect."
+msgstr "너무 오래되어 이 앱과 통신할 수 없습니다. 해당 기기의 Wanker 앱을 업데이트하여 다시 연결하세요."
 
 msgid "Too old for this app to talk to. Workspaces on this host will not open until it is updated."
 msgstr "너무 오래되어 이 앱과 통신할 수 없습니다. 업데이트할 때까지 이 호스트의 워크스페이스는 열리지 않습니다."
@@ -20861,8 +20677,8 @@ msgstr "공개한 전체 토큰"
 msgid "Trace charges and subscriptions"
 msgstr "결제와 구독 추적"
 
-msgid "Track and manage tasks synced from Linear. Stay on top of your work without leaving Paradev."
-msgstr "Linear에서 동기화된 작업을 추적하고 관리하세요. Paradev를 벗어나지 않고 업무를 챙길 수 있습니다."
+msgid "Track and manage tasks synced from Linear. Stay on top of your work without leaving Wanker."
+msgstr "Linear에서 동기화된 작업을 추적하고 관리하세요. Wanker를 벗어나지 않고 업무를 챙길 수 있습니다."
 
 msgid "Track budgets and spending"
 msgstr "예산과 지출 관리"
@@ -20948,11 +20764,11 @@ msgstr "다른 검색어를 쓰거나 다른 위치를 선택해 보세요."
 msgid "Try again"
 msgstr "다시 시도"
 
-msgid "Try again, or restart the host service from the Paradev tray menu."
-msgstr "다시 시도하거나 Paradev 트레이 메뉴에서 호스트 서비스를 다시 시작해 주세요."
+msgid "Try again, or restart the host service from the Wanker tray menu."
+msgstr "다시 시도하거나 Wanker 트레이 메뉴에서 호스트 서비스를 다시 시작해 주세요."
 
-msgid "Try again. If the problem continues, reload Paradev."
-msgstr "다시 시도하세요. 문제가 계속되면 Paradev를 다시 불러오세요."
+msgid "Try again. If the problem continues, reload Wanker."
+msgstr "다시 시도하세요. 문제가 계속되면 Wanker를 다시 불러오세요."
 
 msgid "Try early access features and previews."
 msgstr "얼리 액세스 기능과 미리보기를 사용해 보세요."
@@ -21357,12 +21173,6 @@ msgstr "이름 지정 지침 업데이트"
 msgid "Update naming instructions for {0}"
 msgstr "{0}의 이름 지정 지침 업데이트"
 
-msgid "Update Paradev on that device. In-app updates require a supported standalone install and a released app version."
-msgstr "해당 기기에서 Paradev를 업데이트하세요. 앱 내 업데이트에는 지원되는 독립 실행형 설치와 정식으로 출시된 앱 버전이 필요합니다."
-
-msgid "Update Paradev on this host to edit its workspace config."
-msgstr "워크스페이스 설정을 편집하려면 이 호스트의 Paradev을 업데이트하세요."
-
 msgid "Update payment method"
 msgstr "결제 수단 업데이트"
 
@@ -21383,6 +21193,12 @@ msgstr "서브 에이전트에게 메시지를 보내려면 이 호스트를 업
 
 msgid "Update this host to move subagents to the background"
 msgstr "서브 에이전트를 백그라운드로 옮기려면 이 호스트를 업데이트하세요"
+
+msgid "Update Wanker on that device. In-app updates require a supported standalone install and a released app version."
+msgstr "해당 기기에서 Wanker를 업데이트하세요. 앱 내 업데이트에는 지원되는 독립 실행형 설치와 정식으로 출시된 앱 버전이 필요합니다."
+
+msgid "Update Wanker on this host to edit its workspace config."
+msgstr "워크스페이스 설정을 편집하려면 이 호스트의 Wanker을 업데이트하세요."
 
 msgid "Updated"
 msgstr "업데이트됨"
@@ -21527,20 +21343,14 @@ msgstr "수동 로그인 사용"
 msgid "Use more browser features: {features}"
 msgstr "추가 브라우저 기능 사용: {features}"
 
-msgid "Use Paradev on mobile"
-msgstr "모바일에서 Paradev 사용하기"
-
-msgid "Use Paradev on your phone with Pro."
-msgstr "Pro로 휴대폰에서 Paradev를 사용하세요."
-
 msgid "Use the agent plans and API keys you already have. Model calls go straight to your provider."
 msgstr "이미 가진 에이전트 플랜과 API 키를 사용하세요. 모델 호출은 제공업체로 바로 갑니다."
 
 msgid "Use the desktop app to start running parallel coding agents."
 msgstr "데스크톱 앱에서 병렬 코딩 에이전트를 실행하세요."
 
-msgid "Use the Paradev tray menu > Host Service > Restart, then retry."
-msgstr "Paradev 트레이 메뉴 > Host Service > Restart를 사용한 뒤 다시 시도하세요."
+msgid "Use the Wanker tray menu > Host Service > Restart, then retry."
+msgstr "Wanker 트레이 메뉴 > Host Service > Restart를 사용한 뒤 다시 시도하세요."
 
 msgid "Use this account"
 msgstr "이 계정 사용"
@@ -21554,11 +21364,17 @@ msgstr "이 리포지토리 사용"
 msgid "Use this to fix terminals that are stuck or unresponsive."
 msgstr "터미널이 멈추거나 응답하지 않을 때 사용하세요."
 
-msgid "Use this when calling the Paradev API."
-msgstr "Paradev API를 호출할 때 사용하세요."
+msgid "Use this when calling the Wanker API."
+msgstr "Wanker API를 호출할 때 사용하세요."
 
 msgid "Use voice transcription and push-to-talk features."
 msgstr "음성 받아쓰기와 푸시 투 토크 기능을 사용합니다."
+
+msgid "Use Wanker on mobile"
+msgstr "모바일에서 Wanker 사용하기"
+
+msgid "Use Wanker on your phone with Pro."
+msgstr "Pro로 휴대폰에서 Wanker를 사용하세요."
 
 msgid "Used"
 msgstr "사용됨"
@@ -21736,9 +21552,6 @@ msgstr "채용 중인 직무 보기"
 msgid "View open roles on Y Combinator"
 msgstr "Y Combinator에서 채용 공고 보기"
 
-msgid "View Paradev repository on GitHub"
-msgstr "GitHub에서 Paradev 리포지토리 보기"
-
 msgid "View profile"
 msgstr "프로필 보기"
 
@@ -21753,6 +21566,9 @@ msgstr "GitHub에서 릴리스 보기"
 
 msgid "View usage"
 msgstr "사용량 보기"
+
+msgid "View Wanker repository on GitHub"
+msgstr "GitHub에서 Wanker 리포지토리 보기"
 
 msgid "Violence or harassment"
 msgstr "폭력 또는 괴롭힘"
@@ -21819,6 +21635,190 @@ msgstr "워크스페이스를 깨우는 중…"
 msgid "Waking up workspace"
 msgstr "워크스페이스 깨우는 중"
 
+msgid "Wanker"
+msgstr "Wanker"
+
+msgid "Wanker {version}"
+msgstr "Wanker {version}"
+
+msgid "Wanker Agent"
+msgstr "Wanker 에이전트"
+
+msgid "Wanker app"
+msgstr "Wanker 앱"
+
+msgid "Wanker App"
+msgstr "Wanker 앱"
+
+msgid "Wanker Automations"
+msgstr "Wanker 자동화"
+
+msgid "Wanker CLI"
+msgstr "Wanker CLI"
+
+msgid "Wanker cloud workspaces"
+msgstr "Wanker 클라우드 워크스페이스"
+
+msgid "Wanker components"
+msgstr "Wanker 컴포넌트"
+
+msgid "Wanker Components"
+msgstr "Wanker 컴포넌트"
+
+msgid "Wanker could not bring over some of your v1 projects or workspaces. Open the importer to see why and retry each one."
+msgstr "Wanker가 일부 v1 프로젝트 또는 워크스페이스를 옮기지 못했습니다. 가져오기 도구를 열어 이유를 확인하고 항목별로 다시 시도하세요."
+
+msgid "Wanker could not complete sign-in. Please try again."
+msgstr "Wanker가 로그인을 완료하지 못했습니다. 다시 시도해 주세요."
+
+msgid "Wanker CPU"
+msgstr "Wanker CPU"
+
+msgid "Wanker CPU · last 5 min"
+msgstr "Wanker CPU · 최근 5분"
+
+msgid "Wanker Design System"
+msgstr "Wanker 디자인 시스템"
+
+msgid "Wanker desktop app"
+msgstr "Wanker 데스크톱 앱"
+
+msgid "Wanker doesn't have permission to read \"{name}\"."
+msgstr "Wanker에 \"{name}\"을(를) 읽을 권한이 없습니다."
+
+msgid "Wanker Enterprise is Wanker for teams. Reach out to learn more about what's included and how it can work for your organization."
+msgstr "Wanker Enterprise는 팀을 위한 Wanker입니다. 어떤 기능이 포함되고 조직에 어떻게 적용할 수 있는지 문의해 주세요."
+
+msgid "Wanker for iPhone and iPad"
+msgstr "iPhone 및 iPad용 Wanker"
+
+msgid "Wanker for your team"
+msgstr "팀을 위한 Wanker"
+
+msgid "Wanker forwards the ports a remote workspace opens while you have it selected."
+msgstr "원격 워크스페이스를 선택해 두면 Wanker가 그 워크스페이스가 여는 포트를 전달합니다."
+
+msgid "Wanker GitHub App"
+msgstr "Wanker GitHub App"
+
+msgid "Wanker has a free tier. The source code is on GitHub under the MIT License, so you can inspect, modify, and self-host it."
+msgstr "Wanker에는 무료 플랜이 있습니다. 소스 코드가 MIT 라이선스로 GitHub에 공개되어 있어 확인하고, 수정하고, 셀프 호스팅할 수 있습니다."
+
+msgid "Wanker hit an unexpected error. Reload to try again."
+msgstr "Wanker에서 예기치 않은 오류가 발생했습니다. 다시 로드해 보세요."
+
+msgid "Wanker holds no credential for {label} and adds none to your cloud workspaces when they start, restart or wake. A script you run inside the workspace keeps {loginFile} up to date. If it stops, {label} stays signed out until your script signs it in again."
+msgstr "Wanker는 {label}의 자격 증명을 보관하지 않으며, 클라우드 워크스페이스가 시작, 재시작 또는 재개될 때도 자격 증명을 추가하지 않습니다. 워크스페이스 안에서 실행하는 스크립트가 {loginFile}을(를) 최신 상태로 유지합니다. 스크립트가 멈추면 스크립트가 다시 로그인시킬 때까지 {label}은(는) 로그아웃 상태로 남습니다."
+
+msgid "Wanker holds the token and makes the calls. Agents never see it."
+msgstr "토큰은 Wanker가 보관하고 호출도 대신합니다. 에이전트는 토큰을 보지 못합니다."
+
+msgid "Wanker hooks"
+msgstr "Wanker 훅"
+
+msgid "Wanker in-app browser"
+msgstr "Wanker 앱 내 브라우저"
+
+msgid "Wanker is a desktop app. Enter your email and we'll send you a download link to open on your Mac."
+msgstr "Wanker는 데스크톱 앱입니다. 이메일을 입력하시면 Mac에서 열 수 있는 다운로드 링크를 보내 드립니다."
+
+msgid "Wanker is building self-improving software. It starts with giving engineers the best tools that adapt to their needs over time."
+msgstr "Wanker는 스스로 나아지는 소프트웨어를 만듭니다. 그 시작은 엔지니어에게 시간이 지날수록 필요에 맞춰지는 최고의 도구를 주는 일입니다."
+
+msgid "Wanker is built by a team based in San Francisco, California. For product support or account questions, email <0>{supportEmail}</0> and we'll get back to you within one business day. For partnerships, press, enterprise, or anything else, write to <1>{teamEmail}</1>."
+msgstr "Wanker는 캘리포니아 샌프란시스코에 있는 팀이 만듭니다. 제품 지원이나 계정 문의는 <0>{supportEmail}</0>으로 메일을 보내 주시면 영업일 기준 하루 안에 회신드립니다. 파트너십, 언론, 엔터프라이즈 문의나 그 밖의 내용은 <1>{teamEmail}</1>으로 보내 주세요."
+
+msgid "Wanker is built in Wanker, so we're our own #1 users. You get paid to make your own life easier."
+msgstr "Wanker는 Wanker로 개발됩니다. 우리가 가장 열심히 쓰는 사용자이므로, 자신의 삶을 더 편하게 만드는 대가로 보수를 받게 됩니다."
+
+msgid "Wanker is designed to work with your existing tool, we natively support deep-linking to IDEs like Cursor so you can open your workspaces and files in your IDE."
+msgstr "Wanker는 기존 도구와 함께 쓰도록 만들었습니다. Cursor 같은 IDE로의 딥링크를 기본 지원하므로 워크스페이스와 파일을 쓰던 IDE에서 열 수 있습니다."
+
+msgid "Wanker is MIT licensed, so you're never locked in. Read or change the code on GitHub."
+msgstr "Wanker는 MIT 라이선스라 락인이 없습니다. GitHub에서 코드를 읽거나 바꿀 수 있습니다."
+
+msgid "Wanker is open source. Every pull request, review and bug is public on GitHub."
+msgstr "Wanker는 오픈 소스입니다. 모든 풀 리퀘스트, 리뷰, 버그가 GitHub에 공개되어 있습니다."
+
+msgid "Wanker is the workbench for the F3 to F4 transition: parallel agents on separate branches, fleets you can actually supervise, and a review surface for code you did not write."
+msgstr "Wanker는 F3에서 F4로 넘어가기 위한 작업대입니다. 서로 다른 브랜치에서 돌아가는 병렬 에이전트, 실제로 감독할 수 있는 에이전트 무리, 그리고 직접 쓰지 않은 코드를 위한 리뷰 화면을 제공합니다."
+
+msgid "Wanker isn't on Windows yet"
+msgstr "현재 Wanker는 Mac에서만 사용할 수 있습니다"
+
+msgid "Wanker may sign you back in after restart. Please try signing out again."
+msgstr "재시작 후 Wanker가 다시 로그인할 수 있습니다. 로그아웃을 다시 시도해 주세요."
+
+msgid "Wanker memory"
+msgstr "Wanker 메모리"
+
+msgid "Wanker memory · last 5 min"
+msgstr "Wanker 메모리 · 최근 5분"
+
+msgid "Wanker Mobile code diff on iPhone"
+msgstr "iPhone의 Wanker Mobile 코드 diff"
+
+msgid "Wanker mobile gives me the power of my desktop anywhere I go."
+msgstr "Wanker 모바일은 어디를 가든 데스크톱의 성능을 사용할 수 있게 해줍니다."
+
+msgid "Wanker Mobile terminal on iPhone"
+msgstr "iPhone의 Wanker Mobile 터미널"
+
+msgid "Wanker needs Full Disk Access to read another browser's data. Grant it in System Settings, then check again."
+msgstr "다른 브라우저의 데이터를 읽으려면 Wanker에 전체 디스크 접근 권한이 필요합니다. 시스템 설정에서 권한을 허용한 다음 다시 확인하세요."
+
+msgid "Wanker needs Git to add a project."
+msgstr "프로젝트를 추가하려면 Wanker에 Git이 필요합니다."
+
+msgid "Wanker next to others"
+msgstr "다른 도구와 비교한 Wanker"
+
+msgid "Wanker on iPad, showing a pull request and a workspace list"
+msgstr "iPad의 Wanker. 풀 리퀘스트와 워크스페이스 목록이 보입니다"
+
+msgid "Wanker only receives the permissions this connector asks for. Disconnect at any time to revoke them."
+msgstr "Wanker는 이 커넥터가 요청한 권한만 받습니다. 언제든지 연결을 해제해 취소할 수 있습니다."
+
+msgid "Wanker originals"
+msgstr "Wanker 오리지널"
+
+msgid "Wanker Pages"
+msgstr "Wanker 페이지"
+
+msgid "Wanker Pages demo"
+msgstr "Wanker 페이지 데모"
+
+msgid "Wanker Plugins"
+msgstr "Wanker 플러그인"
+
+msgid "Wanker runs locally on your developers' machines. We don't store your code or AI conversations, and Wanker has completed a SOC 2 Type II audit with an independent auditor. Request the report and review our security documentation at {trustHost}."
+msgstr "Wanker는 개발자의 로컬 머신에서 실행됩니다. 코드나 AI 대화를 저장하지 않으며, 독립 감사인과 함께 SOC 2 Type II 감사를 완료했습니다. {trustHost}에서 보고서를 요청하고 보안 문서를 확인하세요."
+
+msgid "Wanker started as a hackathon project in November 2025. It was a simple desktop app for managing worktrees."
+msgstr "Wanker는 2025년 11월 해커톤 프로젝트로 시작했습니다. worktree를 관리하는 간단한 데스크톱 앱이었습니다."
+
+msgid "Wanker Teams"
+msgstr "Wanker 팀"
+
+msgid "Wanker UI"
+msgstr "Wanker UI"
+
+#. placeholder {0}: formatPercent(trackedMemorySharePercent)
+msgid "Wanker uses {0} of system RAM"
+msgstr "Wanker가 시스템 RAM의 {0}을(를) 사용합니다"
+
+msgid "Wanker uses the GitHub CLI to clone repos and open pull requests. You can also do this later."
+msgstr "Wanker는 GitHub CLI로 저장소를 클론하고 풀 리퀘스트를 엽니다. 나중에 설정해도 됩니다."
+
+msgid "Wanker vs the Alternatives"
+msgstr "Wanker와 대안 비교"
+
+msgid "Wanker works with any CLI-based coding agent, including Claude Code, OpenCode, OpenAI Codex, and more. Choose a different agent for every task without changing your workspace or review flow."
+msgstr "Wanker는 Claude Code, OpenCode, OpenAI Codex 등 CLI 기반 코딩 에이전트라면 무엇이든 함께 씁니다. 워크스페이스나 리뷰 흐름을 바꾸지 않고 작업마다 다른 에이전트를 고르세요."
+
+msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
+msgstr "Wanker 모바일 앱 덕분에 컴퓨터에서 멀리 떨어져 있어도 어디서든 에이전트가 계속 작업하도록 돕고 막힌 부분을 해결할 수 있습니다."
+
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "더 빨리 필요한 기능이 있나요? <0>Discord에서 알려 주세요</0>. 여기 있는 항목 상당수가 사용자 요청에서 시작했습니다."
 
@@ -21846,8 +21846,8 @@ msgstr "{inviter}님에 의해 이 대화에서 제거되었습니다."
 msgid "Watch a design review go from comment to new version."
 msgstr "디자인 리뷰가 댓글에서 새 버전으로 이어지는 과정을 확인하세요."
 
-msgid "Watch the Paradev Automations video on YouTube"
-msgstr "YouTube에서 Paradev 자동화 영상 보기"
+msgid "Watch the Wanker Automations video on YouTube"
+msgstr "YouTube에서 Wanker 자동화 영상 보기"
 
 msgid "Wayfinding and disclosure"
 msgstr "길 찾기와 정보 펼침"
@@ -21897,8 +21897,8 @@ msgstr "곧 연락드리겠습니다."
 msgid "We'll bring you back as soon as we reconnect."
 msgstr "다시 연결되면 원래 화면으로 돌아갈게요."
 
-msgid "We'll email you when Paradev for Android is ready."
-msgstr "Android용 Paradev가 준비되면 이메일로 알려드리겠습니다."
+msgid "We'll email you when Wanker for Android is ready."
+msgstr "Android용 Wanker가 준비되면 이메일로 알려드리겠습니다."
 
 msgid "We'll get back to you shortly."
 msgstr "곧 회신드리겠습니다."
@@ -21990,11 +21990,11 @@ msgstr "다시 오신 것을 환영합니다"
 msgid "Welcome to {appName}"
 msgstr "{appName}에 오신 것을 환영합니다"
 
-msgid "Welcome to Paradev"
-msgstr "Paradev에 오신 것을 환영합니다"
+msgid "Welcome to the new Wanker"
+msgstr "새로운 Wanker에 오신 것을 환영합니다"
 
-msgid "Welcome to the new Paradev"
-msgstr "새로운 Paradev에 오신 것을 환영합니다"
+msgid "Welcome to Wanker"
+msgstr "Wanker에 오신 것을 환영합니다"
 
 #. placeholder {0}: BRAND.INTRO_NAME
 msgid "What {0} is, who builds it, and who it's for. A San Francisco team, led by three ex-YC CTOs, building the workspace for parallel coding agents."
@@ -22003,8 +22003,8 @@ msgstr "{0}가 무엇이고, 누가 만들며, 누구를 위한 것인지. 병�
 msgid "What are the benefits?"
 msgstr "복리후생은 어떤가요?"
 
-msgid "What builders say about Paradev"
-msgstr "빌더들이 말하는 Paradev"
+msgid "What builders say about Wanker"
+msgstr "빌더들이 말하는 Wanker"
 
 msgid "What comes with you"
 msgstr "가져올 수 있는 것"
@@ -22033,8 +22033,8 @@ msgstr "트리거가 실행될 때 Mac이 오프라인이면 어떻게 되나요
 msgid "What is a workspace?"
 msgstr "워크스페이스란 무엇인가요?"
 
-msgid "What is Paradev Enterprise?"
-msgstr "Paradev Enterprise란 무엇인가요?"
+msgid "What is Wanker Enterprise?"
+msgstr "Wanker Enterprise란 무엇인가요?"
 
 msgid "What is wrong?"
 msgstr "무엇이 문제인가요?"
@@ -22042,8 +22042,8 @@ msgstr "무엇이 문제인가요?"
 msgid "What it does"
 msgstr "하는 일"
 
-msgid "What platforms does Paradev run on?"
-msgstr "Paradev는 어떤 플랫폼에서 실행되나요?"
+msgid "What platforms does Wanker run on?"
+msgstr "Wanker는 어떤 플랫폼에서 실행되나요?"
 
 msgid "What problem are you trying to solve?"
 msgstr "어떤 문제를 해결하려고 하시나요?"
@@ -22114,8 +22114,8 @@ msgstr "끄면 이 기기의 파일과 도구에 아무것도 접근할 수 없�
 msgid "Where detected-port badges in the sidebar open when clicked."
 msgstr "사이드바의 감지된 포트 배지를 클릭했을 때 열리는 위치입니다."
 
-msgid "Where did you hear about Paradev?"
-msgstr "Paradev를 어디에서 알게 되셨나요?"
+msgid "Where did you hear about Wanker?"
+msgstr "Wanker를 어디에서 알게 되셨나요?"
 
 msgid "Where do you rank?"
 msgstr "내 순위는 몇 위일까요?"
@@ -22190,8 +22190,8 @@ msgstr "레이블 포함"
 msgid "with or without attachments"
 msgstr "첨부 파일 유무 무관"
 
-msgid "With the Paradev mobile app, I can address production issues from anywhere."
-msgstr "Paradev 모바일 앱 덕분에 어디서든 프로덕션 문제에 대응할 수 있습니다."
+msgid "With the Wanker mobile app, I can address production issues from anywhere."
+msgstr "Wanker 모바일 앱 덕분에 어디서든 프로덕션 문제에 대응할 수 있습니다."
 
 msgid "Wordmark, black"
 msgstr "워드마크, 검정"
@@ -22466,17 +22466,17 @@ msgstr "네. 무료 플랜은 사용자 1명, 로컬 워크스페이스, 데스�
 msgid "Yes. On plans with cloud workspaces, owners can buy any amount of extra GB-hours at {packPrice} per GB-hour in Settings, Billing. Bought GB-hours are used after the monthly pool and never expire, and auto top-up can buy more when they run low."
 msgstr "네. 클라우드 워크스페이스가 있는 플랜에서는 소유자가 설정의 결제에서 GB 시간당 {packPrice}에 추가 GB 시간을 원하는 만큼 구매할 수 있습니다. 구매한 GB 시간은 월간 풀 다음에 사용되며 만료되지 않고, 부족해지면 자동 충전으로 더 구매할 수 있습니다."
 
-msgid "Yes. Paradev has completed a SOC 2 Type II audit with an independent auditor, covering our security controls in operation over time. Request the report and review our security documentation at {trustHost}."
-msgstr "네. Paradev는 독립 감사인과 함께 SOC 2 Type II 감사를 완료했으며, 이는 일정 기간 운영된 보안 통제를 다룹니다. {trustHost}에서 보고서를 요청하고 보안 문서를 확인하세요."
-
-msgid "Yes. Paradev is open source under the MIT License. The code is public on GitHub, and anyone can file issues, open pull requests, or fork it. Paradev is unrelated to Apache Superset, the business-intelligence tool."
-msgstr "네. Paradev는 MIT 라이선스의 오픈 소스입니다. 코드는 GitHub에 공개되어 있으며, 누구나 이슈를 등록하고, 풀 리퀘스트를 열고, 포크할 수 있습니다. Paradev는 BI 도구인 Apache Superset과 관련이 없습니다."
-
-msgid "Yes. Paradev is the workspace your agents run in, not a model provider. Bring Claude Code, Codex, OpenCode, or any CLI agent, and use your existing accounts or API keys on every plan."
-msgstr "네. Paradev는 모델 제공사가 아니라 에이전트가 실행되는 워크스페이스입니다. Claude Code, Codex, OpenCode 등 어떤 CLI 에이전트든 가져와 모든 플랜에서 기존 계정이나 API 키를 그대로 사용하세요."
-
 msgid "Yes. Use superset automations in the CLI to create, run, and pause them."
 msgstr "네. CLI의 superset automations로 만들고, 실행하고, 일시 중지할 수 있습니다."
+
+msgid "Yes. Wanker has completed a SOC 2 Type II audit with an independent auditor, covering our security controls in operation over time. Request the report and review our security documentation at {trustHost}."
+msgstr "네. Wanker는 독립 감사인과 함께 SOC 2 Type II 감사를 완료했으며, 이는 일정 기간 운영된 보안 통제를 다룹니다. {trustHost}에서 보고서를 요청하고 보안 문서를 확인하세요."
+
+msgid "Yes. Wanker is open source under the MIT License. The code is public on GitHub, and anyone can file issues, open pull requests, or fork it. Wanker is unrelated to Apache Superset, the business-intelligence tool."
+msgstr "네. Wanker는 MIT 라이선스의 오픈 소스입니다. 코드는 GitHub에 공개되어 있으며, 누구나 이슈를 등록하고, 풀 리퀘스트를 열고, 포크할 수 있습니다. Wanker는 BI 도구인 Apache Superset과 관련이 없습니다."
+
+msgid "Yes. Wanker is the workspace your agents run in, not a model provider. Bring Claude Code, Codex, OpenCode, or any CLI agent, and use your existing accounts or API keys on every plan."
+msgstr "네. Wanker는 모델 제공사가 아니라 에이전트가 실행되는 워크스페이스입니다. Claude Code, Codex, OpenCode 등 어떤 CLI 에이전트든 가져와 모든 플랜에서 기존 계정이나 API 키를 그대로 사용하세요."
 
 msgid "Yes. You can upgrade, downgrade, or cancel at any time from the billing settings inside the app. Upgrades start right away, and you pay only the difference for the rest of the period. Downgrades and cancellations take effect at the end of your current billing period."
 msgstr "네. 앱의 결제 설정에서 언제든지 업그레이드, 다운그레이드 또는 해지할 수 있습니다. 업그레이드는 즉시 적용되며 남은 기간에 대한 차액만 지불합니다. 다운그레이드와 해지는 현재 결제 기간이 끝날 때 적용됩니다."
@@ -22623,8 +22623,8 @@ msgstr "{1}명 중 <0>#{0}</0>위가 됩니다."
 msgid "You'd be one of the first on the board."
 msgstr "순위표에 가장 먼저 오르는 사람 중 한 명이 됩니다."
 
-msgid "You'll need to sign in again to use Paradev on this device."
-msgstr "이 기기에서 Paradev를 사용하려면 다시 로그인해야 합니다."
+msgid "You'll need to sign in again to use Wanker on this device."
+msgstr "이 기기에서 Wanker를 사용하려면 다시 로그인해야 합니다."
 
 msgid "You'll stop being a member of this team. You can be re-added by another team member."
 msgstr "이 팀의 멤버에서 빠집니다. 다른 팀 멤버가 다시 추가할 수 있습니다."
@@ -22632,8 +22632,8 @@ msgstr "이 팀의 멤버에서 빠집니다. 다른 팀 멤버가 다시 추가
 msgid "You're about to change your role from {currentRoleName} to {newRoleName}. Another owner will need to restore your permissions. Are you sure?"
 msgstr "내 역할을 {currentRoleName}에서 {newRoleName}(으)로 바꾸려고 합니다. 권한을 되돌리려면 다른 소유자가 필요합니다. 계속할까요?"
 
-msgid "You're about to get Paradev"
-msgstr "곧 Paradev를 받게 됩니다"
+msgid "You're about to get Wanker"
+msgstr "곧 Wanker를 받게 됩니다"
 
 msgid "You're all set!"
 msgstr "준비가 끝났습니다!"
@@ -22749,11 +22749,8 @@ msgstr "조직에서 이 플러그인을 대신 설치합니다. 비활성화할
 msgid "Your organization reached its cloud usage limit. This workspace stops in a few minutes unless the limit is raised."
 msgstr "조직이 클라우드 사용 한도에 도달했습니다. 한도를 올리지 않으면 이 워크스페이스는 몇 분 후에 중지됩니다."
 
-msgid "Your own accounts. Your organization's integrations let Paradev reach its tools; connecting yours makes the work Paradev does for you show up as you."
-msgstr "본인의 계정입니다. 조직의 통합은 Paradev가 해당 도구에 접근하게 하며, 본인 계정을 연결하면 Paradev가 대신 한 작업이 본인 이름으로 표시됩니다."
-
-msgid "Your Paradev download is starting."
-msgstr "Paradev 다운로드가 시작됩니다."
+msgid "Your own accounts. Your organization's integrations let Wanker reach its tools; connecting yours makes the work Wanker does for you show up as you."
+msgstr "본인의 계정입니다. 조직의 통합은 Wanker가 해당 도구에 접근하게 하며, 본인 계정을 연결하면 Wanker가 대신 한 작업이 본인 이름으로 표시됩니다."
 
 msgid "Your plan does not include cloud environments."
 msgstr "현재 플랜에는 클라우드 환경이 포함되어 있지 않습니다."
@@ -22780,8 +22777,8 @@ msgstr "실행 중인 앱을 에이전트가 조작할 수 있는 브라우저�
 msgid "Your signed-in session"
 msgstr "로그인된 내 세션"
 
-msgid "Your Slack account has been linked to Paradev. You can close this tab and return to Slack."
-msgstr "Slack 계정이 Paradev에 연결되었습니다. 이 탭을 닫고 Slack으로 돌아가셔도 됩니다."
+msgid "Your Slack account has been linked to Wanker. You can close this tab and return to Slack."
+msgstr "Slack 계정이 Wanker에 연결되었습니다. 이 탭을 닫고 Slack으로 돌아가셔도 됩니다."
 
 msgid "Your stats, settled in mortal combat"
 msgstr "당신의 기록, 목숨을 건 대결로 결판내세요"
@@ -22808,11 +22805,14 @@ msgstr "티어는 측정된 {0}개 축의 가중 점수라서 강한 축이 약�
 msgid "Your tokens"
 msgstr "내 토큰"
 
-msgid "Your v1 projects and workspaces are moving to the new Paradev. They appear in the sidebar as each one is ready."
-msgstr "v1 프로젝트와 워크스페이스를 새 Paradev로 옮기는 중입니다. 각 항목이 준비되는 대로 사이드바에 표시됩니다."
+msgid "Your v1 projects and workspaces are moving to the new Wanker. They appear in the sidebar as each one is ready."
+msgstr "v1 프로젝트와 워크스페이스를 새 Wanker로 옮기는 중입니다. 각 항목이 준비되는 대로 사이드바에 표시됩니다."
 
 msgid "Your version: {currentVersion}"
 msgstr "현재 버전: {currentVersion}"
+
+msgid "Your Wanker download is starting."
+msgstr "Wanker 다운로드가 시작됩니다."
 
 msgid "Your work, including uncommitted changes, is pushed to a new branch on the remote. A cloud workspace starts from that branch in the environment you pick, and each Claude chat continues there. Agents that are working stop first. Terminals and other chats stay here."
 msgstr "커밋하지 않은 변경 사항을 포함한 작업이 원격의 새 브랜치로 푸시됩니다. 선택한 환경에서 해당 브랜치로 클라우드 워크스페이스가 시작되고, 각 Claude 채팅은 그곳에서 이어집니다. 작업 중인 에이전트는 먼저 중지됩니다. 터미널과 다른 채팅은 여기에 남습니다."

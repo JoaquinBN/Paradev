@@ -1,4 +1,4 @@
 interface:
-  display_name: "Paradev Setup"
-  short_description: "Make a repo Paradev-ready with .paradev/config.toml"
-  default_prompt: "Use $superset-setup to make this repository Paradev-ready and verify a workspace boots clean."
+  display_name: "Wanker Setup"
+  short_description: "Make a repo Wanker-ready with .paradev/config.toml"
+  default_prompt: "Use $superset-setup to make this repository Wanker-ready and verify a workspace boots clean."

@@ -49,12 +49,12 @@ export function OrganizationInvitationEmail({
       <Heading>You've been invited to join {organizationName}</Heading>
 
       <Text>
-        {inviterName} has invited you to join <strong>{organizationName}</strong> on Paradev as a{" "}
+        {inviterName} has invited you to join <strong>{organizationName}</strong> on Wanker as a{" "}
         <strong>{roleDisplay}</strong>.
       </Text>
 
       <Text>
-        Paradev helps teams automate workflows and boost productivity with AI-powered task management.
+        Wanker helps teams automate workflows and boost productivity with AI-powered task management.
       </Text>
 
       <Button href={inviteLink}>Accept Invitation</Button>
@@ -732,7 +732,7 @@ plugins: [
       const inviteLink = `${env.NEXT_PUBLIC_WEB_URL}/accept-invitation/${data.id}`;
 
       await resend.emails.send({
-        from: "Paradev <noreply@superset.sh>",
+        from: "Wanker <noreply@superset.sh>",
         to: data.email,
         subject: `${data.inviter.user.name} invited you to join ${data.organization.name}`,
         react: OrganizationInvitationEmail({

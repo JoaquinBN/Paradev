@@ -9,7 +9,7 @@ let launchValue: boolean | undefined;
  * (and remounts open terminals) mid-session. With nothing cached yet it reads
  * as off until the next launch.
  */
-export function useParadevShell(): boolean {
+export function useWankerShell(): boolean {
 	launchValue ??=
 		posthog.isFeatureEnabled(FEATURE_FLAGS.PARADEV_SHELL, {
 			send_event: false,

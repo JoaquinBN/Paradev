@@ -37,7 +37,7 @@ export function QueuedPrompts({
 				<View className="mb-2 flex-row items-center gap-3 rounded-2xl bg-white/5 px-3.5 py-3">
 					<Text className="text-muted-foreground min-w-0 flex-1 text-[13px]">
 						{pausedByShutdown ? (
-							<Trans>Queue paused when Paradev closed</Trans>
+							<Trans>Queue paused when Wanker closed</Trans>
 						) : (
 							<Trans>Queue paused because you interrupted</Trans>
 						)}

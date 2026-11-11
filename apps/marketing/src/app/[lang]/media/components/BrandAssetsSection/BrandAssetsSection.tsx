@@ -23,7 +23,7 @@ export function BrandAssetsSection() {
 			<p className="mt-6 text-muted-foreground leading-relaxed">
 				<Trans>
 					Download our logos, product images, and founder photos for use in
-					coverage of Paradev.
+					coverage of Wanker.
 				</Trans>
 			</p>
 			<h3 className="mt-8 font-medium text-foreground">

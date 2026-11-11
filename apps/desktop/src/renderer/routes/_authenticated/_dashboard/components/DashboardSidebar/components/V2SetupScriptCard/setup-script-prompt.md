@@ -1,4 +1,4 @@
-Set up [Paradev workspace setup & teardown scripts]({{DOCS_URL}}/setup-teardown-scripts) for this project.
+Set up [Wanker workspace setup & teardown scripts]({{DOCS_URL}}/setup-teardown-scripts) for this project.
 
 ## Goal
 

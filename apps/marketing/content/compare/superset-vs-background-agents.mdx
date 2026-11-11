@@ -1,6 +1,6 @@
 ---
-title: "Paradev vs Background Agents: Open-Inspect (2026): Agent Workspace vs Self-Hosted Background Agent System"
-description: "Compare Paradev and Open-Inspect (Background Agents), the open source take on Ramp's Inspect. Self-hosted cloud sandboxes with Slack, GitHub, Linear, and cron triggers vs a workspace that runs your agent CLIs on your machine, your hosts, your own Linux server, or cloud workspaces."
+title: "Wanker vs Background Agents: Open-Inspect (2026): Agent Workspace vs Self-Hosted Background Agent System"
+description: "Compare Wanker and Open-Inspect (Background Agents), the open source take on Ramp's Inspect. Self-hosted cloud sandboxes with Slack, GitHub, Linear, and cron triggers vs a workspace that runs your agent CLIs on your machine, your hosts, your own Linux server, or cloud workspaces."
 date: 2026-11-05
 lastUpdated: 2026-11-05
 type: "1v1"
@@ -17,16 +17,16 @@ keywords:
   - background coding agents
 ---
 
-Paradev and Background Agents both run coding agents while you do other work, and both are MIT-licensed. They are built for different jobs. Background Agents, which its README calls **Open-Inspect**, is an open source system inspired by Ramp's internal Inspect agent. Your company deploys it on Cloudflare plus a sandbox provider such as Modal, and every session runs in a cloud sandbox that people start from the web, Slack, GitHub, Linear, webhooks, or a schedule. Paradev is a workspace for the agent CLIs you already use, such as Claude Code and Codex. Each task gets its own Git worktree and terminal, on your Mac, on hosts you add, on your own Linux server, or in a Paradev cloud workspace. Choose Open-Inspect when a platform team wants to run an internal background agent for the whole company. Choose Paradev when developers want to run, watch, and review their own agents without operating that system.
+Wanker and Background Agents both run coding agents while you do other work, and both are MIT-licensed. They are built for different jobs. Background Agents, which its README calls **Open-Inspect**, is an open source system inspired by Ramp's internal Inspect agent. Your company deploys it on Cloudflare plus a sandbox provider such as Modal, and every session runs in a cloud sandbox that people start from the web, Slack, GitHub, Linear, webhooks, or a schedule. Wanker is a workspace for the agent CLIs you already use, such as Claude Code and Codex. Each task gets its own Git worktree and terminal, on your Mac, on hosts you add, on your own Linux server, or in a Wanker cloud workspace. Choose Open-Inspect when a platform team wants to run an internal background agent for the whole company. Choose Wanker when developers want to run, watch, and review their own agents without operating that system.
 
-This comparison is published by Paradev. Open-Inspect details were checked against the [open-inspect/background-agents](https://github.com/open-inspect/background-agents) repository, its README, LICENSE, and [Getting Started guide](https://github.com/open-inspect/background-agents/blob/main/docs/GETTING_STARTED.md), and [backgroundagents.dev](https://backgroundagents.dev) on November 5, 2026.
+This comparison is published by Wanker. Open-Inspect details were checked against the [open-inspect/background-agents](https://github.com/open-inspect/background-agents) repository, its README, LICENSE, and [Getting Started guide](https://github.com/open-inspect/background-agents/blob/main/docs/GETTING_STARTED.md), and [backgroundagents.dev](https://backgroundagents.dev) on November 5, 2026.
 
 ## At a Glance
 
-| Requirement | Paradev | Background Agents (Open-Inspect) |
+| Requirement | Wanker | Background Agents (Open-Inspect) |
 |---|---|---|
 | What it is | A workspace that runs any CLI coding agent, one Git worktree per task | A self-hosted background coding agent system for one organization |
-| Who runs it | You install the desktop app; Paradev runs the relay and cloud workspaces | Your team deploys it with Terraform on Cloudflare, Vercel or Cloudflare Workers, and a sandbox provider |
+| Who runs it | You install the desktop app; Wanker runs the relay and cloud workspaces | Your team deploys it with Terraform on Cloudflare, Vercel or Cloudflare Workers, and a sandbox provider |
 | Where agents run | Your Mac; hosts you add with Remote Access; your own x64 or arm64 Linux server (Bring Your Own Cloud); [cloud workspaces](/cloud) | A cloud sandbox per session on Modal, Daytona, Vercel Sandbox, E2B, or Boat |
 | Agents | Claude Code, Codex, Cursor Agent, OpenCode, Gemini CLI, GitHub Copilot CLI, Grok, Kimi Code, Mistral Vibe, Amp, Pi, and custom commands | Two harnesses: OpenCode (built in) or the Claude Agent SDK |
 | Models | Whatever your agent uses, on your own subscriptions or keys | Anthropic and OpenAI by default; xAI, OpenCode Zen and Go, Z.AI, and DeepSeek opt-in; ChatGPT, Claude, and SuperGrok subscriptions supported |
@@ -48,9 +48,9 @@ People reach the agent from many places. The Slack bot starts a session from a m
 
 The README is clear about scope: the system is for **single-tenant deployment only**, where every user is a trusted member of the same organization. It recommends deploying behind your company's SSO or VPN and installing the GitHub App only on the repos you intend.
 
-## What Is Paradev?
+## What Is Wanker?
 
-Paradev is a workspace for the coding agents you already use. It runs each agent CLI in its own Git worktree and persistent terminal, with presets for Claude Code, Codex, Cursor Agent, OpenCode, Gemini CLI, GitHub Copilot CLI, Grok, Kimi Code, Mistral Vibe, Amp, and Pi, plus custom commands. The Changes pane shows the diff and lets you commit, push, and open a pull request. The Pull Requests view shows CI checks and line comments you can send to an agent. An in-app browser with port detection and Design Mode, Automations, Tasks synced with Linear and GitHub Issues, a Slack bot, a CLI, a TypeScript SDK, and an MCP server sit around that. A [chat interface](https://docs.paradev.com/chat) shows a Claude Code, Codex, OpenCode, or Pi session as a chat, and a CLI / Chat toggle switches the same session back to the terminal. Paradev is open source under the MIT License.
+Wanker is a workspace for the coding agents you already use. It runs each agent CLI in its own Git worktree and persistent terminal, with presets for Claude Code, Codex, Cursor Agent, OpenCode, Gemini CLI, GitHub Copilot CLI, Grok, Kimi Code, Mistral Vibe, Amp, and Pi, plus custom commands. The Changes pane shows the diff and lets you commit, push, and open a pull request. The Pull Requests view shows CI checks and line comments you can send to an agent. An in-app browser with port detection and Design Mode, Automations, Tasks synced with Linear and GitHub Issues, a Slack bot, a CLI, a TypeScript SDK, and an MCP server sit around that. A [chat interface](https://docs.paradev.com/chat) shows a Claude Code, Codex, OpenCode, or Pi session as a chat, and a CLI / Chat toggle switches the same session back to the terminal. Wanker is open source under the MIT License.
 
 ## Key Differences
 
@@ -58,37 +58,37 @@ Paradev is a workspace for the coding agents you already use. It runs each agent
 
 Open-Inspect is infrastructure. The Getting Started guide has you create accounts with Cloudflare, a web host (Vercel or Cloudflare Workers), and a sandbox provider (Modal by default), make a GitHub App, and fill in one `terraform.tfvars` file. Terraform then builds the Workers, Durable Objects, D1 database, and sandbox setup. An AWS production path also exists. Someone on your team owns upgrades, access settings, and secrets after that.
 
-Paradev is a desktop app you install. Workspaces run on your Mac by default. For work away from your desk, you add a host with Remote Access, run the Paradev host on your own Linux server with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), or use [cloud workspaces](/cloud), which Paradev hosts. A BYOC server keeps repos and agent sign-ins on that server and needs no inbound ports.
+Wanker is a desktop app you install. Workspaces run on your Mac by default. For work away from your desk, you add a host with Remote Access, run the Wanker host on your own Linux server with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), or use [cloud workspaces](/cloud), which Wanker hosts. A BYOC server keeps repos and agent sign-ins on that server and needs no inbound ports.
 
 ### Where the sandbox lives
 
 In Open-Inspect, every session is a fresh cloud sandbox on the provider you choose, with snapshots saved after each prompt. That gives each task a clean, isolated machine and lets many tasks run at once without touching a laptop.
 
-In Paradev, isolation is a Git worktree and branch on the host. A worktree separates files, not processes, so tasks on one host share that machine. Cloud workspaces give you a hosted machine per workspace, started from an environment with 1 to 20 GitHub repos, variables, secrets, a region, and a machine size. You can save a set-up workspace as an environment snapshot.
+In Wanker, isolation is a Git worktree and branch on the host. A worktree separates files, not processes, so tasks on one host share that machine. Cloud workspaces give you a hosted machine per workspace, started from an environment with 1 to 20 GitHub repos, variables, secrets, a region, and a machine size. You can save a set-up workspace as an environment snapshot.
 
 ### Agents and models
 
 Open-Inspect runs one of two harnesses inside the sandbox: OpenCode or the Claude Agent SDK. It lets you pick the model per session and use ChatGPT, Claude, or SuperGrok subscriptions as well as API keys.
 
-Paradev runs the full agent CLIs, with their own logins, settings, and MCP servers. You can switch agents between tasks, or continue a session with another agent. Claude Code and Codex have a structured handoff. Paradev never proxies model calls.
+Wanker runs the full agent CLIs, with their own logins, settings, and MCP servers. You can switch agents between tasks, or continue a session with another agent. Claude Code and Codex have a structured handoff. Wanker never proxies model calls.
 
 ### Hands-off intake vs hands-on sessions
 
 Open-Inspect is built to be asked from where the team already works, then left alone. A Slack message, a Linear issue, a Sentry alert, or a cron job starts a session, and results thread back with a PR. Several people can join one session, and each person's prompts are attributed in the commits.
 
-Paradev also has intake: Automations run on a schedule or on GitHub, Slack, Linear, and other events, Tasks sync with Linear and GitHub Issues, and the Slack bot starts workspaces from a mention. Its center, though, is the developer's own session. You watch the terminal, answer prompts, run your own commands, review the live diff, and open the PR in the same window. The iPhone and iPad app lets you check in from your phone.
+Wanker also has intake: Automations run on a schedule or on GitHub, Slack, Linear, and other events, Tasks sync with Linear and GitHub Issues, and the Slack bot starts workspaces from a mention. Its center, though, is the developer's own session. You watch the terminal, answer prompts, run your own commands, review the live diff, and open the PR in the same window. The iPhone and iPad app lets you check in from your phone.
 
 ### Security model
 
 Open-Inspect's README says to treat it as a trusted internal tool. All users share one GitHub App installation. Sandbox credentials are limited to the session's repos, but they are cached on disk, so snapshots can keep them, and removing a grant does not revoke a token that was already issued. Team read isolation depends on a setting that defaults to `shadow`.
 
-Paradev agents run on hosts you choose with your own agent sign-ins. Organizations grant host access per member, and Enterprise adds SAML SSO, SCIM, audit logs, and SOC 2 Type II.
+Wanker agents run on hosts you choose with your own agent sign-ins. Organizations grant host access per member, and Enterprise adds SAML SSO, SCIM, audit logs, and SOC 2 Type II.
 
 ## Pricing
 
 Open-Inspect has no price. The software is free under MIT, and you pay for what you deploy: Cloudflare, your web host, sandbox time on Modal or another provider, and model usage. The project site lists no hosted plan or pricing.
 
-| Plan | Paradev | Background Agents (Open-Inspect) |
+| Plan | Wanker | Background Agents (Open-Inspect) |
 |---|---|---|
 | Software | Free tier; open source under MIT | Free; open source under MIT |
 | Paid | Pro {{price:pro}}/user/month, or {{price:pro:yearly}} billed yearly; Team {{price:team}}; Ultra {{price:ultra}} | None |
@@ -96,7 +96,7 @@ Open-Inspect has no price. The software is free under MIT, and you pay for what 
 | Cloud compute | Cloud workspaces included with Team and Ultra; BYOC uses your own server | Your sandbox provider's rates |
 | Models | Your own agent subscriptions or keys | Your own API keys or supported subscriptions |
 
-Paradev paid plans add Remote Access, Bring Your Own Cloud, and the iPhone and iPad app. Team and Ultra add cloud workspaces. Check [Paradev pricing](/pricing) for current terms.
+Wanker paid plans add Remote Access, Bring Your Own Cloud, and the iPhone and iPad app. Team and Ultra add cloud workspaces. Check [Wanker pricing](/pricing) for current terms.
 
 ## Which Should You Choose?
 
@@ -107,7 +107,7 @@ Paradev paid plans add Remote Access, Bring Your Own Cloud, and the iPhone and i
 - Want people to start agents from Slack, Linear, GitHub, Sentry alerts, and webhooks, and get a PR back.
 - Want multiplayer sessions and per-prompt commit attribution.
 
-**Choose Paradev if you:**
+**Choose Wanker if you:**
 
 - Want to run Claude Code, Codex, or another CLI agent yourself, without operating infrastructure.
 - Want to choose per task between your Mac, your own hosts, your own Linux server, and cloud workspaces.
@@ -116,7 +116,7 @@ Paradev paid plans add Remote Access, Bring Your Own Cloud, and the iPhone and i
 
 ## Verdict
 
-Open-Inspect is a solid open source base for a company that wants its own Ramp-style background agent and has the people to run it. Paradev is for developers and teams who want to run the agents they already use, see each session, and review the work, with cloud options that do not need a Terraform deploy. The two can sit side by side: a background system for fire-and-forget tasks, and Paradev for the work you want to steer.
+Open-Inspect is a solid open source base for a company that wants its own Ramp-style background agent and has the people to run it. Wanker is for developers and teams who want to run the agents they already use, see each session, and review the work, with cloud options that do not need a Terraform deploy. The two can sit side by side: a background system for fire-and-forget tasks, and Wanker for the work you want to steer.
 
 ## Frequently Asked Questions
 
@@ -128,13 +128,13 @@ Open-Inspect is the name the Background Agents README uses for the project. It i
 
 The project describes itself as open source and self-hostable and does not list a hosted plan or pricing. You deploy it with Terraform on your own accounts.
 
-### Can Paradev run agents in the background?
+### Can Wanker run agents in the background?
 
 Yes. Workspaces on a Remote Access host, a [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud) server, or a [cloud workspace](/cloud) keep running when your laptop is closed. Automations start agents on a schedule or on GitHub, Slack, Linear, and other events.
 
 ### Which agents does Open-Inspect support?
 
-It runs OpenCode or the Claude Agent SDK as the harness, with Anthropic and OpenAI models by default and other providers opt-in. Paradev runs the agent CLIs themselves, including Claude Code, Codex, and OpenCode.
+It runs OpenCode or the Claude Agent SDK as the harness, with Anthropic and OpenAI models by default and other providers opt-in. Wanker runs the agent CLIs themselves, including Claude Code, Codex, and OpenCode.
 
 ### Are both open source?
 

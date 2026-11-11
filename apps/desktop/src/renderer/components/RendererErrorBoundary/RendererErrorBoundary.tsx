@@ -57,8 +57,7 @@ export class RendererErrorBoundary extends Component<
 					<p style={{ fontSize: "14px", opacity: 0.8 }}>
 						{i18n._(
 							msg({
-								message:
-									"Paradev hit an unexpected error. Reload to try again.",
+								message: "Wanker hit an unexpected error. Reload to try again.",
 							}),
 						)}
 					</p>

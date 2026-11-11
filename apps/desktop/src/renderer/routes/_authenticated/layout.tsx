@@ -36,7 +36,6 @@ import { DiffThemeSync } from "renderer/routes/_authenticated/components/DiffThe
 import { InterruptedChatsDialog } from "renderer/routes/_authenticated/components/InterruptedChatsDialog";
 import { LeaderboardAutoPublish } from "renderer/routes/_authenticated/components/LeaderboardAutoPublish";
 import { OrganizationPluginSync } from "renderer/routes/_authenticated/components/OrganizationPluginSync";
-import { ParadevShellSync } from "renderer/routes/_authenticated/components/ParadevShellSync";
 import { PendingDeletionScreen } from "renderer/routes/_authenticated/components/PendingDeletionScreen";
 import { PostHogPlanFlags } from "renderer/routes/_authenticated/components/PostHogPlanFlags";
 import { RealtimeNudges } from "renderer/routes/_authenticated/components/RealtimeNudges";
@@ -52,6 +51,7 @@ import {
 	V2FlipWelcome,
 } from "renderer/routes/_authenticated/components/V1FlipNotice";
 import { V1ImportModal } from "renderer/routes/_authenticated/components/V1ImportModal";
+import { WankerShellSync } from "renderer/routes/_authenticated/components/WankerShellSync";
 import { useForwardedHotkeys } from "renderer/routes/_authenticated/hooks/useForwardedHotkeys";
 import { useZoomHotkeys } from "renderer/routes/_authenticated/hooks/useZoomHotkeys";
 import { WorkspaceInitEffects } from "renderer/screens/main/components/WorkspaceInitEffects";
@@ -252,7 +252,7 @@ function AuthenticatedLayout() {
 								Still restoring your session
 							</h2>
 							<p className="text-sm text-muted-foreground">
-								Paradev can't confirm your sign-in with the server.
+								Wanker can't confirm your sign-in with the server.
 							</p>
 						</div>
 						<div className="flex gap-2">
@@ -329,7 +329,7 @@ function AuthenticatedLayout() {
 			<CollectionsProvider>
 				<WindowTitle />
 				<PostHogPlanFlags />
-				<ParadevShellSync />
+				<WankerShellSync />
 				<GlobalBrowserLifecycle />
 				<GlobalPaneLayoutRequests />
 				<FileAutoSave />

@@ -125,7 +125,7 @@ function buildGrokCompatBlock(base: string): string {
 
 	const body = [
 		GROK_COMPAT_MARKER_START,
-		"# Paradev registers its own Grok hooks; replaying Paradev-managed",
+		"# Wanker registers its own Grok hooks; replaying Wanker-managed",
 		"# Claude/Cursor hook configs here would mislabel grok sessions.",
 		...vendors.flatMap((vendor) => [`[compat.${vendor}]`, "hooks = false", ""]),
 	]

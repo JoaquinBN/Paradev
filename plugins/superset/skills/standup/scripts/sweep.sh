@@ -1,5 +1,5 @@
 #!/bin/bash
-# Read-only sweep of Paradev state for the standup skill.
+# Read-only sweep of Wanker state for the standup skill.
 # Emits one JSON object on stdout; progress and errors go to stderr.
 # Usage: sweep.sh [--host <id>] [--max-lines <n>]
 set -u

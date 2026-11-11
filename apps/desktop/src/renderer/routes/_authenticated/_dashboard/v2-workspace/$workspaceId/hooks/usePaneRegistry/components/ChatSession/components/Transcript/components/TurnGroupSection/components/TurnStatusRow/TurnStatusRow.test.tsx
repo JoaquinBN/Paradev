@@ -186,7 +186,7 @@ test("an auth failure in manual mode offers no sign-in: Continue or agent settin
 	expect(openAgentSettings).toHaveBeenCalledTimes(1);
 });
 
-test("a turn cut off when Paradev closed is a quiet paused line that resumes", () => {
+test("a turn cut off when Wanker closed is a quiet paused line that resumes", () => {
 	const continueTask = mock(() => {});
 	const view = render(
 		<TurnFailureActionsProvider
@@ -198,7 +198,7 @@ test("a turn cut off when Paradev closed is a quiet paused line that resumes", (
 			}}
 		>
 			<TurnStatusRow
-				error={{ message: "Paradev closed", kind: "host_stopped" }}
+				error={{ message: "Wanker closed", kind: "host_stopped" }}
 				latest
 				status="interrupted"
 				turnId="t1"
@@ -207,7 +207,7 @@ test("a turn cut off when Paradev closed is a quiet paused line that resumes", (
 	);
 
 	expect(view.container.querySelector("[data-turn-failure]")).toBeNull();
-	expect(view.container.textContent).toContain("Paused when Paradev closed");
+	expect(view.container.textContent).toContain("Paused when Wanker closed");
 	fireEvent.click(view.getByText("Resume"));
 	expect(continueTask).toHaveBeenCalledTimes(1);
 });
@@ -215,11 +215,11 @@ test("a turn cut off when Paradev closed is a quiet paused line that resumes", (
 test("an older paused turn offers no Resume", () => {
 	const view = render(
 		<TurnStatusRow
-			error={{ message: "Paradev closed", kind: "host_stopped" }}
+			error={{ message: "Wanker closed", kind: "host_stopped" }}
 			latest={false}
 			status="interrupted"
 			turnId="t1"
 		/>,
 	);
-	expect(view.container.textContent).toBe("Paused when Paradev closed");
+	expect(view.container.textContent).toBe("Paused when Wanker closed");
 });

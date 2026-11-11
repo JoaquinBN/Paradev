@@ -67,7 +67,7 @@ export default function SignUpPage() {
 					<Trans>Create an account</Trans>
 				</h1>
 				<p className="text-muted-foreground text-sm">
-					<Trans>Sign up to get started with Paradev</Trans>
+					<Trans>Sign up to get started with Wanker</Trans>
 				</p>
 			</div>
 			<div className="grid gap-4">

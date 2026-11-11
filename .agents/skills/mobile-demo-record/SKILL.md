@@ -21,7 +21,7 @@ Maestro, recorded with `simctl`. Nothing here opens a window on the user's displ
 
 ## Stack
 
-Start each in its own Paradev terminal
+Start each in its own Wanker terminal
 (`superset terminals create --local --workspace $SUPERSET_WORKSPACE_ID --command "..."`;
 without `--local` the call silently returns nothing). Ports come from `.paradev/ports.json`
 and the root `.env`.

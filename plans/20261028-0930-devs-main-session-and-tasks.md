@@ -6,7 +6,7 @@ Reference: This plan follows conventions from AGENTS.md and the ExecPlan templat
 
 ## Purpose / Big Picture
 
-A Dev is an agent teammate in a Paradev organization. Today each DM and each channel thread a Dev is mentioned in is its own session with its own memory, no session ever gets a machine, and the Dev's saved instructions never reach the model. So a Dev can chat but cannot do coding work, and it does not know in one thread what it is doing in another.
+A Dev is an agent teammate in a Wanker organization. Today each DM and each channel thread a Dev is mentioned in is its own session with its own memory, no session ever gets a machine, and the Dev's saved instructions never reach the model. So a Dev can chat but cannot do coding work, and it does not know in one thread what it is doing in another.
 
 After this change a Dev has one main session that every message reaches, wherever it was sent: its DMs, @mentions, threads it takes part in, and channel messages a router decides are for it. The main session has no machine. It answers from what it knows and delegates any code work to task sessions. Each task session runs pdev on its own cloud box, and a reviewer task can check a writer task's pull request. Task results come back to the main session, which tells people. People always talk to the Dev, never to its tasks.
 
@@ -35,7 +35,7 @@ Slack and Linear as sources need an identity rule: what in Slack or Linear means
 ## Surprises & Discoveries
 
 - Observation: pdev's ACP server accepts `mcpServers` in `session/new` but ignores them; pi reads MCP servers from `mcp.json` in the agent directory instead.
-  Evidence: `packages/acp/src/acp/agent.ts` in ParadevAI/router ("Pi doesn't support mcpServers, but we accept and store"); pi's `extensions/mcp/config.js` reads `join(agentDir, "mcp.json")` and expands `${ENV}` in headers.
+  Evidence: `packages/acp/src/acp/agent.ts` in WankerAI/router ("Pi doesn't support mcpServers, but we accept and store"); pi's `extensions/mcp/config.js` reads `join(agentDir, "mcp.json")` and expands `${ENV}` in headers.
 - Observation: nothing on main sets `agent_sessions.cloud_workspace_id`, and `agents.instructions` is never sent to the model.
   Evidence: `git grep cloudWorkspaceId origin/main -- packages/trpc/src/router/agent` shows only reads.
 
@@ -64,7 +64,7 @@ Slack and Linear as sources need an identity rule: what in Slack or Linear means
 - Decision: people talk only to the Dev's main session; tasks never post to people. Task results wake the main session; several results arriving while it is busy join its running turn as one batch (the existing steer mechanism).
   Rationale: Satya, 2026-10-28: "we'd probably want the parent to be the one we chat with".
   Date/Author: 2026-10-28, Satya.
-- Decision: a channel router uses Jev (the `typesafe-ai/jev` classifier on the Vercel AI Gateway, already used by ParadevAI/router for prompt complexity) to decide which of a channel's Devs, if any, a non-mention message is for. @mentions and DMs bypass it.
+- Decision: a channel router uses Jev (the `typesafe-ai/jev` classifier on the Vercel AI Gateway, already used by WankerAI/router for prompt complexity) to decide which of a channel's Devs, if any, a non-mention message is for. @mentions and DMs bypass it.
   Rationale: Satya, 2026-10-28.
   Date/Author: 2026-10-28, Satya.
 - Decision: Dev tools reach pdev as an MCP server hosted by the API at `/mcp/agent`, authenticated with the turn token. The worker writes the server into the per-turn `mcp.json`, and refreshes the token into a file that pdev's `headersHelper` reads, because turn tokens last 15 minutes and turns can last longer.
@@ -82,7 +82,7 @@ Slack and Linear as sources need an identity rule: what in Slack or Linear means
 
 End-to-end run, 2026-10-28, local API and realtime on Neon branch `devs-v2`, local Temporal (namespace `devs-v2`), the worker with pdev 0.2.3, real Vercel boxes from the acme-demo environment, Jev on the AI Gateway. Two Devs: Ada (writes code) and Otto (operations).
 
-A channel mention asking Ada for a `clamp` helper: Ada replied in the thread, started a writer task, whose box was ready in 11 s; it opened ParadevAI/acme-demo#4 in about a minute. Ada then started a reviewer task on its own box, which approved, and Ada posted the result in the thread. A second request opened #5 and was reviewed the same way.
+A channel mention asking Ada for a `clamp` helper: Ada replied in the thread, started a writer task, whose box was ready in 11 s; it opened WankerAI/acme-demo#4 in about a minute. Ada then started a reviewer task on its own box, which approved, and Ada posted the result in the thread. A second request opened #5 and was reviewed the same way.
 
 A DM "what are you working on right now?" while the README task ran: answered in 9 s, naming the running task and the approved #4.
 
@@ -94,7 +94,7 @@ Gaps: the worker's local model credential is the CLI sign-in captured at start a
 
 ## Context and Orientation
 
-Paradev is a Turborepo monorepo. The pieces involved:
+Wanker is a Turborepo monorepo. The pieces involved:
 
 `packages/db/src/schema/agents.ts` defines Devs (`agents`), their sessions (`agent_sessions`) and turns (`agent_turns`). A turn is one burst of work in a session; a session runs one turn at a time and a message that arrives during a turn joins it as a "steer". Migrations are generated with drizzle-kit, never hand-edited; see `.agents/skills/db-migrations/SKILL.md`.
 
@@ -106,7 +106,7 @@ Paradev is a Turborepo monorepo. The pieces involved:
 
 `apps/api/src/app/mcp/` serves MCP over HTTP with `@superset/mcp`. `apps/api/src/app/api/github/webhook/route.ts` receives GitHub App webhooks.
 
-Jev is a classifier model on the Vercel AI Gateway: POST `https://ai-gateway.vercel.sh/typesafe/v1/systemone` with `{ model: "typesafe-ai/jev", state, questions }`, where a `choice` question returns a probability per option. ParadevAI/router's `packages/routing/src/jev.ts` shows the request shape. On Vercel the API authenticates with the deployment's OIDC token; locally with `VERCEL_AI_GATEWAY_KEY`.
+Jev is a classifier model on the Vercel AI Gateway: POST `https://ai-gateway.vercel.sh/typesafe/v1/systemone` with `{ model: "typesafe-ai/jev", state, questions }`, where a `choice` question returns a probability per option. WankerAI/router's `packages/routing/src/jev.ts` shows the request shape. On Vercel the API authenticates with the deployment's OIDC token; locally with `VERCEL_AI_GATEWAY_KEY`.
 
 ## Plan of Work
 

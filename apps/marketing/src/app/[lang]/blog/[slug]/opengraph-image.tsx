@@ -5,7 +5,7 @@ import { getBlogPost } from "@/lib/blog";
 import { formatBlogDate } from "@/lib/blog-utils";
 import { getInterBold } from "../../utils/getInterBold";
 
-export const alt = "Paradev Blog";
+export const alt = "Wanker Blog";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -64,7 +64,7 @@ export default async function Image({
 					fontFamily: "Inter",
 				}}
 			>
-				Paradev Blog
+				Wanker Blog
 			</div>,
 			{
 				...size,
@@ -192,7 +192,7 @@ export default async function Image({
 							color: "#ffffff",
 						}}
 					>
-						Paradev
+						Wanker
 					</div>
 				)}
 			</div>

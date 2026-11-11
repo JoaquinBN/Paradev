@@ -16,7 +16,7 @@ export async function DownloadSuperset() {
 					<h1 className="mb-3 text-3xl font-medium">
 						{i18n._(
 							msg({
-								message: "Download Paradev",
+								message: "Download Wanker",
 							}),
 						)}
 					</h1>

@@ -56,8 +56,8 @@ function StarNagToastContent({ toastId }: { toastId: string | number }) {
 			</div>
 			<p className="mt-1 text-xs text-muted-foreground">
 				<Trans>
-					If you're enjoying Paradev so far, a GitHub star helps other
-					developers discover it.
+					If you're enjoying Wanker so far, a GitHub star helps other developers
+					discover it.
 				</Trans>
 			</p>
 			{/* A "loading" or "unknown" read isn't trustworthy enough to act on —

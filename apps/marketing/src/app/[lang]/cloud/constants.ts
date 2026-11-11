@@ -32,7 +32,7 @@ export const CLOUD_FEATURES: CloudFeature[] = [
 		title: msg({ message: "No keys in the sandbox" }),
 		description: msg({
 			message:
-				"Agents see a placeholder. Paradev adds your sign-in to outgoing requests.",
+				"Agents see a placeholder. Wanker adds your sign-in to outgoing requests.",
 		}),
 	},
 ];

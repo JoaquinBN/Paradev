@@ -509,7 +509,7 @@ export function ProjectSettings({
 														{importableExternalWorktrees.length === 1
 															? ""
 															: "s"}{" "}
-														into Paradev as workspaces. Each worktree on disk
+														into Wanker as workspaces. Each worktree on disk
 														will be tracked and appear in your sidebar. No files
 														will be modified.
 													</AlertDialogDescription>

@@ -34,7 +34,7 @@ export function ChoosePrimaryStep({
 				</DialogTitle>
 				<DialogDescription className="text-sm leading-snug">
 					<Trans>
-						Cloud workspaces open on it, and its Paradev config runs setup. The
+						Cloud workspaces open on it, and its Wanker config runs setup. The
 						others are checked out beside it.
 					</Trans>
 				</DialogDescription>

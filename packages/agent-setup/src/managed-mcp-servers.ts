@@ -334,8 +334,8 @@ function codexMcpSpec(
 			if (entries.length === 0) return "";
 			return [
 				CODEX_MARKER_START,
-				"# Managed by Paradev — do not edit inside this block. Entries",
-				"# converge on the plugins installed in the Paradev desktop app.",
+				"# Managed by Wanker — do not edit inside this block. Entries",
+				"# converge on the plugins installed in the Wanker desktop app.",
 				...entries.map(([name, config]) => codexServerTable(name, config)),
 				CODEX_MARKER_END,
 			].join("\n");

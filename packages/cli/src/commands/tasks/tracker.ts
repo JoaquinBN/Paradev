@@ -6,7 +6,7 @@ export type TaskTracker = "superset" | "linear";
 export const trackerOption = string()
 	.enum("superset", "linear")
 	.desc(
-		"Work on Paradev tasks or Linear issues (default: the organization's setting)",
+		"Work on Wanker tasks or Linear issues (default: the organization's setting)",
 	);
 
 export function requireOrganizationId(ctx: CliContext): string {

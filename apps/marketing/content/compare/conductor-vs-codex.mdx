@@ -1,6 +1,6 @@
 ---
 title: "Conductor vs Codex (2026): Local Orchestrator vs OpenAI's Agent"
-description: "Compare Conductor and OpenAI Codex for parallel AI coding. See how a Mac app that runs Codex in worktrees differs from Codex's own cloud app, plus where Paradev fits."
+description: "Compare Conductor and OpenAI Codex for parallel AI coding. See how a Mac app that runs Codex in worktrees differs from Codex's own cloud app, plus where Wanker fits."
 date: 2026-07-13
 lastUpdated: 2026-11-05
 type: "1v1"
@@ -20,13 +20,13 @@ Conductor is joining Meta and is winding down. Since November 4, 2026, it takes 
 
 Conductor and Codex are compared often, but they are different kinds of thing. Codex is OpenAI's coding agent, available as a CLI, an editor extension, a desktop app, and a cloud service. Conductor is a macOS app that runs agents, including Codex, in parallel Git worktrees on your machine. So the real question was where you want Codex to run: inside OpenAI's own app and cloud, or inside a local orchestrator that gives each task its own worktree.
 
-If you want that local orchestration but agent-agnostic on macOS and experimental Linux, [Paradev](/compare/superset-vs-codex) is a third option. This page compares all three.
+If you want that local orchestration but agent-agnostic on macOS and experimental Linux, [Wanker](/compare/superset-vs-codex) is a third option. This page compares all three.
 
 ---
 
 ## At a Glance
 
-| | **Conductor** | **Codex** | **Paradev** |
+| | **Conductor** | **Codex** | **Wanker** |
 |---|---|---|---|
 | **Category** | Mac app for parallel agents | OpenAI's coding agent (multi-surface) | Agent orchestration workspace |
 | **Runs Codex?** | Yes, as one of its agents | It is Codex | Yes, as one of many agents |
@@ -61,17 +61,17 @@ Codex runs OpenAI's Codex. Conductor runs Codex alongside Claude Code and Cursor
 
 Conductor gives you a local review-and-merge dashboard across parallel worktrees. Codex returns diffs and logs from its cloud tasks for you to review before merging. Both end in a reviewed diff; they differ in whether the loop is local or cloud.
 
-## Where Paradev Fits
+## Where Wanker Fits
 
-Paradev is the option if you want Conductor's local worktree orchestration but agent-agnostic and not limited to macOS. It runs the Codex CLI as one of many agents, each in its own worktree, alongside Claude Code, OpenCode, Cursor, and Gemini, with built-in review, an in-app browser, and MCP. Agents run on your Mac, on remote hosts, on a Linux server in your own cloud account with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), or in [cloud workspaces](/cloud). Paradev is open source under the MIT License. See [Paradev vs Codex](/compare/superset-vs-codex), [Paradev vs Codex App](/compare/superset-vs-codex-app), and [Paradev vs Conductor](/compare/superset-vs-conductor).
+Wanker is the option if you want Conductor's local worktree orchestration but agent-agnostic and not limited to macOS. It runs the Codex CLI as one of many agents, each in its own worktree, alongside Claude Code, OpenCode, Cursor, and Gemini, with built-in review, an in-app browser, and MCP. Agents run on your Mac, on remote hosts, on a Linux server in your own cloud account with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), or in [cloud workspaces](/cloud). Wanker is open source under the MIT License. See [Wanker vs Codex](/compare/superset-vs-codex), [Wanker vs Codex App](/compare/superset-vs-codex-app), and [Wanker vs Conductor](/compare/superset-vs-conductor).
 
 ## Which Should You Choose?
 
-- **Conductor** is closed to new users and is winding down. If you use it today, follow the [migration guide](https://docs.paradev.com/migrate-from-conductor) to move your work to Paradev.
+- **Conductor** is closed to new users and is winding down. If you use it today, follow the [migration guide](https://docs.paradev.com/migrate-from-conductor) to move your work to Wanker.
 - **Choose Codex** if you are standardized on OpenAI and want its cohesive suite with cloud tasks that run while your machine is off.
-- **Choose Paradev** if you want agent-agnostic local orchestration across many agents, on your own machine and remote hosts, not tied to macOS or one vendor.
+- **Choose Wanker** if you want agent-agnostic local orchestration across many agents, on your own machine and remote hosts, not tied to macOS or one vendor.
 
-**Verdict:** Codex is the agent; Conductor is a Mac app that runs it (and others) in local worktrees. Conductor is now closed to new users. Choose Codex for OpenAI's cloud-first suite, and Paradev if you want CLI-agent orchestration on macOS and experimental Linux.
+**Verdict:** Codex is the agent; Conductor is a Mac app that runs it (and others) in local worktrees. Conductor is now closed to new users. Choose Codex for OpenAI's cloud-first suite, and Wanker if you want CLI-agent orchestration on macOS and experimental Linux.
 
 ---
 
@@ -83,8 +83,8 @@ No. Codex is OpenAI's coding agent. Conductor is a macOS app that can run Codex 
 
 ### Does Conductor run Codex in the cloud?
 
-The Conductor Mac app runs agents locally on your Mac, each in a Git worktree. Conductor Cloud shuts down on November 20, 2026. Codex's own cloud service runs tasks in OpenAI-managed environments. Paradev also runs Codex locally, and can use your own remote hosts, your own Linux server through Bring Your Own Cloud, or cloud workspaces.
+The Conductor Mac app runs agents locally on your Mac, each in a Git worktree. Conductor Cloud shuts down on November 20, 2026. Codex's own cloud service runs tasks in OpenAI-managed environments. Wanker also runs Codex locally, and can use your own remote hosts, your own Linux server through Bring Your Own Cloud, or cloud workspaces.
 
 ### What is the difference between Conductor and the Codex app?
 
-The Codex app is OpenAI's own desktop and cloud experience for Codex. Conductor is a third-party Mac app that runs Codex and other agents locally in worktrees, and is now closed to new users. See [Paradev vs Codex App](/compare/superset-vs-codex-app) for the app-specific comparison.
+The Codex app is OpenAI's own desktop and cloud experience for Codex. Conductor is a third-party Mac app that runs Codex and other agents locally in worktrees, and is now closed to new users. See [Wanker vs Codex App](/compare/superset-vs-codex-app) for the app-specific comparison.

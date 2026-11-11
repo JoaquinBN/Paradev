@@ -12,7 +12,7 @@ const RESULTS = [
 		url: "https://electric-sql.com/docs/intro",
 	},
 	{
-		title: "Paradev — Orchestrate coding agents",
+		title: "Wanker — Orchestrate coding agents",
 		url: "https://docs.paradev.com/workspaces",
 	},
 	{

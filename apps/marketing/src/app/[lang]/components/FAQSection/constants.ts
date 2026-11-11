@@ -18,16 +18,16 @@ export const FAQ_ITEMS: FAQItem[] = [
 		id: "vsTerminal",
 		question: msg({
 			message:
-				"How is Paradev different from just running Claude Code in a terminal?",
+				"How is Wanker different from just running Claude Code in a terminal?",
 		}),
 		answer: msg({
 			message:
-				"Claude Code, Codex, and OpenCode are the agents; Paradev is where you run many of them at once. Each task gets its own Git worktree and branch, so ten agents can work on ten branches simultaneously while you monitor, review, and merge from one place.",
+				"Claude Code, Codex, and OpenCode are the agents; Wanker is where you run many of them at once. Each task gets its own Git worktree and branch, so ten agents can work on ten branches simultaneously while you monitor, review, and merge from one place.",
 		}),
 		link: {
 			href: "/compare",
 			label: msg({
-				message: "See how Paradev compares to other tools",
+				message: "See how Wanker compares to other tools",
 			}),
 		},
 	},
@@ -38,7 +38,7 @@ export const FAQ_ITEMS: FAQItem[] = [
 		}),
 		answer: msg({
 			message:
-				"Paradev is designed to work with your existing tool, we natively support deep-linking to IDEs like Cursor so you can open your workspaces and files in your IDE.",
+				"Wanker is designed to work with your existing tool, we natively support deep-linking to IDEs like Cursor so you can open your workspaces and files in your IDE.",
 		}),
 	},
 	{
@@ -48,7 +48,7 @@ export const FAQ_ITEMS: FAQItem[] = [
 		}),
 		answer: msg({
 			message:
-				"Paradev works with any CLI-based coding agent, including Claude Code, OpenCode, OpenAI Codex, and more. Choose a different agent for every task without changing your workspace or review flow.",
+				"Wanker works with any CLI-based coding agent, including Claude Code, OpenCode, OpenAI Codex, and more. Choose a different agent for every task without changing your workspace or review flow.",
 		}),
 	},
 	{
@@ -70,11 +70,11 @@ export const FAQ_ITEMS: FAQItem[] = [
 	{
 		id: "freeToUse",
 		question: msg({
-			message: "Is Paradev free to use?",
+			message: "Is Wanker free to use?",
 		}),
 		answer: msg({
 			message:
-				"Paradev has a free tier. The source code is on GitHub under the MIT License, so you can inspect, modify, and self-host it.",
+				"Wanker has a free tier. The source code is on GitHub under the MIT License, so you can inspect, modify, and self-host it.",
 		}),
 	},
 	{
@@ -84,17 +84,17 @@ export const FAQ_ITEMS: FAQItem[] = [
 		}),
 		answer: msg({
 			message:
-				"Absolutely. Paradev doesn't proxy any API calls. You use your own API keys directly with whatever AI providers you choose. This means you have full control over costs and usage.",
+				"Absolutely. Wanker doesn't proxy any API calls. You use your own API keys directly with whatever AI providers you choose. This means you have full control over costs and usage.",
 		}),
 	},
 	{
 		id: "openSource",
 		question: msg({
-			message: "Is Paradev open source?",
+			message: "Is Wanker open source?",
 		}),
 		answer: msg({
 			message:
-				"Yes. Paradev is open source under the MIT License. The code is public on GitHub, and anyone can file issues, open pull requests, or fork it. Paradev is unrelated to Apache Superset, the business-intelligence tool.",
+				"Yes. Wanker is open source under the MIT License. The code is public on GitHub, and anyone can file issues, open pull requests, or fork it. Wanker is unrelated to Apache Superset, the business-intelligence tool.",
 		}),
 		link: {
 			href: `${COMPANY.GITHUB_URL}/blob/main/LICENSE.md`,
@@ -104,21 +104,21 @@ export const FAQ_ITEMS: FAQItem[] = [
 	{
 		id: "platforms",
 		question: msg({
-			message: "What platforms does Paradev run on?",
+			message: "What platforms does Wanker run on?",
 		}),
 		answer: msg({
 			message:
-				"The desktop app runs on macOS, with an experimental Linux AppImage; Windows is not yet available. Beyond the desktop app there's a CLI, a TypeScript SDK, and an MCP server, so you can drive Paradev from scripts, terminals, and other agents. An app for iPhone and iPad on the App Store lets you check on agents and review their diffs away from your desk.",
+				"The desktop app runs on macOS, with an experimental Linux AppImage; Windows is not yet available. Beyond the desktop app there's a CLI, a TypeScript SDK, and an MCP server, so you can drive Wanker from scripts, terminals, and other agents. An app for iPhone and iPad on the App Store lets you check on agents and review their diffs away from your desk.",
 		}),
 	},
 	{
 		id: "wrapper",
 		question: msg({
-			message: "Is Paradev just a wrapper around Claude Code?",
+			message: "Is Wanker just a wrapper around Claude Code?",
 		}),
 		answer: msg({
 			message:
-				"No. Your agents stay independent; Paradev is the orchestration layer around them. Each task gets its own Git worktree and branch, persistent sessions, diff review, and automations that run on events or a schedule, without tying the workflow to one provider.",
+				"No. Your agents stay independent; Wanker is the orchestration layer around them. Each task gets its own Git worktree and branch, persistent sessions, diff review, and automations that run on events or a schedule, without tying the workflow to one provider.",
 		}),
 	},
 ];

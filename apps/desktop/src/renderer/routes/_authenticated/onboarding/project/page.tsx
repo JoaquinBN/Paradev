@@ -131,7 +131,7 @@ function OnboardingProjectPage() {
 		gitToolsReportedAt !== null && gitCheckedAt <= gitToolsReportedAt;
 	const gitMissing = gitDetectedMissing || gitToolsReported;
 	const gitMissingTileHint = t`Install Git first. See the message above.`;
-	const gitMissingMessage = `${t`Paradev needs Git to add a project.`} ${t`On a Mac, Git comes with Apple's Command Line Tools.`}`;
+	const gitMissingMessage = `${t`Wanker needs Git to add a project.`} ${t`On a Mac, Git comes with Apple's Command Line Tools.`}`;
 	const showGitToolsNotice = () => {
 		setEmptyProjectOpen(false);
 		setTemplateOpen(false);

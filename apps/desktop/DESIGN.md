@@ -1,4 +1,4 @@
-# Paradev desktop - design system
+# Wanker desktop - design system
 
 The source of truth for how the desktop app looks. Each token names the file that defines it; a
 value that is not in the code is not in this file. New UI uses these tokens and parts; a new token

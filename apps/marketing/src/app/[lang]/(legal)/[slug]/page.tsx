@@ -73,7 +73,7 @@ export async function generateMetadata({
 	}
 
 	return {
-		title: `${page.title} - Paradev`,
+		title: `${page.title} - Wanker`,
 		description: page.description,
 		alternates: localizedAlternates(lang, `/${slug}`),
 	};

@@ -33,12 +33,12 @@ async function listTools() {
 export async function GET(): Promise<Response> {
 	const card = {
 		name: DOCS_MCP_NAME,
-		title: "Paradev docs",
+		title: "Wanker docs",
 		icon: `${CANONICAL_URLS.MARKETING}/apple-touch-icon.png`,
 		version: DOCS_MCP_VERSION,
 		kind: "docs",
 		description:
-			"Read-only search and retrieval over the Paradev documentation. Every page is also an MCP resource addressed by its canonical URL. No authentication.",
+			"Read-only search and retrieval over the Wanker documentation. Every page is also an MCP resource addressed by its canonical URL. No authentication.",
 		serverUrl: `${DOCS_BASE_URL}/mcp`,
 		transport: "streamable-http",
 		documentationUrl: `${DOCS_BASE_URL}/mcp-server`,

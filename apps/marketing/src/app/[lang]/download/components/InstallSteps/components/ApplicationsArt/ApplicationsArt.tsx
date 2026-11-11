@@ -5,7 +5,7 @@ import { PointerCursor } from "../PointerCursor";
 // App names are proper nouns and read the same in every locale
 const ROWS = [
 	{ name: "Notes", icon: "/app-icons/macos/notes.png" },
-	{ name: "Paradev", icon: "/app-icons/paradev.png", selected: true },
+	{ name: "Wanker", icon: "/app-icons/paradev.png", selected: true },
 	{ name: "Safari", icon: "/app-icons/macos/safari.png" },
 ];
 

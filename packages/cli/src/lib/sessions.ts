@@ -36,7 +36,7 @@ export async function callSessions<T>(call: () => Promise<T>): Promise<T> {
 		) {
 			throw new CLIError(
 				"This host is too old for `superset sessions` — update host-service",
-				"Update host-service or the Paradev desktop app on that host",
+				"Update host-service or the Wanker desktop app on that host",
 			);
 		}
 		throw error;
@@ -59,7 +59,7 @@ function sessionsClient(client: HostServiceClient): SessionsClient {
 export function desktopTabNote(opened: boolean): string {
 	return opened
 		? ", opened in a desktop tab"
-		: ". No desktop tab was opened yet; the Paradev desktop app adds one when it shows this workspace";
+		: ". No desktop tab was opened yet; the Wanker desktop app adds one when it shows this workspace";
 }
 
 export async function resolveSessionWorkspace(

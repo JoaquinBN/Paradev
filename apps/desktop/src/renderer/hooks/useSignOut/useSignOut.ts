@@ -37,7 +37,7 @@ export function useSignOut() {
 				{
 					description: t({
 						message:
-							"Paradev may sign you back in after restart. Please try signing out again.",
+							"Wanker may sign you back in after restart. Please try signing out again.",
 					}),
 				},
 			);

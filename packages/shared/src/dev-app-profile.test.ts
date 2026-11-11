@@ -13,6 +13,7 @@ import {
 	isDevAppProfileDirName,
 	isProfileLockHeld,
 	isStrandedDevAppProfile,
+	legacyDevAppProfileDirName,
 	resolveAppDataDir,
 	workspaceDevAppProfileDirName,
 } from "./dev-app-profile";
@@ -20,7 +21,7 @@ import {
 describe("devAppProfileDirName", () => {
 	test("matches the name the dev app sets on itself", () => {
 		expect(devAppProfileDirName("reap-dev-app-profiles")).toBe(
-			"Superset (reap-dev-app-profiles)",
+			"Wanker (reap-dev-app-profiles)",
 		);
 	});
 
@@ -31,11 +32,25 @@ describe("devAppProfileDirName", () => {
 	});
 });
 
+describe("legacyDevAppProfileDirName", () => {
+	test("names the profile a pre-rename dev build minted, which the sweep still claims", () => {
+		expect(legacyDevAppProfileDirName("feature-x")).toBe(
+			"Superset (feature-x)",
+		);
+		expect(
+			isDevAppProfileDirName(legacyDevAppProfileDirName("feature-x")),
+		).toBe(true);
+	});
+});
+
 describe("isDevAppProfileDirName", () => {
 	test("never claims an installed build's profile", () => {
 		expect(isDevAppProfileDirName("Superset")).toBe(false);
 		expect(isDevAppProfileDirName("Superset Dev")).toBe(false);
 		expect(isDevAppProfileDirName("Superset Canary")).toBe(false);
+		expect(isDevAppProfileDirName("Wanker")).toBe(false);
+		expect(isDevAppProfileDirName("Wanker Dev")).toBe(false);
+		expect(isDevAppProfileDirName("Wanker Canary")).toBe(false);
 	});
 
 	test("leaves unrelated application-data directories alone", () => {

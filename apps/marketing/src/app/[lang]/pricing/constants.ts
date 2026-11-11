@@ -579,11 +579,11 @@ export const PRICING_FAQ_ITEMS: PricingFAQItem[] = [
 	{
 		id: "soc2",
 		question: msg({
-			message: "Is Paradev SOC 2 compliant?",
+			message: "Is Wanker SOC 2 compliant?",
 		}),
 		answer: msg({
 			message:
-				"Yes. Paradev has completed a SOC 2 Type II audit with an independent auditor, covering our security controls in operation over time. Request the report and review our security documentation at {trustHost}.",
+				"Yes. Wanker has completed a SOC 2 Type II audit with an independent auditor, covering our security controls in operation over time. Request the report and review our security documentation at {trustHost}.",
 		}),
 	},
 	{
@@ -593,7 +593,7 @@ export const PRICING_FAQ_ITEMS: PricingFAQItem[] = [
 		}),
 		answer: msg({
 			message:
-				"On your machine. Repos, worktrees, terminal output, and agent sessions stay local by default; cloud sync covers account and organization metadata only. Paradev doesn't proxy any API calls.",
+				"On your machine. Repos, worktrees, terminal output, and agent sessions stay local by default; cloud sync covers account and organization metadata only. Wanker doesn't proxy any API calls.",
 		}),
 	},
 	{
@@ -603,7 +603,7 @@ export const PRICING_FAQ_ITEMS: PricingFAQItem[] = [
 		}),
 		answer: msg({
 			message:
-				"Yes. Paradev is the workspace your agents run in, not a model provider. Bring Claude Code, Codex, OpenCode, or any CLI agent, and use your existing accounts or API keys on every plan.",
+				"Yes. Wanker is the workspace your agents run in, not a model provider. Bring Claude Code, Codex, OpenCode, or any CLI agent, and use your existing accounts or API keys on every plan.",
 		}),
 	},
 ];

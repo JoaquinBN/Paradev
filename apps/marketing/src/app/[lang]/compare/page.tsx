@@ -16,13 +16,13 @@ export async function generateMetadata(): Promise<Metadata> {
 	const i18n = getI18nInstance(lang);
 	const title = i18n._(
 		msg({
-			message: "Compare Paradev | AI Coding Comparisons and Guides",
+			message: "Compare Wanker | AI Coding Comparisons and Guides",
 		}),
 	);
 	const description = i18n._(
 		msg({
 			message:
-				"Compare Paradev with Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot, and more. Browse side-by-side comparisons, roundups, and workflow guides.",
+				"Compare Wanker with Cursor, Claude Code, Codex, Windsurf, Devin, GitHub Copilot, and more. Browse side-by-side comparisons, roundups, and workflow guides.",
 		}),
 	);
 	return {
@@ -33,14 +33,14 @@ export async function generateMetadata(): Promise<Metadata> {
 			languages: localizedAlternates(lang, "/compare").languages,
 		},
 		openGraph: {
-			title: `${title} | Paradev`,
+			title: `${title} | Wanker`,
 			description: description,
 			url: localeUrl(lang, "/compare"),
 			images: ["/og-image.png"],
 		},
 		twitter: {
 			card: "summary_large_image",
-			title: `${title} | Paradev`,
+			title: `${title} | Wanker`,
 			description: description,
 			images: ["/og-image.png"],
 		},
@@ -78,11 +78,11 @@ export default async function ComparePage() {
 						<Trans>Compare</Trans>
 					</span>
 					<h1 className="text-3xl md:text-4xl font-medium tracking-tight text-foreground mt-4">
-						<Trans>Paradev vs the Alternatives</Trans>
+						<Trans>Wanker vs the Alternatives</Trans>
 					</h1>
 					<p className="text-muted-foreground mt-3 max-w-lg">
 						<Trans>
-							See how Paradev compares to other AI coding tools, from AI editors
+							See how Wanker compares to other AI coding tools, from AI editors
 							to coding agents to cloud-based AI engineers.
 						</Trans>
 					</p>

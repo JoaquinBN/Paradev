@@ -74,10 +74,10 @@ export function HostConnectionPill() {
 				? workspace.hostId === machineId
 					? t({
 							message:
-								"Try again, or restart the host service from the Paradev tray menu.",
+								"Try again, or restart the host service from the Wanker tray menu.",
 						})
 					: t({
-							message: "Please try again, or restart Paradev on that device.",
+							message: "Please try again, or restart Wanker on that device.",
 						})
 				: reachabilityDetail;
 	const isDialing =

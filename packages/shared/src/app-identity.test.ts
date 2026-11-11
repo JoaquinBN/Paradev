@@ -32,7 +32,7 @@ describe("root-domain constants", () => {
 			DOCS: "https://docs.superset.sh",
 		});
 		expect(COMPANY).toMatchObject({
-			NAME: "Paradev",
+			NAME: "Wanker",
 			DOMAIN: "superset.sh",
 			EMAIL_DOMAIN: "@superset.sh",
 			MARKETING_URL: "https://superset.sh",

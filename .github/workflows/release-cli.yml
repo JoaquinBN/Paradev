@@ -68,7 +68,7 @@ jobs:
           # desktop-latest rolling pointer.
           gh release create "${{ github.ref_name }}" \
             release-artifacts/*.tar.gz \
-            --title "Paradev CLI ${{ github.ref_name }}" \
+            --title "Wanker CLI ${{ github.ref_name }}" \
             --notes-file release-notes.md \
             --prerelease
 
@@ -117,7 +117,7 @@ jobs:
           gh release create cli-latest \
             release-artifacts/*.tar.gz \
             release-artifacts/version.txt \
-            --title "Latest Paradev CLI" \
+            --title "Latest Wanker CLI" \
             --notes "Rolling pointer to the latest published CLI release. See [${VERSION_TAG}](https://github.com/${{ github.repository }}/releases/tag/${VERSION_TAG}) for changelog." \
             --target "${{ github.sha }}" \
             --prerelease

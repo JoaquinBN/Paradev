@@ -49,7 +49,7 @@ async function paneCookies(from: CookieStore): Promise<Electron.Cookie[]> {
 /**
  * The browser pane moved from the app's session to its own. Copies the pane's
  * cookies across once, so users stay signed in to sites. The copy runs once, so
- * a cookie the user clears in the pane does not come back. Paradev's own
+ * a cookie the user clears in the pane does not come back. Wanker's own
  * cookies stay in the app session, away from pane extensions.
  */
 export async function movePaneSitesOnce({

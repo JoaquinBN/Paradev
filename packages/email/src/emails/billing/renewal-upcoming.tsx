@@ -61,7 +61,7 @@ export function RenewalUpcomingEmail({
 				{isOwner ? (
 					<>
 						update it before {formattedRenewalDate} so the renewal doesn't fail.
-						Open Paradev and go to <strong>Settings → Billing</strong>.
+						Open Wanker and go to <strong>Settings → Billing</strong>.
 					</>
 				) : (
 					<>

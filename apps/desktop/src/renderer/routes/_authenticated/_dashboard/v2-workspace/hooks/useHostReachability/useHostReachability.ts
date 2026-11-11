@@ -44,7 +44,7 @@ function describeFailure(
 		return i18n._(
 			msg({
 				message:
-					"Try again, or restart the host service from the Paradev tray menu.",
+					"Try again, or restart the host service from the Wanker tray menu.",
 			}),
 		);
 	}
@@ -60,7 +60,7 @@ function describeFailure(
 	if (probe.status === 503) {
 		return i18n._(
 			msg({
-				message: "Make sure the device is awake, online, and running Paradev.",
+				message: "Make sure the device is awake, online, and running Wanker.",
 			}),
 		);
 	}
@@ -81,7 +81,7 @@ function describeFailure(
 	if (probe.status === 200) {
 		return i18n._(
 			msg({
-				message: "Please try again, or restart Paradev on that device.",
+				message: "Please try again, or restart Wanker on that device.",
 			}),
 		);
 	}

@@ -1,6 +1,6 @@
 # Move the web app to app.paradev.com
 
-Date: 2026-10-26 (Paradev launch day). Branch: `app-domain-move`.
+Date: 2026-10-26 (Wanker launch day). Branch: `app-domain-move`.
 
 ## Verdict
 

@@ -173,7 +173,7 @@ export default function SignInPage() {
 					<Trans>Welcome back</Trans>
 				</h1>
 				<p className="text-muted-foreground text-sm">
-					<Trans>Sign in to continue to Paradev</Trans>
+					<Trans>Sign in to continue to Wanker</Trans>
 				</p>
 			</div>
 			<div className="grid gap-4">

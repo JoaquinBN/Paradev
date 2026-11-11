@@ -3,7 +3,7 @@ title: Organization Plugins
 description: Sync your organization's own plugins from a GitHub repository and choose which roles get them
 ---
 
-Organization plugins are plugins only your Paradev organization can see. An owner or admin syncs them from a GitHub repository, then chooses which roles can install each one. Unlike plugins from a marketplace you add yourself, organization plugins can have MCP tools as well as skills.
+Organization plugins are plugins only your Wanker organization can see. An owner or admin syncs them from a GitHub repository, then chooses which roles can install each one. Unlike plugins from a marketplace you add yourself, organization plugins can have MCP tools as well as skills.
 
 ## Set Up the Repository
 
@@ -20,16 +20,16 @@ plugins/
             └── scripts/
 ```
 
-Each plugin's `source` in `.agent-marketplace.json` is a `./` folder in the repository. Paradev copies the whole folder, so skills can use `scripts/`, `assets/`, and other files next to them. Executable files stay executable.
+Each plugin's `source` in `.agent-marketplace.json` is a `./` folder in the repository. Wanker copies the whole folder, so skills can use `scripts/`, `assets/`, and other files next to them. Executable files stay executable.
 
 - A plugin can have at most 500 files and about 12 MB of files in total, and must compress to 2 MB or less.
-- `.git`, `node_modules`, and `hooks/` are left out. Paradev does not run hooks.
-- A plugin cannot use the name of a plugin in the [Paradev marketplace](/plugins/available).
+- `.git`, `node_modules`, and `hooks/` are left out. Wanker does not run hooks.
+- A plugin cannot use the name of a plugin in the [Wanker marketplace](/plugins/available).
 - A plugin with MCP tools must name a connector that has its own tool server, or give an `mcp.url` that is a public `https` address.
 
 ## Add a Repository
 
-You must be an owner or admin, have GitHub connected in **Integrations**, and the Paradev GitHub App must have access to the repository.
+You must be an owner or admin, have GitHub connected in **Integrations**, and the Wanker GitHub App must have access to the repository.
 
 1. Open **Plugins** in the sidebar.
 2. Under **Your organization**, click **Add repository**.
@@ -47,7 +47,7 @@ The plugins appear when the first sync finishes.
 
 ## Sync
 
-Paradev syncs a repository when it is added, and again when an admin clicks **Sync now** in **Settings → Plugins** or runs:
+Wanker syncs a repository when it is added, and again when an admin clicks **Sync now** in **Settings → Plugins** or runs:
 
 ```bash
 superset plugins organization sources sync acme/paradev-plugins
@@ -99,4 +99,4 @@ If you belong to more than one organization, your machine keeps the plugins of e
 
 ## Credentials
 
-Tool calls go through Paradev, which adds the connected account's credentials, the same as for other plugins. Credentials never reach the agent or your machine. See [Overview](/plugins/overview).
+Tool calls go through Wanker, which adds the connected account's credentials, the same as for other plugins. Credentials never reach the agent or your machine. See [Overview](/plugins/overview).

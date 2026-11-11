@@ -1,4 +1,4 @@
-# Paradev CLI Specs
+# Wanker CLI Specs
 
 This file is intentionally only an index.
 

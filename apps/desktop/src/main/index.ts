@@ -73,11 +73,11 @@ import { loadWebviewBrowserExtension } from "./lib/extensions";
 import { getHostServiceCoordinator } from "./lib/host-service-coordinator";
 import { htmlPreviewProtocolHandler } from "./lib/html-preview-protocol";
 import { resolveAppLocale } from "./lib/language";
+import { moveLegacyUserData } from "./lib/legacy-user-data";
 import { localDb } from "./lib/local-db";
 import { requestLocalNetworkAccess } from "./lib/local-network-permission";
 import { menuEmitter } from "./lib/menu-events";
 import { allowRendererToReachDeviceHub } from "./lib/mobile-hub-origin";
-
 import {
 	adoptDesktopInstalls,
 	finishPendingOrganizationForget,
@@ -108,6 +108,18 @@ import {
 
 console.log("[main] Local database ready:", !!localDb);
 const IS_DEV = process.env.NODE_ENV === "development";
+
+if (app.isPackaged) {
+	try {
+		const moved = moveLegacyUserData({
+			appDataDir: app.getPath("appData"),
+			appName: app.name,
+		});
+		if (moved) console.log("[main] Moved pre-rename profile to", moved);
+	} catch (error) {
+		console.error("[main] Could not move the pre-rename profile:", error);
+	}
+}
 
 void applyShellEnvToProcess().catch((error) => {
 	console.error("[main] Failed to apply shell environment:", error);
@@ -177,7 +189,7 @@ async function processDeepLink(url: string): Promise<void> {
 							i18n._(
 								msg({
 									message:
-										"Paradev could not complete sign-in. Please try again.",
+										"Wanker could not complete sign-in. Please try again.",
 								}),
 							))
 					: i18n._(

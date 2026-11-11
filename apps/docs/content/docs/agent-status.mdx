@@ -1,6 +1,6 @@
 ---
 title: Agent Status & Notifications
-description: How Paradev knows what your agents are doing, and how it tells you
+description: How Wanker knows what your agents are doing, and how it tells you
 ---
 
 ## The Activity Strip
@@ -16,9 +16,9 @@ If a workspace shows as running after you've stopped its agent (for example afte
 
 ## How Status Is Detected
 
-Paradev installs lifecycle hooks and command wrappers into each agent's config (the entries in `~/.paradev/bin` and files like `superset-hooks`). Those hooks report when an agent starts, finishes, or is waiting for input. Status therefore works only for agents launched through Paradev, and removing the hooks disables status and notifications.
+Wanker installs lifecycle hooks and command wrappers into each agent's config (the entries in `~/.paradev/bin` and files like `superset-hooks`). Those hooks report when an agent starts, finishes, or is waiting for input. Status therefore works only for agents launched through Wanker, and removing the hooks disables status and notifications.
 
-The hooks no-op outside Paradev terminals (they check for a Paradev-supplied env var). To remove them from an agent's config entirely, turn off the agent's **Paradev hooks** toggle in **Settings → Agents**.
+The hooks no-op outside Wanker terminals (they check for a Wanker-supplied env var). To remove them from an agent's config entirely, turn off the agent's **Wanker hooks** toggle in **Settings → Agents**.
 
 ## Notifications
 
@@ -32,4 +32,4 @@ The macOS dock icon shows a badge for workspaces with unread activity or that ne
 
 ![Dock icon showing an attention badge](/images/dock-badge.png)
 
-macOS only shows dock badges when Paradev has notification permission. If you don't see badges, check **System Settings → Notifications → Paradev**.
+macOS only shows dock badges when Wanker has notification permission. If you don't see badges, check **System Settings → Notifications → Wanker**.

@@ -34,7 +34,7 @@ test("a queue the user paused offers its own resume", () => {
 	expect(view.getByText("Resume")).toBeTruthy();
 });
 
-test("a queue Paradev's shutdown left waiting says so", () => {
+test("a queue Wanker's shutdown left waiting says so", () => {
 	const view = render(
 		<QueuePausedBar
 			actionable
@@ -44,6 +44,6 @@ test("a queue Paradev's shutdown left waiting says so", () => {
 		/>,
 	);
 	expect(view.container.textContent).toContain(
-		"Queue paused when Paradev closed",
+		"Queue paused when Wanker closed",
 	);
 });

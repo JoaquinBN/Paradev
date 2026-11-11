@@ -146,7 +146,7 @@ describe("createChatAgentBridge", () => {
 		bridge.stopped("chat-1");
 	});
 
-	it("a chat Paradev closed mid-turn comes back unseen, without a notification", () => {
+	it("a chat Wanker closed mid-turn comes back unseen, without a notification", () => {
 		const { bridge, lifecycle, terminalAgentStore } = setup();
 		bridge.closedMidTurn({
 			sessionId: "chat-1",

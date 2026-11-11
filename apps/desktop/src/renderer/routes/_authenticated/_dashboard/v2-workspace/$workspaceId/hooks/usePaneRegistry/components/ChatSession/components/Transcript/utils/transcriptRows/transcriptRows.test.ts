@@ -114,7 +114,7 @@ describe("transcriptRows", () => {
 		});
 	});
 
-	test("a turn cut off when Paradev closed says why once, on its card", () => {
+	test("a turn cut off when Wanker closed says why once, on its card", () => {
 		const error = {
 			message: "Commands the agent was running were stopped.",
 			kind: "host_stopped" as const,

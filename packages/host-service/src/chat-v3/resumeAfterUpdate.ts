@@ -12,7 +12,7 @@ import { z } from "zod";
 
 export const RESUME_MARKER_MAX_AGE_MS = 30 * 60_000;
 
-export const CONTINUE_AFTER_UPDATE_PROMPT = `Paradev restarted to install an update, which stopped your work before it finished, including any commands running in the background. ${CONTINUE_PROMPT}`;
+export const CONTINUE_AFTER_UPDATE_PROMPT = `Wanker restarted to install an update, which stopped your work before it finished, including any commands running in the background. ${CONTINUE_PROMPT}`;
 
 const sessionSchema = z.object({
 	scopeId: z.string().min(1),

@@ -33,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	const ogDescription = i18n._(
 		msg({
 			message:
-				"Meet the team behind Paradev, building parallel coding agents for developers.",
+				"Meet the team behind Wanker, building parallel coding agents for developers.",
 		}),
 	);
 	return {
@@ -71,7 +71,7 @@ export default async function TeamPage() {
 				{/* Hero */}
 				<section className="mb-12 md:mb-16">
 					<p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
-						<Trans>About Paradev</Trans>
+						<Trans>About Wanker</Trans>
 					</p>
 					<h1 className="text-4xl sm:text-5xl md:text-6xl font-normal leading-[1.05] text-foreground max-w-4xl mb-8">
 						<Trans>Building the last piece of software.</Trans>
@@ -101,7 +101,7 @@ export default async function TeamPage() {
 							<div className="space-y-4 text-muted-foreground leading-relaxed">
 								<p>
 									<Trans>
-										Paradev started as a hackathon project in November 2025. It
+										Wanker started as a hackathon project in November 2025. It
 										was a simple desktop app for managing worktrees.
 									</Trans>
 								</p>
@@ -111,7 +111,7 @@ export default async function TeamPage() {
 										<span className="text-foreground">
 											tens of thousands of engineers
 										</span>{" "}
-										run Paradev as their primary IDE, at companies like Wix,
+										run Wanker as their primary IDE, at companies like Wix,
 										DoorDash, and Netflix.
 									</Trans>
 								</p>

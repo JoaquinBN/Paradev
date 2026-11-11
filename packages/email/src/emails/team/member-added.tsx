@@ -28,16 +28,16 @@ export function MemberAddedEmail({
 
 			<Text className="text-[15px] leading-6 text-foreground m-0 mb-4">
 				{addedByName} has added you to <strong>{organizationName}</strong> on
-				Paradev as a <strong>{roleDisplay}</strong>.
+				Wanker as a <strong>{roleDisplay}</strong>.
 			</Text>
 
 			<Text className="text-[15px] leading-6 text-foreground m-0 mb-6">
-				You now have access to the team's projects and workspaces. Open Paradev
+				You now have access to the team's projects and workspaces. Open Wanker
 				to get started.
 			</Text>
 
 			<Section className="mb-6">
-				<Button href={dashboardLink}>Open Paradev</Button>
+				<Button href={dashboardLink}>Open Wanker</Button>
 			</Section>
 
 			<Text className="text-[13px] leading-5 text-muted m-0">

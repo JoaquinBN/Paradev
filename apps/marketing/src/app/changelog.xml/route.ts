@@ -16,9 +16,9 @@ export async function GET() {
 	const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Paradev Changelog</title>
+    <title>Wanker Changelog</title>
     <link>${baseUrl}/changelog</link>
-    <description>The latest updates, improvements, and new features in Paradev.</description>
+    <description>The latest updates, improvements, and new features in Wanker.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${baseUrl}/changelog.xml" rel="self" type="application/rss+xml"/>

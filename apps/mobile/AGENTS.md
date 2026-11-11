@@ -1,8 +1,8 @@
-# Paradev Mobile App
+# Wanker Mobile App
 
 ## Project Structure
 
-Guidelines for organizing the Paradev mobile app mostly follow repo's patterns,
+Guidelines for organizing the Wanker mobile app mostly follow repo's patterns,
 with some caveats:
 
 ### Keep in app/

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="full" alt="Claude e OpenCode al lavoro in parallelo in workspace Paradev con diff in tempo reale" src="../apps/marketing/public/images/readme-hero.gif" />
+<img width="full" alt="Claude e OpenCode al lavoro in parallelo in workspace Wanker con diff in tempo reale" src="../apps/marketing/public/images/readme-hero.gif" />
 
 ### Esegui più di 100 agenti di coding in parallelo
 
@@ -36,7 +36,7 @@ Passa il tempo a rilasciare, non ad aspettare.
 
 ## Scrivi codice 10 volte più veloce, senza costi di cambio contesto
 
-Paradev esegue agenti di coding CLI in parallelo su worktree git isolati, con terminale integrato, revisione delle modifiche e apertura diretta nell'editor.
+Wanker esegue agenti di coding CLI in parallelo su worktree git isolati, con terminale integrato, revisione delle modifiche e apertura diretta nell'editor.
 
 - **Esegui più agenti contemporaneamente** senza l'overhead del cambio di contesto
 - **Isola ogni attività** nel proprio worktree git, così gli agenti non interferiscono tra loro
@@ -151,15 +151,15 @@ Collega un'altra macchina e raggiungi i suoi workspace da ovunque: l'app desktop
 <tr>
 <td width="50%" valign="middle">
 
-### CLI di Paradev
+### CLI di Wanker
 
-Scriptalo da qualsiasi shell: crea workspace, avvia agenti, leggi i loro terminali e gestisci le automazioni con un singolo binario. Se un agente può eseguire un comando, può pilotare Paradev.
+Scriptalo da qualsiasi shell: crea workspace, avvia agenti, leggi i loro terminali e gestisci le automazioni con un singolo binario. Se un agente può eseguire un comando, può pilotare Wanker.
 
 [Documentazione →](https://docs.paradev.com/cli/getting-started)
 
 </td>
 <td width="50%">
-  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Creazione di un workspace e avvio di un agente dalla CLI di Paradev" width="100%" /></a>
+  <a href="https://docs.paradev.com/cli/getting-started"><img src="../apps/marketing/public/images/readme/cli-demo.gif" alt="Creazione di un workspace e avvio di un agente dalla CLI di Wanker" width="100%" /></a>
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ Salta a qualsiasi workspace, azione o impostazione da un'unica casella di ricerc
 
 ## Agenti supportati
 
-Paradev funziona con qualsiasi agente di coding basato su CLI, tra cui:
+Wanker funziona con qualsiasi agente di coding basato su CLI, tra cui:
 
 | Agente | Stato |
 |:------|:-------|
@@ -220,7 +220,7 @@ Paradev funziona con qualsiasi agente di coding basato su CLI, tra cui:
 | <picture><source media="(prefers-color-scheme: dark)" srcset="../packages/ui/src/assets/icons/preset-icons/polygraph-white.svg" /><img height="16" align="top" alt="Polygraph" src="../packages/ui/src/assets/icons/preset-icons/polygraph.svg" /></picture> &nbsp;[Polygraph](https://trypolygraph.com/) | Supporto completo |
 | Qualsiasi altro agente CLI | Funziona senza configurazione |
 
-Se gira in un terminale, gira su Paradev
+Se gira in un terminale, gira su Wanker
 
 Gli agenti ottengono più di un semplice terminale:
 
@@ -238,7 +238,7 @@ Ogni superficie parla con gli stessi workspace, così puoi avviare un'attività 
 |:--------|:-------------|
 | [**App desktop**](https://github.com/paradevai/paradev/releases/latest) | L'IDE completo: terminali, visualizzatore di diff, browser in-app, automazioni |
 | [**CLI**](https://docs.paradev.com/cli/getting-started) | Un singolo binario `superset` per gestire workspace, agenti, terminali e host da qualsiasi shell |
-| [**SDK TypeScript**](https://docs.paradev.com/sdk/getting-started) | Pilota Paradev programmaticamente con [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) da Node, Bun o Deno |
+| [**SDK TypeScript**](https://docs.paradev.com/sdk/getting-started) | Pilota Wanker programmaticamente con [`@superset_sh/sdk`](https://www.npmjs.com/package/@superset_sh/sdk) da Node, Bun o Deno |
 | [**Server MCP**](https://docs.paradev.com/mcp) | Lascia che Claude Code, Codex, Cursor e altri agenti creino e gestiscano i workspace in autonomia |
 
 La CLI è inclusa nell'app desktop, oppure installala standalone:
@@ -260,12 +260,12 @@ Scarica l'app desktop:
 - **Windows**: non ancora disponibile
 - [Tutte le build](https://github.com/paradevai/paradev/releases/latest)
 
-L'unica cosa che serve avere installata è [Git](https://git-scm.com/). [gh](https://cli.github.com/) è opzionale e sblocca i flussi di lavoro per le PR; Paradev si offre di installarlo per te.
+L'unica cosa che serve avere installata è [Git](https://git-scm.com/). [gh](https://cli.github.com/) è opzionale e sblocca i flussi di lavoro per le PR; Wanker si offre di installarlo per te.
 
 ## Sviluppo
 
-Vuoi lavorare su Paradev o contribuire con una PR? Clona il repository, aggiungilo
-all'app Paradev installata e crea un workspace per la tua modifica:
+Vuoi lavorare su Wanker o contribuire con una PR? Clona il repository, aggiungilo
+all'app Wanker installata e crea un workspace per la tua modifica:
 
 ```bash
 git clone https://github.com/paradevai/paradev.git
@@ -280,7 +280,7 @@ bun run dev
 
 Esegui `setup.local.sh` una volta in ogni nuovo worktree. Configura l'identità
 dell'app e le porte specifiche del workspace, così l'app desktop di sviluppo può
-girare accanto all'app Paradev installata e agli altri worktree di sviluppo.
+girare accanto all'app Wanker installata e agli altri worktree di sviluppo.
 
 Non servono account Neon né credenziali di terze parti. `setup.local.sh` avvia
 uno stack locale Postgres + Electric via Docker e crea un account di sviluppo. Accedi
@@ -333,7 +333,7 @@ I contributi sono benvenuti! Vedi [CONTRIBUTING.md](../CONTRIBUTING.md) per come
 
 ## Community
 
-Unisciti alla community di Paradev per ricevere aiuto, condividere feedback e connetterti con altri utenti:
+Unisciti alla community di Wanker per ricevere aiuto, condividere feedback e connetterti con altri utenti:
 
 - **[Discord](https://discord.gg/cZeD9WYcV7)**: chatta con il team e la community
 - **[Twitter](https://x.com/paradevai)**: seguici per aggiornamenti e annunci

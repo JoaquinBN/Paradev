@@ -102,8 +102,8 @@ export function permissionDeniedPath(error: unknown): string | undefined {
 export function inaccessiblePathMessage(path?: string): string {
 	const hint =
 		process.platform === "darwin"
-			? " Allow Paradev to access this location in System Settings > Privacy & Security > Files & Folders, then restart Paradev."
+			? " Allow Wanker to access this location in System Settings > Privacy & Security > Files & Folders, then restart Wanker."
 			: "";
 	const subject = path ?? "a folder this action needs";
-	return `Paradev does not have permission to read ${subject}.${hint}`;
+	return `Wanker does not have permission to read ${subject}.${hint}`;
 }

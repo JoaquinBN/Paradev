@@ -10,7 +10,7 @@ const POLL_TIMEOUT_MS = 10 * 60_000;
 export default command({
 	sandbox: false,
 	description:
-		"Install the Paradev GitHub App on a GitHub organization or account in the browser, so its repositories can back cloud environments; run again to add another",
+		"Install the Wanker GitHub App on a GitHub organization or account in the browser, so its repositories can back cloud environments; run again to add another",
 	options: {
 		noWait: boolean().desc("Print the install URL and exit without waiting"),
 	},
@@ -42,7 +42,7 @@ export default command({
 			existing.length > 0
 				? `add another GitHub organization or account (connected: ${existing.map((i) => i.accountLogin).join(", ")})`
 				: "install the GitHub App";
-		const instructions = `${opened ? "If your browser did not open, open" : "Open"} this URL, signed in to Paradev in that browser, to ${action}:\n  ${url}`;
+		const instructions = `${opened ? "If your browser did not open, open" : "Open"} this URL, signed in to Wanker in that browser, to ${action}:\n  ${url}`;
 		if (options.noWait) {
 			return { data: { url }, message: instructions };
 		}

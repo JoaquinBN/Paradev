@@ -15,8 +15,8 @@ Only two things in a plugin directory are hand-written:
 | `.agent-marketplace.json` | `superset plugins create` / `publish` |
 | `packages/shared/src/plugins/manifests.generated.ts` | `superset plugins publish` |
 
-A plugin ships no code. Tools come either from the vendor's own MCP server, which Paradev proxies
-to, or from a server Paradev hosts itself for the handful of plugins whose vendor publishes none
+A plugin ships no code. Tools come either from the vendor's own MCP server, which Wanker proxies
+to, or from a server Wanker hosts itself for the handful of plugins whose vendor publishes none
 (`SUPERSET_HOSTED_PLUGINS` in `packages/shared/src/plugins/index.ts`, implemented under
 `packages/trpc/src/router/plugins/servers/`). Hosted tools ship on an API deploy, not a plugin tag.
 
@@ -63,7 +63,7 @@ that must not change under them.
 ## Manifest shape
 
 `plugin.json` follows the Codex plugin vocabulary — `name`, `version`, `description`, `author`,
-`license` — with everything Paradev-specific under `extensions.superset`:
+`license` — with everything Wanker-specific under `extensions.superset`:
 
 - `interface` — `displayName`, `category` (one of `PLUGIN_CATEGORIES` in
   `packages/shared/src/plugins/index.ts`), and `icon`. `icon` names a built-in icon key or an
@@ -79,7 +79,7 @@ that must not change under them.
   `${config.access_token}` and `${inputs.<name>}` placeholders are resolved server-side by
   `packages/trpc/src/router/plugins/manifest.ts`.
 - `mcp` — the vendor's own MCP server (`type: "streamable-http"`, `url`, optional `headers`), not a
-  map: a plugin serves tools from exactly one place. Omit it for a Paradev-hosted plugin.
+  map: a plugin serves tools from exactly one place. Omit it for a Wanker-hosted plugin.
 
 The published JSON Schema at `https://paradev.com/schemas/plugin/1.0.0.json` is generated from
 `pluginManifestSchema` in `packages/shared/src/plugins/manifest-schema.ts`, and
@@ -144,7 +144,7 @@ Plugin MCP servers are also synced to Claude's `~/.claude.json`, Codex's
 `PDEV_CODING_AGENT_DIR` when set. Claude and pdev entries share the ownership ledger at
 `$SUPERSET_HOME_DIR/plugins/mcp-ledger.json`: user-defined or user-edited servers are
 left alone, while disabling or uninstalling a plugin removes unchanged managed entries.
-Paradev proxy entries use `headersHelper` to read current auth at connection time rather
+Wanker proxy entries use `headersHelper` to read current auth at connection time rather
 than store a token. pdev needs a build with `headersHelper` support; older builds ignore it.
 
 ## Organization plugins

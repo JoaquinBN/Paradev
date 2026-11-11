@@ -22,8 +22,8 @@ import {
 import { UpdatesPill } from "renderer/components/UpdatesPill";
 import { useActiveOrganizationId } from "renderer/hooks/useActiveOrganizationId";
 import { useCloudWorkspaces } from "renderer/hooks/useCloudWorkspaces";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
 import { useV2UserPreferences } from "renderer/hooks/useV2UserPreferences";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { useHotkeyDisplay } from "renderer/hotkeys";
 import { authClient } from "renderer/lib/auth-client";
 import { OrganizationDropdown } from "renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown";
@@ -200,7 +200,7 @@ const DashboardSidebarContent = memo(function DashboardSidebarContent({
 	const { activeHostUrl } = useLocalHostService();
 	const v2RouteMatch = matchRoute({ to: "/v2-workspace/$workspaceId" });
 	const activeV2WorkspaceId = v2RouteMatch ? v2RouteMatch.workspaceId : null;
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 	const isChatSection = useIsChatSection();
 	const workspacesListCollapsed = useSidebarSectionsCollapseStore(
 		(s) => s.collapsed.workspaces,
@@ -593,7 +593,7 @@ const DashboardSidebarContent = memo(function DashboardSidebarContent({
 								isProjectDragDisabled={isProjectDragDisabled}
 								isChildDragDisabled={isChildDragDisabled}
 							>
-								{isParadevShell ? (
+								{isWankerShell ? (
 									!isCollapsed && (
 										<div className="flex h-full flex-col">
 											{!isChatSection && <DashboardSidebarShellHeader />}

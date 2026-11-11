@@ -1,6 +1,6 @@
 ---
 title: "Orca vs Conductor (2026): Agent Development Environments Compared"
-description: "Conductor is joining Meta and winding down. How Orca and Conductor compared for running AI coding agents in parallel Git worktrees, what Conductor users can do now, and where Paradev fits."
+description: "Conductor is joining Meta and winding down. How Orca and Conductor compared for running AI coding agents in parallel Git worktrees, what Conductor users can do now, and where Wanker fits."
 date: 2026-08-30
 lastUpdated: 2026-11-05
 type: "1v1"
@@ -17,11 +17,11 @@ keywords:
   - agent development environment
 ---
 
-On November 4, 2026, Conductor announced that it is joining Meta. It takes no new sign-ups, and the app can no longer be downloaded. Conductor Cloud becomes read-only on November 13, 2026, and shuts down on November 20, 2026. The local Mac app gets new models and critical bug fixes until early 2027, then winds down. See [Conductor's announcement](https://www.conductor.build/announcement). Existing Conductor users can follow [Migrate from Conductor](https://docs.paradev.com/migrate-from-conductor) or [Migrate from Conductor Cloud](https://docs.paradev.com/migrate-from-conductor-cloud) to move to Paradev.
+On November 4, 2026, Conductor announced that it is joining Meta. It takes no new sign-ups, and the app can no longer be downloaded. Conductor Cloud becomes read-only on November 13, 2026, and shuts down on November 20, 2026. The local Mac app gets new models and critical bug fixes until early 2027, then winds down. See [Conductor's announcement](https://www.conductor.build/announcement). Existing Conductor users can follow [Migrate from Conductor](https://docs.paradev.com/migrate-from-conductor) or [Migrate from Conductor Cloud](https://docs.paradev.com/migrate-from-conductor-cloud) to move to Wanker.
 
 This page shows how Orca and Conductor compared. They solve the same problem from opposite ends. Both run several AI coding agents at once, each in its own Git worktree, with review and merge in the app. Orca is free, MIT-licensed, cross-platform, and supports a long list of agents. Conductor is a polished, proprietary Mac app for four agents, which had managed cloud workspaces, Routines, and an iOS app on its paid plans.
 
-For a three-way comparison that includes Paradev, see [Paradev vs Orca vs Conductor](/compare/superset-vs-orca-vs-conductor).
+For a three-way comparison that includes Wanker, see [Wanker vs Orca vs Conductor](/compare/superset-vs-orca-vs-conductor).
 
 Conductor facts were checked against its own site, docs, changelog, and pricing on October 13, 2026, and its status against its announcement on November 4, 2026. Orca facts were rechecked against its site, docs, and GitHub releases on November 5, 2026.
 
@@ -80,17 +80,17 @@ Orca is free. Conductor's plans are no longer on sale. Existing free users canno
 
 ---
 
-## Where Paradev Fits
+## Where Wanker Fits
 
-[Paradev](/) runs the same worktree-per-task model with any CLI agent, on your own subscriptions, on your machines or in cloud workspaces. Against both, its main differences are what can drive it from outside, through an MCP server, a TypeScript SDK, a CLI, and a Slack bot, and a review loop that commits, pushes, opens PRs, shows CI checks, and sends line comments back to agents. Besides your own machines, it can run on a Linux server in your own cloud account with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud) or in [cloud workspaces](https://docs.paradev.com/cloud-workspaces). Its iPhone and iPad app connects to cloud workspaces, BYOC servers, and macOS or Linux hosts you own. Paradev is open source under the MIT License and runs on macOS with an experimental Linux build; Windows is not yet available. See [Paradev vs Orca](/compare/superset-vs-orca) and [Paradev vs Conductor](/compare/superset-vs-conductor).
+[Wanker](/) runs the same worktree-per-task model with any CLI agent, on your own subscriptions, on your machines or in cloud workspaces. Against both, its main differences are what can drive it from outside, through an MCP server, a TypeScript SDK, a CLI, and a Slack bot, and a review loop that commits, pushes, opens PRs, shows CI checks, and sends line comments back to agents. Besides your own machines, it can run on a Linux server in your own cloud account with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud) or in [cloud workspaces](https://docs.paradev.com/cloud-workspaces). Its iPhone and iPad app connects to cloud workspaces, BYOC servers, and macOS or Linux hosts you own. Wanker is open source under the MIT License and runs on macOS with an experimental Linux build; Windows is not yet available. See [Wanker vs Orca](/compare/superset-vs-orca) and [Wanker vs Conductor](/compare/superset-vs-conductor).
 
 ---
 
 ## Which Should You Choose?
 
 - **Choose Orca** if you want free and open source, Windows or Linux, the widest agent list, and Android. Orca also publishes its own [Migrate from Conductor](https://www.onorca.dev/docs/migrate-from-conductor) guide.
-- **If you use Conductor today**, plan a move. Export your Conductor Cloud chats before November 20, 2026. To move to Paradev, follow the [local app guide](https://docs.paradev.com/migrate-from-conductor) or the [Conductor Cloud guide](https://docs.paradev.com/migrate-from-conductor-cloud). Conductor is closed to new users, so it is no longer an option to pick.
-- **Choose Paradev** if you want any CLI agent on machines you own or in cloud workspaces, with orchestration other software can drive and an enterprise track with SAML SSO and SCIM.
+- **If you use Conductor today**, plan a move. Export your Conductor Cloud chats before November 20, 2026. To move to Wanker, follow the [local app guide](https://docs.paradev.com/migrate-from-conductor) or the [Conductor Cloud guide](https://docs.paradev.com/migrate-from-conductor-cloud). Conductor is closed to new users, so it is no longer an option to pick.
+- **Choose Wanker** if you want any CLI agent on machines you own or in cloud workspaces, with orchestration other software can drive and an enterprise track with SAML SSO and SCIM.
 
 ---
 
@@ -102,15 +102,15 @@ Conductor is joining Meta. It takes no new sign-ups, and the app can no longer b
 
 ### Do Orca and Conductor both use Git worktrees?
 
-Yes. Each gives every task its own Git worktree or branch, so agents in separate workspaces do not edit the same files. Paradev uses the same model.
+Yes. Each gives every task its own Git worktree or branch, so agents in separate workspaces do not edit the same files. Wanker uses the same model.
 
 ### Does Conductor run on Windows or Linux?
 
-No. Conductor is a Mac app, and it is now closed to new users. Its cloud workspaces ran in Linux sandboxes until Conductor Cloud shuts down on November 20, 2026. Orca runs on macOS, Windows, and Linux. Paradev supports macOS and an experimental Linux AppImage.
+No. Conductor is a Mac app, and it is now closed to new users. Its cloud workspaces ran in Linux sandboxes until Conductor Cloud shuts down on November 20, 2026. Orca runs on macOS, Windows, and Linux. Wanker supports macOS and an experimental Linux AppImage.
 
 ### Which supports the most coding agents?
 
-Orca names more than 25 agents and runs any other CLI agent. Conductor supports Claude Code, Codex, Cursor, and OpenCode. Paradev runs any CLI agent, with built-in presets for more than 20.
+Orca names more than 25 agents and runs any other CLI agent. Conductor supports Claude Code, Codex, Cursor, and OpenCode. Wanker runs any CLI agent, with built-in presets for more than 20.
 
 ### Is Orca free?
 
@@ -118,4 +118,4 @@ Yes. Orca is MIT-licensed and free. Conductor's plans are no longer on sale.
 
 ### Can I use my existing Claude or Codex subscription?
 
-Yes. Orca and Paradev run the agent CLIs under your own login in local workspaces, so you keep your existing plan. The Conductor Mac app does the same for existing users.
+Yes. Orca and Wanker run the agent CLIs under your own login in local workspaces, so you keep your existing plan. The Conductor Mac app does the same for existing users.

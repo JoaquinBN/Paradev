@@ -45,7 +45,7 @@ export const themeListings: ThemeListing[] = [
 		author: "GitHub (primer/github-vscode-theme)",
 		submittedBy: "tkcel",
 		description:
-			"A GitHub-inspired dark theme adapted for Paradev with strong blue, amber, and green contrast.",
+			"A GitHub-inspired dark theme adapted for Wanker with strong blue, amber, and green contrast.",
 		addedOn: "March 26, 2026",
 		source: {
 			label: "Download",
@@ -81,7 +81,7 @@ export const themeListings: ThemeListing[] = [
 		type: "dark",
 		author: "Catppuccin",
 		submittedBy: "tamarazuk",
-		description: "The Mocha variant from the Catppuccin theme PR for Paradev.",
+		description: "The Mocha variant from the Catppuccin theme PR for Wanker.",
 		addedOn: "March 21, 2026",
 		source: {
 			label: "Download",
@@ -118,7 +118,7 @@ export const themeListings: ThemeListing[] = [
 		author: "Catppuccin",
 		submittedBy: "tamarazuk",
 		description:
-			"The Macchiato variant from the Catppuccin theme PR for Paradev.",
+			"The Macchiato variant from the Catppuccin theme PR for Wanker.",
 		addedOn: "March 21, 2026",
 		source: {
 			label: "Download",
@@ -154,7 +154,7 @@ export const themeListings: ThemeListing[] = [
 		type: "dark",
 		author: "Catppuccin",
 		submittedBy: "tamarazuk",
-		description: "The Frappé variant from the Catppuccin theme PR for Paradev.",
+		description: "The Frappé variant from the Catppuccin theme PR for Wanker.",
 		addedOn: "March 21, 2026",
 		source: {
 			label: "Download",
@@ -188,7 +188,7 @@ export const themeListings: ThemeListing[] = [
 		slug: "ember",
 		name: "Ember",
 		type: "dark",
-		author: "Paradev",
+		author: "Wanker",
 		submittedBy: "AviPeltz",
 		description:
 			"The standalone Ember theme introduced before its palette became the default Dark theme.",
@@ -197,7 +197,7 @@ export const themeListings: ThemeListing[] = [
 			label: "Download",
 			href: "/marketplace/themes/ember.json",
 		},
-		tags: ["Paradev", "Dark", "Warm"],
+		tags: ["Wanker", "Dark", "Warm"],
 		ui: {
 			background: "#151110",
 			foreground: "#eae8e6",
@@ -1004,13 +1004,13 @@ export const themeListings: ThemeListing[] = [
 		author: "0x962",
 		submittedBy: "0x962",
 		description:
-			"A near-black theme with cool greys and Paradev's ember accent.",
+			"A near-black theme with cool greys and Wanker's ember accent.",
 		addedOn: "August 22, 2026",
 		source: {
 			label: "Download",
 			href: "/marketplace/themes/darker.json",
 		},
-		tags: ["Dark", "Near-black", "Cool", "Paradev"],
+		tags: ["Dark", "Near-black", "Cool", "Wanker"],
 		ui: {
 			background: "#08090a",
 			foreground: "#f7f8f8",

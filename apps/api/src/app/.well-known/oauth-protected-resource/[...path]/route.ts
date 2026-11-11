@@ -24,7 +24,7 @@ export async function GET(
 				typeof authServerMetadata.issuer === "string"
 					? authServerMetadata.issuer
 					: undefined,
-			resourceName: "Paradev MCP Server",
+			resourceName: "Wanker MCP Server",
 			resourceDocumentation: `${CANONICAL_URLS.MARKETING}/auth.md`,
 			scopesSupported: Array.isArray(authServerMetadata.scopes_supported)
 				? authServerMetadata.scopes_supported

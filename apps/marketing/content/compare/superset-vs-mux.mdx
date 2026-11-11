@@ -1,6 +1,6 @@
 ---
-title: "Paradev vs Xum, Formerly Mux (2026): Agent-Agnostic Workspace vs Coder's Agent Multiplexer"
-description: "Compare Paradev and Xum by Coder for parallel agentic development: running any CLI agent in worktrees vs Xum's built-in agent loop with container and Coder runtimes."
+title: "Wanker vs Xum, Formerly Mux (2026): Agent-Agnostic Workspace vs Coder's Agent Multiplexer"
+description: "Compare Wanker and Xum by Coder for parallel agentic development: running any CLI agent in worktrees vs Xum's built-in agent loop with container and Coder runtimes."
 date: 2026-08-07
 lastUpdated: 2026-11-06
 type: "1v1"
@@ -18,13 +18,13 @@ keywords:
   - ai agent workspace
 ---
 
-Paradev and Coder's Xum (formerly Mux) both run parallel agent sessions in separate workspaces from a desktop app. The structural difference decides everything downstream: Paradev orchestrates the agents you already use -- Claude Code, Codex, OpenCode, any CLI -- while Xum ships its own agent loop that talks to model APIs directly. That makes Xum a coding agent with a multiplexer around it, and Paradev a multiplexer for every agent, including the ones your team already pays for. Coder [renamed Mux to Xum](https://github.com/coder/xum#readme) after Mux.com raised a trademark concern; the product is the same. Coder is the company behind the self-hosted dev-environment platform.
+Wanker and Coder's Xum (formerly Mux) both run parallel agent sessions in separate workspaces from a desktop app. The structural difference decides everything downstream: Wanker orchestrates the agents you already use -- Claude Code, Codex, OpenCode, any CLI -- while Xum ships its own agent loop that talks to model APIs directly. That makes Xum a coding agent with a multiplexer around it, and Wanker a multiplexer for every agent, including the ones your team already pays for. Coder [renamed Mux to Xum](https://github.com/coder/xum#readme) after Mux.com raised a trademark concern; the product is the same. Coder is the company behind the self-hosted dev-environment platform.
 
 ---
 
 ## At a Glance
 
-| | **Paradev** | **Xum** |
+| | **Wanker** | **Xum** |
 |---|---|---|
 | **What it does** | Runs multiple AI agents in parallel in separate Git worktrees, with chat, review, and browser | Plans and executes tasks with parallel sessions of its own agent loop |
 | **Category** | Local-first agent workspace with remote/cloud hosts | Open-source "coding agent multiplexer" (desktop + self-hosted server) |
@@ -38,9 +38,9 @@ Paradev and Coder's Xum (formerly Mux) both run parallel agent sessions in separ
 
 ---
 
-## What Is Paradev?
+## What Is Wanker?
 
-Paradev is a local-first desktop workspace for AI coding agents. It launches Claude Code, Codex, OpenCode, Cursor Agent, Copilot, Gemini CLI, Mistral Vibe, and other agent workflows in separate Git worktrees and branches, with persistent terminal sessions. Around that core, it adds a built-in diff/file editor, a chat interface for Claude Code, Codex, OpenCode, and Pi, an in-app browser for docs and dev servers, port management, and MCP tooling. It also runs on your other machines through Remote Access, on your own Linux server with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), and in [cloud workspaces](/cloud), and it can schedule agent sessions as automations with a TypeScript SDK and a Slack bot. You can review inside Paradev or jump into VS Code, Cursor, Windsurf, JetBrains, or Zed. Open source under the MIT License.
+Wanker is a local-first desktop workspace for AI coding agents. It launches Claude Code, Codex, OpenCode, Cursor Agent, Copilot, Gemini CLI, Mistral Vibe, and other agent workflows in separate Git worktrees and branches, with persistent terminal sessions. Around that core, it adds a built-in diff/file editor, a chat interface for Claude Code, Codex, OpenCode, and Pi, an in-app browser for docs and dev servers, port management, and MCP tooling. It also runs on your other machines through Remote Access, on your own Linux server with [Bring Your Own Cloud](https://docs.paradev.com/bring-your-own-cloud), and in [cloud workspaces](/cloud), and it can schedule agent sessions as automations with a TypeScript SDK and a Slack bot. You can review inside Wanker or jump into VS Code, Cursor, Windsurf, JetBrains, or Zed. Open source under the MIT License.
 
 ## What Is Xum?
 
@@ -50,31 +50,31 @@ Xum is Coder's open-source (AGPL-3.0) desktop and browser app for parallel agent
 
 ### Whose Agent Runs
 
-This is the fork in the road. Xum does not run Claude Code, Codex, or any external CLI agent -- you use Xum's loop with API-key billing. That buys deep integration (budgets, compaction, tool policies, best-of-N) but means giving up the agents your team knows and, importantly, the Claude Max or ChatGPT subscriptions you already pay for -- API tokens bill separately. Paradev orchestrates vendor CLIs directly, so agents keep their own configs, skills, and subscription pricing, and you can mix brands per task.
+This is the fork in the road. Xum does not run Claude Code, Codex, or any external CLI agent -- you use Xum's loop with API-key billing. That buys deep integration (budgets, compaction, tool policies, best-of-N) but means giving up the agents your team knows and, importantly, the Claude Max or ChatGPT subscriptions you already pay for -- API tokens bill separately. Wanker orchestrates vendor CLIs directly, so agents keep their own configs, skills, and subscription pricing, and you can mix brands per task.
 
 ### Isolation Options
 
-Xum's runtime matrix is broader: beyond worktrees it offers Docker containers, devcontainers, and Coder-managed workspaces -- attractive for platform teams that want containment or already run Coder. Paradev standardizes on worktrees across local, remote, and cloud workspaces, keeping agents in your real environment with your services and dependencies. Containment versus fidelity, again -- but if containers are a requirement, Xum has them today.
+Xum's runtime matrix is broader: beyond worktrees it offers Docker containers, devcontainers, and Coder-managed workspaces -- attractive for platform teams that want containment or already run Coder. Wanker standardizes on worktrees across local, remote, and cloud workspaces, keeping agents in your real environment with your services and dependencies. Containment versus fidelity, again -- but if containers are a requirement, Xum has them today.
 
 ### Governance and Enterprise Posture
 
-Xum comes from Coder and inherits its self-hosted, regulated-industry framing -- pair it with Coder's platform and you get governed infrastructure for agent fleets, all AGPL open source. Paradev's enterprise story is product-led: team plans, SSO and audit logs, remote hosts shared across teammates, and a Slack bot in the flow of work. Platform teams may prefer Xum's posture; engineering teams adopting a tool usually prefer a product.
+Xum comes from Coder and inherits its self-hosted, regulated-industry framing -- pair it with Coder's platform and you get governed infrastructure for agent fleets, all AGPL open source. Wanker's enterprise story is product-led: team plans, SSO and audit logs, remote hosts shared across teammates, and a Slack bot in the flow of work. Platform teams may prefer Xum's posture; engineering teams adopting a tool usually prefer a product.
 
 ### Budgets and Headless Runs
 
-Credit where due: Xum's cost controls are first-class -- per-session and per-goal dollar budgets on `mux run`, and subsidized gateway credits. Paradev also tracks tokens: its Usage page shows quota meters and estimated cost by agent, model, and workspace. Its automations cover scheduled unattended sessions with an SDK and Slack triggers, but Paradev does not enforce dollar caps per run; costs live with your providers. If hard spend limits on autonomous runs matter, Xum thought about it first.
+Credit where due: Xum's cost controls are first-class -- per-session and per-goal dollar budgets on `mux run`, and subsidized gateway credits. Wanker also tracks tokens: its Usage page shows quota meters and estimated cost by agent, model, and workspace. Its automations cover scheduled unattended sessions with an SDK and Slack triggers, but Wanker does not enforce dollar caps per run; costs live with your providers. If hard spend limits on autonomous runs matter, Xum thought about it first.
 
 ---
 
 ## Pricing
 
-Paradev offers a free tier, Pro at {{price:pro}}/seat/month, and Team ({{price:team}}) and Ultra ({{price:ultra}}) plans with cloud workspaces. Agents run on your existing subscriptions or keys. Xum is free and AGPL-3.0; you pay model APIs directly (or draw on Xum Gateway's evaluation credits). Note the billing-model difference: Paradev can reuse Claude Max / ChatGPT plans through vendor CLIs, while Xum's own loop requires API-key usage.
+Wanker offers a free tier, Pro at {{price:pro}}/seat/month, and Team ({{price:team}}) and Ultra ({{price:ultra}}) plans with cloud workspaces. Agents run on your existing subscriptions or keys. Xum is free and AGPL-3.0; you pay model APIs directly (or draw on Xum Gateway's evaluation credits). Note the billing-model difference: Wanker can reuse Claude Max / ChatGPT plans through vendor CLIs, while Xum's own loop requires API-key usage.
 
 ---
 
 ## Which Should You Choose?
 
-**Choose Paradev if you:**
+**Choose Wanker if you:**
 
 - Want to run the agents you already use -- Claude Code, Codex, Cursor, OpenCode -- on their existing subscriptions
 - Want a full workspace: diff editor, browser, port management, persistent terminals
@@ -88,7 +88,7 @@ Paradev offers a free tier, Pro at {{price:pro}}/seat/month, and Team ({{price:t
 - Need dollar-budgeted headless runs and durable JS workflows
 - Want AGPL open source with a self-hosted browser/mobile-web server
 
-**Verdict:** Xum is a thoughtful, well-engineered take -- but it is structurally an agent with a multiplexer, and adopting it means adopting its loop and its billing. Paradev is the workspace for the agents you already trust, with automations and team surfaces to make a fleet of them a daily workflow. If Coder-style self-hosted governance or container isolation is the requirement, evaluate Xum; otherwise Paradev preserves your agent choices and your subscriptions.
+**Verdict:** Xum is a thoughtful, well-engineered take -- but it is structurally an agent with a multiplexer, and adopting it means adopting its loop and its billing. Wanker is the workspace for the agents you already trust, with automations and team surfaces to make a fleet of them a daily workflow. If Coder-style self-hosted governance or container isolation is the requirement, evaluate Xum; otherwise Wanker preserves your agent choices and your subscriptions.
 
 ---
 
@@ -96,16 +96,16 @@ Paradev offers a free tier, Pro at {{price:pro}}/seat/month, and Team ({{price:t
 
 ### Can Xum run Claude Code or Codex?
 
-No. Xum uses its own agent loop against model APIs (Anthropic, OpenAI, xAI, Ollama, OpenRouter) with your keys. Paradev runs the vendor CLIs themselves -- Claude Code, Codex, Cursor, OpenCode, and any terminal agent -- on their own subscriptions.
+No. Xum uses its own agent loop against model APIs (Anthropic, OpenAI, xAI, Ollama, OpenRouter) with your keys. Wanker runs the vendor CLIs themselves -- Claude Code, Codex, Cursor, OpenCode, and any terminal agent -- on their own subscriptions.
 
 ### Do both use Git worktrees?
 
-Both offer them. Worktree is one of Xum's six runtimes alongside local, SSH, Docker, devcontainer, and Coder workspaces. Paradev creates worktrees for new local branch-based workspaces; cloud workspaces use clones and projectless sessions use scratch folders.
+Both offer them. Worktree is one of Xum's six runtimes alongside local, SSH, Docker, devcontainer, and Coder workspaces. Wanker creates worktrees for new local branch-based workspaces; cloud workspaces use clones and projectless sessions use scratch folders.
 
 ### Is Xum open source?
 
-Yes, AGPL-3.0, free, from Coder Technologies (~2,000 GitHub stars). Paradev is open source under the MIT License with a free tier and paid plans.
+Yes, AGPL-3.0, free, from Coder Technologies (~2,000 GitHub stars). Wanker is open source under the MIT License with a free tier and paid plans.
 
 ### Which is better for teams?
 
-Different angles: Xum plus the Coder platform suits platform teams wanting self-hosted governed infrastructure; Paradev ships team plans, SSO/audit logs, shared remote hosts, and a Slack bot as product features. For most engineering teams adopting a tool directly, Paradev is the shorter path.
+Different angles: Xum plus the Coder platform suits platform teams wanting self-hosted governed infrastructure; Wanker ships team plans, SSO/audit logs, shared remote hosts, and a Slack bot as product features. For most engineering teams adopting a tool directly, Wanker is the shorter path.

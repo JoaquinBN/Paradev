@@ -17,7 +17,7 @@ const VIDEO_URL = "https://www.youtube.com/watch?v=ixe-PiRJTag";
 export async function generateMetadata(): Promise<Metadata> {
 	const lang = await initServerI18n();
 	const i18n = getI18nInstance(lang);
-	const title = i18n._(msg({ message: "Paradev Automations" }));
+	const title = i18n._(msg({ message: "Wanker Automations" }));
 	const description = i18n._(
 		msg({
 			message:
@@ -61,7 +61,7 @@ export default async function AutomationsPage() {
 				<section>
 					<div className="max-w-3xl">
 						<p className="font-mono text-brand text-xs uppercase tracking-wider">
-							<Trans>Paradev Automations</Trans>
+							<Trans>Wanker Automations</Trans>
 						</p>
 						<h1 className="mt-4 font-medium text-balance text-4xl text-foreground tracking-tight sm:text-5xl">
 							<Trans>Run agents on a schedule or when something happens.</Trans>
@@ -81,7 +81,7 @@ export default async function AutomationsPage() {
 						rel="noopener noreferrer"
 						className="mt-4 inline-flex items-center gap-1.5 text-muted-foreground text-sm transition-colors hover:text-foreground"
 					>
-						<Trans>Watch the Paradev Automations video on YouTube</Trans>
+						<Trans>Watch the Wanker Automations video on YouTube</Trans>
 						<ArrowUpRight className="size-3.5" />
 					</a>
 				</section>

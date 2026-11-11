@@ -124,8 +124,8 @@ export function SetUpOverSshDialog({
 					</DialogTitle>
 					<DialogDescription>
 						<Trans>
-							Installs Paradev on a machine you can reach with ssh, signs
-							Paradev in to your account, and keeps it running as a service.
+							Installs Wanker on a machine you can reach with ssh, signs Wanker
+							in to your account, and keeps it running as a service.
 						</Trans>
 					</DialogDescription>
 				</DialogHeader>

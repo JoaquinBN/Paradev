@@ -16,7 +16,7 @@ export function TimelineActor({ actor, onOpenPerson }: TimelineActorProps) {
 	if (actor.kind === "system") {
 		return (
 			<span className="font-medium">
-				<Trans>Paradev</Trans>
+				<Trans>Wanker</Trans>
 			</span>
 		);
 	}

@@ -48,7 +48,7 @@ export const LongLabel: Story = {
 		children: (
 			<>
 				<LuListFilter className="size-3.5" />
-				Paradev marketing site preview deployments
+				Wanker marketing site preview deployments
 			</>
 		),
 	},

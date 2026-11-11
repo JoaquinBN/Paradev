@@ -7,7 +7,7 @@ import {
 } from "../../../lib/sessions";
 
 export default command({
-	description: "Open a chat session in the Paradev desktop app",
+	description: "Open a chat session in the Wanker desktop app",
 	options: {
 		...sessionWorkspaceOptions,
 		session: string().required().desc("Chat session ID to open"),
@@ -53,7 +53,7 @@ export default command({
 			},
 			message: options.print
 				? url
-				: `Opening session ${found.session.sessionId} in Paradev desktop`,
+				: `Opening session ${found.session.sessionId} in Wanker desktop`,
 		};
 	},
 });

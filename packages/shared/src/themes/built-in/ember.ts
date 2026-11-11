@@ -7,7 +7,7 @@ import type { Theme } from "../types";
 export const darkTheme: Theme = {
 	id: "dark",
 	name: "Dark",
-	author: "Paradev",
+	author: "Wanker",
 	type: "dark",
 	isBuiltIn: true,
 

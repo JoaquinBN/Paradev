@@ -117,7 +117,7 @@ export function createClosedMidTurn(options: {
 					resumed++;
 				} catch (error) {
 					console.warn(
-						"[chat-v3] could not resume a chat Paradev closed",
+						"[chat-v3] could not resume a chat Wanker closed",
 						error,
 					);
 				}

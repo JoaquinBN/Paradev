@@ -116,7 +116,7 @@ function DialogBody({
 					) : author ? (
 						t({ message: `Developed by ${author}` })
 					) : (
-						<Trans>Authorize Paradev to act on your behalf.</Trans>
+						<Trans>Authorize Wanker to act on your behalf.</Trans>
 					)}
 				</DialogDescription>
 			</DialogHeader>
@@ -127,7 +127,7 @@ function DialogBody({
 						title={<Trans>You control the access</Trans>}
 						body={
 							<Trans>
-								Paradev only receives the permissions this connector asks for.
+								Wanker only receives the permissions this connector asks for.
 								Disconnect at any time to revoke them.
 							</Trans>
 						}
@@ -153,7 +153,7 @@ function DialogBody({
 						title={<Trans>Credentials stay on the server</Trans>}
 						body={
 							<Trans>
-								Tokens are held by Paradev and attached to requests there. They
+								Tokens are held by Wanker and attached to requests there. They
 								are never written into your local agent config.
 							</Trans>
 						}

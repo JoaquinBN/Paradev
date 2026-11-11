@@ -62,7 +62,7 @@ export default async function ContactPage() {
 						<Trans>Contact</Trans>
 					</span>
 					<h1 className="text-3xl md:text-4xl font-medium tracking-tight text-foreground mt-4">
-						<Trans>Talk to Paradev</Trans>
+						<Trans>Talk to Wanker</Trans>
 					</h1>
 					<p className="text-muted-foreground mt-3 max-w-lg">
 						<Trans>
@@ -85,7 +85,7 @@ export default async function ContactPage() {
 					</h2>
 					<p className="text-muted-foreground mt-3">
 						<Trans>
-							Paradev is built by a team based in San Francisco, California. For
+							Wanker is built by a team based in San Francisco, California. For
 							product support or account questions, email{" "}
 							<a className="text-foreground underline" href={COMPANY.MAIL_TO}>
 								{supportEmail}

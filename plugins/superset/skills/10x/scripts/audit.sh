@@ -34,7 +34,7 @@ run_json() {
   rm -f "$err"
 }
 
-echo "auditing Paradev usage..." >&2
+echo "auditing Wanker usage..." >&2
 run_json whoami auth whoami
 run_json automations automations list
 run_json workspaces workspaces list

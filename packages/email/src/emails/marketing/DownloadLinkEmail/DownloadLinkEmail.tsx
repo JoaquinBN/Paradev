@@ -13,7 +13,7 @@ export function DownloadLinkEmail({
 }: DownloadLinkEmailProps = {}) {
 	return (
 		<EmailLayout
-			preview="Your Paradev desktop download link"
+			preview="Your Wanker desktop download link"
 			recipientEmail={recipientEmail}
 		>
 			<Text className="m-0 mb-6 text-[15px] leading-6 text-foreground">
@@ -22,7 +22,7 @@ export function DownloadLinkEmail({
 			</Text>
 
 			<Section className="mb-8">
-				<Button href={DOWNLOAD_URL}>Download Paradev</Button>
+				<Button href={DOWNLOAD_URL}>Download Wanker</Button>
 			</Section>
 
 			<Text className="m-0 text-[13px] leading-5 text-muted">

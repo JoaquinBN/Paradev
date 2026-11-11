@@ -25,7 +25,7 @@ test("page content leaves the only H1 to the page title", () => {
 test("stripInlineMarkdown keeps only the visible heading text", () => {
 	expect(
 		stripInlineMarkdown(
-			'Does `/schedule` work in [Paradev](/)? <PRBadge url="x" />',
+			'Does `/schedule` work in [Wanker](/)? <PRBadge url="x" />',
 		),
-	).toBe("Does /schedule work in Paradev?");
+	).toBe("Does /schedule work in Wanker?");
 });

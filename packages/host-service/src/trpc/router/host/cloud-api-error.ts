@@ -78,7 +78,7 @@ export function rethrowCloudUnreachable(error: unknown): void {
 	if (message === null) return;
 	throw new TRPCError({
 		code: "SERVICE_UNAVAILABLE",
-		message: `Could not reach the Paradev cloud API: ${message}`,
+		message: `Could not reach the Wanker cloud API: ${message}`,
 	});
 }
 
@@ -101,6 +101,6 @@ export function rethrowSessionRejected(error: unknown): void {
 	if (!hasSessionRejectedCause(error)) return;
 	throw new TRPCError({
 		code: "UNAUTHORIZED",
-		message: "The Paradev session of this host is no longer valid.",
+		message: "The Wanker session of this host is no longer valid.",
 	});
 }

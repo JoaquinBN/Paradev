@@ -34,11 +34,11 @@ export function MobileSettings() {
 						<div className="flex flex-wrap items-center gap-6 pl-9">
 							<AppStoreQr
 								className="size-[180px]"
-								label={t({ message: "Scan to download Paradev for iPhone" })}
+								label={t({ message: "Scan to download Wanker for iPhone" })}
 							/>
 							<p className="min-w-56 max-w-sm flex-1 text-sm leading-relaxed text-muted-foreground">
 								<Trans>
-									Scan the QR code, then sign in with the same Paradev account
+									Scan the QR code, then sign in with the same Wanker account
 									and select this organization.
 								</Trans>
 							</p>
@@ -47,7 +47,7 @@ export function MobileSettings() {
 				) : (
 					<div className="space-y-4">
 						<p className="text-sm text-muted-foreground">
-							<Trans>Use Paradev on your phone with Pro.</Trans>
+							<Trans>Use Wanker on your phone with Pro.</Trans>
 						</p>
 						<Button
 							onClick={() => gateFeature(GATED_FEATURES.MOBILE_APP, () => {})}
@@ -71,7 +71,7 @@ export function MobileSettings() {
 					<div className="space-y-4 pl-9">
 						<p className="text-sm text-muted-foreground">
 							<Trans>
-								Enable Remote Access and keep this computer awake with Paradev
+								Enable Remote Access and keep this computer awake with Wanker
 								running.
 							</Trans>
 						</p>

@@ -7,8 +7,8 @@ import { useFeatureFlagEnabled } from "posthog-js/react";
 import { useCallback, useMemo, useRef, useState } from "react";
 import { useQuickOpenStore } from "renderer/commandPalette/ui/QuickOpen/quickOpenStore";
 import { useWorkspaceHostTarget } from "renderer/hooks/host-service/useWorkspaceHostUrl";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
 import { useV2UserPreferences } from "renderer/hooks/useV2UserPreferences";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { useHotkey } from "renderer/hotkeys";
 import { electronTrpc } from "renderer/lib/electron-trpc";
 import { reportRendererError } from "renderer/lib/report-renderer-error";
@@ -204,7 +204,7 @@ function V2WorkspaceContent() {
 	const workspaceId = workspace.id;
 	const navigate = Route.useNavigate();
 	const titleBarMainSlot = useTitleBarMainSlot();
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 	const consumeSearch = useCallback<ConsumeSearch>(
 		(keys) => {
 			void navigate({
@@ -702,7 +702,7 @@ function V2WorkspaceContent() {
 										paneArea: "center",
 										inert: rightPaneMode === "expanded",
 									})}
-									appearance={isParadevShell ? "cards" : "default"}
+									appearance={isWankerShell ? "cards" : "default"}
 									isFocused={!isRightAreaFocused}
 									registry={paneRegistry}
 									paneActions={defaultPaneActions}

@@ -9,7 +9,7 @@ import {
 	LuPanelRightClose,
 	LuPanelRightOpen,
 } from "react-icons/lu";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { HotkeyLabel } from "renderer/hotkeys";
 
 interface RightSidebarToggleProps {
@@ -23,8 +23,8 @@ export function RightSidebarToggle({
 	onToggle,
 	compact = false,
 }: RightSidebarToggleProps) {
-	const isParadevShell = useParadevShell();
-	const strokeWidth = isParadevShell ? HEADER_ICON_STROKE_WIDTH : 1.5;
+	const isWankerShell = useWankerShell();
+	const strokeWidth = isWankerShell ? HEADER_ICON_STROKE_WIDTH : 1.5;
 	const getToggleIcon = (isHovering: boolean) => {
 		if (!isOpen) {
 			return isHovering ? (
@@ -47,7 +47,7 @@ export function RightSidebarToggle({
 					type="button"
 					onClick={onToggle}
 					className={
-						isParadevShell
+						isWankerShell
 							? cn("no-drag group", HEADER_ICON_BUTTON_CLASS)
 							: cn(
 									"no-drag group flex items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-colors",

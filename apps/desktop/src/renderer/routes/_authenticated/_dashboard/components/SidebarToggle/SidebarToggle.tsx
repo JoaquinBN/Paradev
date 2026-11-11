@@ -5,15 +5,15 @@ import {
 import { Tooltip, TooltipContent, TooltipTrigger } from "@superset/ui/tooltip";
 import { cn } from "@superset/ui/utils";
 import { LuPanelLeft, LuPanelLeftClose, LuPanelLeftOpen } from "react-icons/lu";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import { HotkeyLabel } from "renderer/hotkeys";
 import { useWorkspaceSidebarStore } from "renderer/stores";
 
 export function SidebarToggle() {
 	const { isCollapsed, toggleCollapsed } = useWorkspaceSidebarStore();
 	const collapsed = isCollapsed();
-	const isParadevShell = useParadevShell();
-	const strokeWidth = isParadevShell ? HEADER_ICON_STROKE_WIDTH : 1.5;
+	const isWankerShell = useWankerShell();
+	const strokeWidth = isWankerShell ? HEADER_ICON_STROKE_WIDTH : 1.5;
 
 	const getToggleIcon = (isHovering: boolean) => {
 		if (collapsed) {
@@ -37,7 +37,7 @@ export function SidebarToggle() {
 					type="button"
 					onClick={toggleCollapsed}
 					className={
-						isParadevShell
+						isWankerShell
 							? cn("no-drag group", HEADER_ICON_BUTTON_CLASS)
 							: "no-drag group flex items-center justify-center size-8 rounded-md text-muted-foreground hover:bg-fill-hover transition-colors"
 					}

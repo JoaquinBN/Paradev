@@ -208,7 +208,7 @@ key.
 **A ChatGPT sign-in is a file and a session, not a key.** Codex on a ChatGPT
 plan reads `~/.codex/auth.json`, and its refresh token works once: two holders
 of one session sign each other out ("refresh token was already used"). The API
-runs Codex's device-code sign-in itself, so the session is Paradev's own and
+runs Codex's device-code sign-in itself, so the session is Wanker's own and
 never the one on the person's laptop, and renews it under a row lock before
 the access token lapses. The box gets an `auth.json` of placeholders (an
 unsigned id token rebuilt from the claims, a last refresh far ahead so Codex
@@ -216,7 +216,7 @@ never tries to renew) written with the identity on every create and wake; the
 firewall swaps the bearer on `chatgpt.com`. Verified 2026-10-21 on a real box,
 including a forced rotation while it ran.
 
-**Some people keep the agent signed in themselves.** The brokering above assumes Paradev owns the
+**Some people keep the agent signed in themselves.** The brokering above assumes Wanker owns the
 model credential. Some teams run their own script that rotates Claude or Codex logins, and our
 placeholder overrides it: `CLAUDE_CODE_OAUTH_TOKEN` and `ANTHROPIC_API_KEY` take precedence over
 `~/.claude/.credentials.json` in Claude Code. A Manual row (`agent_credentials.provider =
@@ -613,7 +613,7 @@ leaves a repository that can fetch nothing; the runner reclones rather than
 failing every boot.
 
 **GitHub names are case-insensitive; the release database lookup was not.** After the repository
-rename, production stored `ParadevAI/Paradev` while the release requested `paradevai/paradev`.
+rename, production stored `WankerAI/Wanker` while the release requested `paradevai/paradev`.
 An exact SQL comparison reported an installed repository as disconnected and stopped the release
 before environment pins advanced. **Fixed:** the release compares normalized names while retaining
 the organization constraint. No repository reconnection or production data rewrite is needed.

@@ -58,7 +58,7 @@ export async function GET(request: Request) {
 
 	if (!connection) {
 		return new Response(
-			"Slack workspace not connected to any Paradev organization.",
+			"Slack workspace not connected to any Wanker organization.",
 			{ status: 404 },
 		);
 	}

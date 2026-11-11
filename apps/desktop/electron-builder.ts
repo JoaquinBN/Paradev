@@ -17,8 +17,9 @@ import { localizeMacDisplayName } from "./scripts/localize-display-name";
 
 const currentYear = new Date().getFullYear();
 const productName = pkg.productName;
-// productName names the bundle, userData, logs and the keychain entry, so it
-// never changes; the menu bar, Dock and launchers show displayName.
+// productName names the bundle, userData, logs and the keychain entry. Installs
+// from before the rename move their userData over once at launch
+// (main/lib/legacy-user-data). The menu bar, Dock and launchers show displayName.
 export const displayName = process.env.DESKTOP_DISPLAY_NAME || productName;
 export const toInstallerFileName = (name: string) =>
 	name.trim().replace(/\s+/g, "-");
@@ -47,7 +48,7 @@ const macElectronLanguages = SUPPORTED_LOCALES.flatMap((locale) => {
 });
 
 const config: Configuration = {
-	appId: "com.superset.desktop",
+	appId: "com.wanker.desktop",
 	productName,
 	afterPack: localizeMacDisplayName(displayName),
 	copyright: `Copyright © ${currentYear} Superset Inc.`,
@@ -182,19 +183,19 @@ const config: Configuration = {
 		...(existsSync(linuxIconPath) ? { icon: linuxIconPath } : {}),
 		// Otherwise the binary, and with it the window class the desktop entry
 		// must match, is the package name mangled to "@supersetdesktop".
-		executableName: "superset",
+		executableName: "wanker",
 		category: "Utility",
 		synopsis: pkg.description,
 		// The AppImage runtime needs libfuse2, which Debian 12 / Ubuntu 22.04+
 		// no longer install by default; the deb needs nothing extra and installs
 		// the desktop entry and icon that the dock and deep links resolve.
 		target: ["AppImage", "deb"],
-		artifactName: `superset-\${version}-\${arch}.\${ext}`,
+		artifactName: `wanker-\${version}-\${arch}.\${ext}`,
 		// GNOME's app menus only show their heuristic "New Window" item
 		// intermittently for running apps; an explicit desktop action (the
 		// Chrome/VS Code approach) is always shown. The action relaunches with
 		// --new-window, which the second-instance handler answers by opening a
-		// window; a plain relaunch focuses the running app. `superset` is the
+		// window; a plain relaunch focuses the running app. `wanker` is the
 		// deb's /usr/bin link; AppImage integration rewrites Exec lines to the
 		// image path, and the un-integrated AppImage never shows actions.
 		desktop: {
@@ -207,7 +208,7 @@ const config: Configuration = {
 				// Electron sets the window class from the executable name, so the
 				// default (the product name) never matches and the dock shows a
 				// second, iconless entry for the running app.
-				StartupWMClass: "superset",
+				StartupWMClass: "wanker",
 			},
 			desktopActions: {
 				"new-window": {
@@ -217,7 +218,7 @@ const config: Configuration = {
 					// intentionally omitted. --new-window is what the
 					// second-instance handler keys on to open a window instead
 					// of focusing the running app.
-					Exec: "superset --new-window",
+					Exec: "wanker --new-window",
 				},
 			},
 		},

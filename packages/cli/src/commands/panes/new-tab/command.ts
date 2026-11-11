@@ -44,7 +44,7 @@ export default command({
 				if (error instanceof Error && /terminalId/.test(error.message)) {
 					throw new CLIError(
 						"This host is too old to open a chat session in a tab",
-						"Update the Paradev desktop app on that host",
+						"Update the Wanker desktop app on that host",
 					);
 				}
 				throw error;

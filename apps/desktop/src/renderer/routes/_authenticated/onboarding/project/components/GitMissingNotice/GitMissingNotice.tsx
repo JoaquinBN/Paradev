@@ -81,7 +81,7 @@ export function GitMissingNotice({
 	if (!needsCommandLineTools) {
 		return (
 			<NoticeRow
-				title={t`Paradev needs Git to add a project.`}
+				title={t`Wanker needs Git to add a project.`}
 				detail={error ?? t`Install Git, then come back.`}
 				actions={
 					!error && (
@@ -120,7 +120,7 @@ export function GitMissingNotice({
 
 	return (
 		<NoticeRow
-			title={t`Paradev needs Git to add a project.`}
+			title={t`Wanker needs Git to add a project.`}
 			detail={detail}
 			actions={
 				<>

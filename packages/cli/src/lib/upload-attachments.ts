@@ -41,7 +41,7 @@ function megabytes(bytes: number): string {
 
 /**
  * Sends files to a workspace's host. Up to 25 MB a file goes inline, which
- * every host takes. A cloud workspace takes larger files through Paradev's
+ * every host takes. A cloud workspace takes larger files through Wanker's
  * storage; a host on someone's machine does not, by design.
  */
 export async function uploadAttachments({
@@ -61,7 +61,7 @@ export async function uploadAttachments({
 		if (target.kind !== "cloud") {
 			throw new CLIError(
 				`Attachment ${file.filename} is ${megabytes(file.sizeBytes)}; a workspace on a host takes at most ${megabytes(MAX_INLINE_ATTACHMENT_BYTES)} a file`,
-				"Files for a host go straight to it, not through Paradev's storage. Send a smaller file, or copy it into the workspace",
+				"Files for a host go straight to it, not through Wanker's storage. Send a smaller file, or copy it into the workspace",
 			);
 		}
 		assertCloudSize(file);
@@ -105,7 +105,7 @@ export async function uploadAttachments({
 	return ids;
 }
 
-/** Uploads files to Paradev's storage for a cloud workspace and returns their file ids. */
+/** Uploads files to Wanker's storage for a cloud workspace and returns their file ids. */
 export async function uploadToCloudStorage({
 	api,
 	paths,

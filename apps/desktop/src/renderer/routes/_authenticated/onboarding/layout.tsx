@@ -31,7 +31,7 @@ const SETUP_STEP = {
 	title: msg({ message: "Connect GitHub" }),
 	subtitle: msg({
 		message:
-			"Paradev uses the GitHub CLI to clone repos and open pull requests. You can also do this later.",
+			"Wanker uses the GitHub CLI to clone repos and open pull requests. You can also do this later.",
 	}),
 };
 

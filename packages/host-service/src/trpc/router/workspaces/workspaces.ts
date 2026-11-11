@@ -876,7 +876,7 @@ export const workspacesRouter = router({
 								: `Inspect with \`git log ${resolvedBranch}\`, then \`git branch -D ${resolvedBranch}\` if safe.`;
 							throw new TRPCError({
 								code: "CONFLICT",
-								message: `Local branch "${resolvedBranch}" exists outside Paradev and points at a different commit than PR #${input.pr} (local ${localOid.slice(0, 7)}, PR ${prMetadata.headRefOid.slice(0, 7)}). ${cleanupHint}`,
+								message: `Local branch "${resolvedBranch}" exists outside Wanker and points at a different commit than PR #${input.pr} (local ${localOid.slice(0, 7)}, PR ${prMetadata.headRefOid.slice(0, 7)}). ${cleanupHint}`,
 							});
 						}
 

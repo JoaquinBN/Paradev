@@ -20,9 +20,9 @@ import {
 } from "renderer/assets/app-icons/preset-icons";
 import { HotkeyMenuShortcut } from "renderer/components/HotkeyMenuShortcut";
 import { useBuiltinPresets } from "renderer/hooks/useBuiltinPresets";
-import { useParadevShell } from "renderer/hooks/useParadevShell";
 import { useV2AgentConfigs } from "renderer/hooks/useV2AgentConfigs";
 import { useV2UserPreferences } from "renderer/hooks/useV2UserPreferences";
+import { useWankerShell } from "renderer/hooks/useWankerShell";
 import type { HotkeyId } from "renderer/hotkeys";
 import { posthog } from "renderer/lib/posthog";
 import { resolveV2PresetIcon } from "renderer/lib/preset-icon";
@@ -81,7 +81,7 @@ export function V2PresetsBar({
 }: V2PresetsBarProps) {
 	const navigate = useNavigate();
 	const isDark = useIsDarkTheme();
-	const isParadevShell = useParadevShell();
+	const isWankerShell = useWankerShell();
 	const collections = useCollections();
 	const { activeHostUrl } = useLocalHostService();
 	const { data: agents } = useV2AgentConfigs(activeHostUrl);
@@ -235,7 +235,7 @@ export function V2PresetsBar({
 		<div
 			className={cn(
 				"flex h-10 min-w-0 shrink-0 items-center gap-1.5 overflow-x-auto overflow-y-hidden px-2",
-				!isParadevShell && "bg-background",
+				!isWankerShell && "bg-background",
 			)}
 			style={{ scrollbarWidth: "none" }}
 		>

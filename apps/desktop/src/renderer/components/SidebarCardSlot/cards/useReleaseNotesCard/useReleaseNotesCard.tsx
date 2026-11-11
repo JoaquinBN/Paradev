@@ -46,7 +46,7 @@ export function useReleaseNotesCard(): SidebarCardEntry | null {
 
 	return {
 		id: `release-notes-${version}`,
-		title: t({ message: `Paradev ${version}` }),
+		title: t({ message: `Wanker ${version}` }),
 		description: formatReleaseDate(release.date, { withYear: false }),
 		media: release.image ? (
 			<img src={release.image} alt="" className="block h-auto w-full" />

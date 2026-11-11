@@ -292,7 +292,7 @@ describe("replacing a chat whose agent died", () => {
 		await runtime.dispose();
 	});
 
-	test("a turn Paradev's shutdown cut off stays in the chat that replaces it", async () => {
+	test("a turn Wanker's shutdown cut off stays in the chat that replaces it", async () => {
 		const runtime = createTestRuntime({ harnesses: hangingRegistry() });
 		const cutOff = await startTurn(runtime);
 

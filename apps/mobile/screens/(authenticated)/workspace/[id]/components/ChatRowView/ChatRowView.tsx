@@ -101,7 +101,7 @@ export const ChatRowView = memo(
 				return (
 					<SystemLine tone={row.status === "failed" ? "error" : "muted"}>
 						{row.status === "paused" ? (
-							<Trans>Paused when Paradev closed</Trans>
+							<Trans>Paused when Wanker closed</Trans>
 						) : row.status === "interrupted" ? (
 							<Trans>Stopped</Trans>
 						) : (

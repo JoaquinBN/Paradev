@@ -86,7 +86,7 @@ jobs:
           python3 - <<'PYEOF' > homebrew-tap/Formula/superset.rb
           import os
           template = '''class Superset < Formula
-            desc "CLI and host-service for Paradev"
+            desc "CLI and host-service for Wanker"
             homepage "https://paradev.com"
             version "{version}"
             license "MIT"

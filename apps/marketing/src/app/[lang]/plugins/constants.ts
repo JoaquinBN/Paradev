@@ -180,14 +180,14 @@ export const STEPS: (PluginsItem & { id: StepId })[] = [
 		id: "install",
 		title: msg({ message: "Install." }),
 		description: msg({
-			message: "Pick one in the Paradev app. It's saved to your account.",
+			message: "Pick one in the Wanker app. It's saved to your account.",
 		}),
 	},
 	{
 		id: "connect",
 		title: msg({ message: "Connect." }),
 		description: msg({
-			message: "Sign in once. Paradev keeps the connection.",
+			message: "Sign in once. Wanker keeps the connection.",
 		}),
 	},
 	{
@@ -219,7 +219,7 @@ export const FEATURES: PluginsItem[] = [
 		title: msg({ message: "Tokens stay off your machine" }),
 		description: msg({
 			message:
-				"Paradev holds the token and makes the calls. Agents never see it.",
+				"Wanker holds the token and makes the calls. Agents never see it.",
 		}),
 	},
 	{

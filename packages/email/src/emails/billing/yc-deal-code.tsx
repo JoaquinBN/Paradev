@@ -12,14 +12,14 @@ export function YcDealCodeEmail({
 	code = "YCXXXXXXXX",
 }: YcDealCodeEmailProps) {
 	return (
-		<EmailLayout preview="Your code for 3 months of Paradev Team free">
+		<EmailLayout preview="Your code for 3 months of Wanker Team free">
 			<Text className="text-[15px] leading-6 text-foreground m-0 mb-4">
 				Hi {firstName ?? "there"},
 			</Text>
 
 			<Text className="text-[15px] leading-6 text-foreground m-0 mb-4">
 				Thanks for redeeming our deal on Bookface. Here is your code for 3
-				months of Paradev Team free:
+				months of Wanker Team free:
 			</Text>
 
 			<Section className="bg-surface border border-solid border-border rounded-md px-4 py-3 mb-4 text-center">
@@ -45,7 +45,7 @@ export function YcDealCodeEmail({
 			</Text>
 
 			<Text className="text-[13px] leading-5 text-muted m-0">
-				You're receiving this because you redeemed the Paradev deal on Bookface.
+				You're receiving this because you redeemed the Wanker deal on Bookface.
 			</Text>
 		</EmailLayout>
 	);

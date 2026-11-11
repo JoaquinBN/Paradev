@@ -1,9 +1,9 @@
 import { rm } from "node:fs/promises";
 import path from "node:path";
 import {
-	devAppProfileDirName,
 	isDevAppProfileDirName,
 	isProfileLockHeld,
+	legacyDevAppProfileDirName,
 	resolveAppDataDir,
 	workspaceDevAppProfileDirName,
 } from "@superset/shared/dev-app-profile";
@@ -40,7 +40,7 @@ export async function removeDevAppProfile({
 
 		const dirName = workspaceId?.trim()
 			? workspaceDevAppProfileDirName({ workspaceId, appPath: "" })
-			: devAppProfileDirName(name);
+			: legacyDevAppProfileDirName(name);
 		// Guards against a name with a path separator escaping the profiles
 		// directory, and against ever naming an installed build's profile.
 		if (!isDevAppProfileDirName(dirName)) return;
