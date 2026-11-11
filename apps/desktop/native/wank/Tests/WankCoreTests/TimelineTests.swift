@@ -1,5 +1,5 @@
 import Testing
-@testable import ShowMeCore
+@testable import WankCore
 
 private let hundredFrames = (0..<100).map { Frame(t: Double($0), file: "\($0).jpg") }
 
@@ -36,7 +36,7 @@ private let hundredFrames = (0..<100).map { Frame(t: Double($0), file: "\($0).jp
 }
 
 @Test func streamJSONBecomesShortActivity() {
-	let line = #"{"type":"assistant","parent_tool_use_id":null,"message":{"content":[{"type":"text","text":"Intent: weekday digest of HN agent posts.\nMore detail."},{"type":"tool_use","name":"Read","input":{"file_path":"/c/frames/0001.jpg"}},{"type":"tool_use","name":"Bash","input":{"command":"/x/showme run hn --dry-run"}},{"type":"tool_use","name":"Read","input":{"file_path":"/c/context.json"}}]}}"#
+	let line = #"{"type":"assistant","parent_tool_use_id":null,"message":{"content":[{"type":"text","text":"Intent: weekday digest of HN agent posts.\nMore detail."},{"type":"tool_use","name":"Read","input":{"file_path":"/c/frames/0001.jpg"}},{"type":"tool_use","name":"Bash","input":{"command":"/x/superset automations run 42"}},{"type":"tool_use","name":"Read","input":{"file_path":"/c/context.json"}}]}}"#
 	#expect(activityLines(fromStreamJSON: line) == ["Intent: weekday digest of HN agent posts.", "Eyeing your screenshots", "Dry run, so to speak"])
 	let subagent = #"{"type":"assistant","parent_tool_use_id":"toolu_1","message":{"content":[{"type":"text","text":"hi"}]}}"#
 	#expect(activityLines(fromStreamJSON: subagent).isEmpty)
@@ -53,4 +53,19 @@ private let hundredFrames = (0..<100).map { Frame(t: Double($0), file: "\($0).jp
 	let end = streamResult(#"{"type":"result","result":"Built it.","session_id":"abc"}"#)
 	#expect(end?.text == "Built it." && end?.session == "abc")
 	#expect(streamResult(#"{"type":"assistant"}"#) == nil)
+}
+
+@Test func tapsTellOneFromTwo() {
+	var taps = TapCounter()
+	#expect(taps.tap(at: 0) == nil)
+	#expect(taps.tap(at: 0.2) == .double)
+	#expect(taps.expire(at: 1) == nil)
+
+	#expect(taps.tap(at: 5) == nil)
+	#expect(taps.expire(at: 5.2) == nil)
+	#expect(taps.expire(at: 5.5) == .single)
+
+	#expect(taps.tap(at: 10) == nil)
+	#expect(taps.tap(at: 10.6) == nil)
+	#expect(taps.expire(at: 11.1) == .single)
 }

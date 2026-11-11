@@ -3345,17 +3345,11 @@ msgstr "자동화 제목"
 msgid "Automations"
 msgstr "자동화"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "자동화 ({myFailedCount}개 실패)"
-
 msgid "Automations & event triggers"
 msgstr "자동화 및 이벤트 트리거"
 
 msgid "Automations require the Pro plan."
 msgstr "자동화에는 Pro 플랜이 필요합니다."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "자동화, {myFailedCount}개 실패"
 
 msgid "Autonomous"
 msgstr "자율"
@@ -6296,9 +6290,6 @@ msgstr "이 페이지에서 디자인 모드를 시작할 수 없습니다"
 
 msgid "Couldn't start voice mode"
 msgstr "음성 모드를 시작할 수 없습니다"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "Wank를 시작할 수 없습니다. Wank 앱을 열고 다시 시도하세요."
 
 msgid "Couldn't start workspace"
 msgstr "워크스페이스를 시작하지 못했습니다"
@@ -21683,6 +21674,9 @@ msgstr "워크스페이스를 깨우는 중…"
 msgid "Waking up workspace"
 msgstr "워크스페이스 깨우는 중"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank는 macOS 26 이상이 필요합니다."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "Wanker 모바일 앱 덕분에 컴퓨터에서 멀리 떨어져 있어�
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks ({myFailedCount}개 실패)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, {myFailedCount}개 실패"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "더 빨리 필요한 기능이 있나요? <0>Discord에서 알려 주세요</0>. 여기 있는 항목 상당수가 사용자 요청에서 시작했습니다."

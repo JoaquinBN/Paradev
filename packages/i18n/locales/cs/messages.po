@@ -3345,17 +3345,11 @@ msgstr "Název automatizace"
 msgid "Automations"
 msgstr "Automatizace"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Automatizace (neúspěšné: {myFailedCount})"
-
 msgid "Automations & event triggers"
 msgstr "Automatizace a spouštěče událostí"
 
 msgid "Automations require the Pro plan."
 msgstr "Automatizace vyžadují tarif Pro."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Automatizace, neúspěšné: {myFailedCount}"
 
 msgid "Autonomous"
 msgstr "Autonomní"
@@ -6296,9 +6290,6 @@ msgstr "Na této stránce se nepodařilo spustit režim designu"
 
 msgid "Couldn't start voice mode"
 msgstr "Hlasový režim se nepodařilo spustit"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "Wank se nepodařilo spustit. Otevřete aplikaci Wank a zkuste to znovu."
 
 msgid "Couldn't start workspace"
 msgstr "Pracovní prostor se nepodařilo spustit"
@@ -21683,6 +21674,9 @@ msgstr "Probouzí se pracovní prostor…"
 msgid "Waking up workspace"
 msgstr "Probouzení pracovního prostoru"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank vyžaduje macOS 26 nebo novější."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "Mobilní aplikace Wanker mi umožňuje udržovat agenty v chodu a odblok
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks (neúspěšné: {myFailedCount})"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, neúspěšné: {myFailedCount}"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Chcete něco dřív? <0>Napište nám na Discordu</0>. Spousta z toho, co je tady, začala jako přání uživatele."

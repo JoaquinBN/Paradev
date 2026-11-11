@@ -3345,17 +3345,11 @@ msgstr "Titre de l'automatisation"
 msgid "Automations"
 msgstr "Automatisations"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Automatisations ({myFailedCount} en échec)"
-
 msgid "Automations & event triggers"
 msgstr "Automatisations et déclencheurs d'événements"
 
 msgid "Automations require the Pro plan."
 msgstr "Les automatisations nécessitent le forfait Pro."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Automatisations, {myFailedCount} en échec"
 
 msgid "Autonomous"
 msgstr "Autonome"
@@ -6296,9 +6290,6 @@ msgstr "Impossible de démarrer le mode design sur cette page"
 
 msgid "Couldn't start voice mode"
 msgstr "Impossible de démarrer le mode vocal"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "Impossible de lancer Wank. Ouvrez l'app Wank et réessayez."
 
 msgid "Couldn't start workspace"
 msgstr "Impossible de démarrer l'espace de travail"
@@ -21683,6 +21674,9 @@ msgstr "Réveil de l’espace de travail…"
 msgid "Waking up workspace"
 msgstr "Réveil de l’espace de travail"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank nécessite macOS 26 ou une version ultérieure."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "L’application mobile Wanker me permet de faire avancer mes agents et d
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks ({myFailedCount} en échec)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, {myFailedCount} en échec"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Vous voulez quelque chose plus tôt ? <0>Dites-le-nous sur Discord</0>. Une bonne partie de ce qui figure ici est née d'une demande d'utilisateur."

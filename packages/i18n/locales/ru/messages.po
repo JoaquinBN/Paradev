@@ -3345,17 +3345,11 @@ msgstr "Название автоматизации"
 msgid "Automations"
 msgstr "Автоматизации"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Автоматизации (с ошибкой: {myFailedCount})"
-
 msgid "Automations & event triggers"
 msgstr "Автоматизации и триггеры по событиям"
 
 msgid "Automations require the Pro plan."
 msgstr "Для автоматизаций нужен план Pro."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Автоматизации, с ошибкой: {myFailedCount}"
 
 msgid "Autonomous"
 msgstr "Автономно"
@@ -6296,9 +6290,6 @@ msgstr "Не удалось запустить режим дизайна на э
 
 msgid "Couldn't start voice mode"
 msgstr "Не удалось запустить голосовой режим"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "Не удалось запустить Wank. Откройте приложение Wank и повторите попытку."
 
 msgid "Couldn't start workspace"
 msgstr "Не удалось запустить рабочую область"
@@ -21683,6 +21674,9 @@ msgstr "Пробуждение рабочей области…"
 msgid "Waking up workspace"
 msgstr "Пробуждение рабочей области"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Для Wank нужна macOS 26 или новее."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "Мобильное приложение Wanker позволяет мне
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks (с ошибкой: {myFailedCount})"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, с ошибкой: {myFailedCount}"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Хотите что-то быстрее? <0>Скажите нам в Discord</0>. Многое из этого началось с пожелания пользователя."

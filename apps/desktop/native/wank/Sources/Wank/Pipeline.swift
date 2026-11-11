@@ -1,5 +1,5 @@
 import Foundation
-import ShowMeCore
+import WankCore
 
 struct CompileResult: Codable {
 	var status: String
@@ -37,8 +37,7 @@ struct Cancelled: Error {}
 enum Pipeline {
 	static let frameBudget = 40
 
-	static func process(_ capture: URL, job: Job? = nil, progress: @escaping (String) -> Void) async throws -> CompileResult {
-		let job = job ?? Job(capture: capture)
+	static func process(_ capture: URL, job: Job, progress: @escaping (String) -> Void) async throws -> CompileResult {
 		let transcriptURL = capture.appendingPathComponent("transcript.json")
 		let segments: [Segment]
 		if let data = try? Data(contentsOf: transcriptURL) {
@@ -52,7 +51,7 @@ enum Pipeline {
 		let frames = (try? JSONDecoder().decode([Frame].self, from: Data(contentsOf: capture.appendingPathComponent("frames.json")))) ?? []
 		let events = (try? JSONDecoder().decode([Event].self, from: Data(contentsOf: capture.appendingPathComponent("events.json")))) ?? []
 		guard !segments.isEmpty || !events.isEmpty || !frames.isEmpty else {
-			throw ShowMeError("I didn't catch anything. Show me on screen or talk while you do.")
+			throw WankError("I didn't catch anything. Talk while you show me, or tap once and just say it.")
 		}
 		let heard = segments.map(\.text).joined(separator: " ")
 		progress(heard.isEmpty ? "Silent wank: reading your screens" : "Heard: “\(heard.count > 90 ? heard.prefix(89) + "…" : heard)”")
@@ -62,20 +61,22 @@ enum Pipeline {
 			.write(to: capture.appendingPathComponent("timeline.md"), atomically: true, encoding: .utf8)
 		progress("Getting a feel for what you want…")
 		if job.isCancelled { throw Cancelled() }
-		return try await Task.detached { try compile(capture, heard: heard, job: job, progress: progress) }.value
+		let voiceOnly = frames.isEmpty && events.isEmpty
+		return try await Task.detached { try compile(capture, heard: heard, voiceOnly: voiceOnly, job: job, progress: progress) }.value
 	}
 
-	private static func compile(_ capture: URL, heard: String, job: Job, progress: @escaping (String) -> Void) throws -> CompileResult {
+	private static func compile(_ capture: URL, heard: String, voiceOnly: Bool, job: Job, progress: @escaping (String) -> Void) throws -> CompileResult {
 		var env = Wanker.environment()
 		env["WANK_CAPTURE"] = capture.path
-		guard let claude = which("claude", env: env) else { throw ShowMeError("Claude Code is not installed: `claude` is not on your PATH.") }
-		guard let superset = Wanker.cli(env: env) else { throw ShowMeError("The Wanker CLI (`superset`) is not installed. Open Wanker once.") }
-		guard let url = Bundle.main.url(forResource: "compiler", withExtension: "md") else { throw ShowMeError("compiler.md is missing from the app.") }
+		guard let claude = which("claude", env: env) else { throw WankError("Claude Code is not installed: `claude` is not on your PATH.") }
+		guard let superset = Wanker.cli(env: env) else { throw WankError("The Wanker CLI (`superset`) is not installed.") }
+		guard let url = Bundle.main.url(forResource: "compiler", withExtension: "md") else { throw WankError("compiler.md is missing from the app.") }
 		let wank = Paths.cli.path
 		let instructions = try String(contentsOf: url, encoding: .utf8)
 			.replacingOccurrences(of: "{{WANK}}", with: wank)
 			.replacingOccurrences(of: "{{SUPERSET}}", with: superset)
 		var prompt = "New capture: \(capture.path)\nRead its timeline.md and context.json, then build the automation."
+		if voiceOnly { prompt += "\nThis one is voice only: no screens or clicks. Work from what they said." }
 		if heard.isEmpty { prompt += "\nNobody spoke in this one. Work out the intent from the screens and clicks." }
 		let cliTools = ["create", "set-prompt", "ask"].map { "Bash(\(wank) \($0):*)" }
 			+ ["automations run", "automations logs", "automations get", "automations list", "automations update", "automations trigger-options", "projects list", "hosts list"]
@@ -100,7 +101,7 @@ enum Pipeline {
 		let result = (try? Data(contentsOf: capture.appendingPathComponent("result.json"))).flatMap { try? JSONDecoder().decode(CompileResult.self, from: $0) }
 		writeReport(capture, result: result, heard: heard, steps: steps, summary: summary.isEmpty ? o.err : summary, session: session)
 		if let result { return result }
-		throw ShowMeError(o.status == 0 ? "The agent finished without building anything." : "The agent stopped (exit \(o.status)). See compiler.log.")
+		throw WankError(o.status == 0 ? "The agent finished without building anything." : "The agent stopped (exit \(o.status)). See compiler.log.")
 	}
 
 	/// Deletes the automations a cancelled build already created.

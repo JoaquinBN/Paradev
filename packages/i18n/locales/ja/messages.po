@@ -3345,17 +3345,11 @@ msgstr "オートメーションのタイトル"
 msgid "Automations"
 msgstr "オートメーション"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "オートメーション({myFailedCount}件失敗中)"
-
 msgid "Automations & event triggers"
 msgstr "オートメーションとイベントトリガー"
 
 msgid "Automations require the Pro plan."
 msgstr "オートメーションにはProプランが必要です。"
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "オートメーション、{myFailedCount}件が失敗中"
 
 msgid "Autonomous"
 msgstr "自律"
@@ -6296,9 +6290,6 @@ msgstr "このページでデザインモードを開始できませんでした
 
 msgid "Couldn't start voice mode"
 msgstr "音声モードを開始できませんでした"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "Wank を起動できませんでした。Wank アプリを開いてもう一度お試しください。"
 
 msgid "Couldn't start workspace"
 msgstr "ワークスペースを開始できませんでした"
@@ -21683,6 +21674,9 @@ msgstr "ワークスペースを起動しています…"
 msgid "Waking up workspace"
 msgstr "ワークスペースを起動中"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank には macOS 26 以降が必要です。"
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "Wankerのモバイルアプリなら、コンピューターから遠く
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks({myFailedCount}件失敗中)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks、{myFailedCount}件が失敗中"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "もっと早く欲しいものがありますか?<0>Discordで教えてください</0>。ここにあるものの多くは、ユーザーの要望から始まりました。"

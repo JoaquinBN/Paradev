@@ -46,6 +46,7 @@ import { SaveAsEnvironmentMount } from "./components/SaveAsEnvironmentMount";
 import { TitleBar } from "./components/TitleBar";
 import { TopBar } from "./components/TopBar";
 import { useShowsAppTopBar } from "./hooks/useShowsAppTopBar";
+import { useSyncWankOrganization } from "./hooks/useSyncWankOrganization";
 import { TitleBarSlotsProvider } from "./providers/TitleBarSlotsProvider";
 import { browserRuntimeRegistry } from "./v2-workspace/$workspaceId/hooks/usePaneRegistry/components/BrowserPane/browserRuntimeRegistry";
 
@@ -65,6 +66,7 @@ type DeleteTarget = {
 
 function DashboardLayout() {
 	const navigate = useNavigate();
+	useSyncWankOrganization();
 
 	const openNewWorkspace = useOpenNewWorkspace();
 	const isV2CloudEnabled = useIsV2CloudEnabled();

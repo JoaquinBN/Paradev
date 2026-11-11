@@ -1,18 +1,14 @@
 import AppKit
 
 let usage = """
-usage: wank process <capture-dir>                build an automation from a capture
-       wank create --name <n> --prompt-file <f> [superset automations create flags]
-       wank set-prompt <id> <prompt-file>          replace a Wank automation's prompt
-       wank ask <question> <option>…             ask the user in the notch; prints the answer
+usage: wank create --name <n> --prompt-file <f> [superset automations create flags]
+       wank set-prompt <id> <prompt-file>     replace a Wank automation's prompt
+       wank ask <question> <option>…        ask the user in the notch; prints the answer
 """
 
-func cli(_ args: [String]) async -> Int32 {
+func cli(_ args: [String]) -> Int32 {
 	do {
 		switch (args.first, args.dropFirst().first) {
-		case ("process", let dir?):
-			let result = try await Pipeline.process(URL(fileURLWithPath: dir)) { FileHandle.standardError.write(Data("\($0)\n".utf8)) }
-			print(String(decoding: try JSONEncoder().encode(result), as: UTF8.self))
 		case ("create", _):
 			print(try Wanker.create(Array(args.dropFirst())))
 		case ("set-prompt", let id?) where args.count == 3:
@@ -48,12 +44,10 @@ func askUser(_ question: String, options: [String], timeout: TimeInterval = 300)
 	return "No answer from the user. Go with your best guess and say so in the result."
 }
 
-// The CLI shim and launchd jobs pass "cli"; Finder and login items pass nothing.
+// `wank` (the shim the build agent calls) passes "cli"; Wanker starts the app with no arguments.
 let arguments = Array(CommandLine.arguments.dropFirst())
 if arguments.first == "cli" {
-	Children.dieTogether()
-	Task { exit(await cli(Array(arguments.dropFirst()))) }
-	dispatchMain()
+	exit(cli(Array(arguments.dropFirst())))
 }
 
 MainActor.assumeIsolated {

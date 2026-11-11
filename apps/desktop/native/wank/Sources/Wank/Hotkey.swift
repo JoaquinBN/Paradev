@@ -1,16 +1,17 @@
 import AppKit
+import WankCore
 
-/// Double-tap of the right Option key on its own. Typing with Option (é, @, …) never counts.
+/// Taps of the right Option key on its own: one tap or two. Typing with Option (é, @, …) never counts.
 final class Hotkey {
 	static let rightOption: UInt16 = 61
 	private var monitors: [Any] = []
 	private var pressedAt: TimeInterval?
-	private var lastTap: TimeInterval = 0
-	private let action: () -> Void
+	private var taps = TapCounter()
+	private let onTap: (TapCounter.Tap) -> Void
 	private let onEscape: () -> Void
 
-	init(action: @escaping () -> Void, onEscape: @escaping () -> Void) {
-		self.action = action
+	init(onTap: @escaping (TapCounter.Tap) -> Void, onEscape: @escaping () -> Void) {
+		self.onTap = onTap
 		self.onEscape = onEscape
 		let mask: NSEvent.EventTypeMask = [.flagsChanged, .keyDown]
 		if let m = NSEvent.addGlobalMonitorForEvents(matching: mask, handler: { [weak self] in self?.handle($0) }) { monitors.append(m) }
@@ -25,7 +26,7 @@ final class Hotkey {
 		if e.type == .keyDown, e.keyCode == 53 { onEscape() }
 		guard e.type == .flagsChanged, e.keyCode == Self.rightOption else {
 			pressedAt = nil
-			lastTap = 0
+			taps.reset()
 			return
 		}
 		let flags = e.modifierFlags.intersection([.command, .control, .shift, .option])
@@ -33,11 +34,10 @@ final class Hotkey {
 			pressedAt = e.timestamp
 		} else if flags.isEmpty, let down = pressedAt, e.timestamp - down < 0.3 {
 			pressedAt = nil
-			if e.timestamp - lastTap < 0.45 {
-				lastTap = 0
-				action()
-			} else {
-				lastTap = e.timestamp
+			if let tap = taps.tap(at: e.timestamp) { return onTap(tap) }
+			DispatchQueue.main.asyncAfter(deadline: .now() + TapCounter.window) { [weak self] in
+				guard let self, let tap = self.taps.expire(at: ProcessInfo.processInfo.systemUptime) else { return }
+				self.onTap(tap)
 			}
 		} else {
 			pressedAt = nil

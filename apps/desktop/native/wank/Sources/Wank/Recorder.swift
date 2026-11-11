@@ -2,15 +2,16 @@ import AppKit
 import AVFoundation
 import CoreImage
 import ScreenCaptureKit
-import ShowMeCore
+import WankCore
 import UniformTypeIdentifiers
 
-/// Records voice, every display at up to 2 fps (saving only the one under the
-/// mouse, and only when it changes), and each click and app switch.
+/// Records voice and, unless it's voice only, every display at up to 2 fps (saving only the one
+/// under the mouse, and only when it changes) plus each click and app switch.
 final class Recorder: NSObject, SCStreamOutput {
 	let dir: URL
+	let screen: Bool
 	private let began = Date()
-	private let queue = DispatchQueue(label: "showme.recorder")
+	private let queue = DispatchQueue(label: "wank.recorder")
 	private let ci = CIContext()
 	private var streams: [SCStream] = []
 	private var displayOf: [ObjectIdentifier: CGDirectDisplayID] = [:]
@@ -23,7 +24,10 @@ final class Recorder: NSObject, SCStreamOutput {
 	private var observers: [NSObjectProtocol] = []
 	private var stopped = false
 
-	init(dir: URL) { self.dir = dir }
+	init(dir: URL, screen: Bool) {
+		self.dir = dir
+		self.screen = screen
+	}
 
 	var elapsed: Double { Date().timeIntervalSince(began) }
 
@@ -42,10 +46,17 @@ final class Recorder: NSObject, SCStreamOutput {
 	@MainActor func start() async throws {
 		try FileManager.default.createDirectory(at: dir.appendingPathComponent("frames"), withIntermediateDirectories: true)
 		try writeContext()
+		guard await AVCaptureDevice.requestAccess(for: .audio) else {
+			throw WankError("Allow the microphone for Wanker in System Settings → Privacy & Security.")
+		}
 		let mic = try AVAudioRecorder(url: dir.appendingPathComponent("audio.wav"), settings: Self.audioSettings)
 		mic.isMeteringEnabled = true
-		guard mic.record() else { throw ShowMeError("The microphone did not start. Allow it in System Settings → Privacy → Microphone.") }
+		guard mic.record() else { throw WankError("The microphone did not start.") }
 		audio = mic
+		guard screen else { return }
+		guard CGPreflightScreenCaptureAccess() || CGRequestScreenCaptureAccess() else {
+			throw WankError("Allow Screen Recording for Wanker in System Settings → Privacy & Security, then try again.")
+		}
 
 		let content = try await SCShareableContent.excludingDesktopWindows(false, onScreenWindowsOnly: true)
 		let mine = content.applications.filter { $0.processID == getpid() }

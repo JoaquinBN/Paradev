@@ -1,18 +1,18 @@
-import { shell } from "electron";
+import { sendToWank } from "main/lib/wank";
+import { z } from "zod";
 import { publicProcedure, router } from "../..";
 
-/** Wank is the native helper that records a screen and voice demo; it registers `wank://`. */
-const WANK_RECORD_URL = "wank://record";
+const organization = z.object({ organizationId: z.string() });
 
 export const createWankRouter = () =>
 	router({
-		record: publicProcedure.mutation(async () => {
-			try {
-				await shell.openExternal(WANK_RECORD_URL);
-				return { started: true };
-			} catch (error) {
-				console.warn("[wank/record] Could not open Wank:", error);
-				return { started: false };
-			}
+		record: publicProcedure.input(organization).mutation(({ input }) => {
+			sendToWank({ type: "organization", id: input.organizationId });
+			return { started: sendToWank({ type: "record" }) };
 		}),
+		setOrganization: publicProcedure
+			.input(organization)
+			.mutation(({ input }) => {
+				sendToWank({ type: "organization", id: input.organizationId });
+			}),
 	});

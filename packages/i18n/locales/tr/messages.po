@@ -3345,17 +3345,11 @@ msgstr "Otomasyon başlığı"
 msgid "Automations"
 msgstr "Otomasyonlar"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Otomasyonlar ({myFailedCount} başarısız)"
-
 msgid "Automations & event triggers"
 msgstr "Otomasyonlar ve olay tetikleyicileri"
 
 msgid "Automations require the Pro plan."
 msgstr "Otomasyonlar Pro planı gerektirir."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Otomasyonlar, {myFailedCount} başarısız"
 
 msgid "Autonomous"
 msgstr "Otonom"
@@ -6296,9 +6290,6 @@ msgstr "Bu sayfada tasarım modu başlatılamadı"
 
 msgid "Couldn't start voice mode"
 msgstr "Sesli mod başlatılamadı"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "Wank başlatılamadı. Wank uygulamasını açıp tekrar deneyin."
 
 msgid "Couldn't start workspace"
 msgstr "Çalışma alanı başlatılamadı"
@@ -21683,6 +21674,9 @@ msgstr "Çalışma alanı uyandırılıyor…"
 msgid "Waking up workspace"
 msgstr "Çalışma alanı uyandırılıyor"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank için macOS 26 veya üzeri gerekir."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "Wanker'in mobil uygulaması, bilgisayarımdan çok uzakta olsam bile aja
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks ({myFailedCount} başarısız)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, {myFailedCount} başarısız"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Bir şeyi daha erken mi istiyorsunuz? <0>Discord'da bize söyleyin</0>. Buradakilerin çoğu bir kullanıcı isteği olarak başladı."

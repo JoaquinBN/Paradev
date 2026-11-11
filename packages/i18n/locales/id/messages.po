@@ -3345,17 +3345,11 @@ msgstr "Judul otomatisasi"
 msgid "Automations"
 msgstr "Otomatisasi"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Otomatisasi ({myFailedCount} gagal)"
-
 msgid "Automations & event triggers"
 msgstr "Otomatisasi & pemicu event"
 
 msgid "Automations require the Pro plan."
 msgstr "Otomatisasi memerlukan paket Pro."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Otomatisasi, {myFailedCount} gagal"
 
 msgid "Autonomous"
 msgstr "Otonom"
@@ -6296,9 +6290,6 @@ msgstr "Tidak bisa memulai mode desain di halaman ini"
 
 msgid "Couldn't start voice mode"
 msgstr "Tidak dapat memulai mode suara"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "Tidak dapat memulai Wank. Buka aplikasi Wank lalu coba lagi."
 
 msgid "Couldn't start workspace"
 msgstr "Tidak bisa memulai workspace"
@@ -21683,6 +21674,9 @@ msgstr "Membangunkan workspace…"
 msgid "Waking up workspace"
 msgstr "Membangunkan workspace"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank memerlukan macOS 26 atau yang lebih baru."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "Aplikasi seluler Wanker memungkinkan saya menjaga agen tetap bekerja dan
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks ({myFailedCount} gagal)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, {myFailedCount} gagal"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Ingin sesuatu lebih cepat? <0>Beri tahu kami di Discord</0>. Banyak yang ada di sini bermula dari permintaan pengguna."

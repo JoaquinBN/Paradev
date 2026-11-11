@@ -3345,17 +3345,11 @@ msgstr "Tiêu đề tự động hóa"
 msgid "Automations"
 msgstr "Tự động hóa"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Tự động hóa ({myFailedCount} đang lỗi)"
-
 msgid "Automations & event triggers"
 msgstr "Tự động hóa & trigger sự kiện"
 
 msgid "Automations require the Pro plan."
 msgstr "Tự động hóa yêu cầu gói Pro."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Tự động hóa, {myFailedCount} đang lỗi"
 
 msgid "Autonomous"
 msgstr "Tự chủ"
@@ -6296,9 +6290,6 @@ msgstr "Không thể bật chế độ thiết kế trên trang này"
 
 msgid "Couldn't start voice mode"
 msgstr "Không thể bắt đầu chế độ giọng nói"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "Không thể khởi động Wank. Hãy mở ứng dụng Wank rồi thử lại."
 
 msgid "Couldn't start workspace"
 msgstr "Không khởi động được workspace"
@@ -21683,6 +21674,9 @@ msgstr "Đang đánh thức không gian làm việc…"
 msgid "Waking up workspace"
 msgstr "Đang đánh thức workspace"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank cần macOS 26 trở lên."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "Ứng dụng di động Wanker giúp tôi duy trì công việc của c�
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks ({myFailedCount} đang lỗi)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, {myFailedCount} đang lỗi"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Muốn có sớm hơn? <0>Hãy nói với chúng tôi trên Discord</0>. Phần lớn những gì ở đây bắt đầu từ yêu cầu của người dùng."

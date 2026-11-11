@@ -3,35 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>dev.showme.ShowMe</string>
+	<string>dev.wanker.wank</string>
 	<key>CFBundleName</key>
-	<string>Wank</string>
-	<key>CFBundleDisplayName</key>
 	<string>Wank</string>
 	<key>CFBundleExecutable</key>
 	<string>Wank</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1.0</string>
+	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>26.0</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string>Wank</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>wank</string>
-			</array>
-		</dict>
-	</array>
 	<key>LSUIElement</key>
-	<true/>
-	<key>NSHighResolutionCapable</key>
 	<true/>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Wank listens while you show it what to automate.</string>

@@ -3345,17 +3345,11 @@ msgstr "自動化標題"
 msgid "Automations"
 msgstr "自動化"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "自動化（{myFailedCount}個失敗）"
-
 msgid "Automations & event triggers"
 msgstr "自動化與事件觸發"
 
 msgid "Automations require the Pro plan."
 msgstr "自動化需要Pro方案。"
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "自動化，{myFailedCount}個失敗"
 
 msgid "Autonomous"
 msgstr "自主"
@@ -6296,9 +6290,6 @@ msgstr "無法在此頁面啟動設計模式"
 
 msgid "Couldn't start voice mode"
 msgstr "無法啟動語音模式"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "無法啟動 Wank。請開啟 Wank 應用程式後再試一次。"
 
 msgid "Couldn't start workspace"
 msgstr "無法啟動工作區"
@@ -21683,6 +21674,9 @@ msgstr "正在喚醒工作區…"
 msgid "Waking up workspace"
 msgstr "正在喚醒工作區"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank 需要 macOS 26 或更新版本。"
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "Wanker 手機應用程式讓我可以隨時隨地推動代理程式工�
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks（{myFailedCount}個失敗）"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks，{myFailedCount}個失敗"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "想讓某件事早點做？<0>在Discord上告訴我們</0>。這裡的很多條目最初都來自使用者的請求。"

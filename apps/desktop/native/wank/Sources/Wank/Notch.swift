@@ -1,5 +1,5 @@
 import AppKit
-import ShowMeCore
+import WankCore
 import SwiftUI
 
 enum Phase: Equatable {
@@ -11,7 +11,6 @@ enum Phase: Equatable {
 	case done(String, String)
 	case attention(String, String)
 	case cancelled
-	case note(String, String)
 }
 
 @MainActor
@@ -52,7 +51,6 @@ final class NotchModel: ObservableObject {
 		let seconds: Double? = switch next {
 		case .done: 8
 		case .cancelled: 3
-		case .note: 5
 		default: nil
 		}
 		if let seconds {
@@ -179,7 +177,7 @@ struct NotchView: View {
 							.frame(maxWidth: .infinity).padding(.vertical, 4)
 					}
 					.buttonStyle(.plain)
-					Text("or double-tap right ⌥ and say it").font(.system(size: 10)).foregroundStyle(.white.opacity(0.5))
+					Text("or tap right ⌥ and say it").font(.system(size: 10)).foregroundStyle(.white.opacity(0.5))
 				}
 				.multilineTextAlignment(.center)
 				.frame(maxWidth: contentWidth)
@@ -248,8 +246,6 @@ struct NotchView: View {
 			Image(systemName: "questionmark.circle.fill").foregroundStyle(.blue)
 		case .cancelled:
 			Image(systemName: "xmark.circle.fill").foregroundStyle(.gray)
-		case .note:
-			Image(systemName: "sparkles").foregroundStyle(.purple)
 		case .hidden:
 			EmptyView()
 		}
@@ -267,10 +263,9 @@ struct NotchView: View {
 	private var message: (String, String)? {
 		switch model.phase {
 		case .working(let stage): (stage, "")
-		case .listening: ("All ears…", "Double-tap right ⌥ when you're done")
+		case .listening: ("All ears…", "Tap right ⌥ when you're done")
 		case .done(let title, let detail), .attention(let title, let detail): (title, detail)
 		case .cancelled: ("Wank abandoned", "")
-		case .note(let title, let detail): (title, detail)
 		default: nil
 		}
 	}

@@ -52,10 +52,10 @@ func describeTool(_ name: String, _ input: [String: Any]) -> String? {
 	case "Read" where path.contains("/frames/"): return "Eyeing your screenshots"
 	case "Read" where path.hasSuffix("timeline.md"): return "Replaying your moves"
 	case "Write" where path.hasSuffix("prompt.md"), "Edit" where path.hasSuffix("prompt.md"): return "Writing it all down"
-	case "Write" where path.hasSuffix("automation.json"), "Edit" where path.hasSuffix("automation.json"): return "Setting the rhythm"
+	case "Write" where path.hasSuffix("triggers.json"), "Edit" where path.hasSuffix("triggers.json"): return "Setting the rhythm"
 	case "Bash" where command.contains(" ask "): return "Asking you something"
-	case "Bash" where command.contains("--dry-run"): return "Dry run, so to speak"
-	case "Bash" where command.contains(" install "): return "Booking regular sessions"
+	case "Bash" where command.contains(" automations run "): return "Dry run, so to speak"
+	case "Bash" where command.contains(" create "): return "Booking regular sessions"
 	case "Agent", "Task": return "Lending a hand: " + (input["description"] as? String ?? "working")
 	case "WebSearch": return "Searching: " + (input["query"] as? String ?? "")
 	case "WebFetch": return "Reading " + (URL(string: input["url"] as? String ?? "")?.host ?? "a page")

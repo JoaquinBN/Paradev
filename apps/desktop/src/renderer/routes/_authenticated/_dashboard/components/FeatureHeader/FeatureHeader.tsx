@@ -28,12 +28,6 @@ interface FeatureHeaderProps {
 		onSelect: () => void;
 		disabled: boolean;
 	};
-	secondaryAction?: {
-		label: ReactNode;
-		icon: ReactNode;
-		onSelect: () => void;
-		disabled?: boolean;
-	};
 }
 
 export function FeatureHeader({
@@ -44,7 +38,6 @@ export function FeatureHeader({
 	showCreate = true,
 	createDescription,
 	primaryAction,
-	secondaryAction,
 }: FeatureHeaderProps) {
 	const { t } = useLingui();
 	return (
@@ -77,69 +70,52 @@ export function FeatureHeader({
 					</TooltipContent>
 				</Tooltip>
 			</div>
-			<div className="flex items-center gap-2">
-				{secondaryAction && (
-					<Button
-						size="sm"
-						variant="outline"
-						disabled={secondaryAction.disabled}
-						onClick={secondaryAction.onSelect}
-					>
-						{secondaryAction.icon}
-						{secondaryAction.label}
-					</Button>
-				)}
-				{showCreate &&
-					(primaryAction ? (
-						<ButtonGroup>
-							<Button
-								size="sm"
-								disabled={primaryAction.disabled}
-								onClick={primaryAction.onSelect}
-							>
-								<LuPlus className="size-3.5" />
-								{primaryAction.label}
-							</Button>
-							<DropdownMenu>
-								<DropdownMenuTrigger asChild>
-									<Button
-										size="sm"
-										className="px-2"
-										aria-label={t({ message: "More create options" })}
-									>
-										<LuChevronDown className="size-3.5" />
-									</Button>
-								</DropdownMenuTrigger>
-								<DropdownMenuContent
-									align="end"
-									sideOffset={6}
-									className="w-64"
-								>
-									<DropdownMenuItem
-										className="items-start gap-2.5 p-2.5"
-										disabled={isCreating}
-										onSelect={onCreate}
-									>
-										<LuSparkles className="mt-0.5 size-4" />
-										<span className="flex min-w-0 flex-col gap-0.5">
-											<Trans>Create with AI</Trans>
-											{createDescription && (
-												<span className="text-xs text-muted-foreground">
-													{createDescription}
-												</span>
-											)}
-										</span>
-									</DropdownMenuItem>
-								</DropdownMenuContent>
-							</DropdownMenu>
-						</ButtonGroup>
-					) : (
-						<Button size="sm" disabled={isCreating} onClick={onCreate}>
-							<LuSparkles className="size-3.5" />
-							<Trans>Create with AI</Trans>
+			{showCreate &&
+				(primaryAction ? (
+					<ButtonGroup>
+						<Button
+							size="sm"
+							disabled={primaryAction.disabled}
+							onClick={primaryAction.onSelect}
+						>
+							<LuPlus className="size-3.5" />
+							{primaryAction.label}
 						</Button>
-					))}
-			</div>
+						<DropdownMenu>
+							<DropdownMenuTrigger asChild>
+								<Button
+									size="sm"
+									className="px-2"
+									aria-label={t({ message: "More create options" })}
+								>
+									<LuChevronDown className="size-3.5" />
+								</Button>
+							</DropdownMenuTrigger>
+							<DropdownMenuContent align="end" sideOffset={6} className="w-64">
+								<DropdownMenuItem
+									className="items-start gap-2.5 p-2.5"
+									disabled={isCreating}
+									onSelect={onCreate}
+								>
+									<LuSparkles className="mt-0.5 size-4" />
+									<span className="flex min-w-0 flex-col gap-0.5">
+										<Trans>Create with AI</Trans>
+										{createDescription && (
+											<span className="text-xs text-muted-foreground">
+												{createDescription}
+											</span>
+										)}
+									</span>
+								</DropdownMenuItem>
+							</DropdownMenuContent>
+						</DropdownMenu>
+					</ButtonGroup>
+				) : (
+					<Button size="sm" disabled={isCreating} onClick={onCreate}>
+						<LuSparkles className="size-3.5" />
+						<Trans>Create with AI</Trans>
+					</Button>
+				))}
 		</div>
 	);
 }

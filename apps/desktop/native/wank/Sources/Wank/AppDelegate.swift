@@ -1,13 +1,12 @@
 import AppKit
 import AVFoundation
-import ServiceManagement
+import WankCore
 
 @MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
 	private let model = NotchModel()
 	private var panel: NotchPanel?
 	private var hotkey: Hotkey?
-	private var statusItem: NSStatusItem?
 	private var recorder: Recorder?
 	private var meter: Timer?
 	private var answerMic: AVAudioRecorder?
@@ -15,43 +14,41 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 	private var compiling = 0
 	private var job: Job?
 	private var escapeArmed = Date.distantPast
+	private var waitingForAccessibility = false
 
 	func applicationDidFinishLaunching(_ notification: Notification) {
 		Paths.prepare()
 		panel = NotchPanel(model: model, onTap: { [weak self] in self?.tapped() }, onAnswer: { [weak self] in self?.answer($0) }, onCancel: { [weak self] in self?.cancel() })
 		hotkey = makeHotkey()
-		setUpMenu()
-		askPermissions()
-		try? SMAppService.mainApp.register()
-		greet()
-
-		let center = DistributedNotificationCenter.default()
-		center.addObserver(forName: Notify.ask, object: nil, queue: .main) { [weak self] note in
+		restoreKeptResult()
+		Inbox.listen { [weak self] message in self?.received(message) }
+		DistributedNotificationCenter.default().addObserver(forName: Notify.ask, object: nil, queue: .main) { [weak self] note in
 			let info = note.userInfo as? [String: String] ?? [:]
 			MainActor.assumeIsolated { self?.asked(info) }
 		}
-		NSAppleEventManager.shared().setEventHandler(self, andSelector: #selector(handleURL(_:reply:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
 	}
 
-	func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
-		openWanks()
-		return false
-	}
-
-	/// `wank://record` starts or finishes a recording; Wanker's "Have a wank" button sends it.
-	@objc private func handleURL(_ event: NSAppleEventDescriptor, reply: NSAppleEventDescriptor) {
-		guard let url = event.paramDescriptor(forKeyword: keyDirectObject)?.stringValue.flatMap(URL.init(string:)),
-		      url.scheme == "wank", url.host == "record"
-		else { return }
-		toggle()
-	}
-
-	private func openWanks() {
-		if let url = Wanker.automationsURL { NSWorkspace.shared.open(url) }
+	private func received(_ message: [String: String]) {
+		switch message["type"] {
+		case "record":
+			recorder == nil ? start(screen: true) : finish()
+		case "organization":
+			Wanker.organizationId = message["id"]
+		default:
+			break
+		}
 	}
 
 	private func makeHotkey() -> Hotkey {
-		Hotkey(action: { [weak self] in self?.toggle() }, onEscape: { [weak self] in self?.escape() })
+		Hotkey(onTap: { [weak self] in self?.tap($0) }, onEscape: { [weak self] in self?.escape() })
+	}
+
+	/// One tap records your voice; two taps record your voice and screen. While recording, either one finishes.
+	private func tap(_ tap: TapCounter.Tap) {
+		if answerMic != nil { return finishAnswer() }
+		if case .question = model.phase { return startAnswer() }
+		if recorder != nil { return finish() }
+		start(screen: tap == .double)
 	}
 
 	/// Esc once answers a question with "no". Recording and building need Esc twice, so an Esc
@@ -92,12 +89,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 		}
 	}
 
-	private func toggle() {
-		if answerMic != nil { return finishAnswer() }
-		if case .question = model.phase { return startAnswer() }
-		recorder == nil ? start() : finish()
-	}
-
 	private func asked(_ info: [String: String]) {
 		guard let id = info["id"] else { return }
 		if info["closed"] != nil {
@@ -124,7 +115,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 	}
 
 	private func startAnswer() {
-		let url = FileManager.default.temporaryDirectory.appendingPathComponent("showme-answer.wav")
+		let url = FileManager.default.temporaryDirectory.appendingPathComponent("wank-answer.wav")
 		guard let mic = try? AVAudioRecorder(url: url, settings: Recorder.audioSettings) else { return }
 		mic.isMeteringEnabled = true
 		guard mic.record() else { return }
@@ -145,12 +136,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 		}
 	}
 
-	private func start() {
+	private func start(screen: Bool) {
 		let stamp = ISO8601DateFormatter().string(from: Date()).replacingOccurrences(of: ":", with: "-")
-		let r = Recorder(dir: Paths.captures.appendingPathComponent(stamp))
+		let r = Recorder(dir: Paths.captures.appendingPathComponent(stamp), screen: screen)
 		recorder = r
 		model.show(.recording)
 		startMeter { r.level }
+		if screen { promptForAccessibility() }
 		Task {
 			do {
 				try await r.start()
@@ -160,7 +152,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 				recorder = nil
 				await r.stop()
 				try? FileManager.default.removeItem(at: r.dir)
-				model.show(.attention("Can't record", error.localizedDescription), link: URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture"))
+				model.show(.attention("Can't record", error.localizedDescription), link: URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy"))
 			}
 		}
 	}
@@ -232,13 +224,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 		}
 	}
 
-	private func askPermissions() {
-		let prompt = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true] as CFDictionary
-		_ = AXIsProcessTrustedWithOptions(prompt)
-		AVCaptureDevice.requestAccess(for: .audio) { _ in }
-		if !CGPreflightScreenCaptureAccess() { CGRequestScreenCaptureAccess() }
-	}
-
 	/// A result that needs the user stays in the notch until clicked, even across restarts.
 	private func keep(_ title: String, _ detail: String, link: URL?) {
 		model.show(.attention(title, detail), link: link)
@@ -246,59 +231,25 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 		try? JSONEncoder().encode(kept).write(to: Paths.pending)
 	}
 
-	/// The app is invisible when idle, so say once that it is running, or what it still needs.
-	private func greet() {
-		var missing: [String] = []
-		if !AXIsProcessTrusted() { missing.append("Accessibility") }
-		if !CGPreflightScreenCaptureAccess() { missing.append("Screen Recording") }
-		if AVCaptureDevice.authorizationStatus(for: .audio) == .denied { missing.append("Microphone") }
-		if missing.isEmpty, let data = try? Data(contentsOf: Paths.pending), let kept = try? JSONDecoder().decode([String: String].self, from: data) {
-			model.show(.attention(kept["title"] ?? "", kept["detail"] ?? ""), link: kept["link"].flatMap(URL.init(string:)))
-		} else if missing.isEmpty {
-			model.show(.done("Wank is ready", "Double-tap right ⌥ for a wank"))
-		} else {
-			if !AXIsProcessTrusted() { waitForAccessibility() }
-			model.show(
-				.attention("Allow \(missing.joined(separator: ", "))", "In System Settings → Privacy & Security"),
-				link: URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy")
-			)
-		}
+	private func restoreKeptResult() {
+		guard let data = try? Data(contentsOf: Paths.pending),
+		      let kept = try? JSONDecoder().decode([String: String].self, from: data)
+		else { return }
+		model.show(.attention(kept["title"] ?? "", kept["detail"] ?? ""), link: kept["link"].flatMap(URL.init(string:)))
 	}
 
-	/// Key monitors made before the grant never fire, so remake them once it lands.
-	private func waitForAccessibility() {
+	/// Click names need Accessibility. Key monitors made before the grant never fire, so they're remade once it lands.
+	private func promptForAccessibility() {
+		let prompt = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true] as CFDictionary
+		guard !AXIsProcessTrustedWithOptions(prompt), !waitingForAccessibility else { return }
+		waitingForAccessibility = true
 		Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] timer in
 			MainActor.assumeIsolated {
 				guard AXIsProcessTrusted() else { return }
 				timer.invalidate()
+				self?.waitingForAccessibility = false
 				self?.hotkey = self?.makeHotkey()
-				self?.greet()
 			}
 		}
 	}
-
-	private func setUpMenu() {
-		let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-		item.button?.image = NSImage(systemSymbolName: "wand.and.rays", accessibilityDescription: "Wank")
-		let menu = NSMenu()
-		menu.addItem(NSMenuItem(title: "Start or finish a wank (double-tap right ⌥)", action: #selector(menuToggle), keyEquivalent: ""))
-		menu.addItem(NSMenuItem(title: "Abandon this wank", action: #selector(menuDiscard), keyEquivalent: ""))
-		menu.addItem(NSMenuItem(title: "Show last result", action: #selector(menuLastReport), keyEquivalent: ""))
-		menu.addItem(NSMenuItem(title: "Open Wanks in Wanker", action: #selector(menuOpen), keyEquivalent: ""))
-		menu.addItem(.separator())
-		menu.addItem(NSMenuItem(title: "Quit Wank", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
-		for entry in menu.items where entry.action != #selector(NSApplication.terminate(_:)) { entry.target = self }
-		item.menu = menu
-		statusItem = item
-	}
-
-	@objc private func menuToggle() { toggle() }
-	@objc private func menuDiscard() { finish(discard: true) }
-	@objc private func menuLastReport() {
-		let captures = (try? FileManager.default.contentsOfDirectory(at: Paths.captures, includingPropertiesForKeys: nil)) ?? []
-		let reports = captures.map { $0.appendingPathComponent("report.html") }.filter { FileManager.default.fileExists(atPath: $0.path) }
-		if let last = reports.max(by: { $0.path < $1.path }) { NSWorkspace.shared.open(last) }
-	}
-
-	@objc private func menuOpen() { openWanks() }
 }

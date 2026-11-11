@@ -3345,17 +3345,11 @@ msgstr "Titel van automatisering"
 msgid "Automations"
 msgstr "Automatiseringen"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Automatiseringen ({myFailedCount} mislukt)"
-
 msgid "Automations & event triggers"
 msgstr "Automatiseringen en event-triggers"
 
 msgid "Automations require the Pro plan."
 msgstr "Automatiseringen vereisen het Pro-abonnement."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Automatiseringen, {myFailedCount} mislukt"
 
 msgid "Autonomous"
 msgstr "Autonoom"
@@ -6296,9 +6290,6 @@ msgstr "Kan de designmodus niet starten op deze pagina"
 
 msgid "Couldn't start voice mode"
 msgstr "Spraakmodus kon niet worden gestart"
-
-msgid "Couldn't start Wank. Open the Wank app and try again."
-msgstr "Wank kon niet worden gestart. Open de Wank-app en probeer het opnieuw."
 
 msgid "Couldn't start workspace"
 msgstr "Kan werkruimte niet starten"
@@ -21683,6 +21674,9 @@ msgstr "Werkruimte wordt gewekt…"
 msgid "Waking up workspace"
 msgstr "Werkruimte wordt gewekt"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank heeft macOS 26 of nieuwer nodig."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21869,6 +21863,12 @@ msgstr "Met de mobiele app van Wanker kan ik mijn agents overal aan het werk hou
 
 msgid "Wanks"
 msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks ({myFailedCount} mislukt)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, {myFailedCount} mislukt"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Wil je iets eerder zien? <0>Laat het weten in Discord</0>. Veel van wat hier staat begon als gebruikersverzoek."
