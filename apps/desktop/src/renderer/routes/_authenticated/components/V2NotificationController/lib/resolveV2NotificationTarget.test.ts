@@ -132,12 +132,15 @@ describe("resolveV2NotificationTarget", () => {
 		).toBe(false);
 	});
 
-	it("finds and reports visible a terminal in the right pane layout", () => {
+	it.each([
+		"rightPaneLayout",
+		"terminalPaneLayout",
+	] as const)("finds and reports visible a terminal in %s", (slot) => {
 		const target = resolveV2NotificationTarget({
 			workspaceId: WORKSPACE_ID,
 			payload: payload({ terminalId: "terminal-1" }),
 			paneLayout: { version: 1, tabs: [], activeTabId: null },
-			rightPaneLayout: layout,
+			[slot]: layout,
 		});
 
 		expect(target).toMatchObject({
@@ -148,9 +151,19 @@ describe("resolveV2NotificationTarget", () => {
 			isV2NotificationTargetVisible({
 				currentWorkspaceId: WORKSPACE_ID,
 				paneLayout: { version: 1, tabs: [], activeTabId: null },
-				rightPaneLayout: layout,
+				[slot]: layout,
 				target,
 			}),
 		).toBe(true);
+		if (slot === "terminalPaneLayout")
+			expect(
+				isV2NotificationTargetVisible({
+					currentWorkspaceId: WORKSPACE_ID,
+					paneLayout: null,
+					terminalPaneLayout: layout,
+					terminalDockVisible: false,
+					target,
+				}),
+			).toBe(false);
 	});
 });

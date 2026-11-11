@@ -38,6 +38,7 @@ import {
 } from "../../constants";
 import type { ChatForkTarget } from "../../types";
 import { pageLinkFinder } from "../../utils/pageLinks";
+import { SessionWelcome } from "../SessionWelcome";
 import { TranscriptFindBar } from "./components/TranscriptFindBar";
 import { TranscriptRowItem } from "./components/TranscriptRowItem";
 import { useCarriedReaderPosition } from "./hooks/useCarriedReaderPosition";
@@ -449,6 +450,7 @@ export function Transcript({
 							"flex select-text flex-col pt-4 pb-8",
 						)}
 					>
+						{rows.length === 0 && <SessionWelcome />}
 						{contentChildren}
 					</MessageScroller.Content>
 				</MessageScroller.Viewport>

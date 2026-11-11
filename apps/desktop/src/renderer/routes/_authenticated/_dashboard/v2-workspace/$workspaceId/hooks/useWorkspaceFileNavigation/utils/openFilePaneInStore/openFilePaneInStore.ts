@@ -11,6 +11,7 @@ export function openFilePaneInStore(
 	filePath: string,
 	openInNewTab?: boolean,
 	position?: FilePosition,
+	placement: "pane" | "tab" = "pane",
 ): void {
 	const pendingPosition =
 		position && Number.isFinite(position.line)
@@ -48,5 +49,6 @@ export function openFilePaneInStore(
 			return;
 		}
 	}
-	state.openPane({ pane: { kind: "file", data } });
+	if (placement === "tab") state.addTab({ panes: [{ kind: "file", data }] });
+	else state.openPane({ pane: { kind: "file", data } });
 }

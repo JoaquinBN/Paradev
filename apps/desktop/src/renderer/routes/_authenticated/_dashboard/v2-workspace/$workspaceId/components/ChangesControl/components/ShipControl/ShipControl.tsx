@@ -29,6 +29,7 @@ interface ShipControlProps {
 	 * actions collapse into the chevron menu so the control keeps one face.
 	 */
 	compact?: boolean;
+	primaryAction?: "next-step" | "create-pr";
 }
 
 /**
@@ -46,6 +47,7 @@ export function ShipControl({
 	sync,
 	onRefresh,
 	compact = false,
+	primaryAction = "next-step",
 }: ShipControlProps) {
 	const { t } = useLingui();
 	const needsCommit = sync.hasUncommitted;
@@ -53,7 +55,9 @@ export function ShipControl({
 
 	// Which popover form is open; both anchor to the whole segment so the
 	// compact menu items and the full-mode faces share one Popover.
-	const [view, setView] = useState<"commit" | "pr" | null>(null);
+	const [view, setView] = useState<"commit" | "commit-for-pr" | "pr" | null>(
+		null,
+	);
 	// A compact menu item can't open the popover directly: the menu content
 	// stays mounted (and keeps reclaiming focus) through its exit animation,
 	// so a popover opened on click loses its autofocused field a few
@@ -66,16 +70,22 @@ export function ShipControl({
 		workspaceId,
 		onRefresh,
 		isPrFormOpen: view === "pr",
-		onCommitted: () => setView(null),
+		onCommitted: () =>
+			setView((current) => (current === "commit-for-pr" ? "pr" : null)),
 		onPrCreated: () => setView(null),
 	});
 	const { canCreatePr, hasCommitsAhead, isShipping } = actions;
+	const preferCreatePr = primaryAction === "create-pr" && canCreatePr;
 	const openPrView = () => {
+		if (preferCreatePr && needsCommit) {
+			setView("commit-for-pr");
+			return;
+		}
 		actions.seedPrTitle();
 		setView("pr");
 	};
 
-	const showCreatePr = !needsCommit && canCreatePr;
+	const showCreatePr = canCreatePr && (!needsCommit || preferCreatePr);
 	if (!needsCommit && !showCreatePr && !needsPush) return null;
 
 	const noCommitsTooltip = t({
@@ -179,7 +189,7 @@ export function ShipControl({
 						</DropdownMenu>
 					) : (
 						<>
-							{needsCommit ? (
+							{needsCommit && !preferCreatePr ? (
 								<button
 									type="button"
 									className={mainButtonClass}
@@ -196,8 +206,16 @@ export function ShipControl({
 								<button
 									type="button"
 									className={mainButtonClass}
-									disabled={!hasCommitsAhead}
-									title={hasCommitsAhead ? undefined : noCommitsTooltip}
+									disabled={
+										isShipping ||
+										actions.isCommitting ||
+										(!hasCommitsAhead && !needsCommit)
+									}
+									title={
+										hasCommitsAhead || needsCommit
+											? undefined
+											: noCommitsTooltip
+									}
 									onClick={openPrView}
 								>
 									{isShipping ? (
@@ -222,22 +240,46 @@ export function ShipControl({
 									<Trans>Push</Trans>
 								</button>
 							)}
-							{needsPush && (needsCommit || showCreatePr) && (
+							{((needsPush && (needsCommit || showCreatePr)) ||
+								(preferCreatePr && needsCommit)) && (
 								<>
 									<div className="h-full w-px bg-border/60" />
 									<DropdownMenu>
 										<DropdownMenuTrigger asChild>
 											{chevronButton}
 										</DropdownMenuTrigger>
-										<DropdownMenuContent align="end" className="w-40">
-											<DropdownMenuItem
-												className="text-xs"
-												disabled={actions.isPushing}
-												onClick={actions.push}
-											>
-												<VscRepoPush className="size-3.5" />
-												<Trans>Push</Trans>
-											</DropdownMenuItem>
+										<DropdownMenuContent
+											align="end"
+											className="w-40"
+											onCloseAutoFocus={(event) => {
+												if (pendingViewRef.current !== "commit") return;
+												pendingViewRef.current = null;
+												event.preventDefault();
+												setView("commit");
+											}}
+										>
+											{preferCreatePr && needsCommit && (
+												<DropdownMenuItem
+													className="text-xs"
+													disabled={actions.isCommitting}
+													onSelect={() => {
+														pendingViewRef.current = "commit";
+													}}
+												>
+													<VscGitCommit className="size-3.5" />
+													<Trans>Commit</Trans>
+												</DropdownMenuItem>
+											)}
+											{needsPush && (
+												<DropdownMenuItem
+													className="text-xs"
+													disabled={actions.isPushing}
+													onClick={actions.push}
+												>
+													<VscRepoPush className="size-3.5" />
+													<Trans>Push</Trans>
+												</DropdownMenuItem>
+											)}
 										</DropdownMenuContent>
 									</DropdownMenu>
 								</>
@@ -249,10 +291,29 @@ export function ShipControl({
 			<PopoverContent
 				align="end"
 				sideOffset={8}
-				className={view === "pr" ? "w-96 p-3" : "w-80 p-3"}
+				className="w-96 max-w-[calc(100vw-2rem)] p-4"
+				aria-label={
+					view === "commit"
+						? t({ message: "Commit" })
+						: t({ message: "Create pull request" })
+				}
 			>
-				{view === "commit" ? (
-					<CommitForm actions={actions} />
+				{view !== "pr" ? (
+					<div className="space-y-3">
+						{view === "commit-for-pr" && (
+							<div className="space-y-1">
+								<h3 className="text-sm font-medium">
+									<Trans>Create pull request</Trans>
+								</h3>
+								<p className="text-xs leading-relaxed text-muted-foreground">
+									<Trans>
+										Commit your changes, then add the pull request details.
+									</Trans>
+								</p>
+							</div>
+						)}
+						<CommitForm actions={actions} />
+					</div>
 				) : (
 					<CreatePrForm actions={actions} />
 				)}

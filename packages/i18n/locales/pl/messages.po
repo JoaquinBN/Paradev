@@ -283,6 +283,10 @@ msgstr "{0, plural, one {# zadanie} few {# zadania} many {# zadań} other {# zad
 msgid "{0, plural, one {# terminal running} other {# terminals running}}"
 msgstr "{0, plural, one {# działający terminal} few {# działające terminale} many {# działających terminali} other {# działającego terminala}}"
 
+#. placeholder {0}: items.length
+msgid "{0, plural, one {# tool call} other {# tool calls}}"
+msgstr "{0, plural, one {# wywołanie narzędzia} few {# wywołania narzędzi} many {# wywołań narzędzi} other {# wywołania narzędzi}}"
+
 #. placeholder {0}: group.workspaceCount
 #. placeholder {0}: selectedWorkspaces.length
 msgid "{0, plural, one {# workspace} other {# workspaces}}"
@@ -357,10 +361,6 @@ msgstr "{0, plural, one {Jej # automatyzacja trafi do grupy „Bez grupy”. Sam
 #. placeholder {0}: issues.length
 msgid "{0, plural, one {Linear issue} other {Linear issues}}"
 msgstr "{0, plural, one {zgłoszenie Linear} few {zgłoszenia Linear} many {zgłoszeń Linear} other {zgłoszenia Linear}}"
-
-#. placeholder {0}: selectedWorkspaces.length
-msgid "{0, plural, one {Move # selected workspace to a group} other {Move # selected workspaces to a group}}"
-msgstr "{0, plural, one {Przenieś # wybrany obszar roboczy do grupy} few {Przenieś # wybrane obszary robocze do grupy} many {Przenieś # wybranych obszarów roboczych do grupy} other {Przenieś # wybranego obszaru roboczego do grupy}}"
 
 #. placeholder {0}: move.chats.total - move.chats.ready - move.chats.failed
 msgid "{0, plural, one {Moving # chat here…} other {Moving # chats here…}}"
@@ -1955,6 +1955,9 @@ msgstr "Akcje"
 msgid "Actions for {0}"
 msgstr "Akcje dla {0}"
 
+msgid "Actions for {name}"
+msgstr "Działania dla {name}"
+
 msgid "Active"
 msgstr "Aktywna"
 
@@ -3516,6 +3519,9 @@ msgstr "Zachowanie"
 msgid "Behind main by ? commits, needs rebase"
 msgstr "Za main o ? commitów, wymaga rebase"
 
+msgid "Behind remote"
+msgstr "Za zdalną gałęzią"
+
 msgid "Being built right now."
 msgstr "Budowane właśnie teraz."
 
@@ -4325,6 +4331,9 @@ msgstr "Wybierz folder"
 msgid "Choose a parent directory"
 msgstr "Wybierz katalog nadrzędny"
 
+msgid "Choose a project and describe your task. Chats and changes stay together in the workspace."
+msgstr "Wybierz projekt i opisz zadanie. Czaty i zmiany pozostają razem w obszarze roboczym."
+
 msgid "Choose a project from GitHub issues before opening an issue."
 msgstr "Wybierz projekt w Zgłoszeniach GitHub, zanim otworzysz zgłoszenie."
 
@@ -4979,6 +4988,9 @@ msgstr "Opis commita"
 msgid "Commit message (optional)"
 msgstr "Komunikat commita (opcjonalnie)"
 
+msgid "Commit your changes, then add the pull request details."
+msgstr "Zatwierdź zmiany, a następnie dodaj szczegóły pull requesta."
+
 msgid "Commits"
 msgstr "Commity"
 
@@ -5020,6 +5032,9 @@ msgstr "Firmowy e-mail"
 
 msgid "Compare"
 msgstr "Porównanie"
+
+msgid "Compare changes"
+msgstr "Porównaj zmiany"
 
 msgid "Compare Paradev | AI Coding Comparisons and Guides"
 msgstr "Porównaj Paradev | Porównania i przewodniki po kodowaniu z AI"
@@ -6411,9 +6426,6 @@ msgstr "Utwórz ręcznie"
 msgid "Create Merge Commit"
 msgstr "Utwórz commit scalający"
 
-msgid "Create new group"
-msgstr "Utwórz nową grupę"
-
 msgid "Create new project"
 msgstr "Utwórz nowy projekt"
 
@@ -7097,6 +7109,9 @@ msgstr "Głębokość · tokeny na sesję"
 msgid "descending"
 msgstr "malejąco"
 
+msgid "Describe a task, review a change, or investigate a bug."
+msgstr "Opisz zadanie, przejrzyj zmianę lub zbadaj błąd."
+
 msgid "Describe the change."
 msgstr "Opisz zmianę."
 
@@ -7584,6 +7599,9 @@ msgstr "przygotował 3 odpowiedzi wsparcia"
 
 msgid "Drag <0>Paradev</0> into your <1>Applications</1> folder"
 msgstr "Przeciągnij <0>Paradev</0> do folderu <1>Aplikacje</1>"
+
+msgid "Drag a workspace here or use Move to section."
+msgstr "Przeciągnij tutaj obszar roboczy lub użyj Przenieś do sekcji."
 
 msgid "Drag to reorder"
 msgstr "Przeciągnij, aby zmienić kolejność"
@@ -8841,6 +8859,9 @@ msgstr "Filtruj wg @{normalizedSearch}"
 msgid "Filter by author: {label}"
 msgstr "Filtruj według autora: {label}"
 
+msgid "Filter by project"
+msgstr "Filtruj według projektu"
+
 msgid "Filter by reviews"
 msgstr "Filtruj wg przeglądów"
 
@@ -9721,6 +9742,9 @@ msgstr "Ukryj panel"
 
 msgid "Hide Preview"
 msgstr "Ukryj podgląd"
+
+msgid "Hide project"
+msgstr "Ukryj projekt"
 
 msgid "Hide pull request list"
 msgstr "Ukryj listę pull requestów"
@@ -11344,9 +11368,6 @@ msgstr "Wczytywanie czcionek..."
 msgid "Loading GitHub details"
 msgstr "Wczytywanie szczegółów z GitHub"
 
-msgid "Loading groups…"
-msgstr "Wczytywanie grup…"
-
 msgid "Loading issue…"
 msgstr "Wczytywanie zgłoszenia…"
 
@@ -12095,9 +12116,6 @@ msgstr "Większość historii oprogramowania"
 msgid "Move"
 msgstr "Przenieś"
 
-msgid "Move {count} to Group"
-msgstr "Przenieś {count} do grupy"
-
 msgid "Move {name} to background"
 msgstr "Przenieś {name} w tło"
 
@@ -12131,11 +12149,14 @@ msgstr "Przenieś do grupy"
 msgid "Move to group…"
 msgstr "Przenieś do grupy…"
 
+msgid "Move to My workspaces"
+msgstr "Przenieś do Moich obszarów roboczych"
+
 msgid "Move to Right Side"
 msgstr "Przenieś na prawą stronę"
 
-msgid "Move to Tab"
-msgstr "Przenieś do karty"
+msgid "Move to section"
+msgstr "Przenieś do sekcji"
 
 msgid "Move your agents before {shutdownDate}."
 msgstr "Przenieś swoich agentów przed {shutdownDate}."
@@ -12189,6 +12210,9 @@ msgstr "Moje słowa kluczowe"
 
 msgid "My Tasks"
 msgstr "Moje zadania"
+
+msgid "My workspaces"
+msgstr "Moje obszary robocze"
 
 msgid "Mystery Machinist"
 msgstr "Tajemniczy Tokarz"
@@ -12352,12 +12376,6 @@ msgstr "Nowy folder"
 msgid "New Folder..."
 msgstr "Nowy folder..."
 
-msgid "New group"
-msgstr "Nowa grupa"
-
-msgid "New group from workspace"
-msgstr "Nowa grupa z obszaru roboczego"
-
 msgid "New group name…"
 msgstr "Nazwa nowej grupy…"
 
@@ -12381,6 +12399,12 @@ msgstr "Nowy projekt"
 
 msgid "New push to branch"
 msgstr "Nowy push do gałęzi"
+
+msgid "New section"
+msgstr "Nowa sekcja"
+
+msgid "New section from workspace"
+msgstr "Nowa sekcja z obszaru roboczego"
 
 msgid "New session"
 msgstr "Nowa sesja"
@@ -12730,6 +12754,9 @@ msgstr "Żaden plik nie pasuje do wyszukiwania"
 msgid "No fonts found."
 msgstr "Nie znaleziono czcionek."
 
+msgid "No Git remote"
+msgstr "Brak zdalnego repozytorium Git"
+
 msgid "No git remote detected"
 msgstr "Nie wykryto zdalnego repozytorium git"
 
@@ -12738,9 +12765,6 @@ msgstr "Bez grupy"
 
 msgid "No grouping"
 msgstr "Bez grupowania"
-
-msgid "No groups yet"
-msgstr "Brak grup"
 
 msgid "No Headings"
 msgstr "Brak nagłówków"
@@ -14276,6 +14300,9 @@ msgstr "Zaktualizowano adres URL organizacji!"
 #. placeholder {0}: selectedOrg.name
 msgid "Organization: <0>{0}</0>"
 msgstr "Organizacja: <0>{0}</0>"
+
+msgid "Organize workspaces across projects. Their files and chats stay in place."
+msgstr "Organizuj obszary robocze z różnych projektów. Ich pliki i czaty pozostają na swoim miejscu."
 
 msgid "Organize your work into teams. Tasks and integrations can sync per-team."
 msgstr "Organizuj pracę w zespoły. Zadania i integracje mogą synchronizować się per zespół."
@@ -16168,6 +16195,9 @@ msgstr "Usuń repozytorium"
 msgid "Remove script"
 msgstr "Usuń skrypt"
 
+msgid "Remove section"
+msgstr "Usuń sekcję"
+
 msgid "Remove team member?"
 msgstr "Usunąć członka zespołu?"
 
@@ -16240,6 +16270,9 @@ msgstr "Zmień nazwę hosta"
 
 msgid "Rename page"
 msgstr "Zmień nazwę strony"
+
+msgid "Rename section"
+msgstr "Zmień nazwę sekcji"
 
 msgid "Rename session"
 msgstr "Zmień nazwę sesji"
@@ -17478,6 +17511,15 @@ msgstr "Secondary"
 msgid "Secret Shift Lead"
 msgstr "Tajny Kierownik Zmiany"
 
+msgid "Section"
+msgstr "Sekcja"
+
+msgid "Section actions"
+msgstr "Działania sekcji"
+
+msgid "Section name"
+msgstr "Nazwa sekcji"
+
 msgid "Sections"
 msgstr "Sekcje"
 
@@ -18688,9 +18730,6 @@ msgstr "Przycisk dzielony: otwórz worktree w domyślnej aplikacji + lista wybor
 msgid "Split Down"
 msgstr "Podziel w dół"
 
-msgid "Split Horizontally"
-msgstr "Podziel poziomo"
-
 msgid "split pane"
 msgstr "podzielony panel"
 
@@ -18721,14 +18760,8 @@ msgstr "Podziel bieżący panel w dół"
 msgid "Split the current pane to the right"
 msgstr "Podziel bieżący panel w prawo"
 
-msgid "Split Vertically"
-msgstr "Podziel pionowo"
-
 msgid "Split view"
 msgstr "Widok dzielony"
-
-msgid "Split with Desktop"
-msgstr "Podziel z pulpitem"
 
 msgid "Split with Mobile Simulator"
 msgstr "Podziel z symulatorem mobilnym"
@@ -21138,12 +21171,6 @@ msgstr "Cofnij ostatnią archiwizację obszaru roboczego lub zamknięcie czatów
 msgid "Unfollow thread"
 msgstr "Przestań obserwować wątek"
 
-msgid "Ungroup"
-msgstr "Rozgrupuj"
-
-msgid "Ungroup selected workspaces"
-msgstr "Rozgrupuj zaznaczone obszary robocze"
-
 msgid "Unified view"
 msgstr "Widok scalony"
 
@@ -22327,6 +22354,9 @@ msgstr "Ustawienia obszaru roboczego"
 
 msgid "Workspace views"
 msgstr "Widoki obszarów roboczych"
+
+msgid "Workspace without a project"
+msgstr "Obszar roboczy bez projektu"
 
 msgid "Workspace worktree not available"
 msgstr "Worktree obszaru roboczego niedostępny"

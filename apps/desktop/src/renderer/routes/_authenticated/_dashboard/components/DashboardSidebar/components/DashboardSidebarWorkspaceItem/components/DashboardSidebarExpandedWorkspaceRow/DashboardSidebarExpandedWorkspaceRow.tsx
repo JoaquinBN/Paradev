@@ -220,7 +220,7 @@ export const DashboardSidebarExpandedWorkspaceRow = forwardRef<
 					onFocus={handleRowFocus}
 					onBlur={handleRowBlur}
 					className={cn(
-						"group relative flex h-7 w-full items-center pr-2",
+						"group relative flex min-h-10 w-full items-center py-1.5 pr-2",
 						resolvedIndentation === "top-level"
 							? "pl-2"
 							: resolvedIndentation === "grouped"
@@ -339,7 +339,10 @@ export const DashboardSidebarExpandedWorkspaceRow = forwardRef<
 						</Tooltip>
 					)}
 
-					<div className="grid min-w-0 flex-1 grid-cols-[minmax(0,1fr)_auto] items-center gap-x-1.5">
+					<div
+						data-design-surface="sidebar-workspace-content"
+						className="grid min-w-0 flex-1 grid-cols-[minmax(0,1fr)_auto] items-center gap-x-1.5"
+					>
 						{isRenaming ? (
 							<RenameInput
 								value={renameValue}
@@ -376,6 +379,15 @@ export const DashboardSidebarExpandedWorkspaceRow = forwardRef<
 									</span>
 								)}
 							</>
+						)}
+
+						{!isRenaming && branch && branch !== name && (
+							<span
+								className="col-start-1 row-start-2 mt-1 truncate text-[11px] leading-4 text-muted-foreground"
+								title={branch}
+							>
+								{branch}
+							</span>
 						)}
 
 						<div className="col-start-2 row-start-1 flex h-5 shrink-0 items-center gap-2">

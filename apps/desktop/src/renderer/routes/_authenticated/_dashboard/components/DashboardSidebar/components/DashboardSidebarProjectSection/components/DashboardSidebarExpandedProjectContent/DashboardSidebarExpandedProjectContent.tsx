@@ -29,6 +29,7 @@ const isBulkSelectable = (workspace: DashboardSidebarWorkspace) =>
 interface DashboardSidebarExpandedProjectContentProps {
 	/** DnD container: a project id, or SESSIONS_CONTAINER for the Sessions lane. */
 	containerId: string;
+	sectionIdFilter?: string | null;
 	/** Lane the rows are filed under: the project id, or null for sessions. */
 	projectId: string | null;
 	isCollapsed: boolean;
@@ -60,6 +61,7 @@ interface DashboardSidebarExpandedProjectContentProps {
  */
 export function DashboardSidebarExpandedProjectContent({
 	containerId,
+	sectionIdFilter,
 	projectId,
 	isCollapsed,
 	topLevelIndentation,
@@ -82,13 +84,20 @@ export function DashboardSidebarExpandedProjectContent({
 		workspacesById,
 		sectionsById,
 	} = useDashboardSidebarDnd();
-	const flatItems = useMemo(
-		() =>
+	const flatItems = useMemo(() => {
+		const items =
 			containerId === SESSIONS_CONTAINER
 				? sessionItems
-				: (projectItems[containerId] ?? []),
-		[projectItems, sessionItems, containerId],
-	);
+				: (projectItems[containerId] ?? []);
+		if (sectionIdFilter === undefined) return items;
+		return items.filter((id) => {
+			const parsed = parseId(id);
+			return (
+				parsed?.type === "workspace" &&
+				(groupInfo.get(parsed.realId)?.sectionId ?? null) === sectionIdFilter
+			);
+		});
+	}, [projectItems, sessionItems, containerId, sectionIdFilter, groupInfo]);
 	const sortingStrategy = getContainerSortingStrategy(containerId);
 	const { isWorkspaceSelected, selectWorkspaceFromEvent } =
 		useDashboardSidebarSelection();
@@ -96,6 +105,7 @@ export function DashboardSidebarExpandedProjectContent({
 	// A pinned workspace can only return to its home container; when every row
 	// of that container is pinned, the empty list needs an explicit drop target.
 	const dropZoneEligible =
+		sectionIdFilter === undefined &&
 		!isCollapsed &&
 		flatItems.length === 0 &&
 		activeWorkspaceHome === containerId;
@@ -170,7 +180,9 @@ export function DashboardSidebarExpandedProjectContent({
 									const group = groupInfo.get(parsed.realId);
 									const isInSection = !!group;
 									const isInCollapsedSection =
-										isInSection && collapsedSectionIds.has(group.sectionId);
+										sectionIdFilter === undefined &&
+										isInSection &&
+										collapsedSectionIds.has(group.sectionId);
 									const inDraggedSection =
 										isInSection && group.sectionId === activeSectionId;
 									const canBulkSelect = isBulkSelectable(workspace);
@@ -188,7 +200,11 @@ export function DashboardSidebarExpandedProjectContent({
 											accentColor={group?.color}
 											isInSection={isInSection}
 											indentation={
-												isInSection ? groupedIndentation : topLevelIndentation
+												sectionIdFilter !== undefined
+													? "workspace"
+													: isInSection
+														? groupedIndentation
+														: topLevelIndentation
 											}
 											onHoverCardOpen={onWorkspaceHover}
 											shortcutLabel={workspaceShortcutLabels.get(parsed.realId)}

@@ -1,10 +1,11 @@
 import { useLingui } from "@lingui/react/macro";
 import { Button } from "@superset/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@superset/ui/tooltip";
-import { Folder, ListTree } from "lucide-react";
+import { Folder, List, ListTree } from "lucide-react";
 import type { ChangesViewMode } from "renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema";
 
 interface ViewModeToggleProps {
+	flat?: boolean;
 	viewMode: ChangesViewMode;
 	onChange: (next: ChangesViewMode) => void;
 }
@@ -13,16 +14,22 @@ interface ViewModeToggleProps {
  * Single toggle between folders (flat by parent folder) and tree (full
  * directory hierarchy) views. Shows the mode it will switch to.
  */
-export function ViewModeToggle({ viewMode, onChange }: ViewModeToggleProps) {
+export function ViewModeToggle({
+	viewMode,
+	onChange,
+	flat = false,
+}: ViewModeToggleProps) {
 	const { t } = useLingui();
 	const next: ChangesViewMode = viewMode === "folders" ? "tree" : "folders";
 	const label =
 		next === "tree"
 			? t({ message: "Tree view" })
-			: t({
-					message: "Folder view",
-				});
-	const Icon = next === "tree" ? ListTree : Folder;
+			: flat
+				? t({ message: "List" })
+				: t({
+						message: "Folder view",
+					});
+	const Icon = next === "tree" ? ListTree : flat ? List : Folder;
 	return (
 		<Tooltip>
 			<TooltipTrigger asChild>

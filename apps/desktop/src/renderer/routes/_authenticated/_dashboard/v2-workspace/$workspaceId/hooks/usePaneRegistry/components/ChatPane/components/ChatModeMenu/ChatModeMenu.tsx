@@ -14,5 +14,7 @@ export function ChatModeMenu({
 }) {
 	const source = useSurfaceForkSource(workspaceId, { kind: "chat", data });
 	if (!source) return null;
-	return <SurfaceModeMenu mode="chat" source={source} onFork={onFork} />;
+	return (
+		<SurfaceModeMenu compact mode="chat" source={source} onFork={onFork} />
+	);
 }

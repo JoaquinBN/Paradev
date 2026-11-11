@@ -62,6 +62,7 @@ import {
 	type ChatPaneData,
 	type CommentPaneData,
 	type DevtoolsPaneData,
+	type DiffPaneData,
 	type FilePaneData,
 	NEW_TAB_PANE_KIND,
 	type PagePaneData,
@@ -85,7 +86,6 @@ import { replaceNewTabPane } from "../../utils/replaceNewTabPane";
 import { useAgentSessionLauncher } from "../useAgentSessionLauncher";
 import type { OpenReviewDiff } from "../useReviewCommentNavigation";
 import type { TerminalLauncher } from "../useV2TerminalLauncher";
-import { AccountUsage } from "./components/AccountUsage";
 import { AgentTerminalPane } from "./components/AgentTerminalPane";
 import { BrowserPane, BrowserPaneToolbar } from "./components/BrowserPane";
 import { ChangesListPane } from "./components/ChangesListPane";
@@ -122,6 +122,7 @@ import { TerminalPaneHeaderExtras } from "./components/TerminalPane/components/T
 import { TerminalPaneIcon } from "./components/TerminalPane/components/TerminalPaneIcon";
 import { TerminalSessionDropdown } from "./components/TerminalPane/components/TerminalSessionDropdown";
 import { terminalContextMenuLinkStore } from "./components/TerminalPane/contextMenuLinkStore";
+import { WorkspaceChangesSidebar } from "./components/WorkspaceChangesSidebar";
 import { useSurfaceFork } from "./hooks/useSurfaceFork";
 import { useUndoableChatClose } from "./hooks/useUndoableChatClose";
 import { openInActions } from "./utils/openInActions";
@@ -183,6 +184,7 @@ interface UsePaneRegistryOptions {
 	linkedStores?: StoreApi<WorkspaceStore<PaneViewerData>>[];
 	onOpenSubagent: (data: SubagentPaneData) => void;
 	onSearch?: () => void;
+	pendingFileReveal?: { path: string; isDirectory: boolean } | null;
 	/** File views in this store show the file tree and breadcrumb. */
 	rightStore?: StoreApi<WorkspaceStore<PaneViewerData>>;
 }
@@ -196,6 +198,7 @@ export function usePaneRegistry({
 	linkedStores,
 	onOpenSubagent,
 	onSearch,
+	pendingFileReveal,
 	rightStore,
 }: UsePaneRegistryOptions): PaneRegistry<PaneViewerData> {
 	const { t } = useLingui();
@@ -433,8 +436,15 @@ export function usePaneRegistry({
 			},
 			diff: {
 				keepAlive: true,
+				hideHeader: (ctx) =>
+					ctx.store === rightStore && !(ctx.pane.data as DiffPaneData).filter,
 				getIcon: () => <GitCompareArrows className="size-3.5" />,
-				getTitle: () => t({ message: "Changes" }),
+				getTitle: (pane) => {
+					const data = pane.data as DiffPaneData;
+					return data.path && data.filter?.scope === "file"
+						? getFileName(data.path)
+						: t({ message: "Changes" });
+				},
 				// With the right pane area, the pane fills its own header (scope on
 				// the left, view controls on the right) through these slots.
 				renderTitle: (ctx: RendererContext<PaneViewerData>) => (
@@ -443,14 +453,26 @@ export function usePaneRegistry({
 						className="flex min-w-0 items-center"
 					/>
 				),
-				renderPane: (ctx: RendererContext<PaneViewerData>) => (
-					<DiffPane
-						context={ctx}
-						workspaceId={workspaceId}
-						onOpenFile={onOpenFile}
-						onCreateNewAgentSession={createNewAgentSession}
-					/>
-				),
+				renderPane: (ctx: RendererContext<PaneViewerData>) =>
+					ctx.store === rightStore &&
+					!(ctx.pane.data as DiffPaneData).filter ? (
+						<WorkspaceChangesSidebar
+							context={ctx}
+							centerStore={store}
+							workspaceId={workspaceId}
+							pendingFileReveal={pendingFileReveal}
+							onOpenDiff={onOpenDiff}
+							onOpenFile={onOpenFile}
+							onSearch={onSearch}
+						/>
+					) : (
+						<DiffPane
+							context={ctx}
+							workspaceId={workspaceId}
+							onOpenFile={onOpenFile}
+							onCreateNewAgentSession={createNewAgentSession}
+						/>
+					),
 				renderHeaderExtras: (ctx: RendererContext<PaneViewerData>) => (
 					<DiffPaneHeaderSlot
 						id={diffPaneActionsSlotId(ctx.pane.id)}
@@ -956,11 +978,6 @@ export function usePaneRegistry({
 								workspaceId={workspaceId}
 								linkedStores={linkedStores}
 							/>
-							<AccountUsage
-								key={`${workspaceId}:${data.terminalId}`}
-								workspaceId={workspaceId}
-								terminalId={data.terminalId}
-							/>
 							<ChatModeMenu
 								data={data}
 								onFork={(source) => void forkIntoOtherSurface(ctx, source)}
@@ -1157,6 +1174,7 @@ export function usePaneRegistry({
 			onOpenFile,
 			onRevealPath,
 			onSearch,
+			pendingFileReveal,
 			createNewAgentSession,
 			focusAgentTerminal,
 			workspaceTrpcUtils,

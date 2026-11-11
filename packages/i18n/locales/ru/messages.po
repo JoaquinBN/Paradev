@@ -283,6 +283,10 @@ msgstr "{0, plural, one {# задача} few {# задачи} many {# задач
 msgid "{0, plural, one {# terminal running} other {# terminals running}}"
 msgstr "{0, plural, one {# терминал запущен} few {# терминала запущено} many {# терминалов запущено} other {# терминала запущено}}"
 
+#. placeholder {0}: items.length
+msgid "{0, plural, one {# tool call} other {# tool calls}}"
+msgstr "{0, plural, one {# вызов инструмента} few {# вызова инструментов} many {# вызовов инструментов} other {# вызова инструмента}}"
+
 #. placeholder {0}: group.workspaceCount
 #. placeholder {0}: selectedWorkspaces.length
 msgid "{0, plural, one {# workspace} other {# workspaces}}"
@@ -357,10 +361,6 @@ msgstr "{0, plural, one {Её # автоматизация перейдёт в �
 #. placeholder {0}: issues.length
 msgid "{0, plural, one {Linear issue} other {Linear issues}}"
 msgstr "{0, plural, one {задача Linear} few {задачи Linear} many {задач Linear} other {задачи Linear}}"
-
-#. placeholder {0}: selectedWorkspaces.length
-msgid "{0, plural, one {Move # selected workspace to a group} other {Move # selected workspaces to a group}}"
-msgstr "{0, plural, one {Переместить # выбранную рабочую область в группу} few {Переместить # выбранные рабочие области в группу} many {Переместить # выбранных рабочих областей в группу} other {Переместить # выбранных рабочих областей в группу}}"
 
 #. placeholder {0}: move.chats.total - move.chats.ready - move.chats.failed
 msgid "{0, plural, one {Moving # chat here…} other {Moving # chats here…}}"
@@ -1955,6 +1955,9 @@ msgstr "Действия"
 msgid "Actions for {0}"
 msgstr "Действия для {0}"
 
+msgid "Actions for {name}"
+msgstr "Действия для {name}"
+
 msgid "Active"
 msgstr "Активна"
 
@@ -3516,6 +3519,9 @@ msgstr "Поведение"
 msgid "Behind main by ? commits, needs rebase"
 msgstr "Отстаёт от main на ? коммитов, нужен rebase"
 
+msgid "Behind remote"
+msgstr "Отстаёт от удалённой ветки"
+
 msgid "Being built right now."
 msgstr "Делается прямо сейчас."
 
@@ -4325,6 +4331,9 @@ msgstr "Выберите папку"
 msgid "Choose a parent directory"
 msgstr "Выберите родительскую папку"
 
+msgid "Choose a project and describe your task. Chats and changes stay together in the workspace."
+msgstr "Выберите проект и опишите задачу. Чаты и изменения остаются вместе в рабочем пространстве."
+
 msgid "Choose a project from GitHub issues before opening an issue."
 msgstr "Выберите проект в разделе задач GitHub, прежде чем открывать задачу."
 
@@ -4979,6 +4988,9 @@ msgstr "Сообщение коммита"
 msgid "Commit message (optional)"
 msgstr "Сообщение коммита (необязательно)"
 
+msgid "Commit your changes, then add the pull request details."
+msgstr "Создайте коммит с изменениями, затем добавьте сведения о пул-реквесте."
+
 msgid "Commits"
 msgstr "Коммиты"
 
@@ -5020,6 +5032,9 @@ msgstr "Рабочий email"
 
 msgid "Compare"
 msgstr "Сравнение"
+
+msgid "Compare changes"
+msgstr "Сравнить изменения"
 
 msgid "Compare Paradev | AI Coding Comparisons and Guides"
 msgstr "Сравнение Paradev | Сравнения и руководства по AI-кодингу"
@@ -6411,9 +6426,6 @@ msgstr "Создать вручную"
 msgid "Create Merge Commit"
 msgstr "Создать коммит слияния"
 
-msgid "Create new group"
-msgstr "Создать новую группу"
-
 msgid "Create new project"
 msgstr "Создать проект"
 
@@ -7097,6 +7109,9 @@ msgstr "Глубина · токенов за сессию"
 msgid "descending"
 msgstr "по убыванию"
 
+msgid "Describe a task, review a change, or investigate a bug."
+msgstr "Опишите задачу, проверьте изменение или исследуйте ошибку."
+
 msgid "Describe the change."
 msgstr "Опишите изменение."
 
@@ -7584,6 +7599,9 @@ msgstr "подготовил 3 ответа поддержки"
 
 msgid "Drag <0>Paradev</0> into your <1>Applications</1> folder"
 msgstr "Перетащите <0>Paradev</0> в папку <1>Программы</1>"
+
+msgid "Drag a workspace here or use Move to section."
+msgstr "Перетащите сюда рабочее пространство или используйте «Переместить в раздел»."
 
 msgid "Drag to reorder"
 msgstr "Перетащите, чтобы изменить порядок"
@@ -8841,6 +8859,9 @@ msgstr "Фильтр по @{normalizedSearch}"
 msgid "Filter by author: {label}"
 msgstr "Фильтр по автору: {label}"
 
+msgid "Filter by project"
+msgstr "Фильтровать по проекту"
+
 msgid "Filter by reviews"
 msgstr "Фильтр по ревью"
 
@@ -9721,6 +9742,9 @@ msgstr "Скрыть панель"
 
 msgid "Hide Preview"
 msgstr "Скрыть предпросмотр"
+
+msgid "Hide project"
+msgstr "Скрыть проект"
 
 msgid "Hide pull request list"
 msgstr "Скрыть список пул-реквестов"
@@ -11344,9 +11368,6 @@ msgstr "Загрузка шрифтов..."
 msgid "Loading GitHub details"
 msgstr "Загрузка сведений из GitHub"
 
-msgid "Loading groups…"
-msgstr "Загрузка групп…"
-
 msgid "Loading issue…"
 msgstr "Загрузка задачи…"
 
@@ -12095,9 +12116,6 @@ msgstr "Почти вся история софта"
 msgid "Move"
 msgstr "Перенести"
 
-msgid "Move {count} to Group"
-msgstr "Переместить {count} в группу"
-
 msgid "Move {name} to background"
 msgstr "Перевести {name} в фон"
 
@@ -12131,11 +12149,14 @@ msgstr "Переместить в группу"
 msgid "Move to group…"
 msgstr "Переместить в группу…"
 
+msgid "Move to My workspaces"
+msgstr "Переместить в «Мои рабочие пространства»"
+
 msgid "Move to Right Side"
 msgstr "Переместить вправо"
 
-msgid "Move to Tab"
-msgstr "Переместить во вкладку"
+msgid "Move to section"
+msgstr "Переместить в раздел"
 
 msgid "Move your agents before {shutdownDate}."
 msgstr "Перенесите агентов до {shutdownDate}."
@@ -12189,6 +12210,9 @@ msgstr "Мои ключевые слова"
 
 msgid "My Tasks"
 msgstr "Мои задачи"
+
+msgid "My workspaces"
+msgstr "Мои рабочие пространства"
 
 msgid "Mystery Machinist"
 msgstr "Загадочный станочник"
@@ -12352,12 +12376,6 @@ msgstr "Новая папка"
 msgid "New Folder..."
 msgstr "Новая папка..."
 
-msgid "New group"
-msgstr "Новая группа"
-
-msgid "New group from workspace"
-msgstr "Новая группа из рабочей области"
-
 msgid "New group name…"
 msgstr "Название новой группы…"
 
@@ -12381,6 +12399,12 @@ msgstr "Новый проект"
 
 msgid "New push to branch"
 msgstr "Новый push в ветку"
+
+msgid "New section"
+msgstr "Новый раздел"
+
+msgid "New section from workspace"
+msgstr "Новый раздел из рабочего пространства"
 
 msgid "New session"
 msgstr "Новая сессия"
@@ -12730,6 +12754,9 @@ msgstr "Нет файлов, соответствующих поиску"
 msgid "No fonts found."
 msgstr "Шрифты не найдены."
 
+msgid "No Git remote"
+msgstr "Нет удалённого репозитория Git"
+
 msgid "No git remote detected"
 msgstr "Удалённый git-репозиторий не обнаружен"
 
@@ -12738,9 +12765,6 @@ msgstr "Без группы"
 
 msgid "No grouping"
 msgstr "Без группировки"
-
-msgid "No groups yet"
-msgstr "Групп пока нет"
 
 msgid "No Headings"
 msgstr "Заголовков нет"
@@ -14276,6 +14300,9 @@ msgstr "URL организации обновлён!"
 #. placeholder {0}: selectedOrg.name
 msgid "Organization: <0>{0}</0>"
 msgstr "Организация: <0>{0}</0>"
+
+msgid "Organize workspaces across projects. Their files and chats stay in place."
+msgstr "Организуйте рабочие пространства разных проектов. Их файлы и чаты остаются на месте."
 
 msgid "Organize your work into teams. Tasks and integrations can sync per-team."
 msgstr "Организуйте работу по командам. Задачи и интеграции можно синхронизировать отдельно для каждой команды."
@@ -16168,6 +16195,9 @@ msgstr "Удалить репозиторий"
 msgid "Remove script"
 msgstr "Удалить скрипт"
 
+msgid "Remove section"
+msgstr "Удалить раздел"
+
 msgid "Remove team member?"
 msgstr "Удалить участника команды?"
 
@@ -16240,6 +16270,9 @@ msgstr "Переименовать хост"
 
 msgid "Rename page"
 msgstr "Переименовать страницу"
+
+msgid "Rename section"
+msgstr "Переименовать раздел"
 
 msgid "Rename session"
 msgstr "Переименовать сессию"
@@ -17478,6 +17511,15 @@ msgstr "Вторичная"
 msgid "Secret Shift Lead"
 msgstr "Тайный начальник смены"
 
+msgid "Section"
+msgstr "Раздел"
+
+msgid "Section actions"
+msgstr "Действия с разделом"
+
+msgid "Section name"
+msgstr "Название раздела"
+
 msgid "Sections"
 msgstr "Разделы"
 
@@ -18688,9 +18730,6 @@ msgstr "Разделённая кнопка: открыть worktree в прил
 msgid "Split Down"
 msgstr "Разделить вниз"
 
-msgid "Split Horizontally"
-msgstr "Разделить по горизонтали"
-
 msgid "split pane"
 msgstr "разделённая панель"
 
@@ -18721,14 +18760,8 @@ msgstr "Разделить текущую панель вниз"
 msgid "Split the current pane to the right"
 msgstr "Разделить текущую панель вправо"
 
-msgid "Split Vertically"
-msgstr "Разделить по вертикали"
-
 msgid "Split view"
 msgstr "Раздельный вид"
-
-msgid "Split with Desktop"
-msgstr "Разделить с рабочим столом"
 
 msgid "Split with Mobile Simulator"
 msgstr "Разделить с мобильным симулятором"
@@ -21138,12 +21171,6 @@ msgstr "Отменить последнюю архивацию рабочей о
 msgid "Unfollow thread"
 msgstr "Отписаться от ветки"
 
-msgid "Ungroup"
-msgstr "Убрать из группы"
-
-msgid "Ungroup selected workspaces"
-msgstr "Убрать выбранные рабочие области из группы"
-
 msgid "Unified view"
 msgstr "Единый вид"
 
@@ -22327,6 +22354,9 @@ msgstr "Настройки рабочей области"
 
 msgid "Workspace views"
 msgstr "Виды рабочих областей"
+
+msgid "Workspace without a project"
+msgstr "Рабочее пространство без проекта"
 
 msgid "Workspace worktree not available"
 msgstr "Worktree рабочей области недоступен"

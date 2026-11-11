@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/react/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
 import { Button } from "@superset/ui/button";
 import {
 	DropdownMenu,
@@ -33,6 +33,7 @@ import { BuiltinPresetBarItem } from "./components/BuiltinPresetBarItem";
 import { V2PresetBarItem } from "./components/V2PresetBarItem";
 
 interface V2PresetsBarProps {
+	layout?: "bar" | "menu";
 	matchedPresets: V2TerminalPresetRow[];
 	executePreset: (preset: V2TerminalPresetRow) => void | Promise<void>;
 	showPresetsBar: boolean;
@@ -74,11 +75,13 @@ function getVisiblePresetOrder(
 }
 
 export function V2PresetsBar({
+	layout = "bar",
 	matchedPresets,
 	executePreset,
 	showPresetsBar,
 	onToggleShowPresetsBar,
 }: V2PresetsBarProps) {
+	const { t } = useLingui();
 	const navigate = useNavigate();
 	const isDark = useIsDarkTheme();
 	const isParadevShell = useParadevShell();
@@ -234,16 +237,23 @@ export function V2PresetsBar({
 	return (
 		<div
 			className={cn(
-				"flex h-10 min-w-0 shrink-0 items-center gap-1.5 overflow-x-auto overflow-y-hidden px-2",
+				layout === "menu"
+					? "flex max-h-96 flex-col items-stretch gap-1 overflow-y-auto [&>div>button]:h-8 [&>div>button]:w-full [&>div>button]:max-w-none [&>div>button]:justify-start"
+					: "flex h-10 min-w-0 shrink-0 items-center gap-1.5 overflow-x-auto overflow-y-hidden px-2",
 				!isParadevShell && "bg-background",
 			)}
 			style={{ scrollbarWidth: "none" }}
 		>
 			<DropdownMenu>
-				<Tooltip delayDuration={1000} disableHoverableContent>
+				<Tooltip
+					open={layout === "menu" ? false : undefined}
+					delayDuration={1000}
+					disableHoverableContent
+				>
 					<TooltipTrigger asChild>
 						<DropdownMenuTrigger asChild>
 							<Button
+								aria-label={t({ message: "Manage Terminal Scripts" })}
 								variant="ghost"
 								size="icon"
 								className="size-6 shrink-0 text-muted-foreground hover:text-foreground"
@@ -327,15 +337,17 @@ export function V2PresetsBar({
 						);
 					})}
 					<DropdownMenuSeparator />
-					<DropdownMenuCheckboxItem
-						checked={showPresetsBar}
-						onCheckedChange={(checked) =>
-							onToggleShowPresetsBar(checked === true)
-						}
-						onSelect={(event) => event.preventDefault()}
-					>
-						<Trans>Show Scripts Bar</Trans>
-					</DropdownMenuCheckboxItem>
+					{layout === "bar" && (
+						<DropdownMenuCheckboxItem
+							checked={showPresetsBar}
+							onCheckedChange={(checked) =>
+								onToggleShowPresetsBar(checked === true)
+							}
+							onSelect={(event) => event.preventDefault()}
+						>
+							<Trans>Show Scripts Bar</Trans>
+						</DropdownMenuCheckboxItem>
+					)}
 					<DropdownMenuSeparator />
 					<DropdownMenuItem
 						className="gap-2"

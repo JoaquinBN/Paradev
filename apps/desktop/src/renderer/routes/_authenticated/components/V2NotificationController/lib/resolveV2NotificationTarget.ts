@@ -19,11 +19,13 @@ export function resolveV2NotificationTarget({
 	payload,
 	paneLayout,
 	rightPaneLayout,
+	terminalPaneLayout,
 }: {
 	workspaceId: string;
 	payload: AgentLifecyclePayload;
 	paneLayout: PaneLayout;
 	rightPaneLayout?: PaneLayout;
+	terminalPaneLayout?: PaneLayout;
 }): V2NotificationTarget {
 	return (
 		resolveTerminalTarget({
@@ -31,6 +33,7 @@ export function resolveV2NotificationTarget({
 			terminalId: payload.terminalId,
 			paneLayout,
 			rightPaneLayout,
+			terminalPaneLayout,
 		}) ?? {
 			workspaceId,
 			terminalId: payload.terminalId,
@@ -43,13 +46,15 @@ export function resolveTerminalTarget({
 	terminalId,
 	paneLayout,
 	rightPaneLayout,
+	terminalPaneLayout,
 }: {
 	workspaceId: string;
 	terminalId: string;
 	paneLayout: PaneLayout;
 	rightPaneLayout?: PaneLayout;
+	terminalPaneLayout?: PaneLayout;
 }): V2NotificationTarget | null {
-	for (const layout of [paneLayout, rightPaneLayout]) {
+	for (const layout of [paneLayout, rightPaneLayout, terminalPaneLayout]) {
 		for (const tab of layout?.tabs ?? []) {
 			for (const pane of Object.values(tab.panes)) {
 				if (pane.kind !== "terminal") continue;
@@ -72,11 +77,15 @@ export function isV2NotificationTargetVisible({
 	currentWorkspaceId,
 	paneLayout,
 	rightPaneLayout,
+	terminalPaneLayout,
+	terminalDockVisible = true,
 	target,
 }: {
 	currentWorkspaceId: string | null;
 	paneLayout: PaneLayout;
 	rightPaneLayout?: PaneLayout;
+	terminalPaneLayout?: PaneLayout;
+	terminalDockVisible?: boolean;
 	target: V2NotificationTarget;
 }): boolean {
 	if (!currentWorkspaceId || currentWorkspaceId !== target.workspaceId) {
@@ -84,7 +93,11 @@ export function isV2NotificationTargetVisible({
 	}
 	if (!target.tabId || !target.paneId) return false;
 
-	return [paneLayout, rightPaneLayout].some((layout) => {
+	return [
+		paneLayout,
+		rightPaneLayout,
+		terminalDockVisible ? terminalPaneLayout : null,
+	].some((layout) => {
 		const tab = layout?.tabs.find((candidate) => candidate.id === target.tabId);
 		return (
 			tab !== undefined &&

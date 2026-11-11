@@ -22,6 +22,7 @@ const OVERSCAN = 8;
 
 interface ChangesFoldersViewProps {
 	files: ChangesetFile[];
+	flat?: boolean;
 	workspaceId: string;
 	worktreePath?: string;
 	/** Absolute path of the diff pane's open file — highlights its row. */
@@ -70,6 +71,7 @@ type Row =
  */
 export const ChangesFoldersView = memo(function ChangesFoldersView({
 	files,
+	flat = false,
 	workspaceId,
 	worktreePath,
 	selectedFilePath,
@@ -112,6 +114,14 @@ export const ChangesFoldersView = memo(function ChangesFoldersView({
 
 	// Flatten open groups into folder-header + file rows for the virtualizer.
 	const rows = useMemo(() => {
+		if (flat)
+			return [...files]
+				.sort((a, b) => a.path.localeCompare(b.path))
+				.map((file) => ({
+					kind: "file" as const,
+					key: `file:${getChangesetFileKey(file)}`,
+					file,
+				}));
 		const next: Row[] = [];
 		for (const group of groups) {
 			const isOpen = !closedFolders.has(group.folderPath);
@@ -132,7 +142,7 @@ export const ChangesFoldersView = memo(function ChangesFoldersView({
 			}
 		}
 		return next;
-	}, [groups, closedFolders]);
+	}, [groups, closedFolders, flat, files]);
 
 	const listRef = useRef<HTMLDivElement>(null);
 	const virtualizer = useVirtualizer({
@@ -184,7 +194,7 @@ export const ChangesFoldersView = memo(function ChangesFoldersView({
 									file={row.file}
 									workspaceId={workspaceId}
 									worktreePath={worktreePath}
-									hideDir
+									hideDir={!flat}
 									isSelected={
 										row.file.path === selectedRelPath &&
 										(selectedChangeKey == null ||

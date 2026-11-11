@@ -93,7 +93,7 @@ import { SymmetricResizeHandles } from "../SymmetricResizeHandles";
 import { AgentPickerPill } from "./components/AgentPickerPill";
 import { SamplePrompts } from "./components/SamplePrompts";
 import { PROMPT_PLACEHOLDERS } from "./components/SamplePrompts/constants";
-import { SupersetIcon } from "./components/SupersetIcon";
+import { WorkspaceSectionPicker } from "./components/WorkspaceSectionPicker";
 import { useConsumeHostIntent } from "./hooks/useConsumeHostIntent";
 import { useGitHubRepositoryProjects } from "./hooks/useGitHubRepositoryProjects";
 import { useLinkedIssueNaming } from "./hooks/useLinkedIssueNaming";
@@ -1128,6 +1128,7 @@ export function NewWorkspaceScreen({
 							{devicePicker}
 						</div>
 						<AgentComposer
+							submitLabel={t({ message: "Create workspace" })}
 							layout="inline"
 							allowEmptySubmit
 							autoFocus
@@ -1187,12 +1188,16 @@ export function NewWorkspaceScreen({
 				className="sticky top-0 z-10 w-full bg-background"
 				end={<div className="flex items-center gap-0.5">{headerActions}</div>}
 			/>
-			<div className="flex flex-1 flex-col items-center justify-center gap-8">
-				<SupersetIcon className="h-10 w-auto text-muted-foreground/70" />
-				<h1 className="text-center text-3xl font-medium text-foreground/90">
-					<Trans>What should we build next?</Trans>
+			<div className="flex flex-col items-center justify-center gap-3 px-6 pt-[clamp(2rem,14vh,9rem)] pb-8">
+				<h1 className="text-center text-2xl font-semibold tracking-tight text-foreground">
+					<Trans>New workspace</Trans>
 				</h1>
-				<GitHubStarPill surface="new_workspace" reserveSpace />
+				<p className="max-w-md text-center text-sm leading-relaxed text-muted-foreground">
+					<Trans>
+						Choose a project and describe your task. Chats and changes stay
+						together in the workspace.
+					</Trans>
+				</p>
 			</div>
 			<div className="flex w-full flex-col items-center px-6 pb-8">
 				<div
@@ -1225,7 +1230,14 @@ export function NewWorkspaceScreen({
 								</motion.div>
 							)}
 					</AnimatePresence>
+					<div className="mb-3 flex flex-wrap items-center gap-2">
+						{contextPickers}
+						<WorkspaceSectionPicker />
+						{devicePicker}
+						{setupButton}
+					</div>
 					<AgentComposer
+						submitLabel={t({ message: "Create workspace" })}
 						allowEmptySubmit
 						autoFocus
 						className="w-full"
@@ -1261,13 +1273,7 @@ export function NewWorkspaceScreen({
 							)
 						}
 					/>
-					<div className="mt-2 flex items-center justify-between gap-2">
-						<div className="flex min-w-0 flex-1 items-center gap-2">
-							{devicePicker}
-							{contextPickers}
-						</div>
-						{setupButton}
-					</div>
+
 					{resizeHandles}
 				</div>
 			</div>

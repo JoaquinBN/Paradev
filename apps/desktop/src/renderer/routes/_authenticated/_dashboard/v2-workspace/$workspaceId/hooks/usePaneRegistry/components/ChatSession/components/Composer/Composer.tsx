@@ -51,6 +51,7 @@ import { useGitHubMentionProviders } from "renderer/routes/_authenticated/compon
 import { useCollections } from "renderer/routes/_authenticated/providers/CollectionsProvider";
 import { useHostWorkspaces } from "renderer/routes/_authenticated/providers/HostWorkspacesProvider";
 import { useChatComposerStore } from "../../../../stores/chatComposerStore";
+import { AccountUsage } from "../../../AccountUsage";
 import { CHAT_COLUMN_CLASSNAME, CHAT_GUTTER_CLASSNAME } from "../../constants";
 import { useChatWiring } from "../../hooks/useSessionClient";
 import { useChatPaneActions } from "../../providers/ChatPaneActionsProvider";
@@ -650,6 +651,15 @@ export const Composer = memo(function Composer({
 							: "ready"
 				}
 				stopOnEscape={!escapeGoesBack}
+				editorAccessory={
+					terminalId ? (
+						<AccountUsage
+							key={`${workspaceId}:${terminalId}`}
+							workspaceId={workspaceId}
+							terminalId={terminalId}
+						/>
+					) : undefined
+				}
 				toolbar={
 					target ? (
 						<span className="flex h-6 min-w-0 max-w-48 items-center rounded-md border border-border/60 px-2 font-sans text-foreground/70 text-xs">

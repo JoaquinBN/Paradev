@@ -41,7 +41,7 @@ export function ReplyFooter({
 	return (
 		<div
 			className={cn(
-				"flex items-center gap-2 text-muted-foreground/60 opacity-0 transition-opacity focus-within:opacity-100",
+				"flex items-center gap-2 py-1 text-muted-foreground/60 opacity-70 transition-opacity focus-within:opacity-100",
 				className,
 			)}
 		>

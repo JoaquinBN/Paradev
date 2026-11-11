@@ -49,8 +49,12 @@ export function ChatPane({
 	const rightPane = useRightPaneLinkTarget();
 	const fileViewerStore = rightPane?.store ?? ctx.store;
 	const getOpenFilePaths = useCallback(
-		() => new Set(openFilePathsIn(fileViewerStore.getState())),
-		[fileViewerStore],
+		() =>
+			new Set([
+				...openFilePathsIn(ctx.store.getState()),
+				...openFilePathsIn(fileViewerStore.getState()),
+			]),
+		[ctx.store, fileViewerStore],
 	);
 	const latest = useRef(data);
 	latest.current = data;

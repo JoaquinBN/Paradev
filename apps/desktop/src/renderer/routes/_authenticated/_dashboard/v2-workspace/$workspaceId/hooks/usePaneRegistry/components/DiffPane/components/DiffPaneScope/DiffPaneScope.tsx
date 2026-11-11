@@ -50,15 +50,20 @@ export function DiffPaneScope({
 				/>
 			)}
 			{filter && (
-				<span className="flex min-w-0 shrink-0 items-center gap-0.5 rounded-md bg-accent py-0.5 pr-0.5 pl-1.5 text-[11px] text-accent-foreground">
-					<span className="truncate">
-						{filter.range
-							? t({ message: "This turn" })
-							: t({ message: "This turn's files" })}
+				<span className="flex min-w-0 max-w-52 items-center gap-0.5 rounded-md bg-accent py-0.5 pr-0.5 pl-1.5 text-[11px] text-accent-foreground">
+					<span
+						className="truncate"
+						title={filter.scope === "file" ? filter.paths?.[0] : undefined}
+					>
+						{filter.scope === "file"
+							? filter.paths?.[0]?.split("/").pop()
+							: filter.range
+								? t({ message: "This turn" })
+								: t({ message: "This turn's files" })}
 					</span>
 					<button
 						aria-label={clearLabel}
-						className="rounded p-0.5 text-muted-foreground transition-colors hover:bg-background/60 hover:text-foreground"
+						className="shrink-0 rounded p-0.5 text-muted-foreground transition-colors hover:bg-background/60 hover:text-foreground"
 						onClick={onClearFilter}
 						title={clearLabel}
 						type="button"

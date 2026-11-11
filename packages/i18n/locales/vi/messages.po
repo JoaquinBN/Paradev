@@ -283,6 +283,10 @@ msgstr "{0, plural, one {# tác vụ} other {# tác vụ}}"
 msgid "{0, plural, one {# terminal running} other {# terminals running}}"
 msgstr "{0, plural, other {# terminal đang chạy}}"
 
+#. placeholder {0}: items.length
+msgid "{0, plural, one {# tool call} other {# tool calls}}"
+msgstr "{0, plural, other {# lần gọi công cụ}}"
+
 #. placeholder {0}: group.workspaceCount
 #. placeholder {0}: selectedWorkspaces.length
 msgid "{0, plural, one {# workspace} other {# workspaces}}"
@@ -357,10 +361,6 @@ msgstr "{0, plural, one {# tự động hóa trong nhóm sẽ chuyển sang Khô
 #. placeholder {0}: issues.length
 msgid "{0, plural, one {Linear issue} other {Linear issues}}"
 msgstr "{0, plural, one {issue Linear} other {issue Linear}}"
-
-#. placeholder {0}: selectedWorkspaces.length
-msgid "{0, plural, one {Move # selected workspace to a group} other {Move # selected workspaces to a group}}"
-msgstr "{0, plural, one {Chuyển # workspace đã chọn vào một nhóm} other {Chuyển # workspace đã chọn vào một nhóm}}"
 
 #. placeholder {0}: move.chats.total - move.chats.ready - move.chats.failed
 msgid "{0, plural, one {Moving # chat here…} other {Moving # chats here…}}"
@@ -1955,6 +1955,9 @@ msgstr "Hành động"
 msgid "Actions for {0}"
 msgstr "Hành động cho {0}"
 
+msgid "Actions for {name}"
+msgstr "Thao tác cho {name}"
+
 msgid "Active"
 msgstr "Đang hoạt động"
 
@@ -3516,6 +3519,9 @@ msgstr "Hành vi"
 msgid "Behind main by ? commits, needs rebase"
 msgstr "Chậm hơn main ? commit, cần rebase"
 
+msgid "Behind remote"
+msgstr "Chậm hơn nhánh từ xa"
+
 msgid "Being built right now."
 msgstr "Đang được xây ngay lúc này."
 
@@ -4325,6 +4331,9 @@ msgstr "Chọn thư mục"
 msgid "Choose a parent directory"
 msgstr "Chọn một thư mục cha"
 
+msgid "Choose a project and describe your task. Chats and changes stay together in the workspace."
+msgstr "Chọn dự án và mô tả tác vụ. Các cuộc trò chuyện và thay đổi được giữ cùng nhau trong không gian làm việc."
+
 msgid "Choose a project from GitHub issues before opening an issue."
 msgstr "Chọn một dự án trong mục Issue GitHub trước khi mở một issue."
 
@@ -4979,6 +4988,9 @@ msgstr "Thông điệp commit"
 msgid "Commit message (optional)"
 msgstr "Thông điệp commit (tùy chọn)"
 
+msgid "Commit your changes, then add the pull request details."
+msgstr "Commit các thay đổi, sau đó thêm thông tin chi tiết cho pull request."
+
 msgid "Commits"
 msgstr "Commit"
 
@@ -5020,6 +5032,9 @@ msgstr "Email công ty"
 
 msgid "Compare"
 msgstr "So sánh"
+
+msgid "Compare changes"
+msgstr "So sánh thay đổi"
 
 msgid "Compare Paradev | AI Coding Comparisons and Guides"
 msgstr "So sánh Paradev | So sánh và hướng dẫn lập trình AI"
@@ -6411,9 +6426,6 @@ msgstr "Tạo thủ công"
 msgid "Create Merge Commit"
 msgstr "Tạo merge commit"
 
-msgid "Create new group"
-msgstr "Tạo nhóm mới"
-
 msgid "Create new project"
 msgstr "Tạo dự án mới"
 
@@ -7097,6 +7109,9 @@ msgstr "Chiều sâu · token mỗi phiên"
 msgid "descending"
 msgstr "giảm dần"
 
+msgid "Describe a task, review a change, or investigate a bug."
+msgstr "Mô tả tác vụ, xem xét thay đổi hoặc điều tra lỗi."
+
 msgid "Describe the change."
 msgstr "Mô tả thay đổi."
 
@@ -7584,6 +7599,9 @@ msgstr "đã soạn 3 câu trả lời hỗ trợ"
 
 msgid "Drag <0>Paradev</0> into your <1>Applications</1> folder"
 msgstr "Kéo <0>Paradev</0> vào thư mục <1>Ứng dụng</1>"
+
+msgid "Drag a workspace here or use Move to section."
+msgstr "Kéo không gian làm việc vào đây hoặc dùng Chuyển đến mục."
 
 msgid "Drag to reorder"
 msgstr "Kéo để sắp xếp lại"
@@ -8841,6 +8859,9 @@ msgstr "Lọc theo @{normalizedSearch}"
 msgid "Filter by author: {label}"
 msgstr "Lọc theo tác giả: {label}"
 
+msgid "Filter by project"
+msgstr "Lọc theo dự án"
+
 msgid "Filter by reviews"
 msgstr "Lọc theo review"
 
@@ -9721,6 +9742,9 @@ msgstr "Ẩn bảng"
 
 msgid "Hide Preview"
 msgstr "Ẩn xem trước"
+
+msgid "Hide project"
+msgstr "Ẩn dự án"
 
 msgid "Hide pull request list"
 msgstr "Ẩn danh sách pull request"
@@ -11344,9 +11368,6 @@ msgstr "Đang tải font..."
 msgid "Loading GitHub details"
 msgstr "Đang tải chi tiết từ GitHub"
 
-msgid "Loading groups…"
-msgstr "Đang tải nhóm…"
-
 msgid "Loading issue…"
 msgstr "Đang tải issue…"
 
@@ -12095,9 +12116,6 @@ msgstr "Gần như suốt lịch sử phần mềm"
 msgid "Move"
 msgstr "Chuyển"
 
-msgid "Move {count} to Group"
-msgstr "Chuyển {count} vào nhóm"
-
 msgid "Move {name} to background"
 msgstr "Chuyển {name} sang chạy nền"
 
@@ -12131,11 +12149,14 @@ msgstr "Chuyển vào nhóm"
 msgid "Move to group…"
 msgstr "Chuyển vào nhóm…"
 
+msgid "Move to My workspaces"
+msgstr "Chuyển đến Không gian làm việc của tôi"
+
 msgid "Move to Right Side"
 msgstr "Chuyển sang bên phải"
 
-msgid "Move to Tab"
-msgstr "Chuyển sang tab"
+msgid "Move to section"
+msgstr "Chuyển đến mục"
 
 msgid "Move your agents before {shutdownDate}."
 msgstr "Hãy chuyển agent của bạn trước {shutdownDate}."
@@ -12189,6 +12210,9 @@ msgstr "Từ khóa của tôi"
 
 msgid "My Tasks"
 msgstr "Tác vụ của tôi"
+
+msgid "My workspaces"
+msgstr "Không gian làm việc của tôi"
 
 msgid "Mystery Machinist"
 msgstr "Thợ máy bí ẩn"
@@ -12352,12 +12376,6 @@ msgstr "Thư mục mới"
 msgid "New Folder..."
 msgstr "Thư mục mới..."
 
-msgid "New group"
-msgstr "Nhóm mới"
-
-msgid "New group from workspace"
-msgstr "Nhóm mới từ workspace"
-
 msgid "New group name…"
 msgstr "Tên nhóm mới…"
 
@@ -12381,6 +12399,12 @@ msgstr "Dự án mới"
 
 msgid "New push to branch"
 msgstr "Push mới lên nhánh"
+
+msgid "New section"
+msgstr "Mục mới"
+
+msgid "New section from workspace"
+msgstr "Mục mới từ không gian làm việc"
 
 msgid "New session"
 msgstr "Phiên mới"
@@ -12730,6 +12754,9 @@ msgstr "Không có tệp nào khớp với tìm kiếm của bạn"
 msgid "No fonts found."
 msgstr "Không tìm thấy font nào."
 
+msgid "No Git remote"
+msgstr "Không có remote Git"
+
 msgid "No git remote detected"
 msgstr "Không phát hiện remote git nào"
 
@@ -12738,9 +12765,6 @@ msgstr "Không có nhóm"
 
 msgid "No grouping"
 msgstr "Không nhóm"
-
-msgid "No groups yet"
-msgstr "Chưa có nhóm nào"
 
 msgid "No Headings"
 msgstr "Không có tiêu đề"
@@ -14276,6 +14300,9 @@ msgstr "Đã cập nhật URL tổ chức!"
 #. placeholder {0}: selectedOrg.name
 msgid "Organization: <0>{0}</0>"
 msgstr "Tổ chức: <0>{0}</0>"
+
+msgid "Organize workspaces across projects. Their files and chats stay in place."
+msgstr "Sắp xếp không gian làm việc của nhiều dự án. Tệp và cuộc trò chuyện vẫn ở nguyên vị trí."
 
 msgid "Organize your work into teams. Tasks and integrations can sync per-team."
 msgstr "Sắp xếp công việc theo nhóm. Tác vụ và tích hợp có thể đồng bộ riêng cho từng nhóm."
@@ -16168,6 +16195,9 @@ msgstr "Gỡ repository"
 msgid "Remove script"
 msgstr "Gỡ script"
 
+msgid "Remove section"
+msgstr "Xóa mục"
+
 msgid "Remove team member?"
 msgstr "Gỡ thành viên khỏi nhóm?"
 
@@ -16240,6 +16270,9 @@ msgstr "Đổi tên host"
 
 msgid "Rename page"
 msgstr "Đổi tên trang"
+
+msgid "Rename section"
+msgstr "Đổi tên mục"
 
 msgid "Rename session"
 msgstr "Đổi tên phiên"
@@ -17478,6 +17511,15 @@ msgstr "Secondary"
 msgid "Secret Shift Lead"
 msgstr "Trưởng ca bí mật"
 
+msgid "Section"
+msgstr "Mục"
+
+msgid "Section actions"
+msgstr "Thao tác với mục"
+
+msgid "Section name"
+msgstr "Tên mục"
+
 msgid "Sections"
 msgstr "Các mục"
 
@@ -18688,9 +18730,6 @@ msgstr "Nút tách đôi: mở worktree bằng ứng dụng mặc định + menu
 msgid "Split Down"
 msgstr "Chia xuống"
 
-msgid "Split Horizontally"
-msgstr "Chia theo chiều ngang"
-
 msgid "split pane"
 msgstr "khung chia"
 
@@ -18721,14 +18760,8 @@ msgstr "Chia khung hiện tại xuống dưới"
 msgid "Split the current pane to the right"
 msgstr "Chia khung hiện tại sang phải"
 
-msgid "Split Vertically"
-msgstr "Chia theo chiều dọc"
-
 msgid "Split view"
 msgstr "Xem chia đôi"
-
-msgid "Split with Desktop"
-msgstr "Chia với Màn hình nền"
 
 msgid "Split with Mobile Simulator"
 msgstr "Chia với Trình giả lập di động"
@@ -21138,12 +21171,6 @@ msgstr "Hoàn tác lần lưu trữ workspace hoặc đóng cuộc trò chuyện
 msgid "Unfollow thread"
 msgstr "Bỏ theo dõi chuỗi"
 
-msgid "Ungroup"
-msgstr "Bỏ nhóm"
-
-msgid "Ungroup selected workspaces"
-msgstr "Bỏ nhóm các workspace đã chọn"
-
 msgid "Unified view"
 msgstr "Xem hợp nhất"
 
@@ -22327,6 +22354,9 @@ msgstr "Cài đặt workspace"
 
 msgid "Workspace views"
 msgstr "Chế độ xem workspace"
+
+msgid "Workspace without a project"
+msgstr "Không gian làm việc không có dự án"
 
 msgid "Workspace worktree not available"
 msgstr "Worktree của workspace không khả dụng"

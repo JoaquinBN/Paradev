@@ -23,6 +23,7 @@ export function RightSidebarToggle({
 	onToggle,
 	compact = false,
 }: RightSidebarToggleProps) {
+	const { t } = useLingui();
 	const isParadevShell = useParadevShell();
 	const strokeWidth = isParadevShell ? HEADER_ICON_STROKE_WIDTH : 1.5;
 	const getToggleIcon = (isHovering: boolean) => {
@@ -45,6 +46,8 @@ export function RightSidebarToggle({
 			<TooltipTrigger asChild>
 				<button
 					type="button"
+					aria-label={t({ message: "Toggle sidebar" })}
+					aria-expanded={isOpen}
 					onClick={onToggle}
 					className={
 						isParadevShell
@@ -67,3 +70,5 @@ export function RightSidebarToggle({
 		</Tooltip>
 	);
 }
+
+import { useLingui } from "@lingui/react/macro";

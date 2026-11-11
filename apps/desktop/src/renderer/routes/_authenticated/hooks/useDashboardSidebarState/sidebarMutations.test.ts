@@ -45,6 +45,7 @@ type LocalStateRow = {
 		pinnedAt: number | null;
 	};
 	paneLayout: { version: number; tabs: unknown[]; activeTabId: string | null };
+	terminalPaneLayout?: LocalStateRow["paneLayout"];
 	rightPaneLayout?: {
 		version: number;
 		tabs: unknown[];
@@ -246,6 +247,7 @@ describe("tombstoneSidebarWorkspaceRecord", () => {
 				pinnedAt: 1753000000000,
 			}),
 			rightPaneLayout: { version: 1, tabs: [], activeTabId: null },
+			terminalPaneLayout: { version: 1, tabs: [], activeTabId: null },
 		});
 		const cleaned: string[] = [];
 
@@ -263,6 +265,7 @@ describe("tombstoneSidebarWorkspaceRecord", () => {
 		expect(row?.sidebarState.sectionId).toBeNull();
 		expect(row?.sidebarState.pinnedAt).toBeNull();
 		expect(row?.rightPaneLayout).toBeUndefined();
+		expect(row?.terminalPaneLayout).toBeUndefined();
 		expect(cleaned).toEqual(["ws-1"]);
 	});
 });

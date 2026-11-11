@@ -6,7 +6,12 @@ import {
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from "@superset/ui/dropdown-menu";
-import { ChevronDown, MessageSquare, SquareTerminal } from "lucide-react";
+import {
+	ChevronDown,
+	MessageSquare,
+	MoreHorizontal,
+	SquareTerminal,
+} from "lucide-react";
 import type { ReactNode } from "react";
 import type { SurfaceForkSource } from "../../hooks/useSurfaceFork";
 
@@ -17,8 +22,10 @@ export function SurfaceModeMenu({
 	open,
 	onOpenChange,
 	children,
+	compact = false,
 }: {
 	mode: "cli" | "chat";
+	compact?: boolean;
 	source: SurfaceForkSource | null;
 	onFork: (source: SurfaceForkSource) => void;
 	open?: boolean;
@@ -35,15 +42,25 @@ export function SurfaceModeMenu({
 		<DropdownMenu open={open} onOpenChange={onOpenChange}>
 			<DropdownMenuTrigger asChild>
 				<button
-					aria-label={modeLabel}
-					className="hidden h-[22px] items-center gap-1 rounded-md border border-border/60 bg-secondary/40 px-1.5 font-medium text-[11px] text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground @min-[200px]/pane-header:inline-flex"
+					aria-label={compact ? t({ message: "More options" }) : modeLabel}
+					className={
+						compact
+							? "inline-flex size-6 items-center justify-center rounded text-muted-foreground hover:bg-secondary focus-visible:ring-2 focus-visible:ring-ring"
+							: "hidden h-[22px] items-center gap-1 rounded-md border border-border/60 bg-secondary/40 px-1.5 font-medium text-[11px] text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground @min-[200px]/pane-header:inline-flex"
+					}
 					type="button"
 				>
-					<ModeIcon className="size-3" />
-					<span className="hidden @min-[320px]/pane-header:inline">
-						{modeLabel}
-					</span>
-					<ChevronDown className="size-3" />
+					{compact ? (
+						<MoreHorizontal className="size-4" />
+					) : (
+						<>
+							<ModeIcon className="size-3" />
+							<span className="hidden @min-[320px]/pane-header:inline">
+								{modeLabel}
+							</span>
+							<ChevronDown className="size-3" />
+						</>
+					)}
 				</button>
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align="end" className="w-64">

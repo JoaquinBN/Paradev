@@ -10,7 +10,11 @@ import {
 	type PaneLayoutSlot,
 } from "renderer/stores/v2-pane-layout-stores";
 
-const SLOTS: PaneLayoutSlot[] = ["paneLayout", "rightPaneLayout"];
+const SLOTS: PaneLayoutSlot[] = [
+	"paneLayout",
+	"rightPaneLayout",
+	"terminalPaneLayout",
+];
 
 /**
  * Persists a page a background browser pane navigated to, into the

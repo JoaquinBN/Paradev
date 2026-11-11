@@ -90,3 +90,16 @@ describe("openFilePaneInStore", () => {
 		).toBeUndefined();
 	});
 });
+
+it("file navigation in the main area keeps the conversation and reuses an existing file tab", () => {
+	const store = makeStore();
+	const original = store.getState().tabs[0];
+	openFilePaneInStore(store, "/test.ts", false, { line: 20 }, "tab");
+	openFilePaneInStore(store, "/test.ts", false, { line: 21 }, "tab");
+	expect(store.getState().tabs).toHaveLength(2);
+	expect(store.getState().tabs[0]).toEqual(original);
+	expect(store.getState().getActivePane()?.pane.data).toMatchObject({
+		filePath: "/test.ts",
+		pendingPosition: { line: 21 },
+	});
+});

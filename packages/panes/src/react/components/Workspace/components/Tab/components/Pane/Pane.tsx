@@ -17,6 +17,7 @@ import type {
 import { usePaneAppearance } from "../../../../../../hooks/usePaneAppearance";
 import { usePaneAside } from "../../../../../../hooks/usePaneAside";
 import { PaneFocusContext } from "../../../../../../hooks/usePaneFocus";
+import { usePaneSplits } from "../../../../../../hooks/usePaneSplits";
 import type {
 	ContextMenuActionConfig,
 	PaneActionConfig,
@@ -95,6 +96,7 @@ export function Pane<TData>({
 	onPaneError,
 }: PaneComponentProps<TData>) {
 	const { t } = useLingui();
+	const allowSplits = usePaneSplits();
 	const isCards = usePaneAppearance() === "cards";
 	const definition = registry[pane.kind];
 
@@ -130,13 +132,18 @@ export function Pane<TData>({
 					}),
 				updateData: (data: TData) =>
 					store.getState().setPaneData({ paneId: pane.id, data }),
-				split: (position, newPane) =>
+				split: (position, newPane) => {
+					if (!allowSplits) {
+						store.getState().addTab({ panes: [newPane] });
+						return;
+					}
 					store.getState().splitPane({
 						tabId: tab.id,
 						paneId: pane.id,
 						position: position === "down" ? "bottom" : "right",
 						newPane,
-					}),
+					});
+				},
 			},
 			headerActions: null,
 		};
@@ -168,6 +175,7 @@ export function Pane<TData>({
 		paneActions,
 		parentDirection,
 		tabPosition,
+		allowSplits,
 	]);
 
 	const resolvedContextMenuActions = useMemo(() => {
@@ -191,6 +199,7 @@ export function Pane<TData>({
 		() => ({
 			accept: [PANE_DRAG_TYPE, TAB_DRAG_TYPE],
 			canDrop: (item: PaneDropItem, monitor) => {
+				if (!allowSplits) return false;
 				// Can't drop a tab onto a pane it already owns, or a pane onto itself.
 				if (monitor.getItemType() === TAB_DRAG_TYPE) {
 					return "tabId" in item && item.tabId !== tab.id;
@@ -198,6 +207,7 @@ export function Pane<TData>({
 				return "paneId" in item && item.paneId !== pane.id;
 			},
 			hover: (_item, monitor) => {
+				if (!allowSplits) return;
 				const offset = monitor.getClientOffset();
 				const el = dropRef.current;
 				if (!offset || !el) return;
@@ -209,6 +219,7 @@ export function Pane<TData>({
 				}
 			},
 			drop: (item: PaneDropItem, monitor) => {
+				if (!allowSplits) return;
 				const pos = dropPositionRef.current;
 				if (!pos) return;
 				const source = item.store as typeof store | undefined;
@@ -253,7 +264,7 @@ export function Pane<TData>({
 				canDrop: monitor.canDrop(),
 			}),
 		}),
-		[pane.id, tab.id, store],
+		[allowSplits, pane.id, tab.id, store],
 	);
 
 	const focusHandlerRef = useRef<(() => void) | null>(null);

@@ -133,7 +133,7 @@ export function DiffPane({
 		useRef<CodeViewHandle<DiffAnnotationMetadata, undefined>>(null);
 	const searchContainerRef = useRef<HTMLDivElement>(null);
 
-	const showFileList = useRightPaneLinkTarget() !== null;
+	const showFileList = useRightPaneLinkTarget()?.store === context.store;
 	const [rowElement, setRowElement] = useState<HTMLDivElement | null>(null);
 	const containerWidth = useElementWidth(rowElement);
 	const [fileListOpen, setFileListOpen] = useState<boolean | null>(null);
@@ -631,6 +631,10 @@ export function DiffPane({
 	const codeViewOptions = useMemo(
 		() => ({
 			...options,
+			diffStyle:
+				containerWidth !== null && containerWidth < 640
+					? ("unified" as const)
+					: options.diffStyle,
 			loadDiffFiles,
 			enableLineSelection: true,
 			enableGutterUtility: true,
@@ -690,7 +694,14 @@ export function DiffPane({
 				line.lineElement.style.removeProperty("cursor");
 			},
 		}),
-		[loadDiffFiles, options, onGutterUtilityClick, onLineSelectionEnd, getFile],
+		[
+			containerWidth,
+			loadDiffFiles,
+			options,
+			onGutterUtilityClick,
+			onLineSelectionEnd,
+			getFile,
+		],
 	);
 
 	const renderHeaderPrefix = useCallback(
@@ -935,6 +946,7 @@ export function DiffPane({
 	return (
 		<div
 			ref={setRowElement}
+			data-design-surface="review-panel"
 			className="relative flex h-full min-h-0 w-full min-w-0"
 		>
 			{titleSlot &&
@@ -980,7 +992,7 @@ export function DiffPane({
 					<div className="flex flex-1 flex-col items-center justify-center gap-2 text-sm text-muted-foreground">
 						{isLoading
 							? t({ message: "Loading…" })
-							: filter
+							: filter && filter.scope !== "file"
 								? t({ message: "None of this turn's files have changes here" })
 								: t({
 										message: "No changes",

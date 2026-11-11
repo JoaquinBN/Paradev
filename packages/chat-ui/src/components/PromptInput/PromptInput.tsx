@@ -47,6 +47,7 @@ export function PromptInput({
 	commands,
 	dictation,
 	status = "ready",
+	editorAccessory,
 	toolbar,
 	toolbarEnd,
 	draft,
@@ -55,6 +56,7 @@ export function PromptInput({
 	onStop,
 	stopOnEscape = true,
 	allowEmptySubmit = false,
+	submitLabel,
 	disabled = false,
 	pending = false,
 	autoFocus = false,
@@ -86,6 +88,7 @@ export function PromptInput({
 						commands={commands}
 						dictation={dictation}
 						status={status}
+						editorAccessory={editorAccessory}
 						toolbar={toolbar}
 						toolbarEnd={toolbarEnd}
 						draft={draft}
@@ -94,6 +97,7 @@ export function PromptInput({
 						onStop={onStop}
 						stopOnEscape={stopOnEscape}
 						allowEmptySubmit={allowEmptySubmit}
+						submitLabel={submitLabel}
 						disabled={disabled}
 						pending={pending}
 						autoFocus={autoFocus}
