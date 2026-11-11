@@ -73,10 +73,13 @@ describe("paneLifecycleRows", () => {
 		]);
 	});
 
-	test("tracks a pane after it moves from the center layout to the right layout", () => {
+	test.each([
+		"rightPaneLayout",
+		"terminalPaneLayout",
+	] as const)("tracks a pane after it moves from the center layout to %s", (slot) => {
 		const moved: PaneLifecycleRow = {
 			...row("workspace-a", {}),
-			rightPaneLayout: row("workspace-a", {
+			[slot]: row("workspace-a", {
 				"pane-term-1": terminalPane("term-1"),
 			}).paneLayout,
 		};

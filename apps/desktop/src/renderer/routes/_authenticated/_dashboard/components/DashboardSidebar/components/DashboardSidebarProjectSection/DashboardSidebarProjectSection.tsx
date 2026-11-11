@@ -5,10 +5,13 @@ import type {
 import { AnimatePresence, motion } from "framer-motion";
 import { useMemo } from "react";
 import { DeleteProjectDialog } from "renderer/routes/_authenticated/components/DeleteProjectDialog";
+import { parseSidebarFolderKey } from "renderer/routes/_authenticated/utils/workspaceTagFolders";
+import { useNewWorkspaceDraftStore } from "renderer/stores/new-workspace-draft";
 import type { DashboardSidebarProject } from "../../types";
 import { getProjectChildrenWorkspaces } from "../../utils/projectChildren";
 import { DashboardSidebarCollapsedProjectContent } from "./components/DashboardSidebarCollapsedProjectContent";
 import { DashboardSidebarExpandedProjectContent } from "./components/DashboardSidebarExpandedProjectContent";
+import { DashboardSidebarProjectActions } from "./components/DashboardSidebarProjectActions/DashboardSidebarProjectActions";
 import { DashboardSidebarProjectContextMenu } from "./components/DashboardSidebarProjectContextMenu";
 import { DashboardSidebarProjectRow } from "./components/DashboardSidebarProjectRow";
 import { ImportWorktreesDialog } from "./components/ImportWorktreesDialog";
@@ -16,6 +19,7 @@ import { useDashboardSidebarProjectSectionActions } from "./hooks/useDashboardSi
 
 interface DashboardSidebarProjectSectionProps {
 	project: DashboardSidebarProject;
+	sectionIdFilter?: string | null;
 	isSidebarCollapsed?: boolean;
 	isDraggingProject?: boolean;
 	workspaceShortcutLabels: Map<string, string>;
@@ -27,6 +31,7 @@ interface DashboardSidebarProjectSectionProps {
 
 export function DashboardSidebarProjectSection({
 	project,
+	sectionIdFilter,
 	isSidebarCollapsed = false,
 	isDraggingProject = false,
 	workspaceShortcutLabels,
@@ -69,6 +74,16 @@ export function DashboardSidebarProjectSection({
 	} = useDashboardSidebarProjectSectionActions({
 		project,
 	});
+
+	const createWorkspace = () => {
+		if (sectionIdFilter !== undefined)
+			useNewWorkspaceDraftStore.getState().updateDraft({
+				sectionTag: sectionIdFilter
+					? (parseSidebarFolderKey(sectionIdFilter)?.tag ?? null)
+					: null,
+			});
+		handleNewWorkspace();
+	};
 
 	const isCloudRepo = project.kind === "cloud-repo";
 	const totalWorkspaceCount = flattenedCollapsedWorkspaces.length;
@@ -155,7 +170,17 @@ export function DashboardSidebarProjectSection({
 					onCancelRename={cancelRename}
 					onStartRename={isCloudRepo ? undefined : startRename}
 					onToggleCollapse={() => onToggleCollapse(project.id)}
-					onNewWorkspace={handleNewWorkspace}
+					onNewWorkspace={createWorkspace}
+					actions={
+						<DashboardSidebarProjectActions
+							name={project.name}
+							onCreate={createWorkspace}
+							onSettings={isCloudRepo ? undefined : handleOpenSettings}
+							onImport={isCloudRepo ? undefined : handleImportWorktrees}
+							onHide={hideProject}
+							onDelete={canDeleteProject ? openDeleteDialog : undefined}
+						/>
+					}
 					{...(dragHandleAttributes ?? {})}
 					{...(dragHandleListeners ?? {})}
 				/>
@@ -171,6 +196,7 @@ export function DashboardSidebarProjectSection({
 						className="overflow-hidden"
 					>
 						<DashboardSidebarExpandedProjectContent
+							sectionIdFilter={sectionIdFilter}
 							containerId={project.id}
 							projectId={project.id}
 							isCollapsed={project.isCollapsed}

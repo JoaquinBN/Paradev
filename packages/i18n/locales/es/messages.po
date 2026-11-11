@@ -283,6 +283,10 @@ msgstr "{0, plural, one {# tarea} other {# tareas}}"
 msgid "{0, plural, one {# terminal running} other {# terminals running}}"
 msgstr "{0, plural, one {# terminal en ejecución} other {# terminales en ejecución}}"
 
+#. placeholder {0}: items.length
+msgid "{0, plural, one {# tool call} other {# tool calls}}"
+msgstr "{0, plural, one {# llamada a herramienta} other {# llamadas a herramientas}}"
+
 #. placeholder {0}: group.workspaceCount
 #. placeholder {0}: selectedWorkspaces.length
 msgid "{0, plural, one {# workspace} other {# workspaces}}"
@@ -357,10 +361,6 @@ msgstr "{0, plural, one {Su # automatización pasa a «Sin grupo». La automatiz
 #. placeholder {0}: issues.length
 msgid "{0, plural, one {Linear issue} other {Linear issues}}"
 msgstr "{0, plural, one {issue de Linear} other {issues de Linear}}"
-
-#. placeholder {0}: selectedWorkspaces.length
-msgid "{0, plural, one {Move # selected workspace to a group} other {Move # selected workspaces to a group}}"
-msgstr "{0, plural, one {Mover # espacio de trabajo seleccionado a un grupo} other {Mover # espacios de trabajo seleccionados a un grupo}}"
 
 #. placeholder {0}: move.chats.total - move.chats.ready - move.chats.failed
 msgid "{0, plural, one {Moving # chat here…} other {Moving # chats here…}}"
@@ -1955,6 +1955,9 @@ msgstr "Acciones"
 msgid "Actions for {0}"
 msgstr "Acciones para {0}"
 
+msgid "Actions for {name}"
+msgstr "Acciones para {name}"
+
 msgid "Active"
 msgstr "Activo"
 
@@ -3516,6 +3519,9 @@ msgstr "Comportamiento"
 msgid "Behind main by ? commits, needs rebase"
 msgstr "? commits por detrás de main, necesita rebase"
 
+msgid "Behind remote"
+msgstr "Por detrás de la rama remota"
+
 msgid "Being built right now."
 msgstr "Se está construyendo ahora mismo."
 
@@ -4325,6 +4331,9 @@ msgstr "Elegir una carpeta"
 msgid "Choose a parent directory"
 msgstr "Elige un directorio padre"
 
+msgid "Choose a project and describe your task. Chats and changes stay together in the workspace."
+msgstr "Elige un proyecto y describe tu tarea. Los chats y los cambios permanecen juntos en el espacio de trabajo."
+
 msgid "Choose a project from GitHub issues before opening an issue."
 msgstr "Elige un proyecto en Issues de GitHub antes de abrir un issue."
 
@@ -4979,6 +4988,9 @@ msgstr "Mensaje de commit"
 msgid "Commit message (optional)"
 msgstr "Mensaje del commit (opcional)"
 
+msgid "Commit your changes, then add the pull request details."
+msgstr "Confirma tus cambios y luego añade los detalles de la solicitud de incorporación."
+
 msgid "Commits"
 msgstr "Commits"
 
@@ -5020,6 +5032,9 @@ msgstr "Correo de empresa"
 
 msgid "Compare"
 msgstr "Comparar"
+
+msgid "Compare changes"
+msgstr "Comparar cambios"
 
 msgid "Compare plans"
 msgstr "Comparar planes"
@@ -6411,9 +6426,6 @@ msgstr "Crear manualmente"
 msgid "Create Merge Commit"
 msgstr "Crear commit de fusión"
 
-msgid "Create new group"
-msgstr "Crear nuevo grupo"
-
 msgid "Create new project"
 msgstr "Crear un proyecto nuevo"
 
@@ -7097,6 +7109,9 @@ msgstr "Profundidad · tokens por sesión"
 msgid "descending"
 msgstr "descendente"
 
+msgid "Describe a task, review a change, or investigate a bug."
+msgstr "Describe una tarea, revisa un cambio o investiga un error."
+
 msgid "Describe the change."
 msgstr "Describe el cambio."
 
@@ -7584,6 +7599,9 @@ msgstr "redactó 3 respuestas de soporte"
 
 msgid "Drag <0>Wanker</0> into your <1>Applications</1> folder"
 msgstr "Arrastra <0>Wanker</0> a tu carpeta <1>Aplicaciones</1>"
+
+msgid "Drag a workspace here or use Move to section."
+msgstr "Arrastra un espacio de trabajo aquí o usa Mover a sección."
 
 msgid "Drag to reorder"
 msgstr "Arrastra para reordenar"
@@ -8841,6 +8859,9 @@ msgstr "Filtrar por @{normalizedSearch}"
 msgid "Filter by author: {label}"
 msgstr "Filtrar por autor: {label}"
 
+msgid "Filter by project"
+msgstr "Filtrar por proyecto"
+
 msgid "Filter by reviews"
 msgstr "Filtrar por revisiones"
 
@@ -9721,6 +9742,9 @@ msgstr "Ocultar panel"
 
 msgid "Hide Preview"
 msgstr "Ocultar vista previa"
+
+msgid "Hide project"
+msgstr "Ocultar proyecto"
 
 msgid "Hide pull request list"
 msgstr "Ocultar la lista de pull requests"
@@ -11344,9 +11368,6 @@ msgstr "Cargando fuentes..."
 msgid "Loading GitHub details"
 msgstr "Cargando los detalles de GitHub"
 
-msgid "Loading groups…"
-msgstr "Cargando grupos…"
-
 msgid "Loading issue…"
 msgstr "Cargando issue…"
 
@@ -12095,9 +12116,6 @@ msgstr "Casi toda la historia del software"
 msgid "Move"
 msgstr "Mover"
 
-msgid "Move {count} to Group"
-msgstr "Mover {count} a un grupo"
-
 msgid "Move {name} to background"
 msgstr "Mover {name} a segundo plano"
 
@@ -12131,11 +12149,14 @@ msgstr "Mover a un grupo"
 msgid "Move to group…"
 msgstr "Mover a un grupo…"
 
+msgid "Move to My workspaces"
+msgstr "Mover a Mis espacios de trabajo"
+
 msgid "Move to Right Side"
 msgstr "Mover a la derecha"
 
-msgid "Move to Tab"
-msgstr "Mover a una pestaña"
+msgid "Move to section"
+msgstr "Mover a sección"
 
 msgid "Move your agents before {shutdownDate}."
 msgstr "Mueve tus agentes antes del {shutdownDate}."
@@ -12189,6 +12210,9 @@ msgstr "Mis palabras clave"
 
 msgid "My Tasks"
 msgstr "Mis tareas"
+
+msgid "My workspaces"
+msgstr "Mis espacios de trabajo"
 
 msgid "Mystery Machinist"
 msgstr "Maquinista misterioso"
@@ -12352,12 +12376,6 @@ msgstr "Carpeta nueva"
 msgid "New Folder..."
 msgstr "Carpeta nueva..."
 
-msgid "New group"
-msgstr "Nuevo grupo"
-
-msgid "New group from workspace"
-msgstr "Nuevo grupo desde el espacio de trabajo"
-
 msgid "New group name…"
 msgstr "Nombre del nuevo grupo…"
 
@@ -12381,6 +12399,12 @@ msgstr "Nuevo proyecto"
 
 msgid "New push to branch"
 msgstr "Nuevo push a la rama"
+
+msgid "New section"
+msgstr "Nueva sección"
+
+msgid "New section from workspace"
+msgstr "Nueva sección a partir del espacio de trabajo"
 
 msgid "New session"
 msgstr "Nueva sesión"
@@ -12730,6 +12754,9 @@ msgstr "Ningún archivo coincide con tu búsqueda"
 msgid "No fonts found."
 msgstr "No se encontraron fuentes."
 
+msgid "No Git remote"
+msgstr "No hay remoto Git"
+
 msgid "No git remote detected"
 msgstr "No se detectó ningún remoto de git"
 
@@ -12738,9 +12765,6 @@ msgstr "Sin grupo"
 
 msgid "No grouping"
 msgstr "Sin agrupar"
-
-msgid "No groups yet"
-msgstr "Aún no hay grupos"
 
 msgid "No Headings"
 msgstr "Sin encabezados"
@@ -14276,6 +14300,9 @@ msgstr "¡URL de la organización actualizada!"
 #. placeholder {0}: selectedOrg.name
 msgid "Organization: <0>{0}</0>"
 msgstr "Organización: <0>{0}</0>"
+
+msgid "Organize workspaces across projects. Their files and chats stay in place."
+msgstr "Organiza espacios de trabajo de distintos proyectos. Sus archivos y chats permanecen en su lugar."
 
 msgid "Organize your work into teams. Tasks and integrations can sync per-team."
 msgstr "Organiza tu trabajo en equipos. Las tareas y las integraciones se pueden sincronizar por equipo."
@@ -15984,6 +16011,9 @@ msgstr "Quitar repositorio"
 msgid "Remove script"
 msgstr "Quitar el script"
 
+msgid "Remove section"
+msgstr "Eliminar sección"
+
 msgid "Remove team member?"
 msgstr "¿Quitar a este miembro del equipo?"
 
@@ -16056,6 +16086,9 @@ msgstr "Cambiar el nombre del host"
 
 msgid "Rename page"
 msgstr "Cambiar el nombre de la página"
+
+msgid "Rename section"
+msgstr "Renombrar sección"
 
 msgid "Rename session"
 msgstr "Cambiar el nombre de la sesión"
@@ -17294,6 +17327,15 @@ msgstr "Secundario"
 msgid "Secret Shift Lead"
 msgstr "Jefe de turno secreto"
 
+msgid "Section"
+msgstr "Sección"
+
+msgid "Section actions"
+msgstr "Acciones de sección"
+
+msgid "Section name"
+msgstr "Nombre de la sección"
+
 msgid "Sections"
 msgstr "Secciones"
 
@@ -18504,9 +18546,6 @@ msgstr "Botón dividido: abre el worktree en la app predeterminada + desplegable
 msgid "Split Down"
 msgstr "Dividir hacia abajo"
 
-msgid "Split Horizontally"
-msgstr "Dividir horizontalmente"
-
 msgid "split pane"
 msgstr "panel dividido"
 
@@ -18537,14 +18576,8 @@ msgstr "Dividir el panel actual hacia abajo"
 msgid "Split the current pane to the right"
 msgstr "Dividir el panel actual hacia la derecha"
 
-msgid "Split Vertically"
-msgstr "Dividir verticalmente"
-
 msgid "Split view"
 msgstr "Vista dividida"
-
-msgid "Split with Desktop"
-msgstr "Dividir con escritorio"
 
 msgid "Split with Mobile Simulator"
 msgstr "Dividir con simulador móvil"
@@ -20954,12 +20987,6 @@ msgstr "Deshacer el último espacio de trabajo archivado o los chats cerrados"
 msgid "Unfollow thread"
 msgstr "Dejar de seguir hilo"
 
-msgid "Ungroup"
-msgstr "Desagrupar"
-
-msgid "Ungroup selected workspaces"
-msgstr "Desagrupar los espacios de trabajo seleccionados"
-
 msgid "Unified view"
 msgstr "Vista unificada"
 
@@ -22327,6 +22354,9 @@ msgstr "Configuración del espacio de trabajo"
 
 msgid "Workspace views"
 msgstr "Vistas de espacios de trabajo"
+
+msgid "Workspace without a project"
+msgstr "Espacio de trabajo sin proyecto"
 
 msgid "Workspace worktree not available"
 msgstr "El worktree del espacio de trabajo no está disponible"

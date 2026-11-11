@@ -107,6 +107,7 @@ const MENU_PAGE_LIMIT = 200;
 const CLOCK_TICK_MS = 1000;
 
 interface WorkspaceActivityMenuProps {
+	compact?: boolean;
 	workspaceId: string;
 	store: StoreApi<WorkspaceStore<PaneViewerData>>;
 	linkedStores: readonly StoreApi<WorkspaceStore<PaneViewerData>>[];
@@ -119,6 +120,7 @@ interface WorkspaceActivityMenuProps {
 }
 
 export function WorkspaceActivityMenu({
+	compact = false,
 	workspaceId,
 	store,
 	linkedStores,
@@ -138,7 +140,7 @@ export function WorkspaceActivityMenu({
 		[gitStatus.data],
 	);
 	const triggerChangesStats =
-		paneAreaStyle && changesStats && changesStats.fileCount > 0
+		!compact && paneAreaStyle && changesStats && changesStats.fileCount > 0
 			? changesStats
 			: null;
 	const { workspace: currentWorkspace } = useWorkspace();
@@ -783,7 +785,7 @@ export function WorkspaceActivityMenu({
 								<span className="tabular-nums">{workspace.length}</span>
 							)
 						)}
-						{changes && currentPr && currentPrState ? (
+						{!compact && changes && currentPr && currentPrState ? (
 							<>
 								<span className="h-3.5 w-px shrink-0 bg-border" />
 								<PRIcon state={currentPrState} className="size-3.5 shrink-0" />
@@ -827,9 +829,15 @@ export function WorkspaceActivityMenu({
 				</TooltipContent>
 			</Tooltip>
 			<PopoverContent
+				collisionBoundary={
+					compact
+						? triggerRef.current?.closest<HTMLElement>("[data-sidebar-slide]")
+						: undefined
+				}
+				collisionPadding={compact ? 8 : 0}
 				align="end"
 				sideOffset={0}
-				className="w-80 border-0 bg-transparent p-0 shadow-none duration-[240ms] ease-[cubic-bezier(0.23,1,0.32,1)] data-[state=closed]:duration-150 data-[state=closed]:ease-[cubic-bezier(0.4,0,1,1)] data-[side=bottom]:slide-in-from-top-1 motion-reduce:animate-none"
+				className="w-80 max-w-[var(--radix-popover-content-available-width)] border-0 bg-transparent p-0 shadow-none duration-[240ms] ease-[cubic-bezier(0.23,1,0.32,1)] data-[state=closed]:duration-150 data-[state=closed]:ease-[cubic-bezier(0.4,0,1,1)] data-[side=bottom]:slide-in-from-top-1 motion-reduce:animate-none"
 				onEscapeKeyDown={(event) => {
 					if (shipView || composing) event.preventDefault();
 				}}

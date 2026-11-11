@@ -1,0 +1,1 @@
+export { dockTerminalPanes } from "./dockTerminalPanes";

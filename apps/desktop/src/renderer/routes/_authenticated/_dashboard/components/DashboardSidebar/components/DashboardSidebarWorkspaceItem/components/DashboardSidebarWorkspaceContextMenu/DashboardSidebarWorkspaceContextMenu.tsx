@@ -43,6 +43,7 @@ import type {
 	MovableWorkspace,
 	WorkspaceMoveDirection,
 } from "renderer/routes/_authenticated/_dashboard/hooks/useWorkspaceMoveDirections";
+import { useNavigationSections } from "renderer/routes/_authenticated/hooks/useNavigationSections";
 import { useDashboardSidebarPortKill } from "../../../../hooks/useDashboardSidebarPortKill";
 import { useDashboardSidebarHoverActions } from "../../../../providers/DashboardSidebarHoverProvider";
 import { useDashboardSidebarWorkspacePorts } from "../../../../providers/DashboardSidebarPortsProvider";
@@ -114,6 +115,11 @@ export function DashboardSidebarWorkspaceContextMenu({
 	onRemovePullRequest,
 	children,
 }: DashboardSidebarWorkspaceContextMenuProps) {
+	const sections = useNavigationSections();
+	const createSection = () =>
+		sections ? sections.create([workspaceId]) : onCreateSection();
+	const moveToSection = (id: string | null) =>
+		sections ? sections.move(workspaceId, id) : onMoveToSection(id);
 	const { runAfterClose, onCloseAutoFocus } = useRunAfterMenuClose();
 	const { setContextMenuOpen } = useDashboardSidebarHoverActions();
 	const copyShareLink = useCopyShareLink();
@@ -221,30 +227,32 @@ export function DashboardSidebarWorkspaceContextMenu({
 					{!isPinned && canJoinGroup && (
 						<>
 							<ContextMenuSeparator />
-							<ContextMenuItem onSelect={onCreateSection}>
+							<ContextMenuItem onSelect={() => runAfterClose(createSection)}>
 								<LuFolderPlus className="size-4 mr-2" />
-								<Trans>New group from workspace</Trans>
+								<Trans>New section from workspace</Trans>
 							</ContextMenuItem>
 							<ContextMenuSub>
 								<ContextMenuSubTrigger>
 									<LuArrowRightLeft className="size-4 mr-2" />
-									<Trans>Move to group</Trans>
+									<Trans>Move to section</Trans>
 								</ContextMenuSubTrigger>
 								<ContextMenuSubContent>
 									<MoveToGroupItems
 										projectId={projectId}
-										onMoveToSection={onMoveToSection}
+										onMoveToSection={moveToSection}
 									/>
-									<ContextMenuItem onSelect={onCreateSection}>
+									<ContextMenuItem
+										onSelect={() => runAfterClose(createSection)}
+									>
 										<LuFolderPlus className="size-4 mr-2" />
-										<Trans>Create new group</Trans>
+										<Trans>New section</Trans>
 									</ContextMenuItem>
 								</ContextMenuSubContent>
 							</ContextMenuSub>
 							{isInSection && (
-								<ContextMenuItem onSelect={() => onMoveToSection(null)}>
+								<ContextMenuItem onSelect={() => moveToSection(null)}>
 									<LuArrowUp className="size-4 mr-2" />
-									<Trans>Ungroup</Trans>
+									<Trans>Move to My workspaces</Trans>
 								</ContextMenuItem>
 							)}
 						</>

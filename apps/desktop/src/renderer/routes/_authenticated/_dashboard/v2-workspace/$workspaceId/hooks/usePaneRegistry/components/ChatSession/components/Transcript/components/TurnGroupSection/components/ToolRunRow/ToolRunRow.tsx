@@ -1,3 +1,4 @@
+import { plural } from "@lingui/core/macro";
 import type {
 	Item,
 	Reasoning as ReasoningItem,
@@ -98,15 +99,16 @@ export const ToolRunRow = memo(function ToolRunRow({
 	const Icon = toolKindIcon(dominantKind(items));
 	return (
 		<Collapsible
+			data-design-surface="session-activity"
 			onOpenChange={(open) => onToggle(rowKey, !open)}
 			open={!collapsed}
 		>
-			<CollapsibleTrigger className="group/phase flex w-full min-w-0 items-center gap-1.5 py-1 text-left font-sans text-sm">
+			<CollapsibleTrigger className="group/phase flex min-h-9 w-full min-w-0 items-center gap-2 rounded-md px-2 py-1 text-left font-sans text-xs hover:bg-fill-hover">
 				<span className="relative flex size-3.5 shrink-0 items-center justify-center">
 					<Icon className="size-3.5 text-foreground/45 transition-opacity group-hover/phase:opacity-0" />
 					<ChevronRight
 						className={cn(
-							"absolute size-3.5 text-foreground/45 opacity-0 transition group-hover/phase:opacity-100",
+							"absolute size-3.5 text-foreground/60 opacity-0 transition-opacity group-hover/phase:opacity-100",
 							!collapsed && "rotate-90",
 						)}
 					/>
@@ -124,6 +126,9 @@ export const ToolRunRow = memo(function ToolRunRow({
 						{summary}
 					</span>
 				)}
+				<span className="ml-auto shrink-0 text-[11px] tabular-nums text-muted-foreground">
+					{plural(items.length, { one: "# tool call", other: "# tool calls" })}
+				</span>
 			</CollapsibleTrigger>
 			{current && (
 				<RailStep>

@@ -39,7 +39,7 @@ export function useRightSidebarHotkeys({
 	activeAreaRef: MutableRefObject<PaneArea>;
 }): void {
 	const isFocusInSidebar = useCallback(
-		() => isOpen && activeAreaRef.current === "right",
+		() => isOpen && activeAreaRef.current !== "center",
 		[isOpen, activeAreaRef],
 	);
 
@@ -71,7 +71,7 @@ export function useRightSidebarHotkeys({
 	useEffect(() => {
 		const justClosed = wasOpenRef.current && !isOpen;
 		wasOpenRef.current = isOpen;
-		if (!enabled || !justClosed || activeAreaRef.current !== "right") return;
+		if (!enabled || !justClosed || activeAreaRef.current === "center") return;
 		cancelPendingFocus();
 		focusActivePane(centerStore);
 	}, [enabled, isOpen, activeAreaRef, centerStore, cancelPendingFocus]);

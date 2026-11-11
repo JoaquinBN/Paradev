@@ -16,7 +16,14 @@ import { cn } from "@superset/ui/utils";
 import { workspaceTrpc } from "@superset/workspace-client";
 import { eq } from "@tanstack/db";
 import { useLiveQuery } from "@tanstack/react-db";
-import { Check, LoaderCircle, Pencil, Plus, Trash2 } from "lucide-react";
+import {
+	Check,
+	ChevronDown,
+	LoaderCircle,
+	Pencil,
+	Plus,
+	Trash2,
+} from "lucide-react";
 import { useCallback, useMemo, useState, useSyncExternalStore } from "react";
 import { useRenderStressInstrumentation } from "renderer/lib/performance/stress-instrumentation";
 import { markTerminalForBackground } from "renderer/lib/terminal/terminal-background-intents";
@@ -27,6 +34,7 @@ import type {
 	TerminalPaneData,
 } from "renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/types";
 import { useCollections } from "renderer/routes/_authenticated/providers/CollectionsProvider";
+import { useStore } from "zustand";
 import { TerminalPaneIcon } from "../TerminalPaneIcon";
 import { RenameSessionDialog } from "./components/RenameSessionDialog";
 import {
@@ -147,8 +155,29 @@ export function TerminalSessionDropdown({
 		localWorkspaceRows[0]?.workspaceRunTerminals ?? {};
 	const workspaceRunState = workspaceRunTerminals[terminalId]?.state ?? null;
 
+	const paneTabs = useStore(context.store, (state) => state.tabs);
 	const sessions = useMemo<VisibleTerminalSession[]>(() => {
-		const liveSessions = sessionsQuery.data?.sessions ?? [];
+		const liveSessions: VisibleTerminalSession[] = [
+			...(sessionsQuery.data?.sessions ?? []),
+		];
+		const listed = new Set(liveSessions.map((session) => session.terminalId));
+		for (const tab of paneTabs) {
+			for (const pane of Object.values(tab.panes)) {
+				if (pane.kind !== "terminal") continue;
+				const id = (pane.data as TerminalPaneData).terminalId;
+				if (listed.has(id)) continue;
+				listed.add(id);
+				liveSessions.push({
+					terminalId: id,
+					exited: false,
+					exitCode: 0,
+					attached: false,
+					title: pane.titleOverride ?? null,
+					customTitle: null,
+					pending: true,
+				});
+			}
+		}
 		const ordered = [...liveSessions].sort((a, b) => {
 			if (a.terminalId === terminalId) return -1;
 			if (b.terminalId === terminalId) return 1;
@@ -169,7 +198,7 @@ export function TerminalSessionDropdown({
 			},
 			...ordered,
 		];
-	}, [sessionsQuery.data?.sessions, terminalId]);
+	}, [sessionsQuery.data?.sessions, terminalId, paneTabs]);
 	const currentSession = sessions.find(
 		(session) => session.terminalId === terminalId,
 	);
@@ -398,6 +427,7 @@ export function TerminalSessionDropdown({
 						<span className="min-w-0 flex-1 truncate text-left">
 							{triggerTitle}
 						</span>
+						<ChevronDown className="size-3 shrink-0 text-muted-foreground/60" />
 						{sessionsQuery.isFetching && isOpen && (
 							<LoaderCircle className="size-3 shrink-0 animate-spin" />
 						)}
@@ -434,7 +464,10 @@ export function TerminalSessionDropdown({
 								const location = renderTerminalPaneLocations.get(
 									session.terminalId,
 								)?.[0];
-								const createdAtLabel = formatCreatedAt(session.createdAt);
+								const createdAtLabel =
+									session.pending && !isCurrent
+										? ""
+										: formatCreatedAt(session.createdAt);
 								const status = isCurrent
 									? t({
 											message: "Current",
@@ -445,7 +478,7 @@ export function TerminalSessionDropdown({
 											})
 										: session.pending
 											? t({
-													message: "Starting",
+													message: "Saved",
 												})
 											: session.attached
 												? t({

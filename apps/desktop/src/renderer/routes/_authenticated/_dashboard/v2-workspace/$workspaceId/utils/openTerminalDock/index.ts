@@ -1,0 +1,1 @@
+export { openTerminalDock } from "./openTerminalDock";

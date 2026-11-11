@@ -678,7 +678,11 @@ export function useDashboardSidebarState() {
 	const createSection = useCallback(
 		(
 			projectId: string | null,
-			options: { name?: string; workspaceIds?: readonly string[] } = {},
+			options: {
+				name?: string;
+				workspaceIds?: readonly string[];
+				tag?: string;
+			} = {},
 		) => {
 			const { name = "New group", workspaceIds = [] } = options;
 			if (projectId !== null)
@@ -690,7 +694,9 @@ export function useDashboardSidebarState() {
 				tagFolderContext,
 				projectId,
 			);
-			const tag = mintFolderTag(name, folderIndex.keys());
+			const tag =
+				normalizeWorkspaceTag(options.tag) ??
+				mintFolderTag(name, folderIndex.keys());
 			const sectionId = buildSidebarFolderKey(scope, tag);
 			if (collections.v2SidebarSections.get(sectionId)) return sectionId;
 			const randomColor =

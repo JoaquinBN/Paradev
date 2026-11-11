@@ -1,17 +1,27 @@
-import { useLingui } from "@lingui/react/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
+import { formatNumber } from "@superset/i18n/format";
 import { Button } from "@superset/ui/button";
+import { Popover, PopoverContent, PopoverTrigger } from "@superset/ui/popover";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@superset/ui/tooltip";
 import { cn } from "@superset/ui/utils";
-import { FoldVertical, Search, UnfoldVertical } from "lucide-react";
+import {
+	FoldVertical,
+	Search,
+	SlidersHorizontal,
+	UnfoldVertical,
+} from "lucide-react";
 import type {
 	ChangesFilter,
 	ChangesViewMode,
 } from "renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema";
 import { ChangesScopeControl } from "../../../../../ChangesScopeControl";
+import { DiffStatText } from "../../../../../DiffStatText";
 import type { Branch, Commit } from "../../types";
 import { ViewModeToggle } from "./components/ViewModeToggle";
 
 interface ChangesToolbarProps {
+	flat?: boolean;
+	summary?: { count: number; additions: number; deletions: number };
 	filter: ChangesFilter;
 	onFilterChange: (filter: ChangesFilter) => void;
 	commits: Commit[];
@@ -43,6 +53,8 @@ interface ChangesToolbarProps {
  * groups (folders mode) or tree directories (tree mode).
  */
 export function ChangesToolbar({
+	flat,
+	summary,
 	filter,
 	onFilterChange,
 	commits,
@@ -70,21 +82,78 @@ export function ChangesToolbar({
 	const searchLabel = t({
 		message: "Search changed files",
 	});
+	const scope = (
+		<ChangesScopeControl
+			filter={filter}
+			onFilterChange={onFilterChange}
+			commits={commits}
+			uncommittedCount={uncommittedCount}
+			baseBranch={baseBranch}
+			branches={branches}
+			onBaseBranchChange={onBaseBranchChange}
+			currentBranchName={currentBranchName}
+			canRenameBranch={canRenameBranch}
+			onRenameBranch={onRenameBranch}
+		/>
+	);
 	return (
-		<div className="flex min-w-0 items-center gap-1 overflow-hidden py-1 pr-1 pl-1.5 text-xs">
-			<ChangesScopeControl
-				filter={filter}
-				onFilterChange={onFilterChange}
-				commits={commits}
-				uncommittedCount={uncommittedCount}
-				baseBranch={baseBranch}
-				branches={branches}
-				onBaseBranchChange={onBaseBranchChange}
-				currentBranchName={currentBranchName}
-				canRenameBranch={canRenameBranch}
-				onRenameBranch={onRenameBranch}
-			/>
+		<div
+			data-design-surface="changes-summary"
+			className={cn(
+				"@container/changes-summary flex min-w-0 items-center gap-1 text-xs",
+				flat
+					? "min-h-10 border-b border-border/60 px-3 py-1"
+					: "overflow-hidden py-1 pr-1 pl-1.5",
+			)}
+		>
+			{summary ? (
+				<>
+					<span className="min-w-0 flex-1 truncate text-muted-foreground">
+						<Trans>Files changed</Trans>{" "}
+						<span className="ml-1 tabular-nums text-foreground">
+							{formatNumber(summary.count)}
+						</span>
+					</span>
+					<span className="mr-2 hidden shrink-0 tabular-nums @[340px]/changes-summary:inline">
+						<DiffStatText
+							additions={summary.additions}
+							deletions={summary.deletions}
+						/>
+					</span>
+				</>
+			) : (
+				scope
+			)}
 			<div className="ml-auto flex shrink-0 items-center gap-0.5">
+				{flat && (
+					<Popover>
+						<PopoverTrigger asChild>
+							<Button
+								variant="ghost"
+								size="icon"
+								className={cn(
+									"size-7 text-muted-foreground",
+									filter.kind !== "all" && "bg-accent text-foreground",
+								)}
+								aria-label={t({ message: "Compare changes" })}
+								title={t({ message: "Compare changes" })}
+							>
+								<SlidersHorizontal className="size-3.5" />
+							</Button>
+						</PopoverTrigger>
+						<PopoverContent
+							align="end"
+							className="w-80 max-w-[calc(100vw-2rem)] space-y-2 p-3"
+						>
+							<div className="text-xs font-medium">
+								<Trans>Compare changes</Trans>
+							</div>
+							<div className="flex min-w-0 items-center gap-1 text-xs">
+								{scope}
+							</div>
+						</PopoverContent>
+					</Popover>
+				)}
 				<Tooltip>
 					<TooltipTrigger asChild>
 						<Button
@@ -103,21 +172,27 @@ export function ChangesToolbar({
 					</TooltipTrigger>
 					<TooltipContent side="bottom">{searchLabel}</TooltipContent>
 				</Tooltip>
-				<ViewModeToggle viewMode={viewMode} onChange={onViewModeChange} />
-				<Tooltip>
-					<TooltipTrigger asChild>
-						<Button
-							variant="ghost"
-							size="icon"
-							className="size-7 text-muted-foreground hover:text-foreground"
-							onClick={onToggleFold}
-							aria-label={label}
-						>
-							<Icon className="size-3.5" />
-						</Button>
-					</TooltipTrigger>
-					<TooltipContent side="bottom">{label}</TooltipContent>
-				</Tooltip>
+				<ViewModeToggle
+					flat={flat}
+					viewMode={viewMode}
+					onChange={onViewModeChange}
+				/>
+				{(!flat || viewMode === "tree") && (
+					<Tooltip>
+						<TooltipTrigger asChild>
+							<Button
+								variant="ghost"
+								size="icon"
+								className="size-7 text-muted-foreground hover:text-foreground"
+								onClick={onToggleFold}
+								aria-label={label}
+							>
+								<Icon className="size-3.5" />
+							</Button>
+						</TooltipTrigger>
+						<TooltipContent side="bottom">{label}</TooltipContent>
+					</Tooltip>
+				)}
 			</div>
 		</div>
 	);

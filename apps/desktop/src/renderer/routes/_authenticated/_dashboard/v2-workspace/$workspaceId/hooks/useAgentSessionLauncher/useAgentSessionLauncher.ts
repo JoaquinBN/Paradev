@@ -19,7 +19,10 @@ import type {
 	PaneViewerData,
 	TerminalPaneData,
 } from "../../types";
-import { focusOrAddTerminalPane } from "../../utils/focusTerminalPane";
+import {
+	focusOrAddTerminalPane,
+	focusTerminalPane,
+} from "../../utils/focusTerminalPane";
 import { readLastChatAgent } from "../../utils/lastChatAgent";
 
 export interface CreateNewAgentSessionInput {
@@ -48,11 +51,13 @@ export type OpenAgentChat = (
 interface UseAgentSessionLauncherOptions {
 	workspaceId: string;
 	store: StoreApi<WorkspaceStore<PaneViewerData>>;
+	linkedStores?: readonly StoreApi<WorkspaceStore<PaneViewerData>>[];
 }
 
 export function useAgentSessionLauncher({
 	workspaceId,
 	store,
+	linkedStores,
 }: UseAgentSessionLauncherOptions): {
 	createNewAgentSession: CreateNewAgentSession;
 	openAgentChat: OpenAgentChat;
@@ -199,9 +204,11 @@ export function useAgentSessionLauncher({
 
 	const focusAgentTerminal = useCallback(
 		(terminalId: string) => {
+			if (linkedStores?.some((linked) => focusTerminalPane(linked, terminalId)))
+				return;
 			focusOrAddTerminalPane(store, terminalId);
 		},
-		[store],
+		[store, linkedStores],
 	);
 
 	return {

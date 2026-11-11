@@ -41,7 +41,10 @@ export function FeatureHeader({
 }: FeatureHeaderProps) {
 	const { t } = useLingui();
 	return (
-		<div className="flex flex-wrap items-center justify-between gap-3">
+		<div
+			data-design-surface="feature-header"
+			className="flex flex-wrap items-center justify-between gap-3"
+		>
 			<div className="flex items-center gap-1.5">
 				<h1 className="font-semibold text-xl tracking-tight">{title}</h1>
 				<Tooltip>

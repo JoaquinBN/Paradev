@@ -1,5 +1,6 @@
 import { normalizeWorkspaceTags } from "@superset/shared/workspace-tags";
 import { useDashboardSidebarState } from "renderer/routes/_authenticated/hooks/useDashboardSidebarState";
+import { useNavigationSections } from "renderer/routes/_authenticated/hooks/useNavigationSections";
 import { useOptimisticActions } from "renderer/routes/_authenticated/hooks/useOptimisticActions";
 import { useHostWorkspaces } from "renderer/routes/_authenticated/providers/HostWorkspacesProvider";
 import { applyFolderTagChange } from "renderer/routes/_authenticated/utils/workspaceTagFolders";
@@ -33,7 +34,10 @@ export function useBulkWorkspaceMoveActions({
 		useDashboardSidebarSelection();
 	// The derived union — tag-only folders with no stored row are valid
 	// bulk-move targets too.
-	const { sections, areSectionsReady } = useProjectTagFolderSections(projectId);
+	const { sections: projectSections, areSectionsReady } =
+		useProjectTagFolderSections(projectId);
+	const navigation = useNavigationSections();
+	const sections = navigation?.sections ?? projectSections;
 	const sectionMenuState = resolveBulkWorkspaceSectionMenuState(
 		sections,
 		areSectionsReady,
@@ -62,6 +66,11 @@ export function useBulkWorkspaceMoveActions({
 	};
 
 	const moveSelectionToSection = (sectionId: string) => {
+		if (navigation) {
+			for (const id of selectedIds) navigation.move(id, sectionId);
+			clearSelection();
+			return;
+		}
 		if (projectId === null) {
 			for (const workspaceId of workspaceIdsForSectionMove(
 				selectedIds,
@@ -83,6 +92,11 @@ export function useBulkWorkspaceMoveActions({
 	};
 
 	const createGroupFromSelection = () => {
+		if (navigation) {
+			navigation.create(selectedIds);
+			clearSelection();
+			return;
+		}
 		if (selectedIds.length === 0) return;
 		const sectionId = createSection(projectId, { workspaceIds: selectedIds });
 		for (const workspaceId of selectedIds) {
@@ -93,6 +107,12 @@ export function useBulkWorkspaceMoveActions({
 	};
 
 	const ungroupSelection = () => {
+		if (navigation) {
+			for (const id of [...groupedWorkspaceIds].reverse())
+				navigation.move(id, null);
+			clearSelection();
+			return;
+		}
 		if (projectId === null) {
 			for (const workspaceId of [...groupedWorkspaceIds].reverse())
 				updateSessionWorkspaceGroup(workspaceId, null);

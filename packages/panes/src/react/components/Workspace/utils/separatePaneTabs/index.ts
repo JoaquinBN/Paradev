@@ -1,0 +1,1 @@
+export { separatePaneTabs } from "./separatePaneTabs";

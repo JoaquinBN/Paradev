@@ -1,14 +1,12 @@
-import { useLingui } from "@lingui/react/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
+import { Button } from "@superset/ui/button";
 import { useMemo } from "react";
 import type { IconType } from "react-icons";
 import { BsTerminalPlus } from "react-icons/bs";
 import { LuGitCompareArrows, LuMessageSquare, LuSearch } from "react-icons/lu";
 import { TbWorld } from "react-icons/tb";
-import { GitHubStarPill } from "renderer/components/GitHubStarPill";
 import { useHotkeyDisplay } from "renderer/hotkeys";
-import supersetEmptyStateWordmark from "renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/assets/superset-empty-state-wordmark.svg";
 import { EmptyTabActionButton } from "renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/components/EmptyTabActionButton";
-import { useTheme } from "renderer/stores/theme";
 
 interface WorkspaceEmptyStateProps {
 	onOpenBrowser: () => void;
@@ -34,9 +32,7 @@ export function WorkspaceEmptyState({
 	onOpenTerminal,
 }: WorkspaceEmptyStateProps) {
 	const { t } = useLingui();
-	const activeTheme = useTheme();
 	const { keys: newGroupDisplay } = useHotkeyDisplay("NEW_GROUP");
-	const { keys: newChatDisplay } = useHotkeyDisplay("NEW_CHAT");
 	const { keys: newBrowserDisplay } = useHotkeyDisplay("NEW_BROWSER");
 	const { keys: quickOpenDisplay } = useHotkeyDisplay("QUICK_OPEN");
 	const { keys: openChangesDisplay } = useHotkeyDisplay("OPEN_DIFF_VIEWER");
@@ -52,17 +48,6 @@ export function WorkspaceEmptyState({
 				icon: BsTerminalPlus,
 				onClick: onOpenTerminal,
 			},
-			...(onOpenChat
-				? [
-						{
-							id: "chat",
-							label: t({ message: "Open Chat" }),
-							display: newChatDisplay,
-							icon: LuMessageSquare,
-							onClick: onOpenChat,
-						},
-					]
-				: []),
 			{
 				id: "browser",
 				label: t({
@@ -93,11 +78,9 @@ export function WorkspaceEmptyState({
 		],
 		[
 			newBrowserDisplay,
-			newChatDisplay,
 			newGroupDisplay,
 			onOpenBrowser,
 			onOpenChanges,
-			onOpenChat,
 			onOpenQuickOpen,
 			onOpenTerminal,
 			openChangesDisplay,
@@ -109,18 +92,19 @@ export function WorkspaceEmptyState({
 	return (
 		<div className="flex h-full flex-1 items-center justify-center px-6 py-10">
 			<div className="w-full max-w-xl">
-				<div className="mb-7 flex items-center justify-center py-3">
-					<img
-						alt="Wanker"
-						className={`h-8 w-auto select-none ${
-							activeTheme?.type === "dark"
-								? "opacity-85"
-								: "brightness-0 opacity-75"
-						}`}
-						draggable={false}
-						src={supersetEmptyStateWordmark}
-					/>
+				<div className="mb-8 space-y-3 text-center">
+					<LuMessageSquare className="mx-auto size-7 text-muted-foreground/50" />
+					<h1 className="text-xl font-medium tracking-tight">
+						<Trans>What should we build next?</Trans>
+					</h1>
+					{onOpenChat && (
+						<Button onClick={onOpenChat} className="mt-3 gap-2">
+							<LuMessageSquare className="size-4" />
+							<Trans>Open Chat</Trans>
+						</Button>
+					)}
 				</div>
+
 				<div className="mx-auto grid w-full max-w-md gap-0.5">
 					{actions.map((action) => (
 						<EmptyTabActionButton
@@ -132,7 +116,6 @@ export function WorkspaceEmptyState({
 						/>
 					))}
 				</div>
-				<GitHubStarPill className="mt-6" />
 			</div>
 		</div>
 	);

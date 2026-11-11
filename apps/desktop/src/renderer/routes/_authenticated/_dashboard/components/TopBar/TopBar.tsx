@@ -43,6 +43,7 @@ export function TopBar() {
 
 	return (
 		<div
+			data-design-surface="titlebar"
 			// Window-drag regions live on the empty leaf elements (traffic-light
 			// spacer + title filler), never on this container: `no-drag` carve-outs
 			// under a `drag` ancestor are lost inside zoomed/masked/scrollable

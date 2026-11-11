@@ -1,7 +1,11 @@
 import { Trans, useLingui } from "@lingui/react/macro";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@superset/ui/tooltip";
 import { cn } from "@superset/ui/utils";
-import { type ComponentPropsWithoutRef, forwardRef } from "react";
+import {
+	type ComponentPropsWithoutRef,
+	forwardRef,
+	type ReactNode,
+} from "react";
 import { HiChevronRight, HiMiniPlus } from "react-icons/hi2";
 import { ProjectThumbnail } from "renderer/routes/_authenticated/components/ProjectThumbnail";
 import { RenameInput } from "renderer/screens/main/components/WorkspaceSidebar/RenameInput";
@@ -9,6 +13,7 @@ import { RenameInput } from "renderer/screens/main/components/WorkspaceSidebar/R
 interface DashboardSidebarProjectRowProps
 	extends ComponentPropsWithoutRef<"div"> {
 	projectName: string;
+	actions?: ReactNode;
 	iconUrl: string | null;
 	projectColor: string | null;
 	isCollapsed: boolean;
@@ -30,6 +35,7 @@ export const DashboardSidebarProjectRow = forwardRef<
 	(
 		{
 			projectName,
+			actions,
 			iconUrl,
 			projectColor,
 			isCollapsed,
@@ -51,6 +57,8 @@ export const DashboardSidebarProjectRow = forwardRef<
 			// biome-ignore lint/a11y/noStaticElementInteractions: The header acts as a single toggle target in view mode while preserving nested inline controls.
 			<div
 				ref={ref}
+				data-design-surface="sidebar-project"
+				{...(!isRenaming && { "aria-expanded": !isCollapsed })}
 				role={isRenaming ? undefined : "button"}
 				tabIndex={isRenaming ? undefined : 0}
 				onClick={isRenaming ? undefined : onToggleCollapse}
@@ -66,7 +74,7 @@ export const DashboardSidebarProjectRow = forwardRef<
 							}
 				}
 				className={cn(
-					"group mx-2 flex h-7 items-center rounded-md pl-2 pr-1 text-[13px] font-medium",
+					"group mx-2 mt-3 mb-1 flex h-9 items-center rounded-md pl-2 pr-1 text-[13px] font-semibold",
 					"hover:bg-fill-hover transition-colors",
 					className,
 				)}
@@ -100,6 +108,7 @@ export const DashboardSidebarProjectRow = forwardRef<
 					)}
 				</div>
 
+				{!isRenaming && actions}
 				{!isRenaming && (
 					<div className="ml-1 flex size-6 shrink-0 items-center justify-center">
 						<Tooltip delayDuration={500}>
@@ -115,7 +124,7 @@ export const DashboardSidebarProjectRow = forwardRef<
 									aria-label={t({
 										message: "New workspace",
 									})}
-									className="hidden size-full items-center justify-center rounded transition-colors hover:bg-fill-hover group-hover:flex group-has-[:focus]:flex focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+									className="flex size-full items-center justify-center rounded text-muted-foreground transition-colors hover:bg-fill-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
 								>
 									<HiMiniPlus className="size-4 text-muted-foreground" />
 								</button>

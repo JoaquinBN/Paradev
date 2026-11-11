@@ -283,6 +283,10 @@ msgstr "{0, plural, one {# görev} other {# görev}}"
 msgid "{0, plural, one {# terminal running} other {# terminals running}}"
 msgstr "{0, plural, one {# terminal çalışıyor} other {# terminal çalışıyor}}"
 
+#. placeholder {0}: items.length
+msgid "{0, plural, one {# tool call} other {# tool calls}}"
+msgstr "{0, plural, other {# araç çağrısı}}"
+
 #. placeholder {0}: group.workspaceCount
 #. placeholder {0}: selectedWorkspaces.length
 msgid "{0, plural, one {# workspace} other {# workspaces}}"
@@ -357,10 +361,6 @@ msgstr "{0, plural, one {İçindeki # otomasyon \"Grup yok\" bölümüne taşın
 #. placeholder {0}: issues.length
 msgid "{0, plural, one {Linear issue} other {Linear issues}}"
 msgstr "{0, plural, one {Linear issue'su} other {Linear issue'su}}"
-
-#. placeholder {0}: selectedWorkspaces.length
-msgid "{0, plural, one {Move # selected workspace to a group} other {Move # selected workspaces to a group}}"
-msgstr "{0, plural, one {Seçili # çalışma alanını bir gruba taşı} other {Seçili # çalışma alanını bir gruba taşı}}"
 
 #. placeholder {0}: move.chats.total - move.chats.ready - move.chats.failed
 msgid "{0, plural, one {Moving # chat here…} other {Moving # chats here…}}"
@@ -1955,6 +1955,9 @@ msgstr "Eylemler"
 msgid "Actions for {0}"
 msgstr "{0} için eylemler"
 
+msgid "Actions for {name}"
+msgstr "{name} için işlemler"
+
 msgid "Active"
 msgstr "Etkin"
 
@@ -3516,6 +3519,9 @@ msgstr "Davranış"
 msgid "Behind main by ? commits, needs rebase"
 msgstr "main dalının ? commit gerisinde, rebase gerekiyor"
 
+msgid "Behind remote"
+msgstr "Uzak dalın gerisinde"
+
 msgid "Being built right now."
 msgstr "Şu anda geliştiriliyor."
 
@@ -4325,6 +4331,9 @@ msgstr "Bir klasör seçin"
 msgid "Choose a parent directory"
 msgstr "Bir üst dizin seçin"
 
+msgid "Choose a project and describe your task. Chats and changes stay together in the workspace."
+msgstr "Bir proje seçin ve görevinizi açıklayın. Sohbetler ve değişiklikler çalışma alanında bir arada kalır."
+
 msgid "Choose a project from GitHub issues before opening an issue."
 msgstr "Bir issue açmadan önce GitHub issue'ları bölümünden bir proje seçin."
 
@@ -4979,6 +4988,9 @@ msgstr "Commit mesajı"
 msgid "Commit message (optional)"
 msgstr "Commit mesajı (isteğe bağlı)"
 
+msgid "Commit your changes, then add the pull request details."
+msgstr "Değişikliklerinizi commit edin, ardından çekme isteği ayrıntılarını ekleyin."
+
 msgid "Commits"
 msgstr "Commit'ler"
 
@@ -5020,6 +5032,9 @@ msgstr "Şirket e-postası"
 
 msgid "Compare"
 msgstr "Karşılaştır"
+
+msgid "Compare changes"
+msgstr "Değişiklikleri karşılaştır"
 
 msgid "Compare plans"
 msgstr "Planları karşılaştır"
@@ -6411,9 +6426,6 @@ msgstr "Manuel oluştur"
 msgid "Create Merge Commit"
 msgstr "Birleştirme commit'i oluştur"
 
-msgid "Create new group"
-msgstr "Yeni grup oluştur"
-
 msgid "Create new project"
 msgstr "Yeni proje oluştur"
 
@@ -7097,6 +7109,9 @@ msgstr "Derinlik · oturum başına token"
 msgid "descending"
 msgstr "azalan"
 
+msgid "Describe a task, review a change, or investigate a bug."
+msgstr "Bir görev tanımlayın, bir değişikliği inceleyin veya bir hatayı araştırın."
+
 msgid "Describe the change."
 msgstr "Değişikliği açıklayın."
 
@@ -7584,6 +7599,9 @@ msgstr "3 destek yanıtı taslağı hazırladı"
 
 msgid "Drag <0>Wanker</0> into your <1>Applications</1> folder"
 msgstr "<0>Wanker</0>'i <1>Uygulamalar</1> klasörüne sürükle"
+
+msgid "Drag a workspace here or use Move to section."
+msgstr "Buraya bir çalışma alanı sürükleyin veya Bölüme taşı seçeneğini kullanın."
 
 msgid "Drag to reorder"
 msgstr "Sıralamak için sürükleyin"
@@ -8841,6 +8859,9 @@ msgstr "@{normalizedSearch} ile filtrele"
 msgid "Filter by author: {label}"
 msgstr "Yazara göre filtrele: {label}"
 
+msgid "Filter by project"
+msgstr "Projeye göre filtrele"
+
 msgid "Filter by reviews"
 msgstr "İncelemeye göre filtrele"
 
@@ -9721,6 +9742,9 @@ msgstr "Paneli gizle"
 
 msgid "Hide Preview"
 msgstr "Önizlemeyi gizle"
+
+msgid "Hide project"
+msgstr "Projeyi gizle"
 
 msgid "Hide pull request list"
 msgstr "Pull request listesini gizle"
@@ -11344,9 +11368,6 @@ msgstr "Yazı tipleri yükleniyor..."
 msgid "Loading GitHub details"
 msgstr "GitHub ayrıntıları yükleniyor"
 
-msgid "Loading groups…"
-msgstr "Gruplar yükleniyor…"
-
 msgid "Loading issue…"
 msgstr "Issue yükleniyor…"
 
@@ -12095,9 +12116,6 @@ msgstr "Yazılım tarihinin çoğu"
 msgid "Move"
 msgstr "Taşı"
 
-msgid "Move {count} to Group"
-msgstr "{count} öğeyi gruba taşı"
-
 msgid "Move {name} to background"
 msgstr "{name} öğesini arka plana taşı"
 
@@ -12131,11 +12149,14 @@ msgstr "Gruba taşı"
 msgid "Move to group…"
 msgstr "Gruba taşı…"
 
+msgid "Move to My workspaces"
+msgstr "Çalışma alanlarım bölümüne taşı"
+
 msgid "Move to Right Side"
 msgstr "Sağ tarafa taşı"
 
-msgid "Move to Tab"
-msgstr "Sekmeye taşı"
+msgid "Move to section"
+msgstr "Bölüme taşı"
 
 msgid "Move your agents before {shutdownDate}."
 msgstr "Ajanlarınızı {shutdownDate} tarihinden önce taşıyın."
@@ -12189,6 +12210,9 @@ msgstr "Anahtar kelimelerim"
 
 msgid "My Tasks"
 msgstr "Görevlerim"
+
+msgid "My workspaces"
+msgstr "Çalışma alanlarım"
 
 msgid "Mystery Machinist"
 msgstr "Gizemli Makinist"
@@ -12352,12 +12376,6 @@ msgstr "Yeni klasör"
 msgid "New Folder..."
 msgstr "Yeni klasör..."
 
-msgid "New group"
-msgstr "Yeni grup"
-
-msgid "New group from workspace"
-msgstr "Çalışma alanından yeni grup"
-
 msgid "New group name…"
 msgstr "Yeni grup adı…"
 
@@ -12381,6 +12399,12 @@ msgstr "Yeni proje"
 
 msgid "New push to branch"
 msgstr "Dala yeni push"
+
+msgid "New section"
+msgstr "Yeni bölüm"
+
+msgid "New section from workspace"
+msgstr "Çalışma alanından yeni bölüm"
 
 msgid "New session"
 msgstr "Yeni oturum"
@@ -12730,6 +12754,9 @@ msgstr "Aramanızla eşleşen dosya yok"
 msgid "No fonts found."
 msgstr "Yazı tipi bulunamadı."
 
+msgid "No Git remote"
+msgstr "Uzak Git deposu yok"
+
 msgid "No git remote detected"
 msgstr "Git remote algılanmadı"
 
@@ -12738,9 +12765,6 @@ msgstr "Grup yok"
 
 msgid "No grouping"
 msgstr "Gruplama yok"
-
-msgid "No groups yet"
-msgstr "Henüz grup yok"
 
 msgid "No Headings"
 msgstr "Başlık yok"
@@ -14276,6 +14300,9 @@ msgstr "Kuruluş URL'si güncellendi!"
 #. placeholder {0}: selectedOrg.name
 msgid "Organization: <0>{0}</0>"
 msgstr "Kuruluş: <0>{0}</0>"
+
+msgid "Organize workspaces across projects. Their files and chats stay in place."
+msgstr "Farklı projelerin çalışma alanlarını düzenleyin. Dosyaları ve sohbetleri yerinde kalır."
 
 msgid "Organize your work into teams. Tasks and integrations can sync per-team."
 msgstr "İşinizi takımlar hâlinde düzenleyin. Görevler ve entegrasyonlar takım bazında eşitlenebilir."
@@ -15984,6 +16011,9 @@ msgstr "Depoyu kaldır"
 msgid "Remove script"
 msgstr "Betiği kaldır"
 
+msgid "Remove section"
+msgstr "Bölümü kaldır"
+
 msgid "Remove team member?"
 msgstr "Takım üyesi kaldırılsın mı?"
 
@@ -16056,6 +16086,9 @@ msgstr "Host'u yeniden adlandır"
 
 msgid "Rename page"
 msgstr "Sayfayı yeniden adlandır"
+
+msgid "Rename section"
+msgstr "Bölümü yeniden adlandır"
 
 msgid "Rename session"
 msgstr "Oturumu yeniden adlandır"
@@ -17294,6 +17327,15 @@ msgstr "İkincil"
 msgid "Secret Shift Lead"
 msgstr "Gizli Vardiya Amiri"
 
+msgid "Section"
+msgstr "Bölüm"
+
+msgid "Section actions"
+msgstr "Bölüm işlemleri"
+
+msgid "Section name"
+msgstr "Bölüm adı"
+
 msgid "Sections"
 msgstr "Bölümler"
 
@@ -18504,9 +18546,6 @@ msgstr "Bölünmüş düğme: worktree'yi varsayılan uygulamada aç + uygulama 
 msgid "Split Down"
 msgstr "Aşağı böl"
 
-msgid "Split Horizontally"
-msgstr "Yatay böl"
-
 msgid "split pane"
 msgstr "bölünmüş bölme"
 
@@ -18537,14 +18576,8 @@ msgstr "Geçerli bölmeyi aşağı doğru böl"
 msgid "Split the current pane to the right"
 msgstr "Geçerli bölmeyi sağa doğru böl"
 
-msgid "Split Vertically"
-msgstr "Dikey böl"
-
 msgid "Split view"
 msgstr "Bölünmüş görünüm"
-
-msgid "Split with Desktop"
-msgstr "Masaüstüyle böl"
 
 msgid "Split with Mobile Simulator"
 msgstr "Mobil Simülatörle böl"
@@ -20954,12 +20987,6 @@ msgstr "Son arşivlenen çalışma alanını veya kapatılan sohbetleri geri al"
 msgid "Unfollow thread"
 msgstr "İleti dizisini takip etmeyi bırak"
 
-msgid "Ungroup"
-msgstr "Gruptan çıkar"
-
-msgid "Ungroup selected workspaces"
-msgstr "Seçili çalışma alanlarını gruptan çıkar"
-
 msgid "Unified view"
 msgstr "Birleşik görünüm"
 
@@ -22327,6 +22354,9 @@ msgstr "Çalışma alanı ayarları"
 
 msgid "Workspace views"
 msgstr "Çalışma alanı görünümleri"
+
+msgid "Workspace without a project"
+msgstr "Projesiz çalışma alanı"
 
 msgid "Workspace worktree not available"
 msgstr "Çalışma alanı worktree'si kullanılamıyor"

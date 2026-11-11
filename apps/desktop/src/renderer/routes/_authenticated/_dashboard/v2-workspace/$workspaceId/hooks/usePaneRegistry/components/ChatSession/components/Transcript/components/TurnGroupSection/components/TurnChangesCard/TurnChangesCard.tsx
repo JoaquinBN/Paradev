@@ -175,7 +175,10 @@ export function TurnChangesCard({
 	};
 
 	return (
-		<div className="@container/turn-card mt-1 mb-2 overflow-hidden rounded-lg border border-border/60 text-[13px]">
+		<div
+			data-design-surface="session-files"
+			className="@container/turn-card mt-2 mb-5 overflow-hidden rounded-lg border border-border/60 text-[13px]"
+		>
 			<div className="flex min-w-0 items-center gap-2 border-border/50 border-b bg-foreground/[0.03] py-1 pr-1.5 pl-3">
 				<FileDiff className="size-3.5 shrink-0 text-muted-foreground" />
 				<Tooltip>

@@ -133,6 +133,8 @@ export function TabItem<TData>({
 				{/* biome-ignore lint/a11y/useKeyWithClickEvents: tabs are pointer-driven; keyboard nav is out of scope here */}
 				<div
 					ref={setRef}
+					data-design-surface="workspace-tab"
+					data-design-active={isActive}
 					className={cn(
 						isCards
 							? cn(headerTabClassName(isActive), "group relative w-full")

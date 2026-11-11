@@ -131,6 +131,8 @@ export const FileRow = memo(function FileRow({
 		<div className="group relative">
 			<button
 				type="button"
+				data-design-surface="changed-file"
+				aria-current={isSelected ? "true" : undefined}
 				className={cn(
 					"flex w-full items-center gap-1.5 py-1 pr-3 pl-3 text-left text-xs hover:bg-accent/50",
 					isSelected && "bg-accent/70",

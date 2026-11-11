@@ -15,13 +15,15 @@ import {
 import { ResizablePanel } from "renderer/screens/main/components/ResizablePanel";
 import { clampSideWidth } from "./utils/clampSideWidth";
 
-export type PaneArea = "center" | "right";
+export type PaneArea = "center" | "right" | "terminal";
 
 function paneAreaOf(element: Element | null): PaneArea | null {
 	const area = element
 		?.closest("[data-pane-area]")
 		?.getAttribute("data-pane-area");
-	return area === "center" || area === "right" ? area : null;
+	return area === "center" || area === "right" || area === "terminal"
+		? area
+		: null;
 }
 
 interface WorkspaceSplitLayoutProps {

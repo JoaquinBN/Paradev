@@ -94,6 +94,7 @@ export function V2NotificationController() {
 					workspaceId: v2WorkspaceLocalState.workspaceId,
 					paneLayout: v2WorkspaceLocalState.paneLayout,
 					rightPaneLayout: v2WorkspaceLocalState.rightPaneLayout,
+					terminalPaneLayout: v2WorkspaceLocalState.terminalPaneLayout,
 					rightSidebarOpen: v2WorkspaceLocalState.rightSidebarOpen,
 				})),
 		[collections],
@@ -162,6 +163,7 @@ export function V2NotificationController() {
 				},
 				paneLayout: workspace.paneLayout,
 				rightPaneLayout: workspace.rightPaneLayout,
+				terminalPaneLayout: workspace.terminalPaneLayout,
 			});
 
 			// Statuses derive from host bindings, so the host must hear the
@@ -210,6 +212,7 @@ function getNotificationWorkspaceStatesById({
 		workspaceId: string;
 		paneLayout: unknown;
 		rightPaneLayout?: unknown;
+		terminalPaneLayout?: unknown;
 		rightSidebarOpen?: boolean;
 	}>;
 	isRightAreaOpen: boolean;
@@ -234,6 +237,13 @@ function getNotificationWorkspaceStatesById({
 			]),
 	);
 
+	const terminalPaneLayoutsByWorkspaceId = new Map(
+		localWorkspaceRows.map((row) => [
+			row.workspaceId,
+			(row.terminalPaneLayout as WorkspaceState<PaneViewerData> | undefined) ??
+				null,
+		]),
+	);
 	const statesById = new Map<string, HostNotificationWorkspaceState>(
 		localWorkspaceRows.map((row) => [
 			row.workspaceId,
@@ -243,6 +253,9 @@ function getNotificationWorkspaceStatesById({
 				paneLayout: paneLayoutsByWorkspaceId.get(row.workspaceId) ?? null,
 				rightPaneLayout:
 					rightPaneLayoutsByWorkspaceId.get(row.workspaceId) ?? null,
+				terminalPaneLayout: terminalPaneLayoutsByWorkspaceId.get(
+					row.workspaceId,
+				),
 			},
 		]),
 	);
@@ -255,6 +268,9 @@ function getNotificationWorkspaceStatesById({
 			paneLayout: paneLayoutsByWorkspaceId.get(workspace.workspaceId) ?? null,
 			rightPaneLayout:
 				rightPaneLayoutsByWorkspaceId.get(workspace.workspaceId) ?? null,
+			terminalPaneLayout: terminalPaneLayoutsByWorkspaceId.get(
+				workspace.workspaceId,
+			),
 		});
 	}
 

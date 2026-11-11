@@ -11,6 +11,7 @@ import { PRStatusGroup } from "./components/PRStatusGroup";
 import { ShipControl } from "./components/ShipControl";
 
 interface ChangesControlProps {
+	showStats?: boolean;
 	workspaceId: string;
 	/** Whether the active tab shows a Changes pane — the face's toggle state. */
 	isChangesOpen: boolean;
@@ -36,6 +37,7 @@ interface ChangesControlProps {
  * the shell when none do, so the children keep their own null logic.
  */
 export const ChangesControl = memo(function ChangesControl({
+	showStats = true,
 	workspaceId,
 	isChangesOpen,
 	onToggleChanges,
@@ -62,7 +64,7 @@ export const ChangesControl = memo(function ChangesControl({
 		((flowState.kind === "busy" || flowState.kind === "error") &&
 			flowState.pr != null);
 	const visibleStats =
-		!hasPr && stats != null && stats.fileCount > 0 ? stats : null;
+		showStats && !hasPr && stats != null && stats.fileCount > 0 ? stats : null;
 
 	return (
 		<div className="flex h-7 items-stretch divide-x divide-border/60 overflow-hidden rounded-md border border-border/60 bg-muted/30 empty:hidden">

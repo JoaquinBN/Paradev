@@ -1,6 +1,5 @@
 import { Trans, useLingui } from "@lingui/react/macro";
 import {
-	DropdownMenuCheckboxItem,
 	DropdownMenuItem,
 	DropdownMenuLabel,
 	DropdownMenuSeparator,
@@ -20,8 +19,6 @@ interface AddTabMenuProps {
 	onAddDesktop?: (() => void) | undefined;
 	rightPaneOptions?: RightPaneOption[];
 	onOpenInRightPane?: (kind: RightPaneKind) => void;
-	showPresetsBar: boolean;
-	onToggleShowPresetsBar: (enabled: boolean) => void;
 }
 
 export function AddTabMenu({
@@ -33,12 +30,22 @@ export function AddTabMenu({
 	onAddDesktop,
 	rightPaneOptions = [],
 	onOpenInRightPane,
-	showPresetsBar,
-	onToggleShowPresetsBar,
 }: AddTabMenuProps) {
 	const { i18n } = useLingui();
 	return (
 		<>
+			{onAddChat && (
+				<DropdownMenuItem
+					className="gap-2"
+					onClick={() => runAfterClose(onAddChat)}
+				>
+					<LuMessageSquare className="size-4" />
+					<span>
+						<Trans>Chat</Trans>
+					</span>
+					<HotkeyMenuShortcut hotkeyId="NEW_CHAT" />
+				</DropdownMenuItem>
+			)}{" "}
 			<DropdownMenuItem
 				className="gap-2"
 				onClick={() => runAfterClose(onAddTerminal)}
@@ -49,15 +56,6 @@ export function AddTabMenu({
 				</span>
 				<HotkeyMenuShortcut hotkeyId="NEW_GROUP" />
 			</DropdownMenuItem>
-			{onAddChat && (
-				<DropdownMenuItem className="gap-2" onClick={onAddChat}>
-					<LuMessageSquare className="size-4" />
-					<span>
-						<Trans>Chat</Trans>
-					</span>
-					<HotkeyMenuShortcut hotkeyId="NEW_CHAT" />
-				</DropdownMenuItem>
-			)}
 			{onAddBrowser && (
 				<DropdownMenuItem className="gap-2" onClick={onAddBrowser}>
 					<TbWorld className="size-4" />
@@ -106,14 +104,6 @@ export function AddTabMenu({
 					))}
 				</>
 			)}
-			<DropdownMenuSeparator />
-			<DropdownMenuCheckboxItem
-				checked={showPresetsBar}
-				onCheckedChange={(checked) => onToggleShowPresetsBar(checked === true)}
-				onSelect={(event) => event.preventDefault()}
-			>
-				<Trans>Show Scripts Bar</Trans>
-			</DropdownMenuCheckboxItem>
 		</>
 	);
 }

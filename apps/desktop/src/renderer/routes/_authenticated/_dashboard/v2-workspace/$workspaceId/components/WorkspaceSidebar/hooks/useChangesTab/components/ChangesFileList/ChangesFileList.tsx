@@ -23,6 +23,7 @@ interface ChangesFileListProps {
 	workspaceId: string;
 	isLoading?: boolean;
 	viewMode: ChangesViewMode;
+	flat?: boolean;
 	worktreePath?: string;
 	selectedFilePath?: string;
 	selectedChangeKey?: string;
@@ -64,6 +65,7 @@ export const ChangesFileList = memo(function ChangesFileList({
 	workspaceId,
 	isLoading,
 	viewMode,
+	flat = false,
 	worktreePath,
 	selectedFilePath,
 	selectedChangeKey,
@@ -150,6 +152,7 @@ export const ChangesFileList = memo(function ChangesFileList({
 							/>
 						) : (
 							<ChangesFoldersView
+								flat={flat}
 								files={groupFiles}
 								workspaceId={workspaceId}
 								worktreePath={worktreePath}

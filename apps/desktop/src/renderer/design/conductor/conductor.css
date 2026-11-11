@@ -1,0 +1,330 @@
+html[data-desktop-design="conductor"] {
+	--design-duration: 140ms;
+	--design-ease: cubic-bezier(0.2, 0, 0, 1);
+	--design-edge: color-mix(in srgb, var(--foreground) 10%, transparent);
+	--design-edge-strong: color-mix(in srgb, var(--foreground) 18%, transparent);
+	--design-elevated: var(--popover);
+	--design-shadow: 0 12px 36px rgb(0 0 0 / 16%), 0 2px 8px rgb(0 0 0 / 8%);
+	--design-inset: inset 0 1px 0
+		color-mix(in srgb, var(--foreground) 3%, transparent);
+	--design-focus: color-mix(in srgb, var(--foreground) 55%, var(--background));
+}
+
+html[data-desktop-design="conductor"]
+	:where(
+		[data-design-surface="sidebar"],
+		[data-design-surface="titlebar"],
+		[data-design-surface="settings-sidebar"]
+	) {
+	background-color: var(--sidebar);
+	border-color: var(--design-edge);
+}
+
+html[data-desktop-design="conductor"] [data-design-surface="page-header"] {
+	box-shadow: inset 0 -1px 0 var(--design-edge);
+}
+
+html[data-desktop-design="conductor"] [data-design-surface="titlebar"] {
+	box-shadow: inset 0 -1px 0 var(--design-edge);
+}
+
+html[data-desktop-design="conductor"] [data-design-surface="record-main"] {
+	padding-inline: clamp(1rem, 3vw, 2.5rem);
+	padding-block: 1.75rem 2.5rem;
+}
+
+html[data-desktop-design="conductor"] [data-design-surface="record-side"] {
+	background-color: color-mix(in srgb, var(--sidebar) 45%, var(--background));
+}
+
+html[data-desktop-design="conductor"] [data-design-surface="settings-sidebar"] {
+	flex-shrink: 0;
+	width: clamp(13rem, 20vw, 14rem);
+}
+
+html[data-desktop-design="conductor"] [data-design-surface="settings-section"] {
+	border-bottom: 1px solid var(--design-edge);
+	padding-block-end: 1.5rem;
+}
+
+html[data-desktop-design="conductor"]
+	[data-design-surface="settings-section-header"] {
+	flex-wrap: wrap;
+	row-gap: 0.75rem;
+}
+
+html[data-desktop-design="conductor"]
+	[data-design-surface="settings-section"]
+	p {
+	line-height: 1.6;
+	text-wrap: pretty;
+}
+
+html[data-desktop-design="conductor"]
+	:where(
+		[data-slot="button"],
+		button[data-slot="tooltip-trigger"],
+		[data-slot="tabs-trigger"],
+		[data-slot="dropdown-menu-item"],
+		[data-slot="dropdown-menu-checkbox-item"],
+		[data-slot="dropdown-menu-radio-item"],
+		[data-slot="context-menu-item"],
+		[data-slot="select-item"],
+		[data-slot="command-item"],
+		[data-slot="table-row"],
+		[data-slot="switch"],
+		[data-slot="checkbox"],
+		[data-slot="toggle"],
+		[data-slot="accordion-trigger"]
+	) {
+	transition-property:
+		background-color, border-color, color, box-shadow, opacity;
+	transition-duration: var(--design-duration);
+	transition-timing-function: var(--design-ease);
+}
+
+html[data-desktop-design="conductor"]
+	:where(
+		[data-slot="button"],
+		button[data-slot="tooltip-trigger"],
+		[data-slot="tabs-trigger"],
+		[data-slot="select-trigger"],
+		[data-design-surface="sidebar"] button,
+		[data-design-surface="sidebar"] a,
+		[data-design-surface="settings-sidebar"] button,
+		[data-design-surface="settings-sidebar"] a
+	):focus-visible {
+	outline: 2px solid var(--design-focus);
+	outline-offset: -2px;
+}
+
+html[data-desktop-design="conductor"]
+	[data-slot="button"]:active:not(:disabled, [aria-disabled="true"]) {
+	opacity: 0.82;
+}
+
+html[data-desktop-design="conductor"]
+	:where(
+		[data-slot="input"],
+		[data-slot="textarea"],
+		[data-slot="select-trigger"]
+	) {
+	transition-property: border-color, box-shadow, background-color;
+	transition-duration: var(--design-duration);
+	transition-timing-function: var(--design-ease);
+}
+
+html[data-desktop-design="conductor"]
+	:where(
+		[data-slot="input"],
+		[data-slot="textarea"],
+		[data-slot="select-trigger"]
+	):focus-visible:not([aria-invalid="true"]) {
+	outline: 2px solid var(--design-focus);
+	outline-offset: 2px;
+}
+
+html[data-desktop-design="conductor"]
+	:where(
+		[data-slot="dialog-content"],
+		[data-slot="alert-dialog-content"],
+		[data-slot="popover-content"],
+		[data-slot="tooltip-content"],
+		[data-slot="dropdown-menu-content"],
+		[data-slot="dropdown-menu-sub-content"],
+		[data-slot="context-menu-content"],
+		[data-slot="context-menu-sub-content"],
+		[data-slot="select-content"]
+	) {
+	border-color: var(--design-edge-strong);
+	background-color: var(--design-elevated);
+	box-shadow: var(--design-inset), var(--design-shadow);
+	animation-duration: var(--design-duration);
+	animation-timing-function: var(--design-ease);
+}
+
+html[data-desktop-design="conductor"]
+	:where(
+		[data-slot="dropdown-menu-content"],
+		[data-slot="dropdown-menu-sub-content"],
+		[data-slot="context-menu-content"],
+		[data-slot="context-menu-sub-content"],
+		[data-slot="popover-content"],
+		[data-slot="tooltip-content"],
+		[data-slot="select-content"]
+	) {
+	border-radius: 0.625rem;
+}
+
+html[data-desktop-design="conductor"]
+	:where([data-slot="dialog-content"], [data-slot="alert-dialog-content"]) {
+	border-radius: 0.875rem;
+	max-height: calc(100dvh - 2rem);
+	overflow-y: auto;
+}
+
+html[data-desktop-design="conductor"] [data-slot="dialog-overlay"] {
+	background-color: rgb(0 0 0 / 32%);
+	animation-duration: var(--design-duration);
+}
+
+html[data-desktop-design="conductor"] [data-slot="switch-thumb"] {
+	transition-property: translate, transform, background-color;
+	transition-duration: var(--design-duration);
+	transition-timing-function: var(--design-ease);
+}
+
+html[data-desktop-design="conductor"] [data-slot="command-shortcut"] {
+	font-variant-numeric: tabular-nums;
+	letter-spacing: 0.025em;
+}
+
+html[data-desktop-design="conductor"] [data-slot="card"] {
+	border-color: var(--design-edge);
+	box-shadow: var(--design-inset);
+}
+
+html[data-desktop-design="conductor"]
+	:where(
+		[data-design-surface="feature-header"] h1,
+		[data-slot="dialog-title"],
+		[data-slot="alert-dialog-title"]
+	) {
+	letter-spacing: -0.025em;
+	text-wrap: balance;
+}
+
+html[data-desktop-design="conductor"] [data-design-surface="composer"] {
+	box-shadow:
+		0 0 0 1px var(--design-edge-strong),
+		var(--design-inset),
+		0 4px 16px rgb(0 0 0 / 5%);
+	transition-property: box-shadow;
+	transition-duration: var(--design-duration);
+	transition-timing-function: var(--design-ease);
+}
+
+html[data-desktop-design="conductor"]
+	[data-design-surface="composer"]:focus-within {
+	box-shadow:
+		0 0 0 1px var(--design-focus),
+		0 0 0 3px color-mix(in srgb, var(--foreground) 5%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html[data-desktop-design="conductor"] {
+		--design-duration: 0ms;
+	}
+
+	html[data-desktop-design="conductor"],
+	html[data-desktop-design="conductor"] body {
+		scroll-behavior: auto;
+	}
+
+	html[data-desktop-design="conductor"]
+		:where(
+			[data-slot="dialog-content"],
+			[data-slot="alert-dialog-content"],
+			[data-slot="dialog-overlay"],
+			[data-slot="popover-content"],
+			[data-slot="tooltip-content"],
+			[data-slot="dropdown-menu-content"],
+			[data-slot="dropdown-menu-sub-content"],
+			[data-slot="context-menu-content"],
+			[data-slot="context-menu-sub-content"],
+			[data-slot="select-content"]
+		) {
+		animation: none;
+	}
+}
+
+html[data-desktop-design="conductor"] [data-design-surface="workspace-tabs"] {
+	height: 2.5rem;
+	background: var(--background);
+}
+html[data-desktop-design="conductor"] [data-design-surface="workspace-tab"] {
+	border-radius: 0;
+	border-color: transparent;
+	background: transparent;
+}
+html[data-desktop-design="conductor"]
+	[data-design-surface="workspace-tab"][data-design-active="true"] {
+	box-shadow: inset 0 -2px 0 var(--design-focus);
+	background: color-mix(in srgb, var(--foreground) 3%, transparent);
+}
+html[data-desktop-design="conductor"] [data-design-surface="pane-header"] {
+	min-height: 2rem;
+	background: var(--sidebar);
+	border-color: var(--design-edge);
+}
+html[data-desktop-design="conductor"]
+	[data-design-surface="session-user-message"] {
+	padding-block: 1.5rem 0.75rem;
+}
+html[data-desktop-design="conductor"] [data-design-surface="session-answer"] {
+	padding-block: 0.5rem 1rem;
+	font-size: 0.9375rem;
+	line-height: 1.75;
+}
+html[data-desktop-design="conductor"] [data-design-surface="session-answer"] p {
+	line-height: 1.75;
+}
+html[data-desktop-design="conductor"] [data-design-surface="session-activity"] {
+	margin-block: 0.375rem;
+	border-left: 1px solid var(--design-edge-strong);
+	padding-left: 0.5rem;
+}
+html[data-desktop-design="conductor"] [data-design-surface="session-files"] {
+	background: color-mix(in srgb, var(--sidebar) 45%, var(--background));
+}
+html[data-desktop-design="conductor"] [data-design-surface="sidebar-project"] {
+	color: var(--foreground);
+}
+html[data-desktop-design="conductor"]
+	[data-design-surface="sidebar-workspace-content"] {
+	row-gap: 0.125rem;
+}
+html[data-desktop-design="conductor"] [data-design-surface="workspace-header"],
+html[data-desktop-design="conductor"]
+	[data-design-surface="workspace-review-header"],
+html[data-desktop-design="conductor"]
+	[data-design-surface="sidebar-navigation"],
+html[data-desktop-design="conductor"]
+	[data-design-surface="workspace-launchers"],
+html[data-desktop-design="conductor"]
+	[data-design-surface="review-navigation"] {
+	border-color: var(--design-edge);
+}
+html[data-desktop-design="conductor"] [data-design-surface="review-panel"] {
+	background: var(--sidebar);
+}
+html[data-desktop-design="conductor"]
+	:where(
+		[data-design-surface="sidebar-tools"],
+		[data-design-surface="workspace-launchers"]
+	)
+	summary:focus-visible {
+	outline: 2px solid var(--design-focus);
+	outline-offset: -2px;
+}
+
+html[data-desktop-design="conductor"] [data-design-surface="workspace-shell"] {
+	background: var(--background);
+}
+html[data-desktop-design="conductor"] [data-design-surface="session-welcome"] {
+	color: var(--foreground);
+}
+
+:root[data-desktop-design="conductor"] [data-design-surface="changes-sidebar"] {
+	background: var(--sidebar);
+}
+:root[data-desktop-design="conductor"] [data-design-surface="changes-summary"] {
+	font-variant-numeric: tabular-nums;
+}
+:root[data-desktop-design="conductor"]
+	[data-design-surface="changes-sidebar"]
+	[data-design-surface="changed-file"] {
+	min-height: 32px;
+	padding-inline: 12px;
+	font-size: 12px;
+}

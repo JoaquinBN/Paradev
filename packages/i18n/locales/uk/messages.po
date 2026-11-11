@@ -277,6 +277,10 @@ msgstr "{0, plural, one {# завдання} few {# завдання} many {# з
 msgid "{0, plural, one {# terminal running} other {# terminals running}}"
 msgstr "{0, plural, one {Запущено # термінал} few {Запущено # термінали} many {Запущено # терміналів} other {Запущено # термінала}}"
 
+#. placeholder {0}: items.length
+msgid "{0, plural, one {# tool call} other {# tool calls}}"
+msgstr "{0, plural, one {# виклик інструмента} few {# виклики інструментів} many {# викликів інструментів} other {# виклику інструмента}}"
+
 #. placeholder {0}: group.workspaceCount
 #. placeholder {0}: selectedWorkspaces.length
 msgid "{0, plural, one {# workspace} other {# workspaces}}"
@@ -351,10 +355,6 @@ msgstr "{0, plural, one {Її # автоматизація перейде до �
 #. placeholder {0}: issues.length
 msgid "{0, plural, one {Linear issue} other {Linear issues}}"
 msgstr "{0, plural, one {issue з Linear} few {issues з Linear} many {issues з Linear} other {issues з Linear}}"
-
-#. placeholder {0}: selectedWorkspaces.length
-msgid "{0, plural, one {Move # selected workspace to a group} other {Move # selected workspaces to a group}}"
-msgstr "{0, plural, one {Перемістити # вибраний робочий простір у групу} few {Перемістити # вибрані робочі простори в групу} many {Перемістити # вибраних робочих просторів у групу} other {Перемістити # вибраного робочого простору в групу}}"
 
 #. placeholder {0}: move.chats.total - move.chats.ready - move.chats.failed
 msgid "{0, plural, one {Moving # chat here…} other {Moving # chats here…}}"
@@ -1949,6 +1949,9 @@ msgstr "Дії"
 msgid "Actions for {0}"
 msgstr "Дії для {0}"
 
+msgid "Actions for {name}"
+msgstr "Дії для {name}"
+
 msgid "Active"
 msgstr "Активний"
 
@@ -3510,6 +3513,9 @@ msgstr "Поведінка"
 msgid "Behind main by ? commits, needs rebase"
 msgstr "Відстає від main на ? комітів, потрібен ребейз"
 
+msgid "Behind remote"
+msgstr "Відстає від віддаленої гілки"
+
 msgid "Being built right now."
 msgstr "Зараз у розробці."
 
@@ -4319,6 +4325,9 @@ msgstr "Виберіть папку"
 msgid "Choose a parent directory"
 msgstr "Виберіть батьківську папку"
 
+msgid "Choose a project and describe your task. Chats and changes stay together in the workspace."
+msgstr "Виберіть проєкт і опишіть завдання. Чати та зміни залишаються разом у робочому просторі."
+
 msgid "Choose a project from GitHub issues before opening an issue."
 msgstr "Перш ніж відкривати issue, виберіть проєкт у GitHub issues."
 
@@ -4973,6 +4982,9 @@ msgstr "Повідомлення коміту"
 msgid "Commit message (optional)"
 msgstr "Повідомлення коміту (необов'язково)"
 
+msgid "Commit your changes, then add the pull request details."
+msgstr "Створіть коміт зі змінами, а потім додайте відомості про пул-реквест."
+
 msgid "Commits"
 msgstr "Коміти"
 
@@ -5014,6 +5026,9 @@ msgstr "Робоча електронна пошта"
 
 msgid "Compare"
 msgstr "Порівняти"
+
+msgid "Compare changes"
+msgstr "Порівняти зміни"
 
 msgid "Compare plans"
 msgstr "Порівняти тарифи"
@@ -6405,9 +6420,6 @@ msgstr "Створити вручну"
 msgid "Create Merge Commit"
 msgstr "Створити коміт злиття"
 
-msgid "Create new group"
-msgstr "Створити нову групу"
-
 msgid "Create new project"
 msgstr "Створити новий проєкт"
 
@@ -7091,6 +7103,9 @@ msgstr "Глибина · токенів за сеанс"
 msgid "descending"
 msgstr "за спаданням"
 
+msgid "Describe a task, review a change, or investigate a bug."
+msgstr "Опишіть завдання, перегляньте зміну або дослідіть помилку."
+
 msgid "Describe the change."
 msgstr "Опишіть зміну."
 
@@ -7578,6 +7593,9 @@ msgstr "підготував чернетки 3 відповідей для пі
 
 msgid "Drag <0>Wanker</0> into your <1>Applications</1> folder"
 msgstr "Перетягніть <0>Wanker</0> у папку <1>Програми</1>"
+
+msgid "Drag a workspace here or use Move to section."
+msgstr "Перетягніть сюди робочий простір або скористайтеся «Перемістити до розділу»."
 
 msgid "Drag to reorder"
 msgstr "Перетягніть, щоб змінити порядок"
@@ -8835,6 +8853,9 @@ msgstr "Фільтрувати за @{normalizedSearch}"
 msgid "Filter by author: {label}"
 msgstr "Фільтр за автором: {label}"
 
+msgid "Filter by project"
+msgstr "Фільтрувати за проєктом"
+
 msgid "Filter by reviews"
 msgstr "Фільтрувати за рев'ю"
 
@@ -9715,6 +9736,9 @@ msgstr "Приховати панель"
 
 msgid "Hide Preview"
 msgstr "Приховати попередній перегляд"
+
+msgid "Hide project"
+msgstr "Приховати проєкт"
 
 msgid "Hide pull request list"
 msgstr "Приховати список пул-реквестів"
@@ -11338,9 +11362,6 @@ msgstr "Завантаження шрифтів..."
 msgid "Loading GitHub details"
 msgstr "Завантаження даних GitHub"
 
-msgid "Loading groups…"
-msgstr "Завантаження груп…"
-
 msgid "Loading issue…"
 msgstr "Завантаження issue…"
 
@@ -12089,9 +12110,6 @@ msgstr "Майже вся історія розробки ПЗ"
 msgid "Move"
 msgstr "Перемістити"
 
-msgid "Move {count} to Group"
-msgstr "Перемістити {count} до групи"
-
 msgid "Move {name} to background"
 msgstr "Перевести {name} у фоновий режим"
 
@@ -12125,11 +12143,14 @@ msgstr "Перемістити до групи"
 msgid "Move to group…"
 msgstr "Перемістити до групи…"
 
+msgid "Move to My workspaces"
+msgstr "Перемістити до «Мої робочі простори»"
+
 msgid "Move to Right Side"
 msgstr "Перемістити праворуч"
 
-msgid "Move to Tab"
-msgstr "Перемістити у вкладку"
+msgid "Move to section"
+msgstr "Перемістити до розділу"
 
 msgid "Move your agents before {shutdownDate}."
 msgstr "Перенесіть агентів до {shutdownDate}."
@@ -12183,6 +12204,9 @@ msgstr "Мої ключові слова"
 
 msgid "My Tasks"
 msgstr "Мої завдання"
+
+msgid "My workspaces"
+msgstr "Мої робочі простори"
 
 msgid "Mystery Machinist"
 msgstr "Таємничий верстатник"
@@ -12346,12 +12370,6 @@ msgstr "Нова папка"
 msgid "New Folder..."
 msgstr "Нова папка..."
 
-msgid "New group"
-msgstr "Нова група"
-
-msgid "New group from workspace"
-msgstr "Нова група з робочого простору"
-
 msgid "New group name…"
 msgstr "Назва нової групи…"
 
@@ -12375,6 +12393,12 @@ msgstr "Новий проєкт"
 
 msgid "New push to branch"
 msgstr "Новий push у гілку"
+
+msgid "New section"
+msgstr "Новий розділ"
+
+msgid "New section from workspace"
+msgstr "Новий розділ із робочого простору"
 
 msgid "New session"
 msgstr "Новий сеанс"
@@ -12724,6 +12748,9 @@ msgstr "Немає файлів, що відповідають пошуку"
 msgid "No fonts found."
 msgstr "Шрифтів не знайдено."
 
+msgid "No Git remote"
+msgstr "Немає віддаленого репозиторію Git"
+
 msgid "No git remote detected"
 msgstr "Не виявлено git remote"
 
@@ -12732,9 +12759,6 @@ msgstr "Без групи"
 
 msgid "No grouping"
 msgstr "Без групування"
-
-msgid "No groups yet"
-msgstr "Груп ще немає"
 
 msgid "No Headings"
 msgstr "Немає заголовків"
@@ -14270,6 +14294,9 @@ msgstr "URL організації оновлено!"
 #. placeholder {0}: selectedOrg.name
 msgid "Organization: <0>{0}</0>"
 msgstr "Організація: <0>{0}</0>"
+
+msgid "Organize workspaces across projects. Their files and chats stay in place."
+msgstr "Упорядковуйте робочі простори різних проєктів. Їхні файли та чати залишаються на місці."
 
 msgid "Organize your work into teams. Tasks and integrations can sync per-team."
 msgstr "Організуйте роботу за командами. Завдання й інтеграції можуть синхронізуватися окремо для кожної команди."
@@ -15978,6 +16005,9 @@ msgstr "Прибрати репозиторій"
 msgid "Remove script"
 msgstr "Видалити скрипт"
 
+msgid "Remove section"
+msgstr "Видалити розділ"
+
 msgid "Remove team member?"
 msgstr "Видалити учасника команди?"
 
@@ -16050,6 +16080,9 @@ msgstr "Перейменувати хост"
 
 msgid "Rename page"
 msgstr "Перейменувати сторінку"
+
+msgid "Rename section"
+msgstr "Перейменувати розділ"
 
 msgid "Rename session"
 msgstr "Перейменувати сеанс"
@@ -17288,6 +17321,15 @@ msgstr "Другорядний"
 msgid "Secret Shift Lead"
 msgstr "Таємний начальник зміни"
 
+msgid "Section"
+msgstr "Розділ"
+
+msgid "Section actions"
+msgstr "Дії з розділом"
+
+msgid "Section name"
+msgstr "Назва розділу"
+
 msgid "Sections"
 msgstr "Розділи"
 
@@ -18498,9 +18540,6 @@ msgstr "Розділена кнопка: відкрити worktree в засто
 msgid "Split Down"
 msgstr "Розділити вниз"
 
-msgid "Split Horizontally"
-msgstr "Розділити горизонтально"
-
 msgid "split pane"
 msgstr "розділена панель"
 
@@ -18531,14 +18570,8 @@ msgstr "Розділити поточну панель донизу"
 msgid "Split the current pane to the right"
 msgstr "Розділити поточну панель праворуч"
 
-msgid "Split Vertically"
-msgstr "Розділити вертикально"
-
 msgid "Split view"
 msgstr "Розділений вигляд"
-
-msgid "Split with Desktop"
-msgstr "Розділити з робочим столом"
 
 msgid "Split with Mobile Simulator"
 msgstr "Розділити з мобільним симулятором"
@@ -20948,12 +20981,6 @@ msgstr "Скасувати останнє архівування робочог�
 msgid "Unfollow thread"
 msgstr "Не стежити за тредом"
 
-msgid "Ungroup"
-msgstr "Розгрупувати"
-
-msgid "Ungroup selected workspaces"
-msgstr "Розгрупувати вибрані робочі простори"
-
 msgid "Unified view"
 msgstr "Об'єднаний вигляд"
 
@@ -22321,6 +22348,9 @@ msgstr "Налаштування робочого простору"
 
 msgid "Workspace views"
 msgstr "Подання робочих просторів"
+
+msgid "Workspace without a project"
+msgstr "Робочий простір без проєкту"
 
 msgid "Workspace worktree not available"
 msgstr "Worktree робочого простору недоступний"

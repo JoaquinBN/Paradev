@@ -283,6 +283,10 @@ msgstr "{0, plural, one {#個任務} other {#個任務}}"
 msgid "{0, plural, one {# terminal running} other {# terminals running}}"
 msgstr "{0, plural, other {# 個終端機正在執行}}"
 
+#. placeholder {0}: items.length
+msgid "{0, plural, one {# tool call} other {# tool calls}}"
+msgstr "{0, plural, other {# 次工具呼叫}}"
+
 #. placeholder {0}: group.workspaceCount
 #. placeholder {0}: selectedWorkspaces.length
 msgid "{0, plural, one {# workspace} other {# workspaces}}"
@@ -357,10 +361,6 @@ msgstr "{0, plural, one {其中 # 個自動化將移到「無群組」。自動�
 #. placeholder {0}: issues.length
 msgid "{0, plural, one {Linear issue} other {Linear issues}}"
 msgstr "{0, plural, one {Linear議題} other {Linear議題}}"
-
-#. placeholder {0}: selectedWorkspaces.length
-msgid "{0, plural, one {Move # selected workspace to a group} other {Move # selected workspaces to a group}}"
-msgstr "{0, plural, one {把選中的#個工作區移動到群組} other {把選中的#個工作區移動到群組}}"
 
 #. placeholder {0}: move.chats.total - move.chats.ready - move.chats.failed
 msgid "{0, plural, one {Moving # chat here…} other {Moving # chats here…}}"
@@ -1955,6 +1955,9 @@ msgstr "操作"
 msgid "Actions for {0}"
 msgstr "{0}的操作"
 
+msgid "Actions for {name}"
+msgstr "{name} 的操作"
+
 msgid "Active"
 msgstr "啟用中"
 
@@ -3516,6 +3519,9 @@ msgstr "行為"
 msgid "Behind main by ? commits, needs rebase"
 msgstr "落後main ?個提交，需要變基"
 
+msgid "Behind remote"
+msgstr "落後於遠端分支"
+
 msgid "Being built right now."
 msgstr "正在構建中。"
 
@@ -4325,6 +4331,9 @@ msgstr "選擇資料夾"
 msgid "Choose a parent directory"
 msgstr "選擇父目錄"
 
+msgid "Choose a project and describe your task. Chats and changes stay together in the workspace."
+msgstr "選擇專案並描述任務。聊天和變更會保存在同一工作區中。"
+
 msgid "Choose a project from GitHub issues before opening an issue."
 msgstr "開啟議題前，請先在GitHub議題中選擇一個專案。"
 
@@ -4979,6 +4988,9 @@ msgstr "提交訊息"
 msgid "Commit message (optional)"
 msgstr "提交訊息（選填）"
 
+msgid "Commit your changes, then add the pull request details."
+msgstr "提交變更，然後填寫提取請求詳細資訊。"
+
 msgid "Commits"
 msgstr "提交"
 
@@ -5020,6 +5032,9 @@ msgstr "公司電子郵件"
 
 msgid "Compare"
 msgstr "對比"
+
+msgid "Compare changes"
+msgstr "比較變更"
 
 msgid "Compare plans"
 msgstr "方案對比"
@@ -6411,9 +6426,6 @@ msgstr "手動建立"
 msgid "Create Merge Commit"
 msgstr "建立合併提交"
 
-msgid "Create new group"
-msgstr "建立新群組"
-
 msgid "Create new project"
 msgstr "新建專案"
 
@@ -7097,6 +7109,9 @@ msgstr "深度 · 每次工作階段的權杖數"
 msgid "descending"
 msgstr "降序"
 
+msgid "Describe a task, review a change, or investigate a bug."
+msgstr "描述任務、審查變更或調查錯誤。"
+
 msgid "Describe the change."
 msgstr "描述變更。"
 
@@ -7584,6 +7599,9 @@ msgstr "起草了3條支援回覆"
 
 msgid "Drag <0>Wanker</0> into your <1>Applications</1> folder"
 msgstr "將 <0>Wanker</0> 拖曳到<1>應用程式</1>資料夾"
+
+msgid "Drag a workspace here or use Move to section."
+msgstr "將工作區拖曳到此處，或使用「移至區段」。"
 
 msgid "Drag to reorder"
 msgstr "拖曳以重新排序"
@@ -8841,6 +8859,9 @@ msgstr "按@{normalizedSearch}篩選"
 msgid "Filter by author: {label}"
 msgstr "依作者篩選：{label}"
 
+msgid "Filter by project"
+msgstr "依專案篩選"
+
 msgid "Filter by reviews"
 msgstr "按審查篩選"
 
@@ -9721,6 +9742,9 @@ msgstr "隱藏面板"
 
 msgid "Hide Preview"
 msgstr "隱藏預覽"
+
+msgid "Hide project"
+msgstr "隱藏專案"
 
 msgid "Hide pull request list"
 msgstr "隱藏拉取請求列表"
@@ -11344,9 +11368,6 @@ msgstr "正在載入字型..."
 msgid "Loading GitHub details"
 msgstr "正在載入 GitHub 詳細資料"
 
-msgid "Loading groups…"
-msgstr "正在載入群組…"
-
 msgid "Loading issue…"
 msgstr "正在載入議題…"
 
@@ -12095,9 +12116,6 @@ msgstr "軟體史的大部分時間"
 msgid "Move"
 msgstr "移動"
 
-msgid "Move {count} to Group"
-msgstr "將{count}個移動到群組"
-
 msgid "Move {name} to background"
 msgstr "將 {name} 移到背景"
 
@@ -12131,11 +12149,14 @@ msgstr "移動到群組"
 msgid "Move to group…"
 msgstr "移動到群組…"
 
+msgid "Move to My workspaces"
+msgstr "移至我的工作區"
+
 msgid "Move to Right Side"
 msgstr "移到右側"
 
-msgid "Move to Tab"
-msgstr "移動到分頁"
+msgid "Move to section"
+msgstr "移至區段"
 
 msgid "Move your agents before {shutdownDate}."
 msgstr "請在{shutdownDate}之前遷移你的代理程式。"
@@ -12189,6 +12210,9 @@ msgstr "我的關鍵字"
 
 msgid "My Tasks"
 msgstr "我的任務"
+
+msgid "My workspaces"
+msgstr "我的工作區"
 
 msgid "Mystery Machinist"
 msgstr "神秘機械師"
@@ -12352,12 +12376,6 @@ msgstr "新建資料夾"
 msgid "New Folder..."
 msgstr "新建資料夾..."
 
-msgid "New group"
-msgstr "新建群組"
-
-msgid "New group from workspace"
-msgstr "以此工作區新建群組"
-
 msgid "New group name…"
 msgstr "新群組名稱…"
 
@@ -12381,6 +12399,12 @@ msgstr "新建專案"
 
 msgid "New push to branch"
 msgstr "向分支推送了新提交"
+
+msgid "New section"
+msgstr "新增區段"
+
+msgid "New section from workspace"
+msgstr "從工作區建立區段"
 
 msgid "New session"
 msgstr "新建會話"
@@ -12730,6 +12754,9 @@ msgstr "沒有符合搜尋的檔案"
 msgid "No fonts found."
 msgstr "未找到字型。"
 
+msgid "No Git remote"
+msgstr "沒有 Git 遠端儲存庫"
+
 msgid "No git remote detected"
 msgstr "未檢測到git遠端儲存庫"
 
@@ -12738,9 +12765,6 @@ msgstr "無群組"
 
 msgid "No grouping"
 msgstr "不分組"
-
-msgid "No groups yet"
-msgstr "還沒有群組"
 
 msgid "No Headings"
 msgstr "無標題"
@@ -14276,6 +14300,9 @@ msgstr "組織URL已更新！"
 #. placeholder {0}: selectedOrg.name
 msgid "Organization: <0>{0}</0>"
 msgstr "組織：<0>{0}</0>"
+
+msgid "Organize workspaces across projects. Their files and chats stay in place."
+msgstr "跨專案整理工作區。檔案和聊天仍保留在原處。"
 
 msgid "Organize your work into teams. Tasks and integrations can sync per-team."
 msgstr "把工作組織到團隊中。任務和整合可以按團隊同步。"
@@ -15984,6 +16011,9 @@ msgstr "移除儲存庫"
 msgid "Remove script"
 msgstr "移除指令碼"
 
+msgid "Remove section"
+msgstr "移除區段"
+
 msgid "Remove team member?"
 msgstr "移除團隊成員？"
 
@@ -16056,6 +16086,9 @@ msgstr "重新命名主機"
 
 msgid "Rename page"
 msgstr "重新命名頁面"
+
+msgid "Rename section"
+msgstr "重新命名區段"
 
 msgid "Rename session"
 msgstr "重新命名會話"
@@ -17294,6 +17327,15 @@ msgstr "次要"
 msgid "Secret Shift Lead"
 msgstr "秘密班長"
 
+msgid "Section"
+msgstr "區段"
+
+msgid "Section actions"
+msgstr "區段操作"
+
+msgid "Section name"
+msgstr "區段名稱"
+
 msgid "Sections"
 msgstr "分區"
 
@@ -18504,9 +18546,6 @@ msgstr "分體按鈕：用預設應用開啟worktree+應用選擇下拉選單"
 msgid "Split Down"
 msgstr "向下拆分"
 
-msgid "Split Horizontally"
-msgstr "水平拆分"
-
 msgid "split pane"
 msgstr "分割窗格"
 
@@ -18537,14 +18576,8 @@ msgstr "向下拆分目前窗格"
 msgid "Split the current pane to the right"
 msgstr "向右拆分目前窗格"
 
-msgid "Split Vertically"
-msgstr "垂直拆分"
-
 msgid "Split view"
 msgstr "分欄檢視"
-
-msgid "Split with Desktop"
-msgstr "分割並開啟桌面"
 
 msgid "Split with Mobile Simulator"
 msgstr "分割並開啟行動模擬器"
@@ -20954,12 +20987,6 @@ msgstr "復原上次歸檔的工作區或關閉的聊天"
 msgid "Unfollow thread"
 msgstr "取消追蹤討論串"
 
-msgid "Ungroup"
-msgstr "取消群組"
-
-msgid "Ungroup selected workspaces"
-msgstr "取消選中工作區的群組"
-
 msgid "Unified view"
 msgstr "統一檢視"
 
@@ -22327,6 +22354,9 @@ msgstr "工作區設定"
 
 msgid "Workspace views"
 msgstr "工作區檢視"
+
+msgid "Workspace without a project"
+msgstr "無專案的工作區"
 
 msgid "Workspace worktree not available"
 msgstr "工作區worktree不可用"

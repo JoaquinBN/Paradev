@@ -283,6 +283,10 @@ msgstr "{0, plural, one {# taak} other {# taken}}"
 msgid "{0, plural, one {# terminal running} other {# terminals running}}"
 msgstr "{0, plural, one {# terminal actief} other {# terminals actief}}"
 
+#. placeholder {0}: items.length
+msgid "{0, plural, one {# tool call} other {# tool calls}}"
+msgstr "{0, plural, one {# toolaanroep} other {# toolaanroepen}}"
+
 #. placeholder {0}: group.workspaceCount
 #. placeholder {0}: selectedWorkspaces.length
 msgid "{0, plural, one {# workspace} other {# workspaces}}"
@@ -357,10 +361,6 @@ msgstr "{0, plural, one {De # automatisering gaat naar \"Geen groep\". De automa
 #. placeholder {0}: issues.length
 msgid "{0, plural, one {Linear issue} other {Linear issues}}"
 msgstr "{0, plural, one {Linear-issue} other {Linear-issues}}"
-
-#. placeholder {0}: selectedWorkspaces.length
-msgid "{0, plural, one {Move # selected workspace to a group} other {Move # selected workspaces to a group}}"
-msgstr "{0, plural, one {# geselecteerde werkruimte naar een groep verplaatsen} other {# geselecteerde werkruimtes naar een groep verplaatsen}}"
 
 #. placeholder {0}: move.chats.total - move.chats.ready - move.chats.failed
 msgid "{0, plural, one {Moving # chat here…} other {Moving # chats here…}}"
@@ -1955,6 +1955,9 @@ msgstr "Acties"
 msgid "Actions for {0}"
 msgstr "Acties voor {0}"
 
+msgid "Actions for {name}"
+msgstr "Acties voor {name}"
+
 msgid "Active"
 msgstr "Actief"
 
@@ -3516,6 +3519,9 @@ msgstr "Gedrag"
 msgid "Behind main by ? commits, needs rebase"
 msgstr "? commits achter op main, rebase nodig"
 
+msgid "Behind remote"
+msgstr "Achter op de externe branch"
+
 msgid "Being built right now."
 msgstr "Wordt nu gebouwd."
 
@@ -4325,6 +4331,9 @@ msgstr "Kies een map"
 msgid "Choose a parent directory"
 msgstr "Kies een bovenliggende map"
 
+msgid "Choose a project and describe your task. Chats and changes stay together in the workspace."
+msgstr "Kies een project en beschrijf je taak. Chats en wijzigingen blijven bij elkaar in de werkruimte."
+
 msgid "Choose a project from GitHub issues before opening an issue."
 msgstr "Kies een project bij GitHub-issues voordat je een issue opent."
 
@@ -4979,6 +4988,9 @@ msgstr "Commitbericht"
 msgid "Commit message (optional)"
 msgstr "Commitbericht (optioneel)"
 
+msgid "Commit your changes, then add the pull request details."
+msgstr "Commit je wijzigingen en voeg daarna de details van de pull request toe."
+
 msgid "Commits"
 msgstr "Commits"
 
@@ -5020,6 +5032,9 @@ msgstr "Zakelijk e-mailadres"
 
 msgid "Compare"
 msgstr "Vergelijken"
+
+msgid "Compare changes"
+msgstr "Wijzigingen vergelijken"
 
 msgid "Compare plans"
 msgstr "Plannen vergelijken"
@@ -6411,9 +6426,6 @@ msgstr "Handmatig maken"
 msgid "Create Merge Commit"
 msgstr "Merge-commit maken"
 
-msgid "Create new group"
-msgstr "Nieuwe groep maken"
-
 msgid "Create new project"
 msgstr "Nieuw project maken"
 
@@ -7097,6 +7109,9 @@ msgstr "Diepte · tokens per sessie"
 msgid "descending"
 msgstr "aflopend"
 
+msgid "Describe a task, review a change, or investigate a bug."
+msgstr "Beschrijf een taak, beoordeel een wijziging of onderzoek een fout."
+
 msgid "Describe the change."
 msgstr "Beschrijf de wijziging."
 
@@ -7584,6 +7599,9 @@ msgstr "3 supportantwoorden opgesteld"
 
 msgid "Drag <0>Wanker</0> into your <1>Applications</1> folder"
 msgstr "Sleep <0>Wanker</0> naar je map <1>Programma's</1>"
+
+msgid "Drag a workspace here or use Move to section."
+msgstr "Sleep hier een werkruimte naartoe of gebruik Verplaatsen naar sectie."
 
 msgid "Drag to reorder"
 msgstr "Sleep om te herordenen"
@@ -8841,6 +8859,9 @@ msgstr "Filteren op @{normalizedSearch}"
 msgid "Filter by author: {label}"
 msgstr "Filteren op auteur: {label}"
 
+msgid "Filter by project"
+msgstr "Filteren op project"
+
 msgid "Filter by reviews"
 msgstr "Filteren op reviews"
 
@@ -9721,6 +9742,9 @@ msgstr "Paneel verbergen"
 
 msgid "Hide Preview"
 msgstr "Preview verbergen"
+
+msgid "Hide project"
+msgstr "Project verbergen"
 
 msgid "Hide pull request list"
 msgstr "Lijst met pull requests verbergen"
@@ -11344,9 +11368,6 @@ msgstr "Lettertypen laden..."
 msgid "Loading GitHub details"
 msgstr "GitHub-details laden"
 
-msgid "Loading groups…"
-msgstr "Groepen laden…"
-
 msgid "Loading issue…"
 msgstr "Issue laden…"
 
@@ -12095,9 +12116,6 @@ msgstr "Het grootste deel van de softwaregeschiedenis"
 msgid "Move"
 msgstr "Verplaatsen"
 
-msgid "Move {count} to Group"
-msgstr "{count} naar groep verplaatsen"
-
 msgid "Move {name} to background"
 msgstr "{name} naar de achtergrond verplaatsen"
 
@@ -12131,11 +12149,14 @@ msgstr "Naar groep verplaatsen"
 msgid "Move to group…"
 msgstr "Naar groep verplaatsen…"
 
+msgid "Move to My workspaces"
+msgstr "Verplaatsen naar Mijn werkruimten"
+
 msgid "Move to Right Side"
 msgstr "Naar rechts verplaatsen"
 
-msgid "Move to Tab"
-msgstr "Verplaatsen naar tabblad"
+msgid "Move to section"
+msgstr "Verplaatsen naar sectie"
 
 msgid "Move your agents before {shutdownDate}."
 msgstr "Verhuis je agents vóór {shutdownDate}."
@@ -12189,6 +12210,9 @@ msgstr "Mijn trefwoorden"
 
 msgid "My Tasks"
 msgstr "Mijn taken"
+
+msgid "My workspaces"
+msgstr "Mijn werkruimten"
 
 msgid "Mystery Machinist"
 msgstr "Mysterieuze Machinist"
@@ -12352,12 +12376,6 @@ msgstr "Nieuwe map"
 msgid "New Folder..."
 msgstr "Nieuwe map..."
 
-msgid "New group"
-msgstr "Nieuwe groep"
-
-msgid "New group from workspace"
-msgstr "Nieuwe groep van werkruimte"
-
 msgid "New group name…"
 msgstr "Naam van nieuwe groep…"
 
@@ -12381,6 +12399,12 @@ msgstr "Nieuw project"
 
 msgid "New push to branch"
 msgstr "Nieuwe push naar branch"
+
+msgid "New section"
+msgstr "Nieuwe sectie"
+
+msgid "New section from workspace"
+msgstr "Nieuwe sectie vanuit werkruimte"
 
 msgid "New session"
 msgstr "Nieuwe sessie"
@@ -12730,6 +12754,9 @@ msgstr "Geen bestanden komen overeen met je zoekopdracht"
 msgid "No fonts found."
 msgstr "Geen lettertypen gevonden."
 
+msgid "No Git remote"
+msgstr "Geen externe Git-repository"
+
 msgid "No git remote detected"
 msgstr "Geen git-remote gedetecteerd"
 
@@ -12738,9 +12765,6 @@ msgstr "Geen groep"
 
 msgid "No grouping"
 msgstr "Geen groepering"
-
-msgid "No groups yet"
-msgstr "Nog geen groepen"
 
 msgid "No Headings"
 msgstr "Geen koppen"
@@ -14276,6 +14300,9 @@ msgstr "URL van organisatie bijgewerkt!"
 #. placeholder {0}: selectedOrg.name
 msgid "Organization: <0>{0}</0>"
 msgstr "Organisatie: <0>{0}</0>"
+
+msgid "Organize workspaces across projects. Their files and chats stay in place."
+msgstr "Orden werkruimten uit meerdere projecten. Hun bestanden en chats blijven op hun plek."
 
 msgid "Organize your work into teams. Tasks and integrations can sync per-team."
 msgstr "Organiseer je werk in teams. Taken en integraties kunnen per team synchroniseren."
@@ -15984,6 +16011,9 @@ msgstr "Repository verwijderen"
 msgid "Remove script"
 msgstr "Script verwijderen"
 
+msgid "Remove section"
+msgstr "Sectie verwijderen"
+
 msgid "Remove team member?"
 msgstr "Teamlid verwijderen?"
 
@@ -16056,6 +16086,9 @@ msgstr "Host hernoemen"
 
 msgid "Rename page"
 msgstr "Pagina hernoemen"
+
+msgid "Rename section"
+msgstr "Sectie hernoemen"
 
 msgid "Rename session"
 msgstr "Sessienaam wijzigen"
@@ -17294,6 +17327,15 @@ msgstr "Secundair"
 msgid "Secret Shift Lead"
 msgstr "Geheime Ploegleider"
 
+msgid "Section"
+msgstr "Sectie"
+
+msgid "Section actions"
+msgstr "Sectieacties"
+
+msgid "Section name"
+msgstr "Sectienaam"
+
 msgid "Sections"
 msgstr "Secties"
 
@@ -18504,9 +18546,6 @@ msgstr "Split-knop: worktree openen in de standaardapp + dropdown met app-keuze"
 msgid "Split Down"
 msgstr "Naar beneden splitsen"
 
-msgid "Split Horizontally"
-msgstr "Horizontaal splitsen"
-
 msgid "split pane"
 msgstr "gesplitst paneel"
 
@@ -18537,14 +18576,8 @@ msgstr "Het huidige paneel naar beneden splitsen"
 msgid "Split the current pane to the right"
 msgstr "Het huidige paneel naar rechts splitsen"
 
-msgid "Split Vertically"
-msgstr "Verticaal splitsen"
-
 msgid "Split view"
 msgstr "Gesplitste weergave"
-
-msgid "Split with Desktop"
-msgstr "Splitsen met bureaublad"
 
 msgid "Split with Mobile Simulator"
 msgstr "Splitsen met mobiele simulator"
@@ -20954,12 +20987,6 @@ msgstr "Laatst gearchiveerde werkruimte of gesloten chats ongedaan maken"
 msgid "Unfollow thread"
 msgstr "Thread niet meer volgen"
 
-msgid "Ungroup"
-msgstr "Groepering opheffen"
-
-msgid "Ungroup selected workspaces"
-msgstr "Groepering van geselecteerde werkruimtes opheffen"
-
 msgid "Unified view"
 msgstr "Gecombineerde weergave"
 
@@ -22327,6 +22354,9 @@ msgstr "Instellingen van werkruimte"
 
 msgid "Workspace views"
 msgstr "Werkruimteweergaven"
+
+msgid "Workspace without a project"
+msgstr "Werkruimte zonder project"
 
 msgid "Workspace worktree not available"
 msgstr "Worktree van werkruimte niet beschikbaar"

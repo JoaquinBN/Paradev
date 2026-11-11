@@ -32,6 +32,7 @@ interface UseChangesTabParams {
 	/** The Changes pane's chrome: scope lives in the pane header, so the list
 	 * keeps only an always-open search and a view menu. */
 	compact?: boolean;
+	flat?: boolean;
 }
 
 /**
@@ -50,6 +51,7 @@ export function useChangesTab({
 	onSelectFile,
 	onOpenFile,
 	compact = false,
+	flat = false,
 }: UseChangesTabParams): SidebarTabDefinition {
 	const { t } = useLingui();
 	const {
@@ -126,6 +128,7 @@ export function useChangesTab({
 			onRenameBranch={handleRenameBranch}
 			canRenameBranch={canRenameBranch}
 			compact={compact}
+			flat={flat}
 		/>
 	);
 

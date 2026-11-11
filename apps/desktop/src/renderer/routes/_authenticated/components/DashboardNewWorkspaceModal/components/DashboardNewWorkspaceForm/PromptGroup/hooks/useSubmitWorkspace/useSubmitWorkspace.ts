@@ -197,6 +197,18 @@ export function useSubmitWorkspace(
 						: {}),
 				});
 				const { initialLaunch, ...created } = createdResult;
+				if (draft.sectionTag) {
+					try {
+						const tags = [draft.sectionTag];
+						await cloudTrpcClient.cloudWorkspace.setTags.mutate({
+							id: created.id,
+							tags,
+						});
+						created.tags = tags;
+					} catch (error) {
+						toast.error(errorMessage(error));
+					}
+				}
 				if (initialLaunch?.surface === "chat") {
 					seedPendingCloudChat({
 						collections,
@@ -359,7 +371,13 @@ export function useSubmitWorkspace(
 		}
 
 		closeAndResetDraft();
-		const { completed } = submit({ hostId, snapshot });
+		const { completed } = submit({
+			hostId,
+			snapshot: {
+				...snapshot,
+				...(draft.sectionTag ? { tags: [draft.sectionTag] } : {}),
+			},
+		});
 		void navigate({
 			to: "/v2-workspace/$workspaceId",
 			params: { workspaceId },

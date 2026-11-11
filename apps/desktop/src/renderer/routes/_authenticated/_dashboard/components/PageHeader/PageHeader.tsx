@@ -32,6 +32,7 @@ export function PageHeader({
 	const isBanded = useCollapsedSidebarBand();
 	return (
 		<header
+			data-design-surface="page-header"
 			className={cn(
 				"flex h-12 shrink-0 items-center",
 				className,

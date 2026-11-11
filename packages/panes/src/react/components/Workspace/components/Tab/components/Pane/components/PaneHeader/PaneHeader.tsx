@@ -63,6 +63,7 @@ export function PaneHeader({
 		// biome-ignore lint/a11y/noStaticElementInteractions: click to pin, middle-click to close
 		<div
 			ref={setRef}
+			data-design-surface="pane-header"
 			className={cn(
 				// Not the @container/pane-header itself: containment would make
 				// this a stacking context, trapping the URL-bar suggestions
