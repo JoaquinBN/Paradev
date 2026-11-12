@@ -20,8 +20,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 		Paths.prepare()
 		panel = NotchPanel(model: model, onTap: { [weak self] in self?.tapped() }, onAnswer: { [weak self] in self?.answer($0) }, onCancel: { [weak self] in self?.cancel() })
 		hotkey = makeHotkey()
-		askForAccessibilityOnce()
 		restoreKeptResult()
+		promptForAccessibility()
 		Inbox.listen { [weak self] message in self?.received(message) }
 		DistributedNotificationCenter.default().addObserver(forName: Notify.ask, object: nil, queue: .main) { [weak self] note in
 			let info = note.userInfo as? [String: String] ?? [:]
@@ -239,24 +239,20 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 		model.show(.attention(kept["title"] ?? "", kept["detail"] ?? ""), link: kept["link"].flatMap(URL.init(string:)))
 	}
 
-	/// The hotkey needs Accessibility and can't ask for it itself, so ask on the first launch.
-	private func askForAccessibilityOnce() {
-		guard !AXIsProcessTrusted(), !FileManager.default.fileExists(atPath: Paths.askedAccessibility.path) else { return }
-		FileManager.default.createFile(atPath: Paths.askedAccessibility.path, contents: nil)
-		promptForAccessibility()
-	}
-
-	/// Click names need Accessibility. Key monitors made before the grant never fire, so they're remade once it lands.
+	/// The hotkey and click names need Accessibility. Key monitors made before the grant never fire, so they're remade once it lands.
 	private func promptForAccessibility() {
 		let prompt = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true] as CFDictionary
 		guard !AXIsProcessTrustedWithOptions(prompt), !waitingForAccessibility else { return }
 		waitingForAccessibility = true
+		let needsAccess = Phase.attention("I can't feel right ⌥", "Turn on Wank in Privacy & Security → Accessibility")
+		if model.phase == .hidden { model.show(needsAccess, link: URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility")) }
 		Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] timer in
 			MainActor.assumeIsolated {
-				guard AXIsProcessTrusted() else { return }
+				guard let self, AXIsProcessTrusted() else { return }
 				timer.invalidate()
-				self?.waitingForAccessibility = false
-				self?.hotkey = self?.makeHotkey()
+				self.waitingForAccessibility = false
+				self.hotkey = self.makeHotkey()
+				if self.model.phase == needsAccess { self.model.show(.hidden) }
 			}
 		}
 	}

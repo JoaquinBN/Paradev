@@ -29,8 +29,8 @@ start() {
 	if [ ! -f apps/api/.next/BUILD_ID ]; then
 		(cd apps/api && bunx dotenv -e ../../.env -- next build)
 	fi
-	(cd apps/api && nohup bunx dotenv -e ../../.env -- sh -c "exec next start --port ${API_PORT:-3001}" >"$RUN_DIR/api.log" 2>&1 &)
-	(nohup bun run --cwd apps/relay dev >"$RUN_DIR/relay.log" 2>&1 &)
+	lsof -ti:"${API_PORT:-3001}" >/dev/null || (cd apps/api && nohup bunx dotenv -e ../../.env -- sh -c "exec next start --port ${API_PORT:-3001}" >"$RUN_DIR/api.log" 2>&1 &)
+	lsof -ti:"${RELAY_PORT:-8787}" >/dev/null || (nohup bun run --cwd apps/relay dev >"$RUN_DIR/relay.log" 2>&1 &)
 	if [ ! -d "$APP" ]; then
 		# A stable signing identity keeps macOS permissions (Accessibility, Screen Recording) across rebuilds.
 		IDENTITY=$(security find-identity -v -p codesigning | awk -F'"' '/Apple Development|Developer ID Application/ {print $2; exit}')

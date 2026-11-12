@@ -13,7 +13,6 @@ enum Paths {
 	static let captures = root.appendingPathComponent("captures")
 	static let answers = root.appendingPathComponent("answers")
 	static let pending = root.appendingPathComponent("notch.json")
-	static let askedAccessibility = root.appendingPathComponent("asked-accessibility")
 	/// On the PATH of Wanker's agents, so the build agent can call `wank create`.
 	static let cli = home.appendingPathComponent("bin/wank")
 	static var executable: String { Bundle.main.executablePath ?? CommandLine.arguments[0] }
