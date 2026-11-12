@@ -20,6 +20,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 		Paths.prepare()
 		panel = NotchPanel(model: model, onTap: { [weak self] in self?.tapped() }, onAnswer: { [weak self] in self?.answer($0) }, onCancel: { [weak self] in self?.cancel() })
 		hotkey = makeHotkey()
+		askForAccessibilityOnce()
 		restoreKeptResult()
 		Inbox.listen { [weak self] message in self?.received(message) }
 		DistributedNotificationCenter.default().addObserver(forName: Notify.ask, object: nil, queue: .main) { [weak self] note in
@@ -236,6 +237,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 		      let kept = try? JSONDecoder().decode([String: String].self, from: data)
 		else { return }
 		model.show(.attention(kept["title"] ?? "", kept["detail"] ?? ""), link: kept["link"].flatMap(URL.init(string:)))
+	}
+
+	/// The hotkey needs Accessibility and can't ask for it itself, so ask on the first launch.
+	private func askForAccessibilityOnce() {
+		guard !AXIsProcessTrusted(), !FileManager.default.fileExists(atPath: Paths.askedAccessibility.path) else { return }
+		FileManager.default.createFile(atPath: Paths.askedAccessibility.path, contents: nil)
+		promptForAccessibility()
 	}
 
 	/// Click names need Accessibility. Key monitors made before the grant never fire, so they're remade once it lands.
