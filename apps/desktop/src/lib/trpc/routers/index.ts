@@ -33,6 +33,7 @@ import { createSystemRouter } from "./system";
 import { createTerminalRouter } from "./terminal";
 import { createUiStateRouter } from "./ui-state";
 import { createViewerGithubRouter } from "./viewer-github";
+import { createWankRouter } from "./wank";
 import { createWindowRouter } from "./window";
 import { createWorkspacesRouter } from "./workspaces";
 
@@ -62,6 +63,7 @@ export const createAppRouter = (getWindow: () => BrowserWindow | null) => {
 		resourceMetrics: createResourceMetricsRouter(),
 		menu: createMenuRouter(),
 		external: createExternalRouter(),
+		wank: createWankRouter(),
 		githubStar: createGithubStarRouter(),
 		settings: createSettingsRouter(),
 		system: createSystemRouter(),

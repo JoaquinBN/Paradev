@@ -96,6 +96,7 @@ import {
 	getTerminalHostClient,
 } from "./lib/terminal-host/client";
 import { disposeTray, initTray } from "./lib/tray";
+import { startWank, stopWank } from "./lib/wank";
 import { getFocusedOrLastWindow } from "./lib/window-registry/window-registry";
 import { sweepNetworkLogs } from "./network-logger-sweep";
 import {
@@ -333,6 +334,8 @@ app.on("window-all-closed", () => {
 	skipQuitConfirmation = true;
 	app.quit();
 });
+
+app.on("will-quit", stopWank);
 
 app.on("before-quit", async (event) => {
 	if (isQuitting) {
@@ -743,6 +746,9 @@ if (!gotTheLock) {
 		setupAutoUpdater();
 		initTray();
 		startResourceJournal();
+		void startWank().catch((error) =>
+			console.error("[main] Failed to start Wank:", error),
+		);
 
 		const coldStartUrl = findDeepLinkInArgv(process.argv);
 		if (coldStartUrl) {

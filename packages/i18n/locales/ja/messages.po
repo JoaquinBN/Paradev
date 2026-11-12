@@ -3345,17 +3345,11 @@ msgstr "オートメーションのタイトル"
 msgid "Automations"
 msgstr "オートメーション"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "オートメーション({myFailedCount}件失敗中)"
-
 msgid "Automations & event triggers"
 msgstr "オートメーションとイベントトリガー"
 
 msgid "Automations require the Pro plan."
 msgstr "オートメーションにはProプランが必要です。"
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "オートメーション、{myFailedCount}件が失敗中"
 
 msgid "Autonomous"
 msgstr "自律"
@@ -4209,6 +4203,9 @@ msgstr "チャットの構成要素: メッセージ、推論、提案"
 
 msgid "Chats"
 msgstr "チャット"
+
+msgid "Check"
+msgstr "チェック"
 
 msgid "Check again"
 msgstr "再確認"
@@ -9661,6 +9658,9 @@ msgstr "未コミットの変更と未プッシュのコミットがあります
 msgid "Has unpushed commits"
 msgstr "未プッシュのコミットがあります"
 
+msgid "Have a wank"
+msgstr "Have a wank"
+
 msgid "Head-to-Head Comparisons"
 msgstr "1対1の比較"
 
@@ -10204,6 +10204,9 @@ msgstr "ローカルワークスペースでは、コードとエージェント
 
 msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
 msgstr "手動モードでは、Wanker はこのエージェントにサインインしません。スクリプトで再度サインインさせてから続行するか、エージェント設定で手動モードをオフにしてください。"
+
+msgid "In parallel"
+msgstr "並行"
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "サンフランシスコのオフィスで週5日勤務。創業者と直接一緒に働きます。"
@@ -13186,6 +13189,9 @@ msgstr "バージョンはまだありません"
 
 msgid "No versions yet."
 msgstr "バージョンはまだありません。"
+
+msgid "No wanks yet. Press Have a wank and show what you want automated."
+msgstr "まだ wank はありません。Have a wank を押して、自動化したいことを見せてください。"
 
 msgid "No workspace run command configured"
 msgstr "ワークスペース実行コマンドが設定されていません"
@@ -16932,6 +16938,9 @@ msgstr "そのデバイスのWankerアプリ内で動作しているため、更
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "実行結果はワークスペースに入ります。差分を確認し、良いものをマージしてください。"
 
+msgid "Runs on demand"
+msgstr "必要なときに実行"
+
 msgid "Runs that found no host online"
 msgstr "オンラインのホストが見つからなかった実行"
 
@@ -18827,6 +18836,9 @@ msgstr "引き継げないもの"
 
 msgid "Steer"
 msgstr "軌道修正"
+
+msgid "Step"
+msgstr "ステップ"
 
 #. placeholder {0}: step === "workspace" ? 1 : 2
 msgid "Step {0} of 2"
@@ -21662,6 +21674,9 @@ msgstr "ワークスペースを起動しています…"
 msgid "Waking up workspace"
 msgstr "ワークスペースを起動中"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank には macOS 26 以降が必要です。"
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21845,6 +21860,15 @@ msgstr "WankerはClaude Code、OpenCode、OpenAI Codexなど、CLIベースの�
 
 msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
 msgstr "Wankerのモバイルアプリなら、コンピューターから遠く離れていても、どこからでもエージェントの作業を進め、行き詰まりを解消できます。"
+
+msgid "Wanks"
+msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks({myFailedCount}件失敗中)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks、{myFailedCount}件が失敗中"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "もっと早く欲しいものがありますか?<0>Discordで教えてください</0>。ここにあるものの多くは、ユーザーの要望から始まりました。"

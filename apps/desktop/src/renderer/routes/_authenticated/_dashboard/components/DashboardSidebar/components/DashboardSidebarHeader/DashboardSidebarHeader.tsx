@@ -11,13 +11,13 @@ import { useFeatureFlagEnabled } from "posthog-js/react";
 import { GoGitPullRequest } from "react-icons/go";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import {
-	LuClock,
 	LuFileText,
 	LuGauge,
 	LuHouse,
 	LuPlus,
 	LuPuzzle,
 	LuSearch,
+	LuWorkflow,
 } from "react-icons/lu";
 import { VscFolderOpened, VscNewFolder } from "react-icons/vsc";
 import { ZoomStable } from "renderer/components/ZoomStable";
@@ -168,24 +168,20 @@ export function DashboardSidebarHeader({
 						<TooltipTrigger asChild>
 							<button
 								type="button"
-								onClick={navigation.openAutomations}
+								onClick={navigation.openWanks}
 								aria-label={
 									myFailedCount > 0
-										? t({
-												message: `Automations, ${myFailedCount} failing`,
-											})
-										: t({
-												message: "Automations",
-											})
+										? t({ message: `Wanks, ${myFailedCount} failing` })
+										: t({ message: "Wanks" })
 								}
 								className={cn(
 									"relative flex size-7 items-center justify-center rounded-md transition-colors",
-									navigation.isAutomationsOpen
+									navigation.isWanksOpen
 										? "bg-fill-selected text-muted-foreground"
 										: "text-muted-foreground hover:bg-fill-hover",
 								)}
 							>
-								<LuClock className="size-3.5" strokeWidth={1.5} />
+								<LuWorkflow className="size-3.5" strokeWidth={1.5} />
 								{myFailedCount > 0 && (
 									<span
 										aria-hidden="true"
@@ -196,9 +192,9 @@ export function DashboardSidebarHeader({
 						</TooltipTrigger>
 						<TooltipContent side="right">
 							{myFailedCount > 0 ? (
-								<Trans>Automations ({myFailedCount} failing)</Trans>
+								<Trans>Wanks ({myFailedCount} failing)</Trans>
 							) : (
-								<Trans>Automations</Trans>
+								<Trans>Wanks</Trans>
 							)}
 						</TooltipContent>
 					</Tooltip>
@@ -430,10 +426,42 @@ export function DashboardSidebarHeader({
 			<SidebarNewWorkspaceButton />
 			<SidebarSearchButton />
 
+			<div className="relative">
+				<button
+					type="button"
+					onClick={navigation.openWanks}
+					className={cn(
+						"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
+						navigation.isWanksOpen
+							? "bg-fill-selected text-foreground"
+							: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
+					)}
+				>
+					<LuWorkflow
+						className="size-4 shrink-0 text-muted-foreground"
+						strokeWidth={1.5}
+					/>
+					<span className="flex-1 text-left">
+						<Trans>Wanks</Trans>
+					</span>
+				</button>
+				{myFailedCount > 0 && (
+					<button
+						type="button"
+						onClick={navigation.openFailedAutomations}
+						title={t({
+							message: `${myFailedCount} of your automations failed their last run`,
+						})}
+						className="absolute right-2 top-1/2 flex h-4 min-w-4 -translate-y-1/2 items-center justify-center rounded-full bg-red-500/15 px-1 text-[10px] font-medium tabular-nums text-red-600 transition-colors hover:bg-red-500/25 dark:text-red-400"
+					>
+						{myFailedCount > 9 ? "9+" : myFailedCount}
+					</button>
+				)}
+			</div>
+
 			<details
 				data-design-surface="sidebar-tools"
 				open={
-					navigation.isAutomationsOpen ||
 					navigation.isTasksOpen ||
 					navigation.isPullRequestsOpen ||
 					navigation.isPagesOpen ||
@@ -455,39 +483,6 @@ export function DashboardSidebarHeader({
 					</span>
 				</summary>
 				<div className="mt-1 space-y-0.5 border-l border-border ml-4 pl-2">
-					<div className="relative">
-						<button
-							type="button"
-							onClick={navigation.openAutomations}
-							className={cn(
-								"flex h-7 w-full items-center gap-2 rounded-md px-2 text-[13px] font-medium transition-colors",
-								navigation.isAutomationsOpen
-									? "bg-fill-selected text-foreground"
-									: "text-muted-foreground hover:bg-fill-hover hover:text-foreground",
-							)}
-						>
-							<LuClock
-								className="size-4 shrink-0 text-muted-foreground"
-								strokeWidth={1.5}
-							/>
-							<span className="flex-1 text-left">
-								<Trans>Automations</Trans>
-							</span>
-						</button>
-						{myFailedCount > 0 && (
-							<button
-								type="button"
-								onClick={navigation.openFailedAutomations}
-								title={t({
-									message: `${myFailedCount} of your automations failed their last run`,
-								})}
-								className="absolute right-2 top-1/2 flex h-4 min-w-4 -translate-y-1/2 items-center justify-center rounded-full bg-red-500/15 px-1 text-[10px] font-medium tabular-nums text-red-600 transition-colors hover:bg-red-500/25 dark:text-red-400"
-							>
-								{myFailedCount > 9 ? "9+" : myFailedCount}
-							</button>
-						)}
-					</div>
-
 					<button
 						type="button"
 						onClick={navigation.openTasks}

@@ -3345,17 +3345,11 @@ msgstr "Tiêu đề tự động hóa"
 msgid "Automations"
 msgstr "Tự động hóa"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Tự động hóa ({myFailedCount} đang lỗi)"
-
 msgid "Automations & event triggers"
 msgstr "Tự động hóa & trigger sự kiện"
 
 msgid "Automations require the Pro plan."
 msgstr "Tự động hóa yêu cầu gói Pro."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Tự động hóa, {myFailedCount} đang lỗi"
 
 msgid "Autonomous"
 msgstr "Tự chủ"
@@ -4209,6 +4203,9 @@ msgstr "Các bề mặt chat: tin nhắn, suy luận, gợi ý"
 
 msgid "Chats"
 msgstr "Cuộc trò chuyện"
+
+msgid "Check"
+msgstr "Kiểm tra"
 
 msgid "Check again"
 msgstr "Kiểm tra lại"
@@ -9661,6 +9658,9 @@ msgstr "Có thay đổi chưa commit và commit chưa push"
 msgid "Has unpushed commits"
 msgstr "Có commit chưa push"
 
+msgid "Have a wank"
+msgstr "Have a wank"
+
 msgid "Head-to-Head Comparisons"
 msgstr "So sánh trực diện"
 
@@ -10204,6 +10204,9 @@ msgstr "Trong workspace cục bộ, mã và phiên agent của bạn ở lại t
 
 msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
 msgstr "Ở chế độ thủ công, Wanker không đăng nhập cho agent này. Hãy để script của bạn đăng nhập lại rồi tiếp tục, hoặc tắt chế độ thủ công trong cài đặt agent."
+
+msgid "In parallel"
+msgstr "Song song"
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "Làm việc trực tiếp tại văn phòng San Francisco, năm ngày mỗi tuần. Bạn làm việc trực tiếp với các nhà sáng lập."
@@ -13186,6 +13189,9 @@ msgstr "Chưa có phiên bản nào"
 
 msgid "No versions yet."
 msgstr "Chưa có phiên bản nào."
+
+msgid "No wanks yet. Press Have a wank and show what you want automated."
+msgstr "Chưa có wank nào. Nhấn Have a wank và cho thấy bạn muốn tự động hóa việc gì."
 
 msgid "No workspace run command configured"
 msgstr "Chưa cấu hình lệnh chạy cho workspace"
@@ -16932,6 +16938,9 @@ msgstr "Chạy bên trong ứng dụng Wanker trên thiết bị đó, nên cậ
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "Kết quả chạy nằm trong một workspace. Xem diff, merge những gì tốt."
 
+msgid "Runs on demand"
+msgstr "Chạy khi cần"
+
 msgid "Runs that found no host online"
 msgstr "Các lượt chạy không tìm được host trực tuyến"
 
@@ -18827,6 +18836,9 @@ msgstr "Không mang theo được"
 
 msgid "Steer"
 msgstr "Dừng và gửi"
+
+msgid "Step"
+msgstr "Bước"
 
 #. placeholder {0}: step === "workspace" ? 1 : 2
 msgid "Step {0} of 2"
@@ -21662,6 +21674,9 @@ msgstr "Đang đánh thức không gian làm việc…"
 msgid "Waking up workspace"
 msgstr "Đang đánh thức workspace"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank cần macOS 26 trở lên."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21845,6 +21860,15 @@ msgstr "Wanker làm việc với mọi coding agent dạng CLI, gồm Claude Cod
 
 msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
 msgstr "Ứng dụng di động Wanker giúp tôi duy trì công việc của các agent và gỡ vướng cho chúng từ bất cứ đâu, ngay cả khi tôi ở xa máy tính."
+
+msgid "Wanks"
+msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks ({myFailedCount} đang lỗi)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, {myFailedCount} đang lỗi"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Muốn có sớm hơn? <0>Hãy nói với chúng tôi trên Discord</0>. Phần lớn những gì ở đây bắt đầu từ yêu cầu của người dùng."

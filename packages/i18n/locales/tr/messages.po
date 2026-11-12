@@ -3345,17 +3345,11 @@ msgstr "Otomasyon başlığı"
 msgid "Automations"
 msgstr "Otomasyonlar"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Otomasyonlar ({myFailedCount} başarısız)"
-
 msgid "Automations & event triggers"
 msgstr "Otomasyonlar ve olay tetikleyicileri"
 
 msgid "Automations require the Pro plan."
 msgstr "Otomasyonlar Pro planı gerektirir."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Otomasyonlar, {myFailedCount} başarısız"
 
 msgid "Autonomous"
 msgstr "Otonom"
@@ -4209,6 +4203,9 @@ msgstr "Sohbet yüzeyleri: mesajlar, akıl yürütme, öneriler"
 
 msgid "Chats"
 msgstr "Sohbetler"
+
+msgid "Check"
+msgstr "Kontrol"
 
 msgid "Check again"
 msgstr "Yeniden denetle"
@@ -9661,6 +9658,9 @@ msgstr "Commit'lenmemiş değişiklikler ve push edilmemiş commit'ler var"
 msgid "Has unpushed commits"
 msgstr "Push edilmemiş commit'ler var"
 
+msgid "Have a wank"
+msgstr "Have a wank"
+
 msgid "Head-to-Head Comparisons"
 msgstr "Birebir karşılaştırmalar"
 
@@ -10204,6 +10204,9 @@ msgstr "Yerel çalışma alanlarında kodunuz ve ajan oturumlarınız makinenizd
 
 msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
 msgstr "Manuel modda Wanker bu ajanın oturumunu açmaz. Betiğinizin yeniden oturum açmasını sağlayıp devam edin ya da ajan ayarlarından manuel modu kapatın."
+
+msgid "In parallel"
+msgstr "Paralel"
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "Haftada beş gün San Francisco'da ofisten çalışıyoruz. Doğrudan kurucularla çalışırsınız."
@@ -13186,6 +13189,9 @@ msgstr "Henüz sürüm yok"
 
 msgid "No versions yet."
 msgstr "Henüz sürüm yok."
+
+msgid "No wanks yet. Press Have a wank and show what you want automated."
+msgstr "Henüz wank yok. Have a wank'a basın ve neyi otomatikleştirmek istediğinizi gösterin."
 
 msgid "No workspace run command configured"
 msgstr "Yapılandırılmış çalışma alanı çalıştırma komutu yok"
@@ -16932,6 +16938,9 @@ msgstr "O cihazdaki Wanker uygulamasının içinde çalışır; bu yüzden günc
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "Çalıştırmalar bir çalışma alanına düşer. Farkı inceleyin, iyi olanı birleştirin."
 
+msgid "Runs on demand"
+msgstr "İsteğe bağlı çalışır"
+
 msgid "Runs that found no host online"
 msgstr "Çevrimiçi ana makine bulamayan çalıştırmalar"
 
@@ -18827,6 +18836,9 @@ msgstr "Geride kalır"
 
 msgid "Steer"
 msgstr "Yönlendir"
+
+msgid "Step"
+msgstr "Adım"
 
 #. placeholder {0}: step === "workspace" ? 1 : 2
 msgid "Step {0} of 2"
@@ -21662,6 +21674,9 @@ msgstr "Çalışma alanı uyandırılıyor…"
 msgid "Waking up workspace"
 msgstr "Çalışma alanı uyandırılıyor"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Wank için macOS 26 veya üzeri gerekir."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21845,6 +21860,15 @@ msgstr "Wanker, Claude Code, OpenCode, OpenAI Codex ve daha fazlası dahil olmak
 
 msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
 msgstr "Wanker'in mobil uygulaması, bilgisayarımdan çok uzakta olsam bile ajanlarımı her yerden çalışır durumda tutmamı ve önlerindeki engelleri kaldırmamı sağlıyor."
+
+msgid "Wanks"
+msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks ({myFailedCount} başarısız)"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, {myFailedCount} başarısız"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Bir şeyi daha erken mi istiyorsunuz? <0>Discord'da bize söyleyin</0>. Buradakilerin çoğu bir kullanıcı isteği olarak başladı."

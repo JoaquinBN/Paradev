@@ -3339,17 +3339,11 @@ msgstr "Назва автоматизації"
 msgid "Automations"
 msgstr "Автоматизації"
 
-msgid "Automations ({myFailedCount} failing)"
-msgstr "Автоматизації (з помилкою: {myFailedCount})"
-
 msgid "Automations & event triggers"
 msgstr "Автоматизації й тригери подій"
 
 msgid "Automations require the Pro plan."
 msgstr "Для автоматизацій потрібен тариф Pro."
-
-msgid "Automations, {myFailedCount} failing"
-msgstr "Автоматизації, з помилкою: {myFailedCount}"
 
 msgid "Autonomous"
 msgstr "Автономний"
@@ -4203,6 +4197,9 @@ msgstr "Елементи чату: повідомлення, міркуванн�
 
 msgid "Chats"
 msgstr "Чати"
+
+msgid "Check"
+msgstr "Перевірка"
 
 msgid "Check again"
 msgstr "Перевірити знову"
@@ -9655,6 +9652,9 @@ msgstr "Є незакомічені зміни й незапушені комі�
 msgid "Has unpushed commits"
 msgstr "Є незапушені коміти"
 
+msgid "Have a wank"
+msgstr "Have a wank"
+
 msgid "Head-to-Head Comparisons"
 msgstr "Прямі порівняння"
 
@@ -10198,6 +10198,9 @@ msgstr "У локальних робочих просторах код і сес
 
 msgid "In manual mode, Wanker doesn't sign this agent in. Have your script sign it in again and continue, or turn off manual mode in agent settings."
 msgstr "У ручному режимі Wanker не виконує вхід для цього агента. Нехай ваш скрипт знову виконає вхід, а потім продовжте, або вимкніть ручний режим у налаштуваннях агентів."
+
+msgid "In parallel"
+msgstr "Паралельно"
 
 msgid "In person in San Francisco, five days a week. You work directly with the founders."
 msgstr "Очно в Сан-Франциско, п'ять днів на тиждень. Ви працюєте безпосередньо із засновниками."
@@ -13180,6 +13183,9 @@ msgstr "Версій ще немає"
 
 msgid "No versions yet."
 msgstr "Версій ще немає."
+
+msgid "No wanks yet. Press Have a wank and show what you want automated."
+msgstr "Поки що немає жодного wank. Натисніть Have a wank і покажіть, що хочете автоматизувати."
 
 msgid "No workspace run command configured"
 msgstr "Не налаштовано команду запуску робочого простору"
@@ -16926,6 +16932,9 @@ msgstr "Працює всередині застосунку Wanker на том�
 msgid "Runs land in a workspace. Review the diff, merge what's good."
 msgstr "Запуски потрапляють у робочий простір. Перегляньте diff і злийте те, що підходить."
 
+msgid "Runs on demand"
+msgstr "Запуск на вимогу"
+
 msgid "Runs that found no host online"
 msgstr "Запуски, які не знайшли хоста в мережі"
 
@@ -18821,6 +18830,9 @@ msgstr "Не переноситься"
 
 msgid "Steer"
 msgstr "Скерувати"
+
+msgid "Step"
+msgstr "Крок"
 
 #. placeholder {0}: step === "workspace" ? 1 : 2
 msgid "Step {0} of 2"
@@ -21656,6 +21668,9 @@ msgstr "Пробудження робочого простору…"
 msgid "Waking up workspace"
 msgstr "Пробудження робочого простору"
 
+msgid "Wank needs macOS 26 or later."
+msgstr "Для Wank потрібна macOS 26 або новіша."
+
 msgid "Wanker"
 msgstr "Wanker"
 
@@ -21839,6 +21854,15 @@ msgstr "Wanker працює з будь-яким кодинг-агентом з 
 
 msgid "Wanker's mobile app lets me keep my agents moving and unblock them from anywhere, even when I'm nowhere near my computer."
 msgstr "Мобільний застосунок Wanker дає змогу підтримувати роботу агентів і розблоковувати їх звідусіль, навіть коли я далеко від комп'ютера."
+
+msgid "Wanks"
+msgstr "Wanks"
+
+msgid "Wanks ({myFailedCount} failing)"
+msgstr "Wanks (з помилкою: {myFailedCount})"
+
+msgid "Wanks, {myFailedCount} failing"
+msgstr "Wanks, з помилкою: {myFailedCount}"
 
 msgid "Want something sooner? <0>Tell us in Discord</0>. Much of what's here started as a user request."
 msgstr "Хочете щось раніше? <0>Напишіть нам у Discord</0>. Багато з того, що тут є, почалося із запиту користувача."

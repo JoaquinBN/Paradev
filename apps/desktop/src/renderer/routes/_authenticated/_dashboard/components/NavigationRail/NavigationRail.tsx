@@ -7,7 +7,7 @@ import {
 	House,
 	SquareCheckBig,
 	StickyNote,
-	TimerReset,
+	Workflow,
 } from "lucide-react";
 import { useFeatureFlagEnabled } from "posthog-js/react";
 import { UpdatesPill } from "renderer/components/UpdatesPill";
@@ -71,15 +71,15 @@ export function NavigationRail() {
 			<RailButton
 				label={
 					myFailedCount > 0
-						? t({ message: `Automations (${myFailedCount} failing)` })
-						: t({ message: "Automations" })
+						? t({ message: `Wanks (${myFailedCount} failing)` })
+						: t({ message: "Wanks" })
 				}
-				icon={TimerReset}
-				isActive={navigation.isAutomationsOpen}
+				icon={Workflow}
+				isActive={navigation.isWanksOpen}
 				onClick={
 					myFailedCount > 0
 						? navigation.openFailedAutomations
-						: navigation.openAutomations
+						: navigation.openWanks
 				}
 				badge={
 					myFailedCount > 0 ? (

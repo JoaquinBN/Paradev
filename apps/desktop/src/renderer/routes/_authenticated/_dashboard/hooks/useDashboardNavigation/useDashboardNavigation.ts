@@ -35,20 +35,20 @@ export function useDashboardNavigation() {
 	// If the list can't be read the answer is unknown, so let the click
 	// through: an empty list page gates every action itself, and a wrong
 	// paywall on a downgraded org would be the worse mistake.
-	const openAutomations = async () => {
+	const openWanks = async () => {
 		if (hasAccess(GATED_FEATURES.AUTOMATIONS)) {
-			navigate({ to: "/automations" });
+			navigate({ to: "/wanks" });
 			return;
 		}
 		const automations = await cloudUtils.automation.list
 			.fetch()
 			.catch(() => null);
 		if (automations === null || automations.length > 0) {
-			navigate({ to: "/automations" });
+			navigate({ to: "/wanks" });
 			return;
 		}
 		gateFeature(GATED_FEATURES.AUTOMATIONS, () => {
-			navigate({ to: "/automations" });
+			navigate({ to: "/wanks" });
 		});
 	};
 
@@ -69,8 +69,8 @@ export function useDashboardNavigation() {
 		isWorkspacesOpen: !!matchRoute({ to: "/v2-workspaces" }),
 		openWorkspaces: () => navigate({ to: "/v2-workspaces" }),
 
-		isAutomationsOpen: !!matchRoute({ to: "/automations", fuzzy: true }),
-		openAutomations,
+		isWanksOpen: !!matchRoute({ to: "/wanks", fuzzy: true }),
+		openWanks,
 		openFailedAutomations: () =>
 			navigate({
 				to: "/automations/runs",
